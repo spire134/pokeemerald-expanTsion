@@ -492,6 +492,7 @@
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
 #define END_MUS                     MUS_RG_TEACHY_TV_MENU
 
+
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
 #define PH_TRAP_BLEND               559
@@ -545,6 +546,9 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+
+// Added Music
+#define MUS_AWDS_VON_BOLT           610
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
