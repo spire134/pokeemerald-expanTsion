@@ -1,15 +1,11 @@
-# data/maps/Tidesmercyinterior/scripts.pory
-# Macro-style event scripting (assembled by the build, not poryscript)
+mapscripts Tidesmercyinterior_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        # Hide the burst ranger when entering this map
+        hideobject(5)   # use the Local ID of the NPC from Porymap
+    }
+}
 
-Tidesmercyinterior_MapScripts::
-    map_script MAP_SCRIPT_ON_TRANSITION Tidesmercyinterior_OnTransition
-    .byte 0
-
-# Hide the burst ranger on every entry so he can “pop in” later
-Tidesmercyinterior_OnTransition:
-    hideobject 5
+# A no-op talk script for the burst ranger (so his Script field isn’t blank in Porymap)
+script Tidesmercyinterior_BurstRanger_NoOp {
     end
-
-# No-op talk script for the burst ranger (satisfies the “script cannot be empty” requirement)
-Tidesmercyinterior_BurstRanger_NoOp:
-    end
+}
