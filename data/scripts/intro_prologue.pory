@@ -3,13 +3,6 @@
 # Maps: SS_Tides_Mercy, Tidesmercyinterior, SHOREFALL_STRAND
 # =========================================
 
-# ------ Compile-time switches ------
-# Use Wattrel if you’ve added it; otherwise falls back to Wingull.
-poryswitch(USE_WATTREL) {
-    1: const ENCOUNTER_SPECIES = SPECIES_WATTREL
-    2: const ENCOUNTER_SPECIES = SPECIES_WINGULL
-}
-
 # ------ Starters (Hoenn classic) ------
 const STARTER0_SPECIES = SPECIES_TREECKO
 const STARTER1_SPECIES = SPECIES_TORCHIC
@@ -291,7 +284,7 @@ script Shorefall_OnEnter {
         "You are suddenly attacked by a Pokémon!\n"
     ))
     # Immediate wild encounter: level 2 ENCOUNTER_SPECIES
-    setwildbattle(ENCOUNTER_SPECIES, 2, ITEM_NONE)
+    setwildbattle(SPECIES_WATTREL, 2, ITEM_NONE)
     dowildbattle
     # Check outcome and branch text. GetBattleOutcome special writes to VAR_RESULT.
     specialvar(VAR_RESULT, GetBattleOutcome)
