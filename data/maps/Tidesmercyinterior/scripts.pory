@@ -1,0 +1,6 @@
+# Hide on entering the interior so he starts invisible every time
+mapscripts Tidesmercyinterior_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        hideobject(5)
+    }
+}

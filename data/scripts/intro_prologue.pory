@@ -1,0 +1,312 @@
+# =========================================
+# intro_prologue.pory — Corymbra Prologue
+# Maps: SS_Tides_Mercy, Tidesmercyinterior, SHOREFALL_STRAND
+# =========================================
+
+# ------ Compile-time switches ------
+# Use Wattrel if you’ve added it; otherwise falls back to Wingull.
+poryswitch(USE_WATTREL) {
+    1: const ENCOUNTER_SPECIES = SPECIES_WATTREL
+    2: const ENCOUNTER_SPECIES = SPECIES_WINGULL
+}
+
+# ------ Starters (Hoenn classic) ------
+const STARTER0_SPECIES = SPECIES_TREECKO
+const STARTER1_SPECIES = SPECIES_TORCHIC
+const STARTER2_SPECIES = SPECIES_MUDKIP
+
+# ------ Flags / Vars ------
+const FLAG_NOTE_READ          = FLAG_TEMP_1
+const FLAG_MET_RANGER_A       = FLAG_TEMP_2
+const FLAG_MET_RANGER_B       = FLAG_TEMP_3
+const FLAG_MET_RANGER_SOLO    = FLAG_TEMP_4
+const FLAG_GOT_STARTER        = FLAG_TEMP_5
+const FLAG_STORM_STARTED      = FLAG_TEMP_6
+const FLAG_SHOREFALL_INTRO    = FLAG_TEMP_7
+
+const VAR_STARTER_CHOICE      = VAR_TEMP_0
+
+# ------ Object IDs you must match to your map objects ------
+# Place these NPCs on Tidesmercyinterior:
+# - Captain in her room (uses talk script)
+# - Bursting ranger in captain’s room (hidden initially, set “Hidden” in Porymap)
+const OBJ_CAPTAIN_INT      = 1   # set to the Captain’s local object id in her room
+const OBJ_BURST_RANGER     = 2   # set to the “burst in” ranger’s local object id in her room (hidden)
+
+# ------ MapScripts ------
+mapscripts SS_Tides_Mercy_MapScripts {}                # keep your empty deck mapscripts
+mapscripts Tidesmercyinterior_MapScripts {}            # no global map logic needed here
+mapscripts SHOREFALL_STRAND_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Shorefall_OnEnter
+}
+
+# =========================================
+# 1) PLAYER ROOM: the captain’s note
+# =========================================
+
+script PlayerRoom_Note {
+    lock
+    if (!flag(FLAG_NOTE_READ)) {
+        msgbox(format(
+            "RANGER RECRUIT,\p"
+            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\n"
+            "then report to my quarters for partner assignment at your earliest convenience.\p"
+            "Professional enthusiasm is encouraged.\n"
+            "—Captain Mara Kealoha"
+        ))
+        setflag(FLAG_NOTE_READ)
+        msgbox("A crisp, comically professional note from the Captain.")
+    } else {
+        msgbox("“Report to my quarters for partner assignment.”")
+    }
+    release
+    end
+}
+
+# =========================================
+# 2) OPTIONAL SQUADMATE CHATS (interior)
+# Two share a room; one solo.
+# =========================================
+
+# Shared room pair: awkward but sweet dynamic
+script RangerA_Script {
+    lock
+    faceplayer
+    if (!flag(FLAG_MET_RANGER_A)) {
+        msgbox(format(
+            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,\n"
+            "and the schedule. It helps, if everyone reads the schedule.\p"
+            "Welcome aboard."
+        ))
+        setflag(FLAG_MET_RANGER_A)
+    } elif (!flag(FLAG_GOT_STARTER)) {
+        msgbox("Tasmin: Meet the Captain when you’re ready. I’ll log your gear after.")
+    } else {
+        # Starter picked; give a quick loadout tip per choice
+        switch (var(VAR_STARTER_CHOICE)) {
+            case 0:
+                msgbox("Tasmin: Treecko. Good call. Grab spare line and a repel case. Canopy routes get tight.")
+            case 1:
+                msgbox("Tasmin: Torchic. I’ll stage thermal wraps and spare canteens. Heat drills tomorrow.")
+            case 2:
+                msgbox("Tasmin: Mudkip. Drybag and water filters are in the crate by the door. Flood lanes are messy.")
+        }
+    }
+    release
+    end
+}
+
+script RangerB_Script {
+    lock
+    faceplayer
+    if (!flag(FLAG_MET_RANGER_B)) {
+        msgbox(format(
+            "Ranger Corin: Ropes and rescue. If it needs hauling, anchoring, or not falling,\n"
+            "I’m your guy. Congrats on passing the boards."
+        ))
+        setflag(FLAG_MET_RANGER_B)
+    } elif (!flag(FLAG_GOT_STARTER)) {
+        msgbox("Corin: Captain runs tight ops. Bring questions. She likes questions with plans.")
+    } else {
+        switch (var(VAR_STARTER_CHOICE)) {
+            case 0:
+                msgbox("Corin: Treecko’s grip is money on wet stone. We’ll teach you belays on the karst.")
+            case 1:
+                msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I’ll run you through anchors.")
+            case 2:
+                msgbox("Corin: Mudkip’s a natural in surge pools. We’ll do throw-bag practice after lunch.")
+        }
+    }
+    release
+    end
+}
+
+# SOLO ROOM — EON
+script RangerSolo_Script {
+    lock
+    faceplayer
+    if (!flag(FLAG_MET_RANGER_SOLO)) {
+        msgbox(format(
+            "Eon: Recon and cartography. I draw the island so you don’t get lost twice.\n"
+            "If the sky has two winds, follow the lower one."
+        ))
+        setflag(FLAG_MET_RANGER_SOLO)
+    } elif (!flag(FLAG_GOT_STARTER)) {
+        msgbox("Eon: Forecast says calm. Gut says otherwise. Captain’s ready when you are.")
+    } else {
+        switch (var(VAR_STARTER_CHOICE)) {
+            case 0:
+                msgbox("Eon: Treecko tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
+            case 1:
+                msgbox("Eon: Torchic’s tempo helps in sprints. Watch for dry lightning on the flats.")
+            case 2:
+                msgbox("Eon: Mudkip opens flood paths. We’ll chart sluices after the storm clears.")
+        }
+    }
+    release
+    end
+}
+# =========================================
+# 3) CAPTAIN’S ROOM: mission brief + starters
+# =========================================
+
+script CaptainRoom_Talk {
+    lockall
+    faceplayer
+    if (!flag(FLAG_GOT_STARTER)) {
+        msgbox(format(
+            "Welcome aboard. Corymbra is a restricted research zone.\n"
+            "Forty years ago the Bloom Project overshot the mark.\p"
+            "We’re a League-authorized Ranger task force. No capture stylers. Poké Balls only.\n"
+            "We build bonds that outlast storms.\p"
+            "Choose your partner: TREECKO, TORCHIC, or MUDKIP."
+        ))
+        # Let the player walk to the Poké Balls. No gating on meeting others.
+    } else {
+        msgbox("You have your partner. Good. Stay flexible.")
+    }
+    releaseall
+    end
+}
+
+# Place three Poké Ball objects in this room and hook these scripts
+script Starter_Treecko {
+    lockall
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    msgbox("Take TREECKO as your partner?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) { releaseall; end }
+    call(Give_Starter0)
+    call(PostStarter_StormInterrupt)  # immediate story beat
+    releaseall
+    end
+}
+
+script Starter_Torchic {
+    lockall
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    msgbox("Take TORCHIC as your partner?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) { releaseall; end }
+    call(Give_Starter1)
+    call(PostStarter_StormInterrupt)
+    releaseall
+    end
+}
+
+script Starter_Mudkip {
+    lockall
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    msgbox("Take MUDKIP as your partner?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 0) { releaseall; end }
+    call(Give_Starter2)
+    call(PostStarter_StormInterrupt)
+    releaseall
+    end
+}
+
+script(local) Give_Starter0 {
+    setvar(VAR_STARTER_CHOICE, 0)
+    givepokemon(STARTER0_SPECIES, 5, ITEM_NONE)
+    askfornickname
+    setflag(FLAG_GOT_STARTER)
+    msgbox("TREECKO joined your squad.")
+    end
+}
+script(local) Give_Starter1 {
+    setvar(VAR_STARTER_CHOICE, 1)
+    givepokemon(STARTER1_SPECIES, 5, ITEM_NONE)
+    askfornickname
+    setflag(FLAG_GOT_STARTER)
+    msgbox("TORCHIC joined your squad.")
+    end
+}
+script(local) Give_Starter2 {
+    setvar(VAR_STARTER_CHOICE, 2)
+    givepokemon(STARTER2_SPECIES, 5, ITEM_NONE)
+    askfornickname
+    setflag(FLAG_GOT_STARTER)
+    msgbox("MUDKIP joined your squad.")
+    end
+}
+
+# =========================================
+# 4) POST-STARTER: bursting ranger + storm → deck → beach
+# Requires a hidden OBJ_BURST_RANGER in Captain’s room (set Hidden in Porymap).
+# =========================================
+
+movement BurstRanger_Enter {
+    walk_up
+    face_right
+    face_left
+    face_up
+}
+
+script PostStarter_StormInterrupt {
+    if (flag(FLAG_STORM_STARTED)) { end }
+    # Ranger bursts in
+    showobject(OBJ_BURST_RANGER)
+    applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
+    waitmovement(0)
+    msgbox(format(
+        "Ranger: Captain—massive storm just appeared out of nowhere!\n"
+        "Barometer spiked. It’s right on top of us!"
+    ))
+    msgbox("Captain Mara: Move. All hands topside.")
+    setflag(FLAG_STORM_STARTED)
+    # Cut to deck, run the storm, then to beach
+    fadescreen(FADE_TO_BLACK)
+    # Adjust these deck coords to somewhere sensible on SS_Tides_Mercy
+    warp(SS_TIDES_MERCY, 19, 8)
+    fadescreen(FADE_FROM_BLACK)
+    call(Deck_StormCutscene)
+    end
+}
+
+script Deck_StormCutscene {
+    lockall
+    msgbox("Captain Mara: Stay cautious and learn. We’ll be right behind you if anything gets—")
+    setweather(WEATHER_RAIN_THUNDERSTORM)
+    doweather
+    # Quick shake
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(step_in_place_fast_right, step_in_place_fast_left, step_in_place_fast_right))
+    msgbox("Ranger: That sky isn’t natural!")
+    fadescreen(FADE_TO_BLACK)
+    # Warp to the beach in front of the wreck (tune these coords)
+    warp(SHOREFALL_STRAND, 17, 17)
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+    end
+}
+
+# =========================================
+# 5) SHOREFALL STRAND: wake + forced wild encounter + heal + set respawn
+# =========================================
+
+script Shorefall_OnEnter {
+    if (flag(FLAG_SHOREFALL_INTRO)) { end }
+    lockall
+    msgbox(format(
+        "…\p"
+        "You wake to your partner poking your shoulder.\n"
+        "Waves pound against a grounded hull.\n"
+        "You are suddenly attacked by a Pokémon!\n"
+    ))
+    # Immediate wild encounter: level 2 ENCOUNTER_SPECIES
+    setwildbattle(ENCOUNTER_SPECIES, 2, ITEM_NONE)
+    dowildbattle
+    # Check outcome and branch text. GetBattleOutcome special writes to VAR_RESULT.
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) != 1) {   # not a straight win
+        msgbox("The startled bird skitters off down the strand.")
+    } else {
+        msgbox("You steady your partner. The wind begins to ease… a little.")
+    }
+    # Heal either way
+    special(HealParty)
+    # Set a temporary respawn near the wreck
+    # NOTE: You must define HEAL_LOCATION_SHOREFALL_BEACH in include/constants/heal_locations.h
+    # and map it to SHOREFALL_STRAND (X=6,Y=9 or your chosen tile) in src/heal_locations.c
+    setrespawn(HEAL_LOCATION_SHOREFALL_BEACH)
+    setflag(FLAG_SHOREFALL_INTRO)
+    releaseall
+    end
+}

@@ -622,5 +622,9 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_NewAdditions": []
+  "gMapGroup_NewAdditions": [
+    "SS_Tides_Mercy",
+    "Tidesmercyinterior",
+    "SHOREFALL_STRAND"
+  ]
 }

@@ -4410,6 +4410,36 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_SS_TIDES_MERCY",
+      "name": "SS_Tides_Mercy_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/SS_Tides_Mercy/border.bin",
+      "blockdata_filepath": "data/layouts/SS_Tides_Mercy/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIDESMERCYINTERIOR",
+      "name": "Tidesmercyinterior_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_PorytilesGeneral",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/Tidesmercyinterior/border.bin",
+      "blockdata_filepath": "data/layouts/Tidesmercyinterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHOREFALL_STRAND",
+      "name": "SHOREFALL_STRAND_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_PorytilesGeneral",
+      "secondary_tileset": "gTileset_Beach",
+      "border_filepath": "data/layouts/SHOREFALL_STRAND/border.bin",
+      "blockdata_filepath": "data/layouts/SHOREFALL_STRAND/map.bin"
     }
   ]
 }
