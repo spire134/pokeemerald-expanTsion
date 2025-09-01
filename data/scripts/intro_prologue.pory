@@ -165,9 +165,9 @@ script CaptainRoom_Talk {
 # Place three Poké Ball objects in this room and hook these scripts
 script Starter_Treecko {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
     msgbox("Take TREECKO as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall; end }
+    if (var(VAR_RESULT) == 0) { releaseall end }
     call(Give_Starter0)
     call(PostStarter_StormInterrupt)  # immediate story beat
     releaseall
@@ -176,9 +176,9 @@ script Starter_Treecko {
 
 script Starter_Torchic {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
     msgbox("Take TORCHIC as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall; end }
+    if (var(VAR_RESULT) == 0) { releaseall end }
     call(Give_Starter1)
     call(PostStarter_StormInterrupt)
     releaseall
@@ -187,9 +187,9 @@ script Starter_Torchic {
 
 script Starter_Mudkip {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty."); releaseall; end }
+    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
     msgbox("Take MUDKIP as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall; end }
+    if (var(VAR_RESULT) == 0) { releaseall end }
     call(Give_Starter2)
     call(PostStarter_StormInterrupt)
     releaseall
