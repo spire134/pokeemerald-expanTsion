@@ -28,7 +28,6 @@ const OBJ_BURST_RANGER     = 2   # set to the “burst in” ranger’s local ob
 
 # ------ MapScripts ------
 mapscripts SS_Tides_Mercy_MapScripts {}                # keep your empty deck mapscripts
-mapscripts Tidesmercyinterior_MapScripts {}            # no global map logic needed here
 mapscripts SHOREFALL_STRAND_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Shorefall_OnEnter
 }
