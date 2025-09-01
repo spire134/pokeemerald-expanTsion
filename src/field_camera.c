@@ -270,7 +270,7 @@ static void DrawMetatile(s32 metatileLayerType, const u16 *tiles, u16 offset)
     {
         // Draw metatile's bottom layer to the bottom background layer.
         gOverworldTilemapBuffer_Bg3[offset] = tiles[0];
-        gOverworldTilemapBuffer_Bg3[offset 1] = tiles[1];
+        gOverworldTilemapBuffer_Bg3[offset + 1] = tiles[1];
         gOverworldTilemapBuffer_Bg3[offset + 0x20] = tiles[2];
         gOverworldTilemapBuffer_Bg3[offset + 0x21] = tiles[3];
 
