@@ -1,7 +1,7 @@
 mapscripts Tidesmercyinterior_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         # Hide the burst ranger when entering this map
-        hideobject(OBJ_BURST_RANGER)
+        hideobjectat(OBJ_BURST_RANGER)
     }
 }
 
