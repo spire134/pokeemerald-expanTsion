@@ -48,7 +48,7 @@ script RangerA_Script {
         msgbox("Tasmin: Meet the Captain when you're ready. I'll log your gear after.")
     } else {
         # Starter picked; give a quick loadout tip per choice
-        switch (var(VAR_STARTER_CHOICE)) {
+        switch (var(VAR_STARTER_MON)) {
             case 0:
                 msgbox("Tasmin: Treecko. Good call. Grab spare line and a repel case. Canopy routes get tight.")
             case 1:
@@ -73,7 +73,7 @@ script RangerB_Script {
     } elif (!flag(FLAG_GOT_STARTER)) {
         msgbox("Corin: Captain runs tight ops. Bring questions. She likes questions with plans.")
     } else {
-        switch (var(VAR_STARTER_CHOICE)) {
+        switch (var(VAR_STARTER_MON)) {
             case 0:
                 msgbox("Corin: Treecko's grip is money on wet stone. We'll teach you belays on the karst.")
             case 1:
@@ -99,7 +99,7 @@ script RangerSolo_Script {
     } elif (!flag(FLAG_GOT_STARTER)) {
         msgbox("Eon: Forecast says calm. Gut says otherwise. Captain's ready when you are.")
     } else {
-        switch (var(VAR_STARTER_CHOICE)) {
+        switch (var(VAR_STARTER_MON)) {
             case 0:
                 msgbox("Eon: Treecko tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
             case 1:

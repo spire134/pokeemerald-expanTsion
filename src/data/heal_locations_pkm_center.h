@@ -140,6 +140,13 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
         .mapNum = MAP_NUM(MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F),
         DEFAULT_POKEMON_CENTER_COORDS,
     },
+    [HEAL_LOCATION_SHOREFALL_STRAND - 1] =
+    {
+        .mapGroup = MAP_GROUP(MAP_SHOREFALL_STRAND),
+        .mapNum = MAP_NUM(MAP_SHOREFALL_STRAND),
+        .x = 10,
+        .y = 19,
+    },
 };
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
@@ -172,4 +179,5 @@ static const u8 sHealNpcLocalId[NUM_HEAL_LOCATIONS - 1] =
     [HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE - 1] = 1,
     [HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR - 1] = 0, // no heal npc
     [HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST - 1] = 1,
+    [HEAL_LOCATION_SHOREFALL_STRAND - 1] = 0,
 };
