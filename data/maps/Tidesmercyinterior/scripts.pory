@@ -18,7 +18,7 @@ script PlayerRoom_Note {
             "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\n"
             "then report to my quarters for partner assignment at your earliest convenience.\p"
             "Professional enthusiasm is encouraged.\n"
-            "—Captain Mara Kealoha"
+            "- Captain Mara Kealoha"
         ))
         setflag(FLAG_NOTE_READ)
         msgbox("A crisp, comically professional note from the Captain.")
@@ -86,7 +86,7 @@ script RangerB_Script {
     end
 }
 
-# SOLO ROOM — EON
+# SOLO ROOM EON
 script RangerSolo_Script {
     lock
     faceplayer
@@ -224,7 +224,7 @@ script PostStarter_StormInterrupt {
     # Cut to deck, run the storm, then to beach
     fadescreen(FADE_TO_BLACK)
     # Adjust these deck coords to somewhere sensible on SS_Tides_Mercy
-    warp(SS_TIDES_MERCY, 19, 8)
+    warp(MAP_SS_TIDES_MERCY, 19, 8)
     fadescreen(FADE_FROM_BLACK)
     call(Deck_StormCutscene)
     end
