@@ -79,7 +79,7 @@ script RangerB_Script {
             case 1:
                 msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I’ll run you through anchors.")
             case 2:
-                msgbox("Corin: Mudkip’s a natural in surge pools. We’ll do throw-bag practice after lunch.")
+                msgbox("Corin: Mudkip’s a natural in surge pools. We'll do throw-bag practice after lunch.")
         }
     }
     release
@@ -92,20 +92,20 @@ script RangerSolo_Script {
     faceplayer
     if (!flag(FLAG_MET_RANGER_SOLO)) {
         msgbox(format(
-            "Eon: Recon and cartography. I draw the island so you don’t get lost twice.\n"
+            "Eon: Recon and cartography. I draw the island so you don't get lost twice.\n"
             "If the sky has two winds, follow the lower one."
         ))
         setflag(FLAG_MET_RANGER_SOLO)
     } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox("Eon: Forecast says calm. Gut says otherwise. Captain’s ready when you are.")
+        msgbox("Eon: Forecast says calm. Gut says otherwise. Captain's ready when you are.")
     } else {
         switch (var(VAR_STARTER_CHOICE)) {
             case 0:
                 msgbox("Eon: Treecko tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
             case 1:
-                msgbox("Eon: Torchic’s tempo helps in sprints. Watch for dry lightning on the flats.")
+                msgbox("Eon: Torchic's tempo helps in sprints. Watch for dry lightning on the flats.")
             case 2:
-                msgbox("Eon: Mudkip opens flood paths. We’ll chart sluices after the storm clears.")
+                msgbox("Eon: Mudkip opens flood paths. We'll chart sluices after the storm clears.")
         }
     }
     release
@@ -113,7 +113,7 @@ script RangerSolo_Script {
 }
 
 # =========================================
-# 3) CAPTAIN’S ROOM: mission brief + starters
+# 3) CAPTAIN'S ROOM: mission brief + starters
 # =========================================
 
 script CaptainRoom_Talk {
@@ -217,7 +217,7 @@ script PostStarter_StormInterrupt {
     waitmovement(0)
     msgbox(format(
         "Ranger: Captain—massive storm just appeared out of nowhere!\n"
-        "Barometer spiked. It’s right on top of us!"
+        "Barometer spiked. It`s right on top of us!"
     ))
     msgbox("Captain Mara: Move. All hands topside.")
     setflag(FLAG_STORM_STARTED)
