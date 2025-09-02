@@ -1,4 +1,16 @@
-mapscripts SS_Tides_Mercy_MapScripts {}
+mapscripts SS_Tides_Mercy_MapScripts {
+    MAPSCRIPT_ON_LOAD: Deck_Stick
+}
+
+script Deck_Stick{
+    if(flag(FLAG_STORM_STARTED))
+    {
+        call(Deck_StormCutscene)
+    }
+    else{
+        end
+    }
+}
 
 script Deck_StormCutscene {
     lockall

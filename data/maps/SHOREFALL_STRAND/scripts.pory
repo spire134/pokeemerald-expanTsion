@@ -26,9 +26,9 @@ script Shorefall_OnEnter {
     # Heal either way
     special(HealPlayerParty)
     # Set a temporary respawn near the wreck
-    # NOTE: You must define HEAL_LOCATION_SHOREFALL_BEACH in include/constants/heal_locations.h
+    # NOTE: You must define HEAL_LOCATION_SHOREFALL_STRAND in include/constants/heal_locations.h
     # and map it to SHOREFALL_STRAND (X=6,Y=9 or your chosen tile) in src/heal_locations.c
-    setrespawn(HEAL_LOCATION_SHOREFALL_BEACH)
+    setrespawn(HEAL_LOCATION_SHOREFALL_STRAND)
     setflag(FLAG_SHOREFALL_INTRO)
     releaseall
     end

@@ -1,7 +1,9 @@
 mapscripts Tidesmercyinterior_MapScripts {
-    MAP_SCRIPT_ON_LOAD {
-        hideobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
-    }
+    MAP_SCRIPT_ON_LOAD: HideBurstRanger
+}
+
+script HideBurstRanger{
+    hideobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
 }
 
 # A no-op talk script for the burst ranger (so his Script field isn't blank in Porymap)
@@ -45,7 +47,7 @@ script RangerA_Script {
         ))
         setflag(FLAG_MET_RANGER_A)
     } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox("Tasmin: Meet the Captain when you're ready. I'll log your gear after.")
+        msgbox(format("Tasmin: Meet the Captain when you're ready. I'll log your gear after."))
     } else {
         # Starter picked; give a quick loadout tip per choice
         switch (var(VAR_STARTER_MON)) {
@@ -66,12 +68,12 @@ script RangerB_Script {
     faceplayer
     if (!flag(FLAG_MET_RANGER_B)) {
         msgbox(format(
-            "Ranger Corin: Ropes and rescue. If it needs hauling, anchoring, or not falling,\n"
+            "Ranger Corin: Ropes and rescue. If it needs hauling, anchoring, or not falling,\l"
             "I'm your guy. Congrats on passing the boards."
         ))
         setflag(FLAG_MET_RANGER_B)
     } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox("Corin: Captain runs tight ops. Bring questions. She likes questions with plans.")
+        msgbox(format("Corin: Captain runs tight ops. Bring questions. She likes questions with plans."))
     } else {
         switch (var(VAR_STARTER_MON)) {
             case 0:
@@ -92,12 +94,12 @@ script RangerSolo_Script {
     faceplayer
     if (!flag(FLAG_MET_RANGER_SOLO)) {
         msgbox(format(
-            "Eon: Recon and cartography. I draw the island so you don't get lost twice.\n"
+            "Eon: Recon and cartography. I draw the island so you don't get lost twice.\l"
             "If the sky has two winds, follow the lower one."
         ))
         setflag(FLAG_MET_RANGER_SOLO)
     } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox("Eon: Forecast says calm. Gut says otherwise. Captain's ready when you are.")
+        msgbox(format("Eon: Forecast says calm. Gut says otherwise. Captain's ready when you are."))
     } else {
         switch (var(VAR_STARTER_MON)) {
             case 0:
@@ -121,9 +123,9 @@ script CaptainRoom_Talk {
     faceplayer
     if (!flag(FLAG_GOT_STARTER)) {
         msgbox(format(
-            "Welcome aboard. Corymbra is a restricted research zone.\n"
+            "Welcome aboard. Corymbra is a restricted research zone.\l"
             "Forty years ago the Bloom Project overshot the mark.\p"
-            "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\n"
+            "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\l"
             "We build bonds that outlast storms.\p"
             "Choose your partner: TREECKO, TORCHIC, or MUDKIP."
         ))
@@ -216,7 +218,7 @@ script PostStarter_StormInterrupt {
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
     msgbox(format(
-        "Ranger: Captain! Massive storm just appeared out of nowhere!\n"
+        "Ranger: Captain! Massive storm just appeared out of nowhere!\l"
         "Barometer spiked. It's right on top of us!"
     ))
     msgbox("Captain Mara: Move. All hands topside.")
