@@ -1,5 +1,5 @@
 mapscripts Tidesmercyinterior_MapScripts {
-    MAP_SCRIPT_ON_LOAD: HideBurstRanger
+    MAP_SCRIPT_ON_TRANSITION: HideBurstRanger
 }
 
 script HideBurstRanger{
