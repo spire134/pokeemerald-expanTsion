@@ -1,5 +1,5 @@
 mapscripts SHOREFALL_STRAND_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION: Shorefall_OnEnter
+    MAP_SCRIPT_ON_RESUME: Shorefall_OnEnter
 }
 
 # =========================================

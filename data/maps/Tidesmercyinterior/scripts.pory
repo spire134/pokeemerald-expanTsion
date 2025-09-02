@@ -16,14 +16,14 @@ script PlayerRoom_Note {
     lock
     if (!flag(FLAG_NOTE_READ)) {
         msgbox(format(
+            "A crisp, professional note from the Captain.\p"
             "RANGER RECRUIT,\p"
-            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\l"
+            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,"
             "then report to my quarters for partner assignment at your earliest convenience.\p"
             "Professional enthusiasm is encouraged.\n"
             "- Captain Mara Kealoha"
         ))
         setflag(FLAG_NOTE_READ)
-        msgbox("A crisp, professional note from the Captain.")
     } else {
         msgbox(format("“Report to my quarters for partner assignment.”"))
     }
@@ -41,8 +41,9 @@ script RangerA_Script {
     faceplayer
     if (!flag(FLAG_MET_RANGER_A)) {
         msgbox(format(
-            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,\l"
-            "and the schedule. It helps, if everyone reads the schedule.\p"
+            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,"
+            "and the schedule.\p" 
+            "It helps if everyone reads the schedule.\p"
             "Welcome aboard."
         ))
         setflag(FLAG_MET_RANGER_A)
@@ -124,7 +125,7 @@ script CaptainRoom_Talk {
     if (!flag(FLAG_GOT_STARTER)) {
         msgbox(format(
             "Welcome aboard. Corymbra is a restricted research zone.\l"
-            "Forty years ago the Bloom Project overshot the mark.\p"
+            "Forty years ago, the Bloom Project overshot the mark.\p"
             "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\l"
             "We build bonds that outlast storms.\p"
             "Choose your partner: TREECKO, TORCHIC, or MUDKIP."
@@ -218,10 +219,10 @@ script PostStarter_StormInterrupt {
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
     msgbox(format(
-        "Ranger: Captain! Massive storm just appeared out of nowhere!\l"
+        "Ranger: Captain! Massive storm just appeared out of nowhere!"
         "Barometer spiked. It's right on top of us!"
     ))
-    msgbox("Captain Mara: Move. All hands topside.")
+    msgbox("Captain Mara: Move! All hands topside.")
     setflag(FLAG_STORM_STARTED)
     # Cut to deck, run the storm, then to beach
     fadescreen(FADE_TO_BLACK)

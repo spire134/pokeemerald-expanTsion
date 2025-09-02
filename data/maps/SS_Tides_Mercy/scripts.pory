@@ -1,5 +1,5 @@
 mapscripts SS_Tides_Mercy_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION: Deck_Stick
+    MAP_SCRIPT_ON_RESUME: Deck_Stick
 }
 
 script Deck_Stick{
