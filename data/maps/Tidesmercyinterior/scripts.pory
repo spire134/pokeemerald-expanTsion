@@ -4,7 +4,7 @@ mapscripts Tidesmercyinterior_MapScripts {
     }
 }
 
-# A no-op talk script for the burst ranger (so his Script field isn’t blank in Porymap)
+# A no-op talk script for the burst ranger (so his Script field isn't blank in Porymap)
 script Tidesmercyinterior_BurstRanger_NoOp {
     end
 }
@@ -45,14 +45,14 @@ script RangerA_Script {
         ))
         setflag(FLAG_MET_RANGER_A)
     } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox("Tasmin: Meet the Captain when you’re ready. I’ll log your gear after.")
+        msgbox("Tasmin: Meet the Captain when you're ready. I'll log your gear after.")
     } else {
         # Starter picked; give a quick loadout tip per choice
         switch (var(VAR_STARTER_CHOICE)) {
             case 0:
                 msgbox("Tasmin: Treecko. Good call. Grab spare line and a repel case. Canopy routes get tight.")
             case 1:
-                msgbox("Tasmin: Torchic. I’ll stage thermal wraps and spare canteens. Heat drills tomorrow.")
+                msgbox("Tasmin: Torchic. I'll stage thermal wraps and spare canteens. Heat drills tomorrow.")
             case 2:
                 msgbox("Tasmin: Mudkip. Drybag and water filters are in the crate by the door. Flood lanes are messy.")
         }
@@ -67,7 +67,7 @@ script RangerB_Script {
     if (!flag(FLAG_MET_RANGER_B)) {
         msgbox(format(
             "Ranger Corin: Ropes and rescue. If it needs hauling, anchoring, or not falling,\n"
-            "I’m your guy. Congrats on passing the boards."
+            "I'm your guy. Congrats on passing the boards."
         ))
         setflag(FLAG_MET_RANGER_B)
     } elif (!flag(FLAG_GOT_STARTER)) {
@@ -75,11 +75,11 @@ script RangerB_Script {
     } else {
         switch (var(VAR_STARTER_CHOICE)) {
             case 0:
-                msgbox("Corin: Treecko’s grip is money on wet stone. We’ll teach you belays on the karst.")
+                msgbox("Corin: Treecko's grip is money on wet stone. We'll teach you belays on the karst.")
             case 1:
-                msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I’ll run you through anchors.")
+                msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I'll run you through anchors.")
             case 2:
-                msgbox("Corin: Mudkip’s a natural in surge pools. We'll do throw-bag practice after lunch.")
+                msgbox("Corin: Mudkip's a natural in surge pools. We'll do throw-bag practice after lunch.")
         }
     }
     release
@@ -123,7 +123,7 @@ script CaptainRoom_Talk {
         msgbox(format(
             "Welcome aboard. Corymbra is a restricted research zone.\n"
             "Forty years ago the Bloom Project overshot the mark.\p"
-            "We’re a League-authorized Ranger task force. No capture stylers. Poké Balls only.\n"
+            "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\n"
             "We build bonds that outlast storms.\p"
             "Choose your partner: TREECKO, TORCHIC, or MUDKIP."
         ))
@@ -198,7 +198,7 @@ script(local) Give_Starter2 {
 
 # =========================================
 # 4) POST-STARTER: bursting ranger + storm → deck → beach
-# Requires a hidden OBJ_BURST_RANGER in Captain’s room (set Hidden in Porymap).
+# Requires a hidden OBJ_BURST_RANGER in Captain's room (set Hidden in Porymap).
 # =========================================
 
 movement BurstRanger_Enter {
@@ -216,7 +216,7 @@ script PostStarter_StormInterrupt {
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
     msgbox(format(
-        "Ranger: Captain—massive storm just appeared out of nowhere!\n"
+        "Ranger: Captain! Massive storm just appeared out of nowhere!\n"
         "Barometer spiked. It`s right on top of us!"
     ))
     msgbox("Captain Mara: Move. All hands topside.")
