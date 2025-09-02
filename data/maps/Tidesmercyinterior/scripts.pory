@@ -217,7 +217,7 @@ script PostStarter_StormInterrupt {
     waitmovement(0)
     msgbox(format(
         "Ranger: Captain! Massive storm just appeared out of nowhere!\n"
-        "Barometer spiked. It`s right on top of us!"
+        "Barometer spiked. It's right on top of us!"
     ))
     msgbox("Captain Mara: Move. All hands topside.")
     setflag(FLAG_STORM_STARTED)
