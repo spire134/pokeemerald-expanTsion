@@ -14,6 +14,7 @@ script Deck_Stick{
 
 script Deck_StormCutscene {
     lockall
+    fadescreen(FADE_FROM_BLACK)
     msgbox(format("Captain Mara: Stay cautious and learn. We'll be right behind you if anything gets…"))
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather

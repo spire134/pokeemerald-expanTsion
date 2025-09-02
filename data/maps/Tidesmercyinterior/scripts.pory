@@ -17,15 +17,15 @@ script PlayerRoom_Note {
     if (!flag(FLAG_NOTE_READ)) {
         msgbox(format(
             "RANGER RECRUIT,\p"
-            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\n"
+            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\l"
             "then report to my quarters for partner assignment at your earliest convenience.\p"
             "Professional enthusiasm is encouraged.\n"
             "- Captain Mara Kealoha"
         ))
         setflag(FLAG_NOTE_READ)
-        msgbox("A crisp, comically professional note from the Captain.")
+        msgbox("A crisp, professional note from the Captain.")
     } else {
-        msgbox("“Report to my quarters for partner assignment.”")
+        msgbox(format("“Report to my quarters for partner assignment.”"))
     }
     release
     end
@@ -41,7 +41,7 @@ script RangerA_Script {
     faceplayer
     if (!flag(FLAG_MET_RANGER_A)) {
         msgbox(format(
-            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,\n"
+            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,\l"
             "and the schedule. It helps, if everyone reads the schedule.\p"
             "Welcome aboard."
         ))
@@ -228,6 +228,5 @@ script PostStarter_StormInterrupt {
     # Adjust these deck coords to somewhere sensible on SS_Tides_Mercy
     warp(MAP_SS_TIDES_MERCY, 19, 8)
     fadescreen(FADE_FROM_BLACK)
-    call(Deck_StormCutscene)
     end
 }
