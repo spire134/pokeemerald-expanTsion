@@ -6,7 +6,6 @@ script HideBurstRanger{
     hideobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
 }
 
-# A no-op talk script for the burst ranger (so his Script field isn't blank in Porymap)
 script Tidesmercyinterior_BurstRanger_NoOp {
     end
 }

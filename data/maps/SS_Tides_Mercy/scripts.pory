@@ -1,8 +1,7 @@
 mapscripts SS_Tides_Mercy_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION: Deck_Stick
-}
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE: OnTransition
 
-script Deck_Stick{
+script OnTransition{
     if(flag(FLAG_STORM_STARTED))
     {
         call(Deck_StormCutscene)
