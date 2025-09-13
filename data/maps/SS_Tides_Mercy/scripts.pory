@@ -1,6 +1,6 @@
 mapscripts SS_Tides_Mercy_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_UNUSED_0x404E, 0: DeckStormCutscene
+        VAR_UNUSED_0x404E, 1: DeckStormCutscene
     ]
 }
 
@@ -9,7 +9,7 @@ script DeckStormCutscene {
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather
     fadescreen(FADE_FROM_BLACK)
-    setvar(VAR_UNUSED_0x404E, 1)
+    setvar(VAR_UNUSED_0x404E, 2)
     msgbox(format("Captain Mara: Stay cautious and learn. We'll be right behind you if anything gets…"))
     # Quick shake
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right))
@@ -19,7 +19,7 @@ script DeckStormCutscene {
     waitse
     playse(SE_THUNDER)
     # Warp to the beach in front of the wreck (tune these coords)
-    warp(MAP_SHOREFALL_STRAND, 17, 17)
+    warp(MAP_SHOREFALL_STRAND, 10, 19)
     fadescreen(FADE_FROM_BLACK)
     releaseall
     end

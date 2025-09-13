@@ -1,6 +1,6 @@
 mapscripts SHOREFALL_STRAND_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_UNUSED_0x404E, 1: Shorefall_OnEnter
+        VAR_UNUSED_0x404E, 2: Shorefall_OnEnter
     ]
 }
 
@@ -17,22 +17,15 @@ script Shorefall_OnEnter {
         "You are suddenly attacked by a Pokémon!"
     ))
     # Immediate wild encounter: level 2 ENCOUNTER_SPECIES
-    setwildbattle(SPECIES_WATTREL, 2, ITEM_NONE)
-    dowildbattle
-    # Check outcome and branch text. GetBattleOutcome special writes to VAR_RESULT.
-    specialvar(VAR_RESULT, GetBattleOutcome)
-    if (var(VAR_RESULT) != 1) {   # not a straight win
-        msgbox("The startled bird skitters off down the strand.")
-    } else {
-        msgbox("You steady your partner. The wind begins to ease… a little.")
-    }
+    special(ChooseStarter)
+    msgbox("You steady your partner. The wind begins to ease… a little.")
     # Heal either way
     special(HealPlayerParty)
     # Set a temporary respawn near the wreck
     # NOTE: You must define HEAL_LOCATION_SHOREFALL_STRAND in include/constants/heal_locations.h
     # and map it to SHOREFALL_STRAND (X=6,Y=9 or your chosen tile) in src/heal_locations.c
     setrespawn(HEAL_LOCATION_SHOREFALL_STRAND)
-    setvar(VAR_UNUSED_0x404E, 2)
+    setvar(VAR_UNUSED_0x404E, 3)
     releaseall
     end
 }
