@@ -4442,16 +4442,6 @@
       "blockdata_filepath": "data/layouts/SHOREFALL_STRAND/map.bin"
     },
     {
-      "id": "LAYOUT_SHOREFALL_STRAND_WEST",
-      "name": "SHOREFALL_STRAND_WEST_Layout",
-      "width": 40,
-      "height": 30,
-      "primary_tileset": "gTileset_PorytilesGeneral",
-      "secondary_tileset": "gTileset_Beach",
-      "border_filepath": "data/layouts/SHOREFALL_STRAND_WEST/border.bin",
-      "blockdata_filepath": "data/layouts/SHOREFALL_STRAND_WEST/map.bin"
-    },
-    {
       "id": "LAYOUT_SHUNU_BEACH_WEST",
       "name": "SHUNU_BEACH_WEST_Layout",
       "width": 40,
