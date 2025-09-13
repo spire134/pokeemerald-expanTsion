@@ -1,14 +1,4 @@
-mapscripts Tidesmercyinterior_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION: HideBurstRanger
-}
-
-script HideBurstRanger{
-    hideobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
-}
-
-script Tidesmercyinterior_BurstRanger_NoOp {
-    end
-}
+mapscripts Tidesmercyinterior_MapScripts {}
 
 
 script PlayerRoom_Note {
@@ -213,7 +203,7 @@ movement BurstRanger_Enter {
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
     # Ranger bursts in
-    showobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
+    addobject(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
     playse(SE_EXIT)
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)

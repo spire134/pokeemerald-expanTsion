@@ -1,5 +1,7 @@
 mapscripts SHOREFALL_STRAND_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION: Shorefall_OnEnter
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_UNUSED_0x404E, 1: Shorefall_OnEnter
+    ]
 }
 
 # =========================================
@@ -7,7 +9,6 @@ mapscripts SHOREFALL_STRAND_MapScripts {
 # =========================================
 
 script Shorefall_OnEnter {
-    if (flag(FLAG_SHOREFALL_INTRO)) { end }
     lockall
     msgbox(format(
         "…\p"
@@ -31,7 +32,7 @@ script Shorefall_OnEnter {
     # NOTE: You must define HEAL_LOCATION_SHOREFALL_STRAND in include/constants/heal_locations.h
     # and map it to SHOREFALL_STRAND (X=6,Y=9 or your chosen tile) in src/heal_locations.c
     setrespawn(HEAL_LOCATION_SHOREFALL_STRAND)
-    setflag(FLAG_SHOREFALL_INTRO)
+    setvar(VAR_UNUSED_0x404E, 2)
     releaseall
     end
 }

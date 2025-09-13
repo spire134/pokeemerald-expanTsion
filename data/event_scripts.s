@@ -1165,3 +1165,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SHOREFALL_STRAND/scripts.inc"
 
 	.include "data/maps/SHOREFALL_STRAND_WEST/scripts.inc"
+
+	.include "data/maps/SHUNU_BEACH_WEST/scripts.inc"
