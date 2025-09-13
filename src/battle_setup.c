@@ -863,7 +863,7 @@ u8 GetSpecialBattleTransition(s32 id)
 
 void ChooseStarter(void)
 {
-    SetMainCallback2(CB2_ChooseStarter);
+    // SetMainCallback2(CB2_ChooseStarter);
     gMain.savedCallback = CB2_GiveStarter;
 }
 

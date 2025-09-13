@@ -204,7 +204,9 @@ script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
     # Ranger bursts in
     addobject(OBJ_BURST_RANGER)
+    showobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
     playse(SE_EXIT)
+    waitse
     setvar(VAR_UNUSED_0x404E, 1)
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
