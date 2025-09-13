@@ -22,7 +22,9 @@ script Shorefall_OnEnter {
     setvar(VAR_UNUSED_0x404E, 3)
     setwildbattle(SPECIES_WATTREL, 2)
     dowildbattle
-    msgbox("You steady your partner. The wind begins to ease… a little.")
+    msgbox(format(
+            "You steady your partner. The wind begins to ease… a little."
+            ))
     # Heal either way
     special(HealPlayerParty)
     # Set a temporary respawn near the wreck

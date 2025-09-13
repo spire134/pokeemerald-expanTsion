@@ -194,7 +194,10 @@ script(local) Give_Starter2 {
 # =========================================
 
 movement BurstRanger_Enter {
-    walk_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_left
     face_right
     face_left
     face_up
