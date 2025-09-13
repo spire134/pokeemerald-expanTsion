@@ -203,7 +203,7 @@ movement BurstRanger_Enter {
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
     # Ranger bursts in
-    addobject(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
+    addobject(OBJ_BURST_RANGER)
     playse(SE_EXIT)
     setvar(VAR_UNUSED_0x404E, 1)
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
