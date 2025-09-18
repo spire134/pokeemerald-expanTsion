@@ -3,7 +3,6 @@ mapscripts Hazolt_Gym_MapScripts {}
 script Mara_Gym_Script {
     lockall
     faceplayer
-    # If not started, begin the field test
     if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
         msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.
         Thanks to Eon's stewardship, we drove ashore close to a village, and we've set up our HQ here.
@@ -28,7 +27,9 @@ script Mara_Gym_Script {
         msgbox((format"Mara: All accounted for. Nice work, Ranger {PLAYER}. Talk to me when you want to test what you’ve learned."))
         setflag(FLAG_MARA_EVAL_READY)
         clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
-        showobjectat()
+        addobject(LOCALID_EON_GYM)
+        addobject(LOCALID_TASMIN_GYM)
+        addobject(LOCALID_CORIN_GYM)
         releaseall
         end
     }
@@ -57,9 +58,8 @@ script Ranger_Post_Mara_Cutscene {
     [Player], take Cut and clear the western woods. You've earned it."))
     giveitem(ITEM_HM01)
     applymovement(LOCALID_MARA, walk_in_place_down)
-    waitmovement
+    waitmovement(0)
     msgbox("Mara: Good luck. I've perfected this Cut HM; you’ll need it.")
-    # You can move NPCs at this point or just leave them at HQ if you want to simplify.
     return
 }
 
@@ -67,16 +67,19 @@ script Eon_Gym_Script {
     lockall
     faceplayer
     msgbox(format("I've gotta prepare my Chinchou for Diving to get through those flooded tunnels."))
+    releaseall
 }
 script Corin_Gym_Script {
     lockall
     faceplayer
     msgbox(format("Let's go, some good training and good food and we can move those boulders! 
     I gotta request extra rations!"))
+    releaseall
 }
 
 script Tasmin_Gym_Script {
     lockall
     faceplayer
     msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."))
+    releaseall
 }

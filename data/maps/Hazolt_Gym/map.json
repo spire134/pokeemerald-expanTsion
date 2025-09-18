@@ -31,8 +31,8 @@
     {
       "local_id": "LOCALID_EON_GYM",
       "graphics_id": "OBJ_EVENT_GFX_BRANDON",
-      "x": 3,
-      "y": 7,
+      "x": 7,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
