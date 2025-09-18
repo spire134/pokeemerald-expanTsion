@@ -137,6 +137,18 @@
       "map": "MAP_SHOREFALL_STRAND",
       "x": 10,
       "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_SHUNU_BEACH_WEST",
+      "map": "MAP_SHUNU_BEACH_WEST",
+      "x": 20,
+      "y": 22
+    },
+    {
+      "id": "HEAL_LOCATION_HAZOLT_VILLAGE",
+      "map": "MAP_HAZOLT_VILLAGE",
+      "x": 19,
+      "y": 16
     }
   ]
 }

@@ -17,6 +17,11 @@
       "map": "MAP_SHUNU_BEACH_WEST",
       "offset": -20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_SHUNU_BEACH_CLIFFS",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [],

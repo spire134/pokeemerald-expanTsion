@@ -1,0 +1,10 @@
+mapscripts HAZOLT_CENTER_MapScripts {}
+
+script Script_HazoltNurse {
+    setvar(VAR_0x800B, LOCALID_HAZOLT_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_down))   
+    release
+}

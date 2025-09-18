@@ -4434,7 +4434,7 @@
     {
       "id": "LAYOUT_SHOREFALL_STRAND",
       "name": "SHOREFALL_STRAND_Layout",
-      "width": 40,
+      "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_PorytilesGeneral",
       "secondary_tileset": "gTileset_Beach",
@@ -4450,6 +4450,106 @@
       "secondary_tileset": "gTileset_Beach",
       "border_filepath": "data/layouts/SHUNU_BEACH_WEST/border.bin",
       "blockdata_filepath": "data/layouts/SHUNU_BEACH_WEST/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_VILLAGE",
+      "name": "HAZOLT_VILLAGE_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/HAZOLT_VILLAGE/border.bin",
+      "blockdata_filepath": "data/layouts/HAZOLT_VILLAGE/map.bin"
+    },
+    {
+      "id": "LAYOUT_STATIC_VALLEY",
+      "name": "STATIC_VALLEY_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/STATIC_VALLEY/border.bin",
+      "blockdata_filepath": "data/layouts/STATIC_VALLEY/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAGNET_CAVE",
+      "name": "MAGNET_CAVE_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MAGNET_CAVE/border.bin",
+      "blockdata_filepath": "data/layouts/MAGNET_CAVE/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_CENTER",
+      "name": "HAZOLT_CENTER_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/HAZOLT_CENTER/border.bin",
+      "blockdata_filepath": "data/layouts/HAZOLT_CENTER/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_MART",
+      "name": "Hazolt_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Hazolt_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_TRADE_HOUSE",
+      "name": "Hazolt_TradeHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Hazolt_TradeHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_TradeHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_ITEM_HOUSE",
+      "name": "Hazolt_ItemHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Hazolt_ItemHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_ItemHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUNU_BEACH_CLIFFS",
+      "name": "Shunu_Beach_Cliffs_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_PorytilesGeneral",
+      "secondary_tileset": "gTileset_Beach",
+      "border_filepath": "data/layouts/Shunu_Beach_Cliffs/border.bin",
+      "blockdata_filepath": "data/layouts/Shunu_Beach_Cliffs/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_POOL",
+      "name": "Azure_Pool_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Azure_Pool/border.bin",
+      "blockdata_filepath": "data/layouts/Azure_Pool/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_GYM",
+      "name": "Hazolt_Gym_Layout",
+      "width": 12,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Hazolt_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_Gym/map.bin"
     }
   ]
 }

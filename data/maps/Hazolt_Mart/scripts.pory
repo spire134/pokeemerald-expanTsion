@@ -1,0 +1,51 @@
+mapscripts Hazolt_Mart_MapScripts {}
+
+script Tasmin_Field_Script {
+    lockall
+    faceplayer
+    if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        msgbox(format("Tasmin: I'm stocking up here, I'll have your supplies ready soon."))
+        releaseall
+        end
+    }
+    if (!flag(FLAG_TASMIN_CLEARED)) {
+        msgbox(format("Tasmin: Sorted and labeled, now would you like to battle? 
+        I recommend you have a few extra teamates first!"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+        trainerbattle_single(TRAINER_TASMIN_LOGISTICS, "Let me see if you'll need rescuing!", "Corin: Good stuff!")
+        msgbox("Corin: Let's meet at HQ with Tasmin!")
+        setflag(FLAG_CORIN_CLEARED)
+        # Hide Corin from field map; show him at gym (use hideobject/showobject as needed)
+        releaseall
+        }
+        else{
+            releaseall
+        }
+    }
+    else{
+    # Already cleared; should be gone from field, but for safety:
+    msgbox("Corin: I'll wrap up here soon.")
+    releaseall
+    }
+}
+
+script Hazolt_MartEmployee {
+    lock
+    faceplayer
+    message(format("Welcome, what would you like?"))
+    waitmessage
+    pokemart(Hazolt_MartBase)
+    msgbox(format("Thank you, come again!"))
+    applymovement(LOCALID_HAZOLT_MART_CLERK, moves(face_right))
+    release
+}
+
+mart Hazolt_MartBase {
+    ITEM_POKE_BALL
+    ITEM_ANTIDOTE
+    ITEM_POTION
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+}

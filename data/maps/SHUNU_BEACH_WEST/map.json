@@ -17,6 +17,11 @@
       "map": "MAP_SHOREFALL_STRAND",
       "offset": 20,
       "direction": "right"
+    },
+    {
+      "map": "MAP_HAZOLT_VILLAGE",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [],

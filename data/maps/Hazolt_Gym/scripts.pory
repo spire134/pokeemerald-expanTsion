@@ -1,0 +1,82 @@
+mapscripts Hazolt_Gym_MapScripts {}
+
+script Mara_Gym_Script {
+    lockall
+    faceplayer
+    # If not started, begin the field test
+    if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.
+        Thanks to Eon's stewardship, we drove ashore close to a village, and we've set up our HQ here.
+        Here are some supplies, make use of them to prepare yourself.
+        Before your evaluation, I need you to run field checks with Eon, Corin, and Tasmin. 
+        Report back after all three are complete."))
+        giveitem(ITEM_POKE_BALL, 10)
+        setflag(FLAG_MARA_FIELD_TEST_STARTED)
+        clearflag(FLAG_BEGINNING_TRAINERS)
+        releaseall
+        end
+    }
+    # Wait for all to clear and return
+    if (!flag(FLAG_EON_CLEARED) || !flag(FLAG_CORIN_CLEARED) || !flag(FLAG_TASMIN_CLEARED)) {
+        msgbox("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
+        Corin is investigating a cave in that gorge to the west, and Tasmin is working on
+        logistics at the Mart. Report back when you are done.")
+        releaseall
+        end
+    }
+    if (!flag(FLAG_MARA_EVAL_READY)) {
+        msgbox((format"Mara: All accounted for. Nice work, Ranger {PLAYER}. Talk to me when you want to test what you’ve learned."))
+        setflag(FLAG_MARA_EVAL_READY)
+        clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
+        showobjectat()
+        releaseall
+        end
+    }
+    if (!flag(FLAG_MARA_DEFEATED)) {
+        # Run your battle event
+        trainerbattle_double(TRAINER_MARA_EVAL, "Let's see if you can make the cut.", "Mara: That's an easy pass. Well done.", 
+        "Mara: This is to be a double battle. Return with sufficient teammates.")
+        releaseall
+        setflag(FLAG_BADGE01_GET)
+        end
+    }
+    # After Mara is defeated, run reassignments if not done
+    if (!flag(FLAG_RANGERS_REASSIGNED)) {
+        call(Ranger_Post_Mara_Cutscene)
+        }
+    msgbox("Mara: You’ve got Cut. Head west into the woods for your next assignment.")
+    releaseall
+    end
+}
+
+script Ranger_Post_Mara_Cutscene {
+    lockall
+    setflag(FLAG_RANGERS_REASSIGNED)
+    applymovement(LOCALID_MARA, walk_in_place_down)
+    msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the caves. Tasmin, restock the Mart. 
+    [Player], take Cut and clear the western woods. You've earned it."))
+    giveitem(ITEM_HM01)
+    applymovement(LOCALID_MARA, walk_in_place_down)
+    waitmovement
+    msgbox("Mara: Good luck. I've perfected this Cut HM; you’ll need it.")
+    # You can move NPCs at this point or just leave them at HQ if you want to simplify.
+    return
+}
+
+script Eon_Gym_Script {
+    lockall
+    faceplayer
+    msgbox(format("I've gotta prepare my Chinchou for Diving to get through those flooded tunnels."))
+}
+script Corin_Gym_Script {
+    lockall
+    faceplayer
+    msgbox(format("Let's go, some good training and good food and we can move those boulders! 
+    I gotta request extra rations!"))
+}
+
+script Tasmin_Gym_Script {
+    lockall
+    faceplayer
+    msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."))
+}

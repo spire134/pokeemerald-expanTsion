@@ -1,0 +1,29 @@
+mapscripts STATIC_VALLEY_MapScripts {}
+
+
+script Zatik_Woman_1 {
+    lock
+    trainerbattle_single(TRAINER_DAISY, "The view is so nice from here, perfect for a lively battle.", "A relaxing but fun time.")
+    msgbox(format("The best flowers grow just out of my reach!"))
+    release
+}
+
+script Zatik_Woman_2 {
+    lock
+    trainerbattle_single(TRAINER_JOCELYN, "The view is so nice from here, perfect for a lively battle.", "A relaxing but fun time.")
+    msgbox(format("The best flowers grow just out of my reach!"))
+    release
+}
+script Zatik_Camper_1 {
+    lock
+    trainerbattle_single(TRAINER_DREW, "I hear you Rangers aren't so tough!", "All right, I'm sorry!")
+    msgbox(format("I'll never look down on the Rangers again!"))
+    release
+}
+
+script Zatik_Rocker_1 {
+    lock
+    trainerbattle_single(TRAINER_FABIAN, "I hear you Rangers aren't so tough!", "All right, I'm sorry!")
+    msgbox(format("I'll never look down on the Rangers again!"))
+    release
+}

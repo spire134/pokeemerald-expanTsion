@@ -1,0 +1,8 @@
+mapscripts Hazolt_ItemHouse_MapScripts {}
+
+script Karate_Master{
+    lockall
+    msgbox(format("One must earn their results one day at a time. There is no rushing tecnique."))
+    giveitem(ITEM_MACHO_BRACE)
+    release
+}

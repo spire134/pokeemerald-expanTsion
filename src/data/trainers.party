@@ -632,13 +632,25 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Petilil  
+Ability: Chlorophyll  
+Level: 5  
+Tera Type: Grass  
+Mild Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Absorb  
+- Growth  
+- Helping Hand  
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flabébé  
+Ability: Flower Veil  
+Level: 5  
+Tera Type: Fairy  
+Quirky Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Tackle  
+- Vine Whip  
+
 
 === TRAINER_ROSE_1 ===
 Name: ROSE
@@ -3706,13 +3718,38 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Zigzagoon-Galar (M)  
+Ability: Pickup  
+Level: 6  
+Tera Type: Dark  
+Rash Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leer  
+- Tackle  
+- Sand Attack  
+- Lick  
+
+Zigzagoon-Galar (M)  
+Ability: Pickup  
+Level: 6  
+Tera Type: Dark  
+Rash Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leer  
+- Tackle  
+- Sand Attack  
+- Lick  
+
+Swablu  
+Ability: Natural Cure  
+Level: 7  
+Tera Type: Normal  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Peck  
+- Growl  
+- Disarming Voice  
+
+
 
 === TRAINER_BEAU ===
 Name: BEAU
@@ -4788,39 +4825,52 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+=== TRAINER_MARA_EVAL ===
+Name: Mara
 Class: Leader
-Pic: Leader Roxanne
+Pic: Leaf
 Gender: Female
 Music: Female
-Items: Potion / Potion
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Basic Trainer / Ace Pokemon
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Diglett-Alola (M)  
+Ability: Tangling Hair  
+Level: 13  
+Naive Nature  
+IVs: 6 HP / 20 Atk / 10 Def / 20 SpA / 0 SpD / 27 Spe  
+- Metal Claw  
+- Growl  
+- Mud Shot  
+- Ally Switch  
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Aron (F)  
+Ability: Sturdy  
+Level: 13  
+IVs: 12 HP / 22 Def / 10 SpA / 10 SpD / 8 Spe  
+- Mud-Slap  
+- Headbutt  
+- Metal Claw  
+- Rock Tomb  
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Bronzor  
+Ability: Levitate  
+Level: 14  
+Brave Nature  
+IVs: 15 HP / 24 Atk / 14 Def / 0 SpA / 7 SpD / 8 Spe  
+- Psywave  
+- Ally Switch  
+- Confuse Ray  
+- Take Down  
+
+Honedge (F) @ Oran Berry  
+Ability: No Guard  
+Level: 15  
+IVs: 12 HP / 12 Atk / 11 Def / 10 SpA / 18 SpD / 2 Spe  
+- Cut  
+- Shadow Sneak  
+- Swords Dance  
+- Fury Cutter  
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -7840,9 +7890,24 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Clobbopus  
+Ability: Limber  
+Level: 7  
+Tera Type: Fighting  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leer  
+- Rock Smash  
+- Feint  
+
+Chewtle  
+Ability: Strong Jaw  
+Level: 7  
+Tera Type: Water  
+Modest Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Tackle  
+- Water Gun  
+- Bite  
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -10230,19 +10295,34 @@ Seaking
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_JACKSON_1 ===
-Name: JACKSON
+=== TRAINER_CORIN_RESCUE ===
+Name: CORIN
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Breloom
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Morelull  
+Ability: Illuminate  
+Level: 8  
+IVs: 10 HP / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Astonish  
+- Absorb  
+- Confuse Ray  
+- Ingrain  
+
+Makuhita  
+Ability: Thick Fat  
+Level: 8  
+IVs: 0 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe  
+- Arm Thrust  
+- Sand Attack  
+- Tackle  
+- Focus Energy  
+
+
 
 === TRAINER_LORENZO ===
 Name: LORENZO
@@ -12011,26 +12091,31 @@ Xatu
 Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_ASHLEY ===
-Name: ASHLEY
-Class: Picnicker
-Pic: Picnicker
+=== TRAINER_TASMIN_LOGISTICS ===
+Name: Tasmin
+Class: Pkmn Ranger
+Pic: Pkmn Ranger F
 Gender: Female
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Glameow (M)  
+Ability: Own Tempo  
+Level: 6  
+IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe  
+- Growl  
+- Scratch  
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shuppet (M) 
+Ability: Frisk  
+Level: 7  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Astonish  
+- Screech  
+- Night Shade  
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 
 === TRAINER_WALLY_MAUVILLE ===
 Name: WALLY
@@ -13195,12 +13280,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 18
+Toxel
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aron
-Level: 18
+Tynamo
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANGELINA ===
@@ -13859,13 +13944,33 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Geodude-Alola (M)  
+Ability: Magnet Pull  
+Level: 6  
+Tera Type: Rock  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Defense Curl  
+- Tackle  
+- Rock Polish  
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Geodude-Alola (M)  
+Ability: Magnet Pull  
+Level: 6  
+Tera Type: Rock  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Defense Curl  
+- Tackle  
+- Rock Polish  
+
+Aron (M)  
+Ability: Sturdy  
+Level: 6   
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Tackle  
+- Harden  
+- Metal Claw 
+
+
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -13950,9 +14055,38 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Toxel  
+Ability: Rattled  
+Level: 8  
+Tera Type: Electric  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Acid  
+- Belch  
+- Flail  
+- Nuzzle  
+
+Shinx  
+Ability: Rivalry  
+Level: 7  
+Tera Type: Electric  
+Relaxed Nature  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leer  
+- Tackle  
+- Thunder Shock  
+
+Shinx  
+Ability: Rivalry  
+Level: 9  
+Tera Type: Electric  
+Relaxed Nature  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leer  
+- Tackle  
+- Thunder Shock  
+- Charge  
+
+
 
 === TRAINER_DAYTON ===
 Name: DAYTON
@@ -15989,18 +16123,36 @@ Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRANDON ===
-Name: BRANDON
-Class: Pyramid King
+=== TRAINER_EON_SCOUT ===
+Name: Eon
+Class: Pkmn Ranger
 Pic: Pyramid King Brandon
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Beldum
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Taillow (M)  
+Ability: Guts  
+Level: 8 
+Careful Nature  
+IVs: 7 HP / 10 Atk / 10 Def / 10 SpA / 15 SpD / 18 Spe  
+- Focus Energy
+- Peck
+- Quick Attack
+- Growl
+
+Chinchou (F)  
+Ability: Volt Absorb
+Level: 8
+Bashful Nature
+IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe  
+- Thunder Wave
+- Supersonic
+- Water Gun
+- Electro Ball
+
+
 
 === TRAINER_ANDRES_2 ===
 Name: ANDRES

@@ -1165,3 +1165,23 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SHOREFALL_STRAND/scripts.inc"
 
 	.include "data/maps/SHUNU_BEACH_WEST/scripts.inc"
+
+	.include "data/maps/HAZOLT_VILLAGE/scripts.inc"
+
+	.include "data/maps/STATIC_VALLEY/scripts.inc"
+
+	.include "data/maps/MAGNET_CAVE/scripts.inc"
+
+	.include "data/maps/HAZOLT_CENTER/scripts.inc"
+
+	.include "data/maps/Hazolt_Mart/scripts.inc"
+
+	.include "data/maps/Hazolt_TradeHouse/scripts.inc"
+
+	.include "data/maps/Hazolt_ItemHouse/scripts.inc"
+
+	.include "data/maps/Shunu_Beach_Cliffs/scripts.inc"
+
+	.include "data/maps/Azure_Pool/scripts.inc"
+
+	.include "data/maps/Hazolt_Gym/scripts.inc"

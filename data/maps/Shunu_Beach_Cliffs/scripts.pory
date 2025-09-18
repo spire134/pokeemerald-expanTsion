@@ -1,0 +1,29 @@
+mapscripts Shunu_Beach_Cliffs_MapScripts {}
+
+script Eon_Field_Script {
+    lockall
+    faceplayer
+    if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        msgbox(format("Eon: I'm mapping the cliffs. This route is a dead end. You should go to HQ. West."))
+        releaseall
+        end
+    }
+    if (!flag(FLAG_EON_CLEARED)) {
+        msgbox("Eon: Ready for the field check?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+        trainerbattle_single(TRAINER_EON_SCOUT, "Show me your skill.", "Eon: Not bad. I'll see you at HQ.")
+        msgbox("Eon: Good. Mark your wins, study your losses.")
+        setflag(FLAG_EON_CLEARED)
+        # Hide Eon from field map; show him at gym (use hideobject/showobject as needed)
+        releaseall
+        }
+        else{
+            releaseall
+        }
+    }
+    else{
+    # Already cleared; should be gone from field, but for safety:
+    msgbox("Eon: See you back at HQ.")
+    releaseall
+    }
+}
