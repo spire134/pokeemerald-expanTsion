@@ -44,6 +44,16 @@
       "dest_warp_id": "7"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "StartGameFlags"
+    }
+  ],
   "bg_events": []
 }

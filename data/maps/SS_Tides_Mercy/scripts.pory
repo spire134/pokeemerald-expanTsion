@@ -6,7 +6,6 @@ mapscripts SS_Tides_Mercy_MapScripts {
 
 script DeckStormCutscene {
     lockall
-    goto(StartGameFlags)
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather
     fadescreen(FADE_FROM_BLACK)
@@ -28,5 +27,4 @@ script DeckStormCutscene {
 
 script StartGameFlags {
     setflag(FLAG_BEGINNING_TRAINERS)
-    return
 }
