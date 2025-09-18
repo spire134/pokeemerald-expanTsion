@@ -642,7 +642,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growth  
 - Helping Hand  
 
-Flabébé  
+Flabebe  
 Ability: Flower Veil  
 Level: 5  
 Tera Type: Fairy  
@@ -13280,13 +13280,25 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Toxel
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tynamo  
+Ability: Levitate  
+Level: 8  
+Tera Type: Electric  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Charge Beam  
+- Spark  
+- Tackle  
+- Thunder Wave  
 
-Tynamo
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tynamo  
+Ability: Levitate  
+Level: 8  
+Tera Type: Electric  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Charge Beam  
+- Spark  
+- Tackle  
+- Thunder Wave  
 
 === TRAINER_ANGELINA ===
 Name: ANGELINA

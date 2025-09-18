@@ -45,7 +45,7 @@ script Mara_Gym_Script {
     if (!flag(FLAG_RANGERS_REASSIGNED)) {
         call(Ranger_Post_Mara_Cutscene)
         }
-    msgbox("Mara: You’ve got Cut. Head west into the woods for your next assignment.")
+    msgbox("Mara: You've got Cut. Head west into the woods for your next assignment.")
     releaseall
     end
 }
@@ -55,7 +55,7 @@ script Ranger_Post_Mara_Cutscene {
     setflag(FLAG_RANGERS_REASSIGNED)
     applymovement(LOCALID_MARA, walk_in_place_down)
     msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the caves. Tasmin, restock the Mart. 
-    [Player], take Cut and clear the western woods. You've earned it."))
+    {PLAYER}, take Cut and clear the western woods. You've earned it."))
     giveitem(ITEM_HM01)
     applymovement(LOCALID_MARA, walk_in_place_down)
     waitmovement(0)
