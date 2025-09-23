@@ -37,7 +37,7 @@ script Should_Read_Note {
         "Don't forget to read the note on your desk first.\n"
         ))
     waitbuttonpress
-    applymovement(OBJ_ID_PLAYER, moves(walk_up))
+    applymovement(LOCALID_PLAYER, moves(walk_up))
     release
     end
     } else {
