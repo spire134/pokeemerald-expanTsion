@@ -243,12 +243,11 @@ script PostStarter_StormInterrupt {
         "The barometer is going haywire, it's right on top of us!"
     ))
     waitmessage
-    emote_exclamation_mark(OBJ_CAPT_MARA)
-    applymovement(OBJ_CAPT_MARA, moves(walk_in_place_fast_left walk_fast_down walk_fast_down walk_fast_down))
+    applymovement(OBJ_CAPT_MARA, moves(emote_exclamation_mark walk_in_place_fast_left walk_fast_down walk_fast_down walk_fast_down))
     waitmovement(0)
     playse(SE_EXIT)
     waitse
-    hideobject(OBJ_CAPT_MARA)
+    removeobject(OBJ_CAPT_MARA)
     msgbox(format
         ("Captain Mara: Everybody move! All hands topside!"))
     setflag(FLAG_STORM_STARTED)

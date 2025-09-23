@@ -27,8 +27,7 @@ script Team_Hive_Drone {
     else {
         applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
         msgbox(format("DRONE: I can't wait for the Seer to return."))
-        emote_exclamation_mark(LOCALID_BOTDRONE)
-        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
+        applymovement(LOCALID_BOTDRONE, moves(emote_exclamation_mark walk_in_place_up))
         applymovement(LOCALID_BOTDRONE, moves(face_right))
         applymovement(LOCALID_TOPDRONE, moves(face_right))
         waitmovement(0)
@@ -44,7 +43,7 @@ script Team_Hive_Drone {
         waitmovement(0)
         removeobject(LOCALID_TOPDRONE)
         removeobject(LOCALID_BOTDRONE)
-        setflag (flag(STATIC_DRONE_FIGHT))
+        setflag(FLAG_STATIC_DRONE_FIGHT)
         release
     }
 }
