@@ -5772,7 +5772,7 @@ static const struct LevelUpMove sFarigirafLevelUpLearnset[] = {
 static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
-    LEVEL_UP_MOVE( 6, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_MOVE( 6, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
     LEVEL_UP_MOVE(12, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(17, MOVE_RAPID_SPIN),
@@ -5788,13 +5788,13 @@ static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sForretressLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE( 0, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_MOVE( 1, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_MAGNET_RISE),
     LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE( 1, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE( 1, MOVE_SELF_DESTRUCT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE(12, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(17, MOVE_RAPID_SPIN),

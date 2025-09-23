@@ -4550,6 +4550,46 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Hazolt_Gym/border.bin",
       "blockdata_filepath": "data/layouts/Hazolt_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_STATIC_BRIDGE",
+      "name": "Static_Bridge_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/Static_Bridge/border.bin",
+      "blockdata_filepath": "data/layouts/Static_Bridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_THORN_PASS",
+      "name": "Thorn_Pass_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Thorn_Pass/border.bin",
+      "blockdata_filepath": "data/layouts/Thorn_Pass/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUDDERWOOD_FIRST",
+      "name": "Shudderwood_First_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Shudderwood_First/border.bin",
+      "blockdata_filepath": "data/layouts/Shudderwood_First/map.bin"
+    },
+    {
+      "id": "LAYOUT_STAT_BRIDGE_BUSHHOUSE",
+      "name": "Stat_Bridge_Bushhouse_Layout",
+      "width": 9,
+      "height": 6,
+      "primary_tileset": "gTileset_SecretBase",
+      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "border_filepath": "data/layouts/Stat_Bridge_Bushhouse/border.bin",
+      "blockdata_filepath": "data/layouts/Stat_Bridge_Bushhouse/map.bin"
     }
   ]
 }

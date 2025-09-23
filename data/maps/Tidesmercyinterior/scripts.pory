@@ -14,11 +14,38 @@ script PlayerRoom_Note {
         ))
         setflag(FLAG_NOTE_READ)
     } else {
-        msgbox(format("“Report to my quarters for partner assignment.”"))
+        msgbox(format("
+        “Report to my quarters for partner assignment.”
+         - Captain Mara Kealoha"))
     }
+    setflag(FLAG_SYS_B_DASH)
+    setflag(FLAG_RECEIVED_RUNNING_SHOES)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    setflag(FLAG_SYS_NATIONAL_DEX)
+    special(EnableNationalPokedex)
+    special(SetUnlockedPokedexFlags)
+    setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+    msgbox(format("You grabbed your gear and shoes. Time to meet the Captain."))
     release
     end
 }
+
+script Should_Read_Note {
+    if (!flag(FLAG_NOTE_READ)) {
+    lock
+    msgbox(format(
+        "Don't forget to read the note on your desk first.\n"
+        ))
+    waitbuttonpress
+    applymovement(OBJ_ID_PLAYER, moves(walk_up))
+    release
+    end
+    } else {
+    end
+    }}
+
+
+
 # =========================================
 # 2) OPTIONAL SQUADMATE CHATS (interior)
 # Two share a room; one solo.
@@ -42,11 +69,11 @@ script RangerA_Script {
         # Starter picked; give a quick loadout tip per choice
         switch (var(VAR_STARTER_MON)) {
             case 0:
-                msgbox("Tasmin: Treecko. Good call. Grab spare line and a repel case. Canopy routes get tight.")
+                msgbox("Tasmin: TURTWIG. Good call. Grab spare line and a repel case. Canopy routes get tight.")
             case 1:
                 msgbox("Tasmin: Torchic. I'll stage thermal wraps and spare canteens. Heat drills tomorrow.")
             case 2:
-                msgbox("Tasmin: Mudkip. Drybag and water filters are in the crate by the door. Flood lanes are messy.")
+                msgbox("Tasmin: Froakie. Drybag and water filters are in the crate by the door. Flood lanes are messy.")
         }
     }
     release
@@ -67,11 +94,11 @@ script RangerB_Script {
     } else {
         switch (var(VAR_STARTER_MON)) {
             case 0:
-                msgbox("Corin: Treecko's grip is money on wet stone. We'll teach you belays on the karst.")
+                msgbox("Corin: TURTWIG's grip is money on wet stone. We'll teach you belays on the karst.")
             case 1:
                 msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I'll run you through anchors.")
             case 2:
-                msgbox("Corin: Mudkip's a natural in surge pools. We'll do throw-bag practice after lunch.")
+                msgbox("Corin: Froakie's a natural in surge pools. We'll do throw-bag practice after lunch.")
         }
     }
     release
@@ -93,11 +120,11 @@ script RangerSolo_Script {
     } else {
         switch (var(VAR_STARTER_MON)) {
             case 0:
-                msgbox("Eon: Treecko tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
+                msgbox("Eon: TURTWIG tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
             case 1:
                 msgbox("Eon: Torchic's tempo helps in sprints. Watch for dry lightning on the flats.")
             case 2:
-                msgbox("Eon: Mudkip opens flood paths. We'll chart sluices after the storm clears.")
+                msgbox("Eon: Froakie opens flood paths. We'll chart sluices after the storm clears.")
         }
     }
     release
@@ -117,7 +144,7 @@ script CaptainRoom_Talk {
             "Forty years ago, the Bloom Project overshot the mark.\p"
             "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\l"
             "We build bonds that outlast storms.\p"
-            "Choose your partner: TREECKO, TORCHIC, or MUDKIP."
+            "Choose your partner: TURTWIG, TORCHIC, or FROAKIE."
         ))
     } else {
         msgbox("You have your partner. Good. Stay flexible.")
@@ -127,10 +154,10 @@ script CaptainRoom_Talk {
 }
 
 # Place three Poké Ball objects in this room and hook these scripts
-script Starter_Treecko {
+script Starter_Turtwig {
     lockall
     if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
-    msgbox("Take TREECKO as your partner?", MSGBOX_YESNO)
+    msgbox("Take TURTWIG as your partner?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) { releaseall end }
     call(Give_Starter0)
     call(PostStarter_StormInterrupt)  # immediate story beat
@@ -149,10 +176,10 @@ script Starter_Torchic {
     end
 }
 
-script Starter_Mudkip {
+script Starter_Froakie {
     lockall
     if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
-    msgbox("Take MUDKIP as your partner?", MSGBOX_YESNO)
+    msgbox("Take FROAKIE as your partner?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) { releaseall end }
     call(Give_Starter2)
     call(PostStarter_StormInterrupt)
@@ -162,11 +189,11 @@ script Starter_Mudkip {
 
 script(local) Give_Starter0 {
     setvar((VAR_STARTER_MON), 0)
-    givemon(SPECIES_TREECKO, 5)
+    givemon(SPECIES_TURTWIG, 5)
     call(Common_EventScript_NameReceivedPartyMon)
     setflag(FLAG_GOT_STARTER)
     playfanfare(FANFARE_RG_OBTAIN_KEY_ITEM)
-    msgbox("TREECKO joined your squad.")
+    msgbox("TURTWIG joined your squad.")
     return
 }
 script(local) Give_Starter1 {
@@ -180,11 +207,11 @@ script(local) Give_Starter1 {
 }
 script(local) Give_Starter2 {
     setvar(VAR_STARTER_MON, 2)
-    givemon(SPECIES_MUDKIP, 5)
+    givemon(SPECIES_FROAKIE, 5)
     call(Common_EventScript_NameReceivedPartyMon)
     setflag(FLAG_GOT_STARTER)
     playfanfare(FANFARE_RG_OBTAIN_KEY_ITEM)
-    msgbox("MUDKIP joined your squad.")
+    msgbox("FROAKIE joined your squad.")
     return
 }
 
@@ -199,9 +226,7 @@ movement BurstRanger_Enter {
     walk_fast_up
     walk_left
     face_right
-    face_left
-    face_up
-}
+    }
 
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
@@ -215,13 +240,19 @@ script PostStarter_StormInterrupt {
     waitmovement(0)
     msgbox(format(
         "Ranger: Captain! Massive storm just appeared out of nowhere!"
-        "Barometer spiked. It's right on top of us!"
+        "The barometer is going haywire, it's right on top of us!"
     ))
-    msgbox("Captain Mara: Move! All hands topside.")
+    waitmessage
+    emote_exclamation_mark(OBJ_CAPT_MARA)
+    applymovement(OBJ_CAPT_MARA, moves(walk_in_place_fast_left walk_fast_down walk_fast_down walk_fast_down))
+    waitmovement(0)
+    playse(SE_EXIT)
+    waitse
+    hideobject(OBJ_CAPT_MARA)
+    msgbox(format
+        ("Captain Mara: Everybody move! All hands topside!"))
     setflag(FLAG_STORM_STARTED)
-    # Cut to deck, run the storm, then to beach
     fadescreen(FADE_TO_BLACK)
-    # Adjust these deck coords to somewhere sensible on SS_Tides_Mercy
     warp(MAP_SS_TIDES_MERCY, 19, 8)
     fadescreen(FADE_FROM_BLACK)
     end

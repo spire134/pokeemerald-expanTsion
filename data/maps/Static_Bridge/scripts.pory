@@ -1,0 +1,50 @@
+mapscripts Static_Bridge_MapScripts {}
+
+script OldRod_Guy {
+    lock
+    if (!flag(FLAG_RECEIVED_OLD_ROD)) {
+        msgbox(format("FISHER DON: Hey there! You look like you know your way around a rod and reel."
+        "Here, take this Old Rod. It's not much, but it'll get you started."))
+        giveitem(ITEM_OLD_ROD)
+        setflag(FLAG_RECEIVED_OLD_ROD)
+    }
+    else {
+        msgbox(format("FISHER DON: I fish here to catch Tadbulb, they make a great nightlight!"))
+    }
+    release
+}
+
+script Team_Hive_Drone {
+    lock
+    if (!flag(FLAG_BADGE01_GET)) {
+        applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
+        msgbox(format("DRONE: We've gotten quite a few recruits to join Team Hive recently."
+        "The seer will very pleased."))
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
+        msgbox(format("DRONE: Oh, another Ranger. But you look pretty weak. Maybe another time."))
+        release
+    }
+    else {
+        applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
+        msgbox(format("DRONE: I can't wait for the Seer to return."))
+        emote_exclamation_mark(LOCALID_BOTDRONE)
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
+        applymovement(LOCALID_BOTDRONE, moves(face_right))
+        applymovement(LOCALID_TOPDRONE, moves(face_right))
+        waitmovement(0)
+        msgbox(format("DRONE: Oh that look in your eye, you have a problem with us?"
+        "The Seer said not to battle Rangers, but you're annoying us!"))
+        trainerbattle_two_trainers(TRAINER_BRIDGE_TOPDRONE, "DRONE: You're pretty strong for a Ranger.", TRAINER_BRIDGE_BOTDRONE, "DRONE: Uh-oh, I'm out of bugs!")
+        applymovement(LOCALID_TOPDRONE, moves(walk_in_place_right))
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_right))
+        waitmovement(0)
+        msgbox(format("DRONE: Gah! You're stronger than we thought! Retreat!"))
+        applymovement(LOCALID_TOPDRONE, moves(walk_faster_left * 7))
+        applymovement(LOCALID_BOTDRONE, moves(walk_faster_left * 7))
+        waitmovement(0)
+        removeobject(LOCALID_TOPDRONE)
+        removeobject(LOCALID_BOTDRONE)
+        setflag (flag(STATIC_DRONE_FIGHT))
+        release
+    }
+}

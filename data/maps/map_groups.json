@@ -632,16 +632,20 @@
     "HAZOLT_VILLAGE",
     "STATIC_VALLEY",
     "MAGNET_CAVE",
-    "Shunu_Beach_Cliffs"
+    "Shunu_Beach_Cliffs",
+    "Static_Bridge",
+    "Thorn_Pass"
   ],
   "gMapGroup_New_Hazint": [
     "HAZOLT_CENTER",
     "Hazolt_Mart",
     "Hazolt_TradeHouse",
     "Hazolt_ItemHouse",
-    "Hazolt_Gym"
+    "Hazolt_Gym",
+    "Stat_Bridge_Bushhouse"
   ],
   "gMapGroup_New_Dungeons": [
-    "Azure_Pool"
+    "Azure_Pool",
+    "Shudderwood_First"
   ]
 }

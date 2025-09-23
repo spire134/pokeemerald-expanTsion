@@ -610,8 +610,8 @@
 #define TRAINER_HALEY_1                     604
 #define TRAINER_JANICE                      605
 #define TRAINER_VIVI                        606
-#define TRAINER_HALEY_2                     607
-#define TRAINER_HALEY_3                     608
+#define TRAINER_BRIDGE_TOPDRONE                     607
+#define TRAINER_BRIDGE_BOTDRONE                     608
 #define TRAINER_HALEY_4                     609
 #define TRAINER_HALEY_5                     610
 #define TRAINER_SALLY                       611

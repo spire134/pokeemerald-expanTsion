@@ -27876,7 +27876,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11115
-    [DIFFICULTY_NORMAL][TRAINER_HALEY_2] =
+    [DIFFICULTY_NORMAL][TRAINER_BRIDGE_TOPDRONE] =
     {
 #line 11116
         .trainerName = _("HALEY"),
@@ -27921,7 +27921,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11132
-    [DIFFICULTY_NORMAL][TRAINER_HALEY_3] =
+    [DIFFICULTY_NORMAL][TRAINER_BRIDGE_BOTDRONE] =
     {
 #line 11133
         .trainerName = _("HALEY"),

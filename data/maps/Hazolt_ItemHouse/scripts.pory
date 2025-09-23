@@ -2,7 +2,23 @@ mapscripts Hazolt_ItemHouse_MapScripts {}
 
 script Karate_Master{
     lockall
-    msgbox(format("One must earn their results one day at a time. There is no rushing tecnique."))
-    giveitem(ITEM_MACHO_BRACE)
-    release
+    msgbox(format("One must earn their results one day at a time. There is no rushing technique."))
+    checkitem(ITEM_MACHO_BRACE, 1)
+    if (var(VAR_RESULT) == 0) {
+        msgbox(format("Here, take this. It will help you train harder."))
+        giveitem(ITEM_MACHO_BRACE)
+    }
+    else {
+    msgbox(format("Weighted gear will slow you, but harden your body quicker."))
+    }
+    releaseall
+    end
+}
+
+script Karate_Trainee{
+    lockall
+    msgbox(format("I want to be as strong as the Master one day!"
+    "He trained the fighting rangers at Quartzite!"))
+    releaseall
+    end
 }

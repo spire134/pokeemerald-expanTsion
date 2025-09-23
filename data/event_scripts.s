@@ -1185,3 +1185,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Azure_Pool/scripts.inc"
 
 	.include "data/maps/Hazolt_Gym/scripts.inc"
+
+	.include "data/maps/Static_Bridge/scripts.inc"
+
+	.include "data/maps/Thorn_Pass/scripts.inc"
+
+	.include "data/maps/Shudderwood_First/scripts.inc"
+
+	.include "data/maps/Stat_Bridge_Bushhouse/scripts.inc"

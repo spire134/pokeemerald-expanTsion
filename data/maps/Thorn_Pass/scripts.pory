@@ -1,0 +1,25 @@
+mapscripts Thorn_Pass_MapScripts {}
+
+script Thorn_Camper_1 {
+    lock
+    trainerbattle_single(TRAINER_FLINT, "It's so wet here, but I love it!", "I could stay here all day!")
+    release
+}
+
+script Thorn_Catcher_1 {
+    lock
+    trainerbattle_single(TRAINER_DAVIS, "Some goons in cool outfits just ran through here!", "You were a worthy opponent!")
+    release
+}
+
+script Thorn_Fighter_1 {
+    lock
+    trainerbattle_single(TRAINER_CRISTIAN, "I'm studying how to smash rocks at Quartzite", "Maybe I should study you next!")
+    release
+}
+
+script Thorn_Psychic_1 {
+    lock
+    trainerbattle_single(TRAINER_NICHOLAS, "I forsaw I should come here, and find myself.", "I only found myself in the water's reflection.")
+    release
+}

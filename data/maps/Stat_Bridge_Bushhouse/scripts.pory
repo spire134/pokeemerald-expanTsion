@@ -1,0 +1,6 @@
+mapscripts Stat_Bridge_Bushhouse_MapScripts {}
+script Fish_Award {
+    lock
+    msgbox(format("It's an award for a fishing competition!"))
+    release
+}

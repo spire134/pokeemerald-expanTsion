@@ -15,8 +15,9 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "OBJ_CAPT_MARA",
       "graphics_id": "OBJ_EVENT_GFX_LEAF",
-      "x": 20,
+      "x": 23,
       "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -28,7 +29,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 20,
       "y": 14,
       "elevation": 0,
@@ -41,7 +42,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOLAND",
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 26,
       "y": 15,
       "elevation": 0,
@@ -82,7 +83,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 21,
+      "x": 20,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -108,7 +109,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 23,
+      "x": 24,
       "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -150,14 +151,14 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 6,
+      "x": 7,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDES_MERCY",
       "dest_warp_id": "2"
     },
     {
-      "x": 7,
+      "x": 8,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SS_TIDES_MERCY",
@@ -178,7 +179,26 @@
       "dest_warp_id": "3"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Should_Read_Note"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Should_Read_Note"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

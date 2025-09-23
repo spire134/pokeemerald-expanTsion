@@ -8,16 +8,27 @@ script DeckStormCutscene {
     lockall
     setweather(WEATHER_RAIN_THUNDERSTORM)
     doweather
+    addobject(OBJ_CAPT_MARA)
+    addobject(OBJ_SAILOR)
+    addobject(OBJ_EON)
+    showobjectat(OBJ_CAPT_MARA, MAP_SS_TIDES_MERCY)
+    showobjectat(OBJ_SAILOR, MAP_SS_TIDES_MERCY)
+    showobjectat(OBJ_EON, MAP_SS_TIDES_MERCY)
     fadescreen(FADE_FROM_BLACK)
     setvar(VAR_UNUSED_0x404E, 2)
     msgbox(format("Captain Mara: Stay cautious and learn. We'll be right behind you if anything gets…"))
     # Quick shake
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right))
-    msgbox(format("Ranger: That sky isn't natural!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
+    applymovement(LOCALID_CAPT_MARA, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
+    applymovement(LOCALID_SAILOR, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
+    applymovement(LOCALID_EON, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
+    emote_exclamation_mark(LOCALID_EON)
+    msgbox(format("Ranger Eon: That sky isn't natural!"))
     fadescreen(FADE_TO_BLACK)
     playse(SE_THUNDER2)
     waitse
     playse(SE_THUNDER)
+    waitse
     # Warp to the beach in front of the wreck (tune these coords)
     warp(MAP_SHOREFALL_STRAND, 10, 19)
     fadescreen(FADE_FROM_BLACK)

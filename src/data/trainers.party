@@ -9938,9 +9938,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Pinsir
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Joltik  
+Ability: Unnerve  
+Level: 14  
+Tera Type: Bug  
+IVs: 15 HP / 12 Atk / 21 Def / 3 SpA / 3 SpD / 3 Spe  
+- Fury Cutter  
+- Electroweb  
+- String Shot  
+- Bug Bite
 
 === TRAINER_MITCHELL ===
 Name: MITCHELL
@@ -10683,9 +10689,15 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 13
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Croagunk  
+Ability: Dry Skin  
+Level: 16  
+Tera Type: Poison  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Low Kick  
+- Flatter  
+- Taunt  
+- Astonish
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
@@ -10836,9 +10848,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Wobbuffet
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Exeggcute @ Oran Berry  
+Ability: Harvest  
+Level: 15  
+Tera Type: Grass  
+Hasty Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Hypnosis  
+- Reflect  
+- Leech Seed  
+- Mega Drain
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
@@ -11192,39 +11211,65 @@ Numel
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_HALEY_2 ===
-Name: HALEY
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
+=== TRAINER_BRIDGE_TOPDRONE ===
+Name: DRONE
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Grubbin  
+Ability: Swarm  
+Level: 12  
+Adamant Nature  
+IVs: 16 HP / 26 Atk / 5 Def / 0 SpA / 8 SpD / 0 Spe  
+- Vise Grip  
+- String Shot  
+- Mud-Slap  
+- Bug Bite  
 
-Shroomish
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Cutiefly  
+Ability: Shield Dust  
+Level: 13   
+Hasty Nature  
+IVs: 15 HP / 0 Atk / 0 Def / 15 SpA / 9 SpD / 18 Spe  
+- Absorb  
+- Sweet Scent  
+- Fairy Wind  
+- Stun Spore  
 
-=== TRAINER_HALEY_3 ===
-Name: HALEY
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
+=== TRAINER_BRIDGE_BOTDRONE ===
+Name: DRONE
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Venipede  
+Ability: Poison Point  
+Level: 12  
+Tera Type: Bug  
+Relaxed Nature  
+IVs: 15 HP / 7 Atk / 24 Def / 7 SpA / 24 SpD / 11 Spe  
+- Poison Tail  
+- Protect  
+- Rollout  
+- Poison Sting  
 
-Breloom
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Paras  
+Ability: Effect Spore  
+Level: 13  
+Tera Type: Bug  
+Modest Nature  
+IVs: 17 HP / 0 Atk / 14 Def / 10 SpA / 0 SpD / 0 Spe  
+- Scratch  
+- Poison Powder  
+- Stun Spore  
+- Absorb  
 
 === TRAINER_HALEY_4 ===
 Name: HALEY
@@ -12083,13 +12128,26 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Wooper-Paldea  
+Ability: Poison Point  
+Level: 13  
+Tera Type: Poison  
+IVs: 11 HP / 21 Atk / 21 Def / 11 SpA / 21 SpD / 11 Spe  
+- Tackle  
+- Mist  
+- Mud Shot  
+- Mud-Slap  
 
-Xatu
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Wattrel (F)  
+Ability: Volt Absorb  
+Level: 13  
+Tera Type: Electric  
+Timid Nature  
+IVs: 12 HP / 22 Atk / 17 Def / 11 SpA / 8 SpD / 19 Spe  
+- Pluck  
+- Quick Attack  
+- Thunder Shock  
+- Peck  
 
 === TRAINER_TASMIN_LOGISTICS ===
 Name: Tasmin
