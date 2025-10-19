@@ -11209,7 +11209,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_OVERHEAT,
     },
 
-    [ITEM_TM_ROOST] =
+    [ITEM_TM51] =
     {
         .name = _("TM51"),
         .price = 3000,
