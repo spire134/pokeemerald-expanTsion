@@ -154,6 +154,13 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
         .x = 18,
         .y = 16,
     },
+    [HEAL_LOCATION_QUARTZSITE_VILLAGE - 1] =
+    {
+        .mapGroup = MAP_GROUP(MAP_QUARTZSITE),
+        .mapNum = MAP_NUM(MAP_QUARTZSITE),
+        .x = 21,
+        .y = 54,
+    },
 };
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
@@ -188,5 +195,5 @@ static const u8 sHealNpcLocalId[NUM_HEAL_LOCATIONS - 1] =
     [HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST - 1] = 1,
     [HEAL_LOCATION_SHOREFALL_STRAND - 1] = 0,
     [HEAL_LOCATION_HAZOLT_VILLAGE - 1] = 1,
-    [HEAL_LOCATION_QUARTZSITE - 1] = 1,
+    [HEAL_LOCATION_QUARTZSITE_VILLAGE - 1] = 1,
 };
