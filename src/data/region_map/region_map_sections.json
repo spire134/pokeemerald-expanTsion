@@ -1230,6 +1230,42 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_HAZOLT_VILLAGE",
+      "name": "Hazolt Village"
+    },
+    {
+      "id": "MAPSEC_STATIC_VALLEY",
+      "name": "Zatik Gulch"
+    },
+    {
+      "id": "MAPSEC_STATIC_BRIDGE",
+      "name": "Zatik Bridge"
+    },
+    {
+      "id": "MAPSEC_SHUNU_BEACH",
+      "name": "Shunu Beach"
+    },
+    {
+      "id": "MAPSEC_SHUNU_BEACH_CLIFFS",
+      "name": "Shunu Cliffs"
+    },
+    {
+      "id": "MAPSEC_MAGNET_CAVE",
+      "name": "Magnet Cave"
+    },
+    {
+      "id": "MAPSEC_THORN_PASS",
+      "name": "Drithorn Pass"
+    },
+    {
+      "id": "MAPSEC_QUARTZSITE",
+      "name": "Quartzsite"
+    },
+    {
+      "id": "MAPSEC_QUARTZSITE_TUNNELS",
+      "name": "Quartzite Tunnels"
     }
   ]
 }

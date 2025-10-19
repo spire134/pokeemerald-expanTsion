@@ -1,0 +1,19 @@
+mapscripts Hazolt_LoreHouse_MapScripts {}
+
+script Hazolt_OldMan {
+    lockall
+    applymovement(LOCALID_HAZOLT_OLDMAN, moves(face_player))
+    msgbox(format("We first moved here when we were children. Our parents wanted us to have a fresh start."))
+    msgbox(format("We've lived here ever since. It's a quiet life, but we like it that way."))
+    releaseall
+    end
+}
+
+script Hazolt_OldWoman {
+    lockall
+    applymovement(LOCALID_HAZOLT_OLDWOMAN, moves(face_player))
+    msgbox(format("When we first moved here, there were only a few houses."))
+    msgbox(format("Now, the town has really grown! It's nice to see new faces around."))
+    releaseall
+    end
+}

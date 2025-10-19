@@ -25,19 +25,24 @@ script Corin_Field_Script {
     # Already cleared; should be gone from field, but for safety:
     msgbox("Corin: I'll wrap up here soon.")
     releaseall
+    end
     }
 }
 
 script Magnet_Maniac_1 {
-    lock
+    lockall
+    faceplayer
     trainerbattle_single(TRAINER_WYATT, "I live here in the caves, with my friends.", "Just like the savage and beautiful wilderness.")
-    msgbox(format("I'm too worried about my next meal to care about you."))
-    release
+    msgbox(format("I'm too worried about my next meal to care about you."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }
 
 script Magnet_Hiker_1 {
-    lock
+    lockall
+    faceplayer
     trainerbattle_single(TRAINER_DEVAN, "A solid hike down, but I hate going back up!", "There was another one of you Rangers deeper in.")
-    msgbox(format("I wish all hikes were downhill, but that's life!"))
-    release
+    msgbox(format("I wish all hikes were downhill, but that's life!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }

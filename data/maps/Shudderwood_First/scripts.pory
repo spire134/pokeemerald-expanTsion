@@ -1,1 +1,60 @@
 mapscripts Shudderwood_First_MapScripts {}
+
+script Shudderwood_Bug_Catcher_1 {
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_RICK, "What makes a Bug to be a Bug?", "Is it the way they look, or the way they move?")
+    msgbox(format("Bugs are cool! My Krabby is the best bug around!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Bug_Catcher_2 {
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_LYLE, "Even the same Pokémon can be different!", "I like to see what makes them unique.")
+    msgbox(format("I bet your Pokémon are all special!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Hex_Maniac_1 {
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_LEAH, "The spirits are restless here...", "I can feel them watching us...")
+    msgbox(format("Just up ahead is a spooky old mansion!"
+    "Some of those Hive Drones are lurking there."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Bug_Maniac {
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_TAYLOR, "Bugs are full of potential!", "They grow strong quickly!")
+    msgbox(format("Those Hive Goons are messing with the bugs here!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Berry_Picker {
+    lockall
+    faceplayer
+    msgbox(format("If you find a Bluk Berry, could you bring it to me?"
+    "I'll give you Juice for each one!"))
+    checkitem(ITEM_BLUK_BERRY, 1)
+    if (var(RESULT) == TRUE) {
+        applymovement(LOCALID_BERRY_PICKER, moves(emote_exclamation_mark))
+        waitmovement(0)
+        msgbox(format("Oh, a Bluk Berry! Thank you so much!"
+        "Here, take this as a reward."))
+        giveitem(ITEM_BERRY_JUICE, 1)
+        removeitem(ITEM_BLUK_BERRY, 1)
+        msgbox(format("I hope you and your Pokémon love the Berry Juice!"))
+        applymovement(LOCALID_BERRY_PICKER, moves(emote_heart))
+        waitmovement(0)
+    } else {
+        msgbox(format("I'll be here if you find one!"))
+    }
+    releaseall
+}

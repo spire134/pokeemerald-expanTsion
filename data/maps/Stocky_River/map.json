@@ -1,0 +1,60 @@
+{
+  "id": "MAP_STOCKY_RIVER",
+  "name": "Stocky_River",
+  "layout": "LAYOUT_STOCKY_RIVER",
+  "music": "MUS_ROUTE110",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_THORN_PASS",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_QUARTZSITE",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 38,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_FIRST",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 35,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_FIRST",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

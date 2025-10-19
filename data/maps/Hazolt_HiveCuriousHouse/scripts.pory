@@ -1,0 +1,30 @@
+mapscripts Hazolt_HiveCuriousHouse_MapScripts {}
+
+script Hazolt_HiveCuriousMan {
+    lock
+    applymovement(LOCALID_HAZOLT_HIVECURIOUSMAN, moves(face_player))
+    msgbox(format("I've been hearing about this new organization, Team Hive."
+    "They seem to have a sure idea of how to make the world a better place."))
+    release
+    end
+}
+
+script Hazolt_HiveCuriousWoman {
+    lock
+    applymovement(LOCALID_HAZOLT_HIVECURIOUSWOMAN, moves(face_player))
+    msgbox(format("People say Team Hive is trying to change the world."
+    "I wonder if they really can do it."))
+    release
+    end
+}
+
+script Swablu_Noies {
+    lock
+    applymovement(LOCALID_SWABLU_NOIES, moves(face_player))
+    waitmovement(0)
+    playse(SE_M_SING)
+    msgbox(format("*Swablu sings a beautiful song.*"))
+    waitmessage
+    release
+    end
+}

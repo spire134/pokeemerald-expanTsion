@@ -612,6 +612,9 @@ gSongTable::
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
     song mus_awds_von_bolt, 0, 0
+	song mus_mprime_magmoor_cave, 0, 0
+	song mus_awds_peacetime, 0, 0
+	song mus_mariodesert, 0, 0
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

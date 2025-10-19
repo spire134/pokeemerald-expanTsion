@@ -77,7 +77,7 @@
 #define P_FAMILY_VENONAT                 P_GEN_1_POKEMON
 #define P_FAMILY_DIGLETT                 P_GEN_1_POKEMON
 #define P_FAMILY_MEOWTH                  P_GEN_1_POKEMON
-#define P_FAMILY_PSYDUCK                 FALSE
+#define P_FAMILY_PSYDUCK                 P_GEN_1_POKEMON
 #define P_FAMILY_MANKEY                  P_GEN_1_POKEMON
 #define P_FAMILY_GROWLITHE               P_GEN_1_POKEMON
 #define P_FAMILY_POLIWAG                 P_GEN_1_POKEMON
@@ -90,7 +90,7 @@
 #define P_FAMILY_SLOWPOKE                P_GEN_1_POKEMON
 #define P_FAMILY_MAGNEMITE               P_GEN_1_POKEMON
 #define P_FAMILY_FARFETCHD               FALSE
-#define P_FAMILY_DODUO                   FALSE
+#define P_FAMILY_DODUO                   P_GEN_1_POKEMON
 #define P_FAMILY_SEEL                    FALSE
 #define P_FAMILY_GRIMER                  P_GEN_1_POKEMON
 #define P_FAMILY_SHELLDER                P_GEN_1_POKEMON
@@ -102,7 +102,7 @@
 #define P_FAMILY_EXEGGCUTE               P_GEN_1_POKEMON
 #define P_FAMILY_CUBONE                  FALSE
 #define P_FAMILY_HITMONS                 P_GEN_1_POKEMON
-#define P_FAMILY_LICKITUNG               FALSE
+#define P_FAMILY_LICKITUNG               P_GEN_1_POKEMON
 #define P_FAMILY_KOFFING                 P_GEN_1_POKEMON
 #define P_FAMILY_RHYHORN                 P_GEN_1_POKEMON
 #define P_FAMILY_CHANSEY                 P_GEN_1_POKEMON
@@ -148,7 +148,7 @@
 #define P_FAMILY_MARILL                  FALSE
 #define P_FAMILY_SUDOWOODO               FALSE
 #define P_FAMILY_HOPPIP                  FALSE
-#define P_FAMILY_AIPOM                   FALSE
+#define P_FAMILY_AIPOM                   P_GEN_2_POKEMON
 #define P_FAMILY_SUNKERN                 FALSE
 #define P_FAMILY_YANMA                   P_GEN_2_POKEMON
 #define P_FAMILY_WOOPER                  P_GEN_2_POKEMON
@@ -158,7 +158,7 @@
 #define P_FAMILY_WOBBUFFET               FALSE
 #define P_FAMILY_GIRAFARIG               FALSE
 #define P_FAMILY_PINECO                  P_GEN_2_POKEMON
-#define P_FAMILY_DUNSPARCE               FALSE
+#define P_FAMILY_DUNSPARCE               P_GEN_2_POKEMON
 #define P_FAMILY_GLIGAR                  P_GEN_2_POKEMON
 #define P_FAMILY_SNUBBULL                FALSE
 #define P_FAMILY_QWILFISH                P_GEN_2_POKEMON
@@ -259,7 +259,7 @@
 #define P_FAMILY_JIRACHI                 FALSE
 #define P_FAMILY_DEOXYS                  P_GEN_3_POKEMON
 
-#define P_FAMILY_TURTWIG                 FALSE
+#define P_FAMILY_TURTWIG                 P_GEN_4_POKEMON
 #define P_FAMILY_CHIMCHAR                FALSE
 #define P_FAMILY_PIPLUP                  FALSE
 #define P_FAMILY_STARLY                  P_GEN_4_POKEMON
@@ -277,7 +277,7 @@
 #define P_FAMILY_DRIFLOON                P_GEN_4_POKEMON
 #define P_FAMILY_BUNEARY                 FALSE
 #define P_FAMILY_GLAMEOW                 FALSE
-#define P_FAMILY_STUNKY                  FALSE
+#define P_FAMILY_STUNKY                  P_GEN_4_POKEMON
 #define P_FAMILY_BRONZOR                 P_GEN_4_POKEMON
 #define P_FAMILY_CHATOT                  FALSE
 #define P_FAMILY_SPIRITOMB               P_GEN_4_POKEMON

@@ -1193,3 +1193,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Shudderwood_First/scripts.inc"
 
 	.include "data/maps/Stat_Bridge_Bushhouse/scripts.inc"
+
+	.include "data/maps/Hazolt_LoreHouse/scripts.inc"
+
+	.include "data/maps/Hazolt_HiveCuriousHouse/scripts.inc"
+
+	.include "data/maps/Stocky_River/scripts.inc"
+
+	.include "data/maps/Quartzsite/scripts.inc"
+
+	.include "data/maps/Quartzsite_PumpHouse/scripts.inc"
+
+	.include "data/maps/Quartzite_Center/scripts.inc"
+
+	.include "data/maps/Quartzite_Mart/scripts.inc"
+
+	.include "data/maps/Quartz_Tunnels/scripts.inc"

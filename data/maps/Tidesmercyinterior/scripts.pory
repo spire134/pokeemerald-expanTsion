@@ -38,6 +38,7 @@ script Should_Read_Note {
         ))
     waitbuttonpress
     applymovement(LOCALID_PLAYER, moves(walk_up))
+    waitmovement(0)
     release
     end
     } else {
@@ -157,8 +158,13 @@ script CaptainRoom_Talk {
 script Starter_Turtwig {
     lockall
     if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    showmonpic(SPECIES_TURTWIG, 10, 3)
     msgbox("Take TURTWIG as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall end }
+    if (var(VAR_RESULT) == 0) { 
+        hidemonpic    
+        releaseall 
+        end
+    }
     call(Give_Starter0)
     call(PostStarter_StormInterrupt)  # immediate story beat
     releaseall
@@ -168,8 +174,13 @@ script Starter_Turtwig {
 script Starter_Torchic {
     lockall
     if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    showmonpic(SPECIES_TORCHIC, 10, 3)
     msgbox("Take TORCHIC as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall end }
+    if (var(VAR_RESULT) == 0) { 
+        hidemonpic 
+        releaseall 
+        end 
+    }
     call(Give_Starter1)
     call(PostStarter_StormInterrupt)
     releaseall
@@ -179,8 +190,13 @@ script Starter_Torchic {
 script Starter_Froakie {
     lockall
     if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    showmonpic(SPECIES_FROAKIE, 10, 3)
     msgbox("Take FROAKIE as your partner?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 0) { releaseall end }
+    if (var(VAR_RESULT) == 0) { 
+        hidemonpic 
+        releaseall 
+        end
+    }
     call(Give_Starter2)
     call(PostStarter_StormInterrupt)
     releaseall
@@ -188,6 +204,8 @@ script Starter_Froakie {
 }
 
 script(local) Give_Starter0 {
+    hidemonpic
+    setflag(FLAG_SYS_POKEMON_GET)
     setvar((VAR_STARTER_MON), 0)
     givemon(SPECIES_TURTWIG, 5)
     call(Common_EventScript_NameReceivedPartyMon)
@@ -197,6 +215,8 @@ script(local) Give_Starter0 {
     return
 }
 script(local) Give_Starter1 {
+    hidemonpic
+    setflag(FLAG_SYS_POKEMON_GET)
     setvar((VAR_STARTER_MON), 1)
     givemon(SPECIES_TORCHIC, 5)
     call(Common_EventScript_NameReceivedPartyMon)
@@ -206,6 +226,8 @@ script(local) Give_Starter1 {
     return
 }
 script(local) Give_Starter2 {
+    hidemonpic
+    setflag(FLAG_SYS_POKEMON_GET)
     setvar(VAR_STARTER_MON, 2)
     givemon(SPECIES_FROAKIE, 5)
     call(Common_EventScript_NameReceivedPartyMon)

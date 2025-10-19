@@ -3,7 +3,7 @@
   "name": "Hazolt_Gym",
   "layout": "LAYOUT_HAZOLT_GYM",
   "music": "MUS_GYM",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_HAZOLT_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

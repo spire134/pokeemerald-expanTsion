@@ -3,7 +3,7 @@
   "name": "Hazolt_TradeHouse",
   "layout": "LAYOUT_HAZOLT_TRADE_HOUSE",
   "music": "MUS_POKE_MART",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_HAZOLT_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NumelTrade",
       "flag": "0"
     }
   ],

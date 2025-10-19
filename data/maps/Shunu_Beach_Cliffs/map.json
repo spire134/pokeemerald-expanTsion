@@ -2,8 +2,8 @@
   "id": "MAP_SHUNU_BEACH_CLIFFS",
   "name": "Shunu_Beach_Cliffs",
   "layout": "LAYOUT_SHUNU_BEACH_CLIFFS",
-  "music": "MUS_DEWFORD",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "music": "MUS_AWDS_PEACETIME",
+  "region_map_section": "MAPSEC_SHUNU_BEACH_CLIFFS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -33,6 +33,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Eon_Field_Script",
       "flag": "FLAG_EON_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_SHUNU_CLIFFS_PROTEIN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Shunu_Fisherman_Fight",
+      "flag": "FLAG_BEGINNING_TRAINERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Shunu_BlackBelt_Fight",
+      "flag": "FLAG_BEGINNING_TRAINERS"
     }
   ],
   "warp_events": [
@@ -45,5 +84,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_ETHER",
+      "flag": "FLAG_HIDDEN_SHUNU_CLIFFS_ETHER"
+    },
+    {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 15,
+      "elevation": 0,
+      "item": "ITEM_CALCIUM",
+      "flag": "FLAG_HIDDEN_SHUNU_CLIFFS_CALCIUM"
+    }
+  ]
 }

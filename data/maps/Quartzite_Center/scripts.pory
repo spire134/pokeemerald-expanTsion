@@ -1,0 +1,12 @@
+mapscripts Quartzite_Center_MapScripts {}
+
+script Script_QuartzNurse {
+    setvar(VAR_0x800B, LOCALID_QUARTZ_NURSE)
+    setrespawn(HEAL_LOCATION_QUARTZSITE_VILLAGE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_down))
+    waitmovement   
+    release
+}

@@ -549,6 +549,9 @@
 
 // Added Music
 #define MUS_AWDS_VON_BOLT           610
+#define MUS_MPRIME_MAGMOOR_CAVE     611
+#define MUS_AWDS_PEACETIME          612
+#define MUS_MARIODESERT             613
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

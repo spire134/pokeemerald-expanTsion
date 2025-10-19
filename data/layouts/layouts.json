@@ -4590,6 +4590,86 @@
       "secondary_tileset": "gTileset_SecretBaseShrub",
       "border_filepath": "data/layouts/Stat_Bridge_Bushhouse/border.bin",
       "blockdata_filepath": "data/layouts/Stat_Bridge_Bushhouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_LORE_HOUSE",
+      "name": "Hazolt_LoreHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Hazolt_LoreHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_LoreHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAZOLT_HIVE_CURIOUS_HOUSE",
+      "name": "Hazolt_HiveCuriousHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Hazolt_HiveCuriousHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Hazolt_HiveCuriousHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_STOCKY_RIVER",
+      "name": "Stocky_River_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Stocky_River/border.bin",
+      "blockdata_filepath": "data/layouts/Stocky_River/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZSITE",
+      "name": "Quartzsite_Layout",
+      "width": 65,
+      "height": 65,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Quartzsite/border.bin",
+      "blockdata_filepath": "data/layouts/Quartzsite/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZSITE_PUMP_HOUSE",
+      "name": "Quartzsite_PumpHouse_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Quartzsite_PumpHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Quartzsite_PumpHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZITE_CENTER",
+      "name": "Quartzite_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Quartzite_Center/border.bin",
+      "blockdata_filepath": "data/layouts/Quartzite_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZITE_MART",
+      "name": "Quartzite_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Quartzite_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/Quartzite_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_TUNNELS",
+      "name": "Quartz_Tunnels_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/Quartz_Tunnels/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_Tunnels/map.bin"
     }
   ]
 }

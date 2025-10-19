@@ -14,6 +14,13 @@ script OldRod_Guy {
     release
 }
 
+script Static_Bridge_Sign {
+    lock
+    msgbox(format("West - Quartzite City\n"
+    "East - Hazolt Village"))
+    release
+}
+
 script Team_Hive_Drone {
     lock
     if (!flag(FLAG_BADGE01_GET)) {

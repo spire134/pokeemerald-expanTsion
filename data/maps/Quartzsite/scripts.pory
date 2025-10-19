@@ -1,0 +1,13 @@
+mapscripts Quartzsite_MapScripts {}
+
+
+
+
+
+
+
+script Quartzite_Welcome_Sign {
+lock
+msgbox(format("Quartzsite: The Bedrock of Society!"))
+release
+}

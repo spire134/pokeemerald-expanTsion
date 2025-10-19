@@ -619,9 +619,16 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Spoink
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Misdreavus (F)  
+Ability: Levitate  
+Level: 17  
+Tera Type: Ghost  
+Gentle Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Growl  
+- Confusion  
+- Confuse Ray  
+- Calm Mind
 
 === TRAINER_DAISY ===
 Name: DAISY
@@ -3989,17 +3996,16 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Cascoon
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Dustox
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Yanma  
+Ability: Compound Eyes  
+Level: 17  
+Tera Type: Bug  
+Brave Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Hypnosis  
+- Detect  
+- Air Cutter  
+- Quick Attack
 
 === TRAINER_JEFFREY_1 ===
 Name: JEFFREY
@@ -4878,33 +4884,63 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Basic Trainer / Ace Pokemon
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Clobbopus @ Black Glasses  
+Ability: Technician  
+Level: 18  
+Tera Type: Fighting  
+Brave Nature  
+IVs: 27 HP / 22 Def / 6 SpA / 23 SpD / 4 Spe  
+- Rock Smash  
+- Circle Throw  
+- Coaching  
+- Feint  
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Meditite @ Silk Scarf  
+Ability: Pure Power  
+Level: 18  
+Tera Type: Fighting  
+Adamant Nature  
+IVs: 12 HP / 29 Atk / 24 Def / 24 SpD / 21 Spe  
+- Rock Smash  
+- Detect  
+- Fake Out  
+- Mega Punch  
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Mienfoo (F) @ Eject Button  
+Ability: Regenerator  
+Level: 19  
+Tera Type: Fighting  
+Hasty Nature  
+IVs: 26 HP / 11 Atk / 16 Def / 3 SpA / 26 SpD / 28 Spe  
+- Force Palm  
+- Fake Out  
+- Smelling Salts  
+- U-turn  
+
+Mienfoo (F) @ Normal Gem  
+Ability: Regenerator  
+Level: 19  
+Tera Type: Fighting  
+Naughty Nature  
+IVs: 5 HP / 26 Atk / 20 Def / 21 SpA / 12 SpD / 26 Spe  
+- Acrobatics  
+- Fake Out  
+- Rock Smash  
+- U-turn  
+
+Hitmontop @ Assault Vest  
+Ability: Intimidate  
+Level: 20  
+Tera Type: Fighting  
+Sassy Nature  
+IVs: 25 HP / 14 Def / 0 SpA / 30 SpD / 9 Spe  
+- Bullet Punch  
+- Triple Axel  
+- Triple Kick  
+- Bulk Up  
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -7633,9 +7669,26 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Ninjask
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Croagunk  
+Ability: Dry Skin  
+Level: 16  
+Tera Type: Poison  
+IVs: 11 HP / 12 Atk / 16 Def / 16 SpA / 16 SpD / 20 Spe  
+- Pursuit  
+- Astonish  
+- Mud Shot  
+- Low Kick  
+
+Staryu  
+Ability: Illuminate  
+Level: 16  
+Tera Type: Water  
+Impish Nature  
+IVs: 2 Atk / 29 Def / 0 SpA / 26 SpD / 22 Spe  
+- Harden  
+- Rapid Spin  
+- Bubble Beam  
+- Minimize  
 
 === TRAINER_TAKASHI ===
 Name: TAKASHI
@@ -10859,6 +10912,16 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed  
 - Mega Drain
 
+Meditite @ Cheri Berry
+Ability: Pure Power
+Level: 13
+Timid Nature
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Detect
+- Confusion
+- Endure
+- Feint
+
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
 Class: Team Magma
@@ -11382,13 +11445,36 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Paras  
+Ability: Effect Spore  
+Level: 16  
+Tera Type: Bug  
+Sassy Nature  
+IVs: 10 HP / 27 Def / 10 SpA / 28 SpD / 10 Spe  
+- Stun Spore  
+- Leech Seed  
+- Leech Life  
+- Scratch  
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dwebble (F)  
+Ability: Sturdy  
+Level: 15  
+Tera Type: Bug  
+IVs: 0 HP / 10 Def / 10 SpD / 10 Spe  
+- Flail  
+- Struggle Bug  
+- Rock Tomb  
+- Bug Bite  
+
+Krabby (M)  
+Ability: Hyper Cutter  
+Level: 16  
+Tera Type: Water  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 11 Spe  
+- Agility  
+- Metal Claw  
+- Rock Tomb  
+- Thief  
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -11399,21 +11485,26 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venipede  
+Ability: Swarm  
+Level: 15  
+Tera Type: Bug  
+IVs: 0 HP / 15 Atk / 0 Def / 0 SpA / 10 SpD / 20 Spe  
+- Bug Bite  
+- Poison Tail  
+- Screech  
+- Infestation  
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venipede  
+Ability: Poison Point  
+Level: 16  
+Tera Type: Bug  
+Lax Nature  
+IVs: 15 HP / 0 Atk / 26 Def / 10 SpA / 21 SpD / 10 Spe  
+- Venom Drench  
+- Venoshock  
+- Poison Sting  
+- Pursuit  
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -13119,9 +13210,32 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 9
+Wishiwashi  
+Ability: Schooling  
+Level: 6  
+Tera Type: Water  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun  
+- Growl  
+
+Wishiwashi  
+Ability: Schooling  
+Level: 7  
+Tera Type: Water  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun  
+- Growl  
+
+Wishiwashi  
+Ability: Schooling  
+Level: 8  
+Tera Type: Water  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun  
+- Growl  
+- Helping Hand  
+
+
 
 === TRAINER_HAILEY ===
 Name: HAILEY
@@ -13222,9 +13336,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Crabrawler  
+Ability: Hyper Cutter  
+Level: 8  
+Tera Type: Fighting  
+- Vise Grip  
+- Rock Smash
 
 === TRAINER_TYRON ===
 Name: TYRON

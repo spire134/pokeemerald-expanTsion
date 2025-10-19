@@ -36,7 +36,8 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_NewAdditions",
     "gMapGroup_New_Hazint",
-    "gMapGroup_New_Dungeons"
+    "gMapGroup_New_Dungeons",
+    "gMapGroup_New_QuartzInt"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -634,7 +635,9 @@
     "MAGNET_CAVE",
     "Shunu_Beach_Cliffs",
     "Static_Bridge",
-    "Thorn_Pass"
+    "Thorn_Pass",
+    "Stocky_River",
+    "Quartzsite"
   ],
   "gMapGroup_New_Hazint": [
     "HAZOLT_CENTER",
@@ -642,10 +645,18 @@
     "Hazolt_TradeHouse",
     "Hazolt_ItemHouse",
     "Hazolt_Gym",
-    "Stat_Bridge_Bushhouse"
+    "Stat_Bridge_Bushhouse",
+    "Hazolt_LoreHouse",
+    "Hazolt_HiveCuriousHouse"
   ],
   "gMapGroup_New_Dungeons": [
     "Azure_Pool",
     "Shudderwood_First"
+  ],
+  "gMapGroup_New_QuartzInt": [
+    "Quartzsite_PumpHouse",
+    "Quartzite_Center",
+    "Quartzite_Mart",
+    "Quartz_Tunnels"
   ]
 }

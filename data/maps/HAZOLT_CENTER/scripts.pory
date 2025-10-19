@@ -2,6 +2,7 @@ mapscripts HAZOLT_CENTER_MapScripts {}
 
 script Script_HazoltNurse {
     setvar(VAR_0x800B, LOCALID_HAZOLT_NURSE)
+    setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
 	call(Common_EventScript_PkmnCenterNurse)
 	waitmessage
 	waitbuttonpress

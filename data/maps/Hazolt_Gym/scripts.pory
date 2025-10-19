@@ -4,6 +4,7 @@ script Mara_Gym_Script {
     lockall
     faceplayer
     if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
         msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.
         Thanks to Eon's stewardship, we drove ashore close to a village, and we've set up our HQ here.
         Here are some supplies, make use of them to prepare yourself.
@@ -17,9 +18,9 @@ script Mara_Gym_Script {
     }
     # Wait for all to clear and return
     if (!flag(FLAG_EON_CLEARED) || !flag(FLAG_CORIN_CLEARED) || !flag(FLAG_TASMIN_CLEARED)) {
-        msgbox("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
+        msgbox(format("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
         Corin is investigating a cave in that gorge to the west, and Tasmin is working on
-        logistics at the Mart. Report back when you are done.")
+        logistics at the Mart. Report back when you are done."))
         releaseall
         end
     }

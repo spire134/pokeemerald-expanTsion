@@ -3,7 +3,7 @@
   "name": "Stat_Bridge_Bushhouse",
   "layout": "LAYOUT_STAT_BRIDGE_BUSHHOUSE",
   "music": "MUS_B_PYRAMID",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_HAZOLT_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -23,7 +23,17 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Wood_Bed_Nap"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

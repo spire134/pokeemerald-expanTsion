@@ -4,3 +4,12 @@ script Fish_Award {
     msgbox(format("It's an award for a fishing competition!"))
     release
 }
+
+script Wood_Bed_Nap {
+    lock
+    msgbox(format("You take a short nap on the wood bed."))
+    closemessage
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox(format("You feel refreshed!"))
+    release
+}

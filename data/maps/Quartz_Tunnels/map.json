@@ -1,0 +1,77 @@
+{
+  "id": "MAP_QUARTZ_TUNNELS",
+  "name": "Quartz_Tunnels",
+  "layout": "LAYOUT_QUARTZ_TUNNELS",
+  "music": "MUS_POKE_MART",
+  "region_map_section": "MAPSEC_QUARTZSITE_TUNNELS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZSITE",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZSITE",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZ_TUNNELS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZ_TUNNELS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZSITE_PUMP_HOUSE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZSITE_PUMP_HOUSE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZITE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZITE_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

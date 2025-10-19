@@ -2,6 +2,7 @@ mapscripts Hazolt_ItemHouse_MapScripts {}
 
 script Karate_Master{
     lockall
+    applymovement(LOCALID_ITEM_MONK, moves(face_player))
     msgbox(format("One must earn their results one day at a time. There is no rushing technique."))
     checkitem(ITEM_MACHO_BRACE, 1)
     if (var(VAR_RESULT) == 0) {

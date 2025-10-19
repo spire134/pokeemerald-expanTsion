@@ -147,6 +147,13 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
         .x = 10,
         .y = 19,
     },
+    [HEAL_LOCATION_HAZOLT_VILLAGE - 1] =
+    {
+        .mapGroup = MAP_GROUP(MAP_HAZOLT_VILLAGE),
+        .mapNum = MAP_NUM(MAP_HAZOLT_VILLAGE),
+        .x = 18,
+        .y = 16,
+    },
 };
 
 #undef DEFAULT_POKEMON_CENTER_COORDS
@@ -180,4 +187,6 @@ static const u8 sHealNpcLocalId[NUM_HEAL_LOCATIONS - 1] =
     [HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR - 1] = 0, // no heal npc
     [HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST - 1] = 1,
     [HEAL_LOCATION_SHOREFALL_STRAND - 1] = 0,
+    [HEAL_LOCATION_HAZOLT_VILLAGE - 1] = 1,
+    [HEAL_LOCATION_QUARTZSITE - 1] = 1,
 };

@@ -2,28 +2,36 @@ mapscripts STATIC_VALLEY_MapScripts {}
 
 
 script Zatik_Woman_1 {
-    lock
+    lockall
+    faceplayer
     trainerbattle_single(TRAINER_DAISY, "The view is so nice from here, perfect for a lively battle.", "A relaxing but fun time.")
-    msgbox(format("The best flowers grow just out of my reach!"))
-    release
+    msgbox(format("The best flowers grow just out of my reach!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }
 
 script Zatik_Woman_2 {
-    lock
-    trainerbattle_single(TRAINER_JOCELYN, "The view is so nice from here, perfect for a lively battle.", "A relaxing but fun time.")
-    msgbox(format("The best flowers grow just out of my reach!"))
-    release
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_JOCELYN, "This gorge is great for training!", "Now my Pokemon are as sore as me!")
+    msgbox(format("A good battle is the perfect end to a workout!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }
 script Zatik_Camper_1 {
-    lock
-    trainerbattle_single(TRAINER_DREW, "I hear you Rangers aren't so tough!", "All right, I'm sorry!")
-    msgbox(format("I'll never look down on the Rangers again!"))
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_DREW, "I want to be a Ranger too!", "Wow, you're strong!")
+    msgbox(format("Can you show me more Ranger tricks?"), MSGBOX_AUTOCLOSE)
+    waitmessage
     release
 }
 
 script Zatik_Rocker_1 {
-    lock
-    trainerbattle_single(TRAINER_FABIAN, "I hear you Rangers aren't so tough!", "All right, I'm sorry!")
-    msgbox(format("I'll never look down on the Rangers again!"))
-    release
+    lockall
+    faceplayer
+    trainerbattle_single(TRAINER_FABIAN, "I love to practice out here in the WILD!", "Oh yeah, you're a WILD one!")
+    msgbox(format("Stay WILD, ranger!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }
