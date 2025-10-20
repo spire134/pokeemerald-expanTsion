@@ -1,45 +1,50 @@
 mapscripts Thorn_Pass_MapScripts {}
 
+
 script Thorn_Camper_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_FLINT, "It's so wet here, but I love it!", "I could stay here all day!")
+    trainerbattle_single(TRAINER_FLINT, 
+    format("It's so wet here, but I love it!\n" "I could stay here all day!"),
+    format("The rain made this battle so much fun!")
+    )
     msgbox(format("I just love the rain!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Thorn_Catcher_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_DAVIS, "Some goons in cool outfits just ran through here!", "You were a worthy opponent!")
+    trainerbattle_single(TRAINER_DAVIS,
+    format("There were some funny goons earlier.\n" "I want a BUG costume too!"),
+    format("Which costume would I want to wear though?")
+    )
     msgbox(format("I bet they were Hive Drones! Those goons are everywhere!"), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
 }
 
 script Thorn_Fighter_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_CRISTIAN, "I'm studying how to smash rocks at Quartzite", "Maybe I should study you next!")
+    trainerbattle_single(TRAINER_CRISTIAN, 
+    format("I'm studying how to smash rocks at Quartzite\n" "Maybe I should study you next!"),
+    format("That rock smashing technique needs work!")
+    )
     msgbox(format("I bet I could smash a rock with my eyes closed!"), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
 }
 
 script Thorn_Psychic_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_NICHOLAS, "I forsaw I should come here, and find myself.", "I only found myself in the water's reflection.")
+    trainerbattle_single(TRAINER_NICHOLAS, 
+    format("I foresaw I should come here, and find myself."),
+    format("I only found myself in the water's reflection.")
+    )
     msgbox(format("I think I need to meditate more."), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
 }
 
 script Thorn_Ninja_Boy_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_YASU, "I practice my ninja moves in the rain!", "Did you see that last move?")
+    trainerbattle_single(TRAINER_YASU,
+    format("I practice my ninja moves in the rain!"),
+    format("The rain gives me extra motivation!")
+    )
     msgbox(format("Ninja training must wait for next rainfall!"), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall

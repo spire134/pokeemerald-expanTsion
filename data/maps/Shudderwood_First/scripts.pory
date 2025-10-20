@@ -1,40 +1,41 @@
 mapscripts Shudderwood_First_MapScripts {}
 
 script Shudderwood_Bug_Catcher_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_RICK, "What makes a Bug to be a Bug?", "Is it the way they look, or the way they move?")
+    trainerbattle_single(TRAINER_RICK, 
+    format("What makes a Bug to be a Bug?\n" "Is it the way they look, or the way they move?\n"),
+    format("Bugs are more than just their appearance!")
+    )
     msgbox(format("Bugs are cool! My Krabby is the best bug around!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Shudderwood_Bug_Catcher_2 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_LYLE, "Even the same Pokémon can be different!", "I like to see what makes them unique.")
-    msgbox(format("I bet your Pokémon are all special!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_LYLE, 
+    format("Even the same Pokémon can be different!\n" "I like to see what makes them unique."),
+    format("Your Pokémon are all special in their own way!")
+    )
+    msgbox(format("These woods get creepier the deeper you go!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Shudderwood_Hex_Maniac_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_LEAH, "The spirits are restless here...", "I can feel them watching us...")
-    msgbox(format("Just up ahead is a spooky old mansion!"
+    trainerbattle_single(TRAINER_LEAH, 
+    format("The spirits are restless here. I can feel them watching us."),
+    format("The spirits seem calmer now.")
+    )
+    msgbox(format(
+    "Just up ahead is a spooky old mansion!\n"
     "Some of those Hive Drones are lurking there."), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Shudderwood_Bug_Maniac {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_TAYLOR, "Bugs are full of potential!", "They grow strong quickly!")
-    msgbox(format("Those Hive Goons are messing with the bugs here!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_TAYLOR, 
+    format("Bugs are full of potential!\n" "They grow strong quickly!"),
+    format("Bugs can surprise you with their strength!")
+    )
+    msgbox(format("Those Hive Goons keep messing with the bugs here!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Shudderwood_Berry_Picker {

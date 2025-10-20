@@ -1,37 +1,38 @@
 mapscripts STATIC_VALLEY_MapScripts {}
 
-
 script Zatik_Woman_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_DAISY, "The view is so nice from here, perfect for a lively battle.", "A relaxing but fun time.")
+    trainerbattle_single(
+        TRAINER_DAISY,
+        format("The view is so nice from here.\p" "Perfect for a lively battle!"),
+        format("Fighting here was so refreshing!")
+        )
     msgbox(format("The best flowers grow just out of my reach!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Zatik_Woman_2 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_JOCELYN, "This gorge is great for training!", "Now my Pokemon are as sore as me!")
-    msgbox(format("A good battle is the perfect end to a workout!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_JOCELYN, 
+        format("I love exploring new places with my Pokémon!"),
+        format("What a wonderful adventure we had!")
+        )
+    msgbox(format("I wish I could stay here forever!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
+
 script Zatik_Camper_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_DREW, "I want to be a Ranger too!", "Wow, you're strong!")
-    msgbox(format("Can you show me more Ranger tricks?"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_BRAD, 
+        format("Camping out in nature is the best way to bond with your Pokémon!"),
+        format("That was an unforgettable experience!")
+        )
+    msgbox(format("The great outdoors is where I feel most alive!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    release
 }
 
 script Zatik_Rocker_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_FABIAN, "I love to practice out here in the WILD!", "Oh yeah, you're a WILD one!")
-    msgbox(format("Stay WILD, ranger!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_LANCE, 
+        format("Let me show you how to get WILD!"),
+        format("That was one WILD time!")
+        )
+    msgbox(format("Stay WILD, man."), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }

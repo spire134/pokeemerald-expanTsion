@@ -30,19 +30,19 @@ script Corin_Field_Script {
 }
 
 script Magnet_Maniac_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_WYATT, "I live here in the caves, with my friends.", "Just like the savage and beautiful wilderness.")
+    trainerbattle_single(TRAINER_WYATT, 
+    format("I live here in the caves, with my friends."),
+    format("Those Hive Drones are messing with my home!")
+    )
     msgbox(format("I'm too worried about my next meal to care about you."), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Magnet_Hiker_1 {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_DEVAN, "A solid hike down, but I hate going back up!", "There was another one of you Rangers deeper in.")
-    msgbox(format("I wish all hikes were downhill, but that's life!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_DEVAN, 
+    format("These caves are full of surprises!"),
+    format("Exploring is half the fun of battling!")
+    )
+    msgbox(format("There's another one of you Rangers up ahead!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }

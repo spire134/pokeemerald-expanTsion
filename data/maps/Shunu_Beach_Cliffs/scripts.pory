@@ -29,19 +29,19 @@ script Eon_Field_Script {
 }
 
 script Shunu_Fisherman_Fight {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_DARIAN, "Fishing's great here, but battling's better!", "You're pretty good!")
+   trainerbattle_single(TRAINER_DARIAN,
+    format("Fishing's great here, but battling's better!"),
+    format("That was a great battle by the sea!")
+    )
     msgbox(format("I love a good battle by the sea!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
 
 script Shunu_BlackBelt_Fight {
-    lockall
-    faceplayer
-    trainerbattle_single(TRAINER_RHETT, "I train here to train my grip strength!", "You're a tough one!")
-    msgbox(format("Now I can throw a Pokeball farther than ever!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_RHETT,
+    format("The ocean's power flows through me!"),
+    format("The ocean's power is truly unstoppable!")
+    )
+    msgbox(format("Feel the power of the ocean!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    releaseall
 }
