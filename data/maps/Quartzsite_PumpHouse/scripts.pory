@@ -1,1 +1,11 @@
 mapscripts Quartzsite_PumpHouse_MapScripts {}
+
+script Pumphouse_Drone {
+    lock
+    faceplayer
+    msgbox(format("Hive Drone: You won't be getting in here, Ranger!"
+    "The Seer has ordered us to keep this area secure!\p"
+    "This is the end of the DEMO!"))
+    waitmessage
+    release
+}

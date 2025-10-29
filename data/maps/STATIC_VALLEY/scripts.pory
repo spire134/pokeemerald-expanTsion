@@ -20,7 +20,7 @@ script Zatik_Woman_2 {
 }
 
 script Zatik_Camper_1 {
-    trainerbattle_single(TRAINER_BRAD, 
+    trainerbattle_single(TRAINER_DREW, 
         format("Camping out in nature is the best way to bond with your Pokémon!"),
         format("That was an unforgettable experience!")
         )
@@ -29,7 +29,7 @@ script Zatik_Camper_1 {
 }
 
 script Zatik_Rocker_1 {
-    trainerbattle_single(TRAINER_LANCE, 
+    trainerbattle_single(TRAINER_FABIAN, 
         format("Let me show you how to get WILD!"),
         format("That was one WILD time!")
         )

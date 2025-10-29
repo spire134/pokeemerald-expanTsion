@@ -116,7 +116,7 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("Well done! You've completed the Patience Challenge!\n"
         "Just kidding, but you did wait like a champ."
         "Now for the real challenge, HYAAAAH!"))
-        trainerbattle_single(TRAINER_KOJI,
+        trainerbattle_single(TRAINER_KOJI_1,
         format("Your patience has brought you here.\pSuch power!"),
         format("Patience is a virtue, but so is strength!")
         )
@@ -140,7 +140,7 @@ script Quartz_Gym_WeakpointChallenge {
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Let's see your strategy in action!"))
-        trainerbattle_single(TRAINER_CYNDY,
+        trainerbattle_single(TRAINER_CYNDY_1,
         format("Show me how well you exploit weaknesses!\pPrepare yourself!"),
         format("Impressive!")
         )
@@ -172,7 +172,7 @@ script Quartz_CaptRojan {
             "Now, are you ready to earn your next field move, and Ranger Rank?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == YES) {
                 msgbox(format("Captain Rojan: Excellent! Show me your skills!"))
-                trainerbattle_double(TRAINER_BRAWLY,
+                trainerbattle_double(TRAINER_BRAWLY_1,
                 format("It's time to prove your worth as a Ranger!\pPrepare yourself!"),
                 format("Well done, Ranger!"),
                 format("You need at least two Pokémon for this battle.")
