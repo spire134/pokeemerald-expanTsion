@@ -1209,3 +1209,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Quartzite_Mart/scripts.inc"
 
 	.include "data/maps/Quartz_Tunnels/scripts.inc"
+
+	.include "data/maps/Quartz_Gym/scripts.inc"
+
+	.include "data/maps/Quartz_Tunnel_Room/scripts.inc"

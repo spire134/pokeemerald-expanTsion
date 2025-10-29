@@ -12,10 +12,9 @@ script Tasmin_Field_Script {
         msgbox(format("Tasmin: Sorted and labeled, now would you like to battle? 
         I recommend you have a few extra teamates first!"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES) {
-        trainerbattle_single(TRAINER_TASMIN_LOGISTICS, "Let me see if you'll need rescuing!", "Corin: Good stuff!")
-        msgbox("Corin: Let's meet at HQ with Tasmin!")
-        setflag(FLAG_CORIN_CLEARED)
-        # Hide Corin from field map; show him at gym (use hideobject/showobject as needed)
+        trainerbattle_single(TRAINER_TASMIN_LOGISTICS, "Let me see if you're organized!", "Tasmin: Put me away like spare rope!")
+        msgbox("Tasmin: Let's meet at HQ with Mara after you find the others!")
+        setflag(FLAG_TASMIN_CLEARED)
         releaseall
         }
         else{
@@ -24,7 +23,7 @@ script Tasmin_Field_Script {
     }
     else{
     # Already cleared; should be gone from field, but for safety:
-    msgbox("Corin: I'll wrap up here soon.")
+    msgbox("Tasmin: I'll wrap up here soon.")
     releaseall
     }
 }

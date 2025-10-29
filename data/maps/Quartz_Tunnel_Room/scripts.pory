@@ -1,0 +1,30 @@
+mapscripts Quartz_Tunnel_Room_MapScripts {}
+
+script Travis_Notice_Trigger {
+    if (!flag(FLAG_TALKED_TO_TRAVIS)) {
+    lock
+    playse(SE_PIN)
+    applymovement(LOCALID_TRAVIS_ROOM, moves(emote_exclamation_mark))
+    waitmovement(0)
+    applymovement(LOCALID_TRAVIS_ROOM, moves(walk_fast_right walk_fast_right walk_fast_right face_down walk_in_place_fast_down))
+    msgbox(format("Travis: Oh! You're from Hazolt Ranger HQ, right?"
+    "I've been keeping those Hive goons out of this area.\p"
+    "Can you clear the path ahead? Then we can work together to take them down!\n"))
+    waitmessage
+    setflag(FLAG_TALKED_TO_TRAVIS)
+    msgbox(format("Travis: Thanks! I'll be right here if you need help.\p"))
+    release
+    }
+    else {
+        end
+    }
+}
+
+script Travis_Quartzite_Room {
+    lock
+    face_player
+    msgbox(format("Travis: The Hive Drones have been trying to sneak into Quartzite Village through this tunnel.\p"
+    "If you can clear them out, I can help!\n"))
+    waitmessage
+    release
+}

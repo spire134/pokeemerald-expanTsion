@@ -14,9 +14,9 @@ script DeckStormCutscene {
     showobjectat(LOCALID_CAPT_MARA, MAP_SS_TIDES_MERCY)
     showobjectat(LOCALID_SAILOR, MAP_SS_TIDES_MERCY)
     showobjectat(LOCALID_EON_DECK, MAP_SS_TIDES_MERCY)
-    fadescreen(FADE_FROM_BLACK)
+    playse(SE_EXIT)
     setvar(VAR_UNUSED_0x404E, 2)
-    msgbox(format("CAPTAIN MARA: Stay cautious and learn. We'll be right behind you if anything gets…"))
+    msgbox(format("CAPTAIN MARA: That storm is coming up fast!"))
     # Quick shake
     applymovement(LOCALID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     applymovement(LOCALID_CAPT_MARA, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))

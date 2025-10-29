@@ -4832,7 +4832,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 
 === TRAINER_MARA_EVAL ===
-Name: Mara
+Name: Capt Mara
 Class: Leader
 Pic: Leaf
 Gender: Female
@@ -4879,9 +4879,9 @@ IVs: 12 HP / 12 Atk / 11 Def / 10 SpA / 18 SpD / 2 Spe
 - Fury Cutter  
 
 === TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Name: Capt Rojan
 Class: Leader
-Pic: Leader Brawly
+Pic: Palace Maven Spenser
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -4920,7 +4920,7 @@ IVs: 26 HP / 11 Atk / 16 Def / 3 SpA / 26 SpD / 28 Spe
 - Smelling Salts  
 - U-turn  
 
-Mienfoo (F) @ Normal Gem  
+Mienfoo (F) @ Flying Gem  
 Ability: Regenerator  
 Level: 19  
 Tera Type: Fighting  
@@ -4936,8 +4936,8 @@ Ability: Intimidate
 Level: 20  
 Tera Type: Fighting  
 Sassy Nature  
-IVs: 25 HP / 14 Def / 0 SpA / 30 SpD / 9 Spe  
-- Bullet Punch  
+IVs: 5 HP / 0 Atk / 14 Def / 0 SpA / 30 SpD / 9 Spe  
+- Baton Pass  
 - Triple Axel  
 - Triple Kick  
 - Bulk Up  
@@ -7984,13 +7984,29 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Makuhita (F) @ Loaded Dice  
+Ability: Guts  
+Level: 17  
+Tera Type: Fighting  
+EVs: 44 HP / 44 Spe  
+Naive Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Arm Thrust  
+- Focus Energy  
+- Feint Attack  
+- Ice Punch  
 
-Makuhita
-Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Elekid (F) @ Expert Belt  
+Ability: Static  
+Level: 17  
+Tera Type: Electric  
+EVs: 88 Def  
+Relaxed Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Rock Smash  
+- Ice Punch  
+- Fire Punch  
+- Thunder Punch  
 
 === TRAINER_CORA ===
 Name: CORA
@@ -11275,37 +11291,27 @@ Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRIDGE_TOPDRONE ===
-Name: DRONE
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Grubbin  
-Ability: Swarm  
-Level: 12  
-Adamant Nature  
-IVs: 16 HP / 26 Atk / 5 Def / 0 SpA / 8 SpD / 0 Spe  
-- Vise Grip  
-- String Shot  
-- Mud-Slap  
-- Bug Bite  
-
-Cutiefly  
-Ability: Shield Dust  
-Level: 13   
+Skorupi  
+Ability: Sniper  
+Level: 15   
 Hasty Nature  
-IVs: 15 HP / 0 Atk / 0 Def / 15 SpA / 9 SpD / 18 Spe  
-- Absorb  
-- Sweet Scent  
-- Fairy Wind  
-- Stun Spore  
+IVs: 15 HP / 0 Atk / 10 Def / 15 SpA / 9 SpD / 18 Spe  
+- Bite  
+- Poison Fang  
+- Fell Stinger  
+- Leer   
 
 === TRAINER_BRIDGE_BOTDRONE ===
-Name: DRONE
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -12733,9 +12739,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machoke
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Scraggy (M) @ Oran Berry  
+Ability: Shed Skin  
+Level: 18  
+Tera Type: Dark  
+Calm Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Bulk Up  
+- Detect  
+- Drain Punch  
+- Rest
 
 === TRAINER_WAYNE ===
 Name: WAYNE
@@ -13540,43 +13553,56 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Charjabug
+Level: 16
+IVs: 20 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
+
+Beedrill
+Level: 16
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 20 SpD / 30 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Combee
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
+
+Combee
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 29
+Whirlipede
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Skorupi
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
 Name: GRUNT
@@ -14225,13 +14251,17 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Roselia
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Medicham
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Monferno @ Salac Berry  
+Ability: Blaze  
+Level: 18  
+Tera Type: Fire  
+EVs: 32 Def / 56 SpD  
+Adamant Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Rock Smash  
+- Swords Dance  
+- Flame Wheel  
+- Endure
 
 === TRAINER_FABIAN ===
 Name: FABIAN

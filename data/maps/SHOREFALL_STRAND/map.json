@@ -2,7 +2,7 @@
   "id": "MAP_SHOREFALL_STRAND",
   "name": "SHOREFALL_STRAND",
   "layout": "LAYOUT_SHOREFALL_STRAND",
-  "music": "MUS_AWDS_PEACETIME",
+  "music": "MUS_EVER_GRANDE",
   "region_map_section": "MAPSEC_SHUNU_BEACH",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -31,7 +31,7 @@
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
+      "movement_range_x": 5,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_POKE_BALL",
@@ -44,7 +44,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 23,
+      "x": 24,
       "y": 14,
       "elevation": 0,
       "item": "ITEM_PEARL",

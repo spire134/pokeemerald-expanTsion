@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Pumphouse_Drone",
       "flag": "0"
     }
   ],
@@ -48,7 +48,7 @@
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "5"
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [],

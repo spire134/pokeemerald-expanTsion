@@ -25,7 +25,7 @@ script Mara_Gym_Script {
         end
     }
     if (!flag(FLAG_MARA_EVAL_READY)) {
-        msgbox((format"Mara: All accounted for. Nice work, Ranger {PLAYER}. Talk to me when you want to test what you’ve learned."))
+        msgbox((format"Mara: All accounted for. Nice work, Ranger {PLAYER}. Talk to me when you want to test what you've learned."))
         setflag(FLAG_MARA_EVAL_READY)
         clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
         addobject(LOCALID_EON_GYM)
@@ -55,12 +55,12 @@ script Ranger_Post_Mara_Cutscene {
     lockall
     setflag(FLAG_RANGERS_REASSIGNED)
     applymovement(LOCALID_MARA, moves(walk_in_place_down))
-    msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the caves. Tasmin, restock the Mart. 
-    {PLAYER}, take Cut and clear the western woods. You've earned it."))
+    msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the Magnet Caves. Tasmin, restock the Mart. 
+    {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
     giveitem(ITEM_HM01)
     applymovement(LOCALID_MARA, moves(walk_in_place_down))
     waitmovement(0)
-    msgbox("Mara: Good luck. I've perfected this Cut HM; you’ll need it.")
+    msgbox("Mara: Good luck. I've perfected this Cut HM; you'll need it.")
     return
 }
 

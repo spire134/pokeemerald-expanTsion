@@ -23,6 +23,7 @@ script Swablu_Noies {
     applymovement(LOCALID_SWABLU_NOIES, moves(face_player))
     waitmovement(0)
     playse(SE_M_SING)
+    waitse
     msgbox(format("Swablu sings a beautiful song."))
     waitmessage
     release

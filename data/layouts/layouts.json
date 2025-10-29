@@ -4670,6 +4670,26 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/Quartz_Tunnels/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_Tunnels/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_GYM",
+      "name": "Quartz_Gym_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/Quartz_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_TUNNEL_ROOM",
+      "name": "Quartz_Tunnel_Room_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/Quartz_Tunnel_Room/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_Tunnel_Room/map.bin"
     }
   ]
 }

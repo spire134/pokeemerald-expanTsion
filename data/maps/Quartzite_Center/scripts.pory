@@ -10,3 +10,11 @@ script Script_QuartzNurse {
     waitmovement   
     release
 }
+
+script Quartz_Tunnel_Guard {
+    lock
+    faceplayer
+    msgbox(format("The tunnel ahead is currently blocked by Team Hive Drones.\p"
+    "I can't let anyone pass until Captain Rohan gives the clear."))
+    release
+}
