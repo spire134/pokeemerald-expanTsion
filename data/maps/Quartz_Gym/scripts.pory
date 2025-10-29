@@ -112,7 +112,7 @@ script Quartz_Gym_PatienceChallenge {
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Great! Start waiting now."))
-        wait(1800) // 30 seconds at 60 FPS
+        delay(1800) // 30 seconds at 60 FPS
         msgbox(format("Well done! You've completed the Patience Challenge!\n"
         "Just kidding, but you did wait like a champ."
         "Now for the real challenge, HYAAAAH!"))
