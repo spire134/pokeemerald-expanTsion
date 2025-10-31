@@ -29,5 +29,6 @@ script Restless_Boy {
 }
 
 script Hazolt_BeachWarp {
-    warp(MAP_SHUNU_BEACH_WEST, 11, 5)    
+    warp(MAP_SHUNU_BEACH_WEST, 11, 5)
+    waitstate  
 }
