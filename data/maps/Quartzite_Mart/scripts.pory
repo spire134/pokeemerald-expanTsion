@@ -31,6 +31,6 @@ mart Quartz_MartBase {
 script Quartz_MartKid {
     lock
     faceplayer
-    message(format("I'm shopping for my mom! What about you?"))
+    msgbox(format("I'm shopping for my mom! What about you?"))
     release
 }

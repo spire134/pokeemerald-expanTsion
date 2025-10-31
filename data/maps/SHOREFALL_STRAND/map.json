@@ -44,7 +44,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 24,
+      "x": 23,
       "y": 14,
       "elevation": 0,
       "item": "ITEM_PEARL",

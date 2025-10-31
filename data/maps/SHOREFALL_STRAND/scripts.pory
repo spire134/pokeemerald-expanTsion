@@ -4,10 +4,6 @@ mapscripts SHOREFALL_STRAND_MapScripts {
     ]
 }
 
-# =========================================
-# 5) SHOREFALL STRAND: wake + forced wild encounter + heal + set respawn
-# =========================================
-
 script Shorefall_OnEnter {
     lockall
     msgbox(format(
@@ -23,13 +19,9 @@ script Shorefall_OnEnter {
     setwildbattle(SPECIES_WATTREL, 2)
     dowildbattle
     msgbox(format(
-            "You steady your partner. The wind begins to ease… a little."
+            "You steady your partner. A gentle breeze flows."
             ))
-    # Heal either way
     special(HealPlayerParty)
-    # Set a temporary respawn near the wreck
-    # NOTE: You must define HEAL_LOCATION_SHOREFALL_STRAND in include/constants/heal_locations.h
-    # and map it to SHOREFALL_STRAND (X=6,Y=9 or your chosen tile) in src/heal_locations.c
     releaseall
     end
 }

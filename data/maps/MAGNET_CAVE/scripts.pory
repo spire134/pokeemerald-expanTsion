@@ -12,9 +12,9 @@ script Corin_Field_Script {
         msgbox(format("Corin: I'm all wrapped up here, want to have a practice bout?"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES) {
         trainerbattle_single(TRAINER_CORIN_RESCUE, "Let me see if you'll need rescuing!", "Corin: Good stuff!")
-        msgbox("Corin: Let's meet at HQ with Tasmin!")
         setflag(FLAG_CORIN_CLEARED)
-        # Hide Corin from field map; show him at gym (use hideobject/showobject as needed)
+        msgbox("Corin: Let's meet at HQ with Tasmin!")
+        waitmessage
         releaseall
         }
         else{

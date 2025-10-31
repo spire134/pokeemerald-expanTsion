@@ -4690,6 +4690,16 @@
       "secondary_tileset": "gTileset_InsideShip",
       "border_filepath": "data/layouts/Quartz_Tunnel_Room/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_Tunnel_Room/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_LIBRARY",
+      "name": "Quartz_Library_Layout",
+      "width": 30,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/Quartz_Library/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_Library/map.bin"
     }
   ]
 }

@@ -38,30 +38,24 @@ script Mara_Gym_Script {
         # Run your battle event
         trainerbattle_double(TRAINER_MARA_EVAL, "Let's see if you can make the cut.", "Mara: That's an easy pass. Well done.", 
         "Mara: This is to be a double battle. Return with sufficient teammates.")
-        releaseall
         setflag(FLAG_BADGE01_GET)
+        setflag(FLAG_MARA_DEFEATED)
+        setflag(FLAG_RANGERS_REASSIGNED)
+            applymovement(LOCALID_MARA, moves(walk_in_place_down))
+            msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the Magnet Caves. Tasmin, restock the Mart. 
+            {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
+            giveitem(ITEM_HM01)
+            applymovement(LOCALID_MARA, moves(walk_in_place_down))
+            waitmovement(0)
+            msgbox("Mara: Good luck. I've perfected this Cut HM; you'll need it.")
+
+        releaseall
         end
     }
-    # After Mara is defeated, run reassignments if not done
-    if (!flag(FLAG_RANGERS_REASSIGNED)) {
-        call(Ranger_Post_Mara_Cutscene)
-        }
-    msgbox("Mara: You've got Cut. Head west into the woods for your next assignment.")
+    msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station."
+    "There have been reports of Team Hive activity there. Stay alert, Ranger."))
     releaseall
     end
-}
-
-script Ranger_Post_Mara_Cutscene {
-    lockall
-    setflag(FLAG_RANGERS_REASSIGNED)
-    applymovement(LOCALID_MARA, moves(walk_in_place_down))
-    msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the Magnet Caves. Tasmin, restock the Mart. 
-    {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
-    giveitem(ITEM_HM01)
-    applymovement(LOCALID_MARA, moves(walk_in_place_down))
-    waitmovement(0)
-    msgbox("Mara: Good luck. I've perfected this Cut HM; you'll need it.")
-    return
 }
 
 script Eon_Gym_Script {

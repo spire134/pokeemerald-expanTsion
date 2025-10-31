@@ -490,7 +490,7 @@
     },
     {
       "id": "MAPSEC_ABANDONED_SHIP",
-      "name": "Hazolt Gym",
+      "name": "A",
       "x": 6,
       "y": 14,
       "width": 1,
@@ -1266,6 +1266,14 @@
     {
       "id": "MAPSEC_QUARTZSITE_TUNNELS",
       "name": "Quartzite Tunnels"
+    },
+    {
+      "id": "MAPSEC_AZURE_POOLS",
+      "name": "Azure Pools"
+    },
+    {
+      "id": "MAPSEC_QUARTZ_LIBARY",
+      "name": "Quartz Library"
     }
   ]
 }

@@ -41,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 12,
-      "y": 16,
+      "y": 17,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": -4,
-      "y": 12,
+      "x": 13,
+      "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -114,8 +114,25 @@
       "elevation": 0,
       "dest_map": "MAP_HAZOLT_HIVE_CURIOUS_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_SHUNU_BEACH_WEST",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Hazolt_BeachWarp"
+    }
+  ],
   "bg_events": []
 }

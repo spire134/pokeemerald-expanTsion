@@ -5,9 +5,8 @@ script Script_QuartzNurse {
     setrespawn(HEAL_LOCATION_QUARTZSITE_VILLAGE)
 	call(Common_EventScript_PkmnCenterNurse)
 	waitmessage
-	waitbuttonpress
-    applymovement(LOCALID_PLAYER, moves(walk_in_place_down))
-    waitmovement   
+	applymovement(LOCALID_PLAYER, moves(walk_in_place_down))
+    waitbuttonpress
     release
 }
 
@@ -15,6 +14,6 @@ script Quartz_Tunnel_Guard {
     lock
     faceplayer
     msgbox(format("The tunnel ahead is currently blocked by Team Hive Drones.\p"
-    "I can't let anyone pass until Captain Rohan gives the clear."))
+    "I can't let anyone pass until Captain Rojan gives the clear."))
     release
 }

@@ -45,6 +45,7 @@ script Shudderwood_Berry_Picker {
     "I'll give you Juice for each one!"))
     checkitem(ITEM_BLUK_BERRY)
     if (var(VAR_RESULT) == TRUE) {
+        playse(SE_PIN)
         applymovement(LOCALID_BERRY_PICKER, moves(emote_exclamation_mark))
         waitmovement(0)
         msgbox(format("Oh, a Bluk Berry! Thank you so much!"
@@ -52,6 +53,7 @@ script Shudderwood_Berry_Picker {
         giveitem(ITEM_BERRY_JUICE, 1)
         removeitem(ITEM_BLUK_BERRY, 1)
         msgbox(format("I hope you and your Pokémon love the Berry Juice!"))
+        playse(SE_PIN)
         applymovement(LOCALID_BERRY_PICKER, moves(emote_heart))
         waitmovement(0) } else {
         msgbox(format("I'll be here if you find Bluk Berries!"))
