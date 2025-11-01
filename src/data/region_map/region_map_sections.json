@@ -1274,6 +1274,10 @@
     {
       "id": "MAPSEC_QUARTZ_LIBARY",
       "name": "Quartz Library"
+    },
+    {
+      "id": "MAPSEC_SHUDDERWOOD",
+      "name": "The Shudderwood"
     }
   ]
 }

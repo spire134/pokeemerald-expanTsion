@@ -1,1 +1,7 @@
 mapscripts SHUNU_BEACH_WEST_MapScripts {}
+
+script Hazolt_Sign {
+    lock
+    msgbox(format("North: Hazolt Village\n"
+    "Fresh water available!"))
+}

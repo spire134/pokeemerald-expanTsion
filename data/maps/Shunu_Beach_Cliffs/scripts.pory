@@ -11,13 +11,15 @@ script Eon_Field_Script {
     if (!flag(FLAG_EON_CLEARED)) {
         msgbox("Eon: Ready for the field check?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES) {
-        trainerbattle_single(TRAINER_EON_SCOUT, "Show me your skill.", "Eon: Not bad. I'll see you at HQ.")
-        msgbox("Eon: Good. Mark your wins, study your losses.")
+        trainerbattle_no_intro(TRAINER_EON_SCOUT, "Eon: Not bad. I'll see you at HQ.")
+        msgbox(format("Eon: Good. Mark your wins, study your losses."))
         setflag(FLAG_EON_CLEARED)
         # Hide Eon from field map; show him at gym (use hideobject/showobject as needed)
         releaseall
         }
         else{
+        msgbox("Eon: Come back when you're ready.\n"
+                "Don't waste time.")
             releaseall
         }
     }

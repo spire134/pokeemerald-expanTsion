@@ -6,75 +6,93 @@ script Mara_Gym_Script {
     if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
         setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
         msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.
-        Thanks to Eon's stewardship, we drove ashore close to a village, and we've set up our HQ here.
-        Here are some supplies, make use of them to prepare yourself.
-        Before your evaluation, I need you to run field checks with Eon, Corin, and Tasmin. 
-        Report back after all three are complete."))
+        Thanks to Eon's stewardship, we drove ashore close to HQ, and we've set up.
+        Here are some supplies, make use of them to prepare yourself."))
         giveitem(ITEM_POKE_BALL, 10)
+        giveitem(ITEM_POTION, 5)
+        msgbox(format("Mara: Now, {PLAYER} I need you to check on our three field operatives.
+        Eon is mapping the eastern beachside cliffs, Corin is investigating a cave in Zatik Gorge to the west,
+        and Tasmin is working on logistics at the Mart. Report back to me when you have checked on all three."))
         setflag(FLAG_MARA_FIELD_TEST_STARTED)
         clearflag(FLAG_BEGINNING_TRAINERS)
         releaseall
-        end
     }
     # Wait for all to clear and return
     if (!flag(FLAG_EON_CLEARED) || !flag(FLAG_CORIN_CLEARED) || !flag(FLAG_TASMIN_CLEARED)) {
         msgbox(format("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
         Corin is investigating a cave in that gorge to the west, and Tasmin is working on
         logistics at the Mart. Report back when you are done."))
-        releaseall
-        end
+        releaseall        
     }
     if (!flag(FLAG_MARA_EVAL_READY)) {
-        msgbox((format"Mara: All accounted for. Nice work, Ranger {PLAYER}. Talk to me when you want to test what you've learned."))
+        msgbox(format("Mara: Excellent work checking on the team. Now everyone is back at HQ.
+        Next up will be your first evaluation as a Ranger."
+        "But first, take some time to train and prepare."))        
         setflag(FLAG_MARA_EVAL_READY)
         clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
         addobject(LOCALID_EON_GYM)
         addobject(LOCALID_TASMIN_GYM)
         addobject(LOCALID_CORIN_GYM)
+        msgbox(format("Mara: Why not have a rematch with Eon, Corin, or Tasmin?"
+        "They should all be ready for another bout here."))
         releaseall
-        end
     }
     if (!flag(FLAG_MARA_DEFEATED)) {
         # Run your battle event
-        trainerbattle_double(TRAINER_MARA_EVAL, "Let's see if you can make the cut.", "Mara: That's an easy pass. Well done.", 
-        "Mara: This is to be a double battle. Return with sufficient teammates.")
+        msgbox(format("Mara: Ready for your evaluation as a Ranger? Let's see if you make the cut."), MSGBOX_YESNO)
+        trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: That's an easy pass. Well done.")
         setflag(FLAG_BADGE01_GET)
         setflag(FLAG_MARA_DEFEATED)
-        setflag(FLAG_RANGERS_REASSIGNED)
-            applymovement(LOCALID_MARA, moves(walk_in_place_down))
-            msgbox(format("Mara: You all did well. Assignments: Eon, check Azure Pools. Corin, sweep the Magnet Caves. Tasmin, restock the Mart. 
-            {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
-            giveitem(ITEM_HM01)
-            applymovement(LOCALID_MARA, moves(walk_in_place_down))
-            waitmovement(0)
-            msgbox("Mara: Good luck. I've perfected this Cut HM; you'll need it.")
-
-        releaseall
-        end
+        msgbox(format("Mara: Excellent work,
+        {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
+        giveitem(ITEM_HM01) # Cut HM
+        msgbox(format("{PLAYER} received HM01 Cut!"))
+        waitfanfare
+        waitbuttonpress
+        msgbox(format("Mara: Good luck. I've perfected this Cut HM.
+        It now has the Steel soul of our Ranger Corps imbued within it.\p
+        Use it well, Ranger."))
+        releaseall 
     }
-    msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station."
-    "There have been reports of Team Hive activity there. Stay alert, Ranger."))
+    msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.
+    There have been reports of Team Hive activity there. Stay alert, Ranger."))
     releaseall
-    end
 }
 
 script Eon_Gym_Script {
-    lockall
+    lock
     faceplayer
-    msgbox(format("I've gotta prepare my Chinchou for Diving to get through those flooded tunnels."))
-    releaseall
+    if (flag(FLAG_MARA_EVAL_READY)) {
+        msgbox(format("Eon: Hmm, I'm pretty busy, but do you want to have a rematch?"
+        "Just don't waste my time by being unprepared!"))
+        trainerbattle_no_intro(TRAINER_ANDRES_2, "Eon: Not bad, Ranger. Keep training.")
+    }
+    msgbox(format("I've gotta train my Chinchou to DIVE to get through those flooded tunnels!"))
+    release
 }
+
 script Corin_Gym_Script {
-    lockall
+    lock
     faceplayer
-    msgbox(format("Let's go, some good training and good food and we can move those boulders! 
+        if (flag(FLAG_MARA_EVAL_READY)) {
+            msgbox(format("Corin: Hey there, want to have another battle?"
+            "I've been working on some new strategies on snack breaks!"))
+            trainerbattle_no_intro(TRAINER_LORENZO, "Corin: Nice work, Ranger. Let's hit the chips.")
+        }
+    msgbox(format("Some good training and good food will give us the STRENGTH we need at Magnet Cave! 
     I gotta request extra rations!"))
-    releaseall
+    release
 }
 
 script Tasmin_Gym_Script {
-    lockall
+    lock
     faceplayer
-    msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."))
-    releaseall
+    if (flag(FLAG_MARA_EVAL_READY)) {
+        msgbox(format("Tasmin: Hey, want to have a rematch?"
+        "I've been optimizing my supply routes and battling strategies!"))
+        trainerbattle_no_intro(TRAINER_WALLY_MAUVILLE, "Tasmin: Wow, you're really strong now, Ranger!")
+    }
+    msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."
+    "But I could use someone with a bright FLASH to help me find things faster!"))
+    release
 }

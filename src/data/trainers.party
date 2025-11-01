@@ -10371,7 +10371,7 @@ Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CORIN_RESCUE ===
-Name: CORIN
+Name: Corin
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
@@ -10382,44 +10382,58 @@ AI: Basic Trainer
 Morelull  
 Ability: Illuminate  
 Level: 8  
-IVs: 10 HP / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Astonish  
 - Absorb  
 - Confuse Ray  
 - Ingrain  
 
-Makuhita  
-Ability: Thick Fat  
+Growlithe-Hisui  
+Ability: Intimidate  
 Level: 8  
-IVs: 0 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe  
-- Arm Thrust  
-- Sand Attack  
-- Tackle  
-- Focus Energy  
-
-
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Bite
+- Howl
+- Leer
+- Ember
 
 === TRAINER_LORENZO ===
-Name: LORENZO
+Name: Corin
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Seedot
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Growlithe-Hisui @ Pecha Berry
+Ability: Intimidate  
+Level: 12  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Bite
+- Howl
+- Leer
+- Flame Wheel
 
-Nuzleaf
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Morelull @ Big Root
+Ability: Illuminate  
+Level: 12  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Astonish  
+- Mega Drain  
+- Confuse Ray  
+- Ingrain
 
-Lombre
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Gulpin @ Oran Berry
+Ability: Gluttony  
+Level: 12  
+Tera Type: Poison  
+IVs: 11 HP / 0 Atk / 16 Def / 21 SpA / 21 SpD / 11 Spe  
+- Stuff Cheeks  
+- Stockpile  
+- Swallow  
+- Acid Spray
+
 
 === TRAINER_SEBASTIAN ===
 Name: SEBASTIAN
@@ -12273,17 +12287,42 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_WALLY_MAUVILLE ===
-Name: WALLY
-Class: Rival
-Pic: Wally
-Gender: Male
-Music: Male
+Name: Tasmin
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
+Gender: Female
+Music: Girl
 Double Battle: No
 AI: Basic Trainer
 
-Ralts
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Glameow (M)  
+Ability: Own Tempo  
+Level: 11  
+IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe  
+- Hypnosis  
+- Scratch
+- Fake Out 
+- Growl
+
+Shuppet (M) 
+Ability: Frisk  
+Level: 11  
+IVs: 10 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe  
+- Astonish  
+- Screech  
+- Night Shade  
+- Spite
+
+Timburr (M) @ Hard Stone  
+Ability: Guts  
+Level: 11  
+Tera Type: Fighting  
+Relaxed Nature  
+IVs: 18 HP / 10 Atk / 10 Def / 10 SpA / 18 SpD / 5 Spe  
+- Rock Throw  
+- Pound  
+- Leer  
+- Rock Smash
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -16369,24 +16408,44 @@ IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe
 - Water Gun
 - Electro Ball
 
-
-
 === TRAINER_ANDRES_2 ===
-Name: ANDRES
+Name: Eon
 Class: Ruin Maniac
-Pic: Ruin Maniac
+Pic: Pkmn Ranger
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Sandshrew
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Chinchou (F) @ Persim Berry
+Ability: Volt Absorb
+Level: 11
+Bashful Nature
+IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe  
+- Thunder Wave
+- Charge Beam
+- Water Pulse
+- Charge
 
-Sandshrew
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Taillow (M) @ Oran Berry
+Ability: Guts  
+Level: 11 
+Careful Nature  
+IVs: 7 HP / 10 Atk / 10 Def / 10 SpA / 15 SpD / 18 Spe  
+- Focus Energy
+- Pluck
+- Quick Attack
+- Thief
+
+Teddiursa (M) @ Toxic Orb
+Ability: Quick Feet
+Level: 12
+Jolly Nature
+IVs: 23 HP / 17 Atk / 20 Def / 10 SpA / 21 SpD / 23 Spe
+- Fling
+- Baby-Doll Eyes
+- Scratch
+- Metal Claw
 
 === TRAINER_ANDRES_3 ===
 Name: ANDRES

@@ -1,5 +1,13 @@
 mapscripts Hazolt_Mart_MapScripts {}
 
+script Hazolt_MartLocked {
+    lock
+    msgbox(format("Hazolt supply room, authorized personnel only!"
+    "That means you, Corin!"))
+    waitmessage
+    release
+}
+
 script Tasmin_Field_Script {
     lockall
     faceplayer
@@ -12,12 +20,13 @@ script Tasmin_Field_Script {
         msgbox(format("Tasmin: Sorted and labeled, now would you like to battle? 
         I recommend you have a few extra teamates first!"), MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES) {
-        trainerbattle_single(TRAINER_TASMIN_LOGISTICS, "Let me see if you're organized!", "Tasmin: Put me away like spare rope!")
-        msgbox("Tasmin: Let's meet at HQ with Mara after you find the others!")
+        trainerbattle_no_intro(TRAINER_TASMIN_LOGISTICS, "Tasmin: Put me away like spare rope!")
+        msgbox(format("Tasmin: Let's meet at HQ with Mara after you find the others!"))
         setflag(FLAG_TASMIN_CLEARED)
         releaseall
         }
         else{
+        msgbox(format("Tasmin: No worries, I'll be here stocking supplies."))
             releaseall
         }
     }

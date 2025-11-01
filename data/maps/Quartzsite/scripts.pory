@@ -31,6 +31,20 @@ script Quartz_Hive_Blocker {
     release
 }
 
+script Quartz_StationSign {
+    lock
+    msgbox(format("Quartzite Station\n"
+    "Senior Ranger: Captain Rojan"))
+    release
+}
+
+script Quartz_PumpSign {
+    lock
+    msgbox(format("Quartzsite Pump House\n"
+    "Keeping the Quarry Clear!"))
+    release
+}
+
 script Quartz_Hive_LeftGuard {
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_1, 
     format("Hive Drone: You think you can just walk around here?\n"

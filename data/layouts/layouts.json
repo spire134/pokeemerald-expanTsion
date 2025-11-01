@@ -4695,7 +4695,7 @@
       "id": "LAYOUT_QUARTZ_LIBRARY",
       "name": "Quartz_Library_Layout",
       "width": 30,
-      "height": 22,
+      "height": 20,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/Quartz_Library/border.bin",
