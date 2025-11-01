@@ -16410,8 +16410,8 @@ IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe
 
 === TRAINER_ANDRES_2 ===
 Name: Eon
-Class: Ruin Maniac
-Pic: Pkmn Ranger
+Class: Pkmn Ranger
+Pic: Pyramid King Brandon
 Gender: Male
 Music: Male
 Double Battle: No
@@ -16419,7 +16419,7 @@ AI: Basic Trainer
 
 Chinchou (F) @ Persim Berry
 Ability: Volt Absorb
-Level: 11
+Level: 12
 Bashful Nature
 IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe  
 - Thunder Wave
@@ -16429,7 +16429,7 @@ IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe
 
 Taillow (M) @ Oran Berry
 Ability: Guts  
-Level: 11 
+Level: 12 
 Careful Nature  
 IVs: 7 HP / 10 Atk / 10 Def / 10 SpA / 15 SpD / 18 Spe  
 - Focus Energy
