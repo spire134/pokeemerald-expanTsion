@@ -16,13 +16,15 @@ script Mara_Gym_Script {
         setflag(FLAG_MARA_FIELD_TEST_STARTED)
         clearflag(FLAG_BEGINNING_TRAINERS)
         releaseall
+        end
     }
     # Wait for all to clear and return
     if (!flag(FLAG_EON_CLEARED) || !flag(FLAG_CORIN_CLEARED) || !flag(FLAG_TASMIN_CLEARED)) {
         msgbox(format("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
         Corin is investigating a cave in that gorge to the west, and Tasmin is working on
         logistics at the Mart. Report back when you are done."))
-        releaseall        
+        releaseall
+        end        
     }
     if (!flag(FLAG_MARA_EVAL_READY)) {
         msgbox(format("Mara: Excellent work checking on the team. Now everyone is back at HQ.
@@ -36,6 +38,7 @@ script Mara_Gym_Script {
         msgbox(format("Mara: Why not have a rematch with Eon, Corin, or Tasmin?"
         "They should all be ready for another bout here."))
         releaseall
+        end
     }
     if (!flag(FLAG_MARA_DEFEATED)) {
         # Run your battle event
@@ -52,11 +55,13 @@ script Mara_Gym_Script {
         msgbox(format("Mara: Good luck. I've perfected this Cut HM.
         It now has the Steel soul of our Ranger Corps imbued within it.\p
         Use it well, Ranger."))
-        releaseall 
+        releaseall
+        end 
     }
     msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.
     There have been reports of Team Hive activity there. Stay alert, Ranger."))
     releaseall
+    end
 }
 
 script Eon_Gym_Script {
