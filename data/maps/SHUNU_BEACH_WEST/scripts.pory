@@ -4,4 +4,5 @@ script Hazolt_Sign {
     lock
     msgbox(format("North: Hazolt Village\n"
     "Fresh water available!"))
+    release
 }

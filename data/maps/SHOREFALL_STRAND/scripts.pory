@@ -6,6 +6,7 @@ mapscripts SHOREFALL_STRAND_MapScripts {
 
 script Shorefall_OnEnter {
     lockall
+    playbgm(MUS_ABNORMAL_WEATHER, 0)
     msgbox(format(
         "…\p"
         "You wake to your partner poking your shoulder.\n"
@@ -20,8 +21,22 @@ script Shorefall_OnEnter {
     dowildbattle
     msgbox(format(
             "You steady your partner. A gentle breeze flows."
+            "Ranger fieldbook page 1 says you should look 
+            for your fellow Rangers and get to safety!\p"
             ))
     special(HealPlayerParty)
     releaseall
     end
+}
+
+script CrashedShipLock {
+    lock
+    msgbox(format("The hull of the ship is damaged and waterlogged.\n"
+    "It looks like it washed ashore during a storm."))
+    checkitem(ITEM_STORAGE_KEY)
+    if (var(VAR_RESULT) == TRUE) {
+    msgbox(format("You use the Old Key to unlock a small compartment.\p"))
+    warp(MAP_TIDESMERCY_STORAGEWRECK, 0, 0)
+    } else 
+    {
 }

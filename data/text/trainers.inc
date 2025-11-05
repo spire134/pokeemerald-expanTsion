@@ -1324,14 +1324,14 @@ Route111_Text_DustyPostRematch:
 	.string "Hmm… It could even be fifty…\n"
 	.string "How long have I been at this?$"
 
-Route111_Text_TravisIntro:
+Route111_Text_CorinIntro:
 	.string "I'm full of pep!\n"
 	.string "And my POKéMON is peppy, too!$"
 
-Route111_Text_TravisDefeat:
+Route111_Text_CorinDefeat:
 	.string "My POKéMON lost its pep…$"
 
-Route111_Text_TravisPostBattle:
+Route111_Text_CorinPostBattle:
 	.string "When I see a TRAINER with a lot of pep,\n"
 	.string "I can't help looking.$"
 

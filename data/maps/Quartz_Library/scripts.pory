@@ -1,1 +1,162 @@
 mapscripts Quartz_Library_MapScripts {}
+
+// FLAG_HIDE_CONTEST_POKE_BALL is our flag for hiding all the civilians in the library.
+
+script Quartz_Library_Hive_RunningGuard {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_4, 
+    format("Hive Drone: You can't be here, Ranger!\n"
+    "The Seer will hear about this!"),
+    format("Hive Drone: Ugh... You got lucky this time, Ranger.")
+    )
+    msgbox(format("Hive Drone: The Seer won't be pleased..."))
+    waitmessage
+}
+
+script Quartz_Seer_Fight {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_QUARTZ_SEER, moves(emote_exclamation_mark walk_slow_down walk_slow_down walk_slow_down))
+    waitmovement(0)
+    msgbox(format("Seer: I was wondering when a Ranger with a spine would show up!"
+    "But thanks to my Drones, I know you're spread thin. This will be easy!\p"
+    "Reserve guard, attack!"))
+    waitmessage
+    applymovement(LOCALID_FIRST_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down 
+    walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
+    waitmovement(0)
+    trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_5, "Drone: For the Seer!")
+    msgbox(format("Drone: Ugh… How could I lose in front of the Seer…"))
+    waitmessage
+    applymovement(LOCALID_FIRST_GOON, moves(walk_fast_left face_right))
+    applymovement(LOCALID_QUARTZ_SEER, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("Seer: What are you doing, you useless Drone?!\l"
+    "Send in the next guard!"
+    "You'll never defeat us all Ranger, that's the strength of our numbers!"))
+    waitmessage
+    applymovement(LOCALID_SECOND_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down
+    walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
+    waitmovement(0)
+    playse(SE_EXIT)
+    msgbox(format("Corin: Hold it right there, Seer!"
+    "You're not the only ones with allies!"))
+    addobject(LOCALID_CORIN_LIBRARY)
+    applymovement(LOCALID_CORIN_LIBRARY, moves(walk_fast_up walk_fast_up walk_fast_up walk_fast_up))
+    waitmovement(0)
+    msgbox(format("Corin: {PLAYER}, let me show you what I've learned about Rock Smash!"))
+    playse(SE_M_ROCK_THROW)
+    applymovement(LOCALID_CORIN_ROCK, moves(rock_smash_break))
+    waitmovement(0)
+    removeobject(LOCALID_CORIN_ROCK)
+    applymovement(LOCALID_CORIN_LIBRARY, moves(walk_fast_up))
+    waitmovement(0)
+    msgbox(format("Seer: What?! Fine. Drone, handle this new arrival!"
+    "I will deal with this impudent Ranger myself!"))
+    waitmessage
+    applymovement(LOCALID_SECOND_GOON, moves(face_down))
+    waitmovement(0)
+    msgbox(format("Corin: Let's do this, {PLAYER}!"
+    "I'll start with Growlithe!"))
+    call(QuartzLibrary_PartySelect)
+}
+
+script QuartzLibrary_PartySelect{
+    special(SavePlayerParty)
+    fadescreen(FADE_TO_BLACK)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    goto_if_ne(VAR_RESULT, 0, QuartzLibrary_SeerBattle)
+    special(LoadPlayerParty)
+    msgbox(format("Corin: This ends now! Ready your POKéMON!"))
+    call(QuartzLibrary_PartySelect)
+}
+
+script QuartzLibrary_SeerBattle {
+    multi_2_vs_2(TRAINER_GRUNT_MAGMA_HIDEOUT_14, format("Seer: Impossible!"), TRAINER_GRUNT_MAGMA_HIDEOUT_6, "Drone: Where am I?!", PARTNER_CORIN_QUARTZ)
+    msgbox(format("Seer:How could I lose to a Ranger…"
+    "All Drones, retreat! Hide in the caves, then make your way to HQ!"))
+    setflag(FLAG_QUARTZITE_HIVE_DEFEATED)
+    clearflag(FLAG_HIDE_CONTEST_POKE_BALL)
+    applymovement(LOCALID_QUARTZ_SEER, moves(walk_in_place_fast_down))
+    waitmovement(0)
+    msgbox(format("Corin: Watch out, {PLAYER}! That looks explosive!"))
+    playse(SE_M_EXPLOSION)
+    fadescreen(FADE_TO_BLACK)
+    waitse
+    msgbox(format("Coring: Phew… That was close!\n"
+    "Gosh, it's dark. One moment and I'll have Morelull light the room up."))
+    waitmessage
+    warp(MAP_QUARTZ_Library, 7, 12)
+    waitstate
+}
+
+script Corin_Quartz_PostBattles {
+    lock
+    faceplayer
+    msgbox(format("Corin: Whew… That was intense!\n"
+    "Thanks for having my back back there, {PLAYER}.\p"
+    "Those Hive Drones were tougher than I expected, but we showed them!"
+    "I think we can take on anything now, together as a team!"))
+    waitmessage
+    msgbox(format("Corin: I'll report back to Hazolt HQ."
+    "I bet Mara will want to hear about this!"))
+    release
+}
+
+script Quartz_Library_HealNurse {
+    lock
+    faceplayer
+    msgbox(format("Please rest here if your POKéMON need healing."))
+    call(HealPlayerParty)
+    msgbox(format("Your POKéMON have been healed."))
+    release
+}
+
+script Quartz_Library_QuarryLoreWoman {
+    lock
+    faceplayer
+    msgbox(format("The Quartz Quarry used to be the pride of Quartzite Village."
+    "But since Team Hive took over, it was flooded."
+    "Now I hear the Rangers are trying to clear it out again."))
+    waitmessage
+    release
+}
+
+script Quartz_Library_QuarryNerd {
+    lock
+    faceplayer
+    msgbox(format("Did you know that Quartz is made up of silicon and oxygen atoms?"
+    "It's one of the most hard minerals on Earth!"))
+    waitmessage
+    release
+}
+
+script Quartz_Library_Libarian_Nerd {
+    lock
+    faceplayer
+    msgbox(format("Welcome to the Quartzite Library!"
+    "Feel free to browse our collection of books on geology and mineralogy."))
+    waitmessage
+    release
+}
+
+script Quartz_Library_Libarian {
+    lock
+    faceplayer
+    msgbox(format("Librarian: Hello there, Ranger {PLAYER}!\n"
+    "Thank you and Corin for clearing out those Hive Drones from the library!"))
+    if (!flag(FLAG_LIBRARY_EEVEE_GIVEN)) {
+        msgbox(format("Librarian: As a token of our gratitude, please accept this Eevee.\p"
+        "It's been trained to read."))
+        givemon(SPECIES_EEVEE, 15)
+        msgbox(format("{PLAYER} received an Eevee!"))
+        setflag(FLAG_LIBRARY_EEVEE_GIVEN)
+    waitmessage
+    release
+}
+    else {
+    msgbox(format("Librarian: Feel free to take a look at our collection of books on geology and mineralogy."))
+    waitmessage
+    release
+}
+}

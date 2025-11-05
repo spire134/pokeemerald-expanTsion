@@ -44,7 +44,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Quartz_Hive_Blocker",
-      "flag": "0"
+      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -83,7 +83,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Quartz_Hive_Blocker",
-      "flag": "0"
+      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
@@ -96,6 +96,32 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Quartz_Hive_Blocker",
+      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 25,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quartz_GoodRod_Fisherman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 11,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
       "flag": "0"
     }
   ],
@@ -111,7 +137,7 @@
       "x": 11,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_QUARTZSITE",
+      "dest_map": "MAP_QUARTZ_LIBRARY",
       "dest_warp_id": "0"
     },
     {
@@ -211,6 +237,13 @@
       "elevation": 0,
       "dest_map": "MAP_QUARTZ_TUNNELS",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZ_LIBRARY",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
@@ -231,6 +264,15 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Quartzite_Lower_Road"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Library_BackEntrance"
     }
   ],
   "bg_events": [

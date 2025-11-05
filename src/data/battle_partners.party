@@ -41,3 +41,38 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_CORIN_QUARTZ ===
+Name: Corin
+Class: Pkmn Ranger
+Pic: Steven
+Gender: Male
+Music: Male
+
+Growlithe-Hisui @ Pecha Berry
+Ability: Intimidate  
+Level: 17  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Rock Tomb
+- Howl
+- Leer
+- Flame Wheel
+
+Morelull @ Big Root
+Ability: Illuminate  
+Level: 17  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Sleep Powder  
+- Mega Drain  
+- Confuse Ray  
+- Ingrain
+
+Gulpin @ Black Sludge
+Ability: Stress Eating  
+Level: 18  
+Tera Type: Poison  
+IVs: 11 HP / 0 Atk / 16 Def / 21 SpA / 21 SpD / 11 Spe  
+- Sludge
+- Stockpile  
+- Swallow  
+- Spit Up

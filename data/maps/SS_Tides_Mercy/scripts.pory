@@ -33,7 +33,7 @@ script DeckStormCutscene {
     playse(SE_THUNDER)
     waitse
     # Warp to the beach in front of the wreck (tune these coords)
-    warp(MAP_SHOREFALL_STRAND, 10, 19)
+    warp(MAP_SHOREFALL_STRAND, 10, 20)
     fadescreen(FADE_FROM_BLACK)
     releaseall
     end

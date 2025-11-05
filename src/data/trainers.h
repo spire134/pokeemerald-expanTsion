@@ -9438,10 +9438,10 @@ F_TRAINER_FEMALE |
         },
     },
 #line 3823
-    [DIFFICULTY_NORMAL][TRAINER_TRAVIS] =
+    [DIFFICULTY_NORMAL][TRAINER_CORIN] =
     {
 #line 3824
-        .trainerName = _("TRAVIS"),
+        .trainerName = _("CORIN"),
 #line 3825
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3826

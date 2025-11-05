@@ -15,6 +15,13 @@ script Mara_Gym_Script {
         and Tasmin is working on logistics at the Mart. Report back to me when you have checked on all three."))
         setflag(FLAG_MARA_FIELD_TEST_STARTED)
         clearflag(FLAG_BEGINNING_TRAINERS)
+        msgbox(format("Mara: Oh, and one more thing.
+        I'm wiring you up with an EXP. ALL device. It will help you train faster in the field.
+        Use it well, Ranger."))
+        giveitem(ITEM_EXP_ALL)
+        msgbox(format("{PLAYER} received EXP. ALL!"))
+        waitfanfare
+        waitbuttonpress
         releaseall
         end
     }
@@ -95,7 +102,7 @@ script Tasmin_Gym_Script {
     if (flag(FLAG_MARA_EVAL_READY)) {
         msgbox(format("Tasmin: Hey, want to have a rematch?"
         "I've been optimizing my supply routes and battling strategies!"))
-        trainerbattle_no_intro(TRAINER_WALLY_MAUVILLE, "Tasmin: Wow, you're really strong now, Ranger!")
+        trainerbattle_no_intro(TRAINER_WALLY_MAUVILLE, "Tasmin: Wow, you're really strong now!")
     }
     msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."
     "But I could use someone with a bright FLASH to help me find things faster!"))

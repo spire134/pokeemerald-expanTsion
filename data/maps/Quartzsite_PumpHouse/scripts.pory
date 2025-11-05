@@ -3,9 +3,23 @@ mapscripts Quartzsite_PumpHouse_MapScripts {}
 script Pumphouse_Drone {
     lock
     faceplayer
-    msgbox(format("Hive Drone: You won't be getting in here, Ranger!"
-    "The Seer has ordered us to keep this area secure!\p"
-    "This is the end of the DEMO!"))
-    waitmessage
-    release
+    if(!flag(FLAG_TALKED_TO_ROJAN)) {
+        msgbox(format("DRONE: The Seer has assigned me to guard this pump house.\p"
+        "No one is allowed in or out without permission!"))
+    }
+    else {
+        msgbox(format("DRONE: So, you're working with Captain Rojan now, huh?\p"
+        "But I'll stop you right here!"))
+        trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_7,
+        format("DRONE: I've been roasted and toasted!"))
+        msgbox(format("DRONE: The Seer will not be pleased..."))
+        waitmessage
+        setflag(FLAG_PUMPHOUSE_DRONE_DEFEATED)
+        applymovement(LOCALID_PUMPHOUSE_DRONE, moves(walk_faster_right walk_faster_up*2 walk_faster_left*3 walk_faster_up*3))
+        waitmovement(0)
+        removeobject(LOCALID_PUMPHOUSE_DRONE)
+        playse(SE_EXIT)
+        msgbox(format("You hear the groaning of the pump house as it starts working again."))
+        waitmessage
+    }
 }

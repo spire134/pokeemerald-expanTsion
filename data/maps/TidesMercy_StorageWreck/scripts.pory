@@ -1,0 +1,93 @@
+mapscripts TidesMercy_StorageWreck_MapScripts {}
+
+script Wreck_Exposition_Pirate {
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, 
+    format("You're too late, Ranger!"
+    "This ship's treasures belong to us now!"),
+    format("You'll never stop us, Ranger!"))
+    msgbox(format("Heh heh heh... This ship is ours now!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Wreck_Grab_Pirate {
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_2, 
+    format("Pirate: At least you're not sneaking past us!"),
+    format("Pirate: You'll regret crossing us!"))
+    msgbox(format("Pirate: Ha! You fell right into our trap!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Wreck_GangUp_Pirate {
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, 
+    format("Pirate: Walking right into an ambush, now that's a Ranger!"
+    "Prepare to be boarded!"),
+    format("Pirate: This is the end for me!"))
+    msgbox(format("Pirate: You'll never escape us now!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Wreck_Pirate_FirstMate {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left))
+    waitmovement(0)
+    msgbox(format("Lysa: Captain's orders, I'm going to throw you overboard!\p"))
+    waitmessage
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_fast_left walk_fast_left walk_fast_left))
+    waitmovement(0)
+    msgbox(format("Lysa: You Rangers don't realize the new laws of this island!\p"
+    "This ship and all its contents belong to us now!"))
+    waitmessage
+    trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, "Lysa: Gah, but you're too late!")
+    msgbox(format("Lysa: How could I lose to a Ranger…"))
+    waitmessage
+    setflag(FLAG_CLEARED_TIDESMERCYWRECK)
+    msgbox(format("The Captain already got the best treasure!"
+    "You'll never find our hideout!"))
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_faster_right walk_faster_right walk_faster_right 
+    walk_faster_right walk_faster_right walk_faster_up walk_faster_up))
+    waitmovement(0)
+    removeobject(LOCALID_WRECK_FIRSTMATE)  
+}
+
+script Wreck_Suprise_Grab {
+    if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_GRAB_PIRATE, moves(face_player emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Pirate: Thought you could sneak past us, did you?"))
+    waitmessage
+    applymovement(LOCALID_GANGUP_PIRATE, moves(walk_fast_left walk_fast_left walk_fast_left walk_down face_left))
+    waitmovement(0)
+    msgbox(format("Pirate: You're outnumbered now, Ranger!\n
+    Prepare to be boarded!"))
+    waitmessage
+    trainerbattle_two_trainers(TRAINER_GRUNT_AQUA_HIDEOUT_2, "Pirate: This is the end for me!", TRAINER_GRUNT_AQUA_HIDEOUT_3, "Pirate: You'll regret crossing us!")
+    releaseall
+}
+    else {
+        end
+    }
+}
+
+script GarrickLootsThenRuns {
+    if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_WRECK_GARRICK, moves(emote_exclamation_mark walk_in_place_fast_left))
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left face_right))
+    waitmovement(0)
+    msgbox(format("Garrick: Rangers here already? Must be a new batch at the old HQ.\p"
+    "Lysa, you clean up here while I haul this back to base."))
+    waitmessage
+    applymovement(LOCALID_WRECK_GARRICK, moves(walk_fast_up walk_fast_up))
+    waitmovement(0)
+    removeobject(LOCALID_WRECK_GARRICK)
+    playse(SE_EXIT)
+    releaseall
+    }
+    else {
+        end
+    }
+}

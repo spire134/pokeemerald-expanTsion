@@ -647,7 +647,8 @@
     "Hazolt_Gym",
     "Stat_Bridge_Bushhouse",
     "Hazolt_LoreHouse",
-    "Hazolt_HiveCuriousHouse"
+    "Hazolt_HiveCuriousHouse",
+    "TidesMercy_StorageWreck"
   ],
   "gMapGroup_New_Dungeons": [
     "Azure_Pool",
@@ -660,6 +661,7 @@
     "Quartzite_Mart",
     "Quartz_Tunnels",
     "Quartz_Gym",
-    "Quartz_Tunnel_Room"
+    "Quartz_Tunnel_Room",
+    "Quartz_City_Interiors"
   ]
 }

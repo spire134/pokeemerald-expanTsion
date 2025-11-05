@@ -253,6 +253,9 @@ movement BurstRanger_Enter {
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
     # Ranger bursts in
+    msgbox(format("Mara: Here, take this EXP. Share. You'll need it out there."))
+    giveitem(ITEM_EXP_SHARE)
+    msgbox(format("Mara: Now, listen up, I -\p"))
     addobject(OBJ_BURST_RANGER)
     showobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
     playse(SE_EXIT)

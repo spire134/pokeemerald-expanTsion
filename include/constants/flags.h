@@ -670,11 +670,11 @@
 #define FLAG_RANGERS_REASSIGNED         0x26D // Unused Flag
 #define FLAG_STATIC_DRONE_FIGHT         0x26E // Unused Flag
 #define FLAG_QUARTZITE_HIVE_DEFEATED    0x26F // Unused Flag
-#define FLAG_TALKED_TO_TRAVIS           0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_TALKED_TO_CORIN            0x270 // Unused Flag
+#define FLAG_CLEARED_TIDESMERCYWRECK    0x271 // Unused Flag
+#define FLAG_LIBRARY_EEVEE_GIVEN        0x272 // Unused Flag
+#define FLAG_TALKED_TO_ROJAN            0x273 // Unused Flag
+#define FLAG_PUMPHOUSE_DRONE_DEFEATED   0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
@@ -1058,11 +1058,11 @@
 #define FLAG_ITEM_AZURE_POOL_IRON                                   0x3EB
 #define FLAG_ITEM_ROUTE_SHUNU_CLIFFS_PROTEIN                        0x3EC
 #define FLAG_ITEM_THORN_PASS_NET_BALL                               0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
+#define FLAG_ITEM_SHUDDERWOOD_ABSORB_BULB                           0x3EE
 #define FLAG_ITEM_STATIC_BRIDGE_LURE_BALL                           0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
+#define FLAG_ITEM_SHUDDERWOOD_SILVER_POWDER                         0x3F0
 #define FLAG_ITEM_SHUNU_BEACH_STARDUST                              0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
+#define FLAG_ITEM_ROUTE_SHUDDERWOOD_HP_UP                           0x3F2
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5

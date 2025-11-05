@@ -490,7 +490,7 @@
     },
     {
       "id": "MAPSEC_ABANDONED_SHIP",
-      "name": "A",
+      "name": "S.S. Tides Mercy",
       "x": 6,
       "y": 14,
       "width": 1,
@@ -1257,7 +1257,7 @@
     },
     {
       "id": "MAPSEC_THORN_PASS",
-      "name": "Drithorn Pass"
+      "name": "Hazite Path"
     },
     {
       "id": "MAPSEC_QUARTZSITE",
@@ -1278,6 +1278,10 @@
     {
       "id": "MAPSEC_SHUDDERWOOD",
       "name": "The Shudderwood"
+    },
+    {
+      "id": "MAPSEC_TIDES_MERCY",
+      "name": "Tide's Mercy Storage"
     }
   ]
 }

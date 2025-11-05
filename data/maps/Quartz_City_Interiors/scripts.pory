@@ -1,0 +1,93 @@
+mapscripts Quartz_City_Interiors_MapScripts {}
+
+script StoneEmporium_RedSalesMan {
+    lock
+    faceplayer
+    message(format("Welcome to the Stone Emporium!"
+    "We have the finest selection of elemental stones on the whole island!"))
+    waitmessage
+    pokemart(Quartz_RedStoneMart)
+    msgbox(format("Keep it Rock Solid!"))
+    waitmessage
+    release
+}
+
+script StoneEmporium_GreenSalesMan {
+    lock
+    faceplayer
+    msgbox(format("Hi there! Looking for a special stone to evolve your POKéMON?\p"
+    "You've come to the right place!"))
+    waitmessage
+    pokemart(Quartz_GreenStoneMart)
+    msgbox(format("Have a Rock Solid day!"))
+    waitmessage
+    release
+}
+
+mart Quartz_RedStoneMart {
+    ITEM_FIRE_STONE
+    ITEM_WATER_STONE
+    ITEM_THUNDER_STONE
+    ITEM_LEAF_STONE
+    ITEM_MOON_STONE
+    ITEM_SUN_STONE
+}
+
+mart Quartz_GreenStoneMart {
+    ITEM_HEAT_ROCK
+    ITEM_ICE_STONE
+    ITEM_OVAL_STONE
+    ITEM_DEEP_SEA_TOOTH
+    ITEM_DEEP_SEA_SCALE
+    ITEM_PROTECTIVE_PADS
+}
+
+script Quartz_GemstoneNerd {
+    lock
+    faceplayer
+    msgbox(format("Gemstones are the lifeblood of Quartzite City!\p"
+    "Without them, our city would crumble to dust!"))
+    waitmessage
+    release
+}
+
+script Quartz_ForlornStoneWoman {
+    lock
+    faceplayer
+    msgbox(format("I used to be a jeweler here in Quartzite.\p"
+    "But ever since Team Hive took over, business has been slow...\n"))
+    waitmessage
+    release
+}
+
+script Quartz_RichJerkman {
+    lock
+    faceplayer
+    msgbox(format("I don't care about Team Hive or their petty schemes.\p"
+    "As long as my gem collection is safe, I'm happy!"))
+    waitmessage
+    release
+}
+
+script Quartz_GoldDigger {
+    lock
+    faceplayer
+    msgbox(format("I've been digging for gems all day!\p"
+    "Maybe if I find enough, I can buy my way out of this mess with Team Hive...\n"))
+    waitmessage
+    release
+}
+
+script Quartz_StoneWeirdo {
+    lock
+    faceplayer
+    msgbox(format("Rocks are the ultimate form of life!\p"
+    "They've been around for millions of years, witnessing the rise and fall of civilizations!\n"))
+    waitmessage
+    msgbox(format("I want you to have this special special rock I found.\p"
+    "It's said to bring good luck to those who carry it!"))
+    givaitem(ITEM_LUCKY_EGG)
+    msgbox(format("{PLAYER} received a Lucky Rock!"))
+    waitmessage
+    release
+}

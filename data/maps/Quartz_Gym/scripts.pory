@@ -88,8 +88,7 @@ script Quartz_Gym_FinalblowChallenge {
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Let's see your finishing power!"))
-        trainerbattle_single(TRAINER_MAKAYLA,
-        format("Show me your final, powerful strike!\pPrepare yourself!"),
+        trainerbattle_no_intro(TRAINER_MAKAYLA,
         format("Incredible!")
         )
         waitmessage
@@ -116,8 +115,7 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("Well done! You've completed the Patience Challenge!\n"
         "Just kidding, but you did wait like a champ."
         "Now for the real challenge, HYAAAAH!"))
-        trainerbattle_single(TRAINER_KOJI_1,
-        format("Your patience has brought you here.\pSuch power!"),
+        trainerbattle_no_intro(TRAINER_KOJI_1,
         format("Patience is a virtue, but so is strength!")
         )
         waitmessage
@@ -140,8 +138,7 @@ script Quartz_Gym_WeakpointChallenge {
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Let's see your strategy in action!"))
-        trainerbattle_single(TRAINER_CYNDY_1,
-        format("Show me how well you exploit weaknesses!\pPrepare yourself!"),
+        trainerbattle_no_intro(TRAINER_CYNDY_1,
         format("Impressive!")
         )
         waitmessage
@@ -155,14 +152,16 @@ script Quartz_Gym_WeakpointChallenge {
     release
 }
 
+
 script Quartz_CaptRojan {
     lock
     faceplayer
-    if (!flag(FLAG_TALKED_TO_TRAVIS)) {
+    if (!flag(FLAG_TALKED_TO_CORIN)) {
+        setflag(FLAG_TALKED_TO_ROJAN)
         msgbox(format("Captain Rojan: Hey there, Ranger!\p"
         "I heard you were coming from Hazolt HQ. Hope you are ready for some action!"
         "This sinister Team Hive has been causing trouble all over Quartzite City.\p"
-        "I've gotten most of the people here for safety. Ranger Travis went to investigate the Quartz Tunnels."
+        "I've gotten most of the people here for safety. Ranger Corin went to investigate the Quartz Tunnels."
         "Could you go check on him?"))
     } else {
         if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
@@ -172,10 +171,8 @@ script Quartz_CaptRojan {
             "Now, are you ready to earn your next field move, and Ranger Rank?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == YES) {
                 msgbox(format("Captain Rojan: Excellent! Show me your skills!"))
-                trainerbattle_double(TRAINER_BRAWLY_1,
-                format("It's time to prove your worth as a Ranger!\pPrepare yourself!"),
+                trainerbattle_no_intro(TRAINER_BRAWLY_1,
                 format("Well done, Ranger!"),
-                format("You need at least two Pokémon for this battle.")
                 )
             releaseall
             setflag(FLAG_BADGE02_GET)
@@ -187,10 +184,11 @@ script Quartz_CaptRojan {
             "Keep up the great work, Ranger!"))
             waitmessage
             } else {
-                msgbox(format("Captain Rojan: Take your time to prepare!"))
+                msgbox(format("Captain Rojan: Take your time to prepare!"
+                "I suggest you battle with my students here in the Gym to hone your skills."))
             }
         } else {
-            msgbox(format("Captain Rojan: Please hurry to the Quartz Tunnels and check on Ranger Travis!"
+            msgbox(format("Captain Rojan: Please hurry to the Quartz Tunnels and help Ranger Corin!"
             "There should be an entrance in the water pump house."))
             waitmessage
         }

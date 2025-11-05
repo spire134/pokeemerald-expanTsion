@@ -16,6 +16,14 @@ fadescreen(FADE_FROM_BLACK)
 release
 }
 
+script Library_BackEntrance {
+lock
+fadescreen(FADE_TO_BLACK)
+warp(MAP_QUARTZ_LIBRARY, 12, 3)
+fadescreen(FADE_FROM_BLACK)
+release
+}
+
 script Quartzite_Welcome_Sign {
 lock
 msgbox(format("Quartzsite: The Bedrock of Society!"))
@@ -49,9 +57,9 @@ script Quartz_Hive_LeftGuard {
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_1, 
     format("Hive Drone: You think you can just walk around here?\n"
     "The Seer will hear about this!"),
-    format("Hive Drone: Ugh... You got lucky this time, Ranger.")
+    format("Hive Drone: Ugh… You got lucky this time, Ranger.")
     )
-    msgbox(format("Hive Drone: The Seer won't be pleased..."))
+    msgbox(format("Hive Drone: The Seer won't be pleased…"))
     waitmessage
 }
 
@@ -59,17 +67,35 @@ script Quartz_Hive_RightGuard {
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_2, 
     format("Hive Drone: This area is off-limits to Rangers!\n"
     "The Seer will be informed of your actions!"),
-    format("Hive Drone: No... How could I lose to a Ranger...")
+    format("Hive Drone: No... How could I lose to a Ranger…")
     )
-    msgbox(format("Hive Drone: The Seer will not be happy about this..."))
+    msgbox(format("Hive Drone: The Seer punish us for this…"))
     waitmessage
 }
 
 script Quartz_Hive_RunningGuard {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_3, 
+    format("Hive Drone: You can't be here, Ranger!\n"
+    "The Seer is set on the mission!"),
+    format("Hive Drone: At least I slowed you down, haha!")
+    )
+    msgbox(format("Hive Drone: The Seer will be unhappy…"))
+    waitmessage
+}
+
+script Quartz_GoodRod_Fisherman {
     lock
     faceplayer
-    msgbox(format("Hive Drone: You won't get past me, Ranger!\n"
-    "The Seer has ordered us to keep this area secure!"))
-    waitmessage
-    release
+    checkflag(FLAG_RECEIVED_GOOD_ROD)
+    if (var(VAR_RESULT) == FALSE) {
+    msgbox(format("Fisherman: That look in your eyes tells me you're itching for a fishing.\p"
+    "Here, take this Good Rod. It's a great way to curb those angling cravings!"))
+    giveitem(ITEM_GOOD_ROD)
+    setflag(FLAG_RECEIVED_GOOD_ROD)
+    msgbox(format("Fisherman: With this rod, you'll be reeling in Pokémon in no time!\p"
+    "Just head to any body of water and give it a try. Happy fishing!"))
+    } 
+    else {
+    msgbox(format("Fisherman: Remember, fishing is all about patience and timing.\p"))
+    }    
 }

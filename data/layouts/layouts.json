@@ -4695,11 +4695,31 @@
       "id": "LAYOUT_QUARTZ_LIBRARY",
       "name": "Quartz_Library_Layout",
       "width": 30,
-      "height": 20,
+      "height": 21,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/Quartz_Library/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_Library/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIDES_MERCY_STORAGE_WRECK",
+      "name": "TidesMercy_StorageWreck_Layout",
+      "width": 25,
+      "height": 25,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_InsideShip",
+      "border_filepath": "data/layouts/TidesMercy_StorageWreck/border.bin",
+      "blockdata_filepath": "data/layouts/TidesMercy_StorageWreck/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_CITY_INTERIORS",
+      "name": "Quartz_City_Interiors_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Quartz_City_Interiors/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_City_Interiors/map.bin"
     }
   ]
 }

@@ -27,8 +27,11 @@ script Team_Hive_Drone {
         applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
         msgbox(format("DRONE: We've gotten quite a few recruits to join Team Hive recently."
         "The seer will very pleased."))
-        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up face_right))
+        waitmovement(0)
         msgbox(format("DRONE: Oh, another Ranger. But you look pretty weak. Maybe another time."))
+        applymovement(LOCALID_BOTDRONE, moves(face_up))
+        waitmovement(0)
         release
     }
     else {

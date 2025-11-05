@@ -221,7 +221,7 @@
 #define TRAINER_JUSTIN                      215
 #define TRAINER_ETHAN_1                     216
 #define TRAINER_AUTUMN                      217
-#define TRAINER_TRAVIS                      218
+#define TRAINER_CORIN                      218
 #define TRAINER_ETHAN_2                     219
 #define TRAINER_ETHAN_3                     220
 #define TRAINER_ETHAN_4                     221

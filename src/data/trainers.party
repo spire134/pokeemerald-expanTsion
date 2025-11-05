@@ -3864,8 +3864,8 @@ Shroomish
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TRAVIS ===
-Name: TRAVIS
+=== TRAINER_CORIN ===
+Name: CORIN
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -4879,7 +4879,7 @@ IVs: 12 HP / 12 Atk / 11 Def / 10 SpA / 18 SpD / 2 Spe
 - Fury Cutter  
 
 === TRAINER_BRAWLY_1 ===
-Name: Capt Rojan
+Name: Rojan
 Class: Leader
 Pic: Palace Maven Spenser
 Gender: Male
@@ -7688,7 +7688,7 @@ IVs: 2 Atk / 29 Def / 0 SpA / 26 SpD / 22 Spe
 - Harden  
 - Rapid Spin  
 - Bubble Beam  
-- Minimize  
+- Double Team  
 
 === TRAINER_TAKASHI ===
 Name: TAKASHI
@@ -10425,7 +10425,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Ingrain
 
 Gulpin @ Oran Berry
-Ability: Gluttony  
+Ability: Stress Eating  
 Level: 12  
 Tera Type: Poison  
 IVs: 11 HP / 0 Atk / 16 Def / 21 SpA / 21 SpD / 11 Spe  
@@ -13604,10 +13604,6 @@ Charjabug
 Level: 16
 IVs: 20 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
 
-Beedrill
-Level: 16
-IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 20 SpD / 30 Spe
-
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
 Name: Drone
 Class: Hive
@@ -13634,61 +13630,103 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Whirlipede
-Level: 17
+Dwebble
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Skorupi
-Level: 17
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Zubat
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Whirlipede @ Rocky Helmet  
+Ability: Poison Point  
+Level: 17  
+Tera Type: Bug  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Rollout  
+- Defense Curl  
+- Poison Tail  
+- Infestation
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beedrill (M) @ Oran Berry  
+Ability: Swarm  
+Level: 16  
+Tera Type: Bug  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Twineedle  
+- Toxic  
+- Toxic Spikes  
+- Cut
 
-Numel
-Level: 28
+Venonat
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
-Level: 29
+Surskit @ Silver Powder  
+Ability: Swift Swim  
+Level: 17  
+Tera Type: Bug  
+EVs: 20 SpA / 40 Spe  
+Rash Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bubble Beam  
+- Struggle Bug  
+- Mud Shot  
+- Water Sport
+
+Combee (M) @ Sharp Beak  
+Ability: Hustle  
+Level: 17  
+Tera Type: Bug  
+EVs: 20 HP / 60 Atk  
+Hasty Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tailwind  
+- Dual Wingbeat  
+- Skitter Smack  
+- Struggle Bug
+
+Charjabug @ Absorb Bulb  
+Ability: Battery  
+Level: 17  
+Tera Type: Bug  
+EVs: 20 HP / 60 Atk
+Relaxed Nature  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Electroweb  
+- Mud Shot  
+- Take Down  
+- Bug Bite
+
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
@@ -13782,17 +13820,47 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
-Name: GRUNT
-Class: Team Magma
+Name: Seer
+Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Venonat @ Mirror Herb  
+Ability: Compound Eyes  
+Level: 18  
+Tera Type: Bug  
+EVs: 44 HP / 24 SpA  
+Rash Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Skitter Smack  
+- Sleep Powder  
+- Screech  
+- Psybeam  
+
+Dottler @ Eviolite  
+Ability: Telepathy  
+Level: 18  
+Tera Type: Bug 
+EVs: 44 HP / 24 SpA 
+Relaxed Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Light Screen  
+- Reflect  
+- Payback  
+- Zen Headbutt  
+
+Duosion @ Sticky Barb  
+Ability: Magic Guard  
+Tera Type: Psychic  
+EVs: 44 HP / 24 SpA
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Confusion  
+- Recover  
+- Signal Beam  
+- Future Sight  
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT

@@ -145,7 +145,7 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
         .mapGroup = MAP_GROUP(MAP_SHOREFALL_STRAND),
         .mapNum = MAP_NUM(MAP_SHOREFALL_STRAND),
         .x = 10,
-        .y = 19,
+        .y = 20,
     },
     [HEAL_LOCATION_HAZOLT_VILLAGE - 1] =
     {
