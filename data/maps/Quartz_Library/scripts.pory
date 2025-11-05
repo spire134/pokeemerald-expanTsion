@@ -176,8 +176,6 @@ script Quartz_Library_AnythingButRocksWoman {
     release
 }
 
-
-
 script Quartz_Library_Libarian {
     lock
     faceplayer

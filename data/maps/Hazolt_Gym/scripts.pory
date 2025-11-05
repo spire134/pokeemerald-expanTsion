@@ -50,6 +50,7 @@ script Mara_Gym_Script {
     if (!flag(FLAG_MARA_DEFEATED)) {
         # Run your battle event
         msgbox(format("Mara: Ready for your evaluation as a Ranger? Let's see if you make the cut."), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
         trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: That's an easy pass. Well done.")
         setflag(FLAG_BADGE01_GET)
         setflag(FLAG_MARA_DEFEATED)
@@ -63,8 +64,12 @@ script Mara_Gym_Script {
         It now has the Steel soul of our Ranger Corps imbued within it.\p
         Use it well, Ranger."))
         releaseall
+        end
+        } else {
+        msgbox(format("Mara: Take your time to prepare!"))
+        releaseall
         end 
-    }
+    }}
     msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.
     There have been reports of Team Hive activity there. Stay alert, Ranger."))
     releaseall
@@ -76,9 +81,10 @@ script Eon_Gym_Script {
     faceplayer
     if (flag(FLAG_MARA_EVAL_READY)) {
         msgbox(format("Eon: Hmm, I'm pretty busy, but do you want to have a rematch?"
-        "Just don't waste my time by being unprepared!"))
+        "Just don't waste my time by being unprepared!"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
         trainerbattle_no_intro(TRAINER_ANDRES_2, "Eon: Not bad, Ranger. Keep training.")
-    }
+    }}
     msgbox(format("I've gotta train my Chinchou to DIVE to get through those flooded tunnels!"))
     release
 }
@@ -88,9 +94,10 @@ script Corin_Gym_Script {
     faceplayer
         if (flag(FLAG_MARA_EVAL_READY)) {
             msgbox(format("Corin: Hey there, want to have another battle?"
-            "I've been working on some new strategies on snack breaks!"))
+            "I've been working on some new strategies on snack breaks!"), MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES) {
             trainerbattle_no_intro(TRAINER_LORENZO, "Corin: Nice work, Ranger. Let's hit the chips.")
-        }
+        }}
     msgbox(format("Some good training and good food will give us the STRENGTH we need at Magnet Cave! 
     I gotta request extra rations!"))
     release
@@ -101,9 +108,10 @@ script Tasmin_Gym_Script {
     faceplayer
     if (flag(FLAG_MARA_EVAL_READY)) {
         msgbox(format("Tasmin: Hey, want to have a rematch?"
-        "I've been optimizing my supply routes and battling strategies!"))
+        "I've been optimizing my supply routes and battling strategies!"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
         trainerbattle_no_intro(TRAINER_WALLY_MAUVILLE, "Tasmin: Wow, you're really strong now!")
-    }
+    }}
     msgbox(format("Glameow's doing a wonderful job keeping Zigzagoon and Corin away from our supplies."
     "But I could use someone with a bright FLASH to help me find things faster!"))
     release
