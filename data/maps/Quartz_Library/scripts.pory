@@ -131,11 +131,29 @@ script Quartz_Library_QuarryNerd {
     release
 }
 
+script Quartz_Library_ManicReader {
+    lock
+    faceplayer
+    msgbox(format("I just love reading about the different types of minerals found in Quartzite City!"
+    "Did you know that Amethyst is a type of Quartz?"))
+    waitmessage
+    release
+}
+
 script Quartz_Library_Libarian_Nerd {
     lock
     faceplayer
     msgbox(format("Welcome to the Quartzite Library!"
     "Feel free to browse our collection of books on geology and mineralogy."))
+    waitmessage
+    release
+}
+
+script Quartz_Library_PictureBookChild {
+    lock
+    faceplayer
+    msgbox(format("Look at this picture book about different types of rocks!\p"
+    "I want to be a geologist when I grow up!"))
     waitmessage
     release
 }
