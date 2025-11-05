@@ -4552,13 +4552,13 @@ BattleScript_TargetAbilityStressEating::
         jumpifstat BS_ATTACKER, CMP_EQUAL,     STAT_SPDEF, MAX_STAT_STAGE, BattleScript_EffectStressEatingSpDef
 BattleScript_EffectStressEatingDef:
         setstatchanger STAT_DEF, 1, FALSE
-        statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectStressEatingSpDef, BIT_SPDEF
+        statbuffchange BS_ATTACKER | STAT_CHANGE_ALLOW_PTR, BattleScript_EffectStressEatingSpDef
         jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_EffectStressEatingSpDef
         printfromtable gStatUpStringIds
         waitmessage B_WAIT_TIME_LONG
 BattleScript_EffectStressEatingSpDef:
         setstatchanger STAT_SPDEF, 1, FALSE
-        statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectStressEatingDoStockpile
+        statbuffchange BS_ATTACKER | STAT_CHANGE_ALLOW_PTR, BattleScript_EffectStressEatingDoStockpile
         jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_EffectStressEatingDoStockpile
         printfromtable gStatUpStringIds
         waitmessage B_WAIT_TIME_LONG
