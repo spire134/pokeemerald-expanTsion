@@ -158,6 +158,26 @@ script Quartz_Library_PictureBookChild {
     release
 }
 
+script Quartz_Library_InternetFiend {
+    lock
+    faceplayer
+    msgbox(format("I love reading about rare minerals online!\p"
+    "Did you know that Tanzanite is only found in one place on Earth?"))
+    waitmessage
+    release
+}
+
+script Quartz_Library_AnythingButRocksWoman {
+    lock
+    faceplayer
+    msgbox(format("Ugh, I can't stand rocks and minerals!\p"
+    "I'd much rather read about fashion and cooking!"))
+    waitmessage
+    release
+}
+
+
+
 script Quartz_Library_Libarian {
     lock
     faceplayer
