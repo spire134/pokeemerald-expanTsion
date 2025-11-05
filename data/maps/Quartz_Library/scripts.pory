@@ -86,7 +86,7 @@ script QuartzLibrary_SeerBattle {
     msgbox(format("Coring: Phew… That was close!\n"
     "Gosh, it's dark. One moment and I'll have Morelull light the room up."))
     waitmessage
-    warp(MAP_QUARTZ_Library, 7, 12)
+    warp(MAP_QUARTZ_LIBRARY, 7, 12)
     waitstate
 }
 

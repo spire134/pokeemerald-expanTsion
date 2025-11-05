@@ -86,7 +86,7 @@ script Quartz_StoneWeirdo {
     waitmessage
     msgbox(format("I want you to have this special special rock I found.\p"
     "It's said to bring good luck to those who carry it!"))
-    givaitem(ITEM_LUCKY_EGG)
+    giveitem(ITEM_LUCKY_EGG)
     msgbox(format("{PLAYER} received a Lucky Rock!"))
     waitmessage
     release

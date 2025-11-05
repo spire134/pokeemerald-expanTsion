@@ -36,7 +36,7 @@ script CrashedShipLock {
     checkitem(ITEM_STORAGE_KEY)
     if (var(VAR_RESULT) == TRUE) {
     msgbox(format("You use the Old Key to unlock a small compartment.\p"))
-    warp(MAP_TIDESMERCY_STORAGEWRECK, 0, 0)
+    warp(MAP_TIDES_MERCY_STORAGE_WRECK, 1, 24)
     waitstate
     } else 
     {
