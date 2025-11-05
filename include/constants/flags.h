@@ -50,7 +50,7 @@
 #define FLAG_GOT_STARTER     0x24 // Unused Flag
 #define FLAG_STORM_STARTED   0x25 // Unused Flag
 #define FLAG_SHOREFALL_INTRO 0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
+#define FLAG_EXP_ALL         0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
