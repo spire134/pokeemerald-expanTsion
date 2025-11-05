@@ -37,6 +37,10 @@ script CrashedShipLock {
     if (var(VAR_RESULT) == TRUE) {
     msgbox(format("You use the Old Key to unlock a small compartment.\p"))
     warp(MAP_TIDESMERCY_STORAGEWRECK, 0, 0)
+    waitstate
     } else 
     {
+    msgbox(format("The compartment is locked tight. You need a key to open it."))
+    }
+    release
 }
