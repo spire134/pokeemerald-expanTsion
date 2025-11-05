@@ -4429,7 +4429,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && IsBattlerAlive(battler))
             {
                 gEffectBattler = battler;
-                BattleScriptCall(BattleScript_TargetAbilityStressEating);
+                gBattlescriptCurrInstr = BattleScript_TargetAbilityStressEating;
                 effect++;
             }
             break;
