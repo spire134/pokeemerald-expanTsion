@@ -12297,7 +12297,7 @@ AI: Basic Trainer
 
 Glameow (M)  
 Ability: Own Tempo  
-Level: 11  
+Level: 12  
 IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe  
 - Hypnosis  
 - Scratch
@@ -12306,7 +12306,7 @@ IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe
 
 Shuppet (M) 
 Ability: Frisk  
-Level: 11  
+Level: 12  
 IVs: 10 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe  
 - Astonish  
 - Screech  
@@ -12315,7 +12315,7 @@ IVs: 10 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 
 Timburr (M) @ Hard Stone  
 Ability: Guts  
-Level: 11  
+Level: 12  
 Tera Type: Fighting  
 Relaxed Nature  
 IVs: 18 HP / 10 Atk / 10 Def / 10 SpA / 18 SpD / 5 Spe  
@@ -13742,8 +13742,13 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Beedrill
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Thief
+- Twineedle
+- Swords Dance
+- Agility
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
 Name: GRUNT
@@ -13853,11 +13858,12 @@ Relaxed Nature
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Light Screen  
 - Reflect  
-- Payback  
+- Payback                       
 - Zen Headbutt  
 
-Duosion @ Sticky Barb  
-Ability: Magic Guard  
+Solosis @ Sticky Barb  
+Ability: Magic Guard 
+Level: 19
 Tera Type: Psychic  
 EVs: 44 HP / 24 SpA
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -16491,7 +16497,7 @@ AI: Basic Trainer
 
 Chinchou (F) @ Persim Berry
 Ability: Volt Absorb
-Level: 12
+Level: 13
 Bashful Nature
 IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe  
 - Thunder Wave
@@ -16501,7 +16507,7 @@ IVs: 13 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 3 Spe
 
 Taillow (M) @ Oran Berry
 Ability: Guts  
-Level: 12 
+Level: 13 
 Careful Nature  
 IVs: 7 HP / 10 Atk / 10 Def / 10 SpA / 15 SpD / 18 Spe  
 - Focus Energy
@@ -16511,7 +16517,7 @@ IVs: 7 HP / 10 Atk / 10 Def / 10 SpA / 15 SpD / 18 Spe
 
 Teddiursa (M) @ Toxic Orb
 Ability: Quick Feet
-Level: 12
+Level: 13
 Jolly Nature
 IVs: 23 HP / 17 Atk / 20 Def / 10 SpA / 21 SpD / 23 Spe
 - Fling

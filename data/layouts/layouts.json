@@ -4666,8 +4666,8 @@
       "name": "Quartz_Tunnels_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_InsideShip",
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Quartz_Tunnels/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_Tunnels/map.bin"
     },
@@ -4720,6 +4720,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Quartz_City_Interiors/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_City_Interiors/map.bin"
+    },
+    {
+      "id": "LAYOUT_CRUSTED_QUARRY",
+      "name": "Crusted_Quarry_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Crusted_Quarry/border.bin",
+      "blockdata_filepath": "data/layouts/Crusted_Quarry/map.bin"
     }
   ]
 }

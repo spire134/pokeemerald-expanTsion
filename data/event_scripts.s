@@ -1219,3 +1219,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TidesMercy_StorageWreck/scripts.inc"
 
 	.include "data/maps/Quartz_City_Interiors/scripts.inc"
+
+	.include "data/maps/Crusted_Quarry/scripts.inc"

@@ -11,7 +11,7 @@ release
 script Quartzite_Lower_Road {
 lock
 fadescreen(FADE_TO_BLACK)
-warp(MAP_QUARTZ_TUNNELS, 16, 2)
+warp(MAP_QUARTZ_TUNNELS, 17, 7)
 fadescreen(FADE_FROM_BLACK)
 release
 }
@@ -86,8 +86,7 @@ script Quartz_Hive_RunningGuard {
 script Quartz_GoodRod_Fisherman {
     lock
     faceplayer
-    checkflag(FLAG_RECEIVED_GOOD_ROD)
-    if (var(VAR_RESULT) == FALSE) {
+        if (!flag(FLAG_RECEIVED_GOOD_ROD)) {
     msgbox(format("Fisherman: That look in your eyes tells me you're itching for a fishing.\p"
     "Here, take this Good Rod. It's a great way to curb those angling cravings!"))
     giveitem(ITEM_GOOD_ROD)

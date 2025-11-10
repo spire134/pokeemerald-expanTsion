@@ -13,7 +13,77 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 17,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "local_id": "LOCALID_TUNNEL_CORIN",
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 5,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Corin_Tunnels",
+      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
+    },
+    {
+      "local_id": "LOCALID_TUNNEL_HIVEDRONE",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 1,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TALKED_TO_CORIN"
+    },
+    {
+      "local_id": "LOCALID_TUNNEL_WHIRLIPEDE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WHIRLIPEDE)",
+      "x": 3,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TALKED_TO_CORIN"
+    },
+    {
+      "local_id": "LOCALID_TUNNEL_GULPIN",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GULPIN)",
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "FLAG_TALKED_TO_CORIN",
+      "flag": "0"
+    }
+  ],
   "warp_events": [
     {
       "x": 3,
@@ -23,25 +93,11 @@
       "dest_warp_id": "14"
     },
     {
-      "x": 16,
-      "y": 1,
+      "x": 17,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_QUARTZSITE",
       "dest_warp_id": "15"
-    },
-    {
-      "x": 8,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNEL_ROOM",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 12,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNEL_ROOM",
-      "dest_warp_id": "3"
     },
     {
       "x": 3,
@@ -52,20 +108,6 @@
     },
     {
       "x": 4,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZSITE_PUMP_HOUSE",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 16,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZSITE_PUMP_HOUSE",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 17,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_QUARTZSITE_PUMP_HOUSE",

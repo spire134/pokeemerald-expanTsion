@@ -6,6 +6,7 @@ script Pumphouse_Drone {
     if(!flag(FLAG_TALKED_TO_ROJAN)) {
         msgbox(format("Drone: The Seer has assigned me to guard this pump house.\p"
         "No one is allowed in or out without permission!"))
+    release
     }
     else {
         msgbox(format("Drone: So, you're working with Captain Rojan now, huh?\p"
@@ -21,5 +22,6 @@ script Pumphouse_Drone {
         playse(SE_EXIT)
         msgbox(format("You hear the groaning of the pump house as it starts working again."))
         waitmessage
+        release
     }
 }

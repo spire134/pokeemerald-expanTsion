@@ -2,6 +2,7 @@ mapscripts Static_Bridge_MapScripts {}
 
 script OldRod_Guy {
     lock
+    faceplayer
     if (!flag(FLAG_RECEIVED_OLD_ROD)) {
         msgbox(format("FISHER DON: Hey there! You look like you know your way around a rod and reel."
         "Here, take this Old Rod. It's not much, but it'll get you started."))

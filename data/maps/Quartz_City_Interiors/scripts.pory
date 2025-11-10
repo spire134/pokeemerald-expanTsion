@@ -91,3 +91,4 @@ script Quartz_StoneWeirdo {
     waitmessage
     release
 }
+

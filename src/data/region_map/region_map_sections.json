@@ -1282,6 +1282,10 @@
     {
       "id": "MAPSEC_TIDES_MERCY",
       "name": "Tide's Mercy Storage"
+    },
+    {
+      "id": "MAPSEC_CRUSTED_QUARRY",
+      "name": "Crusted Quarry"
     }
   ]
 }
