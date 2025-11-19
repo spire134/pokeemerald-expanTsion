@@ -78,7 +78,7 @@ script Mara_Gym_Script {
         giveitem(ITEM_WAREHOUSE_KEY)
         msgbox(format("{PLAYER} received the Warehouse Key!"))
         waitmessage
-        msgbox(format("Mara: Use that key at the Hazolt Mart.\p"
+        msgbox(format("Mara: Use that key at the Hazolt Mart.\p"))
     }
     elif (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
         msgbox(format("Mara: Tasmin has reported that the shipwreck is clear of threats.\p"
