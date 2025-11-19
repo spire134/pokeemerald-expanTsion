@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_SHUDDERWOOD_LEFTDRONE",
+      "local_id": "LOCALID_SHUDDERWOOD_LEFT_DRONE",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 24,
       "y": 25,
@@ -29,7 +29,7 @@
       "flag": "FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED"
     },
     {
-      "local_id": "LOCALID_SHUDDERWOOD_RIGHTDRONE",
+      "local_id": "LOCALID_SHUDDERWOOD_RIGHT_DRONE",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 25,
       "y": 25,

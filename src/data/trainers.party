@@ -13866,7 +13866,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
-Name: Seer
+Name: Seer Lysa
 Class: Hive
 Pic: Magma Grunt F
 Gender: Female
@@ -13910,12 +13910,12 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Future Sight  
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
-Name: Seer
+Name: Seer Lysa
 Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
-Double Battle: Yes
+Double Battle: No
 AI: Basic Trainer
 
 Dottler @ Sticky Barb 
@@ -13954,17 +13954,38 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Future Sight
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
-Name: GRUNT
-Class: Team Magma
+Name: Seer Dianne
+Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Baltoy
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Masquerain @ Life Orb
+Level: 25
+IVs: 30 HP / 20 Atk / 20 Def / 20 SpA / 10 SpD / 20 Spe
+- Air Cutter
+- Water Pulse
+- Scary Face
+- Sticky Web
+
+Drowzee @ Twistedspoon
+Level: 25
+IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+- Hypnosis
+- Dream Eater
+- Disable
+- Confusion
+
+Hypno @ Wide Lens
+Level: 27
+IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+- Hypnosis
+- Dream Eater
+- Headbutt
+- Confusion
+
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: TABITHA

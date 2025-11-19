@@ -25,7 +25,7 @@ script Crusted_Quarry_Seer_LastResort {
     msgbox(format("Seer: I didn't want it to come to this…\n"
     "I've overloaded the machinery to collapse the quarry!\n"
     "I was just supposed to get some specific books from the library!\n"))
-    applymovement(LOCALID_SEER, moves(emote_question_mark))
+    applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(emote_question_mark))
     waitmovement(0)
         msgbox(format("Seer: What kind of books? I'll never tell you!\n"
         "You'll have to defeat me in battle!"

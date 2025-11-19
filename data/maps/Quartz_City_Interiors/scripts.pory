@@ -208,7 +208,7 @@ script Quartz_OldMan_TyGifts {
     msgbox(format("We couldn't have done it without you!"
     "If you ever need another doll, just let me know!\l"))
     waitmessage
-    applymovement(LOCALID_OLD_MAN_TYGIFTS, moves(emote_heart))
+    applymovement(LOCALID_QUARTZ_OLDMANGIFTS, moves(emote_heart))
     waitmovement(2)
     msgbox(format("He seems really happy to give you that doll!"))
     waitmessage
@@ -246,4 +246,13 @@ script Quartz_OldWoman_Dollmaker {
     "Come back when you have the clearance to use Surf in the field."))
     waitmessage
     }
+}
+
+script Quartz_Garganacl_Guard {
+    lock
+    faceplayer
+    playmoncry(SPECIES_GARGANACL, 0)
+    msgbox(format("Garganacl: Grgege… Grgegegrg!\p"))
+    waitmessage
+    release
 }

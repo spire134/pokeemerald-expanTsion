@@ -50,7 +50,7 @@ script Shudderwood_LeftDrone {
         removeobject(LOCALID_SHUDDERWOOD_RIGHT_DRONE)
         msgbox(format("Seer: Hmph… These woods are no place for weaklings!\n"
         "I will show you a true Seer's power, not like that weakling at the quarry!\n"))
-        trainerbattle_no_intro(TRAINER_SEER_SHUDDERWOOD,
+        trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_16,
         format("Seer: What?! But the Rangers were weaklings last time!\n")
         )
         msgbox(format("Seer: Impossible… I've been defeated as well!\n"
@@ -134,4 +134,16 @@ script Shudderwood_StrengthDoorRight {
             release
         }
     }
+}
+
+script Shudderwood_GateHouseLeft {
+    lock
+    warp(MAP_SHUDDERWOOD_MANSION, 24, 49)
+    release
+}
+
+script  Shudderwood_GateHouseRight {
+    lock
+    warp(MAP_SHUDDERWOOD_MANSION, 25, 49)
+    release  
 }
