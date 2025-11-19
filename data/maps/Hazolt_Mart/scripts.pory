@@ -17,7 +17,7 @@ script Hazolt_MartLocked {
     msgbox(format("Enter the warehouse?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
         fadescreen(FADE_TO_BLACK)
-        warp(HAZOLT_MART_WAREHOUSE, 4, 11)
+        warp(MAP_HAZOLT_MART, 4, 11)
         fadescreen(FADE_FROM_BLACK)
     } else {
         msgbox(format("You decided not to enter the warehouse."))

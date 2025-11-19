@@ -262,8 +262,24 @@
       "x": 3,
       "y": 16,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_CRUSTED_QUARRY_HEART_SCALE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 26,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_CALCIUM",
+      "flag": "FLAG_HIDDEN_ITEM_CRUSTED_QUARRY_CALCIUM"
+    },
+    {
+      "type": "hidden_item",
+      "x": 26,
+      "y": 19,
+      "elevation": 0,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_CRUSTED_QUARRY_STARDUST"
     }
   ]
 }

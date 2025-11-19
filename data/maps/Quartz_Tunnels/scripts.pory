@@ -1,6 +1,5 @@
 mapscripts Quartz_Tunnels_MapScripts {
-    map_script {MAP_SCRIPT_ON_TRANSITION(Corin_Tunnel_Cutscene)     
-    }
+    MAP_SCRIPT_ON_TRANSITION:Corin_Tunnel_Cutscene     
 }
 
 script Corin_Tunnel_Cutscene {

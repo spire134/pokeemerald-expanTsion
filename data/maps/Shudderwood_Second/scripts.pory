@@ -82,7 +82,8 @@ script Shudderwood_StrengthDoorLeft {
         if (var(VAR_RESULT) == TRUE) {
             msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == TRUE) {
-                usepartymove(MOVE_STRENGTH)
+                playse(SE_M_STRENGTH)
+                waitse
                 msgbox(format("You used STRENGTH to force open the doors!"))
                 addvar(VAR_MANSION_PROGRESSION, 1)
                 release
@@ -116,7 +117,8 @@ script Shudderwood_StrengthDoorRight {
         if (var(VAR_RESULT) == TRUE) {
             msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == TRUE) {
-                usepartymove(MOVE_STRENGTH)
+                playse(SE_M_STRENGTH)
+                waitse
                 msgbox(format("You used STRENGTH to force open the doors!"))
                 addvar(VAR_MANSION_PROGRESSION, 1)
                 release

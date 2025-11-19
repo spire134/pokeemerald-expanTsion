@@ -12,7 +12,7 @@ script Quartz_SoullessMaidDoll {
     lock
     faceplayer
     compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
-    if (var(VAR_RESULT) == EQUAL) {
+    if (var(VAR_RESULT) == TRUE) {
         msgbox(format("The doll's eyes glow warmly as it smiles at you.\p"
         "It seems to just need a soul now to be complete."))
         waitmessage
