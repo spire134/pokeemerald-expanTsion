@@ -26,30 +26,6 @@ script Wreck_GangUp_Pirate {
     waitmessage
 }
 
-script Wreck_Pirate_FirstMate {
-    lockall
-    playse(SE_PIN)
-    applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left))
-    waitmovement(0)
-    msgbox(format("Lysa: Captain's orders, I'm going to throw you overboard!\p"))
-    waitmessage
-    applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_fast_left walk_fast_left walk_fast_left))
-    waitmovement(0)
-    msgbox(format("Lysa: You Rangers don't realize the new laws of this island!\p"
-    "This ship and all its contents belong to us now!"))
-    waitmessage
-    trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, "Lysa: Gah, but you're too late!")
-    msgbox(format("Lysa: How could I lose to a Ranger…"))
-    waitmessage
-    setflag(FLAG_CLEARED_TIDESMERCYWRECK)
-    msgbox(format("The Captain already got the best treasure!"
-    "You'll never find our hideout!"))
-    applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_faster_right walk_faster_right walk_faster_right 
-    walk_faster_right walk_faster_right walk_faster_up walk_faster_up))
-    waitmovement(0)
-    removeobject(LOCALID_WRECK_FIRSTMATE)  
-}
-
 script Wreck_Suprise_Grab {
     if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
     lockall
@@ -72,22 +48,59 @@ script Wreck_Suprise_Grab {
 }
 
 script GarrickLootsThenRuns {
-    if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+        end
+    }
     lockall
     playse(SE_PIN)
     applymovement(LOCALID_WRECK_GARRICK, moves(emote_exclamation_mark walk_in_place_fast_left))
     applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left face_right))
     waitmovement(0)
-    msgbox(format("Garrick: Rangers here already? Must be a new batch at the old HQ.\p"
-    "Lysa, you clean up here while I haul this back to base."))
+    msgbox(format(
+        "Garrick: Rangers here already? Must be a new batch at the old HQ.\p"
+        "Lysa, you clean up here while I haul this back to base."))
     waitmessage
     applymovement(LOCALID_WRECK_GARRICK, moves(walk_fast_up walk_fast_up))
     waitmovement(0)
     removeobject(LOCALID_WRECK_GARRICK)
     playse(SE_EXIT)
+    call(Wreck_Pirate_FirstMate)
     releaseall
-    }
-    else {
-        end
-    }
+}
+
+script Wreck_Pirate_FirstMate {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left))
+    waitmovement(0)
+    msgbox(format("Lysa: Captain's orders, I'm going to throw you overboard!\p"))
+    waitmessage
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_fast_left walk_fast_left walk_fast_left))
+    waitmovement(0)
+    msgbox(format(
+        "Lysa: You Rangers don't realize the new laws of this island!\p"
+        "This ship and all its contents belong to us now!"))
+    waitmessage
+    trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, "Lysa: Gah, but you're too late!")
+    msgbox(format("Lysa: How could I lose to a Ranger…"))
+    waitmessage
+    setflag(FLAG_CLEARED_TIDESMERCYWRECK)
+    msgbox(format(
+        "The Captain already got the best treasure!"
+        "You'll never find our hideout!"))
+    applymovement(LOCALID_WRECK_FIRSTMATE, moves(
+        walk_faster_right walk_faster_right walk_faster_right 
+        walk_faster_right walk_faster_right walk_faster_up walk_faster_up))
+    waitmovement(0)
+    removeobject(LOCALID_WRECK_FIRSTMATE)
+    releaseall
+}
+
+script StorageWreck_Empty_Item_Ball {
+    lock
+    msgbox(format("There is nothing left here."
+    "Those darn pirates already took everything of value!"))
+    setflag(FLAG_TEMP_1)
+    removeobject(LOCALID_EMPTY_ITEM_BALL)
+    release
 }

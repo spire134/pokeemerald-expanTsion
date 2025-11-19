@@ -1,0 +1,92 @@
+mapscripts Quartz_DollWorkshop_MapScripts {}
+
+script Quartz_OldMan_WorkshopHelper {
+    lock
+    faceplayer
+    msgbox(format("You are always welcome to the Dollmaker's workshop.\p"))
+    waitmessage
+    release
+}
+
+script Quartz_SoullessMaidDoll {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
+    if (var(VAR_RESULT) == EQUAL) {
+        msgbox(format("The doll's eyes glow warmly as it smiles at you.\p"
+        "It seems to just need a soul now to be complete."))
+        waitmessage
+        release
+    }
+    else {
+        if (!flag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)) {
+            msgbox(format("…"))
+            waitmessage
+            setflag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)
+            release
+        }
+        else {
+            msgbox(format("…"))
+            checkitem(ITEM_HEART_SCALE)
+            goto_if_eq(VAR_RESULT, FALSE, Quartz_SoullessMaidDoll_NoHeartScale)
+            msgbox(format("You insert the Heart Scale into the doll's chest.\p"))
+            removeitem(ITEM_HEART_SCALE, 1)
+            addvar(VAR_HEART_SCALES_GIVEN_TO_DOLL, 1)
+            msgbox(format("The doll's eyes light up, and seem to follow you around the room.\p"))
+            compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
+            goto_if_eq(VAR_RESULT, TRUE, Quartz_SoullessMaidDoll_3rdHeartScale)
+            waitmessage
+            release
+        }
+    }
+}   
+
+script Quartz_SoullessMaidDoll_NoHeartScale {
+    msgbox(format("The doll's eyes seem to follow you around the room.\p"
+    "It looks like it wants something…"))
+    waitmessage
+    release
+}
+
+script Quartz_SoullessMaidDoll_3rdHeartScale {
+    msgbox(format("With a soft chime, the doll blinks and sputters.\p"
+    "It looks at you emptily.\n"
+    "It seems to need something else to fully come to life…"))
+    waitmessage
+    release
+}
+
+script Quartz_Dollmaker_Prodigy {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
+    goto_if_eq(VAR_RESULT, TRUE, Quartz_Dollmaker_Prodigy_SoulHint)
+    if (!flag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)) {
+        msgbox(format("Dollmaker Susan: Welcome to my workshop!\p"
+        "Feel free to look around and see my creations."))
+        waitmessage
+    }
+    else {
+        msgbox(format("Dollmaker Susan: Ah, I see you've met my latest creation.\p"
+        "She's still a work in progress, but I'm hopeful she'll come to life one day."))
+        waitmessage
+        applymovement(LOCALID_DOLLMAKER_PRODIGY, moves(emote_question_mark))
+        waitmovement(0)
+        msgbox(format("What? Do you want to know more about her?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox(format("Dollmaker Susan: Well, I designed her along with master Mollie, but she still lacks a soul.\p"
+            "Perhaps one day, with enough care and attention, she'll come to life."
+            "For now she just needs a few more Heart Scales to be complete physically."))
+            waitmessage
+        }
+    }
+    release
+}
+
+script Quartz_Dollmaker_Prodigy_SoulHint {
+    msgbox(format("Dollmaker Susan: Ah, I see you've been helping my little doll friend here.\p"
+    "She's almost complete physically, but I believe she still needs a soul to truly come to life.\p"
+    "Perhaps if we had a soul, one that was fresh and full of life, she could awaken."))
+    waitmessage
+    release
+}

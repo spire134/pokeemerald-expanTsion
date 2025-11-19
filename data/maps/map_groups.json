@@ -654,7 +654,9 @@
     "Azure_Pool",
     "Shudderwood_First",
     "Quartz_Library",
-    "Crusted_Quarry"
+    "Crusted_Quarry",
+    "Shudderwood_Second",
+    "Shudderwood_Mansion"
   ],
   "gMapGroup_New_QuartzInt": [
     "Quartzsite_PumpHouse",
@@ -663,6 +665,7 @@
     "Quartz_Tunnels",
     "Quartz_Gym",
     "Quartz_Tunnel_Room",
-    "Quartz_City_Interiors"
+    "Quartz_City_Interiors",
+    "Quartz_DollWorkshop"
   ]
 }

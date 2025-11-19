@@ -141,10 +141,11 @@ script CaptainRoom_Talk {
     faceplayer
     if (!flag(FLAG_GOT_STARTER)) {
         msgbox(format(
-            "Welcome aboard. Corymbra is a restricted research zone.\l"
-            "Forty years ago, the Bloom Project overshot the mark.\p"
-            "We're a League-authorized Ranger task force. No capture stylers. Poké Balls only.\l"
-            "We build bonds that outlast storms.\p"
+            "Captain Mara: Welcome aboard, Ranger.\p"
+            "I hope you are well prepared for your first mission as a Ranger.\p"
+            "There was a blackout on communications from the Ranger teams on the southern shore
+            of Corymbra Island. Our mission is to investigate and restore contact.\p"
+            "Before we depart, you need to choose your partner Pokémon.\l"
             "Choose your partner: TURTWIG, TORCHIC, or FROAKIE."
         ))
     } else {

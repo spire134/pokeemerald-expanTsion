@@ -29,17 +29,19 @@ mart Quartz_RedStoneMart {
     ITEM_WATER_STONE
     ITEM_THUNDER_STONE
     ITEM_LEAF_STONE
+    ITEM_ICE_STONE
     ITEM_MOON_STONE
     ITEM_SUN_STONE
 }
 
 mart Quartz_GreenStoneMart {
     ITEM_HEAT_ROCK
-    ITEM_ICE_STONE
+    ITEM_SMOOTH_ROCK
+    ITEM_ICY_ROCK
+    ITEM_DAMP_ROCK
     ITEM_OVAL_STONE
-    ITEM_DEEP_SEA_TOOTH
-    ITEM_DEEP_SEA_SCALE
     ITEM_PROTECTIVE_PADS
+    ITEM_ROCKY_HELMET
 }
 
 script Quartz_GemstoneNerd {
@@ -55,7 +57,7 @@ script Quartz_ForlornStoneWoman {
     lock
     faceplayer
     msgbox(format("I used to be a jeweler here in Quartzite.\p"
-    "But ever since Team Hive took over, business has been slow...\n"))
+    "But ever since Team Hive took over, business has been slow…\n"))
     waitmessage
     release
 }
@@ -73,7 +75,7 @@ script Quartz_GoldDigger {
     lock
     faceplayer
     msgbox(format("I've been digging for gems all day!\p"
-    "Maybe if I find enough, I can buy my way out of this mess with Team Hive...\n"))
+    "Maybe if I find enough, I can buy my way out of this mess with Team Hive…\n"))
     waitmessage
     release
 }
@@ -87,8 +89,161 @@ script Quartz_StoneWeirdo {
     msgbox(format("I want you to have this special special rock I found.\p"
     "It's said to bring good luck to those who carry it!"))
     giveitem(ITEM_LUCKY_EGG)
-    msgbox(format("{PLAYER} received a Lucky Rock!"))
+    msgbox(format("{PLAYER} received a Lucky Rock! "))
     waitmessage
     release
 }
 
+script Quartz_Fat_Lazy_Husband {
+    lock
+    faceplayer
+    msgbox(format("Ugh... do I really have to go to work today?\pI'm too comfortable at home to move."))
+    waitmessage
+    release
+}
+
+script Quartz_Bored_Wife_Murkrow {
+    lock
+    faceplayer
+    goto_if_set(FLAG_BATTLE_FRONTIER_TRADE_DONE, Quartz_Bored_Wife_Murkrow_End)
+    setvar(VAR_0x8008, INGAME_TRADE_HONEDGE)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+    copyvar(VAR_0x8009, VAR_RESULT)
+    msgbox(format("My husband is so lazy! He never wants to go out and explore the city with me.\p"
+    "I wish I could find a {STR_VAR_1} to keep me company instead…"
+    "The only friend I've had lately is the knife that follows him around!\l"
+    "It keeps looking at me like it's waiting."
+    "I would trade the knife for a {STR_VAR_1}, I've always fancied a murder!"
+    ), MSGBOX_YESNO)
+    goto_if_eq(VAR_RESULT, NO, MurkrowTrade_DeclineTrade)
+    special(ChoosePartyMon)
+    waitstate
+    copyvar(VAR_0x800A, VAR_0x8004)
+    goto_if_eq(VAR_0x8004, PARTY_NOTHING_CHOSEN, MurkrowTrade_DeclineTrade)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    specialvar(VAR_RESULT, GetTradeSpecies)
+    copyvar(VAR_0x800B, VAR_RESULT)
+    goto_if_ne(VAR_RESULT, VAR_0x8009, MurkrowTrade_NotRequestedMon)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    special(CreateInGameTradePokemon)
+    special(DoInGameTradeScene)
+    waitstate
+    msgbox(format(
+        "Finally, something intelligent to keep me company!"
+    ))
+    setflag(FLAG_BATTLE_FRONTIER_TRADE_DONE)  
+    release
+}
+
+script MurkrowTrade_DeclineTrade {
+    msgbox(format(
+        "All right then.\n"
+        "Maybe Honedge can help with my husband."
+    ))
+    release
+}
+
+script MurkrowTrade_NotRequestedMon {
+    bufferspeciesname(STR_VAR_1, VAR_0x8009)
+    msgbox(format(
+        "I would really prefer a {STR_VAR_1}.\p"
+        "Bring a {STR_VAR_1} if you want my knife."
+    ))
+    release
+}
+
+script Quartz_Bored_Wife_Murkrow_End {
+    msgbox(format(
+        "I love my new Murkrow. I hope Honedge got to do whatever it wanted with you!"
+    ))
+    release
+}
+
+script Quartz_BoardGame_Boy {
+    lock
+    faceplayer
+    msgbox(format("Hey! Want to play a board game with me?\p"
+    "It's a lot of fun and can help pass the time while Team Hive is around!"))
+    waitmessage
+    release 
+}
+
+script Quartz_BoardGame_Girl {
+    lock
+    faceplayer
+    msgbox(format("I love playing board games!\p"
+    "It's a great way to spend time with friends while we wait for Team Hive to leave!"))
+    waitmessage
+    release    
+}
+
+script Quartz_TooCoolForGames_Kid {
+    lock
+    faceplayer
+    msgbox(format("Board games are for kids.\p"
+    "I'd rather be outside helping the Rangers!"))
+    waitmessage
+    release
+}
+
+script Quartz_BoardGame_Mom {
+    lock
+    faceplayer
+    msgbox(format("Playing board games is a great way for families to bond!\p"
+    "Even with Team Hive around, we can still have fun together at home!"))
+    waitmessage
+    release    
+}
+
+script Quartz_OldMan_TyGifts {
+    lock
+    faceplayer
+    msgbox(format("Thank you for helping us with the Team Hive problem!\p"
+    "Please accept this gift as a token of our gratitude."))
+    giveitem(ITEM_POKE_DOLL)
+    msgbox(format("{PLAYER} received a Poke Doll! "))
+    waitmessage
+    msgbox(format("We couldn't have done it without you!"
+    "If you ever need another doll, just let me know!\l"))
+    waitmessage
+    applymovement(LOCALID_OLD_MAN_TYGIFTS, moves(emote_heart))
+    waitmovement(2)
+    msgbox(format("He seems really happy to give you that doll!"))
+    waitmessage
+    release
+    }
+
+script Quartz_OldWoman_Dollmaker {
+    lock
+    faceplayer
+    if (flag(FLAG_BADGE03_GET)) {
+        msgbox(format("Dollmaker Mollie: You certainly prove yourself a strong trainer.\p"
+        "Perhaps you can be the one with the skill to test my designs."
+        "But I will first evaluate your abilities in battle. Do you accept?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+        msgbox(format("Excellent! Show me your skills!"))
+        trainerbattle_no_intro(TRAINER_MOLLIE,
+        format("Impressive!")
+        )
+        waitmessage
+        msgbox(format("Dollmaker Mollie: You've proven your skill once again!\p"
+        "As a reward, I shall give you access to my secret workshop!"
+        "Please step aside, dear!"))
+        setflag(FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS)
+        waitmessage
+        applymovement(LOCALID_QUARTZ_OLDMANGIFTS, moves(walk_left face_down))
+        waitmovement(0)
+        msgbox(format("Dollmaker Mollie: Say hi to my assistant while you're down there!\p"))
+        waitmessage
+        } else {
+        msgbox(format("Take your time to prepare!"))
+        waitmessage
+        }
+    } else {
+    msgbox(format("Dollmaker Mollie: I've heard about your adventures around Quartzite City.\p"
+    "Come back when you have the clearance to use Surf in the field."))
+    waitmessage
+    }
+}

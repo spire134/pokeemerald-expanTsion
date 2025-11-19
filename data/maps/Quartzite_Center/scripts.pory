@@ -10,10 +10,11 @@ script Script_QuartzNurse {
     release
 }
 
-script Quartz_Tunnel_Guard {
+script Quartz_Center_RestingTrainer {
     lock
     faceplayer
-    msgbox(format("The tunnel ahead is currently blocked by Team Hive Drones.\p"
-    "I can't let anyone pass until Captain Rojan gives the clear."))
+    msgbox(format("Trainer: Phew! That was a tough trek!\n"
+    "Good thing there's a Pokémon Center right here to heal up!\n"))
+    waitmessage
     release
 }

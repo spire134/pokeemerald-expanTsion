@@ -12694,14 +12694,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_DevonScope,
     },
 
-    [ITEM_BASEMENT_KEY] =
+    [ITEM_WAREHOUSE_KEY] =
     {
-        .name = _("Basement Key"),
+        .name = _("Warehouse Key"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "The key for New\n"
-            "Mauville beneath\n"
-            "Mauville City."),
+            "The key for the\n"
+            "Warehouse in\n"
+            "Hazolt Mart."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -18,7 +18,7 @@
       "local_id": "LOCALID_HAZOLT_MART_CLERK",
       "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 1,
-      "y": 3,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -32,7 +32,7 @@
       "local_id": "LOCALID_TASMIN",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 4,
-      "y": 2,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -41,21 +41,56 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Tasmin_Field_Script",
       "flag": "FLAG_TASMIN_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_TASMIN_WAREHOUSE",
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Tasmin_Warehouse",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 3,
-      "y": 7,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_HAZOLT_VILLAGE",
       "dest_warp_id": "0"
     },
     {
       "x": 4,
-      "y": 7,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_HAZOLT_VILLAGE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_HAZOLT_MART",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_HAZOLT_MART",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 4,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_HAZOLT_MART",
       "dest_warp_id": "0"
     }
   ],
@@ -64,7 +99,7 @@
     {
       "type": "sign",
       "x": 4,
-      "y": 1,
+      "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Hazolt_MartLocked"

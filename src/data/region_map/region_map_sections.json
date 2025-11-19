@@ -1286,6 +1286,14 @@
     {
       "id": "MAPSEC_CRUSTED_QUARRY",
       "name": "Crusted Quarry"
+    },
+    {
+      "id": "MAPSEC_SHUDDERWOOD_SECOND",
+      "name": "Shudderwood Depths"
+    },
+    {
+      "id": "MAPSEC_SHUDDERWOOD_MANSION",
+      "name": "Shudderwood Mansion"
     }
   ]
 }

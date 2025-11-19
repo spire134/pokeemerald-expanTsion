@@ -95,60 +95,84 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Jim
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Poochyena
-Level: 32
+Remoraid
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Clauncher
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Plank
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Krabby
+Level: 22
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 20 SpD / 20 Spe
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Arrokuda
+Level: 22
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 10 SpD / 10 Spe
+
+Remoraid
+Level: 22
+IVs: 0 HP / 10 Atk / 0 Def / 20 SpA / 0 SpD / 10 Spe
+
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Timbers
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zubat
-Level: 32
+Qwilfish
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Corphish
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
+Name: June
+Class: Pirate
+Pic: Aqua Admin F
+Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wartortle
+Level: 25
+IVs: 10 HP / 10 Atk / 10 Def / 20 SpA / 20 SpD / 0 Spe
+
+Inkay
+Level: 25
+IVs: 20 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 20 Spe
+
+Croagunk
+Level: 25
+IVs: 10 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
 Name: GRUNT
@@ -2557,15 +2581,29 @@ Pic: Expert F
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Whiscash
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Klefki (F) @ Light Clay  
+Ability: Prankster  
+Level: 33  
+Tera Type: Steel  
+IVs: 20 HP / 0 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Thunder Wave  
+- Steel Beam  
+- Light Screen  
+- Reflect  
 
-Meditite
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Magneton @ Metal Coat  
+Ability: Analytic  
+Level: 34  
+Tera Type: Electric  
+EVs: 92 Atk / 24 SpA  
+Brave Nature  
+IVs: 2 HP / 29 Atk / 22 Def / 19 SpA / 26 SpD / 1 Spe  
+- Flash  
+- Gyro Ball  
+- Tri Attack  
+- Shock Wave  
 
 === TRAINER_GARRET ===
 Name: GARRET
@@ -3571,9 +3609,9 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magby
+Level: 24
+IVs: 22 HP / 12 Atk / 31 Def / 31 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -3584,13 +3622,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
+Darumaka
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 12 HP / 22 Atk / 12 Def / 12 SpA / 12 SpD / 22 Spe
 
-Slugma
+Klink
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 12 HP / 22 Atk / 12 Def / 12 SpA / 12 SpD / 22 Spe
 
 === TRAINER_AXLE ===
 Name: AXLE
@@ -9286,8 +9324,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
+Graveler-Alola
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
@@ -9424,12 +9462,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Meditite
-Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Riolu
+Level: 21
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
-Hariyama
-Level: 33
+Tyrogue
+Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_HUDSON ===
@@ -13751,34 +13789,34 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 29
+Beedrill
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 29
+Ariados
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13790,8 +13828,8 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13803,8 +13841,8 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -13837,17 +13875,17 @@ Music: Magma
 Double Battle: Yes
 AI: Basic Trainer
 
-Venonat @ Mirror Herb  
-Ability: Compound Eyes  
-Level: 18  
+Illumise @ Mirror Herb  
+Ability: Prankster  
+Level: 17  
 Tera Type: Bug  
 EVs: 44 HP / 24 SpA  
 Rash Nature  
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Skitter Smack  
-- Sleep Powder  
-- Screech  
-- Psybeam  
+- Struggle Bug  
+- Charm  
+- Quick Attack  
+- Theif   
 
 Dottler @ Eviolite  
 Ability: Telepathy  
@@ -13858,8 +13896,8 @@ Relaxed Nature
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Light Screen  
 - Reflect  
-- Payback                       
-- Zen Headbutt  
+- Struggle Bug                       
+- Confusion  
 
 Solosis @ Sticky Barb  
 Ability: Magic Guard 
@@ -13873,17 +13911,48 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Future Sight  
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
-Name: GRUNT
-Class: Team Magma
+Name: Seer
+Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
-Double Battle: No
-AI: Check Bad Move
+Double Battle: Yes
+AI: Basic Trainer
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dottler @ Sticky Barb 
+Ability: Telepathy  
+Level: 22  
+Tera Type: Bug 
+EVs: 44 HP / 24 SpA 
+Relaxed Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Light Screen  
+- Reflect  
+- Struggle Bug                       
+- Confusion  
+
+Illumise @ Mirror Herb  
+Ability: Prankster  
+Level: 22  
+Tera Type: Bug  
+EVs: 44 HP / 24 SpA  
+Rash Nature  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Struggle Bug  
+- Charm  
+- Wish  
+- Infestation  
+
+Solosis @ Eviolite  
+Ability: Magic Guard 
+Level: 23
+Tera Type: Psychic  
+EVs: 44 HP / 24 SpA
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Confusion  
+- Recover  
+- Signal Beam  
+- Future Sight
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: GRUNT

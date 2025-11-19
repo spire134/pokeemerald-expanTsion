@@ -15,60 +15,49 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_CORIN_ROOM",
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
-      "x": 3,
-      "y": 6,
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 6,
+      "y": 5,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Corin_Quartzite_Room",
-      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
+      "script": "Quartz_YogaLady_MuscleBand",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "2"
-    },
-    {
-      "x": 2,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 5,
-      "y": 9,
+      "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_QUARTZSITE",
+      "dest_warp_id": "5"
     },
     {
       "x": 6,
-      "y": 9,
+      "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "3"
-    }
-  ],
-  "coord_events": [
+      "dest_map": "MAP_QUARTZSITE",
+      "dest_warp_id": "5"
+    },
     {
-      "type": "trigger",
-      "x": 5,
-      "y": 7,
+      "x": 2,
+      "y": 22,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "Corin_Notice_Trigger"
+      "dest_map": "MAP_QUARTZ_TUNNEL_ROOM",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_QUARTZ_TUNNEL_ROOM",
+      "dest_warp_id": "2"
     }
   ],
+  "coord_events": [],
   "bg_events": []
 }

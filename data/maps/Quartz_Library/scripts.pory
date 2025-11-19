@@ -93,6 +93,19 @@ script QuartzLibrary_SeerBattle {
 script Corin_Quartz_PostBattles {
     lock
     faceplayer
+    if(flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
+    msgbox(format("Corin: With the Seer defeated, Team Hive's hold on Quartzite City is finally broken!\n"
+    "Thanks for your help back there, {PLAYER}.\p"
+    "Now you can return to Hazolt HQ, Captain Mara will want to hear about this!"))
+    waitmessage
+    applymovement(LOCALID_CORIN_LIBRARY, moves(emote_question_mark))
+    waitmovement(0)
+    msgbox(format("Corin: You're saying the Seer mentioned something about books sent to Shudderwood Mansion?\p"
+    "That sounds important. We should investigate that next time we have a chance."))
+    waitmessage
+    release
+    }  
+    else {
     msgbox(format("Corin: Whew… That was intense!\n"
     "Thanks for having my back back there, {PLAYER}.\p"
     "Those Hive Drones were tougher than I expected, but we showed them!"
@@ -102,14 +115,22 @@ script Corin_Quartz_PostBattles {
     "I bet Mara will want to hear about this!"))
     release
 }
+}
 
 script Quartz_Library_HealNurse {
     lock
     faceplayer
-    msgbox(format("Please rest here if your POKéMON need healing."))
+    msgbox(format("Please rest here if your POKéMON need healing."
+    "Would you like me to heal your POKéMON?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox(format("Alright, let me know if you need anything."))
+        waitmessage
+        release
+    } else {
     call(HealPlayerParty)
     msgbox(format("Your POKéMON have been healed."))
     release
+}
 }
 
 script Quartz_Library_QuarryLoreWoman {
@@ -179,20 +200,24 @@ script Quartz_Library_AnythingButRocksWoman {
 script Quartz_Library_Libarian {
     lock
     faceplayer
-    msgbox(format("Librarian: Hello there, Ranger {PLAYER}!\n"
-    "Thank you and Corin for clearing out those Hive Drones from the library!"))
-    if (!flag(FLAG_LIBRARY_EEVEE_GIVEN)) {
-        msgbox(format("Librarian: As a token of our gratitude, please accept this Eevee.\p"
-        "It's been trained to read."))
-        givemon(SPECIES_EEVEE, 15)
-        msgbox(format("{PLAYER} received an Eevee!"))
-        setflag(FLAG_LIBRARY_EEVEE_GIVEN)
-    waitmessage
-    release
-}
+    if (flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
+        msgbox(format("Librarian: Hello there, Ranger {PLAYER}!\n"
+        "Thank you and Corin for clearing out those Hive Drones from the library!\p"
+        "You say something about the Seer mentioning books sent to Shudderwood Mansion?\p"
+        "Yes, they took our rare books on crystal formations found on Corymbra Island.\p"
+        "We'd be grateful if you could retrieve them for us!"))
+        if (!flag(FLAG_LIBRARY_EEVEE_GIVEN)) {
+            msgbox(format("Librarian: As a token of our gratitude, please accept this Eevee.\p"
+            "It's been trained to read."))
+            givemon(SPECIES_EEVEE, 20)
+            msgbox(format("{PLAYER} received an Eevee!"))
+            setflag(FLAG_LIBRARY_EEVEE_GIVEN)
+        }
+        waitmessage
+    }
     else {
-    msgbox(format("Librarian: Feel free to take a look at our collection of books on geology and mineralogy."))
-    waitmessage
+        msgbox(format("Librarian: Feel free to take a look at our collection of books on geology and mineralogy."))
+        waitmessage
+    }
     release
-}
 }

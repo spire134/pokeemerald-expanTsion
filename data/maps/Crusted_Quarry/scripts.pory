@@ -1,1 +1,161 @@
 mapscripts Crusted_Quarry_MapScripts {}
+
+script Crusted_Quarry_Drone1 {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_8,
+    format("Hive Drone: You again? The Seer won't be happy to hear about this!\n"
+    "Prepare to be buzzed!"),
+    format("Hive Drone: Gah! You got me again, Ranger.")
+    )
+    msgbox(format("Hive Drone: The Seer may have been wrong?!\n"))
+    waitmessage 
+}
+
+script Crusted_Quarry_Drone2 {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_9,
+    format("Hive Drone: You think you can just stroll through here?\n"
+    "Not this time!"),
+    format("Hive Drone: Ugh… I'm bugged out.")
+    )
+    msgbox(format("Hive Drone: The Seer can't be wrong!\n"))
+    waitmessage   
+}
+
+script Crusted_Quarry_Seer_LastResort {
+    applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(face_player))
+    msgbox(format("Seer: I didn't want it to come to this…\n"
+    "I've overloaded the machinery to collapse the quarry!\n"
+    "I was just supposed to get some specific books from the library!\n"))
+    applymovement(LOCALID_SEER, moves(emote_question_mark))
+    waitmovement(0)
+        msgbox(format("Seer: What kind of books? I'll never tell you!\n"
+        "You'll have to defeat me in battle!"
+        "But then, will you be able to stop the collapse?"))
+    trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_15,
+    format("Seer: You may have defeated me, but the quarry will be lost!\n")
+    )
+    applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(emote_x))
+    waitmovement(0)
+        msgbox(format("Seer: I've lost again…\n"
+        "But I'll never tell you what books I sent to the Shudderwood Mansion!\p"
+        "Or maybe I've said too much already…\n"))
+    special (ShakeCamera)
+    setflag(FLAG_CRUSTED_QUARRY_DEFEATED)
+    setflag(FLAG_QUARRY_COLLAPSING)
+    msgbox(format("The lights flicker as the Seer escapes into the shadows.\n"))
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_CRUSTED_QUARRY_SEER)
+    removeobject(LOCALID_CRUSTED_QUARRY_DRONE1)
+    removeobject(LOCALID_CRUSTED_QUARRY_DRONE2)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_up emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("You need to fix the quarry machinery before it collapses completely!\n"))
+    waitmessage
+    release
+}   
+
+script Crusted_Quarry_DontRunAway {
+    if (flag(FLAG_QUARRY_COLLAPSING)) {
+        lock
+        msgbox(format("The quarry is collapsing! You can't run away now!\n"
+        "You need to fix the machinery first!"))
+        waitmessage
+        applymovement(LOCALID_PLAYER, moves(walk_fast_up))
+        waitmovement(0)
+        release
+    } else {
+    }
+}
+
+script Crusted_Quarry_MachineControls {
+    lock
+    if (flag(FLAG_QUARRY_COLLAPSING)) {
+        msgbox(format("You quickly analyze the machinery to come up with a plan to stop the collapse.\n"
+        "You think you can either CUT the power or just SMASH the controls."))
+        waitmessage
+        msgbox(formgat("Will you CUT the power?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            playse(SE_M_CUT)
+            waitse
+            msgbox(format("You successfully cut the power to the machinery just in time!\n"
+            "The collapse stops, and the quarry is safe once more!"))
+            waitmessage
+            clearflag(FLAG_QUARRY_COLLAPSING)
+            playse(SE_APPLAUSE)
+            waitse         
+        } else {
+            playse(SE_M_ROCK_THROW)
+            waitse
+            msgbox(format("You smash the controls, and it works!\n"
+            "The collapse stops, and the quarry is safe once more!"))
+            waitmessage
+            clearflag(FLAG_QUARRY_COLLAPSING)
+            playse(SE_APPLAUSE)
+            waitse
+        }
+    } else {
+        msgbox(format("The machinery here seems to be non-functional."
+        "There are signs of Hive tampering."))
+    }
+    release
+}
+
+script Crusted_Quarry_FlameEngineer1 {
+    trainerbattle_single(TRAINER_COLE,
+    format("Quartz Engineer: All hail the Seer!\n"),
+    format("Quartz Engineer: Thank you for clearing my mind, Ranger!")
+    )
+    msgbox(format("Quartz Engineer: The Seer must be stopped at all costs!\n"
+    "She's been using Psychic powers to control us!"))
+    waitmessage
+    }
+
+script Crusted_Quarry_FlameEngineer2 {
+    trainerbattle_single(TRAINER_JEFF,
+    format("Quartz Engineer: The Seer's vision will lead us to greatness!\n"),
+    format("Quartz Engineer: Ugh… My mind feels clearer now.")
+    )
+    msgbox(format("Quartz Engineer: The Seer has been controlling us for a while!\n"
+    "But I think she's under orders, too!"))
+    waitmessage
+    }
+
+script Crusted_Quarry_BlindHikerFight {
+    trainerbattle_single(TRAINER_ELI,
+    format("I can't see a thing in this dusty quarry!\n"
+    "But I can still fight!"),
+    format("Ugh… I guess I need to be more careful.")
+    )
+    msgbox(format("Blind Hiker: Whew! That was close!\n"
+    "These Hive Drones made it hard to navigate through here!"))
+    waitmessage
+    }
+
+script Crusted_Quarry_ChiseledAbsTrainer {
+    trainerbattle_single(TRAINER_REYNA,
+    format("Trainer Lisa: These quarry workouts are the best!\n"
+    "Wanna see my chiseled abs?"),
+    format("Trainer Lisa: Haha! Gotta keep these abs in shape!")
+    )
+    msgbox(format("Trainer Lisa: The quarry's a great place to train!\n"
+    "Just watch out for falling rocks!"))
+    waitmessage
+}
+
+script Crusted_Quarry_OwnBusinessTrainer {
+    trainerbattle_single(TRAINER_JONATHAN,
+    format("I'm just here minding my own business.\n"
+    "And my business is to battle you!"),
+    format("Ugh… I was too focused on other business.")
+    )
+    msgbox(format("Trainer Jonathan: Sorry about that. I was just trying to mind my own business."))
+    waitmessage
+}
+
+script Crusted_Quarry_WarningSign {
+    lock
+    msgbox(format("WARNING!: Dangerous Pokémon live in this quarry area.\n"
+    "It has been closed to the public for safety reasons."))
+    waitmessage
+    release
+}

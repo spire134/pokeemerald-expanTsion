@@ -19,7 +19,7 @@ release
 script Library_BackEntrance {
 lock
 fadescreen(FADE_TO_BLACK)
-warp(MAP_QUARTZ_LIBRARY, 12, 3)
+warp(MAP_QUARTZ_LIBRARY, 12, 4)
 fadescreen(FADE_FROM_BLACK)
 release
 }

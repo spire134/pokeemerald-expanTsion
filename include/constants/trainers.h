@@ -352,7 +352,8 @@
 #define TRAINER_CLASS_PYRAMID_KING   0x40
 #define TRAINER_CLASS_RS_PROTAG      0x41
 #define TRAINER_CLASS_HIVE           0x42
-#define TRAINER_CLASS_COUNT          0x43
+#define TRAINER_CLASS_PIRATE         0x43
+#define TRAINER_CLASS_COUNT          0x44
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

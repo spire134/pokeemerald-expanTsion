@@ -1221,3 +1221,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Quartz_City_Interiors/scripts.inc"
 
 	.include "data/maps/Crusted_Quarry/scripts.inc"
+
+	.include "data/maps/Quartz_DollWorkshop/scripts.inc"
+
+	.include "data/maps/Shudderwood_Second/scripts.inc"
+
+	.include "data/maps/Shudderwood_Mansion/scripts.inc"

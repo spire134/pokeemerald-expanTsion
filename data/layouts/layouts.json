@@ -4495,7 +4495,7 @@
       "id": "LAYOUT_HAZOLT_MART",
       "name": "Hazolt_Mart_Layout",
       "width": 11,
-      "height": 8,
+      "height": 30,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Hazolt_Mart/border.bin",
@@ -4684,10 +4684,10 @@
     {
       "id": "LAYOUT_QUARTZ_TUNNEL_ROOM",
       "name": "Quartz_Tunnel_Room_Layout",
-      "width": 8,
-      "height": 10,
+      "width": 12,
+      "height": 30,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_InsideShip",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Quartz_Tunnel_Room/border.bin",
       "blockdata_filepath": "data/layouts/Quartz_Tunnel_Room/map.bin"
     },
@@ -4725,11 +4725,41 @@
       "id": "LAYOUT_CRUSTED_QUARRY",
       "name": "Crusted_Quarry_Layout",
       "width": 40,
-      "height": 40,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Crusted_Quarry/border.bin",
       "blockdata_filepath": "data/layouts/Crusted_Quarry/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUARTZ_DOLL_WORKSHOP",
+      "name": "Quartz_DollWorkshop_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Quartz_DollWorkshop/border.bin",
+      "blockdata_filepath": "data/layouts/Quartz_DollWorkshop/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUDDERWOOD_SECOND",
+      "name": "Shudderwood_Second_Layout",
+      "width": 45,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Shudderwood_Second/border.bin",
+      "blockdata_filepath": "data/layouts/Shudderwood_Second/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUDDERWOOD_MANSION",
+      "name": "Shudderwood_Mansion_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePalace",
+      "border_filepath": "data/layouts/Shudderwood_Mansion/border.bin",
+      "blockdata_filepath": "data/layouts/Shudderwood_Mansion/map.bin"
     }
   ]
 }

@@ -3,10 +3,72 @@ mapscripts Hazolt_Mart_MapScripts {}
 script Hazolt_MartLocked {
     lock
     msgbox(format("Hazolt supply room, authorized personnel only!"
-    "That means you, Corin!"))
+    "You're banned, Corin!"
+    "-Tasmin."))
     waitmessage
+    checkitem(ITEM_WAREHOUSE_KEY)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You don't have the key to enter the warehouse."))
+        waitmessage
+        release
+        end
+    }
+    else {
+    msgbox(format("Enter the warehouse?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == TRUE) {
+        fadescreen(FADE_TO_BLACK)
+        warp(HAZOLT_MART_WAREHOUSE, 4, 11)
+        fadescreen(FADE_FROM_BLACK)
+    } else {
+        msgbox(format("You decided not to enter the warehouse."))
+    }
     release
 }
+}
+
+script Tasmin_Warehouse {
+    lock
+    faceplayer
+    checkitem(ITEM_STORAGE_KEY)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Tasmin: Oh, hey! I see Mara sent you.\nLet me grab that spare warehouse key."))
+        applymovement(LOCALID_TASMIN_WAREHOUSE, moves(emote_exclamation_mark))
+        waitmovement(0)
+        msgbox(format("We had an extra made after Corin's\n'mysteriously disappeared.'\pAnyway, about those shipwrecked supplies…"))
+        msgbox(format("Tasmin: We've spotted some suspicious\nactivity around the wreck site.\pWhoever they are, they're not friendly."))
+        giveitem(ITEM_STORAGE_KEY)
+        waitmessage
+        msgbox(format("You received the Storage Key!"))
+        waitmessage
+        msgbox(format("Tasmin: This'll get you inside the ship.\nOh, and take these for the road."))
+        giveitem(ITEM_FULL_HEAL, 5)
+        giveitem(ITEM_SUPER_POTION, 5)
+        waitmessage
+        msgbox(format("You received 5 Full Heals and\n5 Super Potions!"))
+        waitmessage
+        msgbox(format("Tasmin: Stay sharp out there!\nReport back if you find anything."))
+        waitmessage
+        release
+    }
+    else {
+        checkflag(FLAG_CLEARED_TIDESMERCYWRECK)
+        if (var(VAR_RESULT) == FALSE) {
+            msgbox(format("Tasmin: Watch your back near that wreck.\nSomething's definitely not right there."))
+            waitmessage
+            release
+        }
+        else {
+            msgbox(format("Tasmin: You actually dealt with pirates\nAND Team Hive? That's insane!"))
+            applymovement(LOCALID_TASMIN_WAREHOUSE, moves(emote_question_mark))
+            waitmovement(0)
+            msgbox(format("Tasmin: Their captain, Garrick… I've heard\nthe name. Sounds like bad news.
+            \pKeep your eyes open. Pirates don't just\nleave because they lost once."))
+            waitmessage
+            release
+        }
+    }
+}
+
 
 script Tasmin_Field_Script {
     lockall

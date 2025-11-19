@@ -5,19 +5,19 @@ script Mara_Gym_Script {
     faceplayer
     if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
         setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
-        msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.
-        Thanks to Eon's stewardship, we drove ashore close to HQ, and we've set up.
-        Here are some supplies, make use of them to prepare yourself."))
+        msgbox(format("Mara: I'm glad to see you return well. That storm was truly unexpected.\p"
+        "Thanks to Eon's stewardship, we drove ashore close to HQ, and we've set up.\p"
+        "Here are some supplies, make use of them to prepare yourself."))
         giveitem(ITEM_POKE_BALL, 10)
         giveitem(ITEM_POTION, 5)
-        msgbox(format("Mara: Now, {PLAYER} I need you to check on our three field operatives.
-        Eon is mapping the eastern beachside cliffs, Corin is investigating a cave in Zatik Gorge to the west,
-        and Tasmin is working on logistics at the Mart. Report back to me when you have checked on all three."))
+        msgbox(format("Mara: Now, {PLAYER} I need you to check on our three field operatives.\p"
+        "Eon is mapping the eastern beachside cliffs, Corin is investigating a cave in Zatik Gorge to the west,\p"
+        "and Tasmin is working on logistics at the Mart. Report back to me when you have checked on all three."))
         setflag(FLAG_MARA_FIELD_TEST_STARTED)
         clearflag(FLAG_BEGINNING_TRAINERS)
-        msgbox(format("Mara: Oh, and one more thing.
-        I'm wiring you up with an EXP. ALL device. It will help you train faster in the field.
-        Use it well, Ranger."))
+        msgbox(format("Mara: Oh, and one more thing.\p"
+        "I'm wiring you up with an EXP. ALL device. It will help you train faster in the field.\p"
+        "Use it well, Ranger."))
         giveitem(ITEM_EXP_ALL)
         msgbox(format("{PLAYER} received EXP. ALL!"))
         waitfanfare
@@ -25,56 +25,76 @@ script Mara_Gym_Script {
         releaseall
         end
     }
-    # Wait for all to clear and return
     if (!flag(FLAG_EON_CLEARED) || !flag(FLAG_CORIN_CLEARED) || !flag(FLAG_TASMIN_CLEARED)) {
-        msgbox(format("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,
-        Corin is investigating a cave in that gorge to the west, and Tasmin is working on
-        logistics at the Mart. Report back when you are done."))
+        msgbox(format("Mara: Still waiting on all three checks. Eon is mapping the eastern cliffs,\p"
+        "Corin is investigating a cave in that gorge to the west, and Tasmin is working on\p"
+        "logistics at the Mart. Report back when you are done."))
         releaseall
         end        
     }
     if (!flag(FLAG_MARA_EVAL_READY)) {
-        msgbox(format("Mara: Excellent work checking on the team. Now everyone is back at HQ.
-        Next up will be your first evaluation as a Ranger."
+        msgbox(format("Mara: Excellent work checking on the team. Now everyone is back at HQ.\p"
+        "Next up will be your first evaluation as a Ranger.\p"
         "But first, take some time to train and prepare."))        
         setflag(FLAG_MARA_EVAL_READY)
         clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
         addobject(LOCALID_EON_GYM)
         addobject(LOCALID_TASMIN_GYM)
         addobject(LOCALID_CORIN_GYM)
-        msgbox(format("Mara: Why not have a rematch with Eon, Corin, or Tasmin?"
+        msgbox(format("Mara: Why not have a rematch with Eon, Corin, or Tasmin?\p"
         "They should all be ready for another bout here."))
         releaseall
         end
     }
     if (!flag(FLAG_MARA_DEFEATED)) {
-        # Run your battle event
         msgbox(format("Mara: Ready for your evaluation as a Ranger? Let's see if you make the cut."), MSGBOX_YESNO)
-        if(var(VAR_RESULT) == YES) {
-        trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: That's an easy pass. Well done.")
-        setflag(FLAG_BADGE01_GET)
-        setflag(FLAG_MARA_DEFEATED)
-        msgbox(format("Mara: Excellent work,
-        {PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
-        giveitem(ITEM_HM01) # Cut HM
-        msgbox(format("{PLAYER} received HM01 Cut!"))
-        waitfanfare
-        waitbuttonpress
-        msgbox(format("Mara: Good luck. I've perfected this Cut HM.
-        It now has the Steel soul of our Ranger Corps imbued within it.\p
-        Use it well, Ranger."))
-        releaseall
-        end
-        } else {
-        msgbox(format("Mara: Take your time to prepare!"))
-        releaseall
-        end 
-    }}
-    msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.
-    There have been reports of Team Hive activity there. Stay alert, Ranger."))
+        if (var(VAR_RESULT) == YES) {
+            trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: That's an easy pass. Well done.")
+            setflag(FLAG_BADGE01_GET)
+            setflag(FLAG_MARA_DEFEATED)
+            msgbox(format("Mara: Excellent work,\p"
+            "{PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
+            giveitem(ITEM_HM01)
+            msgbox(format("{PLAYER} received HM01 Cut!"))
+            waitfanfare
+            waitbuttonpress
+            msgbox(format("Mara: Good luck. I've perfected this Cut HM.\p"
+            "It now has the steel soul of our Ranger Corps imbued within it.\p"
+            "Use it well, Ranger."))
+            releaseall
+            end
+        } 
+        else {
+            msgbox(format("Mara: Take your time to prepare!"))
+            releaseall
+            end 
+        }
+    }
+    if (flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
+        msgbox(format("Mara: Corin has reported back about your success at Crusted Quarry.\p"
+        "You've proven yourself as a capable Ranger.\p"
+        "Now, we need to investigate the shipwreck on our southern shore.\p"
+        "Talk to Tasmin in the Hazolt Mart for more details."))
+        giveitem(ITEM_WAREHOUSE_KEY)
+        msgbox(format("{PLAYER} received the Warehouse Key!"))
+        waitmessage
+        msgbox(format("Mara: Use that key at the Hazolt Mart.\p"
+    }
+    elif (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+        msgbox(format("Mara: Tasmin has reported that the shipwreck is clear of threats.\p"
+        "Well done, Ranger. THIS IS THE END OF THE DEMO. THANK YOU FOR PLAYING!\p"))
+    }
+    else {
+        msgbox(format("Mara: Tasmin is working at the Hazolt Mart.\p"
+        "She has details about the shipwreck on our southern shore.\p"
+        "Go speak with her, Ranger."))
+        msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.\p"
+        "There have been reports of Team Hive activity there. Stay alert, Ranger."))
+    }
     releaseall
     end
 }
+
 
 script Eon_Gym_Script {
     lock

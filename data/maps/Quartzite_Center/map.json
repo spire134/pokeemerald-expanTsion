@@ -38,21 +38,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_TUNNEL_GUARD",
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 11,
-      "y": 2,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Quartz_Tunnel_Guard",
+      "script": "Quartz_Center_RestingTrainer",
       "flag": "0"
     }
   ],
@@ -70,13 +56,6 @@
       "elevation": 0,
       "dest_map": "MAP_QUARTZSITE",
       "dest_warp_id": "8"
-    },
-    {
-      "x": 11,
-      "y": 1,
-      "elevation": 0,
-      "dest_map": "MAP_QUARTZ_TUNNELS",
-      "dest_warp_id": "6"
     }
   ],
   "coord_events": [],

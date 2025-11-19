@@ -554,9 +554,9 @@
 #define FLAG_HIDDEN_ITEM_STATIC_BRIDGE_CARBOS                (FLAG_HIDDEN_ITEMS_START + 0x08)
 #define FLAG_HIDDEN_ITEM_SHOREFALL_STRAND_POKE_BALL          (FLAG_HIDDEN_ITEMS_START + 0x09)
 #define FLAG_HIDDEN_ITEM_SHOREFALL_STRAND_POTION             (FLAG_HIDDEN_ITEMS_START + 0x0A)
-#define FLAG_HIDDEN_ITEM_SHUNU_BEACH_POKE_BALL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
+#define FLAG_HIDDEN_ITEM_SHUNU_BEACH_POKE_BALL               (FLAG_HIDDEN_ITEMS_START + 0x0B)
+#define FLAG_HIDDEN_ITEM_SHUDDERWOOD_PROTEIN                 (FLAG_HIDDEN_ITEMS_START + 0x0C)
+#define FLAG_HIDDEN_ITEM_SHUDDERWOOD_CARBOS                   (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
@@ -675,12 +675,12 @@
 #define FLAG_LIBRARY_EEVEE_GIVEN        0x272 // Unused Flag
 #define FLAG_TALKED_TO_ROJAN            0x273 // Unused Flag
 #define FLAG_PUMPHOUSE_DRONE_DEFEATED   0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_CRUSTED_QUARRY_DEFEATED    0x275 // Unused Flag
+#define FLAG_QUARRY_COLLAPSING          0x276 // Unused Flag
+#define FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS  0x277 // Unused Flag
+#define FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL       0x278 // Unused Flag
+#define FLAG_RECEIVED_MUSCLE_BAND                0x279 // Unused Flag
+#define FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED    0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
@@ -1063,11 +1063,11 @@
 #define FLAG_ITEM_SHUDDERWOOD_SILVER_POWDER                         0x3F0
 #define FLAG_ITEM_SHUNU_BEACH_STARDUST                              0x3F1
 #define FLAG_ITEM_ROUTE_SHUDDERWOOD_HP_UP                           0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
+#define FLAG_ITEM_SHUDDERWOOD_GRASS_GEM                             0x3F3
+#define FLAG_ITEM_SHUDDERWOOD_SWEET_APPLE                           0x3F4
+#define FLAG_ITEM_SHUDDERWOOD_TIMER_BALLS                           0x3F5
+#define FLAG_ITEM_SHUDDERWOOD_LEAF_STONE                            0x3F6
+#define FLAG_ITEM_SHUDDERWOOD_MIRACLE_SEED                          0x3F7
 #define FLAG_ITEM_THORN_PASS_SUPER_POTION                           0x3F8
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
 #define FLAG_ITEM_STATIC_VALLEY_IRON                                0x3FA

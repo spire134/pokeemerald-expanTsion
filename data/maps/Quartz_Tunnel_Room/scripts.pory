@@ -1,33 +1,25 @@
 mapscripts Quartz_Tunnel_Room_MapScripts {}
 
-script Corin_Notice_Trigger {
-    if (!flag(FLAG_TALKED_TO_CORIN)) {
+script Quartz_YogaLady_MuscleBand {
     lock
-    playse(SE_PIN)
-    applymovement(LOCALID_CORIN_ROOM, moves(emote_exclamation_mark))
-    waitmovement(0)
-    applymovement(LOCALID_CORIN_ROOM, moves(walk_fast_right walk_fast_right walk_fast_right face_down walk_in_place_fast_down))
-    msgbox(format("Corin: Oh! {PLAYER}!"
-    "Did you bring any snacks?\l"
-    "Just kidding! But seriously,\p"
-    "I've been trying to clear out these Hive Drones.\n"
-    "They've taken over the library through the tunnels."
-    "Can you clear the path ahead? Then we can work together to take them down!\n"))
+    faceplayer
+    msgbox(format("I practice yoga here to keep my body and mind strong.\p"
+    "A strong body leads to a strong mind, and a strong mind leads to a strong POKéMON!\n"))
     waitmessage
-    setflag(FLAG_TALKED_TO_CORIN)
-    msgbox(format("Corin: Thanks! I'll be right here if you need help.\p"))
+    checkflag(FLAG_RECEIVED_MUSCLE_BAND)
+    goto_if_eq(VAR_RESULT, TRUE, Quartz_YogaLady_MuscleBand_AlreadyGiven)
+    msgbox(format("Yoga Instructor: You look like someone who could use a Muscle Band!\p"
+    "Here, take this to help strengthen your POKéMON's physical moves during battles!"))
+    giveitem(ITEM_MUSCLE_BAND)
+    msgbox(format("{PLAYER} received a Muscle Band!"))
+    setflag(FLAG_RECEIVED_MUSCLE_BAND)
+    waitmessage
     release
-    }
-    else {
-        end
-    }
 }
 
-script Corin_Quartzite_Room {
-    lock
-    face_player
-    msgbox(format("Corin: The Hive Drones have been trying to sneak into Quartzite Village through this tunnel.\p"
-    "If you can clear them out, I can help!\n"))
+script Quartz_YogaLady_MuscleBand_AlreadyGiven {
+    msgbox(format("Yoga Instructor: Keep up your training with that Muscle Band!\p"
+    "Your POKéMON will thank you for it during battles!\n"))
     waitmessage
     release
 }
