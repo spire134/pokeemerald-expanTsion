@@ -2,7 +2,7 @@
   "id": "MAP_SHUDDERWOOD_MANSION",
   "name": "Shudderwood_Mansion",
   "layout": "LAYOUT_SHUDDERWOOD_MANSION",
-  "music": "MUS_DUMMY",
+  "music": "MUS_B_PALACE",
   "region_map_section": "MAPSEC_SHUDDERWOOD_MANSION",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 43,
-      "y": 13,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 44,
-      "y": 13,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 45,
-      "y": 13,
+      "y": 23,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -52,138 +52,177 @@
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_123_POMEG_3",
       "script": "BerryTreeScript",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 65,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 38,
+      "y": 65,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 24,
-      "y": 59,
+      "y": 69,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "4"
     },
     {
       "x": 25,
-      "y": 59,
+      "y": 69,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "5"
     },
     {
       "x": 24,
-      "y": 48,
+      "y": 58,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "6"
     },
     {
       "x": 25,
-      "y": 48,
+      "y": 58,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "7"
     },
     {
       "x": 22,
-      "y": 37,
+      "y": 47,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "8"
     },
     {
       "x": 23,
-      "y": 37,
+      "y": 47,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "9"
     },
     {
       "x": 3,
-      "y": 29,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "7"
     },
     {
       "x": 2,
-      "y": 23,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "6"
     },
     {
       "x": 3,
-      "y": 23,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "6"
     },
     {
       "x": 9,
-      "y": 29,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "10"
     },
     {
       "x": 2,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "9"
     },
     {
       "x": 3,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "9"
     },
     {
       "x": 22,
-      "y": 22,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "13"
     },
     {
       "x": 21,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "12"
     },
     {
       "x": 22,
-      "y": 11,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "12"
     },
     {
       "x": 35,
-      "y": 29,
+      "y": 39,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "16"
     },
     {
       "x": 42,
-      "y": 17,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "15"
     },
     {
       "x": 43,
-      "y": 17,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "15"
     },
     {
       "x": 41,
-      "y": 28,
+      "y": 38,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "0"

@@ -146,7 +146,7 @@ script CaptainRoom_Talk {
             "There was a blackout on communications from the Ranger teams on the southern shore
             of Corymbra Island. Our mission is to investigate and restore contact.\p"
             "Before we depart, you need to choose your partner Pokémon.\l"
-            "Choose your partner: TURTWIG, TORCHIC, or FROAKIE."
+            "You have three choices: Turtwig, Torchic, or Froakie."
         ))
     } else {
         msgbox("You have your partner. Good. Stay flexible.")
@@ -254,8 +254,6 @@ movement BurstRanger_Enter {
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
     # Ranger bursts in
-    msgbox(format("Mara: Here, take this EXP. Share. You'll need it out there."))
-    giveitem(ITEM_EXP_SHARE)
     msgbox(format("Mara: Now, listen up, I -\p"))
     addobject(OBJ_BURST_RANGER)
     showobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)

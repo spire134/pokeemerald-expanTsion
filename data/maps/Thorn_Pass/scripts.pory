@@ -8,6 +8,7 @@ script Thorn_Camper_1 {
     )
     msgbox(format("I just love the rain!"), MSGBOX_AUTOCLOSE)
     waitmessage
+    releaseall
 }
 
 script Thorn_Catcher_1 {

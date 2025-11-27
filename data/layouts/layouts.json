@@ -4555,7 +4555,7 @@
       "id": "LAYOUT_STATIC_BRIDGE",
       "name": "Static_Bridge_Layout",
       "width": 60,
-      "height": 40,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Static_Bridge/border.bin",
@@ -4760,6 +4760,16 @@
       "secondary_tileset": "gTileset_BattlePalace",
       "border_filepath": "data/layouts/Shudderwood_Mansion/border.bin",
       "blockdata_filepath": "data/layouts/Shudderwood_Mansion/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHUDDERWOOD_MANSION_UPPER",
+      "name": "Shudderwood_Mansion_Upper_Layout",
+      "width": 30,
+      "height": 25,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattlePike",
+      "border_filepath": "data/layouts/Shudderwood_Mansion_Upper/border.bin",
+      "blockdata_filepath": "data/layouts/Shudderwood_Mansion_Upper/map.bin"
     }
   ]
 }

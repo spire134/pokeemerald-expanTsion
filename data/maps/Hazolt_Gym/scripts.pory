@@ -19,7 +19,6 @@ script Mara_Gym_Script {
         "I'm wiring you up with an EXP. ALL device. It will help you train faster in the field.\p"
         "Use it well, Ranger."))
         giveitem(ITEM_EXP_ALL)
-        msgbox(format("{PLAYER} received EXP. ALL!"))
         waitfanfare
         waitbuttonpress
         releaseall
@@ -84,10 +83,12 @@ script Mara_Gym_Script {
         msgbox(format("Mara: Tasmin has reported that the shipwreck is clear of threats.\p"
         "Well done, Ranger. THIS IS THE END OF THE DEMO. THANK YOU FOR PLAYING!\p"))
     }
-    else {
+    elif (flag(FLAG_MARA_DEFEATED)) {
         msgbox(format("Mara: Tasmin is working at the Hazolt Mart.\p"
         "She has details about the shipwreck on our southern shore.\p"
         "Go speak with her, Ranger."))
+    }
+    else {
         msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.\p"
         "There have been reports of Team Hive activity there. Stay alert, Ranger."))
     }
@@ -114,7 +115,7 @@ script Corin_Gym_Script {
     faceplayer
         if (flag(FLAG_MARA_EVAL_READY)) {
             msgbox(format("Corin: Hey there, want to have another battle?"
-            "I've been working on some new strategies on snack breaks!"), MSGBOX_YESNO)
+            "I've been working on some new strategies during my snack breaks!"), MSGBOX_YESNO)
             if(var(VAR_RESULT) == YES) {
             trainerbattle_no_intro(TRAINER_LORENZO, "Corin: Nice work, Ranger. Let's hit the chips.")
         }}

@@ -1227,3 +1227,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Shudderwood_Second/scripts.inc"
 
 	.include "data/maps/Shudderwood_Mansion/scripts.inc"
+
+	.include "data/maps/Shudderwood_Mansion_Upper/scripts.inc"

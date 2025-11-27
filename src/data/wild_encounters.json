@@ -12554,7 +12554,7 @@
               {
                 "min_level": 19,
                 "max_level": 19,
-                "species": "SPECIES_MORELULL"
+                "species": "SPECIES_VENIPEDE"
               },
               {
                 "min_level": 19,
@@ -12569,7 +12569,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SPINARAK"
+                "species": "SPECIES_MORELULL"
               },
               {
                 "min_level": 22,
@@ -12594,17 +12594,17 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_ARIADOS"
+                "species": "SPECIES_WHIRLIPEDE"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_ARIADOS"
+                "species": "SPECIES_WHIRLIPEDE"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_ARIADOS"
+                "species": "SPECIES_MURKROW"
               },
               {
                 "min_level": 24,
@@ -12716,9 +12716,9 @@
                 "species": "SPECIES_LITWICK"
               },
               {
-                "min_level": 35,
+                "min_level": 33,
                 "max_level": 35,
-                "species": "SPECIES_GOTHORITA"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 35,
@@ -12731,24 +12731,24 @@
                 "species": "SPECIES_DUSKULL"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_ARIADOS"
+                "min_level": 36,
+                "max_level": 36,
+                "species": "SPECIES_DUSKULL"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_ARIADOS"
+                "species": "SPECIES_SINISTEA"
               },
               {
-                "min_level": 35,
+                "min_level": 36,
                 "max_level": 37,
-                "species": "SPECIES_MISDREAVUS"
+                "species": "SPECIES_GOTHORITA"
               },
               {
                 "min_level": 37,
                 "max_level": 37,
-                "species": "SPECIES_MISDREAVUS"
+                "species": "SPECIES_LAMPENT"
               },
               {
                 "min_level": 37,
@@ -12756,8 +12756,8 @@
                 "species": "SPECIES_DUSCLOPS"
               },
               {
-                "min_level": 37,
-                "max_level": 37,
+                "min_level": 38,
+                "max_level": 38,
                 "species": "SPECIES_LAMPENT"
               },
               {

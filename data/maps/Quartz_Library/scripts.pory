@@ -8,18 +8,19 @@ script Quartz_Library_Hive_RunningGuard {
     "The Seer will hear about this!"),
     format("Hive Drone: Ugh... You got lucky this time, Ranger.")
     )
-    msgbox(format("Hive Drone: The Seer won't be pleased..."))
-    waitmessage
+    msgbox(format("Hive Drone: The Seer won't be pleased..."), MSGBOX_AUTOCLOSE)
+    release
 }
 
 script Quartz_Seer_Fight {
+    if (!flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
     lockall
     playse(SE_PIN)
     applymovement(LOCALID_QUARTZ_SEER, moves(emote_exclamation_mark walk_slow_down walk_slow_down walk_slow_down))
     waitmovement(0)
-    msgbox(format("Seer: I was wondering when a Ranger with a spine would show up!"
-    "But thanks to my Drones, I know you're spread thin. This will be easy!\p"
-    "Reserve guard, attack!"))
+    msgbox(format("Seer: So… a new Ranger finally arrives.\p"
+    "How unfortunate for you. My Drones have already reported your… diminished forces.\p"
+    "You stand alone against the swarm. Guard—eliminate the intruder."))
     waitmessage
     applymovement(LOCALID_FIRST_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down 
     walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
@@ -30,34 +31,37 @@ script Quartz_Seer_Fight {
     applymovement(LOCALID_FIRST_GOON, moves(walk_fast_left face_right))
     applymovement(LOCALID_QUARTZ_SEER, moves(emote_question_mark))
     waitmovement(0)
-    msgbox(format("Seer: What are you doing, you useless Drone?!\l"
-    "Send in the next guard!"
-    "You'll never defeat us all Ranger, that's the strength of our numbers!"))
+    msgbox(format("Seer: Pathetic.\p"
+    "Next guard—NOW.\p"
+    "It is fruitless. The swarm is endless, Ranger. You will fall."))
     waitmessage
     applymovement(LOCALID_SECOND_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down
     walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
     waitmovement(0)
     playse(SE_EXIT)
-    msgbox(format("Corin: Hold it right there, Seer!"
+    msgbox(format("Corin: Hold it right there, Seer!\p"
     "You're not the only ones with allies!"))
     addobject(LOCALID_CORIN_LIBRARY)
     applymovement(LOCALID_CORIN_LIBRARY, moves(walk_fast_up walk_fast_up walk_fast_up walk_fast_up))
     waitmovement(0)
-    msgbox(format("Corin: {PLAYER}, let me show you what I've learned about Rock Smash!"))
+    msgbox(format("Corin: {PLAYER}, let me show you what I can do, Rock Smash!"))
     playse(SE_M_ROCK_THROW)
     applymovement(LOCALID_CORIN_ROCK, moves(rock_smash_break))
     waitmovement(0)
     removeobject(LOCALID_CORIN_ROCK)
     applymovement(LOCALID_CORIN_LIBRARY, moves(walk_fast_up))
     waitmovement(0)
-    msgbox(format("Seer: What?! Fine. Drone, handle this new arrival!"
-    "I will deal with this impudent Ranger myself!"))
+    msgbox(format("Seer: Another pest.\p"
+    "Drone—assist pattern sigma, we'll crush them together."))
     waitmessage
     applymovement(LOCALID_SECOND_GOON, moves(face_down))
     waitmovement(0)
-    msgbox(format("Corin: Let's do this, {PLAYER}!"
+    msgbox(format("Corin: Let's do this, {PLAYER}!\p"
     "I'll start with Growlithe!"))
     call(QuartzLibrary_PartySelect)
+    } else {
+    end
+    }
 }
 
 script QuartzLibrary_PartySelect{
@@ -73,8 +77,8 @@ script QuartzLibrary_PartySelect{
 
 script QuartzLibrary_SeerBattle {
     multi_2_vs_2(TRAINER_GRUNT_MAGMA_HIDEOUT_14, format("Seer: Impossible!"), TRAINER_GRUNT_MAGMA_HIDEOUT_6, "Drone: Where am I?!", PARTNER_CORIN_QUARTZ)
-    msgbox(format("Seer:How could I lose to a Ranger…"
-    "All Drones, retreat! Hide in the caves, then make your way to HQ!"))
+    msgbox(format("Seer: How could I lose to a Ranger…"
+    "All Drones, retreat! We got the books, fall back to the quarry!"))
     setflag(FLAG_QUARTZITE_HIVE_DEFEATED)
     clearflag(FLAG_HIDE_CONTEST_POKE_BALL)
     applymovement(LOCALID_QUARTZ_SEER, moves(walk_in_place_fast_down))
@@ -83,10 +87,14 @@ script QuartzLibrary_SeerBattle {
     playse(SE_M_EXPLOSION)
     fadescreen(FADE_TO_BLACK)
     waitse
-    msgbox(format("Coring: Phew… That was close!\n"
+    msgbox(format("Corin: Phew… That was close!\n"
     "Gosh, it's dark. One moment and I'll have Morelull light the room up."))
     waitmessage
-    warp(MAP_QUARTZ_LIBRARY, 7, 12)
+    playmoncry(SPECIES_MORELULL, 0)
+    waitse
+    msgbox(format("Corin: Get us out of here, Morelull!"))
+    waitmessage
+    warp(MAP_QUARTZSITE, 11, 20)
     waitstate
 }
 
@@ -127,8 +135,11 @@ script Quartz_Library_HealNurse {
         waitmessage
         release
     } else {
-    call(HealPlayerParty)
+    special(HealPlayerParty)
+    playse(MUS_HEAL)
+    waitse
     msgbox(format("Your POKéMON have been healed."))
+    waitmessage
     release
 }
 }

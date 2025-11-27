@@ -6,8 +6,9 @@ script Crusted_Quarry_Drone1 {
     "Prepare to be buzzed!"),
     format("Hive Drone: Gah! You got me again, Ranger.")
     )
-    msgbox(format("Hive Drone: The Seer may have been wrong?!\n"))
+    msgbox(format("Hive Drone: The Seer may have been wrong?!\n"), MSGBOX_AUTOCLOSE)
     waitmessage 
+    releaseall
 }
 
 script Crusted_Quarry_Drone2 {
@@ -16,8 +17,9 @@ script Crusted_Quarry_Drone2 {
     "Not this time!"),
     format("Hive Drone: Ugh… I'm bugged out.")
     )
-    msgbox(format("Hive Drone: The Seer can't be wrong!\n"))
-    waitmessage   
+    msgbox(format("Hive Drone: The Seer can't be wrong!\n"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
 }
 
 script Crusted_Quarry_Seer_LastResort {
@@ -34,9 +36,11 @@ script Crusted_Quarry_Seer_LastResort {
     format("Seer: You may have defeated me, but the quarry will be lost!\n")
     )
     applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(emote_x))
+    waitmovement(30)
+    applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(face_left face_right face_player))
     waitmovement(0)
         msgbox(format("Seer: I've lost again…\n"
-        "But I'll never tell you what books I sent to the Shudderwood Mansion!\p"
+        "But I'll never tell you about the books sent to the Shudderwood Mansion!\p"
         "Or maybe I've said too much already…\n"))
     special (ShakeCamera)
     setflag(FLAG_CRUSTED_QUARRY_DEFEATED)
@@ -106,9 +110,10 @@ script Crusted_Quarry_FlameEngineer1 {
     format("Quartz Engineer: Thank you for clearing my mind, Ranger!")
     )
     msgbox(format("Quartz Engineer: The Seer must be stopped at all costs!\n"
-    "She's been using Psychic powers to control us!"))
+    "She's been using Psychic powers to control us!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    }
+    releaseall
+}
 
 script Crusted_Quarry_FlameEngineer2 {
     trainerbattle_single(TRAINER_JEFF,
@@ -116,9 +121,10 @@ script Crusted_Quarry_FlameEngineer2 {
     format("Quartz Engineer: Ugh… My mind feels clearer now.")
     )
     msgbox(format("Quartz Engineer: The Seer has been controlling us for a while!\n"
-    "But I think she's under orders, too!"))
+    "But I think she's under orders, too!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    }
+    releaseall
+}
 
 script Crusted_Quarry_BlindHikerFight {
     trainerbattle_single(TRAINER_ELI,
@@ -127,9 +133,10 @@ script Crusted_Quarry_BlindHikerFight {
     format("Ugh… I guess I need to be more careful.")
     )
     msgbox(format("Blind Hiker: Whew! That was close!\n"
-    "These Hive Drones made it hard to navigate through here!"))
+    "These Hive Drones made it hard to navigate through here!"), MSGBOX_AUTOCLOSE)
     waitmessage
-    }
+    releaseall
+}
 
 script Crusted_Quarry_ChiseledAbsTrainer {
     trainerbattle_single(TRAINER_REYNA,
@@ -138,8 +145,9 @@ script Crusted_Quarry_ChiseledAbsTrainer {
     format("Trainer Lisa: Haha! Gotta keep these abs in shape!")
     )
     msgbox(format("Trainer Lisa: The quarry's a great place to train!\n"
-    "Just watch out for falling rocks!"))
+    "Just watch out for falling rocks!"), MSGBOX_AUTOCLOSE)
     waitmessage
+    releaseall
 }
 
 script Crusted_Quarry_OwnBusinessTrainer {
@@ -148,14 +156,15 @@ script Crusted_Quarry_OwnBusinessTrainer {
     "And my business is to battle you!"),
     format("Ugh… I was too focused on other business.")
     )
-    msgbox(format("Trainer Jonathan: Sorry about that. I was just trying to mind my own business."))
+    msgbox(format("Trainer Jonathan: Sorry about that. I was just trying to mind my own business."), MSGBOX_AUTOCLOSE)
     waitmessage
+    releaseall
 }
 
 script Crusted_Quarry_WarningSign {
     lock
     msgbox(format("WARNING!: Dangerous Pokémon live in this quarry area.\n"
-    "It has been closed to the public for safety reasons."))
+    "It has been closed to the public for safety reasons."), MSGBOX_SIGN)
     waitmessage
     release
 }

@@ -338,6 +338,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Quartz_StationSign"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 43,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Quartz_BookStreetSign"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 41,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Quartz_ResidenceStreetSign"
     }
   ]
 }

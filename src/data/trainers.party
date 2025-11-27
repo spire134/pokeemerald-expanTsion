@@ -7709,7 +7709,7 @@ AI: Check Bad Move / Try To Faint
 
 Croagunk  
 Ability: Dry Skin  
-Level: 16  
+Level: 15  
 Tera Type: Poison  
 IVs: 11 HP / 12 Atk / 16 Def / 16 SpA / 16 SpD / 20 Spe  
 - Pursuit  
@@ -7722,10 +7722,10 @@ Ability: Illuminate
 Level: 16  
 Tera Type: Water  
 Impish Nature  
-IVs: 2 Atk / 29 Def / 0 SpA / 26 SpD / 22 Spe  
+IVs: 2 Atk / 19 Def / 0 SpA / 26 SpD / 22 Spe  
 - Harden  
 - Rapid Spin  
-- Bubble Beam  
+- Water Gun  
 - Double Team  
 
 === TRAINER_TAKASHI ===
@@ -10802,7 +10802,7 @@ Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
-Name: CRISTIAN
+Name: Cristian
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -10810,15 +10810,15 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Croagunk  
-Ability: Dry Skin  
+Mienfoo @ Oran Berry
+Ability: Inner Focus 
 Level: 16  
 Tera Type: Poison  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Low Kick  
-- Flatter  
-- Taunt  
-- Astonish
+IVs: 9 HP / 0 Atk / 10 Def / 0 SpA / 0 SpD / 9 Spe  
+- Fake Out  
+- Fury Swipes  
+- Reversal  
+- Detect
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
