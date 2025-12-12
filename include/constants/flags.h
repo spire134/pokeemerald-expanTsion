@@ -1079,7 +1079,7 @@
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE                    0x400
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_SPELL_TAG                     0x401
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_BIG_NUGGET                    0x402
-#define FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE                    0x403
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_TIMID_MINT                    0x403
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_RARE_CANDY                    0x404
 #define FLAG_ITEM_SHOREFALL_STRAND_NEST_BALL                        0x405
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
