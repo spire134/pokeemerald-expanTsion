@@ -351,6 +351,7 @@
 #define SHADOW_SIZE_M   1
 #define SHADOW_SIZE_L   2
 #define SHADOW_SIZE_XL  3
+#define SHADOW_SIZE_NONE 0xFF
 
 #define F_INANIMATE                        (1 << 6)
 #define F_DISABLE_REFLECTION_PALETTE_LOAD  (1 << 7)
