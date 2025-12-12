@@ -321,6 +321,8 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
+
+// NOTE: Increased limit from 239 to 65535 by converting graphics IDs to u16
 #define NUM_OBJ_EVENT_GFX                        309
 
 
@@ -395,5 +397,11 @@
 #define LOCALID_SOOTOPOLIS_MART_CLERK 1
 #define LOCALID_BATTLE_FRONTIER_MART_CLERK 1
 #define LOCALID_SLATEPORT_ENERGY_GURU 25
+
+// Contest hall local IDs
+#define LOCALID_CONTESTANT_1 1
+#define LOCALID_CONTESTANT_2 2
+#define LOCALID_CONTESTANT_3 3
+#define LOCALID_CONTESTANT_4 4
 
 #endif  // GUARD_CONSTANTS_EVENT_OBJECTS_H
