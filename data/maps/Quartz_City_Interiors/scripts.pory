@@ -203,14 +203,8 @@ script Quartz_OldMan_TyGifts {
     msgbox(format("Thank you for helping us with the Team Hive problem!\p"
     "Please accept this gift as a token of our gratitude."))
     giveitem(ITEM_POKE_DOLL)
-    msgbox(format("{PLAYER} received a Poke Doll! "))
-    waitmessage
     msgbox(format("We couldn't have done it without you!"
     "If you ever need another doll, just let me know!\l"))
-    waitmessage
-    applymovement(LOCALID_QUARTZ_OLDMANGIFTS, moves(emote_heart))
-    waitmovement(2)
-    msgbox(format("He seems really happy to give you that doll!"))
     waitmessage
     release
     }
@@ -245,6 +239,7 @@ script Quartz_OldWoman_Dollmaker {
     msgbox(format("Dollmaker Mollie: I've heard about your adventures around Quartzite City.\p"
     "Come back when you have the clearance to use Surf in the field."))
     waitmessage
+    release
     }
 }
 
@@ -252,7 +247,6 @@ script Quartz_Garganacl_Guard {
     lock
     faceplayer
     playmoncry(SPECIES_GARGANACL, 0)
-    msgbox(format("Garganacl: Grgege… Grgegegrg!\p"))
-    waitmessage
+    msgbox(format("Garganacl: Grgege… Grgegegrg!\p"), MSGBOX_AUTOCLOSE)
     release
 }

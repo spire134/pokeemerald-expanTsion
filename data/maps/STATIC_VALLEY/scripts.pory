@@ -36,3 +36,10 @@ script Zatik_Rocker_1 {
     msgbox(format("Stay WILD, man."), MSGBOX_AUTOCLOSE)
     waitmessage
 }
+
+script Zatik_Gulch_Sign {
+    lock
+    msgbox(format("Welcome to Zatik Gulch!\n"
+    "Watch for wild Pokémon and trainers looking for a challenge."), MSGBOX_SIGN)
+    release
+}

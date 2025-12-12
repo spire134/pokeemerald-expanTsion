@@ -1,1 +1,263 @@
 mapscripts Shudderwood_Mansion_MapScripts {}
+
+script Shudderwood_Mansion_GateHouseBattle {
+    lock
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(jump_in_place_down emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Seer June: You again? I was right to be cautious of you!\n"))
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(walk_in_place_fast_down))
+    waitmovement(0)
+    msgbox(format("Seer June: Attention Drones, and behold the mighty guardian our
+    mistress has bound to our service!\n"))
+    applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_4, moves(jump_in_place_down))
+    waitmovement(0)
+    applymovement(LOCALID_GATEHOUSE_PINSIR, moves(jump_in_place_down jump_in_place_down))
+    waitmovement(0)
+    playmoncry(SPECIES_PINSIR, 0)
+    waitmoncry
+    msgbox(format("Pinsir: Krrrrrrraaarreeeeee!\n"))
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(walk_in_place_down, emote_heart))
+    waitmovement(0)
+    msgbox(format("Seer June: See how Pokémon like this and the Master of the Mansion
+    bend to our cause!, you have no hope Ranger!"))
+    playmoncry(SPECIES_PINSIR, 0)
+    waitmoncry
+    applymovement(LOCALID_GATEHOUSE_PINSIR, moves(walk_fast_down*2))
+    waitmovement(0)
+    setwildbattle(SPECIES_PINSIR, 40)
+    dowildbattle
+    fadescreen(FADE_TO_BLACK)
+    removeobject(LOCALID_GATEHOUSE_PINSIR)
+    fadescreen(FADE_FROM_BLACK)
+    applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(emote_x face_left face_right face_up face_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(emote_x face_left face_right face_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(emote_x face_left face_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_4, moves(emote_x face_right face_down))
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(emote_double_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Seer June: Impossible… How could a mere Ranger defeat such a
+    mighty Pokémon?!\n"))
+    waitmessage
+    addvar(VAR_MANSION_PROGRESSION, 1)
+    setflag(FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED)
+    applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(walk_faster_up*3))
+    applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(walk_faster_up*3))
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(face_left emote_question_mark))
+    waitmovement(0)
+    removeobject(LOCALID_GATEHOUSE_DRONE_1)
+    removeobject(LOCALID_GATEHOUSE_DRONE_2)
+    msgbox(format("Seer June: What? Where are you going? Gah, we're out of defenses here!"))
+    waitmessage
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(face_right))
+    waitmovement(0)
+    msgbox(format("Seer June: Retreat to the mansion! Hopefully the Mistress is merciful
+    to us after this failure…"))
+    applymovement(LOCALID_GATEHOUSE_SEER, moves(walk_faster_up*3))
+    applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(walk_faster_up*3))
+    applymovement(LOCALID_GATEHOUSE_DRONE_4, moves(walk_faster_up*3))
+    waitmovement(10)
+    removeobject(LOCALID_GATEHOUSE_SEER)
+    removeobject(LOCALID_GATEHOUSE_DRONE_3)
+    removeobject(LOCALID_GATEHOUSE_DRONE_4)
+    msgbox(format("With the Seer and her drones gone, the path to the mansion is clear.\n"))
+    releaseall
+    end
+}
+
+script Shudderwood_Mansion_StairWebandKeyCheck {
+    lock
+    if (var(VAR_MANSION_PROGRESSION) >= 4) {
+        release
+        end
+    }
+    checkitem(ITEM_MANSION_KEY)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("There is a thick web covering an ornate keyhole embedded in the stairs. You need a key to unlock it."))
+        applymovement(LOCALID_PLAYER, moves(face_down walk_down))
+        release
+        end
+    }
+    if (var(VAR_MANSION_PROGRESSION) < 3) {
+        msgbox(format("There is a thick web covering an ornate keyhole embedded in the stairs. 
+        The web is too thick to CUT through right now. It must be made by a strong Pokémon."))
+        applymovement(LOCALID_PLAYER, moves(face_down walk_down))
+        release
+        end
+    }
+    msgbox(format("There is a thick web covering an ornate keyhole embedded in the stairs."))
+    msgbox(format("You see the web is weaker from the efforts of the solvent!"))
+    msgbox(format("Would you like to CUT through the web then use the Mansion Key to unlock the stairs?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You decided not to use the Mansion Key right now."))
+        applymovement(LOCALID_PLAYER, moves(face_down walk_down))
+        release
+        end
+    }
+    checkpartymove(MOVE_CUT)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You don't have CUT in your party right now."))
+        applymovement(LOCALID_PLAYER, moves(face_down walk_down))
+        release
+        end
+    }
+    msgbox(format("You use CUT to slice through the webbing covering the keyhole."))
+    playse(SE_M_CUT)
+    waitse
+    msgbox(format("You then use the Mansion Key to unlock the stairs!"))
+    playse(SE_UNLOCK)
+    waitse
+    addvar(VAR_MANSION_PROGRESSION, 1)
+    release
+    end
+}
+
+script Shudderwood_Mansion_Brainwashed_Experts {
+    lockall
+    if (!flag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_EXPERTS_FREED)) {
+        msgbox(format("You interrupt two figures working diligently at their crafts. 
+        One appears to be a maid sewing uniforms, while the other is a scientist working with Spewpa silk."))
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_MAID, moves(emote_x face_left face_down))
+        waitmovement(0)
+        msgbox(format("Brainwashed Lass: Uniform creation interrupted… Must repair… Return to work…\n"))
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(emote_x face_right face_down))
+        waitmovement(0)
+        msgbox(format("Brainwashed Maniac: Spewpa silk production must be protected… Intruder detected…\n"))
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_MAID, moves(walk_in_place_down))
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_down))
+        waitmovement(0)
+        msgbox(format("In Unison: Our purpose is given by the Mistress… We must serve… We must obey…\n"))
+        trainerbattle_two_trainers(TRAINER_STEVE_1, "Steve: What? Where am I?", TRAINER_ANDREA, "Andrea: I can't remember anything!")
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_MAID, moves(walk_in_place_fast_left emote_question_mark walk_in_place_slow_down))
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_fast_right emote_question_mark walk_in_place_slow_down))
+        waitmovement(0)
+        msgbox(format("Steve: I… I remember now! The mansion… The Seer… She did something to my mind!\n"))
+        msgbox(format("Andrea: We were brainwashed to serve the Mistress… Forced to make those awful uniforms day and night! But now we're free!\n"))
+        waitmessage
+        applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_slow_down))
+        waitmovement(0)
+        msgbox(format("Steve: Thank you, Ranger! We owe you our lives! I was studying Spewpa silk when they captured me. 
+        Here, take this solvent I developed - it will help you get through the webs blocking the mansion stairs!\n"))
+        waitmessage
+        addvar(VAR_MANSION_PROGRESSION, 1)
+        msgbox(format("Andrea: I don't know how many of those silly uniforms I made under their control, 
+        but here's a token of my appreciation for freeing us!\n"))
+        giveitem(ITEM_SILK_SCARF, 1)
+        waitmessage
+        msgbox(format("Steve: Be careful, Ranger. The Mistress has more servants under her spell deeper in the mansion.\n"))
+        setflag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_EXPERTS_FREED)
+        releaseall
+    } else {
+        msgbox(format("The two experts you freed earlier are hard at work on their crafts again, 
+        but now for their own purposes. They smile and wave at you gratefully."))
+        releaseall
+    }
+}
+
+script Shudderwood_Mansion_Brainwashed_Gardener {
+    if (!flag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED)) {
+    lock
+    msgbox(format("You approach a figure tending to the overgrown plants in the mansion's garden."))
+    applymovement(LOCALID_SHUDDERWOOD_MANSION_GARDENER, moves(walk_in_place_fast_left walk_in_place_fast_up walk_in_place_fast_right face_player))
+    waitmovement(0)
+    msgbox(format("Brainwashed Gardener: The garden must be perfect… Berries the perfect color… Leaves the perfect shape…\n"))
+    trainerbattle_no_intro(TRAINER_CELINA, format("Celina: I can't believe I let them control me like that!\n"))
+    msgbox(format("Celina: Thank you, Ranger! I was forced to tend these plants against my will.
+    Here, take this watering pail. I can't think about gardening for a while after what they made me do!"))
+    giveitem(ITEM_WAILMER_PAIL)
+    waitmessage
+    msgbox(format("Celina: Be careful further in the mansion. The Mistress has even charmed
+    the old Master of the Mansion!"))
+    waitmessage
+    setflag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED)
+    release
+        } else {
+        lock
+        msgbox(format("Celina: Thanks again for freeing me, Ranger!"))
+        release
+        }
+    release
+}
+
+script Shudderwood_Mansion_RunningGuard_1 {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_12,
+    format("Drone: My incredible intruder-detecting skills have found you!"),
+    format("Drone: How did you get past my sensors?")
+    )
+    msgbox(format("Drone: Stay alert at all times, those are the orders!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Mansion_RunningGuard_2 {
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_13,
+    format("Drone: You won't get past me!"),
+    format("Drone: Ugh… I'm bugged out.")
+    )
+    msgbox(format("Drone: The Mistress has dominated everyone here!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Mansion_PoolGuard {
+    lock
+    msgbox(format("Drone: Sorry, I'm guarding the key. No one gets past me!"))
+    trainerbattle_no_intro(TRAINER_GRUNT_MT_CHIMNEY_2, format("Drone: Nooooo! My stupid self buzzed it up!"))
+    msgbox(format("Drone: Buzz buzz… I've been defeated, after losing the key in the first place!"))
+    waitmessage
+    msgbox(format("Drone: Maybe I'm not cut out for the drone life after all…"))
+    waitmessage
+    applymovement(LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE, moves(jump_in_place_down emote_double_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Drone: Wait! The Mistress… She's in my head! No, I was wrong to doubt us, Mistress!"))
+    waitmessage
+    playse(SE_M_NIGHTMARE)
+    waitse
+    applymovement(LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE, moves(walk_in_place_fast_up))
+    waitmovement(0)
+    msgbox(format("Drone: My head! AAAAAAHHHH! GET AWAY!\n"))
+    waitmessage
+    applymovement(LOCALID_PLAYER, moves(walk_fast_down))
+    waitmovement(0)
+    applymovement(LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE, moves(walk_faster_left*7 walk_faster_down*10))
+    waitmovement(0)
+    removeobject(LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE)
+    setflag(FLAG_SHUDDERWOOD_MANSION_POOL_DRONE_DEFEATED)
+    release
+}
+script Shudderwood_Captive_Maid {
+    lock
+    if (!flag(FLAG_ITEM_SHUDDERWOOD_MANSION_KEY)) {
+    msgbox(format("Those drones locked me in here! They only let me out to clean!\n"))
+    waitmessage
+    applymovement(LOCALID_SHUDDERWOOD_CAPTIVE_MAID, moves(emote_heart face_player))
+    waitmovement(0)
+    msgbox(format("Thank you for rescuing me, Ranger! Here, I found this key while cleaning.
+    It might help you get deeper into the mansion!"))
+    giveitem(ITEM_MANSION_KEY)
+    setflag(FLAG_ITEM_SHUDDERWOOD_MANSION_KEY)
+    waitmessage
+    } else {
+    msgbox(format("Thank you again for rescuing me, Ranger! 
+    I hope you're able to get through the mansion safely."))
+    }
+    release
+}
+script Shudderwood_Mansion_Brainwashed_Butler {
+    trainerbattle_single(TRAINER_CLIFFORD,
+    format("Butler: I must protect the mansion, no matter the cost!"),
+    format("Butler: Ugh… I've been defeated!")
+    )
+    msgbox(format("Butler: Apologies, Ranger. I serve the master of the mansion, but
+    right now the master is under a terrible spell."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    releaseall
+}
+
+script Shudderwood_Mansion_UpperFloorSkip {
+    lock
+    warp(Shudderwood_Mansion_Upper, 26, 9)
+    release
+}

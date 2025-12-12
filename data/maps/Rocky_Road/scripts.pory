@@ -1,0 +1,71 @@
+mapscripts Rocky_Road_MapScripts {}
+
+script Rocky_Road_Sudowoodo {
+    lock
+    msgbox(format("There is a strange tree here blocking the path. \n"
+    "Would you like to use CUT to remove it?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == TRUE) {
+        checkpartymove(MOVE_CUT)
+        if (var(VAR_RESULT) == TRUE) {
+            playse(SE_M_CUT)
+            waitse
+            applymovement(LOCALID_ROCKY_ROAD_SUDOWOODO, moves(jump_in_place_right))
+            waitmovement(0)
+            playmoncry(SPECIES_SUDOWOODO, 0)
+            waitmoncry
+            msgbox(format("The tree is angry and attacks you!"))
+            setwildbattle(SPECIES_SUDOWOODO, 25, ITEM_HARD_STONE)
+            dowildbattle
+            waitstate
+            setflag(FLAG_ROCKY_ROAD_SUDOWOODO_CLEARED)
+            fadescreen(FADE_TO_BLACK)
+            removeobject(LOCALID_ROCKY_ROAD_SUDOWOODO)
+            fadescreen(FADE_FROM_BLACK)
+            release
+        } else {
+            msgbox(format("You don't have CUT in your party right now."))
+            release
+}
+    } else {
+        msgbox(format("You decided not to use CUT right now."))
+        release
+    }
+}
+
+script Rocky_Road_Fast_Runner {
+    trainerbattle_single(TRAINER_MARIA_1, 
+        format("You look pretty swift! Let's see how you handle my speed!"),
+        format("You're pretty fast yourself!")
+        )
+    msgbox(format("Phew! That was a great run! You gotta stay fast around here to avoid those pirates!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Rocky_Road_Overconfident_CoolTrainer {
+    trainerbattle_single(TRAINER_GERALD, 
+        format("I'm the coolest trainer around here! Prepare to be dazzled by my skills!"),
+        format("Not bad, but I'm still the coolest!")
+        )
+    msgbox(format("Why won't the pirates let me through? I'm cool!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Rocky_Road_Cowgirl {
+    trainerbattle_single(TRAINER_MAY_RUSTBORO_TREECKO, 
+        format("Yeehaw! Let's see if you can handle a real cowgirl's skills!"),
+        format("Well, you're not too shabby!")
+        )
+    msgbox(format("That was as much fun as tossing a lasso!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Rocky_Road_Hiker {
+    trainerbattle_single(TRAINER_SAWYER_2, 
+        format("The rocky terrain here is perfect for a hiker like me! Let's see how you fare!"),
+        format("You're quite the hiker yourself!")
+        )
+    msgbox(format("To get the blood pumping, there's nothing like a good hike and a battle!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+

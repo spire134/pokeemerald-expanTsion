@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_HAZOLT_HIVE_CURIOUS_HOUSE",
       "name": "Hazolt_HiveCuriousHouse_Layout",
-      "width": 10,
+      "width": 30,
       "height": 9,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
@@ -4770,6 +4770,56 @@
       "secondary_tileset": "gTileset_BattlePike",
       "border_filepath": "data/layouts/Shudderwood_Mansion_Upper/border.bin",
       "blockdata_filepath": "data/layouts/Shudderwood_Mansion_Upper/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKY_ROAD",
+      "name": "Rocky_Road_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Rocky_Road/border.bin",
+      "blockdata_filepath": "data/layouts/Rocky_Road/map.bin"
+    },
+    {
+      "id": "LAYOUT_FREEBOOT_BAY",
+      "name": "Freeboot_Bay_Layout",
+      "width": 45,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Freeboot_Bay/border.bin",
+      "blockdata_filepath": "data/layouts/Freeboot_Bay/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_PLUNDER",
+      "name": "Port_Plunder_Layout",
+      "width": 15,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Port_Plunder/border.bin",
+      "blockdata_filepath": "data/layouts/Port_Plunder/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAGNET_CAVE_DEPTHS",
+      "name": "Magnet_Cave_Depths_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Magnet_Cave_Depths/border.bin",
+      "blockdata_filepath": "data/layouts/Magnet_Cave_Depths/map.bin"
+    },
+    {
+      "id": "LAYOUT_DESERT_OUTPOST",
+      "name": "Desert_Outpost_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Desert_Outpost/border.bin",
+      "blockdata_filepath": "data/layouts/Desert_Outpost/map.bin"
     }
   ]
 }

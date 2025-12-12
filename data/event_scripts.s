@@ -1229,3 +1229,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Shudderwood_Mansion/scripts.inc"
 
 	.include "data/maps/Shudderwood_Mansion_Upper/scripts.inc"
+
+	.include "data/maps/Rocky_Road/scripts.inc"
+
+	.include "data/maps/Freeboot_Bay/scripts.inc"
+
+	.include "data/maps/Port_Plunder/scripts.inc"
+
+	.include "data/maps/Magnet_Cave_Depths/scripts.inc"
+
+	.include "data/maps/Desert_Outpost/scripts.inc"

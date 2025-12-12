@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 43,
-      "y": 23,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 44,
-      "y": 23,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 45,
-      "y": 23,
+      "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -55,179 +55,509 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 1,
-      "y": 28,
+      "x": 4,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "ITEM_DUSK_STONE",
       "script": "Common_EventScript_FindItem",
-      "flag": "0"
+      "flag": "FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 11,
-      "y": 65,
+      "y": 55,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "ITEM_BIG_NUGGET",
       "script": "Common_EventScript_FindItem",
-      "flag": "0"
+      "flag": "FLAG_ITEM_SHUDDERWOOD_MANSION_BIG_NUGGET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 38,
-      "y": 65,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SPELL_TAG",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SHUDDERWOOD_MANSION_SPELL_TAG"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_DRONE_3",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 24,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 17,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 10,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Shudderwood_Mansion_RunningGuard_1",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_DRONE_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 27,
+      "y": 53,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_SEER",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 25,
+      "y": 53,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_DRONE_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 22,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_DRONE_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 23,
+      "y": 53,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_GATEHOUSE_PINSIR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PINSIR)",
+      "x": 24,
+      "y": 54,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED"
+    },
+    {
+      "local_id": "LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_PoolGuard",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_POOL_DRONE_DEFEATED"
+    },
+    {
+      "local_id": "LOCALID_SHUDDERWOOD_MANSION_SCIENTIST",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Brainwashed_Experts",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_SHUDDERWOOD_MANSION_MAID",
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Brainwashed_Experts",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEWPA)",
+      "x": 0,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 0,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Shudderwood_Mansion_Brainwashed_Butler",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 27,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
+      "movement_range_x": 10,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Shudderwood_Mansion_RunningGuard_2",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN",
+      "x": 45,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Brainwashed_Gardener",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 30,
+      "y": 36,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEWPA)",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SPEWPA)",
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 30,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
       "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SHUDDERWOOD_MANSION_RARE_CANDY"
+    },
+    {
+      "local_id": "LOCALID_SHUDDERWOOD_MAID",
+      "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_NURSE",
+      "x": 27,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Captive_Maid",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 24,
-      "y": 69,
+      "y": 59,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "4"
     },
     {
       "x": 25,
-      "y": 69,
+      "y": 59,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "5"
     },
     {
       "x": 24,
-      "y": 58,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "6"
     },
     {
       "x": 25,
-      "y": 58,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "7"
     },
     {
       "x": 22,
-      "y": 47,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "8"
     },
     {
       "x": 23,
-      "y": 47,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_SECOND",
       "dest_warp_id": "9"
     },
     {
       "x": 3,
-      "y": 39,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "7"
     },
     {
       "x": 2,
-      "y": 33,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "6"
     },
     {
       "x": 3,
-      "y": 33,
+      "y": 23,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "6"
     },
     {
       "x": 9,
-      "y": 39,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "10"
     },
     {
       "x": 2,
-      "y": 21,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "9"
     },
     {
       "x": 3,
-      "y": 21,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "9"
     },
     {
       "x": 22,
-      "y": 32,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "13"
     },
     {
       "x": 21,
-      "y": 21,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "12"
     },
     {
       "x": 22,
-      "y": 21,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "12"
     },
     {
       "x": 35,
-      "y": 39,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "16"
     },
     {
       "x": 42,
-      "y": 27,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "15"
     },
     {
       "x": 43,
-      "y": 27,
+      "y": 17,
       "elevation": 0,
       "dest_map": "MAP_SHUDDERWOOD_MANSION",
       "dest_warp_id": "15"
     },
     {
       "x": 41,
-      "y": 38,
+      "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Shudderwood_Mansion_StairWebandKeyCheck"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 57,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "1",
+      "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "6",
+      "script": "Shudderwood_Mansion_UpperFloorSkip"
+    }
+  ],
   "bg_events": []
 }

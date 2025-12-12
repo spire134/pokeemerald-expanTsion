@@ -1,0 +1,171 @@
+{
+  "id": "MAP_FREEBOOT_BAY",
+  "name": "Freeboot_Bay",
+  "layout": "LAYOUT_FREEBOOT_BAY",
+  "music": "MUS_SURF",
+  "region_map_section": "MAPSEC_FREEBOOT_BAY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROCKY_ROAD",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_PIRATEGUARD_RIGHT",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 12,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Freeboot_Bay_No_Entry",
+      "flag": "FLAG_CLEARED_TIDESMERCYWRECK"
+    },
+    {
+      "local_id": "LOCALID_PIRATEGUARD_LEFT",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Freeboot_Bay_No_Entry",
+      "flag": "FLAG_CLEARED_TIDESMERCYWRECK"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BURIED",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_BURIED",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Freeboot_Buried_Pirate_M",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BURIED",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_BURIED",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Freeboot_Buried_Pirate_F",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_PLUNDER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FREEBOOT_BAY",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Port_Plunder_Approach_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
+      "var_value": "0",
+      "script": "Freeboot_Bay_No_Entry"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 14,
+      "y": 25,
+      "elevation": 0,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 32,
+      "y": 6,
+      "elevation": 0,
+      "item": "ITEM_PECHA_BERRY",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

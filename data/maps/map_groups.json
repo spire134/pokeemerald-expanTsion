@@ -637,7 +637,9 @@
     "Static_Bridge",
     "Thorn_Pass",
     "Stocky_River",
-    "Quartzsite"
+    "Quartzsite",
+    "Rocky_Road",
+    "Freeboot_Bay"
   ],
   "gMapGroup_New_Hazint": [
     "HAZOLT_CENTER",
@@ -648,7 +650,8 @@
     "Stat_Bridge_Bushhouse",
     "Hazolt_LoreHouse",
     "Hazolt_HiveCuriousHouse",
-    "TidesMercy_StorageWreck"
+    "TidesMercy_StorageWreck",
+    "Desert_Outpost"
   ],
   "gMapGroup_New_Dungeons": [
     "Azure_Pool",
@@ -657,7 +660,9 @@
     "Crusted_Quarry",
     "Shudderwood_Second",
     "Shudderwood_Mansion",
-    "Shudderwood_Mansion_Upper"
+    "Shudderwood_Mansion_Upper",
+    "Port_Plunder",
+    "Magnet_Cave_Depths"
   ],
   "gMapGroup_New_QuartzInt": [
     "Quartzsite_PumpHouse",

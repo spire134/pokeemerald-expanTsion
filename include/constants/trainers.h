@@ -353,7 +353,41 @@
 #define TRAINER_CLASS_RS_PROTAG      0x41
 #define TRAINER_CLASS_HIVE           0x42
 #define TRAINER_CLASS_PIRATE         0x43
-#define TRAINER_CLASS_COUNT          0x44
+#define TRAINER_CLASS_DP_ACE_TRAINER_DUO    0x44
+#define TRAINER_CLASS_DP_ACE_TRAINER_F      0x45
+#define TRAINER_CLASS_DP_ACE_TRAINER_M      0x46
+#define TRAINER_CLASS_DP_ACE_TRAINER_SNOW_F 0x47
+#define TRAINER_CLASS_DP_ACE_TRAINER_SNOW_M 0x48
+#define TRAINER_CLASS_DP_CAMERAMAN          0x49
+#define TRAINER_CLASS_DP_CLOWN              0x4a
+#define TRAINER_CLASS_DP_COWGIRL            0x4b
+#define TRAINER_CLASS_DP_CYCLIST_F          0x4c
+#define TRAINER_CLASS_DP_CYCLIST_M          0x4d
+#define TRAINER_CLASS_DP_GALACTIC_GRUNT_F   0x4e
+#define TRAINER_CLASS_DP_GALACTIC_GRUNT_M   0x4f
+#define TRAINER_CLASS_DP_GALACTIC_GRUNT_DUO_MM 0x50
+#define TRAINER_CLASS_DP_GAMBLER            0x51
+#define TRAINER_CLASS_DP_IDOL               0x52
+#define TRAINER_CLASS_DP_JOGGER             0x53
+#define TRAINER_CLASS_DP_JUPITER            0x54
+#define TRAINER_CLASS_DP_OFFICER            0x55
+#define TRAINER_CLASS_DP_PAINTER            0x56
+#define TRAINER_CLASS_DP_POKE_KID           0x57
+#define TRAINER_CLASS_DP_RANCHER            0x58
+#define TRAINER_CLASS_DP_RANCHER_DUO        0x59
+#define TRAINER_CLASS_DP_REPORTER           0x5a
+#define TRAINER_CLASS_DP_ROARK              0x5b
+#define TRAINER_CLASS_DP_ROCKER             0x5c
+#define TRAINER_CLASS_DP_ROUGHNECK          0x5d
+#define TRAINER_CLASS_DP_SCIENTIST          0x5e
+#define TRAINER_CLASS_DP_SKIER_F            0x5f
+#define TRAINER_CLASS_DP_SKIER_M            0x60
+#define TRAINER_CLASS_DP_SOCIALITE          0x61
+#define TRAINER_CLASS_DP_VETERAN            0x62
+#define TRAINER_CLASS_DP_WAITER             0x63
+#define TRAINER_CLASS_DP_WAITRESS           0x64
+#define TRAINER_CLASS_DP_WORKER             0x65
+#define TRAINER_CLASS_COUNT          0x66
 
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music

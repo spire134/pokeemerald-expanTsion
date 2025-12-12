@@ -52,7 +52,7 @@ script Quartz_Seer_Fight {
     applymovement(LOCALID_CORIN_LIBRARY, moves(walk_fast_up))
     waitmovement(0)
     msgbox(format("Seer: Another pest.\p"
-    "Drone—assist pattern sigma, we'll crush them together."))
+    "Drone, assist pattern sigma, we'll crush them together."))
     waitmessage
     applymovement(LOCALID_SECOND_GOON, moves(face_down))
     waitmovement(0)
@@ -71,7 +71,7 @@ script QuartzLibrary_PartySelect{
     waitstate
     goto_if_ne(VAR_RESULT, 0, QuartzLibrary_SeerBattle)
     special(LoadPlayerParty)
-    msgbox(format("Corin: This ends now! Ready your POKéMON!"))
+    msgbox(format("Corin: We can do this! Ready your POKéMON!"))
     call(QuartzLibrary_PartySelect)
 }
 

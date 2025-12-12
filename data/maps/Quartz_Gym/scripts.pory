@@ -193,7 +193,7 @@ script Quartz_CaptRojan {
             setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
             msgbox(format("Captain Rojan: Impressive work!\p"
             "You've earned the Rock Smash HM and your Ranger Rank has been upgraded!"
-            "Use Rock Smash to clear small boulders blocking your path."
+            "Use Rock Smash to clear small boulders blocking your path.\n"
             "Keep up the great work, Ranger!"))
             waitmessage
             waitmessage

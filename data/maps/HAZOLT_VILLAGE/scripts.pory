@@ -32,3 +32,25 @@ script Hazolt_BeachWarp {
     warp(MAP_SHUNU_BEACH_WEST, 11, 5)
     waitstate  
 }
+
+script Hazolt_Rocky_Road_Sign {
+    lock
+    msgbox(format("Rocky Road Ahead!\n"
+    "Beware of Pirates!"), MSGBOX_SIGN)
+    release
+}
+
+script Hazolt_Village_Sign {
+    lock
+    msgbox(format("Welcome to Hazolt Village!\n"
+    "A reservoir of fresh water for fresh faces."), MSGBOX_SIGN)
+    release
+}
+
+script Hazolt_Sailor_Scared {
+    lock
+    faceplayer
+    msgbox(format("Please don't make me fight!\n"
+    "Those pirates have been making things dangerous around here!"))
+    release
+}

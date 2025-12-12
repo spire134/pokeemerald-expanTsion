@@ -1,70 +1,68 @@
 mapscripts Quartz_Tunnels_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION:Corin_Tunnel_Cutscene     
+
 }
 
-script Corin_Tunnel_Cutscene {
+script Quartz_TunnelCutscene {
     if(!flag(FLAG_TALKED_TO_CORIN)){
-    lock
-    fadescreen(FADE_FROM_BLACK)
-    setflag(FLAG_TALKED_TO_CORIN)
-    applymovement(LOCALID_TUNNEL_HIVEDRONE, (moves(walk_in_place_down emote_question_mark)))
-    waitmovement(0)
-    msgbox(format("Drone: What the bees? There's another Ranger here!"))
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_in_place_fast_left emote_double_exclamation_mark)))
-    waitmovement(0)
-    msgbox(format("Corin: Haha! Never get distracted in a fight, even for pizza!"))
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_fast_left)))
-    waitmovement(0)
-    msgbox(format("Corin: Now, Gulpin! Use Mega Punch!\p"
-    "Gulpin: Guuuu!\n"))
-    applymovement(LOCALID_TUNNEL_GULPIN, (moves(walk_in_place_fast_left walk_in_place_fast_left)))
-    waitmovement(2)
-    playse(SE_M_DIZZY_PUNCH)
-    applymovement(LOCALID_TUNNEL_WHIRLIPEDE, (moves(lock_facing_direction walk_faster_left walk_faster_left unlock_facing_direction)))
-    waitmovement(1)
-    playse(SE_M_MEGA_KICK2)
-    applymovement(LOCALID_TUNNEL_HIVEDRONE, (moves(emote_double_exclamation_mark walk_fast_up*4)))
-    applymovement(LOCALID_TUNNEL_WHIRLIPEDE, (moves(walk_fast_up*4)))
-    waitmovement(1)
-    playse(SE_M_STRENGTH)
-    waitse
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_in_place_slow_up)))
-    applymovement(LOCALID_TUNNEL_GULPIN, (moves(walk_in_place_slow_up)))
-    waitmovement
-    playse(SE_M_SELF_DESTRUCT)
-    waitse
-    removeobject(LOCALID_TUNNEL_HIVEDRONE)
-    removeobject(LOCALID_TUNNEL_WHIRLIPEDE)
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(jump_in_place_up)))
-    applymovement(LOCALID_TUNNEL_GULPIN, (moves(walk_in_place_slow_down)))
-    waitmovement
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_in_place_down)))
-    waitmovement
-    msgbox(format("Corin: Wow. They rolled all the way outta here!\p"
-    "Gosh I'd like some rolls right now, but we don't have time for that!"))
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_down*2 walk_left*2 face_down)))
-    msgbox(format("Corin: {PLAYER}, you came at at the perfect time!"
-    "I've been really worn out by these Hive Drones, and can't push
-    through them to get to the leader."))
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_in_place_up)))
-    msgbox(format("Corin: Return, Gulpin. We get to take a small rest.\p"))
-    fadescreen(FADE_TO_BLACK)
-    removeobject(LOCALID_TUNNEL_GULPIN)
-    fadescreen(FADE_FROM_BLACK)
-    applymovement(LOCALID_TUNNEL_CORIN, (moves(walk_in_place_down)))
-    msgbox(format("Corin: {PLAYER} I'm going to count on you to handle
-    things up ahead for a bit. I'll rest up and join ya soon!"))
+        lock
+        fadescreen(FADE_FROM_BLACK)
+        setflag(FLAG_TALKED_TO_CORIN)
+        applymovement(LOCALID_TUNNEL_HIVEDRONE, moves(walk_in_place_down, emote_question_mark))
+        waitmovement(0)
+        msgbox(format("Drone: What the bees? There's another Ranger here!"))
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_fast_left, emote_double_exclamation_mark))
+        waitmovement(0)
+        msgbox(format("Corin: Haha! Never get distracted in a fight, even for pizza!"))
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_fast_left))
+        waitmovement(0)
+        msgbox(format("Corin: Now, Gulpin! Use Mega Punch!\pGulpin: Guuuu!"))
+        applymovement(LOCALID_TUNNEL_GULPIN, moves(walk_in_place_fast_left, walk_in_place_fast_left))
+        waitmovement(0)
+        playse(SE_M_DIZZY_PUNCH)
+        applymovement(LOCALID_TUNNEL_WHIRLIPEDE, moves(lock_facing_direction, walk_faster_left, walk_faster_left, unlock_facing_direction))
+        waitmovement(0)
+        playse(SE_M_MEGA_KICK2)
+        applymovement(LOCALID_TUNNEL_HIVEDRONE, moves(emote_double_exclamation_mark, walk_fast_up, walk_fast_up, walk_fast_up, walk_fast_up))
+        applymovement(LOCALID_TUNNEL_WHIRLIPEDE, moves(walk_fast_up, walk_fast_up, walk_fast_up, walk_fast_up))
+        waitmovement(0)
+        playse(SE_M_STRENGTH)
+        waitse
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_slow_up))
+        applymovement(LOCALID_TUNNEL_GULPIN, moves(walk_in_place_slow_up))
+        waitmovement(0)
+        playse(SE_M_SELF_DESTRUCT)
+        waitse
+        removeobject(LOCALID_TUNNEL_HIVEDRONE)
+        removeobject(LOCALID_TUNNEL_WHIRLIPEDE)
+        applymovement(LOCALID_TUNNEL_CORIN, moves(jump_in_place_up))
+        applymovement(LOCALID_TUNNEL_GULPIN, moves(walk_in_place_slow_up))
+        waitmovement(0)
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_down))
+        waitmovement(0)
+        msgbox(format("Corin: Wow! They rolled all the way out of here!\pGosh, I'd like some rolls right now, but we don't have time for that!"))
+        applymovement(LOCALID_TUNNEL_CORIN, moves(face_player))
+        waitmovement(0)
+        msgbox(format("Corin: {PLAYER}, you came at the perfect time! I've been really worn out by these Hive Drones, and can't push through them to get to the leader."))
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_up))
+        waitmovement(0)
+        msgbox(format("Corin: Return, Gulpin. We get to take a small rest."))
+        fadescreen(FADE_TO_BLACK)
+        removeobject(LOCALID_TUNNEL_GULPIN)
+        fadescreen(FADE_FROM_BLACK)
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_down))
+        waitmovement(0)
+        msgbox(format("Corin: {PLAYER}, I'm going to count on you to handle things up ahead for a bit. I'll rest up and join you soon!"))
+        release
     }
-    else{
-    end    
+    else {
+        end    
     }
 }
 
 script Corin_Tunnels {
     lock
     faceplayer
-    msgbox(format("I'm still holding things down here, now go
-    on ahead {PLAYER}, I believe in you!"))
+    msgbox(format("I'm still holding things down here. Now go on ahead, {PLAYER}. I believe in you!"))
     special(HealPlayerParty)
     playse(MUS_HEAL)
     waitse

@@ -436,17 +436,48 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky
 
-Numel
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Forretress @ Rawst Berry
+Ability: Sturdy  
+Level: 36  
+Tera Type: Bug  
+EVs: 60 Atk  
+Brave Nature  
+IVs: 20 HP / 25 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe  
+- Spikes  
+- Self-Destruct  
+- Counter  
+- Gyro Ball  
+
+Beedrill (M) @ Red Card  
+Ability: Sniper  
+Level: 36  
+Tera Type: Bug  
+EVs: 104 Atk / 76 Spe  
+Jolly Nature  
+- Focus Energy  
+- Acrobatics  
+- Pin Missile  
+- Poison Jab  
+
+Sizzlipede @ Eviolite  
+Ability: Flash Fire  
+Level: 37  
+Tera Type: Fire  
+EVs: 40 HP / 48 Atk / 20 Def / 28 SpD / 64 Spe  
+Careful Nature  
+IVs: 10 HP / 20 Atk / 30 Def / 10 SpA / 20 SpD / 30 Spe  
+- Fire Lash  
+- Leech Life  
+- Smokescreen  
+- Bite  
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
@@ -2197,25 +2228,48 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Pulse
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky
 
-Mightyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Crustle (M) @ Quick Claw  
+Ability: Sturdy  
+Level: 36  
+Tera Type: Bug  
+EVs: 52 HP / 56 Def / 56 SpD  
+IVs: 0 HP / 0 Atk / 0 SpA / 0 Spe  
+- Stealth Rock  
+- Sandstorm  
+- Rock Tomb  
+- Bulldoze  
 
-Mightyena
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Parasect @ Big Root  
+Ability: Effect Spore  
+Level: 36  
+Tera Type: Bug  
+EVs: 28 Atk / 44 Def / 44 SpD  
+Naughty Nature  
+IVs: 0 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 0 Spe  
+- Spore  
+- Leech Life  
+- Giga Drain  
+- Cut  
 
-Numel
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Skorupi (F) @ Eviolite  
+Ability: Sniper  
+Level: 37  
+Tera Type: Poison  
+EVs: 8 HP / 80 Def / 44 SpD  
+Impish Nature  
+IVs: 10 HP / 20 Atk / 11 Def / 5 SpA / 8 SpD / 20 Spe  
+- Night Slash  
+- Aerial Ace  
+- Rock Smash  
+- Pin Missile  
 
 === TRAINER_CINDY_2 ===
 Name: CINDY
@@ -2686,11 +2740,43 @@ Pic: Pokemaniac
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky / Double Battle / HP Aware
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magneton @ Petaya Berry  
+Ability: Sturdy  
+Level: 34  
+Tera Type: Electric  
+EVs: 96 Atk  
+Rash Nature  
+IVs: 10 HP / 20 Def / 20 SpA / 10 SpD / 10 Spe  
+- Shock Wave  
+- Tri Attack  
+- Magnet Bomb  
+- Magnet Rise  
+
+Eelektrik @ Magnet  
+Ability: Levitate  
+Level: 34  
+Tera Type: Electric  
+EVs: 36 HP / 56 Def  
+Relaxed Nature  
+IVs: 3 HP / 19 Atk / 11 Def / 30 SpA / 30 SpD / 2 Spe  
+- Electroweb  
+- Flash  
+- Thunder Wave  
+- Spark  
+
+Lickitung @ Expert Belt  
+Ability: Own Tempo  
+Level: 34  
+Tera Type: Normal  
+EVs: 60 Atk / 68 SpA  
+Sassy Nature  
+IVs: 12 HP / 21 Atk / 14 Def / 16 SpA / 12 SpD / 21 Spe  
+- Thunder Punch  
+- Incinerate  
+- Water Pulse  
+- Smelling Salts  
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
@@ -2723,17 +2809,49 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
-Name: GRUNT
-Class: Team Magma
+Name: Seer Lysa
+Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Double Battle / HP Aware
 
-Numel
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Illumise @ Mirror Herb  
+Ability: Prankster  
+Level: 36  
+Tera Type: Bug  
+EVs: 44 HP / 112 Atk / 24 SpA / 48 Spe  
+Rash Nature  
+IVs: 10 HP / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Tailwind  
+- Wish  
+- Confuse Ray  
+- U-turn  
+
+Duosion (F) @ Eviolite  
+Ability: Magic Guard  
+Level: 37  
+Tera Type: Psychic  
+EVs: 40 Def / 112 SpA / 24 SpD / 80 Spe  
+Modest Nature  
+IVs: 10 HP / 0 Atk / 20 Def / 20 SpD / 15 Spe  
+- Recover  
+- Future Sight  
+- Ally Switch  
+- Thunder  
+
+Orbeetle @ Psychic Seed  
+Ability: Telepathy  
+Level: 36  
+Tera Type: Bug  
+EVs: 80 Def / 68 SpA / 108 SpD  
+Relaxed Nature  
+IVs: 10 HP / 0 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Recover  
+- Giga Drain  
+- Psychic Terrain  
+- Expanding Force
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
@@ -4034,16 +4152,16 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Yanma  
-Ability: Compound Eyes  
-Level: 17  
+Ledian @ Berry Juice
+Ability: Swarm  
+Level: 18  
 Tera Type: Bug  
 Brave Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Hypnosis  
-- Detect  
-- Air Cutter  
-- Quick Attack
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe  
+- Struggle Bug  
+- Swift  
+- Supersonic  
+- Reflect
 
 === TRAINER_JEFFREY_1 ===
 Name: JEFFREY
@@ -4941,7 +5059,7 @@ Ability: Pure Power
 Level: 18  
 Tera Type: Fighting  
 Adamant Nature  
-IVs: 12 HP / 29 Atk / 24 Def / 24 SpD / 21 Spe  
+IVs: 12 HP / 29 Atk / 24 Def / 24 SpD / 11 Spe  
 - Rock Smash  
 - Detect  
 - Fake Out  
@@ -4958,7 +5076,7 @@ IVs: 26 HP / 11 Atk / 16 Def / 3 SpA / 26 SpD / 28 Spe
 - Smelling Salts  
 - U-turn  
 
-Mienfoo (F) @ Flying Gem  
+Mienfoo (F) @ Normal Gem  
 Ability: Regenerator  
 Level: 19  
 Tera Type: Fighting  
@@ -5107,54 +5225,85 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Feint Attack
 
 === TRAINER_WINONA_1 ===
-Name: WINONA
-Class: Leader
-Pic: Leader Winona
+Name: Mistress
+Class: Palace Maven
+Pic: DP Fantina
 Gender: Female
 Music: Female
-Items: Hyper Potion / Hyper Potion
-Double Battle: No
-AI: Basic Trainer / Risky
+Double Battle: Yes
+AI: Basic Trainer / Double Ace Pokemon / Double Battle / HP Aware
 
-Swablu
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
-- Aerial Ace
+Espeon @ Colbur Berry  
+Ability: Magic Bounce  
+Level: 38  
+Tera Type: Psychic  
+EVs: 100 Def / 88 SpA / 52 SpD  
+Bold Nature  
+IVs: 10 HP / 10 Atk / 20 Def / 10 SpA / 20 SpD / 20 Spe  
+- Psychic Noise  
+- Reflect  
+- Light Screen  
+- Magical Leaf  
 
-Tropius
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
+Shedinja @ Normal Gem  
+Ability: Wonder Guard  
+Level: 37  
+Tera Type: Bug  
+EVs: 88 Atk / 52 Spe  
+Adamant Nature  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 16 Spe  
+- Baton Pass  
+- Agility  
+- Will-O-Wisp  
+- Double-Edge  
 
-Pelipper
-Level: 30
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
-- Supersonic
-- Protect
-- Aerial Ace
+Rabsca @ Leppa Berry  
+Ability: Telepathy  
+Level: 37  
+Tera Type: Bug  
+EVs: 60 HP / 56 SpA / 132 SpD  
+Sassy Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Revival Blessing  
+- Psychic Noise  
+- Struggle Bug  
+- Memento  
 
-Skarmory
-Level: 31
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
+Delphox (F)  
+Ability: Magician  
+Level: 38  
+Tera Type: Fire  
+EVs: 52 Def / 108 SpA / 60 SpD / 36 Spe  
+Bold Nature  
+IVs: 10 HP / 12 Atk / 11 Def / 9 SpA / 4 SpD / 29 Spe  
+- Psychic Noise  
+- Mystical Fire  
+- Metronome  
+- Reflect  
 
-Altaria @ Oran Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Dusknoir @ Liechi Berry  
+Ability: Pressure  
+Level: 40  
+Tera Type: Ghost  
+EVs: 252 HP  
+Impish Nature  
+IVs: 20 HP / 25 Atk / 25 Def / 20 SpA / 30 SpD / 20 Spe  
+- Bulldoze  
+- Power-Up Punch  
+- Shadow Sneak  
+- Leech Life  
+
+Malamar @ Tanga Berry  
+Ability: Contrary  
+Level: 40  
+Tera Type: Dark  
+EVs: 92 HP / 64 Def / 96 SpD  
+Careful Nature  
+IVs: 18 HP / 16 Def / 8 SpA / 24 SpD / 16 Spe  
+- Superpower  
+- Lash Out  
+- Hypnosis  
+- Psycho Cut
 
 === TRAINER_TATE_AND_LIZA_1 ===
 Name: TATE&LIZA
@@ -6847,7 +6996,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 16
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JASMINE ===
@@ -6989,16 +7138,20 @@ Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MARIA_1 ===
-Name: MARIA
-Class: Triathlete
-Pic: Running Triathlete F
-Gender: Female
+Name: Mario
+Class: DP Jogger
+Pic: DP Jogger
+Gender: Male
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
+Girafarig
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Doduo
-Level: 17
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARIA_2 ===
@@ -7711,15 +7864,15 @@ Croagunk
 Ability: Dry Skin  
 Level: 15  
 Tera Type: Poison  
-IVs: 11 HP / 12 Atk / 16 Def / 16 SpA / 16 SpD / 20 Spe  
+IVs: 0 HP / 12 Atk / 0 Def / 16 SpA / 0 SpD / 20 Spe  
 - Pursuit  
 - Astonish  
 - Mud Shot  
-- Low Kick  
+- Vacuum Wave  
 
 Staryu  
 Ability: Illuminate  
-Level: 16  
+Level: 15 
 Tera Type: Water  
 Impish Nature  
 IVs: 2 Atk / 19 Def / 0 SpA / 26 SpD / 22 Spe  
@@ -10411,7 +10564,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 === TRAINER_CORIN_RESCUE ===
 Name: Corin
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: DP Pokemon Ranger M
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -10438,7 +10591,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_LORENZO ===
 Name: Corin
 Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Pic: DP Pokemon Ranger M
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -10742,21 +10895,38 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_JAGGED_PASS ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ariados @ Poison Barb  
+Ability: Sniper  
+Level: 36  
+Tera Type: Bug  
+EVs: 24 HP / 36 Atk / 64 Def / 28 Spe  
+Relaxed Nature  
+IVs: 13 HP / 14 Atk / 22 Def / 22 SpA / 18 SpD / 19 Spe  
+- Agility  
+- Baton Pass  
+- Poison Jab  
+- Knock Off  
 
-Numel
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Araquanid @ Clear Amulet  
+Ability: Water Bubble  
+Level: 37  
+Tera Type: Water  
+EVs: 28 HP / 36 Atk / 84 SpA  
+Quiet Nature  
+IVs: 22 HP / 8 Atk / 21 Def / 25 SpA / 17 SpD / 13 Spe  
+- Body Slam  
+- Aqua Ring  
+- Leech Life  
+- Bubble Beam  
+
 
 === TRAINER_MARC ===
 Name: MARC
@@ -10883,8 +11053,8 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -10954,11 +11124,27 @@ Pic: Gentleman
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Conservative
 
-Girafarig
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Prinplup
+Level: 34
+IVs: 10 HP / 0 Atk / 1 Def / 0 SpA / 20 SpD / 20 Spe
+
+Dusclops @ Ghost Gem
+Level: 34
+IVs: 10 HP / 20 Atk / 11 Def / 0 SpA / 2 SpD / 1 Spe
+
+Furfrou (M) @ Rocky Helmet  
+Ability: Fur Coat  
+Level: 34  
+Tera Type: Normal  
+EVs: 68 Def  
+Lax Nature  
+IVs: 0 HP / 10 Atk / 24 Def / 0 SpA / 0 SpD / 0 Spe  
+- Cotton Guard  
+- Odor Sleuth  
+- Headbutt  
+- Swagger
 
 === TRAINER_NICHOLAS ===
 Name: NICHOLAS
@@ -10991,25 +11177,53 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Feint
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
-Name: GRUNT
-Class: Team Magma
+Name: Seer June
+Class: Hive
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Double Battle / HP Aware / Ace Pokemon
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Volbeat @ Mental Herb  
+Ability: Prankster  
+Level: 37  
+Tera Type: Bug  
+EVs: 44 HP / 44 Def / 84 SpA / 12 SpD / 52 Spe  
+Quirky Nature  
+IVs: 10 HP / 0 Atk / 20 Def / 10 SpA / 20 SpD / 20 Spe  
+- Tail Glow  
+- Thunderbolt  
+- Silver Wind  
+- Confuse Ray  
 
-Poochyena
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Masquerain @ Sharp Beak  
+Ability: Intimidate  
+Level: 38  
+Tera Type: Bug  
+EVs: 64 Def / 52 SpA / 104 Spe  
+Naive Nature  
+IVs: 30 HP / 20 Def / 20 SpA / 10 SpD / 20 Spe  
+- Protect  
+- Tailwind  
+- Scald  
+- U-turn  
+
+Hypno (M) @ Wide Lens  
+Ability: Inner Focus  
+Level: 38  
+Tera Type: Psychic  
+EVs: 28 HP / 116 Atk / 44 Def / 64 SpD / 4 Spe  
+Adamant Nature  
+IVs: 10 HP / 10 Def / 20 SpA / 10 SpD / 2 Spe  
+- Wake-Up Slap  
+- Mega Punch  
+- Hypnosis  
+- Zen Headbutt 
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -11021,8 +11235,8 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -11034,8 +11248,8 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -11047,8 +11261,8 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
@@ -11154,8 +11368,8 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MT_CHIMNEY ===
-Name: TABITHA
-Class: Magma Admin
+Name: Mistress
+Class: Hive
 Pic: Magma Admin
 Gender: Male
 Music: Magma
@@ -11470,11 +11684,43 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Double Battle / HP Aware
 
-Luvdisc
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Luvdisc (F) @ Focus Band  
+Ability: Swift Swim  
+Level: 36  
+Tera Type: Water  
+EVs: 44 HP / 64 Atk / 56 Spe  
+Hasty Nature  
+IVs: 12 HP / 10 Def / 10 SpA / 6 SpD  
+- Flip Turn  
+- Sweet Kiss  
+- Icy Wind  
+- Heart Stamp  
+
+Leavanny (M) @ Miracle Seed  
+Ability: Swarm  
+Level: 35  
+Tera Type: Bug  
+EVs: 52 Atk / 60 Def / 88 Spe  
+Lax Nature  
+IVs: 13 HP / 11 Atk / 21 Def / 2 SpA / 12 SpD / 19 Spe  
+- Razor Leaf  
+- Steel Wing  
+- Hone Claws  
+- Pollen Puff  
+
+Audino @ Pixie Plate  
+Ability: Healer  
+Level: 34  
+Tera Type: Normal  
+EVs: 20 HP / 32 Atk / 32 SpA / 12 SpD  
+Brave Nature  
+IVs: 10 HP / 20 Def / 20 SpA / 12 SpD / 10 Spe  
+- Thunder Wave  
+- Draining Kiss  
+- Ally Switch  
+- Retaliate 
 
 === TRAINER_CRISSY ===
 Name: CRISSY
@@ -12133,22 +12379,35 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GERALD ===
-Name: GERALD
+Name: Jarid
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / HP Aware / Risky
 
-Kecleon
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+Linoone-Galar @ Salac Berry  
+Ability: Gluttony  
+Level: 22  
+Tera Type: Dark  
+Naughty Nature  
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe  
+- Hone Claws  
+- Take Down  
+- Screech  
+- Snarl  
+
+Pikachu @ Eviolite  
+Ability: Lightning Rod  
+Level: 22  
+Tera Type: Electric  
+EVs: 20 Spe  
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe  
+- Flash  
+- Mega Punch  
+- Spark  
+- Nuzzle  
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -12300,7 +12559,7 @@ IVs: 12 HP / 22 Atk / 17 Def / 11 SpA / 8 SpD / 19 Spe
 === TRAINER_TASMIN_LOGISTICS ===
 Name: Tasmin
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: DP Pokemon Ranger F
 Gender: Female
 Music: Girl
 Double Battle: No
@@ -12326,7 +12585,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_WALLY_MAUVILLE ===
 Name: Tasmin
 Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Pic: DP Pokemon Ranger F
 Gender: Female
 Music: Girl
 Double Battle: No
@@ -12350,7 +12609,7 @@ IVs: 10 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
 - Night Shade  
 - Spite
 
-Timburr (M) @ Hard Stone  
+Timburr (M) @ Oran Berry  
 Ability: Guts  
 Level: 12  
 Tera Type: Fighting  
@@ -13452,11 +13711,42 @@ Pic: Aroma Lady
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / HP Aware / Stall
 
-Roselia
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Carnivine @ Sitrus Berry  
+Ability: Levitate  
+Level: 35  
+Tera Type: Grass  
+EVs: 48 Atk / 32 SpD  
+Sassy Nature  
+IVs: 12 HP / 21 Def / 12 SpA / 22 SpD / 3 Spe  
+- Sleep Powder  
+- Swords Dance  
+- Feint Attack  
+- Razor Leaf  
+
+Arboliva @ Big Root  
+Ability: Seed Sower  
+Level: 36  
+Tera Type: Grass  
+EVs: 32 HP / 32 SpA / 64 Spe  
+Timid Nature  
+IVs: 11 HP / 0 Atk / 14 SpA / 13 SpD / 26 Spe  
+- Mega Drain  
+- Leech Seed  
+- Protect  
+- Swift  
+
+Roselia (F) @ Eviolite  
+Ability: Poison Point  
+Level: 35  
+Tera Type: Grass  
+EVs: 76 Def / 96 SpD  
+IVs: 20 HP / 0 Atk / 26 Def / 11 SpA / 20 SpD / 10 Spe  
+- Leech Seed  
+- Giga Drain  
+- Protect  
+- Ingrain  
 
 === TRAINER_BIANCA ===
 Name: BIANCA
@@ -13822,9 +14112,27 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pineco (M)  
+Ability: Sturdy  
+Level: 23  
+Tera Type: Bug  
+EVs: 52 Atk  
+IVs: 10 HP / 10 Def / 20 SpA / 10 SpD / 20 Spe  
+- Self-Destruct  
+- Spikes  
+- Light Screen  
+- Reflect
+
+Scyther @ Scope Lens  
+Ability: Swarm  
+Level: 24  
+Tera Type: Bug  
+EVs: 36 SpD  
+IVs: 10 HP / 10 Atk / 20 Def / 20 SpA / 10 SpD / 10 Spe  
+- Focus Energy  
+- Slash  
+- Night Slash  
+- Cross Poison
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: Drone
@@ -13833,11 +14141,30 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Double Battle / HP Aware
 
-Baltoy
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dottler (F) @ Eviolite  
+Ability: Telepathy  
+Level: 24  
+Tera Type: Bug  
+EVs: 20 HP / 104 SpA  
+IVs: 20 HP / 0 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe  
+- Light Screen  
+- Reflect  
+- Sticky Web  
+- Infestation
+
+Ninjask (F)  
+Ability: Speed Boost  
+Level: 24  
+Tera Type: Bug  
+EVs: 24 HP / 40 Atk / 28 SpD  
+Adamant Nature  
+IVs: 10 HP / 20 Atk / 10 Def / 10 SpA / 20 SpD / 10 Spe  
+- Aerial Ace  
+- Bug Bite  
+- Laser Focus  
+- Feint Attack
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: Drone
@@ -13846,24 +14173,63 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Double Battle / HP Aware
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Accelgor @ Sitrus Berry  
+Ability: Sticky Hold  
+Level: 33  
+Tera Type: Bug  
+EVs: 12 HP / 68 Def / 40 Spe  
+Lax Nature  
+IVs: 8 HP / 24 Atk / 17 Def / 3 SpA / 9 SpD  
+- Me First  
+- Signal Beam  
+- Water Shuriken  
+- Yawn
+
+Orbeetle @ Berry Juice  
+Ability: Swarm  
+Level: 33  
+Tera Type: Bug  
+EVs: 64 HP / 16 Def / 32 SpD  
+IVs: 10 HP / 0 Atk / 20 Def / 10 SpA / 10 SpD / 10 Spe  
+- Calm Mind  
+- Hypnosis  
+- Iron Defense  
+- Stored Power
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
-Name: GRUNT
-Class: Team Magma
+Name: Drone
+Class: Hive
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke-Galar @ Wiki Berry  
+Ability: Gluttony  
+Level: 33  
+Tera Type: Psychic  
+EVs: 44 HP / 24 Atk / 32 SpD  
+Brave Nature  
+IVs: 5 HP / 10 Def / 10 SpA / 20 SpD / 20 Spe  
+- Belch  
+- Take Down  
+- Bulldoze  
+- Zen Headbutt  
+
+Scolipede @ Assault Vest  
+Ability: Speed Boost  
+Level: 33  
+Tera Type: Bug  
+EVs: 20 Atk / 64 Def / 20 Spe  
+Relaxed Nature  
+IVs: 5 HP / 5 Atk / 10 Def / 5 SpA / 20 SpD / 5 Spe  
+- Steamroller  
+- Bulldoze  
+- Iron Tail  
+- Facade 
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
 Name: Seer Lysa
@@ -13960,7 +14326,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / HP Aware
 
 Masquerain @ Life Orb
 Level: 25
@@ -13970,17 +14336,20 @@ IVs: 30 HP / 20 Atk / 20 Def / 20 SpA / 10 SpD / 20 Spe
 - Scary Face
 - Sticky Web
 
-Drowzee @ Twistedspoon
-Level: 25
-IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
-- Hypnosis
-- Dream Eater
-- Disable
-- Confusion
+Volbeat @ Mental Herb  
+Ability: Prankster  
+Level: 25  
+Tera Type: Bug  
+EVs: 44 HP / 44 Def / 12 SpD  
+IVs: 10 HP / 0 Atk / 20 Def / 10 SpA / 20 SpD / 20 Spe  
+- Tail Glow  
+- Ominous Wind  
+- Silver Wind  
+- Confuse Ray
 
 Hypno @ Wide Lens
 Level: 27
-IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+IVs: 10 HP / 2 Atk / 10 Def / 20 SpA / 10 SpD / 2 Spe
 - Hypnosis
 - Dream Eater
 - Headbutt
@@ -14453,7 +14822,6 @@ Class: Expert
 Pic: Expert F
 Gender: Female
 Music: Intense
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -14465,8 +14833,8 @@ EVs: 32 Def / 56 SpD
 Adamant Nature  
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
 - Rock Smash  
-- Swords Dance  
-- Flame Wheel  
+- Work Up  
+- Incinerate  
 - Endure
 
 === TRAINER_FABIAN ===
@@ -14677,21 +15045,26 @@ Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
-Name: MAY
-Class: Rival
-Pic: May
+Name: Emma
+Class: Cowgirl
+Pic: DP Cowgirl
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Mareep
+Level: 23
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Miltank
+Level:22
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -15711,54 +16084,61 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 === TRAINER_WINONA_2 ===
-Name: WINONA
+Name: Mistress
 Class: Leader
 Pic: Leader Winona
 Gender: Female
 Music: Female
-Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Basic Trainer / Risky
+AI: Basic Trainer / Double Ace Pokemon / Double Battle / HP Aware
 
-Dratini @ Sitrus Berry
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Wave
-- Thunderbolt
-- Protect
-- Ice Beam
+Shedinja @ Normal Gem  
+Ability: Wonder Guard  
+Level: 37  
+Tera Type: Bug  
+EVs: 88 Atk / 52 Spe  
+Adamant Nature  
+IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 16 Spe  
+- Baton Pass  
+- Agility  
+- Will-O-Wisp  
+- Double-Edge  
 
-Tropius
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
+Rabsca @ Leppa Berry  
+Ability: Telepathy  
+Level: 37  
+Tera Type: Bug  
+EVs: 60 HP / 56 SpA / 132 SpD  
+Sassy Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Revival Blessing  
+- Psychic Noise  
+- Struggle Bug  
+- Memento  
 
-Pelipper
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Supersonic
-- Protect
-- Aerial Ace
+Delphox (F)  
+Ability: Magician  
+Level: 38  
+Tera Type: Fire  
+EVs: 52 Def / 108 SpA / 60 SpD / 36 Spe  
+Bold Nature  
+IVs: 10 HP / 12 Atk / 11 Def / 9 SpA / 4 SpD / 29 Spe  
+- Psychic Noise  
+- Mystical Fire  
+- Metronome  
+- Reflect  
 
-Skarmory
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
-
-Altaria @ Chesto Berry
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rest
-- Dragon Dance
-- Earthquake
+Dusknoir @ Liechi Berry  
+Ability: Pressure  
+Level: 40  
+Tera Type: Ghost  
+EVs: 252 HP  
+Impish Nature  
+IVs: 20 HP / 25 Atk / 25 Def / 20 SpA / 30 SpD / 20 Spe  
+- Bulldoze  
+- Power-Up Punch  
+- Shadow Sneak  
+- Leech Life 
 
 === TRAINER_WINONA_3 ===
 Name: WINONA
@@ -17090,21 +17470,21 @@ Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_SAWYER_2 ===
-Name: SAWYER
+Name: Saul
 Class: Hiker
-Pic: Hiker
+Pic: DP Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
+Rhyhorn
 Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 11 HP / 11 Atk / 21 Def / 1 SpA / 11 SpD / 31 Spe
 
-Numel
+Onix
 Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 11 HP / 11 Atk / 21 Def / 1 SpA / 11 SpD / 31 Spe
 
 === TRAINER_SAWYER_3 ===
 Name: SAWYER

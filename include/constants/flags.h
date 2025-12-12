@@ -510,13 +510,13 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
+#define FLAG_UNUSED_0x1DA                    0x1DA // Unused FlagTY
 
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
+#define FLAG_ROCKY_ROAD_SUDOWOODO_CLEARED    0x1DE
 #define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
@@ -681,11 +681,11 @@
 #define FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL       0x278 // Unused Flag
 #define FLAG_RECEIVED_MUSCLE_BAND                0x279 // Unused Flag
 #define FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED    0x27A // Unused Flag
-#define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
-#define FLAG_UNUSED_0x27E  0x27E // Unused Flag
-#define FLAG_UNUSED_0x27F  0x27F // Unused Flag
+#define FLAG_SHUDDERWOOD_MANSION_CLEARED         0x27B // Unused Flag
+#define FLAG_SHUDDERWOOD_GATEHOUSE_CLEARED       0x27C // Unused Flag
+#define FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_EXPERTS_FREED      0x27D // Unused Flag
+#define FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED     0x27E // Unused Flag
+#define FLAG_SHUDDERWOOD_MANSION_POOL_DRONE_DEFEATED            0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
@@ -1073,14 +1073,14 @@
 #define FLAG_ITEM_STATIC_VALLEY_IRON                                0x3FA
 #define FLAG_ITEM_CRUSTED_QUARRY_EVIOLITE                           0x3FB
 #define FLAG_ITEM_CRUSTED_QUARRY_FLOAT_STONE                        0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_KEY                           0x3FD
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_STATUE                        0x3FF
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE                    0x400
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_SPELL_TAG                     0x401
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_BIG_NUGGET                    0x402
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE                    0x403
+#define FLAG_ITEM_SHUDDERWOOD_MANSION_RARE_CANDY                    0x404
 #define FLAG_ITEM_SHOREFALL_STRAND_NEST_BALL                        0x405
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407

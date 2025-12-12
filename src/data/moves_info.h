@@ -3960,10 +3960,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "works on user's 1st turn."),
         .priority = B_UPDATED_MOVE_DATA >= GEN_5 ? 3 : 1,
         .effect = EFFECT_FIRST_TURN_ONLY,
-        .power = 40,
+        .power = 30,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({

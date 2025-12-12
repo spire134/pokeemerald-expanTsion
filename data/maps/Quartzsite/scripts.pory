@@ -26,23 +26,29 @@ release
 
 script Quartzite_Welcome_Sign {
 lock
-msgbox(format("Quartzsite: The Bedrock of Society!"))
+msgbox(format("Quartzsite: The Bedrock of Society!"), MSGBOX_SIGN)
 release
 }
 
 script Quartz_BookStreetSign {
     lock
     msgbox(format("Quartzite Book Street\n"
-    "Home to the Quartzite Library"))
+    "Home to the Quartzite Library"), MSGBOX_SIGN)
     release
 }
 
 script Quartz_ResidenceStreetSign {
     lock
     msgbox(format("Quartzite Slate Street\n"
-    "Peaceful homes for hardworking citizens"))
+    "Peaceful homes for hardworking citizens"), MSGBOX_SIGN)
     release
-    
+}
+
+script Quartz_ScenicQuarryView {
+    lock
+    msgbox(format("You gaze out over the vast quarry. \n"
+    "Water cascades down the rocky walls,\n"), MSGBOX_SIGN)
+    release
 }
 
 script Quartz_Hive_Blocker {
@@ -119,6 +125,5 @@ script Quartz_GoodRod_Fisherman {
     else {
     msgbox(format("Fisherman: Remember, fishing is all about patience and timing.\p"))
     }
-    waitmessage
     release    
 }

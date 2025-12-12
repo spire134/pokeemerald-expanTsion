@@ -1,0 +1,38 @@
+mapscripts Freeboot_Bay_MapScripts {}
+
+script Freeboot_Bay_No_Entry {
+    lock
+    applymovement(LOCALID_PIRATEGUARD_LEFT, moves(walk_in_place_fast_down emote_exclamation_mark))
+    waitmovement(0)
+    playse(SE_PING)
+    msgbox(format("Pirate: Avast there, ye landlubber! Where do ye think ye're sailin'?"))
+    applymovement(LOCALID_PIRATEGUARD_RIGHT, moves(walk_in_place_fast_down emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Pirate: Aye, the Captain's given strict orders! No scallywags allowed past this point 'til he returns from his voyage!"))
+    msgbox(format("Pirate: These be dangerous waters, Ranger. Best be weighin' anchor and settin' sail elsewhere!"))
+    msgbox(format("Pirate: Arrr, but if ye be brave enough to face the Captain's wrath, ye can try yer luck when he's back at the helm!"))
+    msgbox(format("Pirate: Now shove off before we make ye walk the plank! Har har har!"))
+    applymovement(LOCALID_PLAYER, moves(walk_fast_down))
+    waitmovement(0)
+    release
+}
+
+script Freeboot_Buried_Pirate_F {
+    trainerbattle_single(TRAINER_PIRATE_F_BURIED, 
+        format("Pirate: Sneak attack, pirate style! Prepare to be boarded ye scurvy dog!"),
+        format("Pirate: Ugh… You got lucky this time lad.")
+        )
+    msgbox(format("Pirate: I'm washed up…"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Freeboot_Buried_Pirate_M {
+    trainerbattle_single(TRAINER_PIRATE_M_BURIED, 
+        format("Pirate: Arrr! Ye think ye can just stroll into Freeboot Bay? Think again, landlubber!"),
+        format("Pirate: Arrr, I be defeated.")
+        )
+    msgbox(format("Pirate: Arrr, you really swabbed my deck."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}

@@ -30,7 +30,7 @@
     },
     {
       "local_id": "LOCALID_TASMIN",
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_DP_POKE_RANGERF",
       "x": 4,
       "y": 24,
       "elevation": 0,
@@ -44,7 +44,7 @@
     },
     {
       "local_id": "LOCALID_TASMIN_WAREHOUSE",
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_DP_POKE_RANGERF",
       "x": 7,
       "y": 7,
       "elevation": 0,

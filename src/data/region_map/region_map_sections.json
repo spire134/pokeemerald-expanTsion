@@ -1293,7 +1293,23 @@
     },
     {
       "id": "MAPSEC_SHUDDERWOOD_MANSION",
-      "name": "Shudderwood Mansion"
+      "name": "Mansion Bedchambers "
+    },
+    {
+      "id": "MAPSEC_ROCKY_ROAD",
+      "name": "Rocky Road"
+    },
+    {
+      "id": "MAPSEC_FREEBOOT_BAY",
+      "name": "Freeboot Bay"
+    },
+    {
+      "id": "MAPSEC_PORT_PLUNDER",
+      "name": "Port Plunder"
+    },
+    {
+      "id": "MAPSEC_MAGNET_CAVE_DEPTHS",
+      "name": "Magnet Depths"
     }
   ]
 }

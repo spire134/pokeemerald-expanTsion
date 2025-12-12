@@ -13,8 +13,251 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
-  "object_events": [],
-  "warp_events": [],
-  "coord_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_MANSION_MISTRESS",
+      "graphics_id": "OBJ_EVENT_GFX_DP_FANTINA",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_MANSION_SEER_JUNE",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 11,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_MANSION_SEER_LYSA",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 9,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_BRAINWASHED_MASTER_DUSKNOIR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUSKNOIR)",
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_MANSION_MALAMAR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MALAMAR)",
+      "x": 8,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 22,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Bedchambers_Guard1",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 14,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Bedchambers_Guard2",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 6,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_Bedchambers_Guard3",
+      "flag": "FLAG_SHUDDERWOOD_MANSION_CLEARED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TRICK_HOUSE_STATUE",
+      "x": 2,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_RELIC_STATUE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_SHUDDERWOOD_MANSION_STATUE"
+    },
+    {
+      "local_id": "LOCALID_MANSION_MASTER_DUSKNOIR",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DUSKNOIR)",
+      "x": 26,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Shudderwood_Mansion_DusknoirChallenge",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 26,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 11,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION_UPPER",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 26,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 27,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 25,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SHUDDERWOOD_MANSION",
+      "dest_warp_id": "18"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "5",
+      "script": "Shudderwood_Mansion_MistressBattleLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "5",
+      "script": "Shudderwood_Mansion_MistressBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MANSION_PROGRESSION",
+      "var_value": "5",
+      "script": "Shudderwood_Mansion_MistressBattleRight"
+    }
+  ],
   "bg_events": []
 }

@@ -2896,7 +2896,7 @@ const struct Item gItemsInfo[] =
             "A copper coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2912,7 +2912,7 @@ const struct Item gItemsInfo[] =
             "A silver coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2928,7 +2928,7 @@ const struct Item gItemsInfo[] =
             "A gold coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2942,9 +2942,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A vase made long\n"
-            "ago. It sells at\n"
-            "a high price."),
-        .pocket = POCKET_ITEMS,
+            "ago. It seems to\n"
+            "hold a secret."),
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2958,9 +2958,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "An old bracelet.\n"
-            "It sells at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
+            "It seems to\n"),
+            "hold a secret."),
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2974,9 +2974,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "An old statue.\n"
-            "It sells at a\n"
-            "high price."),
-        .pocket = POCKET_ITEMS,
+            "It seems to\n"
+            "hold a secret."),
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12862,14 +12862,14 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Parcel,
     },
 
-    [ITEM_SECRET_KEY] =
+    [ITEM_MANSION_KEY] =
     {
-        .name = _("Secret Key"),
+        .name = _("Mansion Key"),
         .price = 0,
         .description = COMPOUND_STRING(
             "The key to the\n"
-            "Cinnabar Island\n"
-            "Gym's entrance."),
+            "Shudderwood\n"
+            "Mansion's stairs."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

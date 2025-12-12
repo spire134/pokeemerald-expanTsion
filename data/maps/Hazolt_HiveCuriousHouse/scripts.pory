@@ -29,3 +29,25 @@ script Swablu_Noies {
     release
     end
 }
+
+script Hazolt_Chamber_Pot {
+    lock
+    msgbox(format("A chamber pot. Maybe modeled after an ancient relic."), MSGBOX_SIGN)
+    release
+}
+
+script Hazolt_PirateBoy {
+    lock
+    applymovement(LOCALID_HAZOLT_PIRATEBOY, moves(face_player))
+    msgbox(format("Pirates are so cool! I want to be a pirate when I grow up!"))
+    release
+    end
+}
+
+script Hazolt_ConcernedMom {
+    lock
+    applymovement(LOCALID_HAZOLT_CONCERNEDMOM, moves(face_player))
+    msgbox(format("My boy has been so obsessed with pirates lately. I blame the Rangers, where were they when those pirates came?"))
+    release
+    end
+}
