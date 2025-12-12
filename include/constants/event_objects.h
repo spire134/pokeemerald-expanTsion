@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_EVENT_OBJECTS_H
 #define GUARD_CONSTANTS_EVENT_OBJECTS_H
 
+#include "constants/global.h"
+#include "constants/map_event_ids.h"
+
+
 #define OBJ_EVENT_GFX_BRENDAN_NORMAL               0
 #define OBJ_EVENT_GFX_BRENDAN_MACH_BIKE            1
 #define OBJ_EVENT_GFX_BRENDAN_SURFING              2
@@ -240,77 +244,102 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                236
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
+#define OBJ_EVENT_GFX_POKE_BALL                  239
+#define OBJ_EVENT_GFX_OW_MON                     240
+#define NUM_OBJ_EVENT_GFX                        241
+
+// These are dynamic object gfx ids.
+// They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
+// More info about them in include/constants/vars.h
+#define OBJ_EVENT_GFX_VARS   (NUM_OBJ_EVENT_GFX + 1)
+#define OBJ_EVENT_GFX_VAR_0  (OBJ_EVENT_GFX_VARS + 0x0)
+#define OBJ_EVENT_GFX_VAR_1  (OBJ_EVENT_GFX_VARS + 0x1)
+#define OBJ_EVENT_GFX_VAR_2  (OBJ_EVENT_GFX_VARS + 0x2)
+#define OBJ_EVENT_GFX_VAR_3  (OBJ_EVENT_GFX_VARS + 0x3)
+#define OBJ_EVENT_GFX_VAR_4  (OBJ_EVENT_GFX_VARS + 0x4)
+#define OBJ_EVENT_GFX_VAR_5  (OBJ_EVENT_GFX_VARS + 0x5)
+#define OBJ_EVENT_GFX_VAR_6  (OBJ_EVENT_GFX_VARS + 0x6)
+#define OBJ_EVENT_GFX_VAR_7  (OBJ_EVENT_GFX_VARS + 0x7)
+#define OBJ_EVENT_GFX_VAR_8  (OBJ_EVENT_GFX_VARS + 0x8)
+#define OBJ_EVENT_GFX_VAR_9  (OBJ_EVENT_GFX_VARS + 0x9)
+#define OBJ_EVENT_GFX_VAR_A  (OBJ_EVENT_GFX_VARS + 0xA)
+#define OBJ_EVENT_GFX_VAR_B  (OBJ_EVENT_GFX_VARS + 0xB)
+#define OBJ_EVENT_GFX_VAR_C  (OBJ_EVENT_GFX_VARS + 0xC)
+#define OBJ_EVENT_GFX_VAR_D  (OBJ_EVENT_GFX_VARS + 0xD)
+#define OBJ_EVENT_GFX_VAR_E  (OBJ_EVENT_GFX_VARS + 0xE)
+#define OBJ_EVENT_GFX_VAR_F  (OBJ_EVENT_GFX_VARS + 0xF)
+
 //Platinum
-#define OBJ_EVENT_GFX_DP_CYNTHIA                 239
-#define OBJ_EVENT_GFX_DP_AARON                   240
-#define OBJ_EVENT_GFX_DP_ACE_TRAINERF                 241
-#define OBJ_EVENT_GFX_DP_ACE_TRAINERM                 242
-#define OBJ_EVENT_GFX_DP_ACE_TRAINER_SNOWM                 243
-#define OBJ_EVENT_GFX_DP_BARRY                 244
-#define OBJ_EVENT_GFX_DP_BATTLE_GIRL                 245
-#define OBJ_EVENT_GFX_DP_BEAUTY                 246
-#define OBJ_EVENT_GFX_DP_BERTHA                 247
-#define OBJ_EVENT_GFX_DP_BLACK_BELT                 248
-#define OBJ_EVENT_GFX_DP_BREEDERF                 249
-#define OBJ_EVENT_GFX_DP_BUG_CATCHER                 250
-#define OBJ_EVENT_GFX_DP_BYRON                 251
-#define OBJ_EVENT_GFX_DP_CAMPER                 252
-#define OBJ_EVENT_GFX_DP_CHARON                 253
-#define OBJ_EVENT_GFX_DP_CHERYL                 254
-#define OBJ_EVENT_GFX_DP_COWGIRL                 255
-#define OBJ_EVENT_GFX_DP_CRASHER_WAKE                 256
-#define OBJ_EVENT_GFX_DP_CYRUS                 257
-#define OBJ_EVENT_GFX_DP_DRAGON_TAMER                 258
-#define OBJ_EVENT_GFX_DP_FANTINA                 259
-#define OBJ_EVENT_GFX_DP_FISHERMAN                 260
-#define OBJ_EVENT_GFX_DP_GALACTIC_GRUNTF                 261
-#define OBJ_EVENT_GFX_DP_GALACTIC_GRUNTM                 262
-#define OBJ_EVENT_GFX_DP_GENTLEMAN                 263
-#define OBJ_EVENT_GFX_DP_HIKER                 264
-#define OBJ_EVENT_GFX_DP_JUPITER                 265
-#define OBJ_EVENT_GFX_DP_LADY                 266
-#define OBJ_EVENT_GFX_DP_LOOKER                 267
-#define OBJ_EVENT_GFX_DP_LUCIAN                 268
-#define OBJ_EVENT_GFX_DP_MARLEY                 269
-#define OBJ_EVENT_GFX_DP_MARS                 270
-#define OBJ_EVENT_GFX_DP_MAYLENE                 271
-#define OBJ_EVENT_GFX_DP_MIRA                 272
-#define OBJ_EVENT_GFX_DP_OFFICER                 273
-#define OBJ_EVENT_GFX_DP_PAINTER                 274
-#define OBJ_EVENT_GFX_DP_PALMER                 275
-#define OBJ_EVENT_GFX_DP_PARASOL_LADY                 276
-#define OBJ_EVENT_GFX_DP_PICNICKER                 277
-#define OBJ_EVENT_GFX_DP_POKE_KID                 278
-#define OBJ_EVENT_GFX_DP_POKE_RANGERF                 279
-#define OBJ_EVENT_GFX_DP_POKE_RANGERM                 280
-#define OBJ_EVENT_GFX_DP_POKEFAN_F                 281
-#define OBJ_EVENT_GFX_DP_POKEFAN_M                 282
-#define OBJ_EVENT_GFX_DP_ROWAN                 283
-#define OBJ_EVENT_GFX_DP_PSYCHIC                 284
-#define OBJ_EVENT_GFX_DP_RANCHER                 285
-#define OBJ_EVENT_GFX_DP_RICH_BOY                 286
-#define OBJ_EVENT_GFX_DP_RICH_LADY                 287
-#define OBJ_EVENT_GFX_DP_ROCKER                 288
-#define OBJ_EVENT_GFX_DP_ROUGHNECK                 289
-#define OBJ_EVENT_GFX_DP_RUIN_MANIAC                 290
-#define OBJ_EVENT_GFX_DP_SAILOR                 291
-#define OBJ_EVENT_GFX_DP_SATURN                 292
-#define OBJ_EVENT_GFX_DP_SCIENTIST                 293
-#define OBJ_EVENT_GFX_DP_SKIERF                294
-#define OBJ_EVENT_GFX_DP_SKIERM                 295
-#define OBJ_EVENT_GFX_DP_SOCIALITE                 296
-#define OBJ_EVENT_GFX_DP_SUPERNERD                 297
-#define OBJ_EVENT_GFX_DP_SWIMMERF                 298
-#define OBJ_EVENT_GFX_DP_SWIMMERF2                 299
-#define OBJ_EVENT_GFX_DP_SWIMMERM                 300
-#define OBJ_EVENT_GFX_DP_SWIMMERM2                 301
-#define OBJ_EVENT_GFX_DP_VOLKNER                 302
-#define OBJ_EVENT_GFX_DP_WAITER                 303
-#define OBJ_EVENT_GFX_DP_WAITRESS                 304
-#define OBJ_EVENT_GFX_DP_WORKER                 305
-#define OBJ_EVENT_GFX_DP_YOUNG_COUPLEF                 306
-#define OBJ_EVENT_GFX_DP_YOUNG_COUPLEM                 307
-#define OBJ_EVENT_GFX_DP_YOUNGSTER                 308
+#define OBJ_EVENT_GFX_DP_CYNTHIA                 241
+#define OBJ_EVENT_GFX_DP_AARON                   242
+#define OBJ_EVENT_GFX_DP_ACE_TRAINERF            243
+#define OBJ_EVENT_GFX_DP_ACE_TRAINERM            244
+#define OBJ_EVENT_GFX_DP_ACE_TRAINER_SNOWM       245
+#define OBJ_EVENT_GFX_DP_BARRY                   246
+#define OBJ_EVENT_GFX_DP_BATTLE_GIRL             247
+#define OBJ_EVENT_GFX_DP_BEAUTY                  248
+#define OBJ_EVENT_GFX_DP_BERTHA                  249
+#define OBJ_EVENT_GFX_DP_BLACK_BELT              250
+#define OBJ_EVENT_GFX_DP_BREEDERF                251
+#define OBJ_EVENT_GFX_DP_BUG_CATCHER             252
+#define OBJ_EVENT_GFX_DP_BYRON                   253
+#define OBJ_EVENT_GFX_DP_CAMPER                  254
+#define OBJ_EVENT_GFX_DP_CHARON                  255
+#define OBJ_EVENT_GFX_DP_CHERYL                  256
+#define OBJ_EVENT_GFX_DP_COWGIRL                 257
+#define OBJ_EVENT_GFX_DP_CRASHER_WAKE            258
+#define OBJ_EVENT_GFX_DP_CYRUS                   259
+#define OBJ_EVENT_GFX_DP_DRAGON_TAMER            260
+#define OBJ_EVENT_GFX_DP_FANTINA                 261
+#define OBJ_EVENT_GFX_DP_FISHERMAN               262
+#define OBJ_EVENT_GFX_DP_GALACTIC_GRUNTF         263
+#define OBJ_EVENT_GFX_DP_GALACTIC_GRUNTM         264
+#define OBJ_EVENT_GFX_DP_GENTLEMAN               265
+#define OBJ_EVENT_GFX_DP_HIKER                   266
+#define OBJ_EVENT_GFX_DP_JUPITER                 267
+#define OBJ_EVENT_GFX_DP_LADY                    268
+#define OBJ_EVENT_GFX_DP_LOOKER                  269
+#define OBJ_EVENT_GFX_DP_LUCIAN                  270
+#define OBJ_EVENT_GFX_DP_MARLEY                  271
+#define OBJ_EVENT_GFX_DP_MARS                    272
+#define OBJ_EVENT_GFX_DP_MAYLENE                 273
+#define OBJ_EVENT_GFX_DP_MIRA                    274
+#define OBJ_EVENT_GFX_DP_OFFICER                 275
+#define OBJ_EVENT_GFX_DP_PAINTER                 276
+#define OBJ_EVENT_GFX_DP_PALMER                  277
+#define OBJ_EVENT_GFX_DP_PARASOL_LADY            278
+#define OBJ_EVENT_GFX_DP_PICNICKER               279
+#define OBJ_EVENT_GFX_DP_POKE_KID                280
+#define OBJ_EVENT_GFX_DP_POKE_RANGERF            281
+#define OBJ_EVENT_GFX_DP_POKE_RANGERM            282
+#define OBJ_EVENT_GFX_DP_POKEFAN_F               283
+#define OBJ_EVENT_GFX_DP_POKEFAN_M               284
+#define OBJ_EVENT_GFX_DP_ROWAN                   285
+#define OBJ_EVENT_GFX_DP_PSYCHIC                 286
+#define OBJ_EVENT_GFX_DP_RANCHER                 287
+#define OBJ_EVENT_GFX_DP_RICH_BOY                288
+#define OBJ_EVENT_GFX_DP_RICH_LADY               289
+#define OBJ_EVENT_GFX_DP_ROCKER                  290
+#define OBJ_EVENT_GFX_DP_ROUGHNECK               291
+#define OBJ_EVENT_GFX_DP_RUIN_MANIAC             292
+#define OBJ_EVENT_GFX_DP_SAILOR                  293
+#define OBJ_EVENT_GFX_DP_SATURN                  294
+#define OBJ_EVENT_GFX_DP_SCIENTIST               295
+#define OBJ_EVENT_GFX_DP_SKIERF                  296
+#define OBJ_EVENT_GFX_DP_SKIERM                  297
+#define OBJ_EVENT_GFX_DP_SOCIALITE               298
+#define OBJ_EVENT_GFX_DP_SUPERNERD               299
+#define OBJ_EVENT_GFX_DP_SWIMMERF                300
+#define OBJ_EVENT_GFX_DP_SWIMMERF2               301
+#define OBJ_EVENT_GFX_DP_SWIMMERM                302
+#define OBJ_EVENT_GFX_DP_SWIMMERM2               303
+#define OBJ_EVENT_GFX_DP_VOLKNER                 304
+#define OBJ_EVENT_GFX_DP_WAITER                  305
+#define OBJ_EVENT_GFX_DP_WAITRESS                306
+#define OBJ_EVENT_GFX_DP_WORKER                  307
+#define OBJ_EVENT_GFX_DP_YOUNG_COUPLEF           308
+#define OBJ_EVENT_GFX_DP_YOUNG_COUPLEM           309
+#define OBJ_EVENT_GFX_DP_YOUNGSTER               310
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
@@ -323,7 +352,7 @@
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
 
 // NOTE: Increased limit from 239 to 65535 by converting graphics IDs to u16
-#define NUM_OBJ_EVENT_GFX                        309
+#define NUM_OBJ_EVENT_GFX                        311
 
 
 // These are dynamic object gfx ids.
@@ -347,11 +376,12 @@
 #define OBJ_EVENT_GFX_VAR_E  (OBJ_EVENT_GFX_VARS + 0xE)
 #define OBJ_EVENT_GFX_VAR_F  (OBJ_EVENT_GFX_VARS + 0xF) // 255
 
-#define SHADOW_SIZE_S   0
-#define SHADOW_SIZE_M   1
-#define SHADOW_SIZE_L   2
-#define SHADOW_SIZE_XL  3
-#define SHADOW_SIZE_NONE 0xFF
+#define IS_OW_MON_OBJ(obj) ((obj)->graphicsId & OBJ_EVENT_MON)
+
+#define SHADOW_SIZE_S       0
+#define SHADOW_SIZE_M       1
+#define SHADOW_SIZE_L       2
+#define SHADOW_SIZE_NONE    3   // Originally SHADOW_SIZE_XL, which went unused due to shadowSize in ObjectEventGraphicsInfo being only 2 bits.
 
 #define F_INANIMATE                        (1 << 6)
 #define F_DISABLE_REFLECTION_PALETTE_LOAD  (1 << 7)
@@ -365,9 +395,138 @@
 #define OBJ_KIND_NORMAL 0
 #define OBJ_KIND_CLONE  255 // Exclusive to FRLG
 
-// Special object event local ids
+// Don't use (1u << 15) to avoid conflict with BLEND_IMMUNE_FLAG.
+#define OBJ_EVENT_MON               (1u << 14)
+#define OBJ_EVENT_MON_SHINY         (1u << 13)
+#define OBJ_EVENT_MON_FEMALE        (1u << 12)
+#define OBJ_EVENT_MON_SPECIES_MASK  (~(7u << 12))
+
+// Used to call a specific species' follower graphics. Useful for static encounters.
+#define OBJ_EVENT_GFX_SPECIES(name)                 (SPECIES_##name + OBJ_EVENT_MON)
+#define OBJ_EVENT_GFX_SPECIES_SHINY(name)           (SPECIES_##name + OBJ_EVENT_MON + OBJ_EVENT_MON_SHINY)
+#define OBJ_EVENT_GFX_SPECIES_FEMALE(name)          (SPECIES_##name + OBJ_EVENT_MON + OBJ_EVENT_MON_FEMALE)
+#define OBJ_EVENT_GFX_SPECIES_SHINY_FEMALE(name)    (SPECIES_##name + OBJ_EVENT_MON + OBJ_EVENT_MON_SHINY + OBJ_EVENT_MON_FEMALE)
+
+#define OW_SPECIES(x) ((x)->graphicsId & OBJ_EVENT_MON_SPECIES_MASK)
+#define OW_SHINY(x) ((x)->graphicsId & OBJ_EVENT_MON_SHINY)
+#define OW_FEMALE(x) ((x)->graphicsId & OBJ_EVENT_MON_FEMALE)
+
+// Used for link player OWs in CreateLinkPlayerSprite
+#define OBJ_EVENT_ID_DYNAMIC_BASE 0xF0
+
+// Each object event template gets an ID that can be used to refer to it in scripts and elsewhere.
+// This is referred to as the "local id" (and it's really just 1 + its index in the templates array).
+// There are a few special IDs reserved for objects that don't have templates in the map data -- one for the player
+// in regular offline play, five for linked players while playing Berry Blender, and one for an invisible object that
+// can be spawned for the camera to track instead of the player. Additionally, the value 0 is reserved as an "empty" indicator.
+#define LOCALID_NONE                         0
+#define LOCALID_CAMERA                     127
+#define LOCALID_BERRY_BLENDER_PLAYER_END   240 // This will use 5 (MAX_RFU_PLAYERS) IDs ending at 240, i.e. 236-240
+#define LOCALID_FOLLOWING_POKEMON          254
+#define LOCALID_PLAYER                     255
+#define OBJ_EVENT_ID_FOLLOWER              0xFE
+#define OBJ_EVENT_ID_NPC_FOLLOWER          0xFD
+
+// Aliases for old names. "object event id" normally refers to an index into gObjectEvents, which these are not.
+// Used for link player OWs in CreateLinkPlayerSprite
+#define OBJ_EVENT_ID_DYNAMIC_BASE 0xF0
+#define OBJ_EVENT_ID_CAMERA LOCALID_CAMERA
+#define OBJ_EVENT_ID_PLAYER LOCALID_PLAYER
+
+// Moved from src/event_object_movement.c so that they're accesible from other files.
+#define OBJ_EVENT_PAL_TAG_BRENDAN                 0x1100
+#define OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION      0x1101
+#define OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION       0x1102
+#define OBJ_EVENT_PAL_TAG_NPC_1                   0x1103
+#define OBJ_EVENT_PAL_TAG_NPC_2                   0x1104
+#define OBJ_EVENT_PAL_TAG_NPC_3                   0x1105
+#define OBJ_EVENT_PAL_TAG_NPC_4                   0x1106
+#define OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION        0x1107
+#define OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION        0x1108
+#define OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION        0x1109
+#define OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION        0x110A
+#define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP            0x110B
+#define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION 0x110C
+#define OBJ_EVENT_PAL_TAG_TRUCK                   0x110D
+#define OBJ_EVENT_PAL_TAG_VIGOROTH                0x110E
+#define OBJ_EVENT_PAL_TAG_ZIGZAGOON               0x110F
+#define OBJ_EVENT_PAL_TAG_MAY                     0x1110
+#define OBJ_EVENT_PAL_TAG_MAY_REFLECTION          0x1111
+#define OBJ_EVENT_PAL_TAG_MOVING_BOX              0x1112
+#define OBJ_EVENT_PAL_TAG_CABLE_CAR               0x1113
+#define OBJ_EVENT_PAL_TAG_SSTIDAL                 0x1114
+#define OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER       0x1115
+#define OBJ_EVENT_PAL_TAG_KYOGRE                  0x1116
+#define OBJ_EVENT_PAL_TAG_KYOGRE_REFLECTION       0x1117
+#define OBJ_EVENT_PAL_TAG_GROUDON                 0x1118
+#define OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION      0x1119
+#define OBJ_EVENT_PAL_TAG_UNUSED                  0x111A
+#define OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW        0x111B
+#define OBJ_EVENT_PAL_TAG_POOCHYENA               0x111C
+#define OBJ_EVENT_PAL_TAG_RED_LEAF                0x111D
+#define OBJ_EVENT_PAL_TAG_DEOXYS                  0x111E
+#define OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE      0x111F
+#define OBJ_EVENT_PAL_TAG_HO_OH                   0x1120
+#define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
+#define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
+#define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+#define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+
+#if OW_FOLLOWERS_POKEBALLS
+// Vanilla
+#define OBJ_EVENT_PAL_TAG_BALL_MASTER             0x1150
+#define OBJ_EVENT_PAL_TAG_BALL_ULTRA              0x1151
+#define OBJ_EVENT_PAL_TAG_BALL_GREAT              0x1152
+#define OBJ_EVENT_PAL_TAG_BALL_SAFARI             0x1153
+#define OBJ_EVENT_PAL_TAG_BALL_NET                0x1154
+#define OBJ_EVENT_PAL_TAG_BALL_DIVE               0x1155
+#define OBJ_EVENT_PAL_TAG_BALL_NEST               0x1156
+#define OBJ_EVENT_PAL_TAG_BALL_REPEAT             0x1157
+#define OBJ_EVENT_PAL_TAG_BALL_TIMER              0x1158
+#define OBJ_EVENT_PAL_TAG_BALL_LUXURY             0x1159
+#define OBJ_EVENT_PAL_TAG_BALL_PREMIER            0x115A
+// Gen IV/Sinnoh
+#define OBJ_EVENT_PAL_TAG_BALL_DUSK               0x115B
+#define OBJ_EVENT_PAL_TAG_BALL_HEAL               0x115C
+#define OBJ_EVENT_PAL_TAG_BALL_QUICK              0x115D
+#define OBJ_EVENT_PAL_TAG_BALL_CHERISH            0x115E
+#define OBJ_EVENT_PAL_TAG_BALL_PARK               0x115F
+// Gen II/Johto Apricorns
+#define OBJ_EVENT_PAL_TAG_BALL_FAST               0x1160
+#define OBJ_EVENT_PAL_TAG_BALL_LEVEL              0x1161
+#define OBJ_EVENT_PAL_TAG_BALL_LURE               0x1162
+#define OBJ_EVENT_PAL_TAG_BALL_HEAVY              0x1163
+#define OBJ_EVENT_PAL_TAG_BALL_LOVE               0x1164
+#define OBJ_EVENT_PAL_TAG_BALL_FRIEND             0x1165
+#define OBJ_EVENT_PAL_TAG_BALL_MOON               0x1166
+#define OBJ_EVENT_PAL_TAG_BALL_SPORT              0x1167
+// Gen V
+#define OBJ_EVENT_PAL_TAG_BALL_DREAM              0x1168
+// Gen VII
+#define OBJ_EVENT_PAL_TAG_BALL_BEAST              0x1169
+// Gen VIII
+#define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
+#endif //OW_FOLLOWERS_POKEBALLS
+// Custom Palletes
+#define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M          0x116B
+// Used as a placeholder follower graphic
+#define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
+#define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
+#define OBJ_EVENT_PAL_TAG_LIGHT_2                 0x8002
+#define OBJ_EVENT_PAL_TAG_EMOTES                  0x8003
+#define OBJ_EVENT_PAL_TAG_NEON_LIGHT              0x8004
+// Not a real OW palette tag; used for the white flash applied to followers
+#define OBJ_EVENT_PAL_TAG_WHITE                   (OBJ_EVENT_PAL_TAG_NONE - 1)
+#define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
+
+
 #define OBJ_EVENT_ID_PLAYER 0xFF
 #define OBJ_EVENT_ID_CAMERA 0x7F
+
+// This + localId is used as the tileTag
+// for compressed graphicsInfos
+// '(C)ompressed (E)vent'
+#define COMP_OW_TILE_TAG_BASE 0xCE00
 
 // Object event local ids referenced in C files
 #define LOCALID_ROUTE111_PLAYER_FALLING 45
