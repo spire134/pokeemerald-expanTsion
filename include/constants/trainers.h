@@ -179,6 +179,11 @@
 #define TRAINER_PIC_DP_YOUNG_COUPLEM            161
 #define TRAINER_PIC_DP_YOUNGSTER                162
 
+// Aliases for compatibility
+#define TRAINER_PIC_DP_JOGGER                   TRAINER_PIC_DP_YOUNGSTER
+#define TRAINER_PIC_DP_POKEMON_RANGER_M         TRAINER_PIC_DP_POKE_RANGERM
+#define TRAINER_PIC_DP_POKEMON_RANGER_F         TRAINER_PIC_DP_POKE_RANGERF
+
 #define TRAINER_PIC_COUNT                       163
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
