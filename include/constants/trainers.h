@@ -179,8 +179,102 @@
 #define TRAINER_PIC_DP_YOUNG_COUPLEM            161
 #define TRAINER_PIC_DP_YOUNGSTER                162
 
-// Aliases for compatibility
-#define TRAINER_PIC_DP_JOGGER                   TRAINER_PIC_DP_YOUNGSTER
+// Aliases for trainers.h graphics file (mixed case naming) - All DP trainer sprites
+// Note: These map the mixed-case names used in TRAINER_SPRITE() to the uppercase constant names
+#define TRAINER_PIC_DP_Ace_Trainer_DoubleTeam   93  // No uppercase version, direct assignment
+#define TRAINER_PIC_DP_Cynthia                  TRAINER_PIC_DP_CYNTHIA
+#define TRAINER_PIC_DP_Aaron                    TRAINER_PIC_DP_AARON
+#define TRAINER_PIC_DP_Ace_Trainer_F            TRAINER_PIC_DP_ACE_TRAINERF
+#define TRAINER_PIC_DP_Ace_Trainer_M            TRAINER_PIC_DP_ACE_TRAINERM
+#define TRAINER_PIC_DP_Ace_Trainer_Snow_F       95  // No uppercase version
+#define TRAINER_PIC_DP_Ace_Trainer_Snow_M       TRAINER_PIC_DP_ACE_TRAINER_SNOWM
+#define TRAINER_PIC_DP_Aroma_Lady               16  // Map to existing RSE Aroma Lady
+#define TRAINER_PIC_DP_Barry                    TRAINER_PIC_DP_BARRY
+#define TRAINER_PIC_DP_Battle_Girl              TRAINER_PIC_DP_BATTLE_GIRL
+#define TRAINER_PIC_DP_Beauty                   TRAINER_PIC_DP_BEAUTY
+#define TRAINER_PIC_DP_Bertha                   TRAINER_PIC_DP_BERTHA
+#define TRAINER_PIC_DP_Bird_Keeper              2   // Map to existing RSE Bird Keeper
+#define TRAINER_PIC_DP_Black_Belt               TRAINER_PIC_DP_BLACK_BELT
+#define TRAINER_PIC_DP_Breeder_F                TRAINER_PIC_DP_BREEDERF
+#define TRAINER_PIC_DP_Breeder_M                33  // Map to existing RSE Pokemon Breeder
+#define TRAINER_PIC_DP_Buck                     94  // Use Aaron slot temporarily
+#define TRAINER_PIC_DP_Bug_Catcher              TRAINER_PIC_DP_BUG_CATCHER
+#define TRAINER_PIC_DP_Byron                    TRAINER_PIC_DP_BYRON
+#define TRAINER_PIC_DP_Cameraman                106  // Use Camper slot temporarily
+#define TRAINER_PIC_DP_Camper                   TRAINER_PIC_DP_CAMPER
+#define TRAINER_PIC_DP_Candice                  107  // Use Charon slot temporarily
+#define TRAINER_PIC_DP_Cheryl                   TRAINER_PIC_DP_CHERYL
+#define TRAINER_PIC_DP_Clown                    107  // Use Charon slot temporarily
+#define TRAINER_PIC_DP_Collector                5   // Map to existing RSE Collector
+#define TRAINER_PIC_DP_Cowgirl                  TRAINER_PIC_DP_COWGIRL
+#define TRAINER_PIC_DP_Crasher_Wake             TRAINER_PIC_DP_CRASHER_WAKE
+#define TRAINER_PIC_DP_Cyclist_F                23  // Map to existing RSE Cyclist F
+#define TRAINER_PIC_DP_Cyclist_M                22  // Map to existing RSE Cyclist M
+#define TRAINER_PIC_DP_Cyrus                    TRAINER_PIC_DP_CYRUS
+#define TRAINER_PIC_DP_Dragon_Tamer             TRAINER_PIC_DP_DRAGON_TAMER
+#define TRAINER_PIC_DP_Fantina                  TRAINER_PIC_DP_FANTINA
+#define TRAINER_PIC_DP_Fisherman                TRAINER_PIC_DP_FISHERMAN
+#define TRAINER_PIC_DP_Galactic_Grunt_F         TRAINER_PIC_DP_GALACTIC_GRUNTF
+#define TRAINER_PIC_DP_Galactic_Grunt_M         TRAINER_PIC_DP_GALACTIC_GRUNTM
+#define TRAINER_PIC_DP_Gambler                  117  // Use Gentleman slot temporarily
+#define TRAINER_PIC_DP_Gardenia                 108  // Use Cheryl slot temporarily
+#define TRAINER_PIC_DP_Gentleman                TRAINER_PIC_DP_GENTLEMAN
+#define TRAINER_PIC_DP_Hiker                    TRAINER_PIC_DP_HIKER
+#define TRAINER_PIC_DP_Idol                     119  // Use Jupiter slot temporarily
+#define TRAINER_PIC_DP_Interviewers             17  // Use Interviewer slot
+#define TRAINER_PIC_DP_Jogger                   TRAINER_PIC_DP_YOUNGSTER
+#define TRAINER_PIC_DP_Jupiter                  TRAINER_PIC_DP_JUPITER
+#define TRAINER_PIC_DP_Lady                     TRAINER_PIC_DP_LADY
+#define TRAINER_PIC_DP_Lass                     77  // Map to existing RSE Lass
+#define TRAINER_PIC_DP_Lucian                   TRAINER_PIC_DP_LUCIAN
+#define TRAINER_PIC_DP_Marley                   TRAINER_PIC_DP_MARLEY
+#define TRAINER_PIC_DP_Mars                     TRAINER_PIC_DP_MARS
+#define TRAINER_PIC_DP_Maylene                  TRAINER_PIC_DP_MAYLENE
+#define TRAINER_PIC_DP_Mira                     TRAINER_PIC_DP_MIRA
+#define TRAINER_PIC_DP_Ninja_Boy                26  // Map to existing RSE Ninja Boy
+#define TRAINER_PIC_DP_Officer                  TRAINER_PIC_DP_OFFICER
+#define TRAINER_PIC_DP_Painter_Artist           TRAINER_PIC_DP_PAINTER
+#define TRAINER_PIC_DP_Palmer                   TRAINER_PIC_DP_PALMER
+#define TRAINER_PIC_DP_Parasol_Lady             TRAINER_PIC_DP_PARASOL_LADY
+#define TRAINER_PIC_DP_Picnicker                TRAINER_PIC_DP_PICNICKER
+#define TRAINER_PIC_DP_Poke_Kid                 TRAINER_PIC_DP_POKE_KID
+#define TRAINER_PIC_DP_Pokefan_F                135  // TRAINER_PIC_DP_POKEFAN_F
+#define TRAINER_PIC_DP_Pokefan_M                136  // TRAINER_PIC_DP_POKEFAN_M
+#define TRAINER_PIC_DP_Pokemon_Ranger_F         TRAINER_PIC_DP_POKE_RANGERF
+#define TRAINER_PIC_DP_Pokemon_Ranger_M         TRAINER_PIC_DP_POKE_RANGERM
+#define TRAINER_PIC_DP_Psychic_F                138  // Use Psychic slot
+#define TRAINER_PIC_DP_Psychic_M                138  // Use Psychic slot
+#define TRAINER_PIC_DP_Rancher                  TRAINER_PIC_DP_RANCHER
+#define TRAINER_PIC_DP_Rancher_Duo_Belle_and_Pa 139  // Use Rancher slot
+#define TRAINER_PIC_DP_Reporter                 17   // Use Interviewer slot
+#define TRAINER_PIC_DP_Rich_Boy                 TRAINER_PIC_DP_RICH_BOY
+#define TRAINER_PIC_DP_Riley                    74   // Use Pokemon Ranger M slot
+#define TRAINER_PIC_DP_Roark                    105  // Use Byron slot
+#define TRAINER_PIC_DP_Rocker_Guitarist         TRAINER_PIC_DP_ROCKER
+#define TRAINER_PIC_DP_Roughneck                TRAINER_PIC_DP_ROUGHNECK
+#define TRAINER_PIC_DP_Ruin_Maniac              TRAINER_PIC_DP_RUIN_MANIAC
+#define TRAINER_PIC_DP_Sailor                   TRAINER_PIC_DP_SAILOR
+#define TRAINER_PIC_DP_Saturn                   TRAINER_PIC_DP_SATURN
+#define TRAINER_PIC_DP_School_Kid_F             131  // Use Picnicker slot
+#define TRAINER_PIC_DP_School_Kid_M             132  // Use Poke Kid slot
+#define TRAINER_PIC_DP_Scientist                TRAINER_PIC_DP_SCIENTIST
+#define TRAINER_PIC_DP_Skier_F                  TRAINER_PIC_DP_SKIERF
+#define TRAINER_PIC_DP_Skier_M                  TRAINER_PIC_DP_SKIERM
+#define TRAINER_PIC_DP_Socialite                TRAINER_PIC_DP_SOCIALITE
+#define TRAINER_PIC_DP_Swimmer_F                TRAINER_PIC_DP_SWIMMERF
+#define TRAINER_PIC_DP_Swimmer_M                TRAINER_PIC_DP_SWIMMERM
+#define TRAINER_PIC_DP_Tuber_F                  18   // Use existing RSE Tuber F
+#define TRAINER_PIC_DP_Tuber_M                  19   // Use existing RSE Tuber M
+#define TRAINER_PIC_DP_Twins                    78   // Use Young Couple slot
+#define TRAINER_PIC_DP_Veteran                  39   // Use Expert M slot
+#define TRAINER_PIC_DP_Volkner                  TRAINER_PIC_DP_VOLKNER
+#define TRAINER_PIC_DP_Waiter                   TRAINER_PIC_DP_WAITER
+#define TRAINER_PIC_DP_Waitress                 TRAINER_PIC_DP_WAITRESS
+#define TRAINER_PIC_DP_Worker                   TRAINER_PIC_DP_WORKER
+#define TRAINER_PIC_DP_Young_Couple             TRAINER_PIC_DP_YOUNG_COUPLEM
+#define TRAINER_PIC_DP_Youngster                TRAINER_PIC_DP_YOUNGSTER
+
+// Backward compatibility aliases
 #define TRAINER_PIC_DP_POKEMON_RANGER_M         TRAINER_PIC_DP_POKE_RANGERM
 #define TRAINER_PIC_DP_POKEMON_RANGER_F         TRAINER_PIC_DP_POKE_RANGERF
 
