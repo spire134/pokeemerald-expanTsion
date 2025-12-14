@@ -2958,7 +2958,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "An old bracelet.\n"
-            "It seems to\n"),
+            "It seems to\n"
             "hold a secret."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
