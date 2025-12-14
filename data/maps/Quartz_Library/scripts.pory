@@ -20,7 +20,7 @@ script Quartz_Seer_Fight {
     waitmovement(0)
     msgbox(format("Seer: So… a new Ranger finally arrives.\p"
     "How unfortunate for you. My Drones have already reported your… diminished forces.\p"
-    "You stand alone against the swarm. Guard—eliminate the intruder."))
+    "You stand alone against the swarm. Guard, eliminate the intruder."))
     waitmessage
     applymovement(LOCALID_FIRST_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down 
     walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
@@ -32,9 +32,10 @@ script Quartz_Seer_Fight {
     applymovement(LOCALID_QUARTZ_SEER, moves(emote_question_mark))
     waitmovement(0)
     msgbox(format("Seer: Pathetic.\p"
-    "Next guard—NOW.\p"
+    "Next guard, NOW.\p"
     "It is fruitless. The swarm is endless, Ranger. You will fall."))
     waitmessage
+    playsound(SE_EXIT)
     applymovement(LOCALID_SECOND_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down
     walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
     waitmovement(0)
