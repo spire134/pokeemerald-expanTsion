@@ -246,7 +246,6 @@
 #define OBJ_EVENT_GFX_HOOH                       238
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
-#define NUM_OBJ_EVENT_GFX                        241
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -519,9 +518,6 @@
 #define OBJ_EVENT_PAL_TAG_WHITE                   (OBJ_EVENT_PAL_TAG_NONE - 1)
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
-
-#define OBJ_EVENT_ID_PLAYER 0xFF
-#define OBJ_EVENT_ID_CAMERA 0x7F
 
 // This + localId is used as the tileTag
 // for compressed graphicsInfos
