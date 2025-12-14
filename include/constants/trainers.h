@@ -223,6 +223,7 @@
 #define TRAINER_PIC_DP_Idol                     119  // Use Jupiter slot temporarily
 #define TRAINER_PIC_DP_Interviewers             17  // Use Interviewer slot
 #define TRAINER_PIC_DP_Jogger                   TRAINER_PIC_DP_YOUNGSTER
+#define TRAINER_PIC_DP_JOGGER                   TRAINER_PIC_DP_YOUNGSTER
 #define TRAINER_PIC_DP_Jupiter                  TRAINER_PIC_DP_JUPITER
 #define TRAINER_PIC_DP_Lady                     TRAINER_PIC_DP_LADY
 #define TRAINER_PIC_DP_Lass                     77  // Map to existing RSE Lass
