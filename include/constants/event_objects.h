@@ -381,6 +381,7 @@
 #define SHADOW_SIZE_M       1
 #define SHADOW_SIZE_L       2
 #define SHADOW_SIZE_NONE    3   // Originally SHADOW_SIZE_XL, which went unused due to shadowSize in ObjectEventGraphicsInfo being only 2 bits.
+#define SHADOW_SIZE_XL_BATTLE_ONLY 4  // Used in Pokemon Sprite Visualizer only.
 
 #define F_INANIMATE                        (1 << 6)
 #define F_DISABLE_REFLECTION_PALETTE_LOAD  (1 << 7)
