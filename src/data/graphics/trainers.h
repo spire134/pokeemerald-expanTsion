@@ -578,7 +578,7 @@ const u32 gTrainerPalette_DP_Cynthia_Mugshot[] = INCBIN_U32("graphics/trainers/f
     [TRAINER_PIC_##trainerPic] =                                                          \
     {                                                                                     \
         .frontPic = {gTrainerFrontPic_##file, TRAINER_PIC_SIZE, TRAINER_PIC_##trainerPic},\
-        .palette = {gTrainerPalette_##file, TRAINER_PIC_##trainerPic},                    \
+        .palette = {(const u16 *)gTrainerPalette_##file, TRAINER_PIC_##trainerPic},      \
         .mugshotCoords = {DEFAULT(0, __VA_ARGS__), DEFAULT_2(0, __VA_ARGS__)},            \
         .mugshotRotation = DEFAULT_3(0x200, __VA_ARGS__),                                 \
     }
