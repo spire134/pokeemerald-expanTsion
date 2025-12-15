@@ -35,7 +35,7 @@ script Quartz_Seer_Fight {
     "Next guard, NOW.\p"
     "It is fruitless. The swarm is endless, Ranger. You will fall."))
     waitmessage
-    playsound(SE_EXIT)
+    playse(SE_EXIT)
     applymovement(LOCALID_SECOND_GOON, moves(walk_fast_down walk_fast_down walk_fast_down walk_fast_down
     walk_fast_left walk_fast_down walk_fast_down face_right emote_exclamation_mark))
     waitmovement(0)

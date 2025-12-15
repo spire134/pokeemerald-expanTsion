@@ -574,15 +574,15 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/balls/strange.gba
 #endif
 #endif //OW_FOLLOWERS_POKEBALLS
 
-// Follower system palettes - commented out as files don't exist
-// const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/palettes/substitute.gbapal");
-// const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
-// const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light_2.gbapal");
-// const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/object_events/palettes/emotes.gbapal");
-// const u16 gObjectEventPaletteNeonLight[] = INCBIN_U16("graphics/object_events/palettes/neon_light.gbapal");
-// const u32 gFieldEffectObjectPic_BallLight[] = INCBIN_U32("graphics/field_effects/pics/ball_light.4bpp");
-// const u32 gFieldEffectObjectPic_PokeCenterLight[] = INCBIN_U32("graphics/field_effects/pics/pokecenter_light.4bpp");
-// const u32 gFieldEffectObjectPic_MartLight[] = INCBIN_U32("graphics/field_effects/pics/mart_light.4bpp");
-// const u32 gFieldEffectObjectPic_BugTracks[] = INCBIN_U32("graphics/field_effects/pics/bug_tracks.4bpp");
-// const u32 gFieldEffectObjectPic_SpotTracks[] = INCBIN_U32("graphics/field_effects/pics/spot_tracks.4bpp");
-// const u32 gFieldEffectObjectPic_SlitherTracks[] = INCBIN_U32("graphics/field_effects/pics/slither_tracks.4bpp");
+// Follower system palettes - stub declarations (files don't exist but needed for compilation)
+const u16 gObjectEventPal_Substitute[16] = {};
+const u16 gObjectEventPaletteLight[16] = {};
+const u16 gObjectEventPaletteLight2[16] = {};
+const u16 gObjectEventPaletteEmotes[16] = {};
+const u16 gObjectEventPaletteNeonLight[16] = {};
+const u32 gFieldEffectObjectPic_BallLight[] = {0};
+const u32 gFieldEffectObjectPic_PokeCenterLight[] = {0};
+const u32 gFieldEffectObjectPic_MartLight[] = {0};
+const u32 gFieldEffectObjectPic_BugTracks[] = {0};
+const u32 gFieldEffectObjectPic_SpotTracks[] = {0};
+const u32 gFieldEffectObjectPic_SlitherTracks[] = {0};

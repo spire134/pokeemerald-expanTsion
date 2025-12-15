@@ -235,7 +235,7 @@ script Shudderwood_Mansion_DusknoirChallenge {
         msgbox(format("You have defeated Dusknoir, the Master of the Mansion!\p"
         "The souls of those trapped here are yours now."))
         giveitem(ITEM_HEART_SCALE, 5)
-        realeaseall
+        releaseall
     } else {
         msgbox(format("Dusknoir: Grrrr… Grrrr…\p"
         "The Master of the Mansion, Dusknoir, awaits your return."))
