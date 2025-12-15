@@ -574,3 +574,17 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/balls/strange.gba
 #endif
 #endif //OW_FOLLOWERS_POKEBALLS
 
+// Follower system palettes
+const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/palettes/substitute.gbapal");
+const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
+const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light_2.gbapal");
+const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/object_events/palettes/emotes.gbapal");
+const u16 gObjectEventPaletteNeonLight[] = INCBIN_U16("graphics/object_events/palettes/neon_light.gbapal");
+
+// Field effect graphics for followers
+const u32 gFieldEffectObjectPic_BallLight[] = INCBIN_U32("graphics/field_effects/pics/ball_light.4bpp");
+const u32 gFieldEffectObjectPic_PokeCenterLight[] = INCBIN_U32("graphics/field_effects/pics/pokecenter_light.4bpp");
+const u32 gFieldEffectObjectPic_MartLight[] = INCBIN_U32("graphics/field_effects/pics/mart_light.4bpp");
+const u32 gFieldEffectObjectPic_BugTracks[] = INCBIN_U32("graphics/field_effects/pics/bug_tracks.4bpp");
+const u32 gFieldEffectObjectPic_SpotTracks[] = INCBIN_U32("graphics/field_effects/pics/spot_tracks.4bpp");
+const u32 gFieldEffectObjectPic_SlitherTracks[] = INCBIN_U32("graphics/field_effects/pics/slither_tracks.4bpp");

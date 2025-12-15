@@ -389,6 +389,17 @@
 #define TRACKS_NONE       0
 #define TRACKS_FOOT       1
 #define TRACKS_BIKE_TIRE  2
+#define TRACKS_SLITHER    3
+#define TRACKS_SPOT       4
+#define TRACKS_BUG        5
+
+// Light sprite types for day/night system
+#define LIGHT_TYPE_BALL              0
+#define LIGHT_TYPE_PKMN_CENTER_SIGN  1
+#define LIGHT_TYPE_POKE_MART_SIGN    2
+
+// Graphics ID for light sprites
+#define OBJ_EVENT_GFX_LIGHT_SPRITE   0xFF00
 
 #define FIRST_DECORATION_SPRITE_GFX OBJ_EVENT_GFX_PICHU_DOLL
 
