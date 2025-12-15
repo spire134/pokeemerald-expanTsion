@@ -516,34 +516,34 @@ const u16 gObjectEventPal_DP_Youngster[] = INCBIN_U16("graphics/object_events/pa
 
 #if OW_FOLLOWERS_POKEBALLS
 // Pokeball follower graphics
-const u32 gObjectEventPic_Ball_MASTER[] = INCBIN_U32("graphics/balls/master_ball.4bpp");
-const u32 gObjectEventPic_Ball_ULTRA[] = INCBIN_U32("graphics/balls/ultra_ball.4bpp");
-const u32 gObjectEventPic_Ball_GREAT[] = INCBIN_U32("graphics/balls/great_ball.4bpp");
-const u32 gObjectEventPic_Ball_SAFARI[] = INCBIN_U32("graphics/balls/safari_ball.4bpp");
-const u32 gObjectEventPic_Ball_NET[] = INCBIN_U32("graphics/balls/net_ball.4bpp");
-const u32 gObjectEventPic_Ball_DIVE[] = INCBIN_U32("graphics/balls/dive_ball.4bpp");
-const u32 gObjectEventPic_Ball_NEST[] = INCBIN_U32("graphics/balls/nest_ball.4bpp");
-const u32 gObjectEventPic_Ball_REPEAT[] = INCBIN_U32("graphics/balls/repeat_ball.4bpp");
-const u32 gObjectEventPic_Ball_TIMER[] = INCBIN_U32("graphics/balls/timer_ball.4bpp");
-const u32 gObjectEventPic_Ball_LUXURY[] = INCBIN_U32("graphics/balls/luxury_ball.4bpp");
-const u32 gObjectEventPic_Ball_PREMIER[] = INCBIN_U32("graphics/balls/premier_ball.4bpp");
-const u32 gObjectEventPic_Ball_DUSK[] = INCBIN_U32("graphics/balls/dusk_ball.4bpp");
-const u32 gObjectEventPic_Ball_HEAL[] = INCBIN_U32("graphics/balls/heal_ball.4bpp");
-const u32 gObjectEventPic_Ball_QUICK[] = INCBIN_U32("graphics/balls/quick_ball.4bpp");
-const u32 gObjectEventPic_Ball_CHERISH[] = INCBIN_U32("graphics/balls/cherish_ball.4bpp");
-const u32 gObjectEventPic_Ball_PARK[] = INCBIN_U32("graphics/balls/park_ball.4bpp");
-const u32 gObjectEventPic_Ball_FAST[] = INCBIN_U32("graphics/balls/fast_ball.4bpp");
-const u32 gObjectEventPic_Ball_LEVEL[] = INCBIN_U32("graphics/balls/level_ball.4bpp");
-const u32 gObjectEventPic_Ball_LURE[] = INCBIN_U32("graphics/balls/lure_ball.4bpp");
-const u32 gObjectEventPic_Ball_HEAVY[] = INCBIN_U32("graphics/balls/heavy_ball.4bpp");
-const u32 gObjectEventPic_Ball_LOVE[] = INCBIN_U32("graphics/balls/love_ball.4bpp");
-const u32 gObjectEventPic_Ball_FRIEND[] = INCBIN_U32("graphics/balls/friend_ball.4bpp");
-const u32 gObjectEventPic_Ball_MOON[] = INCBIN_U32("graphics/balls/moon_ball.4bpp");
-const u32 gObjectEventPic_Ball_SPORT[] = INCBIN_U32("graphics/balls/sport_ball.4bpp");
-const u32 gObjectEventPic_Ball_DREAM[] = INCBIN_U32("graphics/balls/dream_ball.4bpp");
-const u32 gObjectEventPic_Ball_BEAST[] = INCBIN_U32("graphics/balls/beast_ball.4bpp");
+const u32 gObjectEventPic_Ball_MASTER[] = INCBIN_U32("graphics/balls/master.4bpp");
+const u32 gObjectEventPic_Ball_ULTRA[] = INCBIN_U32("graphics/balls/ultra.4bpp");
+const u32 gObjectEventPic_Ball_GREAT[] = INCBIN_U32("graphics/balls/great.4bpp");
+const u32 gObjectEventPic_Ball_SAFARI[] = INCBIN_U32("graphics/balls/safari.4bpp");
+const u32 gObjectEventPic_Ball_NET[] = INCBIN_U32("graphics/balls/net.4bpp");
+const u32 gObjectEventPic_Ball_DIVE[] = INCBIN_U32("graphics/balls/dive.4bpp");
+const u32 gObjectEventPic_Ball_NEST[] = INCBIN_U32("graphics/balls/nest.4bpp");
+const u32 gObjectEventPic_Ball_REPEAT[] = INCBIN_U32("graphics/balls/repeat.4bpp");
+const u32 gObjectEventPic_Ball_TIMER[] = INCBIN_U32("graphics/balls/timer.4bpp");
+const u32 gObjectEventPic_Ball_LUXURY[] = INCBIN_U32("graphics/balls/luxury.4bpp");
+const u32 gObjectEventPic_Ball_PREMIER[] = INCBIN_U32("graphics/balls/premier.4bpp");
+const u32 gObjectEventPic_Ball_DUSK[] = INCBIN_U32("graphics/balls/dusk.4bpp");
+const u32 gObjectEventPic_Ball_HEAL[] = INCBIN_U32("graphics/balls/heal.4bpp");
+const u32 gObjectEventPic_Ball_QUICK[] = INCBIN_U32("graphics/balls/quick.4bpp");
+const u32 gObjectEventPic_Ball_CHERISH[] = INCBIN_U32("graphics/balls/cherish.4bpp");
+const u32 gObjectEventPic_Ball_PARK[] = INCBIN_U32("graphics/balls/park.4bpp");
+const u32 gObjectEventPic_Ball_FAST[] = INCBIN_U32("graphics/balls/fast.4bpp");
+const u32 gObjectEventPic_Ball_LEVEL[] = INCBIN_U32("graphics/balls/level.4bpp");
+const u32 gObjectEventPic_Ball_LURE[] = INCBIN_U32("graphics/balls/lure.4bpp");
+const u32 gObjectEventPic_Ball_HEAVY[] = INCBIN_U32("graphics/balls/heavy.4bpp");
+const u32 gObjectEventPic_Ball_LOVE[] = INCBIN_U32("graphics/balls/love.4bpp");
+const u32 gObjectEventPic_Ball_FRIEND[] = INCBIN_U32("graphics/balls/friend.4bpp");
+const u32 gObjectEventPic_Ball_MOON[] = INCBIN_U32("graphics/balls/moon.4bpp");
+const u32 gObjectEventPic_Ball_SPORT[] = INCBIN_U32("graphics/balls/sport.4bpp");
+const u32 gObjectEventPic_Ball_DREAM[] = INCBIN_U32("graphics/balls/dream.4bpp");
+const u32 gObjectEventPic_Ball_BEAST[] = INCBIN_U32("graphics/balls/beast.4bpp");
 #ifdef ITEM_STRANGE_BALL
-const u32 gObjectEventPic_Ball_STRANGE[] = INCBIN_U32("graphics/balls/strange_ball.4bpp");
+const u32 gObjectEventPic_Ball_STRANGE[] = INCBIN_U32("graphics/balls/strange.4bpp");
 #endif
 #endif //OW_FOLLOWERS_POKEBALLS
 
