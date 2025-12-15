@@ -50,7 +50,7 @@ script Port_Plunder_Approach_Trigger {
     msgbox(format("Pirate: Our Cap'n Garrick is a scary fella, you sure you wanna be messin' with us?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
         msgbox(format("Pirate: Aye aye, that's the spirit! Just be ready to be swabbing our decks for the rest of yer days! Har har har!"))
-        addvar(VAR_VAR_PIRATE_QUEST_PROGRESSION, 1)
+        addvar(VAR_PIRATE_QUEST_PROGRESSION, 1)
         applymovement(LOCALID_BRIDGE_PIRATE, moves(walk_down*3))
         waitmovement(0)
         playse(SE_EXIT)

@@ -86,7 +86,7 @@ script Shudderwood_Mansion_MistressBattle {
     playmoncry(SPECIES_DUSKNOIR, 0)
     applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(face_left walk_slow_left*2))
     waitmovement(0)
-    applymovement(LOCALID_SEER_JUNE, moves(face_up))
+    applymovement(LOCALID_MANSION_SEER_JUNE, moves(face_up))
     msgbox(format("Seer June: No…"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_down))
