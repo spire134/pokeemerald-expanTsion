@@ -258,6 +258,6 @@ script Shudderwood_Mansion_Brainwashed_Butler {
 
 script Shudderwood_Mansion_UpperFloorSkip {
     lock
-    warp(Shudderwood_Mansion_Upper, 26, 9)
+    warp(MAP_SHUDDERWOOD_MANSION_UPPER, 26, 9)
     release
 }
