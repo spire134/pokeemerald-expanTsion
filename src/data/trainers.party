@@ -153,7 +153,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: June
+Name: Callie
 Class: Pirate
 Pic: Aqua Admin F
 Gender: Female
@@ -162,11 +162,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Wartortle
-Level: 25
+Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 20 SpA / 20 SpD / 0 Spe
 
-Inkay
-Level: 25
+Tentacool
+Level: 24
 IVs: 20 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 20 Spe
 
 Croagunk
@@ -183,9 +183,38 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Meowth-Galar (M) @ Razor Fang  
+Ability: Pickup  
+Level: 24  
+Tera Type: Steel  
+Relaxed Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Fling  
+- Thief  
+- Pay Day  
+- Taunt  
+
+Corphish @ Poison Barb  
+Ability: Hyper Cutter  
+Level: 24  
+Tera Type: Water  
+Gentle Nature  
+IVs: 16 HP / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Fling  
+- Thief  
+- Facade  
+- Bubble Beam  
+
+Aipom (F) @ King's Rock  
+Ability: Pickup  
+Level: 24  
+Tera Type: Normal  
+Jolly Nature  
+IVs: 16 HP / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Fling  
+- Fake Out  
+- Astonish  
+- Last Resort  
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
@@ -318,11 +347,40 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drednaw @ King's Rock  
+Ability: Strong Jaw  
+Level: 26  
+Tera Type: Water  
+Jolly Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Razor Shell  
+- Headbutt  
+- Scary Face  
+- Bite  
+
+Basculin-Blue-Striped  
+Ability: Adaptability  
+Level: 24  
+Tera Type: Water  
+Lax Nature  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Aqua Jet  
+- Headbutt  
+- Scary Face  
+- Bite  
+
+Clobbopus (M) @ Grip Claw  
+Ability: Technician  
+Level: 23  
+Tera Type: Fighting  
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
+- Coaching  
+- Mud Shot  
+- Bulk Up  
+- Bind  
+
 
 === TRAINER_DECLAN ===
 Name: DECLAN
@@ -5099,46 +5157,83 @@ IVs: 5 HP / 0 Atk / 14 Def / 0 SpA / 30 SpD / 9 Spe
 - Bulk Up  
 
 === TRAINER_WATTSON_1 ===
-Name: WATTSON
+Name: Garrick
 Class: Leader
 Pic: Leader Wattson
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Basic Trainer / Risky / HP Aware / Double Ace Pokemon
 
-Voltorb
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+Clauncher @ Oran Berry  
+Ability: Mega Launcher  
+Level: 26  
+Tera Type: Water  
+EVs: 28 SpA / 88 SpD
+IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cut  
+- Water Pulse  
+- Venoshock  
+- Aqua Jet  
 
-Electrike
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+Remoraid (M) @ Poison Barb  
+Ability: Sniper  
+Level: 26  
+Tera Type: Water  
+EVs: 52 SpA / 52 Spe  
+IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse  
+- Charge Beam  
+- Acid Spray  
+- Focus Energy  
 
-Magneton
-Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+Chatot (M) @ Iapapa Berry  
+Ability: Tangled Feet  
+Level: 27  
+Tera Type: Normal  
+EVs: 44 SpD / 52 Spe  
+Mild Nature  
+IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Double Team  
+- Chatter  
+- Nasty Plot  
+- Ominous Wind  
 
-Manectric @ Sitrus Berry
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+Dhelmise @ Pecha Berry  
+Ability: Steelworker  
+Level: 27  
+Tera Type: Ghost  
+EVs: 4 HP / 16 Def / 40 SpA / 36 SpD  
+Quiet Nature  
+IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Anchor Shot  
+- Brine  
+- Solar Beam  
+- Phantom Force  
+
+Croconaw (M) @ Clear Amulet  
+Ability: Sheer Force  
+Level: 28  
+Tera Type: Water  
+EVs: 48 HP / 40 Def  
+Impish Nature  
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe  
+- Dynamic Punch  
+- Iron Tail  
+- Mega Kick  
+- Aqua Jet  
+
+Octillery (M) @ Assault Vest  
+Ability: Sniper  
+Level: 30  
+Tera Type: Water  
+EVs: 76 HP / 24 Def  
+Relaxed Nature  
+IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flash Cannon  
+- Octazooka  
+- Incinerate  
+- Charge Beam  
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY

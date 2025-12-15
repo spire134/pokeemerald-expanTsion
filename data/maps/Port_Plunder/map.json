@@ -63,6 +63,43 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
+      "var_value": "1",
+      "script": "Port_Plunder_Garrick_Fight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
+      "var_value": "1",
+      "script": "Port_Plunder_Garrick_Fight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
+      "var_value": "1",
+      "script": "Port_Plunder_Garrick_Fight_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
+      "var_value": "1",
+      "script": "Port_Plunder_Garrick_Fight_Trigger"
+    }
+  ],
   "bg_events": []
 }

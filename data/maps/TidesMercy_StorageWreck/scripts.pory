@@ -58,7 +58,7 @@ script GarrickLootsThenRuns {
     waitmovement(0)
     msgbox(format(
         "Garrick: Rangers here already? Must be a new batch at the old HQ.\p"
-        "Lysa, you clean up here while I haul this back to base."))
+        "Callie, you clean up here while I haul this back to base."))
     waitmessage
     applymovement(LOCALID_WRECK_GARRICK, moves(walk_fast_up walk_fast_up))
     waitmovement(0)
@@ -73,16 +73,16 @@ script Wreck_Pirate_FirstMate {
     playse(SE_PIN)
     applymovement(LOCALID_WRECK_FIRSTMATE, moves(emote_exclamation_mark face_left))
     waitmovement(0)
-    msgbox(format("Lysa: Captain's orders, I'm going to throw you overboard!\p"))
+    msgbox(format("Callie: Captain's orders, I'm going to throw you overboard!\p"))
     waitmessage
     applymovement(LOCALID_WRECK_FIRSTMATE, moves(walk_fast_left walk_fast_left walk_fast_left))
     waitmovement(0)
     msgbox(format(
-        "Lysa: You Rangers don't realize the new laws of this island!\p"
+        "Callie: You Rangers don't realize the new laws of this island!\p"
         "This ship and all its contents belong to us now!"))
     waitmessage
-    trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, "Lysa: Gah, but you're too late!")
-    msgbox(format("Lysa: How could I lose to a Ranger…"))
+    trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, "Callie: Gah, but you're too late!")
+    msgbox(format("Callie: How could I lose to a Ranger…"))
     waitmessage
     setflag(FLAG_CLEARED_TIDESMERCYWRECK)
     msgbox(format(

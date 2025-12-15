@@ -52,13 +52,13 @@ script Shudderwood_Mansion_MistressBattle {
     waitmessage
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_in_place_fast_up emote_double_exclamation_mark))
     waitmovement(0)
-    playse(SE_PING)
+    playse(SE_PIN)
     waitse
     msgbox(format("Seer Lysa: Mistress! Please let me go! I beg of you!"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(walk_in_place_left emote_exclamation_mark))
     waitmovement(0)
-    playse(SE_PING)
+    playse(SE_PIN)
     waitse
     msgbox(format("Seer June: Silence, Lysa! You were the one who led them here!"))
     waitmessage
@@ -70,7 +70,7 @@ script Shudderwood_Mansion_MistressBattle {
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(face_down walk_down))
     waitmovement(0)
     msgbox(format("Seer Lysa: No… not again…"))
-    trainerbattle_two_trainers(TRAINER_SEER_LYSA, "Seer Lysa: At least it's over.", TRAINER_GRUNT_MT_CHIMNEY_1, "Seer June: No! My power is fading!")
+    trainerbattle_two_trainers(TRAINER_GRUNT_SPACE_CENTER_3, "Seer Lysa: At least it's over.", TRAINER_GRUNT_MT_CHIMNEY_1, "Seer June: No! My power is fading!")
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_faster_up face_down))
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(walk_faster_up face_down))
     waitmovement(0)
@@ -84,14 +84,14 @@ script Shudderwood_Mansion_MistressBattle {
     msgbox(format("Dusknoir: Grrrr… Grrrr…"))
     waitmessage
     playmoncry(SPECIES_DUSKNOIR, 0)
-    applymovement(LOCALID_MANSION_Dusknoir, moves(face_left walk_slow_left*2))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(face_left walk_slow_left*2))
     waitmovement(0)
     applymovement(LOCALID_SEER_JUNE, moves(face_up))
     msgbox(format("Seer June: No…"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_down))
     applymovement(LOCALID_MANSION_MALAMAR, moves(face_down))
-    applymovement(LOCALID_MANSION_DUSKNOIR, moves(face_down walk_slow_down emote_double_exclamation_mark))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(face_down walk_slow_down emote_double_exclamation_mark))
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitse
@@ -118,24 +118,24 @@ script Shudderwood_Mansion_MistressBattle {
     fadescreen(FADE_FROM_BLACK)
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(walk_faster_up emote_exclamation_mark))
-    playse(SE_PING)
-    applymovement(LOCALID_MANSION_DUSKNOIR, moves(walk_in_place_fast_down walk_in_place_down))
+    playse(SE_PIN)
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_in_place_fast_down walk_in_place_down))
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitse
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_right face_down))
     msgbox(format("Mistress: Hah, foolish Dusknoir, you belong to me still!"))
     waitmessage
-    applymovement(LOCALID_MANSION_DUSKNOIR, moves(walk_slow_left emote_double_exclamation_mark))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_slow_left emote_double_exclamation_mark))
     waitmovement(0)
-    playse(SE_PING)
+    playse(SE_PIN)
     waitse
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_in_place_up emote_exclamation_mark))
     msgbox(format("Seer Lysa: {PLAYER}, her control over Dusknoir is weakening!"))
     waitmessage
     msgbox(format("Mistress: Come on now Dusknoir, don't listen to her! Attack them both!"))
     waitmessage
-    applymovement(LOCALID_MANSION_DUSKNOIR, moves(walk_in_place_fast_left*2))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_in_place_fast_left*2))
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitse
@@ -149,7 +149,7 @@ script Shudderwood_Mansion_MistressBattle {
     playse(SE_EXIT)
     waitse
     fadescreen(FADE_FROM_BLACK)
-    applymovement(LOCALID_MANSION_DUSKNOIR, moves(walk_down))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_down))
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitse
@@ -178,7 +178,7 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         msgbox(format("Mistress: Foolish Ranger! You think you can interfere with my plans?"))
         waitmessage
         applymovement(LOCALID_MANSION_MISTRESS, moves(walk_slow_down))
-        applymovement(LOCALID_MANSION_DUSKNOIR, moves(walk_faster_right*2 face_down))
+        applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_faster_right*2 face_down))
         waitmovement(0)
         msgbox(format("Mistress: I will concentrate on you instead! Malamar, we can take our time with Lysa later!"))
         waitmessage
@@ -207,7 +207,7 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         waitmessage
         applymovement(LOCALID_MANSION_MISTRESS, moves(walk_in_place_down emote_exclamation_mark))
         waitmovement(0)
-        playse(SE_PING)
+        playse(SE_PIN)
         waitse
         msgbox(format("Mistress: Now, Ranger I will pick up where my Seers left off!"))
         waitmessage

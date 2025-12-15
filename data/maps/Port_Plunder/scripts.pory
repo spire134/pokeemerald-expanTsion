@@ -1,1 +1,9 @@
 mapscripts Port_Plunder_MapScripts {}
+
+script Port_Plunder_Garrick_Fight_Trigger {
+    lock
+    msgbox(format("THIS IS THE END OF THE DEMO! THANK YOU FOR PLAYING!\p"))
+    waitmessage
+    release
+    end
+}

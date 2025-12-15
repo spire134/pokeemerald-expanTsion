@@ -38,7 +38,7 @@ script Hazolt_Chamber_Pot {
 
 script Hazolt_PirateBoy {
     lock
-    applymovement(LOCALID_HAZOLT_PIRATEBOY, moves(face_player))
+    faceplayer
     msgbox(format("Pirates are so cool! I want to be a pirate when I grow up!"))
     release
     end
@@ -46,7 +46,7 @@ script Hazolt_PirateBoy {
 
 script Hazolt_ConcernedMom {
     lock
-    applymovement(LOCALID_HAZOLT_CONCERNEDMOM, moves(face_player))
+    faceplayer
     msgbox(format("My boy has been so obsessed with pirates lately. I blame the Rangers, where were they when those pirates came?"))
     release
     end

@@ -21,6 +21,7 @@
   ],
   "object_events": [
     {
+      "local_id": "LOCALID_BRIDGE_PIRATE",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 34,
       "y": 17,
@@ -31,7 +32,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY"
     },
     {
       "local_id": "LOCALID_PIRATEGUARD_RIGHT",
@@ -110,7 +111,7 @@
       "x": 33,
       "y": 11,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
       "var_value": "0",
       "script": "Port_Plunder_Approach_Trigger"
     },
@@ -119,18 +120,18 @@
       "x": 34,
       "y": 11,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Port_Plunder_Approach_Trigger"
     },
     {
       "type": "trigger",
       "x": 35,
       "y": 11,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_PIRATE_QUEST_PROGRESSION",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Port_Plunder_Approach_Trigger"
     },
     {
       "type": "trigger",
