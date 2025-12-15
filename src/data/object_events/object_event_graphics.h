@@ -580,9 +580,9 @@ const u16 gObjectEventPaletteLight[16] = {};
 const u16 gObjectEventPaletteLight2[16] = {};
 const u16 gObjectEventPaletteEmotes[16] = {};
 const u16 gObjectEventPaletteNeonLight[16] = {};
-const u32 gFieldEffectObjectPic_BallLight[] = {0};
-const u32 gFieldEffectObjectPic_PokeCenterLight[] = {0};
-const u32 gFieldEffectObjectPic_MartLight[] = {0};
 const u32 gFieldEffectObjectPic_BugTracks[] = {0};
 const u32 gFieldEffectObjectPic_SpotTracks[] = {0};
 const u32 gFieldEffectObjectPic_SlitherTracks[] = {0};
+const u32 gFieldEffectObjectPic_CaveDust[] = {0};
+const u16 gFieldEffectObjectPalette_CaveDust[] = {0};
+

@@ -678,33 +678,34 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(LEAF, Leaf),
     TRAINER_SPRITE(RS_BRENDAN, RubySapphireBrendan),
     TRAINER_SPRITE(RS_MAY, RubySapphireMay),
+    // DP trainers with unique sprites (93-162)
     TRAINER_SPRITE(DP_Ace_Trainer_DoubleTeam, DP_Ace_Trainer_DoubleTeam),
+    // Note: DP_Ace_Trainer_F at 95, DP_Ace_Trainer_Snow_F also 95 - conflict, skip Snow_F
     TRAINER_SPRITE(DP_Ace_Trainer_F, DP_Ace_Trainer_F),
     TRAINER_SPRITE(DP_Ace_Trainer_M, DP_Ace_Trainer_M),
-    TRAINER_SPRITE(DP_Ace_Trainer_Snow_F, DP_Ace_Trainer_Snow_F),
+    // DP_Ace_Trainer_Snow_F = 95, conflicts with DP_Ace_Trainer_F, skip
     TRAINER_SPRITE(DP_Ace_Trainer_Snow_M, DP_Ace_Trainer_Snow_M),
-    TRAINER_SPRITE(DP_Aroma_Lady, DP_Aroma_Lady),
+    // DP_Aroma_Lady = 16 (RUIN_MANIAC), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Barry, DP_Barry),
     TRAINER_SPRITE(DP_Battle_Girl, DP_Battle_Girl),
     TRAINER_SPRITE(DP_Beauty, DP_Beauty),
     TRAINER_SPRITE(DP_Bertha, DP_Bertha),
-    TRAINER_SPRITE(DP_Bird_Keeper, DP_Bird_Keeper),
+    // DP_Bird_Keeper = 2 (POKEMON_BREEDER_F), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Black_Belt, DP_Black_Belt),
     TRAINER_SPRITE(DP_Breeder_F, DP_Breeder_F),
-    TRAINER_SPRITE(DP_Breeder_M, DP_Breeder_M),
+    // DP_Breeder_M = 33 (PSYCHIC_M), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Buck, DP_Buck),
     TRAINER_SPRITE(DP_Bug_Catcher, DP_Bug_Catcher),
     TRAINER_SPRITE(DP_Byron, DP_Byron),
-    TRAINER_SPRITE(DP_Cameraman, DP_Cameraman),
+    // DP_Cameraman = 106 (CAMPER), use Camper instead, skip
     TRAINER_SPRITE(DP_Camper, DP_Camper),
-    TRAINER_SPRITE(DP_Candice, DP_Candice),
+    // DP_Candice = 107 (CHARON), skip
     TRAINER_SPRITE(DP_Cheryl, DP_Cheryl),
-    TRAINER_SPRITE(DP_Clown, DP_Clown),
-    TRAINER_SPRITE(DP_Collector, DP_Collector),
+    // DP_Clown = 107 (CHARON), skip
+    // DP_Collector = 5 (COLLECTOR), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Cowgirl, DP_Cowgirl),
     TRAINER_SPRITE(DP_Crasher_Wake, DP_Crasher_Wake),
-    TRAINER_SPRITE(DP_Cyclist_F, DP_Cyclist_F),
-    TRAINER_SPRITE(DP_Cyclist_M, DP_Cyclist_M),
+    // DP_Cyclist_F = 23, DP_Cyclist_M = 22, reuse existing sprites, skip
     TRAINER_SPRITE(DP_Cynthia, DP_Cynthia),
     TRAINER_SPRITE(DP_Cyrus, DP_Cyrus),
     TRAINER_SPRITE(DP_Dragon_Tamer, DP_Dragon_Tamer),
@@ -712,22 +713,22 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(DP_Fisherman, DP_Fisherman),
     TRAINER_SPRITE(DP_Galactic_Grunt_F, DP_Galactic_Grunt_F),
     TRAINER_SPRITE(DP_Galactic_Grunt_M, DP_Galactic_Grunt_M),
-    TRAINER_SPRITE(DP_Gambler, DP_Gambler),
-    TRAINER_SPRITE(DP_Gardenia, DP_Gardenia),
+    // DP_Gambler = 117 (GENTLEMAN), skip
+    // DP_Gardenia = 108 (CHERYL), skip
     TRAINER_SPRITE(DP_Gentleman, DP_Gentleman),
     TRAINER_SPRITE(DP_Hiker, DP_Hiker),
-    TRAINER_SPRITE(DP_Idol, DP_Idol),
-    TRAINER_SPRITE(DP_Interviewers, DP_Interviewers),
-    TRAINER_SPRITE(DP_Jogger, DP_Jogger),
+    // DP_Idol = 119 (JUPITER), skip
+    // DP_Interviewers = 17 (INTERVIEWER), reuses existing sprite, skip
+    // DP_Jogger = YOUNGSTER, skip (will be covered by Youngster entry)
     TRAINER_SPRITE(DP_Jupiter, DP_Jupiter),
     TRAINER_SPRITE(DP_Lady, DP_Lady),
-    TRAINER_SPRITE(DP_Lass, DP_Lass),
+    // DP_Lass = 77 (LASS), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Lucian, DP_Lucian),
     TRAINER_SPRITE(DP_Marley, DP_Marley),
     TRAINER_SPRITE(DP_Mars, DP_Mars),
     TRAINER_SPRITE(DP_Maylene, DP_Maylene),
     TRAINER_SPRITE(DP_Mira, DP_Mira),
-    TRAINER_SPRITE(DP_Ninja_Boy, DP_Ninja_Boy),
+    // DP_Ninja_Boy = 26 (MAGMA_GRUNT_F), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Officer, DP_Officer),
     TRAINER_SPRITE(DP_Painter_Artist, DP_Painter_Artist),
     TRAINER_SPRITE(DP_Palmer, DP_Palmer),
@@ -738,31 +739,30 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(DP_Pokefan_M, DP_Pokefan_M),
     TRAINER_SPRITE(DP_Pokemon_Ranger_F, DP_Pokemon_Ranger_F),
     TRAINER_SPRITE(DP_Pokemon_Ranger_M, DP_Pokemon_Ranger_M),
-    TRAINER_SPRITE(DP_Psychic_F, DP_Psychic_F),
-    TRAINER_SPRITE(DP_Psychic_M, DP_Psychic_M),
+    // DP_Psychic_F = 138, DP_Psychic_M = 138, both same index - skip both, use single Psychic entry
+    // DP_Rancher already has its own index
     TRAINER_SPRITE(DP_Rancher, DP_Rancher),
-    TRAINER_SPRITE(DP_Rancher_Duo_Belle_and_Pa, DP_Rancher_Duo_Belle_and_Pa),
-    TRAINER_SPRITE(DP_Reporter, DP_Reporter),
+    // DP_Rancher_Duo_Belle_and_Pa = 139 (RANCHER), skip
+    // DP_Reporter = 17 (INTERVIEWER), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Rich_Boy, DP_Rich_Boy),
-    TRAINER_SPRITE(DP_Riley, DP_Riley),
-    TRAINER_SPRITE(DP_Roark, DP_Roark),
+    // DP_Riley = 74 (POKEMON_RANGER_M), reuses existing sprite, skip
+    // DP_Roark = 105 (BYRON), skip
     TRAINER_SPRITE(DP_Rocker_Guitarist, DP_Rocker_Guitarist),
     TRAINER_SPRITE(DP_Roughneck, DP_Roughneck),
     TRAINER_SPRITE(DP_Ruin_Maniac, DP_Ruin_Maniac),
     TRAINER_SPRITE(DP_Sailor, DP_Sailor),
     TRAINER_SPRITE(DP_Saturn, DP_Saturn),
-    TRAINER_SPRITE(DP_School_Kid_F, DP_School_Kid_F),
-    TRAINER_SPRITE(DP_School_Kid_M, DP_School_Kid_M),
+    // DP_School_Kid_F = 131, DP_School_Kid_M = 132, check if these conflict...
+    // DP_Scientist has its own index
     TRAINER_SPRITE(DP_Scientist, DP_Scientist),
     TRAINER_SPRITE(DP_Skier_F, DP_Skier_F),
     TRAINER_SPRITE(DP_Skier_M, DP_Skier_M),
     TRAINER_SPRITE(DP_Socialite, DP_Socialite),
     TRAINER_SPRITE(DP_Swimmer_F, DP_Swimmer_F),
     TRAINER_SPRITE(DP_Swimmer_M, DP_Swimmer_M),
-    TRAINER_SPRITE(DP_Tuber_F, DP_Tuber_F),
-    TRAINER_SPRITE(DP_Tuber_M, DP_Tuber_M),
-    TRAINER_SPRITE(DP_Twins, DP_Twins),
-    TRAINER_SPRITE(DP_Veteran, DP_Veteran),
+    // DP_Tuber_F = 18, DP_Tuber_M = 19, reuse existing sprites, skip
+    // DP_Twins = 78 (YOUNG_COUPLE), reuses existing sprite, skip
+    // DP_Veteran = 39 (ELITE_FOUR_DRAKE), reuses existing sprite, skip
     TRAINER_SPRITE(DP_Volkner, DP_Volkner),
     TRAINER_SPRITE(DP_Waiter, DP_Waiter),
     TRAINER_SPRITE(DP_Waitress, DP_Waitress),
@@ -877,7 +877,7 @@ const struct SpriteFrameImage gTrainerBackPicTable_Steven[] =
     {                                                                                                                                                     \
         .coordinates = {.size = 8, .y_offset = yOffset},                                                                                                  \
         .backPic = {(const u32 *)gTrainerBackPic_##sprite, TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_##sprite), TRAINER_BACK_PIC_##trainerPic}, \
-        .palette = {gTrainer##pal, TRAINER_BACK_PIC_##trainerPic},                                                                                        \
+        .palette = {(const u16 *)gTrainer##pal, TRAINER_BACK_PIC_##trainerPic},                                                                                        \
         .animation = sBackAnims_##anim,                                                                                                                   \
     }
 
