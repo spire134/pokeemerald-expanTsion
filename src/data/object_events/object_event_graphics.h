@@ -574,6 +574,39 @@ const u16 gObjectEventPal_BeastBall[] = INCBIN_U16("graphics/balls/beast.gbapal"
 const u32 gObjectEventPic_Ball_STRANGE[] = INCBIN_U32("graphics/balls/strange.4bpp");
 const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/balls/strange.gbapal");
 #endif
+
+// Ball graphics info array for follower system
+const struct ObjectEventGraphicsInfo gPokeballGraphics[POKEBALL_COUNT] =
+{
+    [BALL_STRANGE] = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_STRANGE, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_STRANGE},
+    [BALL_POKE]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = NULL},
+    [BALL_GREAT]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_GREAT, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_GREAT},
+    [BALL_ULTRA]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_ULTRA, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_ULTRA},
+    [BALL_MASTER]  = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_MASTER, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_MASTER},
+    [BALL_PREMIER] = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_PREMIER, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_PREMIER},
+    [BALL_HEAL]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_HEAL, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_HEAL},
+    [BALL_NET]     = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_NET, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_NET},
+    [BALL_NEST]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_NEST, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_NEST},
+    [BALL_DIVE]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_DIVE, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_DIVE},
+    [BALL_DUSK]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_DUSK, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_DUSK},
+    [BALL_TIMER]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_TIMER, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_TIMER},
+    [BALL_QUICK]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_QUICK, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_QUICK},
+    [BALL_REPEAT]  = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_REPEAT, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_REPEAT},
+    [BALL_LUXURY]  = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_LUXURY, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_LUXURY},
+    [BALL_LEVEL]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_LEVEL, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_LEVEL},
+    [BALL_LURE]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_LURE, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_LURE},
+    [BALL_MOON]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_MOON, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_MOON},
+    [BALL_FRIEND]  = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_FRIEND, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_FRIEND},
+    [BALL_LOVE]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_LOVE, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_LOVE},
+    [BALL_FAST]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_FAST, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_FAST},
+    [BALL_HEAVY]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_HEAVY, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_HEAVY},
+    [BALL_DREAM]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_DREAM, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_DREAM},
+    [BALL_SAFARI]  = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_SAFARI, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_SAFARI},
+    [BALL_SPORT]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_SPORT, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_SPORT},
+    [BALL_PARK]    = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_PARK, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_PARK},
+    [BALL_BEAST]   = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_BEAST, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_BEAST},
+    [BALL_CHERISH] = {.tileTag = TAG_NONE, .paletteTag = OBJ_EVENT_PAL_TAG_BALL_CHERISH, .size = 512, .oam = &gObjectEventBaseOam_16x16, .anims = gObjectEventImageAnimTable_Standard, .images = gObjectEventPicTable_Ball_CHERISH},
+};
 #endif //OW_FOLLOWERS_POKEBALLS
 
 // Follower system palettes - stub declarations (files don't exist but needed for compilation)
