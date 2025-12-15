@@ -679,7 +679,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(RS_BRENDAN, RubySapphireBrendan),
     TRAINER_SPRITE(RS_MAY, RubySapphireMay),
     // DP trainers with unique sprites (93-162)
-    TRAINER_SPRITE(DP_Ace_Trainer_DoubleTeam, DP_Ace_Trainer_DoubleTeam),
+    // DP_Ace_Trainer_DoubleTeam = 93, conflicts with DP_Cynthia, skip
     // Note: DP_Ace_Trainer_F at 95, DP_Ace_Trainer_Snow_F also 95 - conflict, skip Snow_F
     TRAINER_SPRITE(DP_Ace_Trainer_F, DP_Ace_Trainer_F),
     TRAINER_SPRITE(DP_Ace_Trainer_M, DP_Ace_Trainer_M),

@@ -28,16 +28,19 @@ static const struct SpriteFrameImage sPicTable_ShadowExtraLarge[] = {
     obj_frame_tiles(gFieldEffectObjectPic_ShadowExtraLarge),
 };
 
+const u32 gFieldEffectObjectPic_BallLightTiles[] = INCBIN_U32("graphics/field_effects/pics/ball_light.4bpp");
 const struct SpriteFrameImage gFieldEffectObjectPic_BallLight[] = {
-    obj_frame_tiles(gFieldEffectObjectPic_BallLight),
+    obj_frame_tiles(gFieldEffectObjectPic_BallLightTiles),
 };
 
+const u32 gFieldEffectObjectPic_PokeCenterLightTiles[] = INCBIN_U32("graphics/field_effects/pics/pokecenter_light.4bpp");
 const struct SpriteFrameImage gFieldEffectObjectPic_PokeCenterLight[] = {
-    obj_frame_tiles(gFieldEffectObjectPic_PokeCenterLight),
+    obj_frame_tiles(gFieldEffectObjectPic_PokeCenterLightTiles),
 };
 
+const u32 gFieldEffectObjectPic_MartLightTiles[] = INCBIN_U32("graphics/field_effects/pics/mart_light.4bpp");
 const struct SpriteFrameImage gFieldEffectObjectPic_MartLight[] = {
-    obj_frame_tiles(gFieldEffectObjectPic_MartLight),
+    obj_frame_tiles(gFieldEffectObjectPic_MartLightTiles),
 };
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_BallLight = {
