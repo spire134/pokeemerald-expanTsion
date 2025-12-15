@@ -13230,7 +13230,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCuboneTeachableLearnset,
         .eggMoveLearnset = sCuboneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_NONE, 28, SPECIES_MAROWAK, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
-                                {EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})}),
+                                {EVO_LEVEL, 28, SPECIES_MAROWAK_ALOLA, CONDITIONS({IF_TIME, TIME_NIGHT})},
                                 {EVO_NONE, 0, SPECIES_MAROWAK_ALOLA_TOTEM}),
     },
 
