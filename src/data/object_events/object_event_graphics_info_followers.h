@@ -19,6 +19,7 @@
 
 const struct ObjectEventGraphicsInfo gPokeballGraphics[POKEBALL_COUNT] = {
     // Vanilla
+    POKEBALL_GFX_INFO(POKE),
     POKEBALL_GFX_INFO(MASTER),
     POKEBALL_GFX_INFO(ULTRA),
     POKEBALL_GFX_INFO(GREAT),

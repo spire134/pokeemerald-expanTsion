@@ -485,6 +485,7 @@
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
+#define OBJ_EVENT_PAL_TAG_BALL_POKE               0x114F
 #define OBJ_EVENT_PAL_TAG_BALL_MASTER             0x1150
 #define OBJ_EVENT_PAL_TAG_BALL_ULTRA              0x1151
 #define OBJ_EVENT_PAL_TAG_BALL_GREAT              0x1152

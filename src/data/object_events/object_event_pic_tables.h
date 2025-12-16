@@ -1545,6 +1545,9 @@ static const struct SpriteFrameImage sPicTable_DP_Youngster[] = {
 //End Platinum
 #if OW_FOLLOWERS_POKEBALLS
 // Pokeball Follower Graphics
+static const struct SpriteFrameImage sPicTable_Ball_POKE[] = {
+    overworld_ascending_frames(gObjectEventPic_Ball_POKE, 4, 4),
+};
 static const struct SpriteFrameImage sPicTable_Ball_MASTER[] = {
     overworld_ascending_frames(gObjectEventPic_Ball_MASTER, 4, 4),
 };
