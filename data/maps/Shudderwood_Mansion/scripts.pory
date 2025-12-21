@@ -7,8 +7,8 @@ script Shudderwood_Mansion_GateHouseBattle {
     msgbox(format("Seer June: You again? I was right to be cautious of you!\n"))
     applymovement(LOCALID_GATEHOUSE_SEER, moves(walk_in_place_fast_down))
     waitmovement(0)
-    msgbox(format("Seer June: Attention Drones, and behold the mighty guardian our
-    mistress has bound to our service!\n"))
+    msgbox(format("Seer June: Attention Drones, and behold the mighty guardian
+    the Maven has bound to our service!\n"))
     applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(jump_in_place_down))
     applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(jump_in_place_down))
     applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(jump_in_place_down))
@@ -53,7 +53,7 @@ script Shudderwood_Mansion_GateHouseBattle {
     waitmessage
     applymovement(LOCALID_GATEHOUSE_SEER, moves(face_right))
     waitmovement(0)
-    msgbox(format("Seer June: Retreat to the mansion! Hopefully the Mistress is merciful
+    msgbox(format("Seer June: Retreat to the mansion! Hopefully the Maven is merciful
     to us after this failure…"))
     applymovement(LOCALID_GATEHOUSE_SEER, moves(walk_faster_up*3))
     applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(walk_faster_up*3))
@@ -128,13 +128,13 @@ script Shudderwood_Mansion_Brainwashed_Experts {
         applymovement(LOCALID_SHUDDERWOOD_MANSION_MAID, moves(walk_in_place_down))
         applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_down))
         waitmovement(0)
-        msgbox(format("In Unison: Our purpose is given by the Mistress… We must serve… We must obey…\n"))
+        msgbox(format("In Unison: Our purpose is given by the Maven… We must serve… We must obey…\n"))
         trainerbattle_two_trainers(TRAINER_STEVE_1, "Steve: What? Where am I?", TRAINER_ANDREA, "Andrea: I can't remember anything!")
         applymovement(LOCALID_SHUDDERWOOD_MANSION_MAID, moves(walk_in_place_fast_left emote_question_mark walk_in_place_slow_down))
         applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_fast_right emote_question_mark walk_in_place_slow_down))
         waitmovement(0)
         msgbox(format("Steve: I… I remember now! The mansion… The Seer… She did something to my mind!\n"))
-        msgbox(format("Andrea: We were brainwashed to serve the Mistress… Forced to make those awful uniforms day and night! But now we're free!\n"))
+        msgbox(format("Andrea: We were brainwashed to serve the Maven… Forced to make those awful uniforms day and night! But now we're free!\n"))
         waitmessage
         applymovement(LOCALID_SHUDDERWOOD_MANSION_SCIENTIST, moves(walk_in_place_slow_down))
         waitmovement(0)
@@ -146,7 +146,7 @@ script Shudderwood_Mansion_Brainwashed_Experts {
         but here's a token of my appreciation for freeing us!\n"))
         giveitem(ITEM_SILK_SCARF, 1)
         waitmessage
-        msgbox(format("Steve: Be careful, Ranger. The Mistress has more servants under her spell deeper in the mansion.\n"))
+        msgbox(format("Steve: Be careful, Ranger. The Maven has more servants under her spell deeper in the mansion.\n"))
         setflag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_EXPERTS_FREED)
         releaseall
     } else {
@@ -168,7 +168,7 @@ script Shudderwood_Mansion_Brainwashed_Gardener {
     Here, take this watering pail. I can't think about gardening for a while after what they made me do!"))
     giveitem(ITEM_WAILMER_PAIL)
     waitmessage
-    msgbox(format("Celina: Be careful further in the mansion. The Mistress has even charmed
+    msgbox(format("Celina: Be careful further in the mansion. The Maven has even charmed
     the old Master of the Mansion!"))
     waitmessage
     setflag(FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED)
@@ -196,7 +196,7 @@ script Shudderwood_Mansion_RunningGuard_2 {
     format("Drone: You won't get past me!"),
     format("Drone: Ugh… I'm bugged out.")
     )
-    msgbox(format("Drone: The Mistress has dominated everyone here!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Drone: The Maven has dominated everyone here!"), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
 }
@@ -211,7 +211,7 @@ script Shudderwood_Mansion_PoolGuard {
     waitmessage
     applymovement(LOCALID_SHUDDERWOOD_MANSION_POOL_DRONE, moves(jump_in_place_down emote_double_exclamation_mark))
     waitmovement(0)
-    msgbox(format("Drone: Wait! The Mistress… She's in my head! No, I was wrong to doubt us, Mistress!"))
+    msgbox(format("Drone: Wait! The Maven… She's in my head! No, I was wrong to doubt us, Maven!"))
     waitmessage
     playse(SE_M_NIGHTMARE)
     waitse

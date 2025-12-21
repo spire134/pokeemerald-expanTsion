@@ -1,9 +1,141 @@
 mapscripts Port_Plunder_MapScripts {}
 
+script Port_Plunder_Garrick_Fight_Trigger_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, moves(walk_slow_down walk_slow_down face_right))
+    waitmovement(0)
+    goto(Port_Plunder_Garrick_Fight_Trigger)
+}
+
+script Port_Plunder_Guard_Battle_Trigger_2 {
+    lockall
+    applymovement(LOCALID_PLAYER, moves(walk_slow_down face_right))
+    waitmovement(0)
+    goto(Port_Plunder_Garrick_Fight_Trigger)
+}
+
+script Port_Plunder_Patrol_Battle_Trigger_3 {
+    lockall
+    applymovement(LOCALID_PLAYER, moves(walk_slow_up face_right))
+    waitmovement(0)
+    goto(Port_Plunder_Garrick_Fight_Trigger)
+}
+
 script Port_Plunder_Garrick_Fight_Trigger {
-    lock
-    msgbox(format("THIS IS THE END OF THE DEMO! THANK YOU FOR PLAYING!\p"))
+    lockall
+    applymovement(LOCALID_GARRICK, moves(face_player emote_question_mark))
+    waitmovement(0)
+    msgbox(format("Garrick: Whoa there, Ranger!\p"
+    "What brings you to my dockhouse? Here for the supplies, I bet."))
+    waitmessage
+    msgbox(format("Garrick: Sorry, but I can't just hand them over.\p"))
+    applymovement(LOCALID_PLAYER, moves(walk_slow_right))
+    waitmovement(0)
+    msgbox(format("Garrick: Insistent one, huh? I like that."))
+    waitmessage
+    applymovement(LOCALID_GARRICK, moves(walk_in_place_slow_left))
+    waitmovement(0)
+    msgbox(format("Garrick: You made a lot of noise getting here, Rookie.\p"
+    "Step quieter, or you won't last in the more dangerous parts of Corymbra."))
+    waitmessage
+    applymovement(LOCALID_PLAYER, moves(emote_exclamation_mark))
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    msgbox(format("Garrick: Let me guess. Mara sent you?\p"
+    "She probably gave you the speech about 'Taming the Wild.'\l"
+    "Funny. I wrote that speech fifteen years ago."))
+    waitmessage
+    msgbox(format("Garrick: I'm Garrick. Former Captain of the Coastal Division.\p"
+    "Now? I'm the guy trying to stop you kids from making a mistake."))
+    waitmessage
+    msgbox(format("Garrick: You want the supplies?\p"
+    "First tell me, are you just following orders blindly?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox(format("Garrick: Ha. At least you've got a sense of humor.\p"
+        "Let's see if you've got the skill to back it up."))
+    } else {
+        msgbox(format("Garrick: Smart answer. But I know Mara doesn't send quitters.\p"
+        "We're in for a fight, whether you like it or not."))
+    }
+    waitmessage
+    applymovement(LOCALID_GARRICK, moves(walk_in_place_slow_left walk_slow_left walk_in_place_slow_down))
+    waitmovement(0)
+    msgbox(format("Garrick: This island doesn't play fair.\p"
+    "Neither should us."))
+    waitmessage
+    applymovement(LOCALID_GARRICK, moves(emote_exclamation_mark face_left))
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    msgbox(format("Garrick: Think fast!"))
+    playse(SE_BALL_THROW)
+    waitse
+    applymovement(LOCALID_PLAYER, moves(emote_question_mark))
+    waitmovement(0)
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 1)
+    setvar(VAR_0x8006, 6)
+    setvar(VAR_0x8007, 3)
+    special(ShakeCamera)
+    waitstate
+    playse(SE_BREAKABLE_DOOR)
+    waitse
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_left))
+    waitmovement(0)
+    trainerbattle_no_intro(TRAINER_WATTSON_1, format("Garrick: Hmph. Not bad."))
+    msgbox(format("Garrick: Take the supplies. I'm sure your station will find them useful.\p"))
+    waitmessage
+    msgbox(format("Garrick: Here, take this HM as well. It will let you uncover the secrets of this island."))
+    waitmessage
+    giveitem(ITEM_HM04)
+    waitmessage
+    applymovement(LOCALID_GARRICK, moves(face_down))
+    waitmovement(0)
+    msgbox(format("Garrick: But listen to me:\p"
+    "The Rangers are digging up things that should stay buried.\l"
+    "We aren't the heroes here. We're the intruders."))
+    waitmessage
+    msgbox(format("Garrick: I'll be watching.\p"
+    "Try not to get yourself into too much trouble before I decide if you're worth saving."))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    applymovement(LOCALID_GARRICK, moves(walk_down walk_down walk_down))
+    waitmovement(0)
+    removeobject(LOCALID_GARRICK)
+    setflag(FLAG_BADGE03_GET)
+    addvar(VAR_PIRATE_QUEST_PROGRESSION, 1)
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+}
+
+script Port_Plunder_Guard_Battle_Trigger {
+    trainerbattle_single(TRAINER_GRUNT_MT_PYRE_3, 
+        format("Avast, ye scurvy dog! Ye not be passin' through 'ere!"),
+        format("I wish I wasn't washed.")
+        )
+    msgbox(format("Har har! The Captain'll make ye walk the plank fer this!"), MSGBOX_AUTOCLOSE)
     waitmessage
     release
-    end
 }
+
+script Port_Plunder_Patrol_Battle_Trigger {
+    trainerbattle_single(TRAINER_GRUNT_MT_PYRE_2, 
+        format("Shiver me timbers! A landlubber tryin' to sneak past ol' Garrick's crew!"),
+        format("Arr… Ye bested me, ye bilge rat!")
+        )
+    msgbox(format("Mark me words, ye'll be sleepin' with the Magikarp soon enough!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Port_Plunder_First_Mate_Battle {
+    trainerbattle_single(TRAINER_GRUNT_WEATHER_INST_4, 
+        format("Yo ho ho! Thought ye could just waltz into our port, did ye?"),
+        format("Blast it all… Bested by a greenhorn!")
+        )
+    msgbox(format("Captain Garrick'll keelhaul ye fer this, mark me words!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+

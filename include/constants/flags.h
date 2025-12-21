@@ -562,10 +562,10 @@
 #define FLAG_HIDDEN_ITEM_CRUSTED_QUARRY_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
+#define FLAG_HIDDEN_ITEM_FREEBOOT_BAY_IRON                   (FLAG_HIDDEN_ITEMS_START + 0x13)
+#define FLAG_HIDDEN_ITEM_FREEBOOT_BAY_BIG_PEARL              (FLAG_HIDDEN_ITEMS_START + 0x14)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
+#define FLAG_HIDDEN_ITEM_HAZOLT_VILLAGE_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19)
@@ -686,7 +686,7 @@
 #define FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_EXPERTS_FREED      0x27D // Unused Flag
 #define FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED     0x27E // Unused Flag
 #define FLAG_SHUDDERWOOD_MANSION_POOL_DRONE_DEFEATED            0x27F // Unused Flag
-#define FLAG_UNUSED_0x280  0x280 // Unused Flag
+#define FLAG_HELPED_SEER_LYSA  0x280 // Unused Flag
 #define FLAG_UNUSED_0x281  0x281 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
@@ -1074,7 +1074,7 @@
 #define FLAG_ITEM_CRUSTED_QUARRY_EVIOLITE                           0x3FB
 #define FLAG_ITEM_CRUSTED_QUARRY_FLOAT_STONE                        0x3FC
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_KEY                           0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
+#define FLAG_ITEM_ROCKY_ROAD_SHED_SHELL                             0x3FE
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_STATUE                        0x3FF
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_DUSK_STONE                    0x400
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_SPELL_TAG                     0x401
@@ -1082,21 +1082,21 @@
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_TIMID_MINT                    0x403
 #define FLAG_ITEM_SHUDDERWOOD_MANSION_RARE_CANDY                    0x404
 #define FLAG_ITEM_SHOREFALL_STRAND_NEST_BALL                        0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
-#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
-#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
-#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
+#define FLAG_ITEM_HAZOLT_VILLAGE_NUGGET                             0x406
+#define FLAG_ITEM_ROUTE_ROCKY_ROAD_FOCUS_BAND                       0x407
+#define FLAG_ITEM_ROUTE_ROCKY_ROAD_CALCIUM                          0x408
+#define FLAG_ITEM_ROUTE_ROCKY_ROAD_RARE_CANDY                       0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
+#define FLAG_ITEM_ROUTE_ROCKY_ROAD_ZINC                             0x40A
+#define FLAG_ITEM_ROUTE_ROCKY_ROAD_CARBOS                           0x40B
+#define FLAG_ITEM_FREEBOOT_BAY_GREAT_BALL                           0x40C
+#define FLAG_ITEM_MAGNET_CAVE_DEPTHS_CELL_BATTERY                   0x40D
+#define FLAG_ITEM_MAGNET_CAVE_DEPTHS_ULTRA_BALL                     0x40E
+#define FLAG_ITEM_PORT_PLUNDER_IRON_BALL                            0x40F
+#define FLAG_ITEM_PORT_PLUNDER_POISON_BARB                          0x410
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
+#define FLAG_ITEM_ROCKY_ROAD_TM_IRON_TAIL                           0x414
 #define FLAG_ITEM_STATIC_VALLEY_FULL_HEAL                           0x415
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417

@@ -34,7 +34,7 @@ script Should_Read_Note {
     if (!flag(FLAG_NOTE_READ)) {
     lock
     msgbox(format(
-        "Don't forget to read the note on your desk first.\n"
+        "Don't forget to read the note the Captain left on your desk!\n"
         ))
     waitbuttonpress
     applymovement(LOCALID_PLAYER, moves(walk_up))
@@ -56,27 +56,15 @@ script Should_Read_Note {
 script RangerA_Script {
     lock
     faceplayer
-    if (!flag(FLAG_MET_RANGER_A)) {
-        msgbox(format(
-            "Ranger Tasmin: Logistics and comms. I keep the manifests, the radios,"
-            "and the schedule.\p" 
-            "It helps if everyone reads the schedule.\p"
-            "Welcome aboard."
-        ))
-        setflag(FLAG_MET_RANGER_A)
-    } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox(format("Tasmin: Meet the Captain when you're ready. I'll log your gear after."))
-    } else {
-        # Starter picked; give a quick loadout tip per choice
-        switch (var(VAR_STARTER_MON)) {
-            case 0:
-                msgbox("Tasmin: TURTWIG. Good call. Grab spare line and a repel case. Canopy routes get tight.")
-            case 1:
-                msgbox("Tasmin: Torchic. I'll stage thermal wraps and spare canteens. Heat drills tomorrow.")
-            case 2:
-                msgbox("Tasmin: Froakie. Drybag and water filters are in the crate by the door. Flood lanes are messy.")
-        }
-    }
+    msgbox(format(
+        "Tasmin: I'm Ranger Tasmin. Logistics and operations coordination.\l"
+        "I maintain equipment manifests, communication protocols, and mission schedules.\p"
+        "Before you ask--yes, some call me 'quartermaster.' I prefer not to.\l"
+        "It makes me sound like a pirate.\p"
+        "When you meet the Captain, I recommend selecting Turtwig as your partner.\l"
+        "Sturdy. Reliable. Excellent weight distribution for technical climbing.\p"
+        "The data supports this choice."
+    ))
     release
     end
 }
@@ -84,24 +72,16 @@ script RangerA_Script {
 script RangerB_Script {
     lock
     faceplayer
-    if (!flag(FLAG_MET_RANGER_B)) {
-        msgbox(format(
-            "Ranger Corin: Ropes and rescue. If it needs hauling, anchoring, or not falling,\l"
-            "I'm your guy. Congrats on passing the boards."
-        ))
-        setflag(FLAG_MET_RANGER_B)
-    } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox(format("Corin: Captain runs tight ops. Bring questions. She likes questions with plans."))
-    } else {
-        switch (var(VAR_STARTER_MON)) {
-            case 0:
-                msgbox("Corin: TURTWIG's grip is money on wet stone. We'll teach you belays on the karst.")
-            case 1:
-                msgbox("Corin: Torchic hits hard early. Mind your footing in crosswinds. I'll run you through anchors.")
-            case 2:
-                msgbox("Corin: Froakie's a natural in surge pools. We'll do throw-bag practice after lunch.")
-        }
-    }
+    msgbox(format(
+        "Corin: Hey! I'm Ranger Corin. Ropes, rescue, and keeping people from\l"
+        "becoming permanent fixtures on cliff faces. Welcome to Steel Team.\p"
+        "If you're smart, you'll pick Torchic when you see the Captain.\l"
+        "Fast, fierce, and it'll warm you right up when the storms hit.\p"
+        "Plus, Tasmin keeps saying I need to stop 'playing favorites' with the--\p"
+        "Tasmin: CORIN.\p"
+        "Corin: --with the starter selection process. Very professional concern from our\l"
+        "quarter--I mean, logistics coordinator."
+    ))
     release
     end
 }
@@ -110,24 +90,15 @@ script RangerB_Script {
 script RangerSolo_Script {
     lock
     faceplayer
-    if (!flag(FLAG_MET_RANGER_SOLO)) {
-        msgbox(format(
-            "Eon: Recon and cartography. I draw the island so you don't get lost twice.\l"
-            "If the sky has two winds, follow the lower one."
-        ))
-        setflag(FLAG_MET_RANGER_SOLO)
-    } elif (!flag(FLAG_GOT_STARTER)) {
-        msgbox(format("Eon: Forecast says calm. Gut says otherwise. Captain's ready when you are."))
-    } else {
-        switch (var(VAR_STARTER_MON)) {
-            case 0:
-                msgbox("Eon: TURTWIG tracks quiet. Good for canopy surveys. Name it. Names keep you honest.")
-            case 1:
-                msgbox("Eon: Torchic's tempo helps in sprints. Watch for dry lightning on the flats.")
-            case 2:
-                msgbox("Eon: Froakie opens flood paths. We'll chart sluices after the storm clears.")
-        }
-    }
+    msgbox(format(
+        "Eon: Ranger Eon. Reconnaissance and cartography.\l"
+        "I chart what others miss.\p"
+        "You passed the boards. Congratulations. But Corymbra isn't a test.\l"
+        "It's a graveyard for careless Rangers.\p"
+        "The Captain will offer you a partner. If you value stealth and adaptability,\l"
+        "choose Froakie. It moves through hostile terrain without announcing itself.\p"
+        "Unlike most recruits."
+    ))
     release
     end
 }

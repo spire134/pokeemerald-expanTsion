@@ -175,8 +175,8 @@ IVs: 10 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
 
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Snope
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
@@ -217,30 +217,51 @@ IVs: 16 HP / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Last Resort  
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Nixon
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky
+
+Kingler
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Carvanha
-Level: 36
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Ricko
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky
 
-Zubat
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Remoraid (M) @ Poison Barb  
+Ability: Sniper  
+Level: 26  
+Tera Type: Water  
+EVs: 52 SpA / 52 Spe  
+IVs: 0 Atk  
+- Water Pulse  
+- Charge Beam  
+- Acid Spray  
+- Focus Energy  
+
+Clauncher @ Oran Berry  
+Ability: Mega Launcher  
+Level: 26  
+Tera Type: Water  
+EVs: 28 SpA / 88 SpD  
+- Cut  
+- Water Pulse  
+- Venoshock  
+- Aqua Jet
 
 === TRAINER_GABRIELLE_1 ===
 Name: GABRIELLE
@@ -347,7 +368,7 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Risky
 
 Drednaw @ King's Rock  
 Ability: Strong Jaw  
@@ -551,47 +572,69 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Quinton
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
+Clauncher
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Totodile
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sneasel
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Sanders
+Class: Pirate
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Risky
 
-Poochyena
-Level: 30
+Wishiwashi
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 30
+Poliwhirl
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Crabrawler
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
-Name: GRUNT
-Class: Team Aqua
+Name: Beatrice
+Class: Pirate
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Risky / Basic Trainer / HP Aware
 
-Carvanha
-Level: 28
+Frillish
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Murkrow
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Sandyghast
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
 Name: GRUNT
@@ -5052,14 +5095,14 @@ Pic: Leaf
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Basic Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / HP Aware
 
 Diglett-Alola (M)  
 Ability: Tangling Hair  
 Level: 13  
 Naive Nature  
 IVs: 6 HP / 20 Atk / 10 Def / 20 SpA / 0 SpD / 27 Spe  
-- Metal Claw  
+- Cut  
 - Growl  
 - Mud Shot  
 - Ally Switch  
@@ -5070,7 +5113,7 @@ Level: 13
 IVs: 12 HP / 22 Def / 10 SpA / 10 SpD / 8 Spe  
 - Mud-Slap  
 - Headbutt  
-- Metal Claw  
+- Cut  
 - Rock Tomb  
 
 Bronzor  
@@ -5194,7 +5237,7 @@ Tera Type: Normal
 EVs: 44 SpD / 52 Spe  
 Mild Nature  
 IVs: 15 HP / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Double Team  
+- Tailwind  
 - Chatter  
 - Nasty Plot  
 - Ominous Wind  
@@ -5320,7 +5363,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Feint Attack
 
 === TRAINER_WINONA_1 ===
-Name: Mistress
+Name: Delphine
 Class: Palace Maven
 Pic: DP Fantina
 Gender: Female
@@ -5344,9 +5387,9 @@ Shedinja @ Normal Gem
 Ability: Wonder Guard  
 Level: 37  
 Tera Type: Bug  
-EVs: 88 Atk / 52 Spe  
+EVs: 108 Atk / 102 Spe  
 Adamant Nature  
-IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 16 Spe  
+IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 25 Spe  
 - Baton Pass  
 - Agility  
 - Will-O-Wisp  
@@ -5358,7 +5401,7 @@ Level: 37
 Tera Type: Bug  
 EVs: 60 HP / 56 SpA / 132 SpD  
 Sassy Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+IVs: 20 HP / 0 Atk / 20 Def / 10 SpA / 20 SpD / 20 Spe  
 - Revival Blessing  
 - Psychic Noise  
 - Struggle Bug  
@@ -10512,7 +10555,7 @@ Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GARRISON ===
-Name: GARRISON
+Name: Garrison
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -10520,8 +10563,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 26
+Gligar
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Omanyte
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cufant
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LYDIA_2 ===
@@ -11463,7 +11514,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MT_CHIMNEY ===
-Name: Mistress
+Name: Maasd
 Class: Hive
 Pic: Magma Admin
 Gender: Male
@@ -16179,8 +16230,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 === TRAINER_WINONA_2 ===
-Name: Mistress
-Class: Leader
+Name: Delphine
+Class: Palace Maven
 Pic: Leader Winona
 Gender: Female
 Music: Female
@@ -16191,9 +16242,9 @@ Shedinja @ Normal Gem
 Ability: Wonder Guard  
 Level: 37  
 Tera Type: Bug  
-EVs: 88 Atk / 52 Spe  
+EVs: 108 Atk / 102 Spe  
 Adamant Nature  
-IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 16 Spe  
+IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 25 Spe  
 - Baton Pass  
 - Agility  
 - Will-O-Wisp  
@@ -16205,7 +16256,7 @@ Level: 37
 Tera Type: Bug  
 EVs: 60 HP / 56 SpA / 132 SpD  
 Sassy Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+IVs: 20 HP / 0 Atk / 20 Def / 10 SpA / 20 SpD / 20 Spe  
 - Revival Blessing  
 - Psychic Noise  
 - Struggle Bug  

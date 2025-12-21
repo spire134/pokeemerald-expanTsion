@@ -10,7 +10,7 @@ script Shudderwood_LeftDrone {
     applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(face_left))
     waitmovement(0)
     msgbox(format("Drones: Mutter mutter… Glory for us if we win perhaps?\n"
-    "Buzz buzz… He beat the Seer we saw the Mistress punish earlier!\n"))
+    "Buzz buzz… He beat the Seer we saw the Maven punish earlier!\n"))
     waitmessage
     applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(face_down))
     applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(face_down))
@@ -27,7 +27,7 @@ script Shudderwood_LeftDrone {
         msgbox(format("Drones: Bested, BESTED?!\n"))
         applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(walk_in_place_fast_down))
         msgbox(format("Drones: Gah! You've bested us…\n"
-        "The Mistress will not be pleased…\n"))
+        "The Maven will not be pleased…\n"))
         waitmessage
         msgbox(format("Seer June: You have more immediate concerns, simpletons!\n"
         "The Ranger has defeated you both at once?!"))

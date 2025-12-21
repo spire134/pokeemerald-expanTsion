@@ -1016,21 +1016,21 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_VOLBEAT
     },
-    [INGAME_TRADE_HORSEA] =
+    [INGAME_TRADE_LILEEP] =
     {
-        .nickname = _("SEASOR"),
-        .species = SPECIES_HORSEA,
-        .ivs = {5, 4, 4, 4, 5, 4},
-        .abilityNum = 0,
+        .nickname = _("Sarah"),
+        .species = SPECIES_LILEEP,
+        .ivs = {30, 14, 30, 14, 25, 14},
+        .abilityNum = 2,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
-        .personality = 0x7F,
-        .heldItem = ITEM_WAVE_MAIL,
+        .personality = 0x07,
+        .heldItem = ITEM_SITRUS_BERRY,
         .mailNum = 1,
-        .otName = _("SKYLAR"),
+        .otName = _("Chuck"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_PYUKUMUKU
     },
     [INGAME_TRADE_HONEDGE] =
     {

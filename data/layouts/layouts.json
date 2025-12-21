@@ -4820,6 +4820,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Desert_Outpost/border.bin",
       "blockdata_filepath": "data/layouts/Desert_Outpost/map.bin"
+    },
+    {
+      "id": "LAYOUT_COUPLES_CANYON",
+      "name": "Couples_Canyon_Layout",
+      "width": 30,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Couples_Canyon/border.bin",
+      "blockdata_filepath": "data/layouts/Couples_Canyon/map.bin"
     }
   ]
 }

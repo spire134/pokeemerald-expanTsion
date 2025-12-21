@@ -1239,3 +1239,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Magnet_Cave_Depths/scripts.inc"
 
 	.include "data/maps/Desert_Outpost/scripts.inc"
+
+	.include "data/maps/Couples_Canyon/scripts.inc"

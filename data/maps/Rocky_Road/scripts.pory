@@ -36,4 +36,10 @@ script Rocky_Road_Hiker {
     waitmessage
 }
 
-
+script Rocky_Road_Rest_House_Sign {
+    lock
+    msgbox(format("Welcome to the Rocky Road Rest House!\p"
+    "No pirates allowed!"))
+    waitmessage
+    release
+}

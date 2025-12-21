@@ -1310,6 +1310,10 @@
     {
       "id": "MAPSEC_MAGNET_CAVE_DEPTHS",
       "name": "Magnet Depths"
+    },
+    {
+      "id": "MAPSEC_COUPLE_CANYON",
+      "name": "Couple's Canyon"
     }
   ]
 }
