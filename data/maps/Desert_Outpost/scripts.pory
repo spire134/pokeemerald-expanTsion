@@ -99,4 +99,11 @@ script Lileep_Trade_NotRequestedMon {
     release
 }
 
+script Lileep_Trade_Completed {
+    msgbox(format(
+        "Ace Chuck: Thanks again for that {STR_VAR_1} earlier!\p"
+        "My Pyukumuku keeps my canteen nice and full!"
+    ))
+    release
+}
 

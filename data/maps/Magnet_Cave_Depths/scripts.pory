@@ -10,7 +10,7 @@ script Magnet_Cave_Depths_Hiker {
 }
 
 script Magnet_Cave_Depths_Couple {
-    trainerbattle_single(TRAINER_COUPLE_MAGNET_CAVE_1, 
+    trainerbattle_single(TRAINER_KATE_AND_JOY, 
     format("Our favorite pastime is exploring caves together!\n"
     "Especially ones with Electric-type Pokémon!"),
     format("Oh no, our POKéMON are out of energy!")

@@ -4,21 +4,21 @@ script Port_Plunder_Garrick_Fight_Trigger_1 {
     lockall
     applymovement(LOCALID_PLAYER, moves(walk_slow_down walk_slow_down face_right))
     waitmovement(0)
-    goto(Port_Plunder_Garrick_Fight_Trigger)
+    goto(Port_Plunder_Garrick_Fight_Trigger_4)
 }
 
-script Port_Plunder_Guard_Battle_Trigger_2 {
+script Port_Plunder_Garrick_Fight_Trigger_2 {
     lockall
     applymovement(LOCALID_PLAYER, moves(walk_slow_down face_right))
     waitmovement(0)
-    goto(Port_Plunder_Garrick_Fight_Trigger)
+    goto(Port_Plunder_Garrick_Fight_Trigger_4)
 }
 
-script Port_Plunder_Patrol_Battle_Trigger_3 {
+script Port_Plunder_Garrick_Fight_Trigger_3 {
     lockall
     applymovement(LOCALID_PLAYER, moves(walk_slow_up face_right))
     waitmovement(0)
-    goto(Port_Plunder_Garrick_Fight_Trigger)
+    goto(Port_Plunder_Garrick_Fight_Trigger_4)
 }
 
 script Port_Plunder_Garrick_Fight_Trigger_4 {
