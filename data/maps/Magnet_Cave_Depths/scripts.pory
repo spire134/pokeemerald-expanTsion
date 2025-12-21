@@ -1,1 +1,10 @@
 mapscripts Magnet_Cave_Depths_MapScripts {}
+
+script Magnet_Cave_Depths_Hiker {
+    trainerbattle_single(TRAINER_SAWYER_1, 
+    format("A hike through a cave beats the desert any day!"),
+    format("Out of juice!")
+    )
+    msgbox(format("This cave has some 'shocking' Pokémon!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}

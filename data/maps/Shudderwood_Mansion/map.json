@@ -549,15 +549,6 @@
       "var": "VAR_MANSION_PROGRESSION",
       "var_value": "1",
       "script": "Shudderwood_Mansion_GateHouseBattle"
-    },
-    {
-      "type": "trigger",
-      "x": 41,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_MANSION_PROGRESSION",
-      "var_value": "6",
-      "script": "Shudderwood_Mansion_UpperFloorSkip"
     }
   ],
   "bg_events": []

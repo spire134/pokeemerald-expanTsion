@@ -82,16 +82,24 @@ Music: Male
 Double Battle: No
 
 === TRAINER_SAWYER_1 ===
-Name: SAWYER
+Name: Samson
 Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Stall
 
-Geodude
-Level: 21
+Rhyhorn
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hippopotas
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Larvitar
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
@@ -631,7 +639,7 @@ Murkrow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandyghast
+Sandygast
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5753,29 +5761,52 @@ Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_KATE_AND_JOY ===
-Name: KATE & JOY
-Class: Sr And Jr
-Pic: Sr And Jr
+Name: Max & Ruby
+Class: Young Couple
+Pic: DP Young Couple
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Check Bad Move
+AI: Basic Trainer / HP Aware
 
-Spinda
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
+Pachirisu (F) @ Focus Sash  
+Ability: Volt Absorb  
+Level: 32  
+Tera Type: Electric  
+- Nuzzle  
+- Discharge  
+- Electro Ball  
+- Super Fang  
 
-Slaking
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Focus Punch
-- Yawn
-- Slack Off
-- Feint Attack
+Pincurchin @ Electric Seed  
+Ability: Electric Surge  
+Level: 33  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Recover  
+- Charge  
+- Rising Voltage  
+- Chilling Water  
+
+Jolteon (M) @ Air Balloon  
+Ability: Volt Absorb  
+Level: 33  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Signal Beam  
+- Electro Ball  
+- Agility  
+- Mud-Slap  
+
+Heliolisk (M) @ Berry Juice  
+Ability: Dry Skin  
+Level: 34  
+Tera Type: Electric  
+IVs: 0 Atk  
+- Electro Ball  
+- Electric Terrain  
+- Swift  
+- Magnet Rise  
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: ANNA & MEG
