@@ -255,9 +255,3 @@ script Shudderwood_Mansion_Brainwashed_Butler {
     waitmessage
     releaseall
 }
-
-script Shudderwood_Mansion_UpperFloorSkip {
-    lock
-    warp(MAP_SHUDDERWOOD_MANSION_UPPER, 26, 9)
-    release
-}
