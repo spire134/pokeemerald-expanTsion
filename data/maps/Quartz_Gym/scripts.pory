@@ -168,6 +168,13 @@ script Quartz_Gym_WeakpointChallenge {
 script Quartz_CaptRojan {
     lock
     faceplayer
+    if (flag(FLAG_BADGE02_GET)) {
+        msgbox(format("Captain Rojan: You've proven your skill by earning the Rock Smash HM!\p"
+        "Keep up the great work, Ranger!"))
+        waitmessage
+        release
+        end
+    } 
     if (!flag(FLAG_TALKED_TO_CORIN)) {
         setflag(FLAG_TALKED_TO_ROJAN)
         setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
