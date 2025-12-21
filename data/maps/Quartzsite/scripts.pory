@@ -75,32 +75,24 @@ script Quartz_PumpSign {
 }
 
 script Quartz_Hive_LeftGuard {
-    lock
-    faceplayer
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_1, 
     format("Hive Drone: You think you can just walk around here?\n"),
     format("Hive Drone: Ugh… You got lucky this time, Ranger.")
     )
     msgbox(format("Hive Drone: The Seer won't be pleased…"), MSGBOX_AUTOCLOSE)
     waitmessage
-    release
 }
 
 script Quartz_Hive_RightGuard {
-    lock
-    faceplayer
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_2, 
     format("Hive Drone: This area is off-limits to Rangers!\n"),
     format("Hive Drone: No... How could I lose to a Ranger…")
     )
     msgbox(format("Hive Drone: The Seer punish us for this…"), MSGBOX_AUTOCLOSE)
     waitmessage
-    release
 }
 
 script Quartz_Hive_RunningGuard {
-    lock
-    faceplayer
     trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_3, 
     format("Hive Drone: You can't be here, Ranger!\n"
     "The Seer is set on the mission!"),
@@ -108,7 +100,6 @@ script Quartz_Hive_RunningGuard {
     )
     msgbox(format("Hive Drone: The Seer will be unhappy…"), MSGBOX_AUTOCLOSE)
     waitmessage
-    release
 }
 
 script Quartz_GoodRod_Fisherman {

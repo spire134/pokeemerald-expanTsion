@@ -13,7 +13,7 @@ script Quartz_TunnelCutscene {
         applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_fast_left, emote_double_exclamation_mark))
         waitmovement(0)
         msgbox(format("Corin: Haha! Never get distracted in a fight, even for pizza!"))
-        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_fast_left))
+        applymovement(LOCALID_TUNNEL_CORIN, moves(walk_in_place_fast_left))
         waitmovement(0)
         msgbox(format("Corin: Now, Gulpin! Use Mega Punch!\pGulpin: Guuuu!"))
         applymovement(LOCALID_TUNNEL_GULPIN, moves(walk_in_place_fast_left, walk_in_place_fast_left))

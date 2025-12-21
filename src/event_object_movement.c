@@ -629,6 +629,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_Worker,             OBJ_EVENT_PAL_DP_WORKER},
     {gObjectEventPal_DP_YoungCouple,        OBJ_EVENT_PAL_DP_YOUNG_COUPLE},
     {gObjectEventPal_DP_Youngster,          OBJ_EVENT_PAL_DP_YOUNGSTER},
+    {gObjectEventPal_CuttableTree,          OBJ_EVENT_PAL_TAG_CUTTABLE_TREE},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
