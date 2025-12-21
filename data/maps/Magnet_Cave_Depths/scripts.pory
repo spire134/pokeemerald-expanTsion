@@ -8,3 +8,13 @@ script Magnet_Cave_Depths_Hiker {
     msgbox(format("This cave has some 'shocking' Pokémon!"), MSGBOX_AUTOCLOSE)
     waitmessage
 }
+
+script Magnet_Cave_Depths_Couple {
+    trainerbattle_single(TRAINER_COUPLE_MAGNET_CAVE_1, 
+    format("Our favorite pastime is exploring caves together!\n"
+    "Especially ones with Electric-type Pokémon!"),
+    format("Oh no, our POKéMON are out of energy!")
+    )
+    msgbox(format("We should head to the surface soon, it's getting late."), MSGBOX_AUTOCLOSE)
+    waitmessage
+}

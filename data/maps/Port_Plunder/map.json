@@ -141,7 +141,7 @@
       "elevation": 0,
       "var": "VAR_PIRATE_QUEST_PROGRESSION",
       "var_value": "1",
-      "script": "Port_Plunder_Garrick_Fight_Trigger"
+      "script": "Port_Plunder_Garrick_Fight_Trigger_4"
     },
     {
       "type": "trigger",

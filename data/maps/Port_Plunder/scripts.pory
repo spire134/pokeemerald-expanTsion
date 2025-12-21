@@ -21,7 +21,7 @@ script Port_Plunder_Patrol_Battle_Trigger_3 {
     goto(Port_Plunder_Garrick_Fight_Trigger)
 }
 
-script Port_Plunder_Garrick_Fight_Trigger {
+script Port_Plunder_Garrick_Fight_Trigger_4 {
     lockall
     applymovement(LOCALID_GARRICK, moves(face_player emote_question_mark))
     waitmovement(0)
