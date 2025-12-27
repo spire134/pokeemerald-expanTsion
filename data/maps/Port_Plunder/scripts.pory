@@ -29,7 +29,7 @@ script Port_Plunder_Garrick_Fight_Trigger_4 {
     "What brings you to my dockhouse? Here for the supplies, I bet."))
     waitmessage
     msgbox(format("Garrick: Sorry, but I can't just hand them over.\p"))
-    applymovement(LOCALID_PLAYER, moves(walk_slow_right))
+    applymovement(LOCALID_PLAYER, moves(walk_slow_right walk_slow_right))
     waitmovement(0)
     msgbox(format("Garrick: Insistent one, huh? I like that."))
     waitmessage
@@ -38,7 +38,7 @@ script Port_Plunder_Garrick_Fight_Trigger_4 {
     msgbox(format("Garrick: You made a lot of noise getting here, Rookie.\p"
     "Step quieter, or you won't last in the more dangerous parts of Corymbra."))
     waitmessage
-    applymovement(LOCALID_PLAYER, moves(emote_exclamation_mark))
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement(0)
     playse(SE_PIN)
     waitse
@@ -49,6 +49,8 @@ script Port_Plunder_Garrick_Fight_Trigger_4 {
     msgbox(format("Garrick: I'm Garrick. Former Captain of the Coastal Division.\p"
     "Now? I'm the guy trying to stop you kids from making a mistake."))
     waitmessage
+    applymovement(LOCALID_GARRICK, moves(walk_in_place_slow_down))
+    waitmovement(0)
     msgbox(format("Garrick: You want the supplies?\p"
     "First tell me, are you just following orders blindly?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
@@ -100,9 +102,14 @@ script Port_Plunder_Garrick_Fight_Trigger_4 {
     "Try not to get yourself into too much trouble before I decide if you're worth saving."))
     waitmessage
     fadescreen(FADE_TO_BLACK)
+    playse(SE_EXIT)
+    waitse
     applymovement(LOCALID_GARRICK, moves(walk_down walk_down walk_down))
     waitmovement(0)
     removeobject(LOCALID_GARRICK)
+    removeobject(LOCALID_PORT_PLUNDER_GUARD_1)
+    removeobject(LOCALID_PORT_PLUNDER_PATROL_1)
+    removeobject(LOCALID_PORT_PLUNDER_FIRST_MATE)
     setflag(FLAG_BADGE03_GET)
     addvar(VAR_PIRATE_QUEST_PROGRESSION, 1)
     fadescreen(FADE_FROM_BLACK)

@@ -630,6 +630,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_YoungCouple,        OBJ_EVENT_PAL_DP_YOUNG_COUPLE},
     {gObjectEventPal_DP_Youngster,          OBJ_EVENT_PAL_DP_YOUNGSTER},
     {gObjectEventPal_CuttableTree,          OBJ_EVENT_PAL_TAG_CUTTABLE_TREE},
+    {gObjectEventPal_MagmaMemberM,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M},
+    {gObjectEventPal_MagmaMemberF,          OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

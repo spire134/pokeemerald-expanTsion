@@ -516,9 +516,9 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_ROCKY_ROAD_SUDOWOODO_CLEARED    0x1DE
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
+#define FLAG_MANSION_DUSKNOIR_CLEARED        0x1DE
+#define FLAG_CHOSE_PUNCH_STYLE                    0x1DF // Unused Flag
+#define FLAG_CHOSE_KICK_STYLE                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
@@ -687,7 +687,8 @@
 #define FLAG_SHUDDERWOOD_MANSION_BRAINWASHED_GARDENER_FREED     0x27E // Unused Flag
 #define FLAG_SHUDDERWOOD_MANSION_POOL_DRONE_DEFEATED            0x27F // Unused Flag
 #define FLAG_HELPED_SEER_LYSA  0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
+#define FLAG_RECEIVED_WAREHOUSE_KEY  0x281 // Unused Flag
+#define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag

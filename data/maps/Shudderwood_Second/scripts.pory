@@ -3,34 +3,27 @@ mapscripts Shudderwood_Second_MapScripts {}
 script Shudderwood_LeftDrone {
     lock
     faceplayer
-    msgbox(format("Drone: Buzz off, Ranger! This area is off-limits!\n"
-    "We're the toughest Drones our Commander has!\n"
-    "I bet you're not even worth our time!"))
+    msgbox(format("Drone: Buzz off, Ranger! This area is off-limits!\pWe're the toughest Drones our Commander has!\pI bet you're not even worth our time!"))
     applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(face_right))
     applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(face_left))
     waitmovement(0)
-    msgbox(format("Drones: Mutter mutter… Glory for us if we win perhaps?\n"
-    "Buzz buzz… He beat the Seer we saw the Maven punish earlier!\n"))
+    msgbox(format("Drones: Mutter mutter… Glory for us if we win perhaps?\lBuzz buzz… He beat the Seer we saw the Maven punish earlier!"))
     waitmessage
     applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(face_down))
     applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(face_down))
     waitmovement(0)
-    msgbox(format("Dron: Let's leave it up to the Ranger then, do you want to buzz off?\n"), MSGBOX_YESNO)
+    msgbox(format("Dron: Let's leave it up to the Ranger then, do you want to buzz off?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(format("Drone: Buzz buzz… Wise choice, Ranger!\n"
-        "We'll be watching you from afar!"))
+        msgbox(format("Drone: Buzz buzz… Wise choice, Ranger!\pWe'll be watching you from afar!"))
         release
     } else {
-        msgbox(format("Drone: Buzz buzz… You're making a big mistake, Ranger!\n"
-        "Prepare to be defeated!"))
-        trainerbattle_two_trainers(TRAINER_GRUNT_MAGMA_HIDEOUT_10, "Drone: Buzzing mad!\n", TRAINER_GRUNT_MAGMA_HIDEOUT_11, "Drone: I feel the sting of defeat!\n")
-        msgbox(format("Drones: Bested, BESTED?!\n"))
+        msgbox(format("Drone: Buzz buzz… You're making a big mistake, Ranger!\pPrepare to be defeated!"))
+        trainerbattle_two_trainers(TRAINER_GRUNT_MAGMA_HIDEOUT_10, "Drone: Buzzing mad!", TRAINER_GRUNT_MAGMA_HIDEOUT_11, "Drone: I feel the sting of defeat!")
+        msgbox(format("Drones: Bested, BESTED?!"))
         applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(walk_in_place_fast_down))
-        msgbox(format("Drones: Gah! You've bested us…\n"
-        "The Maven will not be pleased…\n"))
+        msgbox(format("Drones: Gah! You've bested us…\pThe Maven will not be pleased…"))
         waitmessage
-        msgbox(format("Seer June: You have more immediate concerns, simpletons!\n"
-        "The Ranger has defeated you both at once?!"))
+        msgbox(format("Seer June: You have more immediate concerns, simpletons!\pThe Ranger has defeated you both at once?!"))
         applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(emote_x))
         applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(emote_x))
         waitmovement(0)
@@ -40,106 +33,108 @@ script Shudderwood_LeftDrone {
         waitmovement(0)
         applymovement(LOCALID_SHUDDERWOOD_SEER, moves(walk_right walk_down))
         waitmovement(0)
-        msgbox(format("Seer June: Retreat, now! Back to the mansion!\n"
-        "I'll handle them myself!\n"))
+        msgbox(format("Seer June: Retreat, now! Back to the mansion!\pI'll handle them myself!"))
         waitmessage
         applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(walk_faster_up*2 walk_faster_left*9))
         applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(walk_faster_up*2 walk_faster_left*9))
         waitmovement(0)
         removeobject(LOCALID_SHUDDERWOOD_LEFT_DRONE)
         removeobject(LOCALID_SHUDDERWOOD_RIGHT_DRONE)
-        msgbox(format("Seer June: Hmph… These woods are no place for Rangers!\n"
-        "I will show you a true Seer's power, not like that weakling Lysa at the quarry!\n"))
+        msgbox(format("Seer June: Hmph… These woods are no place for Rangers!\pI will show you a true Seer's power, not like that weakling Lysa at the quarry!"))
         trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_16,
-        format("Seer June: What?! But the Rangers were weaklings last time!\n")
+        format("Seer June: What?! But the Rangers were weaklings last time!")
         )
-        msgbox(format("Seer June: Impossible… I've been defeated as well!\n"
-        "But you'll never get into the mansion!"
-        "It's locked with solid stone doors!\n"
-        "You'd need more STRENGTH than any ranger around here to force them open!"))
-        waitmessage
-        applymovement(LOCALID_SHUDDERWOOD_SEER, moves(walk_faster_up*2 walk_faster_left*8))
-        waitmovement(0)
-        removeobject(LOCALID_SHUDDERWOOD_SEER)
-        setflag(FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED)
+        call(Shudderwood_SeerJuneDefeated)
         release
     }
+}
+
+script Shudderwood_SeerJuneDefeated {
+    msgbox(format("Seer June: Impossible… I've been defeated as well!\pBut you'll never get into the mansion! It's locked with solid stone doors!\pYou'd need more STRENGTH than any ranger around here to force them open!"))
+    waitmessage
+    applymovement(LOCALID_SHUDDERWOOD_SEER, moves(walk_faster_up*2 walk_faster_left*8))
+    waitmovement(0)
+    removeobject(LOCALID_SHUDDERWOOD_SEER)
+    setflag(FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED)
+    return
 }
 
 script Shudderwood_StrengthDoorLeft {
-    lock
     if(var(VAR_MANSION_PROGRESSION) >= 1) {
-        release
         end
-    } elif(!flag(FLAG_BADGE03_GET)) {
-        msgbox(format("The door is firmly sealed shut.\n"
-        "It looks like it requires a lot of STRENGTH to open."))
+    }
+    lock
+    if(!flag(FLAG_BADGE03_GET)) {
+        msgbox(format("The door is firmly sealed shut.\pIt looks like it requires a lot of STRENGTH to open."))
         waitmessage
         applymovement(LOCALID_PLAYER, moves(walk_down))
         waitmovement(0)
         release
-    } else {
-        msgbox(format("The door is firmly sealed shut.\n"
-        "You might be able to force it open with STRENGTH."))
-        checkpartymove(MOVE_STRENGTH)
-        if (var(VAR_RESULT) == TRUE) {
-            msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == TRUE) {
-                playse(SE_M_STRENGTH)
-                waitse
-                msgbox(format("You used STRENGTH to force open the doors!"))
-                addvar(VAR_MANSION_PROGRESSION, 1)
-                release
-            } else {
-                msgbox(format("You decided not to use STRENGTH right now."))
-                release
-                return
-            }
-        } else {
-            msgbox(format("You are unable to force the door open without STRENGTH."), MSGBOX_AUTOCLOSE)
-            applymovement(LOCALID_PLAYER, moves(walk_down))
-            waitmovement(0)
-            release
-        }
+        end
     }
+    msgbox(format("The door is firmly sealed shut.\pYou might be able to force it open with STRENGTH."))
+    checkpartymove(MOVE_STRENGTH)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You are unable to force the door open without STRENGTH."), MSGBOX_AUTOCLOSE)
+        applymovement(LOCALID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        release
+        end
+    }
+    msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You decided not to use STRENGTH right now."))
+        applymovement(LOCALID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        release
+        end
+    }
+    playse(SE_M_STRENGTH)
+    waitse
+    msgbox(format("You used STRENGTH to force open the doors!"))
+    addvar(VAR_MANSION_PROGRESSION, 1)
+    waitmessage
+    release
+    end
 }
 
 script Shudderwood_StrengthDoorRight {
-    lock
     if(var(VAR_MANSION_PROGRESSION) >= 1) {
-        release
         end
-    } elif(!flag(FLAG_BADGE03_GET)) {
-        msgbox(format("The door is firmly sealed shut.\n"
-        "It looks like it requires a lot of STRENGTH to open."))
+    }
+    lock
+    if(!flag(FLAG_BADGE03_GET)) {
+        msgbox(format("The door is firmly sealed shut.\pIt looks like it requires a lot of STRENGTH to open."))
         waitmessage
         applymovement(LOCALID_PLAYER, moves(walk_down))
         waitmovement(0)
         release
-    } else {
-        msgbox(format("The door is firmly sealed shut.\n"
-        "You might be able to force it open with STRENGTH."))
-        checkpartymove(MOVE_STRENGTH)
-        if (var(VAR_RESULT) == TRUE) {
-            msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == TRUE) {
-                playse(SE_M_STRENGTH)
-                waitse
-                msgbox(format("You used STRENGTH to force open the doors!"))
-                addvar(VAR_MANSION_PROGRESSION, 1)
-                release
-            } else {
-                msgbox(format("You decided not to use STRENGTH right now."))
-                release
-                return
-            }
-        } else {
-            msgbox(format("You are unable to force the door open without STRENGTH."), MSGBOX_AUTOCLOSE)
-            applymovement(LOCALID_PLAYER, moves(walk_down))
-            waitmovement(0)
-            release
-        }
+        end
     }
+    msgbox(format("The door is firmly sealed shut.\pYou might be able to force it open with STRENGTH."))
+    checkpartymove(MOVE_STRENGTH)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You are unable to force the door open without STRENGTH."), MSGBOX_AUTOCLOSE)
+        applymovement(LOCALID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        release
+        end
+    }
+    msgbox(format("Would you like to use STRENGTH to force open the door?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("You decided not to use STRENGTH right now."))
+        applymovement(LOCALID_PLAYER, moves(walk_down))
+        waitmovement(0)
+        release
+        end
+    }
+    playse(SE_M_STRENGTH)
+    waitse
+    msgbox(format("You used STRENGTH to force open the doors!"))
+    addvar(VAR_MANSION_PROGRESSION, 1)
+    waitmessage
+    release
+    end
 }
 
 script Shudderwood_GateHouseLeft {

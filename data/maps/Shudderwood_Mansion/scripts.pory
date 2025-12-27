@@ -1,5 +1,112 @@
 mapscripts Shudderwood_Mansion_MapScripts {}
 
+// Reusable script for random wild encounters - place triggers where you want encounters
+script Shudderwood_Mansion_RandomEncounter {
+    lock
+    playmoncry(SPECIES_MISDREAVUS, 0)
+    waitmoncry
+    msgbox(format("Something is stirring in the shadows!"))
+    random(12)  // 12 different Pokemon in the encounter table
+    switch (var(VAR_RESULT)) {
+        case 0: call(Shudderwood_Encounter_Sinistea)
+        case 1: call(Shudderwood_Encounter_Litwick)
+        case 2: call(Shudderwood_Encounter_Gothita)
+        case 3: call(Shudderwood_Encounter_Minccino)
+        case 4: call(Shudderwood_Encounter_Duskull_35)
+        case 5: call(Shudderwood_Encounter_Duskull_36)
+        case 6: call(Shudderwood_Encounter_Minccino_37)
+        case 7: call(Shudderwood_Encounter_Gothorita)
+        case 8: call(Shudderwood_Encounter_Lampent_37)
+        case 9: call(Shudderwood_Encounter_Dusclops_37)
+        case 10: call(Shudderwood_Encounter_Lampent_38)
+        case 11: call(Shudderwood_Encounter_Dusclops_38)
+    }
+    release
+    end
+}
+
+// Individual encounter scripts
+script Shudderwood_Encounter_Sinistea {
+    setwildbattle(SPECIES_SINISTEA, 34)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Litwick {
+    setwildbattle(SPECIES_LITWICK, 34)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Gothita {
+    random(3)
+    switch (var(VAR_RESULT)) {
+        case 0: setwildbattle(SPECIES_GOTHITA, 33)
+        case 1: setwildbattle(SPECIES_GOTHITA, 34)
+        case 2: setwildbattle(SPECIES_GOTHITA, 35)
+    }
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Minccino {
+    setwildbattle(SPECIES_MINCCINO, 35)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Duskull_35 {
+    setwildbattle(SPECIES_DUSKULL, 35)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Duskull_36 {
+    setwildbattle(SPECIES_DUSKULL, 36)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Minccino_37 {
+    setwildbattle(SPECIES_MINCCINO, 37)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Gothorita {
+    random(2)
+    switch (var(VAR_RESULT)) {
+        case 0: setwildbattle(SPECIES_GOTHORITA, 36)
+        case 1: setwildbattle(SPECIES_GOTHORITA, 37)
+    }
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Lampent_37 {
+    setwildbattle(SPECIES_LAMPENT, 37)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Dusclops_37 {
+    setwildbattle(SPECIES_DUSCLOPS, 37)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Lampent_38 {
+    setwildbattle(SPECIES_LAMPENT, 38)
+    dowildbattle
+    return
+}
+
+script Shudderwood_Encounter_Dusclops_38 {
+    setwildbattle(SPECIES_DUSCLOPS, 38)
+    dowildbattle
+    return
+}
+
 script Shudderwood_Mansion_GateHouseBattle {
     lock
     applymovement(LOCALID_GATEHOUSE_SEER, moves(jump_in_place_down emote_exclamation_mark))
@@ -9,10 +116,10 @@ script Shudderwood_Mansion_GateHouseBattle {
     waitmovement(0)
     msgbox(format("Seer June: Attention Drones, and behold the mighty guardian
     the Maven has bound to our service!\n"))
-    applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(jump_in_place_down))
-    applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(jump_in_place_down))
-    applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(jump_in_place_down))
-    applymovement(LOCALID_GATEHOUSE_DRONE_4, moves(jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_1, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_2, moves(emote_question_mark jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_3, moves(emote_exclamation_mark jump_in_place_down))
+    applymovement(LOCALID_GATEHOUSE_DRONE_4, moves(emote_exclamation_mark jump_in_place_down))
     waitmovement(0)
     applymovement(LOCALID_GATEHOUSE_PINSIR, moves(jump_in_place_down jump_in_place_down))
     waitmovement(0)
@@ -254,4 +361,26 @@ script Shudderwood_Mansion_Brainwashed_Butler {
     right now the master is under a terrible spell."), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
+}
+
+script Mansion_Master_Floor_Skip {
+    if(!flag(FLAG_MANSION_DUSKNOIR_CLEARED) && flag(FLAG_SHUDDERWOOD_MANSION_CLEARED)) {
+        lock
+        playmoncry(SPECIES_DUSKNOIR, 0)
+        waitmoncry
+        msgbox(format("A chill runs down your spine, the Master of the Mansion lays ahead…\p"
+        "Brave the challenge, and forge ahead?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == TRUE) {
+            warp(MAP_SHUDDERWOOD_MANSION_UPPER, 3)
+            applymovement(LOCALID_PLAYER, moves(face_up))
+            waitmovement(0)
+            release
+        } else {
+            msgbox(format("You decide to turn back for now."))
+            waitmessage
+            release
+}
+    } else {
+        end
+    }
 }

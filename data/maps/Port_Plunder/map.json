@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_PORT_PLUNDER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": true,
   "allow_running": true,
@@ -29,6 +29,7 @@
       "flag": "FLAG_BADGE03_GET"
     },
     {
+      "local_id": "LOCALID_PORT_PLUNDER_PATROL_1",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 4,
       "y": 17,
@@ -42,6 +43,7 @@
       "flag": "FLAG_BADGE03_GET"
     },
     {
+      "local_id": "LOCALID_PORT_PLUNDER_FIRST_MATE",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
       "x": 9,
       "y": 20,
@@ -55,6 +57,7 @@
       "flag": "FLAG_BADGE03_GET"
     },
     {
+      "local_id": "LOCALID_PORT_PLUNDER_GUARD_1",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 7,
       "y": 8,

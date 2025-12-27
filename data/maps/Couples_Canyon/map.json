@@ -67,9 +67,10 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_KICKMASTER",
       "graphics_id": "OBJ_EVENT_GFX_DP_BLACK_BELT",
-      "x": 16,
-      "y": 41,
+      "x": 19,
+      "y": 43,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -80,9 +81,10 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_PUNCHMASTER",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 17,
-      "y": 41,
+      "x": 20,
+      "y": 43,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,

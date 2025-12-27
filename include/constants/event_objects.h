@@ -521,7 +521,8 @@
 #endif //OW_FOLLOWERS_POKEBALLS
 // Custom Palletes
 #define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_M          0x116B
-#define OBJ_EVENT_PAL_TAG_CUTTABLE_TREE           0x116C
+#define OBJ_EVENT_PAL_TAG_MAGMA_MEMBER_F          0x116C
+#define OBJ_EVENT_PAL_TAG_CUTTABLE_TREE           0x116D
 
 // DP Trainer Palettes
 #define OBJ_EVENT_PAL_DP_CYNTHIA                  0x1200

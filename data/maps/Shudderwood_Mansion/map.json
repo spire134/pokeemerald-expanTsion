@@ -95,7 +95,7 @@
     {
       "local_id": "LOCALID_GATEHOUSE_DRONE_3",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 24,
+      "x": 26,
       "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
@@ -123,7 +123,7 @@
       "local_id": "LOCALID_GATEHOUSE_DRONE_4",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 27,
-      "y": 53,
+      "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -165,7 +165,7 @@
       "local_id": "LOCALID_GATEHOUSE_DRONE_2",
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 23,
-      "y": 53,
+      "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -259,12 +259,12 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 27,
-      "y": 32,
+      "x": 26,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
-      "movement_range_x": 10,
-      "movement_range_y": 4,
+      "movement_range_x": 8,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Shudderwood_Mansion_RunningGuard_2",
@@ -549,6 +549,15 @@
       "var": "VAR_MANSION_PROGRESSION",
       "var_value": "1",
       "script": "Shudderwood_Mansion_GateHouseBattle"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Mansion_Master_Floor_Skip"
     }
   ],
   "bg_events": []

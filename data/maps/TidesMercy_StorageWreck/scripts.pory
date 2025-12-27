@@ -87,7 +87,7 @@ script Wreck_Pirate_FirstMate {
     setflag(FLAG_CLEARED_TIDESMERCYWRECK)
     msgbox(format(
         "The Captain already got the best treasure!"
-        "You'll never find our hideout!"))
+        "You'll never beat us at the hideout!"))
     applymovement(LOCALID_WRECK_FIRSTMATE, moves(
         walk_faster_right walk_faster_right walk_faster_right 
         walk_faster_right walk_faster_right walk_faster_up walk_faster_up))

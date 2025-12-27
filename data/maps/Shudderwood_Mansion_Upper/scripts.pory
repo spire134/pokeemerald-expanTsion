@@ -123,10 +123,10 @@ script Shudderwood_Mansion_MistressBattle {
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitse
-    applymovement(LOCALID_MANSION_MISTRESS, moves(face_right face_down))
+    applymovement(LOCALID_MANSION_MISTRESS, moves(face_right face_down walk_in_place_slow_down))
     msgbox(format("Delphine: Hah, foolish Dusknoir, you belong to me still!"))
     waitmessage
-    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_slow_left emote_double_exclamation_mark))
+    applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_slow_left*2 emote_double_exclamation_mark))
     waitmovement(0)
     playse(SE_PIN)
     waitse
@@ -134,7 +134,7 @@ script Shudderwood_Mansion_MistressBattle {
     playse(SE_PIN)
     msgbox(format("Seer Lysa: {PLAYER}, her control over Dusknoir is weakening!"))
     waitmessage
-    msgbox(format("Delphine: Come on now Dusknoir, get up! Attack them both!"))
+    msgbox(format("Delphine: Come on now Dusknoir, get up! Help me escape, don't you want me gone?!"))
     waitmessage
     applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_in_place_fast_left*2))
     waitmovement(0)
@@ -244,6 +244,7 @@ script Shudderwood_Mansion_DusknoirChallenge {
         fadescreen(FADE_TO_BLACK)
         removeobject(LOCALID_MANSION_MASTER_DUSKNOIR)
         fadescreen(FADE_FROM_BLACK)
+        setflag(FLAG_MANSION_DUSKNOIR_CLEARED)
         msgbox(format("You have defeated Dusknoir, the Master of the Mansion!\p"
         "The souls of those trapped here are yours now."))
         giveitem(ITEM_HEART_SCALE, 5)
