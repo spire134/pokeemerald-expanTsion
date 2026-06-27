@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
       "x": 14,
-      "y": 29,
+      "y": 79,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_DP_PSYCHIC",
       "x": 19,
-      "y": 29,
+      "y": 79,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_DP_POKEFAN_M",
       "x": 15,
-      "y": 17,
+      "y": 67,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BRANDON",
       "x": 12,
-      "y": 1,
+      "y": 51,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -70,7 +70,7 @@
       "local_id": "LOCALID_KICKMASTER",
       "graphics_id": "OBJ_EVENT_GFX_DP_BLACK_BELT",
       "x": 19,
-      "y": 43,
+      "y": 93,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -84,7 +84,7 @@
       "local_id": "LOCALID_PUNCHMASTER",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 20,
-      "y": 43,
+      "y": 93,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
@@ -97,7 +97,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_DP_POKEFAN_F",
       "x": 11,
-      "y": 17,
+      "y": 67,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -110,7 +110,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 11,
-      "y": 31,
+      "y": 81,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -123,7 +123,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 19,
-      "y": 34,
+      "y": 84,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -136,7 +136,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_DP_BEAUTY",
       "x": 5,
-      "y": 8,
+      "y": 58,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
@@ -150,14 +150,14 @@
   "warp_events": [
     {
       "x": 9,
-      "y": 41,
+      "y": 91,
       "elevation": 0,
       "dest_map": "MAP_MAGNET_CAVE_DEPTHS",
       "dest_warp_id": "1"
     },
     {
       "x": 20,
-      "y": 7,
+      "y": 57,
       "elevation": 0,
       "dest_map": "MAP_COUPLES_CANYON",
       "dest_warp_id": "0"
@@ -167,7 +167,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 7,
+      "y": 57,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -176,7 +176,7 @@
     {
       "type": "trigger",
       "x": 13,
-      "y": 7,
+      "y": 57,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -185,7 +185,7 @@
     {
       "type": "trigger",
       "x": 12,
-      "y": 7,
+      "y": 57,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -196,7 +196,7 @@
     {
       "type": "hidden_item",
       "x": 3,
-      "y": 5,
+      "y": 55,
       "elevation": 0,
       "item": "ITEM_NONE",
       "flag": "FLAG_TEMP_1"
@@ -204,7 +204,7 @@
     {
       "type": "hidden_item",
       "x": 10,
-      "y": 11,
+      "y": 61,
       "elevation": 0,
       "item": "ITEM_NONE",
       "flag": "FLAG_TEMP_1"
@@ -212,7 +212,7 @@
     {
       "type": "hidden_item",
       "x": 11,
-      "y": 32,
+      "y": 82,
       "elevation": 0,
       "item": "ITEM_NONE",
       "flag": "FLAG_TEMP_1"
@@ -220,7 +220,7 @@
     {
       "type": "hidden_item",
       "x": 23,
-      "y": 45,
+      "y": 95,
       "elevation": 0,
       "item": "ITEM_NONE",
       "flag": "FLAG_TEMP_1"

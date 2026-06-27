@@ -4825,7 +4825,7 @@
       "id": "LAYOUT_COUPLES_CANYON",
       "name": "Couples_Canyon_Layout",
       "width": 30,
-      "height": 50,
+      "height": 100,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Couples_Canyon/border.bin",

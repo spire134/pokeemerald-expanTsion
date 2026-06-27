@@ -71,23 +71,30 @@ script Shudderwood_Mansion_MistressBattle {
     waitmovement(0)
     msgbox(format("Seer Lysa: No… not again…"))
     trainerbattle_two_trainers(TRAINER_GRUNT_SPACE_CENTER_3, "Seer Lysa: At least it's over.", TRAINER_GRUNT_MT_CHIMNEY_1, "Seer June: No! My power is fading!")
+    call(Shudderwood_Mansion_AfterSeerBattle)
+    release
+}
+
+script Shudderwood_Mansion_AfterSeerBattle {
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_faster_up face_down))
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(walk_faster_up face_down))
-    waitmovement(0)
+    waitmovement(10)
+    applymovement(LOCALID_PLAYER, moves(walk_slow_up))
+    waitmovement(10)
     msgbox(format("Delphine: Hmph… Malamar and I have no more use for you two failures. Begone!"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_right walk_in_place_slow_right))
     applymovement(LOCALID_MANSION_MALAMAR, moves(face_right walk_in_place_slow_right))
-    waitmovement(0)
+    waitmovement(10)
     playse(SE_M_PSYBEAM)
     waitse
     msgbox(format("Dusknoir: Grrrr… Grrrr…"))
     waitmessage
     playmoncry(SPECIES_DUSKNOIR, 0)
     applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(face_left walk_slow_left*2))
-    waitmovement(0)
+    waitmovement(10)
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(face_up))
-    msgbox(format("Seer June: No… Please don't trap me in the darkness again!"))
+    msgbox(format("Seer June: No… Please don't trap me in the darkness!"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_down))
     applymovement(LOCALID_MANSION_MALAMAR, moves(face_down))
@@ -97,12 +104,12 @@ script Shudderwood_Mansion_MistressBattle {
     waitse
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_MANSION_SEER_JUNE)
-    msgbox(format("June: AAAAAAAH!"))
+    msgbox(format("June: AAAAAAAH!"), MSGBOX_AUTOCLOSE)
     playse(SE_ORB)
     waitse
     fadescreen(FADE_FROM_BLACK)
-    applymovement(LOCALID_MANSION_SEER_LYSA, moves(emote_x face_right walk_fast_down*2))
-    waitmovement(0)
+    applymovement(LOCALID_MANSION_SEER_LYSA, moves(emote_x face_right walk_down*2))
+    waitmovement(10)
     msgbox(format("Delphine: And just where do you think you're going, Lysa?"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(jump_in_place_down*2))
@@ -110,6 +117,11 @@ script Shudderwood_Mansion_MistressBattle {
     msgbox(format("Seer Lysa: No… I can't move! Ranger… please… help!"))
     waitmessage
     call(Shudderwood_Mansion_HelpLysaYesNo)
+    call(Shudderwood_Mansion_DelphineDefeat)
+    return
+}
+
+script Shudderwood_Mansion_DelphineDefeat {
     msgbox(format("Delphine: Impossible… All my contemplations, my careful planning, ruined by a mere Ranger!\p"
     "I had finally begun to unlock the secrets buried on Corymbra…\l"
     "Malamar, return. I'll have to escape myself."))
@@ -144,7 +156,7 @@ script Shudderwood_Mansion_MistressBattle {
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_MANSION_MISTRESS)
     removeobject(LOCALID_MANSION_SEER_LYSA)
-    msgbox(format("Delphine: KAAAAAAH!"))
+    msgbox(format("Delphine: KAAAAAAH!"), MSGBOX_AUTOCLOSE)
     playse(SE_ORB)
     waitse
     msgbox(format("Seer Lysa: I'm getting out of here."))
@@ -173,7 +185,7 @@ script Shudderwood_Mansion_MistressBattle {
     "For now, the Master of the Mansion will show you out and then rest."))
     waitmessage
     warp(MAP_SHUDDERWOOD_SECOND, 13, 15)    
-    release
+    return
 }
 
 script Shudderwood_Mansion_HelpLysaYesNo {
@@ -198,7 +210,7 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_fast_down face_up))
         applymovement(LOCALID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("Delphine: Such trite! An example of you must be made later Lysa! I will crush this ranger beneath
+        msgbox(format("Delphine: Such trite! An example of you must be made later! I will crush this ranger beneath
         the full might of the Hive!"))
         trainerbattle_no_intro(TRAINER_WINONA_1, (format("Delphine: What?! No, how could this be?!")))
         waitstate
