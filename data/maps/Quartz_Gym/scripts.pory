@@ -119,7 +119,7 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("Great! Start waiting now."))
         delay(1800) // 30 seconds at 60 FPS
         msgbox(format("Well done! You've completed the Patience Challenge!\n"
-        "Just kidding, but you did wait like a champ.\p"
+        "Just kidding, but you did wait there like a champ."
         "Now for the real challenge, HYAAAAH!"))
         trainerbattle_no_intro(TRAINER_KOJI_1,
         format("Patience is a virtue, but so is strength!")
@@ -129,11 +129,11 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("No worries! Take your time."))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!\n"))
+    msgbox(format("Team Hive has been causing trouble around Quartzite."
+    "I hope the Rangers can handle them soon!"))
     }
     } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!\n"))
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
     }
     release
 }
@@ -155,11 +155,11 @@ script Quartz_Gym_WeakpointChallenge {
         msgbox(format("Take your time to prepare!"))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!\n"))
+    msgbox(format("Team Hive has been causing trouble around Quartzite."
+    "I hope the Rangers can handle them soon!"))
     }
     } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!\n"))
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
     }
     release
 }
@@ -168,6 +168,13 @@ script Quartz_Gym_WeakpointChallenge {
 script Quartz_CaptRojan {
     lock
     faceplayer
+    if (flag(FLAG_BADGE02_GET)) {
+        msgbox(format("Captain Rojan: You've proven your skill by earning the Rock Smash HM!\p"
+        "Keep up the great work, Ranger!"))
+        waitmessage
+        release
+        end
+    } 
     if (!flag(FLAG_TALKED_TO_CORIN)) {
         setflag(FLAG_TALKED_TO_ROJAN)
         setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
@@ -193,7 +200,7 @@ script Quartz_CaptRojan {
             setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
             msgbox(format("Captain Rojan: Impressive work!\p"
             "You've earned the Rock Smash HM and your Ranger Rank has been upgraded!"
-            "Use Rock Smash to clear small boulders blocking your path."
+            "Use Rock Smash to clear small boulders blocking your path.\n"
             "Keep up the great work, Ranger!"))
             waitmessage
             waitmessage

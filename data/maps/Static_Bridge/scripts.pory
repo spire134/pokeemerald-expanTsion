@@ -49,6 +49,7 @@ script Team_Hive_Drone {
         applymovement(LOCALID_BOTDRONE, moves(walk_in_place_right))
         waitmovement(0)
         msgbox(format("DRONE: Gah! You're stronger than we thought! Retreat!"))
+        waitmessage
         applymovement(LOCALID_TOPDRONE, moves(walk_faster_left * 7))
         applymovement(LOCALID_BOTDRONE, moves(walk_faster_left * 7))
         waitmovement(0)

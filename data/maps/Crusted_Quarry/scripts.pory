@@ -42,7 +42,8 @@ script Crusted_Quarry_Seer_LastResort {
         msgbox(format("Seer: I've lost again…\n"
         "But I'll never tell you about the books sent to the Shudderwood Mansion!\p"
         "Or maybe I've said too much already…\n"))
-    special (ShakeCamera)
+    special(ShakeCamera)
+    waitstate
     setflag(FLAG_CRUSTED_QUARRY_DEFEATED)
     setflag(FLAG_QUARRY_COLLAPSING)
     msgbox(format("The lights flicker as the Seer escapes into the shadows.\n"))
@@ -86,7 +87,14 @@ script Crusted_Quarry_MachineControls {
             waitmessage
             clearflag(FLAG_QUARRY_COLLAPSING)
             playse(SE_APPLAUSE)
-            waitse         
+            waitse
+            applymovement(LOCALID_PLAYER, moves(jump_in_place_up emote_exclamation_mark))
+            waitmovement(30)
+            msgbox(format("A Pokémon is attracted to the sound of slashing!"))
+            setwildbattle(SPECIES_KABUTO, 20)
+            dowildbattle
+            msgbox(format("All done here. That was close!"))
+            waitmessage
         } else {
             playse(SE_M_ROCK_THROW)
             waitse
@@ -96,6 +104,13 @@ script Crusted_Quarry_MachineControls {
             clearflag(FLAG_QUARRY_COLLAPSING)
             playse(SE_APPLAUSE)
             waitse
+            applymovement(LOCALID_PLAYER, moves(jump_in_place_up emote_exclamation_mark))
+            waitmovement(30)
+            msgbox(format("A Pokémon is attracted to the sound of smashing!"))
+            setwildbattle(SPECIES_CRANIDOS, 20)
+            dowildbattle
+            msgbox(format("All done here. That was close!"))
+            waitmessage
         }
     } else {
         msgbox(format("The machinery here seems to be non-functional."
@@ -106,7 +121,7 @@ script Crusted_Quarry_MachineControls {
 
 script Crusted_Quarry_FlameEngineer1 {
     trainerbattle_single(TRAINER_COLE,
-    format("Quartz Engineer: All hail the Seer!\n"),
+    format("Quartz Engineer: All hail the Seer!"),
     format("Quartz Engineer: Thank you for clearing my mind, Ranger!")
     )
     msgbox(format("Quartz Engineer: The Seer must be stopped at all costs!\n"
@@ -117,7 +132,7 @@ script Crusted_Quarry_FlameEngineer1 {
 
 script Crusted_Quarry_FlameEngineer2 {
     trainerbattle_single(TRAINER_JEFF,
-    format("Quartz Engineer: The Seer's vision will lead us to greatness!\n"),
+    format("Quartz Engineer: The Seer's vision will lead us to greatness!"),
     format("Quartz Engineer: Ugh… My mind feels clearer now.")
     )
     msgbox(format("Quartz Engineer: The Seer has been controlling us for a while!\n"

@@ -1294,6 +1294,21 @@
     {
       "id": "MAPSEC_SHUDDERWOOD_MANSION",
       "name": "Shudderwood Mansion"
+    },
+    {
+      "id": "MAPSEC_COUPLE_CANYON"
+    },
+    {
+      "id": "MAPSEC_FREEBOOT_BAY"
+    },
+    {
+      "id": "MAPSEC_PORT_PLUNDER"
+    },
+    {
+      "id": "MAPSEC_MAGNET_CAVE_DEPTHS"
+    },
+    {
+      "id": "MAPSEC_ROCKY_ROAD"
     }
   ]
 }

@@ -69,28 +69,35 @@ script Mara_Gym_Script {
             end 
         }
     }
-    if (flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
-        msgbox(format("Mara: Corin has reported back about your success at Crusted Quarry.\p"
-        "You've proven yourself as a capable Ranger.\p"
-        "Now, we need to investigate the shipwreck on our southern shore.\p"
-        "Talk to Tasmin in the Hazolt Mart for more details."))
-        giveitem(ITEM_WAREHOUSE_KEY)
-        msgbox(format("{PLAYER} received the Warehouse Key!"))
-        waitmessage
-        msgbox(format("Mara: Use that key at the Hazolt Mart.\p"))
+    if (flag(FLAG_SHUDDERWOOD_MANSION_CLEARED)) {
+        msgbox(format("Mara: Excellent work at Shudderwood Mansion, Ranger.\pYou've dealt a serious blow to Team Hive's operations.\pTHIS IS THE END OF THE DEMO. THANK YOU FOR PLAYING!\p"))
+    }
+    elif (flag(FLAG_BADGE03_GET)) {
+        if (flag(FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED)) {
+            msgbox(format("Mara: I heard you dealt with that Hive patrol at the bridge. Good work.\pNow use that STRENGTH you got from Garrick to force open the sealed doors at Shudderwood Mansion to the north.\pHead north from the bridge and investigate. Be careful, Ranger."))
+        }
+        else {
+            msgbox(format("Mara: Captain Garrick has been dealt with and you've obtained STRENGTH.\pGood work, Ranger.\pNow, we've received reports of Team Hive activity at Shudderwood Mansion to the north.\pYou'll need STRENGTH to force open their sealed doors.\pHead north from the bridge. There may be Hive patrols on the way, so stay alert."))
+        }
     }
     elif (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
-        msgbox(format("Mara: Tasmin has reported that the shipwreck is clear of threats.\p"
-        "Well done, Ranger. THIS IS THE END OF THE DEMO. THANK YOU FOR PLAYING!\p"))
+        msgbox(format("Mara: Tasmin has reported activity at the storage wreck.\pIt seems pirates fled the scene and headed west across Rocky Road.\pTrack them down to Port Plunder and put an end to their operation.\pWe need to secure this area, Ranger."))
+    }
+    elif (flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
+        msgbox(format("Mara: Corin has reported back about your success at Crusted Quarry.\pYou've proven yourself as a capable Ranger.\pNow, we need to investigate the shipwreck on our southern shore.\pTalk to Tasmin in the Hazolt Mart for more details."))
+        if (!flag(FLAG_RECEIVED_WAREHOUSE_KEY)) {
+            giveitem(ITEM_WAREHOUSE_KEY)
+            msgbox(format("{PLAYER} received the Warehouse Key!"))
+            waitmessage
+            setflag(FLAG_RECEIVED_WAREHOUSE_KEY)
+            msgbox(format("Mara: Use that key at the Hazolt Mart to access our storage area.\p"))
+        }
     }
     elif (flag(FLAG_MARA_DEFEATED)) {
-        msgbox(format("Mara: Tasmin is working at the Hazolt Mart.\p"
-        "She has details about the shipwreck on our southern shore.\p"
-        "Go speak with her, Ranger."))
+        msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.\pThere have been reports of Team Hive activity there. Stay alert, Ranger."))
     }
     else {
-        msgbox(format("Mara: You've got Cut. Head west into the woods, towards Quartzite Station.\p"
-        "There have been reports of Team Hive activity there. Stay alert, Ranger."))
+        msgbox(format("Mara: Take your time to prepare for your evaluation."))
     }
     releaseall
     end

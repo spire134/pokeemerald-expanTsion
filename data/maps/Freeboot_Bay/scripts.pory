@@ -1,0 +1,67 @@
+mapscripts Freeboot_Bay_MapScripts {}
+
+script Freeboot_Bay_No_Entry {
+    lock
+    applymovement(LOCALID_PIRATEGUARD_LEFT, moves(walk_in_place_fast_down emote_exclamation_mark))
+    waitmovement(0)
+    playse(SE_PIN)
+    msgbox(format("Pirate: Avast there, ye landlubber! Where do ye think ye're sailin'?"))
+    applymovement(LOCALID_PIRATEGUARD_RIGHT, moves(walk_in_place_fast_down emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Pirate: Aye, the Captain's given strict orders! No scallywags allowed past this point 'til he returns from his voyage!"))
+    msgbox(format("Pirate: These be dangerous waters, Ranger. Best be weighin' anchor and settin' sail elsewhere!"))
+    msgbox(format("Pirate: Arrr, but if ye be brave enough to face the Captain's wrath, ye can try yer luck when he's back at the helm!"))
+    msgbox(format("Pirate: Now shove off before we make ye walk the plank! Har har har!"))
+    applymovement(LOCALID_PLAYER, moves(walk_fast_down))
+    waitmovement(0)
+    release
+}
+
+script Freeboot_Buried_Pirate_F {
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_4, 
+        format("Pirate: Sneak attack, pirate style! Prepare to be boarded ye scurvy dog!"),
+        format("Pirate: Ugh… You got lucky this time lad.")
+        )
+    msgbox(format("Pirate: I'm washed up…"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Freeboot_Buried_Pirate_M {
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, 
+        format("Pirate: Arrr! Ye think ye can just stroll into Freeboot Bay? Think again, landlubber!"),
+        format("Pirate: Arrr, I be defeated.")
+        )
+    msgbox(format("Pirate: Arrr, you really swabbed my deck."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Port_Plunder_Approach_Trigger {
+    lock
+    playse(SE_EXIT)
+    showobjectat(LOCALID_BRIDGE_PIRATE, MAP_FREEBOOT_BAY)
+    applymovement(LOCALID_BRIDGE_PIRATE, moves(walk_slow_up*3 emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("Pirate: Hey! What do ye think ye're doin' here? This be private property of the Cap'n!"))
+    applymovement(LOCALID_BRIDGE_PIRATE, moves(face_left face_right emote_x))
+    waitmovement(0)
+    playse(SE_FAILURE)
+    msgbox(format("Pirate: Our Cap'n Garrick is a scary fella, you sure you wanna be messin' with us?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox(format("Pirate: Aye aye, that's the spirit! Just be ready to be swabbing our decks for the rest of yer days! Har har har!"))
+        addvar(VAR_PIRATE_QUEST_PROGRESSION, 1)
+        applymovement(LOCALID_BRIDGE_PIRATE, moves(walk_down*3))
+        waitmovement(0)
+        playse(SE_EXIT)
+        removeobject(LOCALID_BRIDGE_PIRATE)
+        release
+    } else {
+        msgbox(format("Pirate: Wise choice, landlubber. Best be headin' back before ye get in over yer head."))
+        applymovement(LOCALID_PLAYER, moves(walk_fast_up))
+        applymovement(LOCALID_BRIDGE_PIRATE, moves(walk_down*3))
+        waitmovement(0)
+        removeobject(LOCALID_BRIDGE_PIRATE)
+        release
+    }
+}

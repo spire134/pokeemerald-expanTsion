@@ -13,10 +13,10 @@ script Thorn_Camper_1 {
 
 script Thorn_Catcher_1 {
     trainerbattle_single(TRAINER_DAVIS,
-    format("There were some funny goons earlier.\n" "I want a BUG costume too!"),
+    format("There were some funny dressed guys earlier.\n" "I want a BUG costume too!"),
     format("Which costume would I want to wear though?")
     )
-    msgbox(format("I bet they were Hive Drones! Those goons are everywhere!"), MSGBOX_AUTOCLOSE)
+    msgbox(format("I wonder where they get the outfits! Those goons are everywhere!"), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
 }
