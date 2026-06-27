@@ -1,0 +1,124 @@
+mapscripts Quartzsite_MapScripts {}
+
+script Quartzite_Upper_Road {
+lock
+fadescreen(FADE_TO_BLACK)
+warp(MAP_QUARTZ_TUNNELS, 3, 2)
+fadescreen(FADE_FROM_BLACK)
+release
+}
+
+script Quartzite_Lower_Road {
+lock
+fadescreen(FADE_TO_BLACK)
+warp(MAP_QUARTZ_TUNNELS, 17, 7)
+fadescreen(FADE_FROM_BLACK)
+release
+}
+
+script Library_BackEntrance {
+lock
+fadescreen(FADE_TO_BLACK)
+warp(MAP_QUARTZ_LIBRARY, 12, 4)
+fadescreen(FADE_FROM_BLACK)
+release
+}
+
+script Quartzite_Welcome_Sign {
+lock
+msgbox(format("Quartzsite: The Bedrock of Society!"))
+release
+}
+
+script Quartz_BookStreetSign {
+    lock
+    msgbox(format("Quartzite Book Street\n"
+    "Home to the Quartzite Library"))
+    release
+}
+
+script Quartz_ResidenceStreetSign {
+    lock
+    msgbox(format("Quartzite Slate Street\n"
+    "Peaceful homes for hardworking citizens"))
+    release
+    
+}
+
+script Quartz_Hive_Blocker {
+    lock
+    faceplayer
+    msgbox(format("Hive Drone: Buzz off, Ranger! You won't be getting through here today!"
+    "The Seer runs this city now!"))
+    waitmessage
+    release
+}
+
+script Quartz_StationSign {
+    lock
+    msgbox(format("Quartzite Station\n"
+    "Senior Ranger: Captain Rojan"))
+    release
+}
+
+script Quartz_PumpSign {
+    lock
+    msgbox(format("Quartzsite Pump House\n"
+    "Keeping the Quarry Clear!"))
+    release
+}
+
+script Quartz_Hive_LeftGuard {
+    lock
+    faceplayer
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_1, 
+    format("Hive Drone: You think you can just walk around here?\n"),
+    format("Hive Drone: Ugh… You got lucky this time, Ranger.")
+    )
+    msgbox(format("Hive Drone: The Seer won't be pleased…"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Quartz_Hive_RightGuard {
+    lock
+    faceplayer
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_2, 
+    format("Hive Drone: This area is off-limits to Rangers!\n"),
+    format("Hive Drone: No... How could I lose to a Ranger…")
+    )
+    msgbox(format("Hive Drone: The Seer punish us for this…"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Quartz_Hive_RunningGuard {
+    lock
+    faceplayer
+    trainerbattle_single(TRAINER_GRUNT_MAGMA_HIDEOUT_3, 
+    format("Hive Drone: You can't be here, Ranger!\n"
+    "The Seer is set on the mission!"),
+    format("Hive Drone: At least I slowed you down, haha!")
+    )
+    msgbox(format("Hive Drone: The Seer will be unhappy…"), MSGBOX_AUTOCLOSE)
+    waitmessage
+    release
+}
+
+script Quartz_GoodRod_Fisherman {
+    lock
+    faceplayer
+        if (!flag(FLAG_RECEIVED_GOOD_ROD)) {
+    msgbox(format("Fisherman: That look in your eyes tells me you're itching for a fishing.\p"
+    "Here, take this Good Rod. It's a great way to curb those angling cravings!"))
+    giveitem(ITEM_GOOD_ROD)
+    setflag(FLAG_RECEIVED_GOOD_ROD)
+    msgbox(format("Fisherman: With this rod, you'll be reeling in Pokémon in no time!\p"
+    "Just head to any body of water and give it a try. Happy fishing!"))
+    } 
+    else {
+    msgbox(format("Fisherman: Remember, fishing is all about patience and timing.\p"))
+    }
+    waitmessage
+    release    
+}

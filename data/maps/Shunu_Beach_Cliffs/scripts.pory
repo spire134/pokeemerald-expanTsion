@@ -1,0 +1,49 @@
+mapscripts Shunu_Beach_Cliffs_MapScripts {}
+
+script Eon_Field_Script {
+    lockall
+    faceplayer
+    if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        msgbox(format("Eon: I'm mapping the cliffs. This route is a dead end. You should go to HQ. West."))
+        releaseall
+        end
+    }
+    if (!flag(FLAG_EON_CLEARED)) {
+        msgbox("Eon: Ready for the field check?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+        trainerbattle_no_intro(TRAINER_EON_SCOUT, "Eon: Not bad. I'll see you at HQ.")
+        msgbox(format("Eon: Good. Mark your wins, study your losses."))
+        setflag(FLAG_EON_CLEARED)
+        # Hide Eon from field map; show him at gym (use hideobject/showobject as needed)
+        releaseall
+        }
+        else{
+        msgbox("Eon: Come back when you're ready.\n"
+                "Don't waste time.")
+            releaseall
+        }
+    }
+    else{
+    # Already cleared; should be gone from field, but for safety:
+    msgbox("Eon: See you back at HQ.")
+    releaseall
+    }
+}
+
+script Shunu_Fisherman_Fight {
+   trainerbattle_single(TRAINER_DARIAN,
+    format("Fishing's great here, but battling's better!"),
+    format("That was a great battle by the sea!")
+    )
+    msgbox(format("I love a good battle by the sea!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Shunu_BlackBelt_Fight {
+    trainerbattle_single(TRAINER_RHETT,
+    format("The ocean's power flows through me!"),
+    format("The ocean's power is truly unstoppable!")
+    )
+    msgbox(format("Feel the power of the ocean!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}

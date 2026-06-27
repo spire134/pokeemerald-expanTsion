@@ -1,0 +1,49 @@
+mapscripts MAGNET_CAVE_MapScripts {}
+
+script Corin_Field_Script {
+    lockall
+    faceplayer
+    if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
+        msgbox(format("Corin: I hope your feet are well, it sure is rocky in here. I'll need a break soon."))
+        releaseall
+        end
+    }
+    if (!flag(FLAG_CORIN_CLEARED)) {
+        msgbox(format("Corin: I'm all wrapped up here, want to have a practice bout?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES) {
+        trainerbattle_no_intro(TRAINER_CORIN_RESCUE, "Corin: Good stuff! How about a snack?")
+        setflag(FLAG_CORIN_CLEARED)
+        msgbox("Corin: Let's meet at HQ with Tasmin!")
+        waitmessage
+        releaseall
+        }
+        else{
+        msgbox("Corin: I'll be here if you change your mind.")
+            releaseall
+        }
+    }
+    else{
+    # Already cleared; should be gone from field, but for safety:
+    msgbox("Corin: I'll wrap up here soon.")
+    releaseall
+    end
+    }
+}
+
+script Magnet_Maniac_1 {
+    trainerbattle_single(TRAINER_WYATT, 
+    format("I live here in the caves, with my friends."),
+    format("Those Hive Drones are messing with my home!")
+    )
+    msgbox(format("I'm too worried about my next meal to care about you."), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script Magnet_Hiker_1 {
+    trainerbattle_single(TRAINER_DEVAN, 
+    format("These caves are full of surprises!"),
+    format("Exploring is half the fun of battling!")
+    )
+    msgbox(format("There's another one of you Rangers up ahead!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}

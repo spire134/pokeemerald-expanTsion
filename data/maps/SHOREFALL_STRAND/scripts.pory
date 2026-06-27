@@ -1,0 +1,46 @@
+mapscripts SHOREFALL_STRAND_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_UNUSED_0x404E, 2: Shorefall_OnEnter
+    ]
+}
+
+script Shorefall_OnEnter {
+    lockall
+    playbgm(MUS_ABNORMAL_WEATHER, 0)
+    msgbox(format(
+        "…\p"
+        "You wake to your partner poking your shoulder.\n"
+        "Waves pound against a grounded hull.\p"
+        "You are suddenly attacked by a Pokémon!"
+    ))
+    # Immediate wild encounter: level 2 ENCOUNTER_SPECIES
+    //special(ChooseStarter)
+    setrespawn(HEAL_LOCATION_SHOREFALL_STRAND)
+    setvar(VAR_UNUSED_0x404E, 3)
+    setwildbattle(SPECIES_WATTREL, 2)
+    dowildbattle
+    msgbox(format(
+            "You steady your partner. A gentle breeze flows."
+            "Ranger fieldbook page 1 says you should look 
+            for your fellow Rangers and get to safety!\p"
+            ))
+    special(HealPlayerParty)
+    releaseall
+    end
+}
+
+script CrashedShipLock {
+    lock
+    msgbox(format("The hull of the ship is damaged and waterlogged.\n"
+    "It looks like it washed ashore during a storm."))
+    checkitem(ITEM_STORAGE_KEY)
+    if (var(VAR_RESULT) == TRUE) {
+    msgbox(format("You use the Old Key to unlock a small compartment.\p"))
+    warp(MAP_TIDES_MERCY_STORAGE_WRECK, 1, 24)
+    waitstate
+    } else 
+    {
+    msgbox(format("The compartment is locked tight. You need a key to open it."))
+    }
+    release
+}

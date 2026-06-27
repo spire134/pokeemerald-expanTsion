@@ -1,0 +1,34 @@
+mapscripts HAZOLT_VILLAGE_MapScripts {}
+
+script Resivoir_Guy {
+    lock
+    faceplayer
+    msgbox(format("The reservoir is full of clean, fresh water.\p"
+    "Even though we're by the sea, it's important to have freshwater sources."))
+    release
+    end
+}
+
+script Hazolt_Fisherman {
+    lock
+    faceplayer
+    msgbox(format("The fishing here is great!\p"
+    "The best fishing is east by Zatik Bridge!"))
+    release
+    end
+    
+}
+
+script Restless_Boy {
+    lock
+    faceplayer
+    msgbox(format("I can't sit still! I want to explore the world!\p"
+    "Maybe I'll join the Rangers when I grow up!"))
+    release
+    end
+}
+
+script Hazolt_BeachWarp {
+    warp(MAP_SHUNU_BEACH_WEST, 11, 5)
+    waitstate  
+}
