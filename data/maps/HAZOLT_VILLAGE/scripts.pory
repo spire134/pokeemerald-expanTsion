@@ -3,8 +3,26 @@ mapscripts HAZOLT_VILLAGE_MapScripts {}
 script Resivoir_Guy {
     lock
     faceplayer
-    msgbox(format("The reservoir is full of clean, fresh water.\p"
-    "Even though we're by the sea, it's important to have freshwater sources."))
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
+        msgbox(format("The reservoir feels quieter now.\p"
+            "With the pirates pushed out and those Hive Drones at the bridge dealt with,\p"
+            "Hazolt can finally breathe again."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("The reservoir is full of clean, fresh water.\p"
+                "Even with the pirates gone, I still don't trust the calm.\p"
+                "If Team Hive is moving at the bridge, we're not done yet."))
+        } else {
+            if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+                msgbox(format("The reservoir is full of clean, fresh water.\p"
+                    "I heard you tangled with Hive Drones at Static Bridge.\p"
+                    "Good. Hazolt needs Rangers who notice the threats early."))
+            } else {
+                msgbox(format("The reservoir is full of clean, fresh water.\p"
+                    "Even though we're by the sea, it's important to have freshwater sources."))
+            }
+        }
+    }
     release
     end
 }
@@ -12,8 +30,24 @@ script Resivoir_Guy {
 script Hazolt_Fisherman {
     lock
     faceplayer
-    msgbox(format("The fishing here is great!\p"
-    "The best fishing is east by Zatik Bridge!"))
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
+        msgbox(format("The fishing here is great again.\p"
+            "Pirates were scaring off everything, and the Hive noise at Static Bridge didn't help.\p"
+            "Now I might actually catch something worth bragging about."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("The fishing here is great, but the sea's still got a bad memory.\p"
+                "Those pirates at the wreck stirred up trouble all along the shore."))
+        } else {
+            if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+                msgbox(format("The fishing here is great, but even I heard about the Hive at Static Bridge.\p"
+                    "If they start messing with the water next, they'll have me to answer to."))
+            } else {
+                msgbox(format("The fishing here is great!\p"
+                    "The best fishing is east by Zatik Bridge!"))
+            }
+        }
+    }
     release
     end
     
@@ -22,8 +56,105 @@ script Hazolt_Fisherman {
 script Restless_Boy {
     lock
     faceplayer
-    msgbox(format("I can't sit still! I want to explore the world!\p"
-    "Maybe I'll join the Rangers when I grow up!"))
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK) || flag(FLAG_STATIC_DRONE_FIGHT)) {
+        msgbox(format("I still can't sit still! But now I want to find out the truth.\p"
+            "Were the Rangers scared off by the pirates, or did Team Hive push them out?\p"
+            "Maybe I'll join the Rangers when I grow up and figure it all out!"))
+    } else {
+        msgbox(format("I can't sit still! I want to explore the world!\p"
+            "Maybe I'll join the Rangers when I grow up!"))
+    }
+    release
+    end
+}
+
+script Hazolt_Worried_Boy {
+    lock
+    faceplayer
+    if (!flag(FLAG_SHUNU_LOST_GIRL_SAVED)) {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
+            msgbox(format("My little sister wandered off\n"
+                "toward the beach.\p"
+                "You already handled the pirates\n"
+                "and fought Hive at Static Bridge,\n"
+                "so I know you're the real deal.\p"
+                "Please… if anyone can bring her\n"
+                "back, it's you."))
+        } else {
+            if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+                msgbox(format("My little sister wandered\n"
+                    "off toward the beach.\p"
+                    "The pirates are gone, but I\n"
+                    "still hear people whispering\n"
+                    "about Team Hive at Static Bridge.\p"
+                    "The Rangers used to keep\n"
+                    "Hazolt safe… then they just\n"
+                    "vanished. I don't know who to\n"
+                    "trust anymore."))
+            } else {
+                if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+                    msgbox(format("My little sister wandered\n"
+                        "off toward the beach.\p"
+                        "I heard you fought Hive Drones\n"
+                        "at Static Bridge. That's one\n"
+                        "mystery solved, I guess.\p"
+                        "Now if only someone would tell\n"
+                        "me where the Rangers went when\n"
+                        "the pirates showed up…"))
+                } else {
+                    msgbox(format("My little sister wandered\n"
+                        "off toward the beach.\p"
+                        "I told her pirates were\n"
+                        "all over the shore, but she\n"
+                        "wanted to look for shells.\p"
+                        "The Rangers used to keep\n"
+                        "Hazolt safe… then they just\n"
+                        "vanished. Now everyone says\n"
+                        "Team Hive is moving behind\n"
+                        "the scenes, and I don't know\n"
+                        "what to believe anymore."))
+                }
+            }
+        }
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
+            msgbox(format("You found my sister…\n"
+                "Thank you.\p"
+                "The pirates are gone and Hive\n"
+                "got pushed back at Static Bridge.\p"
+                "Maybe the Rangers really did\n"
+                "leave for a reason. Maybe\n"
+                "all those rumors were connected\n"
+                "after all."))
+        } else {
+            if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+                msgbox(format("You found my sister…\n"
+                    "Thank you.\p"
+                    "At least the pirates aren't a\n"
+                    "threat anymore. If Team Hive\n"
+                    "is behind the bridge trouble,\n"
+                    "then Hazolt still has work to do."))
+            } else {
+                if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+                    msgbox(format("You found my sister…\n"
+                        "Thank you.\p"
+                        "I heard you handled Hive Drones\n"
+                        "at Static Bridge too. That means\n"
+                        "the truth is finally starting to\n"
+                        "come out."))
+                } else {
+                    msgbox(format("You found my sister…\n"
+                        "Thank you.\p"
+                        "Maybe the Rangers really did\n"
+                        "leave for a reason. Maybe\n"
+                        "the pirate trouble and Team\n"
+                        "Hive are all connected.\p"
+                        "I just know Hazolt feels a\n"
+                        "little less empty now."))
+                }
+            }
+        }
+    }
     release
     end
 }
@@ -50,7 +181,26 @@ script Hazolt_Village_Sign {
 script Hazolt_Sailor_Scared {
     lock
     faceplayer
-    msgbox(format("Please don't make me fight!\n"
-    "Those pirates have been making things dangerous around here!"))
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
+        msgbox(format("Please don't make me fight!\n"
+            "Well… actually, maybe I can breathe again.\p"
+            "With the pirates pushed out and Hive checked at Static Bridge,\p"
+            "Hazolt finally feels safe."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("Please don't make me fight!\n"
+                "At least the pirates at the wreck are gone.\p"
+                "Now everyone keeps talking about Team Hive at Static Bridge…"))
+        } else {
+            if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+                msgbox(format("Please don't make me fight!\n"
+                    "Those pirates have been making things dangerous around here!\p"
+                    "And if Team Hive is moving at Static Bridge, I don't like the sound of that either."))
+            } else {
+                msgbox(format("Please don't make me fight!\n"
+                    "Those pirates have been making things dangerous around here!"))
+            }
+        }
+    }
     release
 }

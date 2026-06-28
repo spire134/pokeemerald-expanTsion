@@ -1,8 +1,84 @@
 mapscripts SHUNU_BEACH_WEST_MapScripts {}
 
+script ShunuBeach_Beauty_Fight {
+    trainerbattle_single(TRAINER_THALIA_2,
+        format("Beauty: Pearls are the\n"
+            "only treasure worth\n"
+            "chasing."),
+        format("Beauty: Hmph. Then I'll\n"
+            "simply find a finer one."))
+    msgbox(format("Beauty: When the tide is\n"
+        "right, the sea gives up\n"
+        "its prettiest gems."), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
+script ShunuBeach_Fisherman_Fight {
+    trainerbattle_single(TRAINER_ANDREW,
+        format("Fisherman: I cast for fish,\n"
+            "not for another busted\n"
+            "crate!"),
+        format("Fisherman: The sea can\n"
+            "keep its junk. I'm done."))
+    msgbox(format("Fisherman: If I hook one\n"
+        "more piece of flotsam, I'm\n"
+        "throwing this rod in!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}
+
 script Hazolt_Sign {
     lock
-    msgbox(format("North: Hazolt Village\n"
-    "Fresh water available!"))
+    if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+        msgbox(format("North: Hazolt Village\n"
+            "Fresh water available!\p"
+            "Pirate graffiti:\n"
+            "Keep moving. We own\n"
+            "the shore!"))
+    } else {
+        msgbox(format("North: Hazolt Village\n"
+            "Fresh water available!"))
+    }
     release
+    end
+}
+
+script ShunuBeach_LostGirl {
+    lock
+    faceplayer
+    if (flag(FLAG_SHUNU_LOST_GIRL_SAVED)) {
+        msgbox(format("Lost Girl: Thank you again\n"
+            "for helping me, Ranger.\n"
+            "I made it back safely."))
+        release
+        end
+    }
+    checkpartymove(MOVE_SURF)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Lost Girl: I can't get\n"
+            "back to shore without\n"
+            "SURF… Please come back\n"
+            "when you can cross the\n"
+            "water."))
+        release
+        end
+    }
+    msgbox(format("Lost Girl: You can use\n"
+        "SURF? Please, take me\n"
+        "back to the mainland!"))
+    waitmessage
+    playse(SE_PIN)
+    waitse
+    msgbox(format("Lost Girl: I was trying\n"
+        "to follow the current and\n"
+        "got turned around out\n"
+        "here… I'm so relieved!"))
+    waitmessage
+    giveitem(ITEM_NUGGET)
+    msgbox(format("Lost Girl: Please take this\n"
+        "Nugget. You saved me more\n"
+        "than once today!"))
+    setflag(FLAG_SHUNU_LOST_GIRL_SAVED)
+    removeobject(LOCALID_LOST_GIRL)
+    release
+    end
 }

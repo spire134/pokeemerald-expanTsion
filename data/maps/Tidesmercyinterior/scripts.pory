@@ -7,16 +7,16 @@ script PlayerRoom_Note {
         msgbox(format(
             "A crisp, professional note from the Captain.\p"
             "RANGER RECRUIT,\p"
-            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,"
+            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\n"
             "then report to my quarters for partner assignment at your earliest convenience.\p"
             "Professional enthusiasm is encouraged.\n"
             "- Captain Mara Kealoha"
         ))
         setflag(FLAG_NOTE_READ)
     } else {
-        msgbox(format("
-        “Report to my quarters for partner assignment.”
-         - Captain Mara Kealoha"))
+        msgbox(format("Report to my quarters for\n"
+            "partner assignment.\n"
+            "- Captain Mara Kealoha"))
     }
     setflag(FLAG_SYS_B_DASH)
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
@@ -25,25 +25,28 @@ script PlayerRoom_Note {
     special(EnableNationalPokedex)
     special(SetUnlockedPokedexFlags)
     setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
-    msgbox(format("You grabbed your gear and shoes. Time to meet the Captain."))
+    msgbox(format("You grabbed your gear and\n"
+        "shoes. Time to meet the\n"
+        "Captain."))
     release
     end
 }
 
 script Should_Read_Note {
     if (!flag(FLAG_NOTE_READ)) {
-    lock
-    msgbox(format(
-        "Don't forget to read the note the Captain left on your desk!\n"
-        ))
-    waitbuttonpress
-    applymovement(LOCALID_PLAYER, moves(walk_up))
-    waitmovement(0)
-    release
-    end
+        lock
+        msgbox(format("Don't forget to read the\n"
+            "note the Captain left on\n"
+            "your desk!"))
+        waitbuttonpress
+        applymovement(LOCALID_PLAYER, moves(walk_up))
+        waitmovement(0)
+        release
+        end
     } else {
-    end
-    }}
+        end
+    }
+}
 
 
 
@@ -113,14 +116,19 @@ script CaptainRoom_Talk {
     if (!flag(FLAG_GOT_STARTER)) {
         msgbox(format(
             "Captain Mara: Welcome aboard, Ranger.\p"
-            "I hope you are well prepared for your first mission as a Ranger.\p"
-            "There was a blackout on communications from the Ranger teams on the southern shore
-            of Corymbra Island. Our mission is to investigate and restore contact.\p"
+            "I hope you're prepared for\n"
+            "your first mission.\p"
+            "We've lost communications\n"
+            "with the Ranger teams on\n"
+            "Corymbra's southern shore.\p"
+            "Our mission is to investigate\n"
+            "and restore contact.\p"
             "Before we depart, you need to choose your partner Pokémon.\l"
             "You have three choices: Turtwig, Torchic, or Froakie."
         ))
     } else {
-        msgbox("You have your partner. Good. Stay flexible.")
+        msgbox(format("You have your partner.\n"
+            "Good. Stay flexible."))
     }
     releaseall
     end
@@ -129,9 +137,14 @@ script CaptainRoom_Talk {
 # Place three Poké Ball objects in this room and hook these scripts
 script Starter_Turtwig {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    if (flag(FLAG_GOT_STARTER)) {
+        msgbox(format("The case is empty."))
+        releaseall
+        end
+    }
     showmonpic(SPECIES_TURTWIG, 10, 3)
-    msgbox("Take TURTWIG as your partner?", MSGBOX_YESNO)
+    msgbox(format("Take TURTWIG as your\n"
+        "partner?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) { 
         hidemonpic    
         releaseall 
@@ -145,9 +158,14 @@ script Starter_Turtwig {
 
 script Starter_Torchic {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    if (flag(FLAG_GOT_STARTER)) {
+        msgbox(format("The case is empty."))
+        releaseall
+        end
+    }
     showmonpic(SPECIES_TORCHIC, 10, 3)
-    msgbox("Take TORCHIC as your partner?", MSGBOX_YESNO)
+    msgbox(format("Take TORCHIC as your\n"
+        "partner?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) { 
         hidemonpic 
         releaseall 
@@ -161,9 +179,14 @@ script Starter_Torchic {
 
 script Starter_Froakie {
     lockall
-    if (flag(FLAG_GOT_STARTER)) { msgbox("The case is empty.") releaseall end }
+    if (flag(FLAG_GOT_STARTER)) {
+        msgbox(format("The case is empty."))
+        releaseall
+        end
+    }
     showmonpic(SPECIES_FROAKIE, 10, 3)
-    msgbox("Take FROAKIE as your partner?", MSGBOX_YESNO)
+    msgbox(format("Take FROAKIE as your\n"
+        "partner?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == 0) { 
         hidemonpic 
         releaseall 
@@ -178,25 +201,29 @@ script Starter_Froakie {
 script(local) Give_Starter0 {
     hidemonpic
     setflag(FLAG_SYS_POKEMON_GET)
-    setvar((VAR_STARTER_MON), 0)
+    setvar(VAR_STARTER_MON, 0)
     givemon(SPECIES_TURTWIG, 5)
     call(Common_EventScript_NameReceivedPartyMon)
     setflag(FLAG_GOT_STARTER)
     playfanfare(FANFARE_RG_OBTAIN_KEY_ITEM)
-    msgbox("TURTWIG joined your squad.")
+    msgbox(format("TURTWIG joined your\n"
+        "squad."))
     return
 }
+
 script(local) Give_Starter1 {
     hidemonpic
     setflag(FLAG_SYS_POKEMON_GET)
-    setvar((VAR_STARTER_MON), 1)
+    setvar(VAR_STARTER_MON, 1)
     givemon(SPECIES_TORCHIC, 5)
     call(Common_EventScript_NameReceivedPartyMon)
     setflag(FLAG_GOT_STARTER)
     playfanfare(FANFARE_RG_OBTAIN_KEY_ITEM)
-    msgbox("TORCHIC joined your squad.")
+    msgbox(format("TORCHIC joined your\n"
+        "squad."))
     return
 }
+
 script(local) Give_Starter2 {
     hidemonpic
     setflag(FLAG_SYS_POKEMON_GET)
@@ -205,7 +232,8 @@ script(local) Give_Starter2 {
     call(Common_EventScript_NameReceivedPartyMon)
     setflag(FLAG_GOT_STARTER)
     playfanfare(FANFARE_RG_OBTAIN_KEY_ITEM)
-    msgbox("FROAKIE joined your squad.")
+    msgbox(format("FROAKIE joined your\n"
+        "squad."))
     return
 }
 
@@ -218,27 +246,33 @@ movement BurstRanger_Enter {
     walk_fast_up
     walk_fast_up
     walk_fast_up
+    emote_exclamation_mark
     walk_left
     face_right
-    }
+}
 
 script PostStarter_StormInterrupt {
     if (flag(FLAG_STORM_STARTED)) { end }
-    # Ranger bursts in
-    msgbox(format("Mara: Now, listen up, I -\p"))
+    # Sailor bursts in with storm warning
+    msgbox(format("Mara: Now, listen up, I-\p"))
     addobject(OBJ_BURST_RANGER)
     showobjectat(OBJ_BURST_RANGER, MAP_TIDESMERCYINTERIOR)
     playse(SE_EXIT)
+    waitse
+    playse(SE_M_HAZE)
     waitse
     setvar(VAR_UNUSED_0x404E, 1)
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
     msgbox(format(
-        "Ranger: Captain! Massive storm just appeared out of nowhere!"
-        "The barometer is going haywire, it's right on top of us!"
+        "Sailor: Captain! A massive\n"
+        "storm appeared out of\n"
+        "nowhere!\p"
+        "The barometer's going wild!\n"
+        "It's almost on top of us!"
     ))
     waitmessage
-    applymovement(OBJ_CAPT_MARA, moves(emote_exclamation_mark))
+    applymovement(OBJ_CAPT_MARA, moves(emote_exclamation_mark jump_in_place_down))
     playse(SE_PIN)
     waitmovement(0)
     applymovement(OBJ_CAPT_MARA, moves(walk_in_place_fast_left walk_fast_down walk_fast_down walk_fast_down))
@@ -246,8 +280,8 @@ script PostStarter_StormInterrupt {
     playse(SE_EXIT)
     waitse
     removeobject(OBJ_CAPT_MARA)
-    msgbox(format
-        ("Captain Mara: Everybody move! All hands topside!"))
+    msgbox(format("Captain Mara: Everybody\n"
+        "move! All hands topside!"))
     setflag(FLAG_STORM_STARTED)
     fadescreen(FADE_TO_BLACK)
     warp(MAP_SS_TIDES_MERCY, 19, 8)

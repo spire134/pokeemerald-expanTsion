@@ -22,6 +22,33 @@ script Static_Bridge_Sign {
     release
 }
 
+script Static_Bridge_Doubter {
+    lock
+    faceplayer
+    if (!flag(FLAG_STATIC_DRONE_FIGHT)) {
+        msgbox(format("Hive folks said Rangers were all talk.\p"
+            "After the storm and pirates, I can't argue.\p"
+            "You are all a sniveling bunch!"))
+        release
+        end
+    }
+
+    if (!flag(FLAG_STATIC_BRIDGE_APOLOGY_GIFT)) {
+        msgbox(format("I was wrong about the Rangers.\p"
+            "You drove those Hive Drones off this bridge when nobody else would.\p"
+            "Take these as an apology, and as thanks."))
+        giveitem(ITEM_SUPER_POTION, 5)
+        msgbox(format("{PLAYER} received 5 Super Potions!"))
+        setflag(FLAG_STATIC_BRIDGE_APOLOGY_GIFT)
+    } else {
+        msgbox(format("I said Rangers were useless.\p"
+            "Then you proved me wrong on this very bridge.\p"
+            "I won't forget that."))
+    }
+    release
+    end
+}
+
 script Team_Hive_Drone {
     lock
     if (!flag(FLAG_BADGE01_GET)) {

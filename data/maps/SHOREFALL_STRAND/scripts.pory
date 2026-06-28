@@ -13,34 +13,66 @@ script Shorefall_OnEnter {
         "Waves pound against a grounded hull.\p"
         "You are suddenly attacked by a Pokémon!"
     ))
-    # Immediate wild encounter: level 2 ENCOUNTER_SPECIES
-    //special(ChooseStarter)
+    call(Shorefall_PartnerMoment)
     setrespawn(HEAL_LOCATION_SHOREFALL_STRAND)
     setvar(VAR_UNUSED_0x404E, 3)
     setwildbattle(SPECIES_WATTREL, 2)
     dowildbattle
     msgbox(format(
-            "You steady your partner. A gentle breeze flows."
-            "Ranger fieldbook page 1 says you should look 
-            for your fellow Rangers and get to safety!\p"
-            ))
+        "You steady your partner as\n"
+        "the rain finally eases.\n"
+        "A cold breeze rolls in.\p"
+        "Ranger Fieldbook, page 1:\n"
+        "Find your team. Reach\n"
+        "shelter. Stay alive."
+    ))
     special(HealPlayerParty)
     releaseall
     end
 }
 
+script(local) Shorefall_PartnerMoment {
+    switch (var(VAR_STARTER_MON)) {
+        case 0:
+            playmoncry(SPECIES_TURTWIG, 0)
+            waitmoncry
+            msgbox(format("TURTWIG plants itself\n"
+                "between you and the surf,\n"
+                "steady and unshaken."))
+        case 1:
+            playmoncry(SPECIES_TORCHIC, 0)
+            waitmoncry
+            msgbox(format("TORCHIC hops in front of\n"
+                "you, feathers bristling\n"
+                "with defiant energy."))
+        case 2:
+            playmoncry(SPECIES_FROAKIE, 0)
+            waitmoncry
+            msgbox(format("FROAKIE lands lightly by\n"
+                "your side, alert eyes\n"
+                "tracking every movement."))
+    }
+    return
+}
+
 script CrashedShipLock {
     lock
-    msgbox(format("The hull of the ship is damaged and waterlogged.\n"
-    "It looks like it washed ashore during a storm."))
+    msgbox(format("The hull is damaged and\n"
+        "waterlogged.\n"
+        "It washed ashore in the\n"
+        "storm."))
     checkitem(ITEM_STORAGE_KEY)
     if (var(VAR_RESULT) == TRUE) {
-    msgbox(format("You use the Old Key to unlock a small compartment.\p"))
-    warp(MAP_TIDES_MERCY_STORAGE_WRECK, 1, 24)
-    waitstate
-    } else 
-    {
-    msgbox(format("The compartment is locked tight. You need a key to open it."))
+        msgbox(format("You use the Old Key to\n"
+            "unlock a small\n"
+            "compartment."))
+        warp(MAP_TIDES_MERCY_STORAGE_WRECK, 1, 24)
+        waitstate
+    } else {
+        msgbox(format("The compartment is locked\n"
+            "tight. You need a key to\n"
+            "open it."))
     }
     release
+    end
 }

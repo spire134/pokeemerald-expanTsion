@@ -3,14 +3,62 @@ mapscripts Hazolt_ItemHouse_MapScripts {}
 script Karate_Master{
     lockall
     applymovement(LOCALID_ITEM_MONK, moves(face_player))
-    msgbox(format("One must earn their results one day at a time. There is no rushing technique."))
-    checkitem(ITEM_MACHO_BRACE, 1)
-    if (var(VAR_RESULT) == 0) {
-        msgbox(format("Here, take this. It will help you train harder."))
-        giveitem(ITEM_MACHO_BRACE)
+    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("Discipline will save this region.\p"
+            "The pirates tested your nerve, Team Hive tested your judgment.\p"
+            "Both are defeated by the same habit: steady work every day."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("You drove pirates off the wreck, good.\p"
+                "Do not mistake one victory for mastery.\p"
+                "Team Hive still pressures the weak where discipline is absent."))
+        } else {
+            msgbox(format("One earns results one day at a time.\p"
+                "There is no rushing true technique.\p"))
+        }
     }
-    else {
-    msgbox(format("Weighted gear will slow you, but harden your body quicker."))
+
+    if (flag(FLAG_SHUDDERWOOD_MANSION_CLEARED)) {
+        if (!flag(FLAG_RECEIVED_CHOICE_BAND)) {
+            msgbox(format("You've crossed Shudderwood and prevailed.\p"
+                "Take this Choice Band. Wield it with intent."))
+            giveitem(ITEM_CHOICE_BAND)
+            msgbox(format("{PLAYER} received a Choice Band!"))
+            setflag(FLAG_RECEIVED_CHOICE_BAND)
+            waitmessage
+        } else {
+            msgbox(format("You already carry a Choice Band.\p"
+                "When you strap it on, commit to offense.\p"
+                "Choose your first attack wisely and press the advantage."))
+        }
+        releaseall
+        end
+    }
+
+    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        if (!flag(FLAG_RECEIVED_MUSCLE_BAND)) {
+            msgbox(format("You've proven your fundamentals in Quartzite.\p"
+                "Now take this and sharpen your physical pressure."))
+            giveitem(ITEM_MUSCLE_BAND)
+            msgbox(format("{PLAYER} received a Muscle Band!"))
+            setflag(FLAG_RECEIVED_MUSCLE_BAND)
+            waitmessage
+        } else {
+            msgbox(format("You have the Muscle Band for this stage of your training.\p"
+                "It's a clean, reliable boost for physical offense in any matchup."))
+        }
+        releaseall
+        end
+    }
+
+    checkitem(ITEM_MACHO_BRACE, 1)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Here, take this. It will help you train harder.\p"
+            "Weight teaches patience better than any lecture."))
+        giveitem(ITEM_MACHO_BRACE)
+        setflag(FLAG_RECEIVED_MACHO_BRACE)
+    } else {
+        msgbox(format("Weighted gear slows you down, but hardens your body and decisions."))
     }
     releaseall
     end
@@ -18,8 +66,25 @@ script Karate_Master{
 
 script Karate_Trainee{
     lockall
-    msgbox(format("I want to be as strong as the Master one day!"
-    "He trained the fighting rangers at Quartzite!"))
+    checkitem(ITEM_MACHO_BRACE, 1)
+    if (var(VAR_RESULT) == FALSE) {
+        msgbox(format("Master gives out a Macho Brace to his trusted trainees.\p"
+            "It slows your Pokemon, but the training payoff is huge.\p"))
+    } else {
+        if (flag(FLAG_SHUDDERWOOD_MANSION_CLEARED)) {
+            msgbox(format("That Choice Band is intense!\p"
+                "It locks your Pokemon into one move, so skip setup and commit to attacks.\p"
+                "Pick the right move first, then keep swinging."))
+        } else {
+            if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+                msgbox(format("Muscle Band is awesome for all-around physical offense.\p"
+                    "No gimmick, just steady extra punch on every physical hit."))
+            } else {
+                msgbox(format("Macho Brace is for training grit.\p"
+                    "It slows you down now so your team grows tougher later."))
+            }
+        }
+    }
     releaseall
     end
 }

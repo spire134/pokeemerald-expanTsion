@@ -112,9 +112,9 @@ script Quartz_Gym_PatienceChallenge {
     faceplayer
     if(!flag(FLAG_BADGE02_GET)) {
     if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent waiting until the perfect moment to strike! 
-    Demonstrate your patience by waiting here for 30 seconds without moving! 
-    Are you ready to begin?"), MSGBOX_YESNO)
+    msgbox(format("I represent waiting until the perfect moment to strike!\p"
+    "Demonstrate your patience by waiting here for 30 seconds without moving!\p"
+    "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Great! Start waiting now."))
         delay(1800) // 30 seconds at 60 FPS

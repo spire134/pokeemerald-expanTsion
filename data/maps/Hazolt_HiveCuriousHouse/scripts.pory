@@ -3,8 +3,21 @@ mapscripts Hazolt_HiveCuriousHouse_MapScripts {}
 script Hazolt_HiveCuriousMan {
     lock
     applymovement(LOCALID_HAZOLT_HIVECURIOUSMAN, moves(face_player))
-    msgbox(format("I've been hearing about this new organization, Team Hive."
-    "They seem to have a sure idea of how to make the world a better place."))
+    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("I thought Team Hive sounded organized. Efficient. Necessary, even.\p"
+            "Then Quartzite happened.\p"
+            "Now I think people who promise order too quickly are usually hiding the cost."))
+    } else {
+        if (flag(FLAG_STATIC_DRONE_FIGHT)) {
+            msgbox(format("I used to talk like Team Hive had answers.\p"
+                "After those Drones showed up at Static Bridge, I am less certain.\p"
+                "Control and care are not the same thing."))
+        } else {
+            msgbox(format("I keep hearing about Team Hive.\p"
+                "Some say they can fix what the Rangers failed to hold together after the storm.\p"
+                "I am trying to decide whether that is hope or fear talking."))
+        }
+    }
     release
     end
 }
@@ -12,8 +25,19 @@ script Hazolt_HiveCuriousMan {
 script Hazolt_HiveCuriousWoman {
     lock
     applymovement(LOCALID_HAZOLT_HIVECURIOUSWOMAN, moves(face_player))
-    msgbox(format("People say Team Hive is trying to change the world."
-    "I wonder if they really can do it."))
+    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("People said Team Hive wanted to change the world.\p"
+            "Maybe they did. Just not for us.\p"
+            "I am done confusing big promises with good intentions."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("Pirates hit us from the shore while Hive stirs trouble inland.\p"
+                "When problems arrive from every direction, rumors feel like weather."))
+        } else {
+            msgbox(format("People say Team Hive is trying to change the world.\p"
+                "I wonder if they can, and what they would have to break to do it."))
+        }
+    }
     release
     end
 }
@@ -39,7 +63,14 @@ script Hazolt_Chamber_Pot {
 script Hazolt_PirateBoy {
     lock
     faceplayer
-    msgbox(format("Pirates are so cool! I want to be a pirate when I grow up!"))
+    if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+        msgbox(format("Okay, maybe pirates are not cool.\p"
+            "They stole from people who were already rebuilding.\p"
+            "I still like the hats, though."))
+    } else {
+        msgbox(format("Pirates are so cool! I want to be a pirate when I grow up!\p"
+            "Mom says that means I am grounded."))
+    }
     release
     end
 }
@@ -47,7 +78,20 @@ script Hazolt_PirateBoy {
 script Hazolt_ConcernedMom {
     lock
     faceplayer
-    msgbox(format("My boy has been so obsessed with pirates lately. I blame the Rangers, where were they when those pirates came?"))
+    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("My boy is finally done pretending pirates are heroes.\p"
+            "I was hard on the Rangers after the storm.\p"
+            "Seeing what Hive did in Quartzite… I understand the pressure they were under."))
+    } else {
+        if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
+            msgbox(format("My boy has been obsessed with pirates for weeks.\p"
+                "I blamed the Rangers when the coast got hit.\p"
+                "Now I am not sure whether blame is useful when Team Hive keeps escalating things."))
+        } else {
+            msgbox(format("My boy has been so obsessed with pirates lately.\p"
+                "I blame the Rangers! They left us to deal with the storm and pirates on our own.\p"))
+        }
+    }
     release
     end
 }

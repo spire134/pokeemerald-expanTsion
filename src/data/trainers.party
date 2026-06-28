@@ -148,12 +148,12 @@ Qwilfish
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Corphish
+Tentacool
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: June
+Name: Callie
 Class: Pirate
 Pic: Aqua Admin F
 Gender: Female
@@ -165,7 +165,7 @@ Wartortle
 Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 20 SpA / 20 SpD / 0 Spe
 
-Inkay
+Pawniard
 Level: 25
 IVs: 20 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 20 Spe
 
@@ -635,7 +635,7 @@ Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_LEAH ===
-Name: LEAH
+Name: Lelee
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -4026,7 +4026,7 @@ Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TAYLOR ===
-Name: TAYLOR
+Name: Tano
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -4039,7 +4039,7 @@ Ability: Compound Eyes
 Level: 17  
 Tera Type: Bug  
 Brave Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+IVs: 10 HP / 10 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe  
 - Hypnosis  
 - Detect  
 - Air Cutter  
@@ -6424,7 +6424,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
 
 === TRAINER_ANDREW ===
-Name: ANDREW
+Name: Andrew
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6432,16 +6432,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Corphish
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
-Level: 10
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
-Level: 15
+Wishiwashi
+Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IVAN ===
@@ -7699,7 +7699,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YASU ===
-Name: YASU
+Name: Yasushiro
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -7709,17 +7709,17 @@ AI: Check Bad Move / Try To Faint
 
 Croagunk  
 Ability: Dry Skin  
-Level: 15  
+Level: 16  
 Tera Type: Poison  
 IVs: 11 HP / 12 Atk / 16 Def / 16 SpA / 16 SpD / 20 Spe  
-- Pursuit  
 - Astonish  
-- Mud Shot  
+- Flatter  
+- Poison Sting  
 - Low Kick  
 
 Staryu  
 Ability: Illuminate  
-Level: 16  
+Level: 15  
 Tera Type: Water  
 Impish Nature  
 IVs: 2 Atk / 19 Def / 0 SpA / 26 SpD / 22 Spe  
@@ -10037,7 +10037,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAVIS ===
-Name: DAVIS
+Name: Davis
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -10054,6 +10054,15 @@ IVs: 15 HP / 12 Atk / 21 Def / 3 SpA / 3 SpD / 3 Spe
 - Electroweb  
 - String Shot  
 - Bug Bite
+
+Surskit
+Ability: Swift Swim
+Level: 14
+IVs: 15 HP / 12 Atk / 21 Def / 3 SpA / 3 SpD / 3 Spe  
+- Bubble  
+- Sweet Scent
+- Water Sport  
+- Quick Attack
 
 === TRAINER_MITCHELL ===
 Name: MITCHELL
@@ -10818,7 +10827,7 @@ IVs: 9 HP / 0 Atk / 10 Def / 0 SpA / 0 SpD / 9 Spe
 - Fake Out  
 - Fury Swipes  
 - Reversal  
-- Detect
+- Leer
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
@@ -10961,7 +10970,7 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NICHOLAS ===
-Name: NICHOLAS
+Name: Nicholas
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -10988,7 +10997,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Detect
 - Confusion
 - Endure
-- Feint
+- Mega Punch
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
 Name: GRUNT
@@ -11369,17 +11378,6 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Venipede  
-Ability: Poison Point  
-Level: 12  
-Tera Type: Bug  
-Relaxed Nature  
-IVs: 15 HP / 7 Atk / 24 Def / 7 SpA / 24 SpD / 11 Spe  
-- Poison Tail  
-- Protect  
-- Rollout  
-- Poison Sting  
-
 Paras  
 Ability: Effect Spore  
 Level: 13  
@@ -11389,7 +11387,18 @@ IVs: 17 HP / 0 Atk / 14 Def / 10 SpA / 0 SpD / 0 Spe
 - Scratch  
 - Poison Powder  
 - Stun Spore  
-- Absorb  
+- Leech Life  
+
+Venipede  
+Ability: Poison Point  
+Level: 13  
+Tera Type: Bug  
+Relaxed Nature  
+IVs: 15 HP / 7 Atk / 24 Def / 7 SpA / 24 SpD / 11 Spe  
+- Poison Tail  
+- Defense Curl  
+- Rollout  
+- Leer 
 
 === TRAINER_HALEY_4 ===
 Name: HALEY
@@ -11494,7 +11503,7 @@ Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RICK ===
-Name: RICK
+Name: Ricko
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -11534,7 +11543,7 @@ IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 11 Spe
 - Thief  
 
 === TRAINER_LYLE ===
-Name: LYLE
+Name: Lyle
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -12268,7 +12277,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smokescreen
 
 === TRAINER_FLINT ===
-Name: FLINT
+Name: Flint
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -12276,7 +12285,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wooper-Paldea  
+Wooper-Paldea @ Oran Berry
 Ability: Poison Point  
 Level: 13  
 Tera Type: Poison  
@@ -12284,15 +12293,15 @@ IVs: 11 HP / 21 Atk / 21 Def / 11 SpA / 21 SpD / 11 Spe
 - Tackle  
 - Mist  
 - Mud Shot  
-- Mud-Slap  
+- Mud-Slap
 
-Wattrel (F)  
+Wattrel (F) @ Pecha Berry
 Ability: Volt Absorb  
 Level: 13  
 Tera Type: Electric  
 Timid Nature  
 IVs: 12 HP / 22 Atk / 17 Def / 11 SpA / 8 SpD / 19 Spe  
-- Pluck  
+- Growl  
 - Quick Attack  
 - Thunder Shock  
 - Peck  
@@ -12319,7 +12328,8 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Astonish  
 - Screech  
-- Night Shade  
+- Night Shade
+- Curse  
 
 
 
@@ -13637,7 +13647,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Charjabug
+Charjabug @ Oran Berry
 Level: 16
 IVs: 20 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 30 Spe
 
@@ -17311,11 +17321,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wailmer
-Level: 34
+Level: 5
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Horsea
-Level: 34
+Level: 7
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_THALIA_3 ===

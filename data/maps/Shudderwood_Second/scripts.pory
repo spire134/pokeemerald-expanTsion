@@ -12,10 +12,12 @@ script Shudderwood_LeftDrone {
     applymovement(LOCALID_SHUDDERWOOD_LEFT_DRONE, moves(face_down))
     applymovement(LOCALID_SHUDDERWOOD_RIGHT_DRONE, moves(face_down))
     waitmovement(0)
-    msgbox(format("Dron: Let's leave it up to the Ranger then, do you want to buzz off?"), MSGBOX_YESNO)
+    msgbox(format("Drone: Let's leave it up to the Ranger then.\p"
+        "Do you want to buzz off?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
         msgbox(format("Drone: Buzz buzz… Wise choice, Ranger!\pWe'll be watching you from afar!"))
         release
+        end
     } else {
         msgbox(format("Drone: Buzz buzz… You're making a big mistake, Ranger!\pPrepare to be defeated!"))
         trainerbattle_two_trainers(TRAINER_GRUNT_MAGMA_HIDEOUT_10, "Drone: Buzzing mad!", TRAINER_GRUNT_MAGMA_HIDEOUT_11, "Drone: I feel the sting of defeat!")
@@ -46,6 +48,7 @@ script Shudderwood_LeftDrone {
         )
         call(Shudderwood_SeerJuneDefeated)
         release
+        end
     }
 }
 
@@ -140,11 +143,15 @@ script Shudderwood_StrengthDoorRight {
 script Shudderwood_GateHouseLeft {
     lock
     warp(MAP_SHUDDERWOOD_MANSION, 24, 49)
+    waitstate
     release
+    end
 }
 
-script  Shudderwood_GateHouseRight {
+script Shudderwood_GateHouseRight {
     lock
     warp(MAP_SHUDDERWOOD_MANSION, 25, 49)
-    release  
+    waitstate
+    release
+    end
 }

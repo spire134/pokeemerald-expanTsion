@@ -4,6 +4,33 @@ mapscripts SS_Tides_Mercy_MapScripts {
     ]
 }
 
+script Sailor_DeckTalk {
+    lock
+    faceplayer
+    if (!flag(FLAG_STORM_STARTED)) {
+        msgbox(format("Sailor: Skies looked calm\n"
+            "an hour ago. Now this air\n"
+            "feels wrong. I'll go\n"
+            "check the barometer soon."))
+    } else {
+        msgbox(format("Sailor: Keep moving!\n"
+            "We've got no time to stand\n"
+            "around!"))
+    }
+    release
+    end
+}
+
+movement Corin_RunInLate {
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_fast_up
+    face_right
+}
+
 script DeckStormCutscene {
     lockall
     setweather(WEATHER_RAIN_THUNDERSTORM)
@@ -11,27 +38,49 @@ script DeckStormCutscene {
     addobject(LOCALID_CAPT_MARA)
     addobject(LOCALID_SAILOR)
     addobject(LOCALID_EON_DECK)
+    addobject(LOCALID_RUNNING_CORRIN)
     showobjectat(LOCALID_CAPT_MARA, MAP_SS_TIDES_MERCY)
     showobjectat(LOCALID_SAILOR, MAP_SS_TIDES_MERCY)
     showobjectat(LOCALID_EON_DECK, MAP_SS_TIDES_MERCY)
+    showobjectat(LOCALID_RUNNING_CORRIN, MAP_SS_TIDES_MERCY)
     playse(SE_EXIT)
+    waitse
+    playse(SE_M_HAZE)
+    waitse
     setvar(VAR_UNUSED_0x404E, 2)
-    msgbox(format("CAPTAIN MARA: That storm is coming up fast!"))
-    # Quick shake
+    msgbox(format("CAPTAIN MARA: That storm's\n"
+        "building too fast!\n"
+        "Positions, now!"))
+    applymovement(LOCALID_CAPT_MARA, moves(emote_exclamation_mark face_player))
+    waitmovement(0)
+    playse(SE_PIN)
+    waitse
+    applymovement(LOCALID_RUNNING_CORRIN, Corin_RunInLate)
+    waitmovement(0)
+    applymovement(LOCALID_EON_DECK, moves(walk_in_place_down emote_exclamation_mark))
+    waitmovement(0)
+    msgbox(format("CORIN: Captain! Wind shear\n"
+        "just spiked! We're taking\n"
+        "water aft!"))
+    waitmessage
+    msgbox(format("RANGER EON: That's no\n"
+        "normal storm pattern…\n"
+        "something's forcing it!"))
+    # Quick lurch
     applymovement(LOCALID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     applymovement(LOCALID_CAPT_MARA, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     applymovement(LOCALID_SAILOR, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     applymovement(LOCALID_EON_DECK, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
+    applymovement(LOCALID_RUNNING_CORRIN, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     waitmovement(0)
-    applymovement(LOCALID_EON_DECK, moves(emote_exclamation_mark))
-    playse(SE_PIN)
-    waitmovement(0)
-    msgbox(format("RANGER EON: That sky isn't natural!"))
-    fadescreen(FADE_TO_BLACK)
     playse(SE_THUNDER2)
     waitse
+    msgbox(format("CAPTAIN MARA: No debate!\n"
+        "Abandon ship order! Move!"))
+    waitmessage
     playse(SE_THUNDER)
     waitse
+    fadescreen(FADE_TO_BLACK)
     # Warp to the beach in front of the wreck (tune these coords)
     warp(MAP_SHOREFALL_STRAND, 10, 20)
     fadescreen(FADE_FROM_BLACK)
@@ -41,4 +90,5 @@ script DeckStormCutscene {
 
 script StartGameFlags {
     setflag(FLAG_BEGINNING_TRAINERS)
+    end
 }

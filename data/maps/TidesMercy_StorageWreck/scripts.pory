@@ -36,8 +36,7 @@ script Wreck_Suprise_Grab {
     waitmessage
     applymovement(LOCALID_GANGUP_PIRATE, moves(walk_fast_left walk_fast_left walk_fast_left walk_down face_left))
     waitmovement(0)
-    msgbox(format("Pirate: You're outnumbered now, Ranger!\n
-    Prepare to be boarded!"))
+    msgbox(format("Pirate: You're outnumbered now, Ranger!\pPrepare to be boarded!"))
     waitmessage
     trainerbattle_two_trainers(TRAINER_GRUNT_AQUA_HIDEOUT_2, "Pirate: This is the end for me!", TRAINER_GRUNT_AQUA_HIDEOUT_3, "Pirate: You'll regret crossing us!")
     releaseall

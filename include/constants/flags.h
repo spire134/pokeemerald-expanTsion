@@ -681,9 +681,10 @@
 #define FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL       0x278 // Unused Flag
 #define FLAG_RECEIVED_MUSCLE_BAND                0x279 // Unused Flag
 #define FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED    0x27A // Unused Flag
+#define FLAG_SHUNU_LOST_GIRL_SAVED      0x27B // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
-#define FLAG_UNUSED_0x27C  0x27C // Unused Flag
-#define FLAG_UNUSED_0x27D  0x27D // Unused Flag
+#define FLAG_RECEIVED_CHOICE_BAND                0x27C // Unused Flag
+#define FLAG_STATIC_BRIDGE_APOLOGY_GIFT          0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
 #define FLAG_UNUSED_0x27F  0x27F // Unused Flag
 #define FLAG_UNUSED_0x280  0x280 // Unused Flag
