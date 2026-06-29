@@ -12283,9 +12283,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_GoodRod,
     },
 
-    [ITEM_SUPER_ROD] =
+    [ITEM_DEEPSEA_ROD] =
     {
-        .name = _("Super Rod"),
+        .name = _("Deepsea Rod"),
         .price = 0,
         .description = COMPOUND_STRING(
             "The best fishing\n"
@@ -12295,7 +12295,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
-        .secondaryId = SUPER_ROD,
+        .secondaryId = DEEPSEA_ROD,
         .iconPic = gItemIcon_SuperRod,
         .iconPalette = gItemIconPalette_SuperRod,
     },

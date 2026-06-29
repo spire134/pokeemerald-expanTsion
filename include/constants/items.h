@@ -856,7 +856,7 @@
 #define ITEM_ACRO_BIKE 708
 #define ITEM_OLD_ROD 709
 #define ITEM_GOOD_ROD 710
-#define ITEM_SUPER_ROD 711
+#define ITEM_DEEPSEA_ROD 711
 #define ITEM_DOWSING_MACHINE 712
 #define ITEM_ITEMFINDER ITEM_DOWSING_MACHINE // Pre-Gen IV name
 #define ITEM_DOWSING_MCHN ITEM_DOWSING_MACHINE // Gen IV-V name
@@ -1040,7 +1040,7 @@
 // Secondary IDs for rods
 #define OLD_ROD   0
 #define GOOD_ROD  1
-#define SUPER_ROD 2
+#define DEEPSEA_ROD 2
 
 // Secondary IDs for bikes
 #define MACH_BIKE 0

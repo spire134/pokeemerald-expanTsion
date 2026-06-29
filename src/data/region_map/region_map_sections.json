@@ -1309,6 +1309,10 @@
     },
     {
       "id": "MAPSEC_ROCKY_ROAD"
+    },
+    {
+      "id": "MAPSEC_SANDISTAN",
+      "name": "Sandistan Outpost"
     }
   ]
 }

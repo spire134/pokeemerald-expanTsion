@@ -233,3 +233,78 @@ script Quartz_Library_Libarian {
     }
     release
 }
+
+script Quartz_BackofLine {
+    lock
+    faceplayer
+    msgbox(format("I forsaw I would have to wait in line for a long time, but I didn't expect it to be this long!"))
+    waitmessage
+    msgbox(format("Do you want to wait in line?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        release
+        end
+    } else {
+        goto (Quartz_WaitInLine)
+    }
+}
+
+script Quartz_Library_MiddleOfLine {
+    lock
+    faceplayer
+    msgbox(format("I hope we don't have to wait too long to get a library card!"))
+    waitmessage
+    release
+}
+
+script Quartz_Library_FrontOfLine {
+    lock
+    faceplayer
+    msgbox(format("I can't wait to get my library card!"))
+    waitmessage
+    release
+}
+
+script Quartz_WaitInLine {
+    lockall
+    applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(walk_in_place_fast_up))
+    msgbox(format("You wait in line for a while, but it seems to be moving very slowly."))
+    delay(600)
+    applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(walk_in_place_fast_up))
+    msgbox(format("Continue waiting?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        msgbox(format("You continue waiting in line."))
+        delay(600)
+        applymovement(LOCALID_QUARTZ_MIDDLE_MOM, moves(walk_in_place_fast_up))
+        msgbox(format("Continue waiting?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox(format("You continue waiting in line."))
+            delay(600)
+            applymovement(LOCALID_QUARTZ_FRONT_FATMAN, moves(walk_in_place_fast_up))
+            delay(10)
+            applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(faceplayer))
+            waitmovement(0)
+            msgbox(format("Wow this really is going slow, you should probably just leave."
+            "Here, let me give you something for being here with us for so long."))
+            giveitem(ITEM_LUCKY_EGG, 1)
+            msgbox(format("You received a Lucky Egg!"))
+            waitmessage
+            msgbox(format("There, that should save you some time in the future!"))
+            waitmessage
+            applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(walk_in_place_fast_up))
+            releaseall
+            end
+        } else {
+            msgbox(format("You decide to leave the line."))
+            applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(walk_in_place_fast_up))
+            waitmovement(0)
+            releaseall
+            end
+        }
+    } else {
+        msgbox(format("You decide to leave the line."))
+        applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(walk_in_place_fast_up))
+        waitmovement(0)
+        releaseall
+        end
+    }
+}

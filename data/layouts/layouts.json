@@ -4830,6 +4830,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Couples_Canyon/border.bin",
       "blockdata_filepath": "data/layouts/Couples_Canyon/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDISTAN_OUTPOST",
+      "name": "Sandistan_Outpost_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Sandistan_Outpost/border.bin",
+      "blockdata_filepath": "data/layouts/Sandistan_Outpost/map.bin"
     }
   ]
 }
