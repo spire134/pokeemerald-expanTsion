@@ -1216,6 +1216,18 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Quartz_Library/scripts.inc"
 
+	.include "data/maps/Rocky_Road/scripts.inc"
+
+	.include "data/maps/Freeboot_Bay/scripts.inc"
+
+	.include "data/maps/Couples_Canyon/scripts.inc"
+
+	.include "data/maps/Desert_Outpost/scripts.inc"
+
+	.include "data/maps/Port_Plunder/scripts.inc"
+
+	.include "data/maps/Magnet_Cave_Depths/scripts.inc"
+
 	.include "data/maps/TidesMercy_StorageWreck/scripts.inc"
 
 	.include "data/maps/Quartz_City_Interiors/scripts.inc"

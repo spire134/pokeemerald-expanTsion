@@ -292,7 +292,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Quartz_Library_BackOfLine",
+      "script": "Quartz_BackofLine",
       "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
     }
   ],
