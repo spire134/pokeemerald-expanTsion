@@ -251,7 +251,7 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
     u8 rand = Random() % max(max(ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_TOTAL, ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_TOTAL),
-                             ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_TOTAL);
+                             ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_TOTAL);
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -278,16 +278,16 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
         if (swap)
             wildMonIndex = 6 - wildMonIndex;
         break;
-    case DEEPSEA_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_5)
+    case SUPER_ROD:
+        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
             wildMonIndex = 5;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_6)
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6)
             wildMonIndex = 6;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_7)
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7)
             wildMonIndex = 7;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_8)
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
             wildMonIndex = 8;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_8 && rand < ENCOUNTER_CHANCE_FISHING_MONS_DEEPSEA_ROD_SLOT_9)
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_9)
             wildMonIndex = 9;
 
         if (swap)

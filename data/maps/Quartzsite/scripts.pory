@@ -48,13 +48,13 @@ script Quartz_ScenicQuarryView {
     lock
     msgbox(format("You gaze out over the vast quarry. \n"
     "Water cascades down the rocky walls,\n"), MSGBOX_SIGN)
-    checkitem(ITEM_DEEPSEA_ROD)
+    checkitem(ITEM_SUPER_ROD)
     if (var(VAR_RESULT) == TRUE) {
         msgbox(format("and you notice a glimmering pond below.\n"
         "It looks like a great spot to fish!\n"
-        "Cast your Deepsea Rod here to see what you can catch!"), MSGBOX_YESNO)
+        "Cast your Super Rod here to see what you can catch!"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == TRUE) {
-            msgbox(format("You cast your Deepsea Rod into the pond and wait patiently.\n"
+            msgbox(format("You cast your Super Rod into the pond and wait patiently.\n"
             "After a few moments, you feel a tug on the line!"))
             setwildbattle(SPECIES_RELICANTH, 40)
             dowildbattle
@@ -64,7 +64,7 @@ script Quartz_ScenicQuarryView {
     } else {
         msgbox(format("You notice a glimmering pond below.\n"
         "It looks like a great spot to fish!\n"
-        "If you had a Deepsea Rod, you could cast it here to see what you can catch!"), MSGBOX_SIGN)
+        "If you had a Super Rod, you could cast it here to see what you can catch!"), MSGBOX_SIGN)
     }
     release
 }
