@@ -10,6 +10,7 @@
 #define INGAME_TRADE_HORSEA 2
 #define INGAME_TRADE_HONEDGE 3
 #define INGAME_TRADE_NUMEL  4
+#define INGAME_TRADE_LILEEP 5
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0
