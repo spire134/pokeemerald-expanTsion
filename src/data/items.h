@@ -12927,6 +12927,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_CardKey,
     },
 
+    [ITEM_MANSION_KEY] =
+    {
+        .name = _("Mansion Key"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A heavy iron key\n"
+            "used to open sealed\n"
+            "doors in the mansion."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CardKey,
+        .iconPalette = gItemIconPalette_CardKey,
+    },
+
     [ITEM_LIFT_KEY] =
     {
         .name = _("Lift Key"),
