@@ -1822,8 +1822,8 @@ const u16 gItemIconPalette_OldRod[] = INCBIN_U16("graphics/items/icon_palettes/o
 const u32 gItemIcon_GoodRod[] = INCBIN_U32("graphics/items/icons/good_rod.4bpp.lz");
 const u16 gItemIconPalette_GoodRod[] = INCBIN_U16("graphics/items/icon_palettes/good_rod.gbapal");
 
-const u32 gItemIcon_SuperRod[] = INCBIN_U32("graphics/items/icons/super_rod.4bpp.lz");
-const u16 gItemIconPalette_SuperRod[] = INCBIN_U16("graphics/items/icon_palettes/super_rod.gbapal");
+const u32 gItemIcon_DeepseaRod[] = INCBIN_U32("graphics/items/icons/deepsea_rod.4bpp.lz");
+const u16 gItemIconPalette_DeepseaRod[] = INCBIN_U16("graphics/items/icon_palettes/deepsea_rod.gbapal");
 
 const u32 gItemIcon_DowsingMachine[] = INCBIN_U32("graphics/items/icons/dowsing_machine.4bpp.lz");
 const u16 gItemIconPalette_DowsingMachine[] = INCBIN_U16("graphics/items/icon_palettes/dowsing_machine.gbapal");

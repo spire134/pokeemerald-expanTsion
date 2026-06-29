@@ -1948,15 +1948,15 @@ static void Task_WaitStopSurfing(u8 taskId)
 #if I_FISHING_BITE_ODDS >= GEN_4
     #define FISHING_OLD_ROD_ODDS 75
     #define FISHING_GOOD_ROD_ODDS 50
-    #define FISHING_SUPER_ROD_ODDS 25
+    #define FISHING_DEEPSEA_ROD_ODDS 25
 #elif I_FISHING_BITE_ODDS >= GEN_3
     #define FISHING_OLD_ROD_ODDS 50
     #define FISHING_GOOD_ROD_ODDS 50
-    #define FISHING_SUPER_ROD_ODDS 50
+    #define FISHING_DEEPSEA_ROD_ODDS 50
 #else
     #define FISHING_OLD_ROD_ODDS 0
     #define FISHING_GOOD_ROD_ODDS 33
-    #define FISHING_SUPER_ROD_ODDS 50
+    #define FISHING_DEEPSEA_ROD_ODDS 50
 #endif
 
 enum
@@ -2031,12 +2031,12 @@ static bool32 Fishing_GetRodOut(struct Task *task)
     const s16 minRounds1[] = {
         [OLD_ROD]   = 1,
         [GOOD_ROD]  = 1,
-        [SUPER_ROD] = 1
+        [DEEPSEA_ROD] = 1
     };
     const s16 minRounds2[] = {
         [OLD_ROD]   = 1,
         [GOOD_ROD]  = 3,
-        [SUPER_ROD] = 6
+        [DEEPSEA_ROD] = 6
     };
 
     task->tRoundsPlayed = 0;
@@ -2179,7 +2179,7 @@ static bool32 Fishing_WaitForA(struct Task *task)
     const s16 reelTimeouts[3] = {
         [OLD_ROD]   = 36,
         [GOOD_ROD]  = 33,
-        [SUPER_ROD] = 30
+        [DEEPSEA_ROD] = 30
     };
 
     AlignFishingAnimationFrames();
@@ -2206,7 +2206,7 @@ static bool32 Fishing_CheckMoreDots(struct Task *task)
     {
         [OLD_ROD]   = {0, 0},
         [GOOD_ROD]  = {40, 10},
-        [SUPER_ROD] = {70, 30}
+        [DEEPSEA_ROD] = {70, 30}
     };
 
     AlignFishingAnimationFrames();
@@ -2372,8 +2372,8 @@ static u32 CalculateFishingBiteOdds(u32 rod, bool32 isStickyHold)
         odds = FISHING_OLD_ROD_ODDS;
     if (rod == GOOD_ROD)
         odds = FISHING_GOOD_ROD_ODDS;
-    if (rod == SUPER_ROD)
-        odds = FISHING_SUPER_ROD_ODDS;
+    if (rod == DEEPSEA_ROD)
+        odds = FISHING_DEEPSEA_ROD_ODDS;
 
     odds -= CalculateFishingFollowerBoost();
 

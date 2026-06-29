@@ -12296,8 +12296,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = DEEPSEA_ROD,
-        .iconPic = gItemIcon_SuperRod,
-        .iconPalette = gItemIconPalette_SuperRod,
+        .iconPic = gItemIcon_DeepseaRod,
+        .iconPalette = gItemIconPalette_DeepseaRod,
     },
 
     [ITEM_DOWSING_MACHINE] =
