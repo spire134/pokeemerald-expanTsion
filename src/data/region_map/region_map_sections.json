@@ -1313,6 +1313,10 @@
     {
       "id": "MAPSEC_SANDISTAN",
       "name": "Sandistan Outpost"
+    },
+    {
+      "id": "MAPSEC_QUARRY_DEPTHS",
+      "name": "Quarry Depths"
     }
   ]
 }

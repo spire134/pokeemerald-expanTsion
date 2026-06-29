@@ -1231,3 +1231,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Shudderwood_Mansion_Upper/scripts.inc"
 
 	.include "data/maps/Sandistan_Outpost/scripts.inc"
+
+	.include "data/maps/Quarry_Depths/scripts.inc"
