@@ -8,8 +8,8 @@ script Shudderwood_Mansion_Bedchambers_Guard1 {
         "Drone: Shameful… your\n"
         "mind is worthless!"
     )
-    msgbox(format("Drone: These chambers\n"
-        "remain under Delphine's\n"
+    msgbox(format("Drone: These chambers "
+        "remain under Delphine's "
         "control."), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
@@ -24,7 +24,7 @@ script Shudderwood_Mansion_Bedchambers_Guard2 {
         "Drone: Pathetic… your\n"
         "mind is worthless!"
     )
-    msgbox(format("Drone: Advance and be\n"
+    msgbox(format("Drone: Advance and be "
         "subdued."), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
@@ -39,8 +39,8 @@ script Shudderwood_Mansion_Bedchambers_Guard3 {
         "Drone: No… the statue\n"
         "must remain secure!"
     )
-    msgbox(format("Drone: Tampering with\n"
-        "protected property is\n"
+    msgbox(format("Drone: Tampering with "
+        "protected property is "
         "prohibited."), MSGBOX_AUTOCLOSE)
     waitmessage
     releaseall
@@ -67,34 +67,34 @@ script Shudderwood_Mansion_MistressBattle {
     waitmovement(0)
     playse(SE_PIN)
     waitse
-    msgbox(format("???: You two Seers have\n"
-        "failed me by letting this\n"
+    msgbox(format("???: You two Seers have "
+        "failed me by letting this "
         "Ranger come so far!"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_in_place_fast_up emote_double_exclamation_mark))
     waitmovement(0)
     playse(SE_PIN)
     waitse
-    msgbox(format("Seer Lysa: Delphine!\n"
-        "Please let me go! I beg\n"
+    msgbox(format("Seer Lysa: Delphine! "
+        "Please let me go! I beg "
         "of you!"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(walk_in_place_left emote_exclamation_mark face_left))
     waitmovement(0)
     playse(SE_PIN)
     waitse
-    msgbox(format("Seer June: Silence, Lysa!\n"
-        "You were the one who led\n"
+    msgbox(format("Seer June: Silence, Lysa! "
+        "You were the one who led "
         "them here!"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(walk_in_place_down))
     applymovement(LOCALID_MANSION_MALAMAR, moves(emote_exclamation_mark walk_in_place_slow_left))
     waitmovement(0)
-    msgbox(format("Delphine: Enough bickering!\n"
-        "You will face the Ranger\n"
-        "together… or Malamar and I\n"
+    msgbox(format("Delphine: Enough bickering! "
+        "You will face the Ranger "
+        "together… or Malamar and I "
         "will have the 'Master of\p"
-        "the Mansion' seal you away\n"
+        "the Mansion' seal you away "
         "in darkness forever!"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(face_down walk_down emote_x))
@@ -120,8 +120,8 @@ script Shudderwood_Mansion_AfterSeerBattle {
     waitmovement(10)
     applymovement(LOCALID_PLAYER, moves(walk_slow_up))
     waitmovement(10)
-    msgbox(format("Delphine: Hmph… Malamar\n"
-        "and I have no more use for\n"
+    msgbox(format("Delphine: Hmph… Malamar "
+        "and I have no more use for "
         "you two failures. Begone!"))
     waitmessage
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_right walk_in_place_slow_right))
@@ -137,8 +137,8 @@ script Shudderwood_Mansion_AfterSeerBattle {
     waitmovement(10)
     applymovement(LOCALID_MANSION_SEER_JUNE, moves(face_up jump_in_place_down))
     waitmovement(0)
-    msgbox(format("Seer June: No… Please\n"
-        "don't seal me in the\n"
+    msgbox(format("Seer June: No… Please "
+        "don't seal me in the "
         "darkness!"))
     waitmessage
     playse(SE_M_HAZE)
@@ -157,16 +157,16 @@ script Shudderwood_Mansion_AfterSeerBattle {
     fadescreen(FADE_FROM_BLACK)
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(emote_x face_right walk_down*2))
     waitmovement(10)
-    msgbox(format("Delphine: And just where\n"
-        "do you think you're going,\n"
+    msgbox(format("Delphine: And just where "
+        "do you think you're going, "
         "Lysa?"))
     waitmessage
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(jump_in_place_down*2))
     waitmovement(0)
     playse(SE_PIN)
     waitse
-    msgbox(format("Seer Lysa: No… I can't\n"
-        "move! Ranger… please…\n"
+    msgbox(format("Seer Lysa: No… I can't "
+        "move! Ranger… please… "
         "help me!"))
     waitmessage
     call(Shudderwood_Mansion_HelpLysaYesNo)
@@ -175,13 +175,13 @@ script Shudderwood_Mansion_AfterSeerBattle {
 }
 
 script Shudderwood_Mansion_DelphineDefeat {
-    msgbox(format("Delphine: Impossible… All\n"
-    "my careful planning, ruined\n"
+    msgbox(format("Delphine: Impossible… All "
+    "my careful planning, ruined "
     "by a mere Ranger!\p"
-    "I had only just begun to\n"
-    "unlock what lies buried on\n"
+    "I had only just begun to "
+    "unlock what lies buried on "
     "Corymbra…\p"
-    "Malamar, return. I'll have\n"
+    "Malamar, return. I'll have "
     "to carve my own escape."))
     fadescreen(FADE_TO_BLACK)
     removeobject(LOCALID_MANSION_MALAMAR)
@@ -195,8 +195,8 @@ script Shudderwood_Mansion_DelphineDefeat {
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitmoncry
     applymovement(LOCALID_MANSION_MISTRESS, moves(face_right face_down walk_in_place_slow_down))
-    msgbox(format("Delphine: Hah… foolish\n"
-        "Dusknoir, you still belong\n"
+    msgbox(format("Delphine: Hah… foolish "
+        "Dusknoir, you still belong "
         "to me!"))
     waitmessage
     applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_slow_left*2 emote_double_exclamation_mark))
@@ -206,20 +206,20 @@ script Shudderwood_Mansion_DelphineDefeat {
     applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_in_place_up emote_exclamation_mark))
     playse(SE_PIN)
     waitse
-    msgbox(format("Seer Lysa: {PLAYER}, her\n"
-        "control over Dusknoir is\n"
+    msgbox(format("Seer Lysa: {PLAYER}, her "
+        "control over Dusknoir is "
         "weakening!"))
     waitmessage
-    msgbox(format("Delphine: Up, Dusknoir!\n"
-        "Help me escape! You don't\n"
+    msgbox(format("Delphine: Up, Dusknoir! "
+        "Help me escape! You don't "
         "want me gone, do you?!"))
     waitmessage
     applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_in_place_fast_left*2))
     waitmovement(0)
     playmoncry(SPECIES_DUSKNOIR, 0)
     waitmoncry
-    msgbox(format("Delphine: You think you can\n"
-        "cast me into that darkness\n"
+    msgbox(format("Delphine: You think you can "
+        "cast me into that darkness "
         "as well?!"))
     playse(SE_M_HAZE)
     waitse
@@ -229,7 +229,7 @@ script Shudderwood_Mansion_DelphineDefeat {
     msgbox(format("Delphine: KAAAAAAH!"), MSGBOX_AUTOCLOSE)
     playse(SE_ORB)
     waitse
-    msgbox(format("Seer Lysa: I'm getting out\n"
+    msgbox(format("Seer Lysa: I'm getting out "
         "of here… now."))
     if (flag(FLAG_HELPED_SEER_LYSA)) {
         msgbox(format("Seer Lysa: Thank you for saving me, {PLAYER}.\p"
@@ -267,24 +267,24 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         waitmovement(0)
         playse(SE_PIN)
         waitse
-        msgbox(format("Delphine: Foolish Ranger!\n"
-            "You think you can interfere\n"
+        msgbox(format("Delphine: Foolish Ranger! "
+            "You think you can interfere "
             "with my design?"))
         waitmessage
         applymovement(LOCALID_MANSION_MISTRESS, moves(walk_slow_down walk_slow_down emote_exclamation_mark))
         applymovement(LOCALID_MANSION_MALAMAR, moves(face_left walk_in_place_slow_left))
         applymovement(LOCALID_BRAINWASHED_MASTER_DUSKNOIR, moves(walk_faster_right*2 face_down))
         waitmovement(0)
-        msgbox(format("Delphine: Then I'll break\n"
-            "you first! Malamar, Lysa\n"
-            "can wait until her hope\n"
+        msgbox(format("Delphine: Then I'll break "
+            "you first! Malamar, Lysa "
+            "can wait until her hope "
             "has withered!"))
         waitmessage
         applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_fast_up walk_fast_right walk_fast_up))
         waitmovement(0)
         applymovement(LOCALID_PLAYER, moves(face_down))
-        msgbox(format("Seer Lysa: Thank you,\n"
-            "Ranger! Here… let me heal\n"
+        msgbox(format("Seer Lysa: Thank you, "
+            "Ranger! Here… let me heal "
             "your Pokémon!"))
         waitmessage
         applymovement(LOCALID_MANSION_SEER_LYSA, moves(emote_heart))
@@ -295,29 +295,29 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_fast_down face_up walk_in_place_slow_up))
         applymovement(LOCALID_PLAYER, moves(face_up))
         waitmovement(0)
-        msgbox(format("Delphine: Pathetic sentiment!\n"
-            "Very well… I'll crush this\n"
-            "Ranger beneath the full\n"
+        msgbox(format("Delphine: Pathetic sentiment! "
+            "Very well… I'll crush this "
+            "Ranger beneath the full "
             "weight of the Hive!"))
         trainerbattle_no_intro(
             TRAINER_WINONA_1,
-            format("Delphine: What?! No… how\n"
+            format("Delphine: What?! No… how "
             "could this be?!")
         )
         waitstate
         setflag(FLAG_HELPED_SEER_LYSA)
         return
     } else {
-        msgbox(format("Delphine: Excellent!\n"
-            "Malamar, deal with Lysa.\n"
-            "I'll pick up the pieces of\n"
+        msgbox(format("Delphine: Excellent! "
+            "Malamar, deal with Lysa. "
+            "I'll pick up the pieces of "
             "this Ranger myself!"))
         msgbox(format("Seer Lysa: No… I won't yield easily!"))
         applymovement(LOCALID_MANSION_SEER_LYSA, moves(walk_fast_up*4 face_left emote_exclamation_mark))
         applymovement(LOCALID_MANSION_MALAMAR, moves(walk_in_place_fast_down*3 emote_exclamation_mark))
         waitmovement(0)
-        msgbox(format("Delphine: Your feeble\n"
-            "resistance will wither\n"
+        msgbox(format("Delphine: Your feeble "
+            "resistance will wither "
             "soon enough."))
         playse(SE_M_NIGHTMARE)
         waitse
@@ -337,7 +337,7 @@ script Shudderwood_Mansion_HelpLysaYesNo {
         waitmessage
         trainerbattle_no_intro(
             TRAINER_WINONA_2,
-            format("Delphine: What?! No… how\n"
+            format("Delphine: What?! No… how "
             "could this be?!")
         )
         waitstate

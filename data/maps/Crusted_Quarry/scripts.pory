@@ -24,13 +24,13 @@ script Crusted_Quarry_Drone2 {
 
 script Crusted_Quarry_Seer_LastResort {
     applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(face_player))
-    msgbox(format("Seer: I didn't want it to come to this…\n"
-    "I've overloaded the machinery to collapse the quarry!\n"
-    "I was just supposed to get some specific books from the library!\n"))
+    msgbox(format("Seer: I didn't want it to come to this…\p"
+    "I've overloaded the machinery to collapse the quarry!\p"
+    "I was just supposed to get some specific books from the library!"))
     applymovement(LOCALID_CRUSTED_QUARRY_SEER, moves(emote_question_mark))
     waitmovement(0)
-        msgbox(format("Seer: What kind of books? I'll never tell you!\n"
-        "You'll have to defeat me in battle!"
+        msgbox(format("Seer: What kind of books? I'll never tell you!\p"
+        "You'll have to defeat me in battle!\p"
         "But then, will you be able to stop the collapse?"))
     trainerbattle_no_intro(TRAINER_GRUNT_MAGMA_HIDEOUT_15,
     format("Seer: You may have defeated me, but the quarry will be lost!\n")
@@ -78,7 +78,7 @@ script Crusted_Quarry_MachineControls {
         msgbox(format("You quickly analyze the machinery to come up with a plan to stop the collapse.\n"
         "You think you can either CUT the power or just SMASH the controls."))
         waitmessage
-        msgbox(formgat("Will you CUT the power?"), MSGBOX_YESNO)
+        msgbox(format("Will you CUT the power?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
             playse(SE_M_CUT)
             waitse
@@ -113,7 +113,7 @@ script Crusted_Quarry_MachineControls {
             waitmessage
         }
     } else {
-        msgbox(format("The machinery here seems to be non-functional."
+        msgbox(format("The machinery here seems to be non-functional.\p"
         "There are signs of Hive tampering."))
     }
     release

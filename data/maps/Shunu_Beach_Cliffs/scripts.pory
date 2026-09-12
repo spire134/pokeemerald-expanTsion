@@ -10,9 +10,7 @@ script Eon_Field_Script {
     }
     if (!flag(FLAG_EON_CLEARED)) {
         call(Eon_StarterCommentary)
-        msgbox(format("Eon: One more question, then.\n"
-            "Are you sure you're ready to\n"
-            "test your conviction here?"), MSGBOX_YESNO)
+        msgbox(format("Eon: One more question, then. Are you sure you're ready to test your conviction here?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
             trainerbattle_no_intro(TRAINER_EON_SCOUT, "Eon: Not bad. I'll see you at HQ.")
             msgbox(format("Eon: Good. Remember your wins, study your losses."))
@@ -20,8 +18,7 @@ script Eon_Field_Script {
             # Hide Eon from field map; show him at gym (use hideobject/showobject as needed)
             releaseall
         } else {
-            msgbox(format("Eon: Then don't bluff your way through this.\n"
-                "Come back when you're ready."))
+            msgbox(format("Eon: Then don't bluff your way through this. Come back when you're ready."))
             releaseall
         }
     } else {
@@ -34,17 +31,11 @@ script Eon_Field_Script {
 script(local) Eon_StarterCommentary {
     switch (var(VAR_STARTER_MON)) {
         case 0:
-            msgbox(format("Eon: TURTWIG fits a patient\n"
-                "trainer. You don't rush. You\n"
-                "wait for the right time."))
+            msgbox(format("Eon: TURTWIG fits a patient trainer. You don't rush. You wait for the right time."))
         case 1:
-            msgbox(format("Eon: TORCHIC suits a bold\n"
-                "stride. I can see you like\n"
-                "to push forward."))
+            msgbox(format("Eon: TORCHIC suits a bold stride. I can see you like to push forward."))
         case 2:
-            msgbox(format("Eon: FROAKIE is all balance\n"
-                "and timing. You're watching\n"
-                "the field before you move."))
+            msgbox(format("Eon: FROAKIE is all balance and timing. You're watching the field before you move."))
     }
     return
 }

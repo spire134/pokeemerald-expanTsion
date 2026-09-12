@@ -4,7 +4,7 @@ script Worried_OldMan {
     lock
     faceplayer
     msgbox(format("The Hive has taken over the city!\p"
-    "I hope the Rangers are doing something about it!\n"))
+    "I hope the Rangers are doing something about it!"))
     waitmessage
     release
 } 
@@ -13,7 +13,7 @@ script Worried_OldWoman {
     lock
     faceplayer
     msgbox(format("The Rangers have been so busy lately.\p"
-    "I just hope they keep Quartzite safe from those Hive Drones!\n"))
+    "I just hope they keep Quartzite safe from those Hive Drones!"))
     waitmessage
     release
 }
@@ -21,7 +21,7 @@ script Worried_OldWoman {
 script Confident_YoungMan {
     lock
     faceplayer
-    msgbox(format("With the Rangers around, Quartzite is as safe as can be!\n"))
+    msgbox(format("With the Rangers around, Quartzite is as safe as can be!"))
     waitmessage
     release
 }
@@ -30,7 +30,7 @@ script Confused_Girl {
     lock
     faceplayer
     msgbox(format("I heard Team Hive Drones have been spotted near the Quartz Tunnels.\p"
-    "I wonder what they're up to...\n"))
+    "I wonder what they're up to..."))
     waitmessage
     release
 }
@@ -39,7 +39,7 @@ script Reassuring_Man {
     lock
     faceplayer
     msgbox(format("Don't worry about those Hive Drones!\p"
-    "The Rangers will take care of them in no time!\n"))
+    "The Rangers will take care of them in no time!"))
     waitmessage
     release
 }
@@ -48,7 +48,7 @@ script Hopeful_Woman {
     lock
     faceplayer
     msgbox(format("I just hope the Rangers can deal with Team Hive soon.\p"
-    "They're causing so much trouble around Quartzite!\n"))
+    "They're causing so much trouble around Quartzite!"))
     waitmessage
     release
 }
@@ -66,7 +66,7 @@ script Nervous_Kid {
     lock
     faceplayer
     msgbox(format("I heard Team Hive Drones have been seen near the Quartz Tunnels.\p"
-    "I'm scared to go outside!\n"))
+    "I'm scared to go outside!"))
     waitmessage
     release
 }
@@ -75,7 +75,7 @@ script Ditzy_Teenager {
     lock
     faceplayer
     msgbox(format("Did you hear about those Hive Drones?\p"
-    "They're like, everywhere now!\n"))
+    "They're like, everywhere now!"))
     waitmessage
     release
 }
@@ -85,8 +85,8 @@ script Quartz_Gym_FinalblowChallenge {
     faceplayer
     if(!flag(FLAG_BADGE02_GET)) {
     if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent the final, powerful strike to end a battle!\n"
-    "Demonstrate your ability to finish strong by defeating me in battle!\n"
+    msgbox(format("I represent the final, powerful strike to end a battle!\p"
+    "Demonstrate your ability to finish strong by defeating me in battle!\p"
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Let's see your finishing power!"))
@@ -99,10 +99,10 @@ script Quartz_Gym_FinalblowChallenge {
         }
     } else {
     msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!\n"))
+    "I hope the Rangers can handle them soon!"))
     }
     } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!\n"))
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
     }
     release
 }
@@ -119,7 +119,7 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("Great! Start waiting now."))
         delay(1800) // 30 seconds at 60 FPS
         msgbox(format("Well done! You've completed the Patience Challenge!\n"
-        "Just kidding, but you did wait there like a champ."
+        "Just kidding, but you did wait there like a champ.\p"
         "Now for the real challenge, HYAAAAH!"))
         trainerbattle_no_intro(TRAINER_KOJI_1,
         format("Patience is a virtue, but so is strength!")
@@ -129,7 +129,7 @@ script Quartz_Gym_PatienceChallenge {
         msgbox(format("No worries! Take your time."))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite."
+    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
     "I hope the Rangers can handle them soon!"))
     }
     } else {
@@ -143,7 +143,7 @@ script Quartz_Gym_WeakpointChallenge {
     faceplayer
     if(!flag(FLAG_BADGE02_GET)) {
     if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent exploiting a foe's weakness! I practice looking for faults in rocks!"
+    msgbox(format("I represent exploiting a foe's weakness! I practice looking for faults in rocks!\p"
     "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Let's see your strategy in action!"))
@@ -155,7 +155,7 @@ script Quartz_Gym_WeakpointChallenge {
         msgbox(format("Take your time to prepare!"))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite."
+    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
     "I hope the Rangers can handle them soon!"))
     }
     } else {
@@ -179,14 +179,14 @@ script Quartz_CaptRojan {
         setflag(FLAG_TALKED_TO_ROJAN)
         setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
         msgbox(format("Captain Rojan: Hey there, Ranger!\p"
-        "I heard you were coming from Hazolt HQ. Hope you are ready for some action!"
+        "I heard you were coming from Hazolt HQ. Hope you are ready for some action!\p"
         "This sinister Team Hive has been causing trouble all over Quartzite City.\p"
-        "I've gotten most of the people here for safety. Ranger Corin went to investigate the Quartz Tunnels."
+        "I've gotten most of the people here for safety. Ranger Corin went to investigate the Quartz Tunnels.\p"
         "Could you go check on him?"))
     } else {
         if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
             msgbox(format("Captain Rojan: Thanks for helping out back there!\p"
-            "With Team Hive dealt with, Quartzite can finally return to normal."
+            "With Team Hive dealt with, Quartzite can finally return to normal.\p"
             "The Rangers here owe you a debt of gratitude!\l"
             "Now, are you ready to earn your next field move, and Ranger Rank?"), MSGBOX_YESNO)
             if (var(VAR_RESULT) == YES) {
@@ -199,17 +199,17 @@ script Quartz_CaptRojan {
             giveitem(ITEM_HM06)
             setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
             msgbox(format("Captain Rojan: Impressive work!\p"
-            "You've earned the Rock Smash HM and your Ranger Rank has been upgraded!"
+            "You've earned the Rock Smash HM and your Ranger Rank has been upgraded!\p"
             "Use Rock Smash to clear small boulders blocking your path.\n"
             "Keep up the great work, Ranger!"))
             waitmessage
             waitmessage
             } else {
-                msgbox(format("Captain Rojan: Take your time to prepare!"
+                msgbox(format("Captain Rojan: Take your time to prepare!\p"
                 "I suggest you battle with my students here in the Gym to hone your skills."))
             }
         } else {
-            msgbox(format("Captain Rojan: Please hurry to the Quartz Tunnels and help Ranger Corin!"
+            msgbox(format("Captain Rojan: Please hurry to the Quartz Tunnels and help Ranger Corin!\p"
             "There should be an entrance in the water pump house."))
             waitmessage
         }

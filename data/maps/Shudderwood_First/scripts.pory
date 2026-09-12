@@ -2,7 +2,7 @@ mapscripts Shudderwood_First_MapScripts {}
 
 script Shudderwood_Bug_Catcher_1 {
     trainerbattle_single(TRAINER_RICK, 
-    format("What makes a Bug to be a Bug?\n" "Is it the way they look, or the way they move?\n"),
+    format("What makes a Bug to be a Bug?\n" "Is it the way they look, or the way they move?"),
     format("Bugs are more than just their appearance!")
     )
     msgbox(format("Bugs are cool! My Krabby is the best bug around!"), MSGBOX_AUTOCLOSE)
@@ -41,14 +41,14 @@ script Shudderwood_Bug_Maniac {
 script Shudderwood_Berry_Picker {
     lockall
     faceplayer
-    msgbox(format("If you find a Bluk Berry, could you bring it to me?"
+    msgbox(format("If you find a Bluk Berry, could you bring it to me?\p"
     "I'll give you Juice for each one!"))
     checkitem(ITEM_BLUK_BERRY)
     if (var(VAR_RESULT) == TRUE) {
         playse(SE_PIN)
         applymovement(LOCALID_BERRY_PICKER, moves(emote_exclamation_mark))
         waitmovement(0)
-        msgbox(format("Oh, a Bluk Berry! Thank you so much!"
+        msgbox(format("Oh, a Bluk Berry! Thank you so much!\p"
         "Here, take this as a reward."))
         giveitem(ITEM_BERRY_JUICE, 1)
         removeitem(ITEM_BLUK_BERRY, 1)

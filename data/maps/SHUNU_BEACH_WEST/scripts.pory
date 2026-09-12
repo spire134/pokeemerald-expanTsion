@@ -2,26 +2,26 @@ mapscripts SHUNU_BEACH_WEST_MapScripts {}
 
 script ShunuBeach_Beauty_Fight {
     trainerbattle_single(TRAINER_THALIA_2,
-        format("Beauty: Pearls are the\n"
-            "only treasure worth\n"
+        format("Beauty: Pearls are the "
+            "only treasure worth "
             "chasing."),
-        format("Beauty: Hmph. Then I'll\n"
+        format("Beauty: Hmph. Then I'll "
             "simply find a finer one."))
-    msgbox(format("Beauty: When the tide is\n"
-        "right, the sea gives up\n"
+    msgbox(format("Beauty: When the tide is "
+        "right, the sea gives up "
         "its prettiest gems."), MSGBOX_AUTOCLOSE)
     waitmessage
 }
 
 script ShunuBeach_Fisherman_Fight {
     trainerbattle_single(TRAINER_ANDREW,
-        format("Fisherman: I cast for fish,\n"
-            "not for another busted\n"
+        format("Fisherman: I cast for fish, "
+            "not for another busted "
             "crate!"),
-        format("Fisherman: The sea can\n"
+        format("Fisherman: The sea can "
             "keep its junk. I'm done."))
-    msgbox(format("Fisherman: If I hook one\n"
-        "more piece of flotsam, I'm\n"
+    msgbox(format("Fisherman: If I hook one "
+        "more piece of flotsam, I'm "
         "throwing this rod in!"), MSGBOX_AUTOCLOSE)
     waitmessage
 }
@@ -29,13 +29,13 @@ script ShunuBeach_Fisherman_Fight {
 script Hazolt_Sign {
     lock
     if (!flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
-        msgbox(format("North: Hazolt Village\n"
+        msgbox(format("North: Hazolt Village "
             "Fresh water available!\p"
-            "Pirate graffiti:\n"
-            "Keep moving. We own\n"
+            "Pirate graffiti: "
+            "Keep moving. We own "
             "the shore!"))
     } else {
-        msgbox(format("North: Hazolt Village\n"
+        msgbox(format("North: Hazolt Village "
             "Fresh water available!"))
     }
     release
@@ -46,36 +46,36 @@ script ShunuBeach_LostGirl {
     lock
     faceplayer
     if (flag(FLAG_SHUNU_LOST_GIRL_SAVED)) {
-        msgbox(format("Lost Girl: Thank you again\n"
-            "for helping me, Ranger.\n"
+        msgbox(format("Lost Girl: Thank you again "
+            "for helping me, Ranger. "
             "I made it back safely."))
         release
         end
     }
     checkpartymove(MOVE_SURF)
     if (var(VAR_RESULT) == FALSE) {
-        msgbox(format("Lost Girl: I can't get\n"
-            "back to shore without\n"
-            "SURF… Please come back\n"
-            "when you can cross the\n"
+        msgbox(format("Lost Girl: I can't get "
+            "back to shore without "
+            "SURF… Please come back "
+            "when you can cross the "
             "water."))
         release
         end
     }
-    msgbox(format("Lost Girl: You can use\n"
-        "SURF? Please, take me\n"
+    msgbox(format("Lost Girl: You can use "
+        "SURF? Please, take me "
         "back to the mainland!"))
     waitmessage
     playse(SE_PIN)
     waitse
-    msgbox(format("Lost Girl: I was trying\n"
-        "to follow the current and\n"
-        "got turned around out\n"
+    msgbox(format("Lost Girl: I was trying "
+        "to follow the current and "
+        "got turned around out "
         "here… I'm so relieved!"))
     waitmessage
     giveitem(ITEM_NUGGET)
-    msgbox(format("Lost Girl: Please take this\n"
-        "Nugget. You saved me more\n"
+    msgbox(format("Lost Girl: Please take this "
+        "Nugget. You saved me more "
         "than once today!"))
     setflag(FLAG_SHUNU_LOST_GIRL_SAVED)
     removeobject(LOCALID_LOST_GIRL)

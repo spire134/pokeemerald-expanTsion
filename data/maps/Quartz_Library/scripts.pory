@@ -78,7 +78,7 @@ script QuartzLibrary_PartySelect{
 
 script QuartzLibrary_SeerBattle {
     multi_2_vs_2(TRAINER_GRUNT_MAGMA_HIDEOUT_14, format("Seer: Impossible!"), TRAINER_GRUNT_MAGMA_HIDEOUT_6, "Drone: Where am I?!", PARTNER_CORIN_QUARTZ)
-    msgbox(format("Seer: How could I lose to a Ranger…"
+    msgbox(format("Seer: How could I lose to a Ranger…\p"
     "All Drones, retreat! We got the books, fall back to the quarry!"))
     setflag(FLAG_QUARTZITE_HIVE_DEFEATED)
     clearflag(FLAG_HIDE_CONTEST_POKE_BALL)
@@ -117,10 +117,10 @@ script Corin_Quartz_PostBattles {
     else {
     msgbox(format("Corin: Whew… That was intense!\n"
     "Thanks for having my back back there, {PLAYER}.\p"
-    "Those Hive Drones were tougher than I expected, but we showed them!"
+    "Those Hive Drones were tougher than I expected, but we showed them!\p"
     "I think we can take on anything now, together as a team!"))
     waitmessage
-    msgbox(format("Corin: I'll report back to Hazolt HQ."
+    msgbox(format("Corin: I'll report back to Hazolt HQ.\p"
     "I bet Mara will want to hear about this!"))
     release
 }
@@ -129,7 +129,7 @@ script Corin_Quartz_PostBattles {
 script Quartz_Library_HealNurse {
     lock
     faceplayer
-    msgbox(format("Please rest here if your POKéMON need healing."
+    msgbox(format("Please rest here if your POKéMON need healing.\p"
     "Would you like me to heal your POKéMON?"), MSGBOX_YESNO)
     if (var(VAR_RESULT) == NO) {
         msgbox(format("Alright, let me know if you need anything."))
@@ -148,8 +148,8 @@ script Quartz_Library_HealNurse {
 script Quartz_Library_QuarryLoreWoman {
     lock
     faceplayer
-    msgbox(format("The Quartz Quarry used to be the pride of Quartzite Village."
-    "But since Team Hive took over, it was flooded."
+    msgbox(format("The Quartz Quarry used to be the pride of Quartzite Village.\p"
+    "But since Team Hive took over, it was flooded.\p"
     "Now I hear the Rangers are trying to clear it out again."))
     waitmessage
     release
@@ -158,7 +158,7 @@ script Quartz_Library_QuarryLoreWoman {
 script Quartz_Library_QuarryNerd {
     lock
     faceplayer
-    msgbox(format("Did you know that Quartz is made up of silicon and oxygen atoms?"
+    msgbox(format("Did you know that Quartz is made up of silicon and oxygen atoms?\p"
     "It's one of the most hard minerals on Earth!"))
     waitmessage
     release
@@ -167,7 +167,7 @@ script Quartz_Library_QuarryNerd {
 script Quartz_Library_ManicReader {
     lock
     faceplayer
-    msgbox(format("I just love reading about the different types of minerals found in Quartzite City!"
+    msgbox(format("I just love reading about the different types of minerals found in Quartzite City!\p"
     "Did you know that Amethyst is a type of Quartz?"))
     waitmessage
     release
@@ -176,7 +176,7 @@ script Quartz_Library_ManicReader {
 script Quartz_Library_Libarian_Nerd {
     lock
     faceplayer
-    msgbox(format("Welcome to the Quartzite Library!"
+    msgbox(format("Welcome to the Quartzite Library!\p"
     "Feel free to browse our collection of books on geology and mineralogy."))
     waitmessage
     release
@@ -283,7 +283,7 @@ script Quartz_WaitInLine {
             delay(10)
             applymovement(LOCALID_QUARTZ_BACKMEDIUM, moves(faceplayer))
             waitmovement(0)
-            msgbox(format("Wow this really is going slow, you should probably just leave."
+            msgbox(format("Wow this really is going slow, you should probably just leave.\p"
             "Here, let me give you something for being here with us for so long."))
             giveitem(ITEM_LUCKY_EGG, 1)
             msgbox(format("You received a Lucky Egg!"))

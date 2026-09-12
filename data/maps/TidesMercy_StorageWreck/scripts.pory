@@ -2,7 +2,7 @@ mapscripts TidesMercy_StorageWreck_MapScripts {}
 
 script Wreck_Exposition_Pirate {
     trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_1, 
-    format("You're too late, Ranger!"
+    format("You're too late, Ranger!\p"
     "This ship's treasures belong to us now!"),
     format("You'll never stop us, Ranger!"))
     msgbox(format("Heh heh heh... This ship is ours now!"), MSGBOX_AUTOCLOSE)
@@ -19,7 +19,7 @@ script Wreck_Grab_Pirate {
 
 script Wreck_GangUp_Pirate {
     trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_3, 
-    format("Pirate: Walking right into an ambush, now that's a Ranger!"
+    format("Pirate: Walking right into an ambush, now that's a Ranger!\p"
     "Prepare to be boarded!"),
     format("Pirate: This is the end for me!"))
     msgbox(format("Pirate: You'll never escape us now!"), MSGBOX_AUTOCLOSE)
@@ -85,7 +85,7 @@ script Wreck_Pirate_FirstMate {
     waitmessage
     setflag(FLAG_CLEARED_TIDESMERCYWRECK)
     msgbox(format(
-        "The Captain already got the best treasure!"
+        "The Captain already got the best treasure!\p"
         "You'll never beat us at the hideout!"))
     applymovement(LOCALID_WRECK_FIRSTMATE, moves(
         walk_faster_right walk_faster_right walk_faster_right 
@@ -97,7 +97,7 @@ script Wreck_Pirate_FirstMate {
 
 script StorageWreck_Empty_Item_Ball {
     lock
-    msgbox(format("There is nothing left here."
+    msgbox(format("There is nothing left here.\p"
     "Those darn pirates already took everything of value!"))
     setflag(FLAG_TEMP_1)
     removeobject(LOCALID_EMPTY_ITEM_BALL)

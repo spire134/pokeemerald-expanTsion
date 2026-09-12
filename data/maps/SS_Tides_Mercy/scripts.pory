@@ -8,14 +8,9 @@ script Sailor_DeckTalk {
     lock
     faceplayer
     if (!flag(FLAG_STORM_STARTED)) {
-        msgbox(format("Sailor: Skies looked calm\n"
-            "an hour ago. Now this air\n"
-            "feels wrong. I'll go\n"
-            "check the barometer soon."))
+        msgbox(format("Sailor: Skies looked calm an hour ago. Now this air feels wrong. I'll go check the barometer soon."))
     } else {
-        msgbox(format("Sailor: Keep moving!\n"
-            "We've got no time to stand\n"
-            "around!"))
+        msgbox(format("Sailor: Keep moving! We've got no time to stand around!"))
     }
     release
     end
@@ -48,9 +43,7 @@ script DeckStormCutscene {
     playse(SE_M_HAZE)
     waitse
     setvar(VAR_UNUSED_0x404E, 2)
-    msgbox(format("CAPTAIN MARA: That storm's\n"
-        "building too fast!\n"
-        "Positions, now!"))
+    msgbox(format("CAPTAIN MARA: That storm's building too fast! Positions, now!"))
     applymovement(LOCALID_CAPT_MARA, moves(emote_exclamation_mark face_player))
     waitmovement(0)
     playse(SE_PIN)
@@ -59,13 +52,9 @@ script DeckStormCutscene {
     waitmovement(0)
     applymovement(LOCALID_EON_DECK, moves(walk_in_place_down emote_exclamation_mark))
     waitmovement(0)
-    msgbox(format("CORIN: Captain! Wind shear\n"
-        "just spiked! We're taking\n"
-        "water aft!"))
+    msgbox(format("CORIN: Captain! Wind shear just spiked! We're taking water aft!"))
     waitmessage
-    msgbox(format("RANGER EON: That's no\n"
-        "normal storm pattern…\n"
-        "something's forcing it!"))
+    msgbox(format("RANGER EON: That's no normal storm pattern… something's forcing it!"))
     # Quick lurch
     applymovement(LOCALID_PLAYER, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))
     applymovement(LOCALID_CAPT_MARA, moves(walk_in_place_fast_right walk_in_place_fast_left walk_in_place_fast_right walk_in_place_down))

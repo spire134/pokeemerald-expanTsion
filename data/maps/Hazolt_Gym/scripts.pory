@@ -5,7 +5,7 @@ script Mara_Gym_Script {
     faceplayer
     if (!flag(FLAG_MARA_FIELD_TEST_STARTED)) {
         setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
-        msgbox(format("Mara: You're standing, breathing, and ready to work."
+        msgbox(format("Mara: You're standing, breathing, and ready to work.\p"
         "That's enough for me.\p"
         "That storm should have broken us, but this team held the line.\p"
         "Take these supplies and get your footing, Ranger."))

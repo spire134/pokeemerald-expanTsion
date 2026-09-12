@@ -3,7 +3,7 @@ mapscripts Quartz_City_Interiors_MapScripts {}
 script StoneEmporium_RedSalesMan {
     lock
     faceplayer
-    message(format("Welcome to the Stone Emporium!"
+    message(format("Welcome to the Stone Emporium!\p"
     "We have the finest selection of elemental stones on the whole island!"))
     waitmessage
     pokemart(Quartz_RedStoneMart)
@@ -57,7 +57,7 @@ script Quartz_ForlornStoneWoman {
     lock
     faceplayer
     msgbox(format("I used to be a jeweler here in Quartzite.\p"
-    "But ever since Team Hive took over, business has been slow…\n"))
+    "But ever since Team Hive took over, business has been slow…"))
     waitmessage
     release
 }
@@ -75,7 +75,7 @@ script Quartz_GoldDigger {
     lock
     faceplayer
     msgbox(format("I've been digging for gems all day!\p"
-    "Maybe if I find enough, I can buy my way out of this mess with Team Hive…\n"))
+    "Maybe if I find enough, I can buy my way out of this mess with Team Hive…"))
     waitmessage
     release
 }
@@ -84,7 +84,7 @@ script Quartz_StoneWeirdo {
     lock
     faceplayer
     msgbox(format("Rocks are the ultimate form of life!\p"
-    "They've been around for millions of years, witnessing the rise and fall of civilizations!\n"))
+    "They've been around for millions of years, witnessing the rise and fall of civilizations!"))
     waitmessage
     msgbox(format("I want you to have this special special rock I found.\p"
     "It's said to bring good luck to those who carry it!"))
@@ -111,9 +111,9 @@ script Quartz_Bored_Wife_Murkrow {
     specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
     copyvar(VAR_0x8009, VAR_RESULT)
     msgbox(format("My husband is so lazy! He never wants to go out and explore the city with me.\p"
-    "I wish I could find a {STR_VAR_1} to keep me company instead…"
+    "I wish I could find a {STR_VAR_1} to keep me company instead…\p"
     "The only friend I've had lately is the knife that follows him around!\l"
-    "It keeps looking at me like it's waiting."
+    "It keeps looking at me like it's waiting.\p"
     "I would trade the knife for a {STR_VAR_1}, I've always fancied a murder!"
     ), MSGBOX_YESNO)
     goto_if_eq(VAR_RESULT, NO, MurkrowTrade_DeclineTrade)
@@ -203,8 +203,8 @@ script Quartz_OldMan_TyGifts {
     msgbox(format("Thank you for helping us with the Team Hive problem!\p"
     "Please accept this gift as a token of our gratitude."))
     giveitem(ITEM_POKE_DOLL)
-    msgbox(format("We couldn't have done it without you!"
-    "If you ever need another doll, just let me know!\l"))
+    msgbox(format("We couldn't have done it without you!\p"
+    "If you ever need another doll, just let me know!"))
     waitmessage
     release
     }
@@ -214,7 +214,7 @@ script Quartz_OldWoman_Dollmaker {
     faceplayer
     if (flag(FLAG_BADGE03_GET)) {
         msgbox(format("Dollmaker Mollie: You certainly prove yourself a strong trainer.\p"
-        "Perhaps you can be the one with the skill to test my designs."
+        "Perhaps you can be the one with the skill to test my designs.\p"
         "But I will first evaluate your abilities in battle. Do you accept?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
         msgbox(format("Excellent! Show me your skills!"))
@@ -223,7 +223,7 @@ script Quartz_OldWoman_Dollmaker {
         )
         waitmessage
         msgbox(format("Dollmaker Mollie: You've proven your skill once again!\p"
-        "As a reward, I shall give you access to my secret workshop!"
+        "As a reward, I shall give you access to my secret workshop!\p"
         "Please step aside, dear!"))
         setflag(FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS)
         waitmessage

@@ -14,7 +14,7 @@ script Quartz_Center_RestingTrainer {
     lock
     faceplayer
     msgbox(format("Trainer: Phew! That was a tough trek!\n"
-    "Good thing there's a Pokémon Center right here to heal up!\n"))
+    "Good thing there's a Pokémon Center right here to heal up!"))
     waitmessage
     release
 }

@@ -73,84 +73,43 @@ script Hazolt_Worried_Boy {
     faceplayer
     if (!flag(FLAG_SHUNU_LOST_GIRL_SAVED)) {
         if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
-            msgbox(format("My little sister wandered off\n"
-                "toward the beach.\p"
-                "You already handled the pirates\n"
-                "and fought Hive at Static Bridge,\n"
-                "so I know you're the real deal.\p"
-                "Please… if anyone can bring her\n"
-                "back, it's you."))
+            msgbox(format("My little sister wandered off toward the beach.\p"
+                "You already handled the pirates and fought Hive at Static Bridge, so I know you're the real deal.\p"
+                "Please… if anyone can bring her back, it's you."))
         } else {
             if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
-                msgbox(format("My little sister wandered\n"
-                    "off toward the beach.\p"
-                    "The pirates are gone, but I\n"
-                    "still hear people whispering\n"
-                    "about Team Hive at Static Bridge.\p"
-                    "The Rangers used to keep\n"
-                    "Hazolt safe… then they just\n"
-                    "vanished. I don't know who to\n"
-                    "trust anymore."))
+                msgbox(format("My little sister wandered off toward the beach.\p"
+                    "The pirates are gone, but I still hear people whispering about Team Hive at Static Bridge.\p"
+                    "The Rangers used to keep Hazolt safe… then they just vanished. I don't know who to trust anymore."))
             } else {
                 if (flag(FLAG_STATIC_DRONE_FIGHT)) {
-                    msgbox(format("My little sister wandered\n"
-                        "off toward the beach.\p"
-                        "I heard you fought Hive Drones\n"
-                        "at Static Bridge. That's one\n"
-                        "mystery solved, I guess.\p"
-                        "Now if only someone would tell\n"
-                        "me where the Rangers went when\n"
-                        "the pirates showed up…"))
+                    msgbox(format("My little sister wandered off toward the beach.\p"
+                        "I heard you fought Hive Drones at Static Bridge. That's one mystery solved, I guess.\p"
+                        "Now if only someone would tell me where the Rangers went when the pirates showed up…"))
                 } else {
-                    msgbox(format("My little sister wandered\n"
-                        "off toward the beach.\p"
-                        "I told her pirates were\n"
-                        "all over the shore, but she\n"
-                        "wanted to look for shells.\p"
-                        "The Rangers used to keep\n"
-                        "Hazolt safe… then they just\n"
-                        "vanished. Now everyone says\n"
-                        "Team Hive is moving behind\n"
-                        "the scenes, and I don't know\n"
-                        "what to believe anymore."))
+                    msgbox(format("My little sister wandered off toward the beach.\p"
+                        "I told her pirates were all over the shore, but she wanted to look for shells.\p"
+                        "The Rangers used to keep Hazolt safe… then they just vanished. Now everyone says Team Hive is moving behind the scenes, and I don't know what to believe anymore."))
                 }
             }
         }
     } else {
         if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
-            msgbox(format("You found my sister…\n"
-                "Thank you.\p"
-                "The pirates are gone and Hive\n"
-                "got pushed back at Static Bridge.\p"
-                "Maybe the Rangers really did\n"
-                "leave for a reason. Maybe\n"
-                "all those rumors were connected\n"
-                "after all."))
+            msgbox(format("You found my sister… Thank you.\p"
+                "The pirates are gone and Hive got pushed back at Static Bridge.\p"
+                "Maybe the Rangers really did leave for a reason. Maybe all those rumors were connected after all."))
         } else {
             if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
-                msgbox(format("You found my sister…\n"
-                    "Thank you.\p"
-                    "At least the pirates aren't a\n"
-                    "threat anymore. If Team Hive\n"
-                    "is behind the bridge trouble,\n"
-                    "then Hazolt still has work to do."))
+                msgbox(format("You found my sister… Thank you.\p"
+                    "At least the pirates aren't a threat anymore. If Team Hive is behind the bridge trouble, then Hazolt still has work to do."))
             } else {
                 if (flag(FLAG_STATIC_DRONE_FIGHT)) {
-                    msgbox(format("You found my sister…\n"
-                        "Thank you.\p"
-                        "I heard you handled Hive Drones\n"
-                        "at Static Bridge too. That means\n"
-                        "the truth is finally starting to\n"
-                        "come out."))
+                    msgbox(format("You found my sister… Thank you.\p"
+                        "I heard you handled Hive Drones at Static Bridge too. That means the truth is finally starting to come out."))
                 } else {
-                    msgbox(format("You found my sister…\n"
-                        "Thank you.\p"
-                        "Maybe the Rangers really did\n"
-                        "leave for a reason. Maybe\n"
-                        "the pirate trouble and Team\n"
-                        "Hive are all connected.\p"
-                        "I just know Hazolt feels a\n"
-                        "little less empty now."))
+                    msgbox(format("You found my sister… Thank you.\p"
+                        "Maybe the Rangers really did leave for a reason. Maybe the pirate trouble and Team Hive are all connected.\p"
+                        "I just know Hazolt feels a little less empty now."))
                 }
             }
         }

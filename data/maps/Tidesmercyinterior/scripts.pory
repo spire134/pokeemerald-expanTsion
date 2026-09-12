@@ -7,16 +7,17 @@ script PlayerRoom_Note {
         msgbox(format(
             "A crisp, professional note from the Captain.\p"
             "RANGER RECRUIT,\p"
-            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers,\n"
+            "Congratulations on passing your boards. Please acquaint yourself with your fellow Rangers, "
             "then report to my quarters for partner assignment at your earliest convenience.\p"
-            "Professional enthusiasm is encouraged.\n"
+            "Professional enthusiasm is encouraged.\p"
             "- Captain Mara Kealoha"
         ))
         setflag(FLAG_NOTE_READ)
     } else {
-        msgbox(format("Report to my quarters for\n"
-            "partner assignment.\n"
-            "- Captain Mara Kealoha"))
+        msgbox(format(
+            "Report to my quarters for partner assignment.\p"
+            "- Captain Mara Kealoha"
+        ))
     }
     setflag(FLAG_SYS_B_DASH)
     setflag(FLAG_RECEIVED_RUNNING_SHOES)
@@ -25,9 +26,7 @@ script PlayerRoom_Note {
     special(EnableNationalPokedex)
     special(SetUnlockedPokedexFlags)
     setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
-    msgbox(format("You grabbed your gear and\n"
-        "shoes. Time to meet the\n"
-        "Captain."))
+    msgbox(format("You grabbed your gear and shoes. Time to meet the Captain."))
     release
     end
 }
@@ -35,9 +34,7 @@ script PlayerRoom_Note {
 script Should_Read_Note {
     if (!flag(FLAG_NOTE_READ)) {
         lock
-        msgbox(format("Don't forget to read the\n"
-            "note the Captain left on\n"
-            "your desk!"))
+        msgbox(format("Don't forget to read the note the Captain left on your desk!"))
         waitbuttonpress
         applymovement(LOCALID_PLAYER, moves(walk_up))
         waitmovement(0)
@@ -116,13 +113,9 @@ script CaptainRoom_Talk {
     if (!flag(FLAG_GOT_STARTER)) {
         msgbox(format(
             "Captain Mara: Welcome aboard, Ranger.\p"
-            "I hope you're prepared for\n"
-            "your first mission.\p"
-            "We've lost communications\n"
-            "with the Ranger teams on\n"
-            "Corymbra's southern shore.\p"
-            "Our mission is to investigate\n"
-            "and restore contact.\p"
+            "I hope you're prepared for your first mission.\p"
+            "We've lost communications with the Ranger teams on Corymbra's southern shore.\p"
+            "Our mission is to investigate and restore contact.\p"
             "Before we depart, you need to choose your partner Pokémon.\l"
             "You have three choices: Turtwig, Torchic, or Froakie."
         ))
@@ -265,11 +258,8 @@ script PostStarter_StormInterrupt {
     applymovement(OBJ_BURST_RANGER, BurstRanger_Enter)
     waitmovement(0)
     msgbox(format(
-        "Sailor: Captain! A massive\n"
-        "storm appeared out of\n"
-        "nowhere!\p"
-        "The barometer's going wild!\n"
-        "It's almost on top of us!"
+        "Sailor: Captain! A massive storm appeared out of nowhere!\p"
+        "The barometer's going wild! It's almost on top of us!"
     ))
     waitmessage
     applymovement(OBJ_CAPT_MARA, moves(emote_exclamation_mark jump_in_place_down))
