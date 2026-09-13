@@ -335,19 +335,18 @@ Crusted_Quarry_Drone2_Text_2:
 
 Crusted_Quarry_Seer_LastResort_Text_0:
 # 27 "data/maps/Crusted_Quarry/scripts.pory"
-	.string "Seer: I didn't want it to come to this…\n"
-	.string "I've overloaded the machinery to\l"
-	.string "collapse the quarry!\n"
-	.string "I was just supposed to get some\l"
-	.string "specific books from the library!\n"
-	.string "$"
+	.string "Seer: I didn't want it to come to this…\p"
+	.string "I've overloaded the machinery to\n"
+	.string "collapse the quarry!\p"
+	.string "I was just supposed to get some\n"
+	.string "specific books from the library!$"
 
 Crusted_Quarry_Seer_LastResort_Text_1:
 # 32 "data/maps/Crusted_Quarry/scripts.pory"
 	.string "Seer: What kind of books? I'll never\n"
-	.string "tell you!\n"
-	.string "You'll have to defeat me in battle! But\l"
-	.string "then, will you be able to stop the\l"
+	.string "tell you!\p"
+	.string "You'll have to defeat me in battle!\p"
+	.string "But then, will you be able to stop the\n"
 	.string "collapse?$"
 
 Crusted_Quarry_Seer_LastResort_Text_2:
@@ -424,8 +423,8 @@ Crusted_Quarry_MachineControls_Text_6:
 Crusted_Quarry_MachineControls_Text_7:
 # 116 "data/maps/Crusted_Quarry/scripts.pory"
 	.string "The machinery here seems to be\n"
-	.string "non-functional. There are signs of Hive\l"
-	.string "tampering.$"
+	.string "non-functional.\p"
+	.string "There are signs of Hive tampering.$"
 
 Crusted_Quarry_FlameEngineer1_Text_0:
 # 124 "data/maps/Crusted_Quarry/scripts.pory"

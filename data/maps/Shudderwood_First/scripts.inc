@@ -101,8 +101,7 @@ Shudderwood_Bug_Catcher_1_Text_0:
 # 5 "data/maps/Shudderwood_First/scripts.pory"
 	.string "What makes a Bug to be a Bug?\n"
 	.string "Is it the way they look, or the way they\l"
-	.string "move?\n"
-	.string "$"
+	.string "move?$"
 
 Shudderwood_Bug_Catcher_1_Text_1:
 # 6 "data/maps/Shudderwood_First/scripts.pory"
@@ -163,12 +162,12 @@ Shudderwood_Bug_Maniac_Text_2:
 Shudderwood_Berry_Picker_Text_0:
 # 44 "data/maps/Shudderwood_First/scripts.pory"
 	.string "If you find a Bluk Berry, could you bring\n"
-	.string "it to me? I'll give you Juice for each\l"
-	.string "one!$"
+	.string "it to me?\p"
+	.string "I'll give you Juice for each one!$"
 
 Shudderwood_Berry_Picker_Text_1:
 # 51 "data/maps/Shudderwood_First/scripts.pory"
-	.string "Oh, a Bluk Berry! Thank you so much!\n"
+	.string "Oh, a Bluk Berry! Thank you so much!\p"
 	.string "Here, take this as a reward.$"
 
 Shudderwood_Berry_Picker_Text_2:

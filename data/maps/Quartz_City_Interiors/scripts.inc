@@ -401,9 +401,9 @@ Quartz_OldWoman_Dollmaker_Movement_0:
 
 StoneEmporium_RedSalesMan_Text_0:
 # 6 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Welcome to the Stone Emporium! We have\n"
-	.string "the finest selection of elemental\l"
-	.string "stones on the whole island!$"
+	.string "Welcome to the Stone Emporium!\p"
+	.string "We have the finest selection of\n"
+	.string "elemental stones on the whole island!$"
 
 StoneEmporium_RedSalesMan_Text_1:
 # 10 "data/maps/Quartz_City_Interiors/scripts.pory"
@@ -431,8 +431,7 @@ Quartz_ForlornStoneWoman_Text_0:
 	.string "I used to be a jeweler here in\n"
 	.string "Quartzite.\p"
 	.string "But ever since Team Hive took over,\n"
-	.string "business has been slow…\n"
-	.string "$"
+	.string "business has been slow…$"
 
 Quartz_RichJerkman_Text_0:
 # 68 "data/maps/Quartz_City_Interiors/scripts.pory"
@@ -445,16 +444,14 @@ Quartz_GoldDigger_Text_0:
 # 77 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "I've been digging for gems all day!\p"
 	.string "Maybe if I find enough, I can buy my way\n"
-	.string "out of this mess with Team Hive…\n"
-	.string "$"
+	.string "out of this mess with Team Hive…$"
 
 Quartz_StoneWeirdo_Text_0:
 # 86 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Rocks are the ultimate form of life!\p"
 	.string "They've been around for millions of\n"
 	.string "years, witnessing the rise and fall of\l"
-	.string "civilizations!\n"
-	.string "$"
+	.string "civilizations!$"
 
 Quartz_StoneWeirdo_Text_1:
 # 89 "data/maps/Quartz_City_Interiors/scripts.pory"
@@ -478,11 +475,11 @@ Quartz_Bored_Wife_Murkrow_Text_0:
 	.string "My husband is so lazy! He never wants\n"
 	.string "to go out and explore the city with me.\p"
 	.string "I wish I could find a {STR_VAR_1} to\n"
-	.string "keep me company instead… The only\l"
-	.string "friend I've had lately is the knife that\l"
-	.string "follows him around!\l"
-	.string "It keeps looking at me like it's waiting.\l"
-	.string "I would trade the knife for a\l"
+	.string "keep me company instead…\p"
+	.string "The only friend I've had lately is the\n"
+	.string "knife that follows him around!\l"
+	.string "It keeps looking at me like it's waiting.\p"
+	.string "I would trade the knife for a\n"
 	.string "{STR_VAR_1}, I've always fancied a\l"
 	.string "murder!$"
 
@@ -543,19 +540,18 @@ Quartz_OldMan_TyGifts_Text_0:
 
 Quartz_OldMan_TyGifts_Text_1:
 # 206 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "We couldn't have done it without you! If\n"
-	.string "you ever need another doll, just let me\l"
-	.string "know!\l"
-	.string "$"
+	.string "We couldn't have done it without you!\p"
+	.string "If you ever need another doll, just let\n"
+	.string "me know!$"
 
 Quartz_OldWoman_Dollmaker_Text_0:
 # 216 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Dollmaker Mollie: You certainly prove\n"
 	.string "yourself a strong trainer.\p"
 	.string "Perhaps you can be the one with the\n"
-	.string "skill to test my designs. But I will first\l"
-	.string "evaluate your abilities in battle. Do\l"
-	.string "you accept?$"
+	.string "skill to test my designs.\p"
+	.string "But I will first evaluate your abilities\n"
+	.string "in battle. Do you accept?$"
 
 Quartz_OldWoman_Dollmaker_Text_1:
 # 220 "data/maps/Quartz_City_Interiors/scripts.pory"
@@ -570,8 +566,8 @@ Quartz_OldWoman_Dollmaker_Text_3:
 	.string "Dollmaker Mollie: You've proven your\n"
 	.string "skill once again!\p"
 	.string "As a reward, I shall give you access to\n"
-	.string "my secret workshop! Please step aside,\l"
-	.string "dear!$"
+	.string "my secret workshop!\p"
+	.string "Please step aside, dear!$"
 
 Quartz_OldWoman_Dollmaker_Text_4:
 # 232 "data/maps/Quartz_City_Interiors/scripts.pory"

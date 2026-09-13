@@ -242,8 +242,8 @@ Wreck_Pirate_FirstMate_Movement_2:
 
 Wreck_Exposition_Pirate_Text_0:
 # 5 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "You're too late, Ranger! This ship's\n"
-	.string "treasures belong to us now!$"
+	.string "You're too late, Ranger!\p"
+	.string "This ship's treasures belong to us now!$"
 
 Wreck_Exposition_Pirate_Text_1:
 # 7 "data/maps/TidesMercy_StorageWreck/scripts.pory"
@@ -269,8 +269,8 @@ Wreck_Grab_Pirate_Text_2:
 Wreck_GangUp_Pirate_Text_0:
 # 22 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Pirate: Walking right into an ambush,\n"
-	.string "now that's a Ranger! Prepare to be\l"
-	.string "boarded!$"
+	.string "now that's a Ranger!\p"
+	.string "Prepare to be boarded!$"
 
 Wreck_GangUp_Pirate_Text_1:
 # 24 "data/maps/TidesMercy_StorageWreck/scripts.pory"
@@ -321,11 +321,11 @@ Wreck_Pirate_FirstMate_Text_3:
 Wreck_Pirate_FirstMate_Text_4:
 # 88 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "The Captain already got the best\n"
-	.string "treasure! You'll never beat us at the\l"
-	.string "hideout!$"
+	.string "treasure!\p"
+	.string "You'll never beat us at the hideout!$"
 
 StorageWreck_Empty_Item_Ball_Text_0:
 # 100 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "There is nothing left here. Those darn\n"
-	.string "pirates already took everything of\l"
-	.string "value!$"
+	.string "There is nothing left here.\p"
+	.string "Those darn pirates already took\n"
+	.string "everything of value!$"

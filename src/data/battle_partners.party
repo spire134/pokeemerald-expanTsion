@@ -45,7 +45,7 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 === PARTNER_CORIN_QUARTZ ===
 Name: Corin
 Class: Pkmn Ranger
-Pic: Steven
+Pic: Pokemon Ranger M
 Gender: Male
 Music: Male
 
@@ -68,10 +68,9 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Ingrain
 
 Gulpin @ Black Sludge
-Ability: Stress Eating  
-Level: 18  
-Tera Type: Poison  
-IVs: 11 HP / 0 Atk / 16 Def / 21 SpA / 21 SpD / 11 Spe  
+Ability: Liquid Ooze  
+Level: 18
+IVs: 11 HP / 0 Atk / 26 Def / 21 SpA / 21 SpD / 11 Spe  
 - Mega Punch
 - Stockpile  
 - Swallow  

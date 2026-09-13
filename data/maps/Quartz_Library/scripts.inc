@@ -663,9 +663,9 @@ QuartzLibrary_SeerBattle_Text_1:
 
 QuartzLibrary_SeerBattle_Text_2:
 # 81 "data/maps/Quartz_Library/scripts.pory"
-	.string "Seer: How could I lose to a Ranger… All\n"
-	.string "Drones, retreat! We got the books, fall\l"
-	.string "back to the quarry!$"
+	.string "Seer: How could I lose to a Ranger…\p"
+	.string "All Drones, retreat! We got the books,\n"
+	.string "fall back to the quarry!$"
 
 QuartzLibrary_SeerBattle_Text_3:
 # 87 "data/maps/Quartz_Library/scripts.pory"
@@ -708,20 +708,20 @@ Corin_Quartz_PostBattles_Text_2:
 	.string "Thanks for having my back back there,\l"
 	.string "{PLAYER}.\p"
 	.string "Those Hive Drones were tougher than I\n"
-	.string "expected, but we showed them! I think\l"
-	.string "we can take on anything now, together\l"
-	.string "as a team!$"
+	.string "expected, but we showed them!\p"
+	.string "I think we can take on anything now,\n"
+	.string "together as a team!$"
 
 Corin_Quartz_PostBattles_Text_3:
 # 123 "data/maps/Quartz_Library/scripts.pory"
-	.string "Corin: I'll report back to Hazolt HQ. I\n"
-	.string "bet Mara will want to hear about this!$"
+	.string "Corin: I'll report back to Hazolt HQ.\p"
+	.string "I bet Mara will want to hear about this!$"
 
 Quartz_Library_HealNurse_Text_0:
 # 132 "data/maps/Quartz_Library/scripts.pory"
 	.string "Please rest here if your POKéMON need\n"
-	.string "healing. Would you like me to heal your\l"
-	.string "POKéMON?$"
+	.string "healing.\p"
+	.string "Would you like me to heal your POKéMON?$"
 
 Quartz_Library_HealNurse_Text_1:
 # 135 "data/maps/Quartz_Library/scripts.pory"
@@ -735,29 +735,32 @@ Quartz_Library_HealNurse_Text_2:
 Quartz_Library_QuarryLoreWoman_Text_0:
 # 151 "data/maps/Quartz_Library/scripts.pory"
 	.string "The Quartz Quarry used to be the pride\n"
-	.string "of Quartzite Village. But since Team\l"
-	.string "Hive took over, it was flooded. Now I\l"
-	.string "hear the Rangers are trying to clear it\l"
-	.string "out again.$"
+	.string "of Quartzite Village.\p"
+	.string "But since Team Hive took over, it was\n"
+	.string "flooded.\p"
+	.string "Now I hear the Rangers are trying to\n"
+	.string "clear it out again.$"
 
 Quartz_Library_QuarryNerd_Text_0:
 # 161 "data/maps/Quartz_Library/scripts.pory"
 	.string "Did you know that Quartz is made up of\n"
-	.string "silicon and oxygen atoms? It's one of\l"
-	.string "the most hard minerals on Earth!$"
+	.string "silicon and oxygen atoms?\p"
+	.string "It's one of the most hard minerals on\n"
+	.string "Earth!$"
 
 Quartz_Library_ManicReader_Text_0:
 # 170 "data/maps/Quartz_Library/scripts.pory"
 	.string "I just love reading about the different\n"
 	.string "types of minerals found in Quartzite\l"
-	.string "City! Did you know that Amethyst is a\l"
-	.string "type of Quartz?$"
+	.string "City!\p"
+	.string "Did you know that Amethyst is a type of\n"
+	.string "Quartz?$"
 
 Quartz_Library_Libarian_Nerd_Text_0:
 # 179 "data/maps/Quartz_Library/scripts.pory"
-	.string "Welcome to the Quartzite Library! Feel\n"
-	.string "free to browse our collection of books\l"
-	.string "on geology and mineralogy.$"
+	.string "Welcome to the Quartzite Library!\p"
+	.string "Feel free to browse our collection of\n"
+	.string "books on geology and mineralogy.$"
 
 Quartz_Library_PictureBookChild_Text_0:
 # 188 "data/maps/Quartz_Library/scripts.pory"
@@ -844,9 +847,9 @@ Quartz_WaitInLine_Text_2:
 Quartz_WaitInLine_Text_3:
 # 286 "data/maps/Quartz_Library/scripts.pory"
 	.string "Wow this really is going slow, you should\n"
-	.string "probably just leave. Here, let me give\l"
-	.string "you something for being here with us\l"
-	.string "for so long.$"
+	.string "probably just leave.\p"
+	.string "Here, let me give you something for\n"
+	.string "being here with us for so long.$"
 
 Quartz_WaitInLine_Text_4:
 # 289 "data/maps/Quartz_Library/scripts.pory"

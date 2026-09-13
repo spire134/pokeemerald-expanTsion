@@ -93,80 +93,69 @@ ShunuBeach_LostGirl_5:
 
 ShunuBeach_Beauty_Fight_Text_0:
 # 5 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Beauty: Pearls are the\n"
-	.string "only treasure worth\n"
-	.string "chasing.$"
+	.string "Beauty: Pearls are the only treasure\n"
+	.string "worth chasing.$"
 
 ShunuBeach_Beauty_Fight_Text_1:
 # 8 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Beauty: Hmph. Then I'll\n"
-	.string "simply find a finer one.$"
+	.string "Beauty: Hmph. Then I'll simply find a\n"
+	.string "finer one.$"
 
 ShunuBeach_Beauty_Fight_Text_2:
 # 10 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Beauty: When the tide is\n"
-	.string "right, the sea gives up\n"
-	.string "its prettiest gems.$"
+	.string "Beauty: When the tide is right, the sea\n"
+	.string "gives up its prettiest gems.$"
 
 ShunuBeach_Fisherman_Fight_Text_0:
 # 18 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Fisherman: I cast for fish,\n"
-	.string "not for another busted\n"
-	.string "crate!$"
+	.string "Fisherman: I cast for fish, not for\n"
+	.string "another busted crate!$"
 
 ShunuBeach_Fisherman_Fight_Text_1:
 # 21 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Fisherman: The sea can\n"
-	.string "keep its junk. I'm done.$"
+	.string "Fisherman: The sea can keep its junk.\n"
+	.string "I'm done.$"
 
 ShunuBeach_Fisherman_Fight_Text_2:
 # 23 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Fisherman: If I hook one\n"
-	.string "more piece of flotsam, I'm\n"
-	.string "throwing this rod in!$"
+	.string "Fisherman: If I hook one more piece of\n"
+	.string "flotsam, I'm throwing this rod in!$"
 
 Hazolt_Sign_Text_0:
 # 32 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "North: Hazolt Village\n"
-	.string "Fresh water available!\p"
-	.string "Pirate graffiti:\n"
-	.string "Keep moving. We own\n"
-	.string "the shore!$"
+	.string "North: Hazolt Village Fresh water\n"
+	.string "available!\p"
+	.string "Pirate graffiti: Keep moving. We own the\n"
+	.string "shore!$"
 
 Hazolt_Sign_Text_1:
 # 38 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "North: Hazolt Village\n"
-	.string "Fresh water available!$"
+	.string "North: Hazolt Village Fresh water\n"
+	.string "available!$"
 
 ShunuBeach_LostGirl_Text_0:
 # 49 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Lost Girl: Thank you again\n"
-	.string "for helping me, Ranger.\n"
-	.string "I made it back safely.$"
+	.string "Lost Girl: Thank you again for helping\n"
+	.string "me, Ranger. I made it back safely.$"
 
 ShunuBeach_LostGirl_Text_1:
 # 57 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Lost Girl: I can't get\n"
-	.string "back to shore without\n"
-	.string "SURF… Please come back\n"
-	.string "when you can cross the\n"
-	.string "water.$"
+	.string "Lost Girl: I can't get back to shore\n"
+	.string "without SURF… Please come back when\l"
+	.string "you can cross the water.$"
 
 ShunuBeach_LostGirl_Text_2:
 # 65 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Lost Girl: You can use\n"
-	.string "SURF? Please, take me\n"
-	.string "back to the mainland!$"
+	.string "Lost Girl: You can use SURF? Please,\n"
+	.string "take me back to the mainland!$"
 
 ShunuBeach_LostGirl_Text_3:
 # 71 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Lost Girl: I was trying\n"
-	.string "to follow the current and\n"
-	.string "got turned around out\n"
+	.string "Lost Girl: I was trying to follow the\n"
+	.string "current and got turned around out\l"
 	.string "here… I'm so relieved!$"
 
 ShunuBeach_LostGirl_Text_4:
 # 77 "data/maps/SHUNU_BEACH_WEST/scripts.pory"
-	.string "Lost Girl: Please take this\n"
-	.string "Nugget. You saved me more\n"
-	.string "than once today!$"
+	.string "Lost Girl: Please take this Nugget. You\n"
+	.string "saved me more than once today!$"

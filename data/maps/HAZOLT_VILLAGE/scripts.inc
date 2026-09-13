@@ -111,17 +111,17 @@ Hazolt_Worried_Boy::
 	faceplayer
 # 74 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_unset FLAG_SHUNU_LOST_GIRL_SAVED, Hazolt_Worried_Boy_2
-# 120 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 97 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Worried_Boy_12
 Hazolt_Worried_Boy_11:
-# 130 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 102 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Worried_Boy_18
-# 138 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 106 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_STATIC_DRONE_FIGHT, Hazolt_Worried_Boy_24
-# 146 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 110 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_7
 Hazolt_Worried_Boy_1:
-# 158 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 117 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	release
 	end
 
@@ -129,11 +129,11 @@ Hazolt_Worried_Boy_2:
 # 75 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Worried_Boy_7
 Hazolt_Worried_Boy_6:
-# 84 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 80 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Worried_Boy_15
-# 95 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 85 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_STATIC_DRONE_FIGHT, Hazolt_Worried_Boy_21
-# 105 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 90 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_3
 	goto Hazolt_Worried_Boy_1
 
@@ -148,115 +148,129 @@ Hazolt_Worried_Boy_7:
 	goto Hazolt_Worried_Boy_6
 
 Hazolt_Worried_Boy_10:
-# 121 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 98 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_4
 	goto Hazolt_Worried_Boy_1
 
 Hazolt_Worried_Boy_12:
-# 120 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 97 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_STATIC_DRONE_FIGHT, Hazolt_Worried_Boy_10
 	goto Hazolt_Worried_Boy_11
 
 Hazolt_Worried_Boy_15:
-# 85 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 81 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_1
 	goto Hazolt_Worried_Boy_1
 
 Hazolt_Worried_Boy_18:
-# 131 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 103 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_5
 	goto Hazolt_Worried_Boy_1
 
 Hazolt_Worried_Boy_21:
-# 96 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 86 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_2
 	goto Hazolt_Worried_Boy_1
 
 Hazolt_Worried_Boy_24:
-# 139 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 107 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Worried_Boy_Text_6
 	goto Hazolt_Worried_Boy_1
 
 
 Hazolt_BeachWarp::
-# 163 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 122 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	warp MAP_SHUNU_BEACH_WEST, 11, 5
-# 164 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 123 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	waitstate
 	return
 
 
 Hazolt_Rocky_Road_Sign::
-# 168 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 127 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	lock
-# 169 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 128 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Rocky_Road_Sign_Text_0, MSGBOX_SIGN
-# 171 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 130 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	release
 	return
 
 
 Hazolt_Village_Sign::
-# 175 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 134 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	lock
-# 176 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 135 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Village_Sign_Text_0, MSGBOX_SIGN
-# 178 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 137 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	release
 	return
 
 
 Hazolt_Sailor_Scared::
-# 182 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 141 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	lock
-# 183 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 142 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	faceplayer
-# 184 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 143 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Sailor_Scared_4
 Hazolt_Sailor_Scared_3:
-# 190 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 149 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Hazolt_Sailor_Scared_7
-# 195 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 154 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_STATIC_DRONE_FIGHT, Hazolt_Sailor_Scared_10
-# 200 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 159 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Sailor_Scared_Text_3
 Hazolt_Sailor_Scared_1:
-# 205 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 164 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	release
 	return
 
 Hazolt_Sailor_Scared_2:
-# 185 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 144 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Sailor_Scared_Text_0
 	goto Hazolt_Sailor_Scared_1
 
 Hazolt_Sailor_Scared_4:
-# 184 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 143 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	goto_if_set FLAG_STATIC_DRONE_FIGHT, Hazolt_Sailor_Scared_2
 	goto Hazolt_Sailor_Scared_3
 
 Hazolt_Sailor_Scared_7:
-# 191 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 150 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Sailor_Scared_Text_1
 	goto Hazolt_Sailor_Scared_1
 
 Hazolt_Sailor_Scared_10:
-# 196 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 155 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	msgbox Hazolt_Sailor_Scared_Text_2
 	goto Hazolt_Sailor_Scared_1
 
 
+Hazolt_LakeLoreWoman::
+# 168 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	lock
+# 169 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	faceplayer
+# 170 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	msgbox Hazolt_LakeLoreWoman_Text_0
+# 172 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	waitmessage
+# 173 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	release
+	return
+
+
 Resivoir_Guy_Text_0:
 # 7 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "The reservoir feels quieter now.\p"
+	.string "The twin reservoirs feel quieter now.\p"
 	.string "With the pirates pushed out and those\n"
 	.string "Hive Drones at the bridge dealt with,\p"
 	.string "Hazolt can finally breathe again.$"
 
 Resivoir_Guy_Text_1:
 # 12 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "The reservoir is full of clean, fresh\n"
-	.string "water.\p"
+	.string "The twin reservoirs are full of clean,\n"
+	.string "fresh water.\p"
 	.string "Even with the pirates gone, I still don't\n"
 	.string "trust the calm.\p"
 	.string "If Team Hive is moving at the bridge,\n"
@@ -264,8 +278,8 @@ Resivoir_Guy_Text_1:
 
 Resivoir_Guy_Text_2:
 # 17 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "The reservoir is full of clean, fresh\n"
-	.string "water.\p"
+	.string "The twin reservoirs are full of clean,\n"
+	.string "fresh water.\p"
 	.string "I heard you tangled with Hive Drones at\n"
 	.string "Static Bridge.\p"
 	.string "Good. Hazolt needs Rangers who notice\n"
@@ -273,8 +287,8 @@ Resivoir_Guy_Text_2:
 
 Resivoir_Guy_Text_3:
 # 21 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "The reservoir is full of clean, fresh\n"
-	.string "water.\p"
+	.string "The twin reservoirs are full of clean,\n"
+	.string "fresh water.\p"
 	.string "Even though we're by the sea, it's\n"
 	.string "important to have freshwater sources.$"
 
@@ -325,104 +339,95 @@ Restless_Boy_Text_1:
 
 Hazolt_Worried_Boy_Text_0:
 # 76 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "My little sister wandered off\n"
-	.string "toward the beach.\p"
-	.string "You already handled the pirates\n"
-	.string "and fought Hive at Static Bridge,\n"
-	.string "so I know you're the real deal.\p"
-	.string "Please… if anyone can bring her\n"
-	.string "back, it's you.$"
+	.string "My little sister wandered off toward\n"
+	.string "the beach.\p"
+	.string "You already handled the pirates and\n"
+	.string "fought Hive at Static Bridge, so I know\l"
+	.string "you're the real deal.\p"
+	.string "Please… if anyone can bring her back,\n"
+	.string "it's you.$"
 
 Hazolt_Worried_Boy_Text_1:
-# 85 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "My little sister wandered\n"
-	.string "off toward the beach.\p"
-	.string "The pirates are gone, but I\n"
-	.string "still hear people whispering\n"
-	.string "about Team Hive at Static Bridge.\p"
-	.string "The Rangers used to keep\n"
-	.string "Hazolt safe… then they just\n"
-	.string "vanished. I don't know who to\n"
-	.string "trust anymore.$"
+# 81 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "My little sister wandered off toward\n"
+	.string "the beach.\p"
+	.string "The pirates are gone, but I still hear\n"
+	.string "people whispering about Team Hive at\l"
+	.string "Static Bridge.\p"
+	.string "The Rangers used to keep Hazolt safe…\n"
+	.string "then they just vanished. I don't know\l"
+	.string "who to trust anymore.$"
 
 Hazolt_Worried_Boy_Text_2:
-# 96 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "My little sister wandered\n"
-	.string "off toward the beach.\p"
-	.string "I heard you fought Hive Drones\n"
-	.string "at Static Bridge. That's one\n"
-	.string "mystery solved, I guess.\p"
-	.string "Now if only someone would tell\n"
-	.string "me where the Rangers went when\n"
-	.string "the pirates showed up…$"
+# 86 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "My little sister wandered off toward\n"
+	.string "the beach.\p"
+	.string "I heard you fought Hive Drones at\n"
+	.string "Static Bridge. That's one mystery\l"
+	.string "solved, I guess.\p"
+	.string "Now if only someone would tell me where\n"
+	.string "the Rangers went when the pirates\l"
+	.string "showed up…$"
 
 Hazolt_Worried_Boy_Text_3:
-# 105 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "My little sister wandered\n"
-	.string "off toward the beach.\p"
-	.string "I told her pirates were\n"
-	.string "all over the shore, but she\n"
-	.string "wanted to look for shells.\p"
-	.string "The Rangers used to keep\n"
-	.string "Hazolt safe… then they just\n"
-	.string "vanished. Now everyone says\n"
-	.string "Team Hive is moving behind\n"
-	.string "the scenes, and I don't know\n"
-	.string "what to believe anymore.$"
+# 90 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "My little sister wandered off toward\n"
+	.string "the beach.\p"
+	.string "I told her pirates were all over the\n"
+	.string "shore, but she wanted to look for\l"
+	.string "shells.\p"
+	.string "The Rangers used to keep Hazolt safe…\n"
+	.string "then they just vanished. Now everyone\l"
+	.string "says Team Hive is moving behind the\l"
+	.string "scenes, and I don't know what to\l"
+	.string "believe anymore.$"
 
 Hazolt_Worried_Boy_Text_4:
-# 121 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "You found my sister…\n"
-	.string "Thank you.\p"
-	.string "The pirates are gone and Hive\n"
-	.string "got pushed back at Static Bridge.\p"
-	.string "Maybe the Rangers really did\n"
-	.string "leave for a reason. Maybe\n"
-	.string "all those rumors were connected\n"
-	.string "after all.$"
+# 98 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "You found my sister… Thank you.\p"
+	.string "The pirates are gone and Hive got\n"
+	.string "pushed back at Static Bridge.\p"
+	.string "Maybe the Rangers really did leave for a\n"
+	.string "reason. Maybe all those rumors were\l"
+	.string "connected after all.$"
 
 Hazolt_Worried_Boy_Text_5:
-# 131 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "You found my sister…\n"
-	.string "Thank you.\p"
-	.string "At least the pirates aren't a\n"
-	.string "threat anymore. If Team Hive\n"
-	.string "is behind the bridge trouble,\n"
-	.string "then Hazolt still has work to do.$"
+# 103 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "You found my sister… Thank you.\p"
+	.string "At least the pirates aren't a threat\n"
+	.string "anymore. If Team Hive is behind the\l"
+	.string "bridge trouble, then Hazolt still has\l"
+	.string "work to do.$"
 
 Hazolt_Worried_Boy_Text_6:
-# 139 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "You found my sister…\n"
-	.string "Thank you.\p"
-	.string "I heard you handled Hive Drones\n"
-	.string "at Static Bridge too. That means\n"
-	.string "the truth is finally starting to\n"
-	.string "come out.$"
+# 107 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "You found my sister… Thank you.\p"
+	.string "I heard you handled Hive Drones at\n"
+	.string "Static Bridge too. That means the truth\l"
+	.string "is finally starting to come out.$"
 
 Hazolt_Worried_Boy_Text_7:
-# 146 "data/maps/HAZOLT_VILLAGE/scripts.pory"
-	.string "You found my sister…\n"
-	.string "Thank you.\p"
-	.string "Maybe the Rangers really did\n"
-	.string "leave for a reason. Maybe\n"
-	.string "the pirate trouble and Team\n"
-	.string "Hive are all connected.\p"
-	.string "I just know Hazolt feels a\n"
-	.string "little less empty now.$"
+# 110 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "You found my sister… Thank you.\p"
+	.string "Maybe the Rangers really did leave for a\n"
+	.string "reason. Maybe the pirate trouble and\l"
+	.string "Team Hive are all connected.\p"
+	.string "I just know Hazolt feels a little less\n"
+	.string "empty now.$"
 
 Hazolt_Rocky_Road_Sign_Text_0:
-# 169 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 128 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Rocky Road Ahead!\n"
 	.string "Beware of Pirates!$"
 
 Hazolt_Village_Sign_Text_0:
-# 176 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 135 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Welcome to Hazolt Village!\n"
 	.string "A reservoir of fresh water for fresh\l"
 	.string "faces.$"
 
 Hazolt_Sailor_Scared_Text_0:
-# 185 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 144 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Please don't make me fight!\n"
 	.string "Well… actually, maybe I can breathe\l"
 	.string "again.\p"
@@ -431,7 +436,7 @@ Hazolt_Sailor_Scared_Text_0:
 	.string "Hazolt finally feels safe.$"
 
 Hazolt_Sailor_Scared_Text_1:
-# 191 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 150 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Please don't make me fight!\n"
 	.string "At least the pirates at the wreck are\l"
 	.string "gone.\p"
@@ -439,7 +444,7 @@ Hazolt_Sailor_Scared_Text_1:
 	.string "Hive at Static Bridge…$"
 
 Hazolt_Sailor_Scared_Text_2:
-# 196 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 155 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Please don't make me fight!\n"
 	.string "Those pirates have been making things\l"
 	.string "dangerous around here!\p"
@@ -448,7 +453,15 @@ Hazolt_Sailor_Scared_Text_2:
 	.string "either.$"
 
 Hazolt_Sailor_Scared_Text_3:
-# 200 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+# 159 "data/maps/HAZOLT_VILLAGE/scripts.pory"
 	.string "Please don't make me fight!\n"
 	.string "Those pirates have been making things\l"
 	.string "dangerous around here!$"
+
+Hazolt_LakeLoreWoman_Text_0:
+# 170 "data/maps/HAZOLT_VILLAGE/scripts.pory"
+	.string "Hazolt village got it's name from the\n"
+	.string "twin reservoirs, known as the 'hazel\l"
+	.string "eyes' of the village.\p"
+	.string "They are said to watch over the village,\n"
+	.string "keeping it safe and prosperous.$"

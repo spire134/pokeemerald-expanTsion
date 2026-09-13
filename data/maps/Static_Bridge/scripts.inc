@@ -199,8 +199,8 @@ Team_Hive_Drone_Movement_6:
 OldRod_Guy_Text_0:
 # 7 "data/maps/Static_Bridge/scripts.pory"
 	.string "FISHER DON: Hey there! You look like\n"
-	.string "you know your way around a rod and reel.\l"
-	.string "Here, take this Old Rod. It's not much,\l"
+	.string "you know your way around a rod and reel.\p"
+	.string "Here, take this Old Rod. It's not much,\n"
 	.string "but it'll get you started.$"
 
 OldRod_Guy_Text_1:
@@ -242,8 +242,8 @@ Static_Bridge_Doubter_Text_3:
 Team_Hive_Drone_Text_0:
 # 56 "data/maps/Static_Bridge/scripts.pory"
 	.string "DRONE: We've gotten quite a few\n"
-	.string "recruits to join Team Hive recently. The\l"
-	.string "seer will very pleased.$"
+	.string "recruits to join Team Hive recently.\p"
+	.string "The seer will very pleased.$"
 
 Team_Hive_Drone_Text_1:
 # 60 "data/maps/Static_Bridge/scripts.pory"
@@ -258,9 +258,9 @@ Team_Hive_Drone_Text_2:
 Team_Hive_Drone_Text_3:
 # 72 "data/maps/Static_Bridge/scripts.pory"
 	.string "DRONE: Oh that look in your eye, you\n"
-	.string "have a problem with us? The Seer said\l"
-	.string "not to battle Rangers, but you're\l"
-	.string "annoying us!$"
+	.string "have a problem with us?\p"
+	.string "The Seer said not to battle Rangers,\n"
+	.string "but you're annoying us!$"
 
 Team_Hive_Drone_Text_4:
 # 74 "data/maps/Static_Bridge/scripts.pory"

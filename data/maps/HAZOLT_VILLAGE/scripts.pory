@@ -4,21 +4,21 @@ script Resivoir_Guy {
     lock
     faceplayer
     if (flag(FLAG_CLEARED_TIDESMERCYWRECK) && flag(FLAG_STATIC_DRONE_FIGHT)) {
-        msgbox(format("The reservoir feels quieter now.\p"
+        msgbox(format("The twin reservoirs feel quieter now.\p"
             "With the pirates pushed out and those Hive Drones at the bridge dealt with,\p"
             "Hazolt can finally breathe again."))
     } else {
         if (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
-            msgbox(format("The reservoir is full of clean, fresh water.\p"
+            msgbox(format("The twin reservoirs are full of clean, fresh water.\p"
                 "Even with the pirates gone, I still don't trust the calm.\p"
                 "If Team Hive is moving at the bridge, we're not done yet."))
         } else {
             if (flag(FLAG_STATIC_DRONE_FIGHT)) {
-                msgbox(format("The reservoir is full of clean, fresh water.\p"
+                msgbox(format("The twin reservoirs are full of clean, fresh water.\p"
                     "I heard you tangled with Hive Drones at Static Bridge.\p"
                     "Good. Hazolt needs Rangers who notice the threats early."))
             } else {
-                msgbox(format("The reservoir is full of clean, fresh water.\p"
+                msgbox(format("The twin reservoirs are full of clean, fresh water.\p"
                     "Even though we're by the sea, it's important to have freshwater sources."))
             }
         }
@@ -161,5 +161,14 @@ script Hazolt_Sailor_Scared {
             }
         }
     }
+    release
+}
+
+script Hazolt_LakeLoreWoman {
+    lock
+    faceplayer
+    msgbox(format("Hazolt village got it's name from the twin reservoirs, known as the 'hazel eyes' of the village.\p"
+        "They are said to watch over the village, keeping it safe and prosperous."))
+    waitmessage
     release
 }

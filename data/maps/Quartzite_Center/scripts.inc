@@ -44,5 +44,4 @@ Quartz_Center_RestingTrainer_Text_0:
 # 16 "data/maps/Quartzite_Center/scripts.pory"
 	.string "Trainer: Phew! That was a tough trek!\n"
 	.string "Good thing there's a Pokémon Center\l"
-	.string "right here to heal up!\n"
-	.string "$"
+	.string "right here to heal up!$"

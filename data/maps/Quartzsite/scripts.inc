@@ -219,14 +219,13 @@ Quartz_ResidenceStreetSign_Text_0:
 Quartz_ScenicQuarryView_Text_0:
 # 49 "data/maps/Quartzsite/scripts.pory"
 	.string "You gaze out over the vast quarry.\n"
-	.string "Water cascades down the rocky walls,\n"
-	.string "$"
+	.string "Water cascades down the rocky walls,$"
 
 Quartz_ScenicQuarryView_Text_1:
 # 53 "data/maps/Quartzsite/scripts.pory"
-	.string "and you notice a glimmering pond below.\n"
-	.string "It looks like a great spot to fish!\n"
-	.string "Cast your Super Rod here to see what\l"
+	.string "and you notice a glimmering pond below.\p"
+	.string "It looks like a great spot to fish!\p"
+	.string "Cast your Super Rod here to see what\n"
 	.string "you can catch!$"
 
 Quartz_ScenicQuarryView_Text_2:
@@ -242,16 +241,16 @@ Quartz_ScenicQuarryView_Text_3:
 
 Quartz_ScenicQuarryView_Text_4:
 # 65 "data/maps/Quartzsite/scripts.pory"
-	.string "You notice a glimmering pond below.\n"
-	.string "It looks like a great spot to fish!\n"
-	.string "If you had a Super Rod, you could cast\l"
+	.string "You notice a glimmering pond below.\p"
+	.string "It looks like a great spot to fish!\p"
+	.string "If you had a Super Rod, you could cast\n"
 	.string "it here to see what you can catch!$"
 
 Quartz_Hive_Blocker_Text_0:
 # 75 "data/maps/Quartzsite/scripts.pory"
 	.string "Hive Drone: Buzz off, Ranger! You won't\n"
-	.string "be getting through here today! The\l"
-	.string "Seer runs this city now!$"
+	.string "be getting through here today!\p"
+	.string "The Seer runs this city now!$"
 
 Quartz_StationSign_Text_0:
 # 83 "data/maps/Quartzsite/scripts.pory"

@@ -987,141 +987,123 @@ Shudderwood_Mansion_RandomEncounter_Text_0:
 
 Shudderwood_Mansion_GateHouseBattle_Text_0:
 # 114 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: You again? Ah,\n"
-	.string "I was right to be wary of\n"
-	.string "you!$"
+	.string "Seer June: You again? Ah, I was right to\n"
+	.string "be wary of you!$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_1:
 # 119 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: Attention,\n"
-	.string "Drones! Behold the mighty\n"
-	.string "guardian the Maven has bound\n"
-	.string "to our will!$"
+	.string "Seer June: Attention, Drones! Behold\n"
+	.string "the mighty guardian the Maven has\l"
+	.string "bound to our will!$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_2:
 # 132 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Pinsir: Krrrrrrraaarreeeeee!\n"
-	.string "$"
+	.string "Pinsir: Krrrrrrraaarreeeeee!$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_3:
 # 135 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: See how Pokémon\n"
-	.string "like this, and even the\n"
-	.string "Master of the Mansion, bow\n"
-	.string "to our cause! What hope\n"
-	.string "could you possibly have,\n"
-	.string "Ranger?$"
+	.string "Seer June: See how Pokémon like this,\n"
+	.string "and even the Master of the Mansion, bow\l"
+	.string "to our cause! What hope could you\l"
+	.string "possibly have, Ranger?$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_4:
 # 156 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: Impossible… How\n"
-	.string "could a mere Ranger bring\n"
-	.string "low such a mighty Pokémon?!$"
+	.string "Seer June: Impossible… How could a mere\n"
+	.string "Ranger bring low such a mighty\l"
+	.string "Pokémon?!$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_5:
 # 168 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: What? Where are\n"
-	.string "you going? Gah, we're out of\n"
-	.string "defenses here!$"
+	.string "Seer June: What? Where are you going?\n"
+	.string "Gah, we're out of defenses here!$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_6:
 # 174 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Seer June: Fall back to the\n"
-	.string "mansion! May the Maven show\n"
-	.string "us mercy for this\n"
+	.string "Seer June: Fall back to the mansion!\n"
+	.string "May the Maven show us mercy for this\l"
 	.string "failure…$"
 
 Shudderwood_Mansion_GateHouseBattle_Text_7:
 # 185 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "With the Seer and her\n"
-	.string "drones gone, the path into\n"
-	.string "the mansion stands open.$"
+	.string "With the Seer and her drones gone, the\n"
+	.string "path into the mansion stands open.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_0:
 # 200 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "There is a thick web covering\n"
-	.string "an ornate keyhole embedded\n"
-	.string "in the stairs. You need a key\n"
-	.string "to unlock it.$"
+	.string "There is a thick web covering an ornate\n"
+	.string "keyhole embedded in the stairs. You\l"
+	.string "need a key to unlock it.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_1:
 # 209 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "There is a thick web covering\n"
-	.string "an ornate keyhole embedded\n"
-	.string "in the stairs.\p"
-	.string "This web is too thick to\n"
-	.string "CUT through right now. It\n"
-	.string "must have been spun by a\n"
+	.string "There is a thick web covering an ornate\n"
+	.string "keyhole embedded in the stairs.\p"
+	.string "This web is too thick to CUT through\n"
+	.string "right now. It must have been spun by a\l"
 	.string "very powerful Pokémon.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_2:
 # 220 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "There is a thick web\n"
-	.string "covering an ornate keyhole\n"
-	.string "embedded in the stairs.$"
+	.string "There is a thick web covering an ornate\n"
+	.string "keyhole embedded in the stairs.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_3:
 # 223 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You see the web is weaker\n"
-	.string "from the efforts of the\n"
-	.string "solvent!$"
+	.string "You see the web is weaker from the\n"
+	.string "efforts of the solvent!$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_4:
 # 226 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Would you like to CUT\n"
-	.string "through the web, then use\n"
-	.string "the Mansion Key to unlock\n"
-	.string "the stairs?$"
+	.string "Would you like to CUT through the web,\n"
+	.string "then use the Mansion Key to unlock the\l"
+	.string "stairs?$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_5:
 # 231 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You decided not to use\n"
-	.string "the Mansion Key right now.$"
+	.string "You decided not to use the Mansion Key\n"
+	.string "right now.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_6:
 # 239 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You don't have CUT in\n"
-	.string "your party right now.$"
+	.string "You don't have CUT in your party right\n"
+	.string "now.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_7:
 # 245 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You use CUT to slice\n"
-	.string "through the webbing\n"
-	.string "covering the keyhole.$"
+	.string "You use CUT to slice through the\n"
+	.string "webbing covering the keyhole.$"
 
 Shudderwood_Mansion_StairWebandKeyCheck_Text_8:
 # 250 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Then you use the Mansion\n"
-	.string "Key to unlock the stairs!$"
+	.string "Then you use the Mansion Key to unlock\n"
+	.string "the stairs!$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_0:
 # 262 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You interrupt two figures\n"
-	.string "working diligently at their\n"
-	.string "crafts. One appears to be a\n"
-	.string "maid sewing uniforms, while\p"
-	.string "the other is a scientist\n"
-	.string "working with Spewpa silk.$"
+	.string "You interrupt two figures working\n"
+	.string "diligently at their crafts. One appears\l"
+	.string "to be a maid sewing uniforms, while\p"
+	.string "the other is a scientist working with\n"
+	.string "Spewpa silk.$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_1:
 # 270 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Brainwashed Lass: Uniform\n"
-	.string "creation interrupted… Must\n"
-	.string "repair… Return to work…$"
+	.string "Brainwashed Lass: Uniform creation\n"
+	.string "interrupted… Must repair… Return to\l"
+	.string "work…$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_2:
 # 275 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Brainwashed Maniac: Spewpa\n"
-	.string "silk production must be\n"
-	.string "protected… Intruder\n"
-	.string "detected… Suppress…$"
+	.string "Brainwashed Maniac: Spewpa silk\n"
+	.string "production must be protected…\l"
+	.string "Intruder detected… Suppress…$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_3:
 # 282 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "In Unison: Our purpose is\n"
-	.string "given by the Maven… We\n"
-	.string "must serve… We must obey…\n"
-	.string "We must not fail…$"
+	.string "In Unison: Our purpose is given by the\n"
+	.string "Maven… We must serve… We must obey… We\l"
+	.string "must not fail…$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_4:
 # 287 "data/maps/Shudderwood_Mansion/scripts.pory"
@@ -1133,68 +1115,57 @@ Shudderwood_Mansion_Brainwashed_Experts_Text_5:
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_6:
 # 293 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Steve: I… I remember now!\n"
-	.string "The mansion… the Seer…\n"
-	.string "She did something to my\n"
-	.string "mind!$"
+	.string "Steve: I… I remember now! The mansion…\n"
+	.string "the Seer… She did something to my mind!$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_7:
 # 297 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Andrea: We were\n"
-	.string "brainwashed to serve the\n"
-	.string "Maven… Forced to sew those\n"
-	.string "awful uniforms day and\p"
-	.string "night! But now we're\n"
-	.string "finally free!$"
+	.string "Andrea: We were brainwashed to serve\n"
+	.string "the Maven… Forced to sew those awful\l"
+	.string "uniforms day and\p"
+	.string "night! But now we're finally free!$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_8:
 # 306 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Steve: Thank you, Ranger!\n"
-	.string "We owe you our lives! I was\n"
-	.string "studying Spewpa silk when\n"
-	.string "they captured me.\p"
-	.string "Here, take this solvent I\n"
-	.string "developed. It should help\n"
-	.string "dissolve the webs blocking\n"
+	.string "Steve: Thank you, Ranger! We owe you\n"
+	.string "our lives! I was studying Spewpa silk\l"
+	.string "when they captured me.\p"
+	.string "Here, take this solvent I developed. It\n"
+	.string "should help dissolve the webs blocking\l"
 	.string "the mansion stairs!$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_9:
 # 316 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Andrea: I don't know how\n"
-	.string "many of those silly uniforms\n"
-	.string "I made under their control,\p"
-	.string "but here's a token of my\n"
-	.string "appreciation for freeing us!$"
+	.string "Andrea: I don't know how many of those\n"
+	.string "silly uniforms I made under their\l"
+	.string "control,\p"
+	.string "but here's a token of my appreciation\n"
+	.string "for freeing us!$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_10:
 # 323 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Steve: Be careful, Ranger.\n"
-	.string "The deeper you go, the more\n"
-	.string "servants you'll find under\n"
-	.string "the Maven's spell… and the\n"
+	.string "Steve: Be careful, Ranger. The deeper\n"
+	.string "you go, the more servants you'll find\l"
+	.string "under the Maven's spell… and the\l"
 	.string "stronger that spell feels.$"
 
 Shudderwood_Mansion_Brainwashed_Experts_Text_11:
 # 331 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "The two experts you freed\n"
-	.string "earlier are hard at work\n"
-	.string "again, this time for their\n"
+	.string "The two experts you freed earlier are\n"
+	.string "hard at work again, this time for their\l"
 	.string "own purposes.\p"
-	.string "They smile and wave at you\n"
-	.string "gratefully.$"
+	.string "They smile and wave at you gratefully.$"
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_0:
 # 345 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "You approach a figure\n"
-	.string "tending to the overgrown\n"
-	.string "plants in the mansion's\n"
+	.string "You approach a figure tending to the\n"
+	.string "overgrown plants in the mansion's\l"
 	.string "garden.$"
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_1:
 # 351 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Brainwashed Gardener: The\n"
-	.string "garden must be perfect…\n"
-	.string "Berries the perfect color…\n"
+	.string "Brainwashed Gardener: The garden must\n"
+	.string "be perfect… Berries the perfect color…\l"
 	.string "Leaves the perfect shape…$"
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_2:
@@ -1205,28 +1176,23 @@ Shudderwood_Mansion_Brainwashed_Gardener_Text_2:
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_3:
 # 361 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Celina: Thank you, Ranger!\n"
-	.string "They forced me to tend\n"
-	.string "these plants against my\n"
-	.string "will.\p"
-	.string "Here, take this watering\n"
-	.string "pail. I need a little time\n"
-	.string "before I can face gardening\n"
+	.string "Celina: Thank you, Ranger! They forced\n"
+	.string "me to tend these plants against my will.\p"
+	.string "Here, take this watering pail. I need a\n"
+	.string "little time before I can face gardening\l"
 	.string "again.$"
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_4:
 # 371 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Celina: Be careful deeper\n"
-	.string "in the mansion. The Maven\n"
-	.string "has even charmed the old\n"
-	.string "Master of the Mansion…\n"
-	.string "and something worse may be\n"
-	.string "waiting above.$"
+	.string "Celina: Be careful deeper in the\n"
+	.string "mansion. The Maven has even charmed\l"
+	.string "the old Master of the Mansion… and\l"
+	.string "something worse may be waiting above.$"
 
 Shudderwood_Mansion_Brainwashed_Gardener_Text_5:
 # 380 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Celina: Thanks again for\n"
-	.string "freeing me, Ranger.$"
+	.string "Celina: Thanks again for freeing me,\n"
+	.string "Ranger.$"
 
 Shudderwood_Mansion_RunningGuard_1_Text_0:
 # 390 "data/maps/Shudderwood_Mansion/scripts.pory"
@@ -1240,9 +1206,8 @@ Shudderwood_Mansion_RunningGuard_1_Text_1:
 
 Shudderwood_Mansion_RunningGuard_1_Text_2:
 # 395 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: Remain alert at all\n"
-	.string "times. Those are the\n"
-	.string "orders.$"
+	.string "Drone: Remain alert at all times. Those\n"
+	.string "are the orders.$"
 
 Shudderwood_Mansion_RunningGuard_2_Text_0:
 # 406 "data/maps/Shudderwood_Mansion/scripts.pory"
@@ -1256,15 +1221,13 @@ Shudderwood_Mansion_RunningGuard_2_Text_1:
 
 Shudderwood_Mansion_RunningGuard_2_Text_2:
 # 411 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: All personnel here\n"
-	.string "serve the Maven.\n"
-	.string "Resistance is futile.$"
+	.string "Drone: All personnel here serve the\n"
+	.string "Maven. Resistance is futile.$"
 
 Shudderwood_Mansion_PoolGuard_Text_0:
 # 421 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: Access denied. I am\n"
-	.string "guarding the key. You will\n"
-	.string "not pass.$"
+	.string "Drone: Access denied. I am guarding the\n"
+	.string "key. You will not pass.$"
 
 Shudderwood_Mansion_PoolGuard_Text_1:
 # 426 "data/maps/Shudderwood_Mansion/scripts.pory"
@@ -1273,48 +1236,42 @@ Shudderwood_Mansion_PoolGuard_Text_1:
 
 Shudderwood_Mansion_PoolGuard_Text_2:
 # 429 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: Buzz… defeated\n"
-	.string "again, after losing the\n"
-	.string "key in the first place!$"
+	.string "Drone: Buzz… defeated again, after\n"
+	.string "losing the key in the first place!$"
 
 Shudderwood_Mansion_PoolGuard_Text_3:
 # 433 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: Perhaps I am not\n"
-	.string "suited for drone duty\n"
-	.string "after all…$"
+	.string "Drone: Perhaps I am not suited for\n"
+	.string "drone duty after all…$"
 
 Shudderwood_Mansion_PoolGuard_Text_4:
 # 439 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: Wait! The Maven…\n"
-	.string "She's in my head! No… I was\n"
-	.string "wrong to doubt you, Maven!\n"
-	.string "Please… make it stop!$"
+	.string "Drone: Wait! The Maven… She's in my\n"
+	.string "head! No… I was wrong to doubt you,\l"
+	.string "Maven! Please… make it stop!$"
 
 Shudderwood_Mansion_PoolGuard_Text_5:
 # 448 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Drone: My head! AAAAAAHHHH! GET AWAY!\n"
-	.string "$"
+	.string "Drone: My head! AAAAAAHHHH! GET AWAY!$"
 
 Shudderwood_Captive_Maid_Text_0:
 # 463 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Those drones locked me in\n"
-	.string "here! They only let me out\n"
-	.string "to clean the place!$"
+	.string "Those drones locked me in here! They\n"
+	.string "only let me out to clean the place!$"
 
 Shudderwood_Captive_Maid_Text_1:
 # 469 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Thank you for rescuing me,\n"
-	.string "Ranger! I found this key\n"
-	.string "while I was cleaning.\p"
-	.string "It might help you get deeper\n"
-	.string "into the mansion!$"
+	.string "Thank you for rescuing me, Ranger! I\n"
+	.string "found this key while I was cleaning.\p"
+	.string "It might help you get deeper into the\n"
+	.string "mansion!$"
 
 Shudderwood_Captive_Maid_Text_2:
 # 478 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Thank you again for\n"
-	.string "rescuing me, Ranger!\p"
-	.string "I hope you're able to get\n"
-	.string "through the mansion safely.$"
+	.string "Thank you again for rescuing me,\n"
+	.string "Ranger!\p"
+	.string "I hope you're able to get through the\n"
+	.string "mansion safely.$"
 
 Shudderwood_Mansion_Brainwashed_Butler_Text_0:
 # 490 "data/maps/Shudderwood_Mansion/scripts.pory"
@@ -1328,20 +1285,17 @@ Shudderwood_Mansion_Brainwashed_Butler_Text_1:
 
 Shudderwood_Mansion_Brainwashed_Butler_Text_2:
 # 495 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "Butler: My apologies,\n"
-	.string "Ranger. I serve the master\n"
-	.string "of the mansion, but he is\n"
-	.string "under a terrible spell at\n"
-	.string "present… and the house feels\n"
-	.string "wrong because of it.$"
+	.string "Butler: My apologies, Ranger. I serve\n"
+	.string "the master of the mansion, but he is\l"
+	.string "under a terrible spell at present… and\l"
+	.string "the house feels wrong because of it.$"
 
 Mansion_Master_Floor_Skip_Text_0:
 # 511 "data/maps/Shudderwood_Mansion/scripts.pory"
-	.string "A chill runs down your\n"
-	.string "spine. The Master of the\n"
-	.string "Mansion lies ahead…\p"
-	.string "Something in the dark feels\n"
-	.string "wrong. Forge ahead?$"
+	.string "A chill runs down your spine. The Master\n"
+	.string "of the Mansion lies ahead…\p"
+	.string "Something in the dark feels wrong.\n"
+	.string "Forge ahead?$"
 
 Mansion_Master_Floor_Skip_Text_1:
 # 523 "data/maps/Shudderwood_Mansion/scripts.pory"

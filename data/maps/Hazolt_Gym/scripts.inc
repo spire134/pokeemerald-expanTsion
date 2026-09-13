@@ -265,7 +265,8 @@ Tasmin_Gym_Script_4:
 Mara_Gym_Script_Text_0:
 # 8 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: You're standing, breathing, and\n"
-	.string "ready to work. That's enough for me.\p"
+	.string "ready to work.\p"
+	.string "That's enough for me.\p"
 	.string "That storm should have broken us, but\n"
 	.string "this team held the line.\p"
 	.string "Take these supplies and get your\n"

@@ -878,9 +878,8 @@ Shudderwood_Mansion_Bedchambers_Guard1_Text_1:
 
 Shudderwood_Mansion_Bedchambers_Guard1_Text_2:
 # 11 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Drone: These chambers\n"
-	.string "remain under Delphine's\n"
-	.string "control.$"
+	.string "Drone: These chambers remain under\n"
+	.string "Delphine's control.$"
 
 Shudderwood_Mansion_Bedchambers_Guard2_Text_0:
 # 22 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -894,8 +893,7 @@ Shudderwood_Mansion_Bedchambers_Guard2_Text_1:
 
 Shudderwood_Mansion_Bedchambers_Guard2_Text_2:
 # 27 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Drone: Advance and be\n"
-	.string "subdued.$"
+	.string "Drone: Advance and be subdued.$"
 
 Shudderwood_Mansion_Bedchambers_Guard3_Text_0:
 # 37 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -909,36 +907,31 @@ Shudderwood_Mansion_Bedchambers_Guard3_Text_1:
 
 Shudderwood_Mansion_Bedchambers_Guard3_Text_2:
 # 42 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Drone: Tampering with\n"
-	.string "protected property is\n"
-	.string "prohibited.$"
+	.string "Drone: Tampering with protected\n"
+	.string "property is prohibited.$"
 
 Shudderwood_Mansion_MistressBattle_Text_0:
 # 70 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "???: You two Seers have\n"
-	.string "failed me by letting this\n"
-	.string "Ranger come so far!$"
+	.string "???: You two Seers have failed me by\n"
+	.string "letting this Ranger come so far!$"
 
 Shudderwood_Mansion_MistressBattle_Text_1:
 # 78 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer Lysa: Delphine!\n"
-	.string "Please let me go! I beg\n"
-	.string "of you!$"
+	.string "Seer Lysa: Delphine! Please let me go! I\n"
+	.string "beg of you!$"
 
 Shudderwood_Mansion_MistressBattle_Text_2:
 # 86 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer June: Silence, Lysa!\n"
-	.string "You were the one who led\n"
-	.string "them here!$"
+	.string "Seer June: Silence, Lysa! You were the\n"
+	.string "one who led them here!$"
 
 Shudderwood_Mansion_MistressBattle_Text_3:
 # 93 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Enough bickering!\n"
-	.string "You will face the Ranger\n"
-	.string "together… or Malamar and I\n"
-	.string "will have the 'Master of\p"
-	.string "the Mansion' seal you away\n"
-	.string "in darkness forever!$"
+	.string "Delphine: Enough bickering! You will\n"
+	.string "face the Ranger together… or Malamar\l"
+	.string "and I will have the 'Master of\p"
+	.string "the Mansion' seal you away in darkness\n"
+	.string "forever!$"
 
 Shudderwood_Mansion_MistressBattle_Text_4:
 # 103 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -956,9 +949,8 @@ Shudderwood_Mansion_MistressBattle_Text_6:
 
 Shudderwood_Mansion_AfterSeerBattle_Text_0:
 # 123 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Hmph… Malamar\n"
-	.string "and I have no more use for\n"
-	.string "you two failures. Begone!$"
+	.string "Delphine: Hmph… Malamar and I have no\n"
+	.string "more use for you two failures. Begone!$"
 
 Shudderwood_Mansion_AfterSeerBattle_Text_1:
 # 132 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -966,9 +958,8 @@ Shudderwood_Mansion_AfterSeerBattle_Text_1:
 
 Shudderwood_Mansion_AfterSeerBattle_Text_2:
 # 140 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer June: No… Please\n"
-	.string "don't seal me in the\n"
-	.string "darkness!$"
+	.string "Seer June: No… Please don't seal me in\n"
+	.string "the darkness!$"
 
 Shudderwood_Mansion_AfterSeerBattle_Text_3:
 # 154 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -976,50 +967,42 @@ Shudderwood_Mansion_AfterSeerBattle_Text_3:
 
 Shudderwood_Mansion_AfterSeerBattle_Text_4:
 # 160 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: And just where\n"
-	.string "do you think you're going,\n"
-	.string "Lysa?$"
+	.string "Delphine: And just where do you think\n"
+	.string "you're going, Lysa?$"
 
 Shudderwood_Mansion_AfterSeerBattle_Text_5:
 # 168 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer Lysa: No… I can't\n"
-	.string "move! Ranger… please…\n"
-	.string "help me!$"
+	.string "Seer Lysa: No… I can't move! Ranger…\n"
+	.string "please… help me!$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_0:
 # 178 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Impossible… All\n"
-	.string "my careful planning, ruined\n"
-	.string "by a mere Ranger!\p"
-	.string "I had only just begun to\n"
-	.string "unlock what lies buried on\n"
-	.string "Corymbra…\p"
-	.string "Malamar, return. I'll have\n"
-	.string "to carve my own escape.$"
+	.string "Delphine: Impossible… All my careful\n"
+	.string "planning, ruined by a mere Ranger!\p"
+	.string "I had only just begun to unlock what\n"
+	.string "lies buried on Corymbra…\p"
+	.string "Malamar, return. I'll have to carve my\n"
+	.string "own escape.$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_1:
 # 198 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Hah… foolish\n"
-	.string "Dusknoir, you still belong\n"
-	.string "to me!$"
+	.string "Delphine: Hah… foolish Dusknoir, you\n"
+	.string "still belong to me!$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_2:
 # 209 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer Lysa: {PLAYER}, her\n"
-	.string "control over Dusknoir is\n"
-	.string "weakening!$"
+	.string "Seer Lysa: {PLAYER}, her control over\n"
+	.string "Dusknoir is weakening!$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_3:
 # 213 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Up, Dusknoir!\n"
-	.string "Help me escape! You don't\n"
-	.string "want me gone, do you?!$"
+	.string "Delphine: Up, Dusknoir! Help me escape!\n"
+	.string "You don't want me gone, do you?!$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_4:
 # 221 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: You think you can\n"
-	.string "cast me into that darkness\n"
-	.string "as well?!$"
+	.string "Delphine: You think you can cast me\n"
+	.string "into that darkness as well?!$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_5:
 # 229 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -1027,8 +1010,7 @@ Shudderwood_Mansion_DelphineDefeat_Text_5:
 
 Shudderwood_Mansion_DelphineDefeat_Text_6:
 # 232 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer Lysa: I'm getting out\n"
-	.string "of here… now.$"
+	.string "Seer Lysa: I'm getting out of here… now.$"
 
 Shudderwood_Mansion_DelphineDefeat_Text_7:
 # 235 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -1056,41 +1038,36 @@ Shudderwood_Mansion_HelpLysaYesNo_Text_0:
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_1:
 # 270 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Foolish Ranger!\n"
-	.string "You think you can interfere\n"
-	.string "with my design?$"
+	.string "Delphine: Foolish Ranger! You think you\n"
+	.string "can interfere with my design?$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_2:
 # 278 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Then I'll break\n"
-	.string "you first! Malamar, Lysa\n"
-	.string "can wait until her hope\n"
+	.string "Delphine: Then I'll break you first!\n"
+	.string "Malamar, Lysa can wait until her hope\l"
 	.string "has withered!$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_3:
 # 286 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Seer Lysa: Thank you,\n"
-	.string "Ranger! Here… let me heal\n"
-	.string "your Pokémon!$"
+	.string "Seer Lysa: Thank you, Ranger! Here… let\n"
+	.string "me heal your Pokémon!$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_4:
 # 298 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Pathetic sentiment!\n"
-	.string "Very well… I'll crush this\n"
-	.string "Ranger beneath the full\n"
-	.string "weight of the Hive!$"
+	.string "Delphine: Pathetic sentiment! Very\n"
+	.string "well… I'll crush this Ranger beneath the\l"
+	.string "full weight of the Hive!$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_5:
 # 304 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: What?! No… how\n"
-	.string "could this be?!$"
+	.string "Delphine: What?! No… how could this\n"
+	.string "be?!$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_6:
 # 311 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Excellent!\n"
-	.string "Malamar, deal with Lysa.\n"
-	.string "I'll pick up the pieces of\n"
-	.string "this Ranger myself!$"
+	.string "Delphine: Excellent! Malamar, deal with\n"
+	.string "Lysa. I'll pick up the pieces of this\l"
+	.string "Ranger myself!$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_7:
 # 315 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
@@ -1098,9 +1075,8 @@ Shudderwood_Mansion_HelpLysaYesNo_Text_7:
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_8:
 # 319 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"
-	.string "Delphine: Your feeble\n"
-	.string "resistance will wither\n"
-	.string "soon enough.$"
+	.string "Delphine: Your feeble resistance will\n"
+	.string "wither soon enough.$"
 
 Shudderwood_Mansion_HelpLysaYesNo_Text_9:
 # 329 "data/maps/Shudderwood_Mansion_Upper/scripts.pory"

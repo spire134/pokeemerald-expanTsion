@@ -28,76 +28,76 @@ Shorefall_OnEnter::
 	dowildbattle
 # 21 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox Shorefall_OnEnter_Text_1
-# 29 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 26 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	special HealPlayerParty
-# 30 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 27 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	releaseall
 	end
 
 
 Shorefall_PartnerMoment:
-# 35 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 32 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	switch VAR_STARTER_MON
-# 36 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 33 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	case 0, Shorefall_PartnerMoment_3
-# 42 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 37 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	case 1, Shorefall_PartnerMoment_4
-# 48 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 41 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	case 2, Shorefall_PartnerMoment_5
 Shorefall_PartnerMoment_1:
 	return
 
 Shorefall_PartnerMoment_3:
-# 37 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 34 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	playmoncry SPECIES_TURTWIG, 0
-# 38 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 35 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	waitmoncry
-# 39 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 36 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox Shorefall_PartnerMoment_Text_0
 	goto Shorefall_PartnerMoment_1
 
 Shorefall_PartnerMoment_4:
-# 43 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 38 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	playmoncry SPECIES_TORCHIC, 0
-# 44 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 39 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	waitmoncry
-# 45 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 40 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox Shorefall_PartnerMoment_Text_1
 	goto Shorefall_PartnerMoment_1
 
 Shorefall_PartnerMoment_5:
-# 49 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 42 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	playmoncry SPECIES_FROAKIE, 0
-# 50 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 43 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	waitmoncry
-# 51 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 44 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox Shorefall_PartnerMoment_Text_2
 	goto Shorefall_PartnerMoment_1
 
 
 CrashedShipLock::
-# 59 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 50 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	lock
-# 60 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 51 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox CrashedShipLock_Text_0
-# 64 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 52 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	checkitem ITEM_STORAGE_KEY
-# 65 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 53 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq CrashedShipLock_2
-# 72 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 58 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox CrashedShipLock_Text_2
 CrashedShipLock_1:
-# 76 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 60 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	release
 	end
 
 CrashedShipLock_2:
-# 66 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 54 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	msgbox CrashedShipLock_Text_1
-# 69 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 55 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	warp MAP_TIDES_MERCY_STORAGE_WRECK, 1, 24
-# 70 "data/maps/SHOREFALL_STRAND/scripts.pory"
+# 56 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	waitstate
 	goto CrashedShipLock_1
 
@@ -113,46 +113,38 @@ Shorefall_OnEnter_Text_0:
 
 Shorefall_OnEnter_Text_1:
 # 22 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "You steady your partner as\n"
-	.string "the rain finally eases.\n"
-	.string "A cold breeze rolls in.\p"
-	.string "Ranger Fieldbook, page 1:\n"
-	.string "Find your team. Reach\n"
-	.string "shelter. Stay alive.$"
+	.string "You steady your partner as the rain\n"
+	.string "finally eases. A cold breeze rolls in.\p"
+	.string "Ranger Fieldbook, page 1:\p"
+	.string "Find your team. Reach shelter. Stay\n"
+	.string "alive.$"
 
 Shorefall_PartnerMoment_Text_0:
-# 39 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "TURTWIG plants itself\n"
-	.string "between you and the surf,\n"
-	.string "steady and unshaken.$"
+# 36 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "TURTWIG plants itself between you and\n"
+	.string "the surf, steady and unshaken.$"
 
 Shorefall_PartnerMoment_Text_1:
-# 45 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "TORCHIC hops in front of\n"
-	.string "you, feathers bristling\n"
-	.string "with defiant energy.$"
+# 40 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "TORCHIC hops in front of you, feathers\n"
+	.string "bristling with defiant energy.$"
 
 Shorefall_PartnerMoment_Text_2:
-# 51 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "FROAKIE lands lightly by\n"
-	.string "your side, alert eyes\n"
-	.string "tracking every movement.$"
+# 44 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "FROAKIE lands lightly by your side,\n"
+	.string "alert eyes tracking every movement.$"
 
 CrashedShipLock_Text_0:
-# 60 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "The hull is damaged and\n"
-	.string "waterlogged.\n"
-	.string "It washed ashore in the\n"
-	.string "storm.$"
+# 51 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "The hull is damaged and waterlogged. It\n"
+	.string "washed ashore in the storm.$"
 
 CrashedShipLock_Text_1:
-# 66 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "You use the Old Key to\n"
-	.string "unlock a small\n"
+# 54 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "You use the Old Key to unlock a small\n"
 	.string "compartment.$"
 
 CrashedShipLock_Text_2:
-# 72 "data/maps/SHOREFALL_STRAND/scripts.pory"
-	.string "The compartment is locked\n"
-	.string "tight. You need a key to\n"
-	.string "open it.$"
+# 58 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "The compartment is locked tight. You\n"
+	.string "need a key to open it.$"
