@@ -85,6 +85,16 @@ Shudderwood_Berry_Picker_2:
 	goto Shudderwood_Berry_Picker_1
 
 
+Shudderwood_Flower_Finder::
+# 65 "data/maps/Shudderwood_First/scripts.pory"
+	trainerbattle_single TRAINER_VICKY, Shudderwood_Flower_Finder_Text_0, Shudderwood_Flower_Finder_Text_1
+# 69 "data/maps/Shudderwood_First/scripts.pory"
+	msgbox Shudderwood_Flower_Finder_Text_2, MSGBOX_AUTOCLOSE
+# 71 "data/maps/Shudderwood_First/scripts.pory"
+	waitmessage
+	return
+
+
 # 49 "data/maps/Shudderwood_First/scripts.pory"
 Shudderwood_Berry_Picker_Movement_0:
 # 49 "data/maps/Shudderwood_First/scripts.pory"
@@ -178,3 +188,20 @@ Shudderwood_Berry_Picker_Text_2:
 Shudderwood_Berry_Picker_Text_3:
 # 59 "data/maps/Shudderwood_First/scripts.pory"
 	.string "I'll be here if you find Bluk Berries!$"
+
+Shudderwood_Flower_Finder_Text_0:
+# 66 "data/maps/Shudderwood_First/scripts.pory"
+	.string "I've been finding flowers here for\n"
+	.string "years!\n"
+	.string "Do you enjoy it too?$"
+
+Shudderwood_Flower_Finder_Text_1:
+# 67 "data/maps/Shudderwood_First/scripts.pory"
+	.string "The flower bushes here have Bluk\n"
+	.string "Berries.$"
+
+Shudderwood_Flower_Finder_Text_2:
+# 69 "data/maps/Shudderwood_First/scripts.pory"
+	.string "Keep an eye out for beautiful blooms as\n"
+	.string "you explore! Those Bluk Berries are\l"
+	.string "hidden among the flowers!$"

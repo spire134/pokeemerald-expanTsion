@@ -104,7 +104,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Remoraid
-Level: 22
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Clauncher
@@ -121,10 +121,6 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Basic Trainer
-
-Krabby
-Level: 22
-IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 20 SpD / 20 Spe
 
 Arrokuda
 Level: 22
@@ -145,11 +141,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Qwilfish
-Level: 24
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 24
+Mankey
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -165,7 +161,7 @@ Wartortle
 Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 20 SpA / 20 SpD / 0 Spe
 
-Pawniard
+Thievul
 Level: 25
 IVs: 20 HP / 10 Atk / 20 Def / 10 SpA / 0 SpD / 20 Spe
 
@@ -513,9 +509,17 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chewtle
+Level: 23
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wattrel
+Level: 23
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nickit
+Level: 23
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
 Name: GRUNT
@@ -526,9 +530,13 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nickit
+Level: 24
+IVs: 20 HP / 20 Atk / 30 Def / 0 SpA / 20 SpD / 20 Spe
+
+Clobbopus
+Level: 24
+IVs: 10 HP / 20 Atk / 10 Def / 20 SpA / 20 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
 Name: FREDRICK
@@ -3601,7 +3609,7 @@ Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_COLE ===
-Name: COLE
+Name: Koal
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3610,11 +3618,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Magby
-Level: 24
+Level: 22
 IVs: 22 HP / 12 Atk / 31 Def / 31 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JEFF ===
-Name: JEFF
+Name: Jeff
 Class: Kindler
 Pic: Kindler
 Gender: Male
@@ -3623,11 +3631,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Darumaka
-Level: 22
+Level: 21
 IVs: 12 HP / 22 Atk / 12 Def / 12 SpA / 12 SpD / 22 Spe
 
 Klink
-Level: 22
+Level: 21
 IVs: 12 HP / 22 Atk / 12 Def / 12 SpA / 12 SpD / 22 Spe
 
 === TRAINER_AXLE ===
@@ -3755,7 +3763,7 @@ Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_DREW ===
-Name: DREW
+Name: Drew
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -4034,9 +4042,19 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
+Ledian  
+Ability: Early Bird   
+Level: 18
+Naive Nature  
+IVs: 10 HP / 10 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe  
+- Mach Punch  
+- Swift  
+- Light Screen  
+- Reflect
+
 Yanma  
 Ability: Compound Eyes  
-Level: 17  
+Level: 16  
 Tera Type: Bug  
 Brave Nature  
 IVs: 10 HP / 10 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe  
@@ -5466,7 +5484,7 @@ Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_KATE_AND_JOY ===
-Name: KATE & JOY
+Name: Katie & Chelsea
 Class: Sr And Jr
 Pic: Sr And Jr
 Gender: Male
@@ -5963,21 +5981,29 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Dig
 
 === TRAINER_VICKY ===
-Name: VICKY
-Class: Winstrate
+Name: Viola
+Class: Expert
 Pic: Expert F
 Gender: Female
 Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 18
+Minccino
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+- Pound
+- Baby-Doll Eyes
+- Sing
+- Echoed Voice
+
+Roselia
+Level: 15
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Mega Drain
+- Ingrain
+- Poison Sting
+- Sweet Scent
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -6440,7 +6466,7 @@ Tentacool
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wishiwashi
+Chewtle
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6986,10 +7012,10 @@ AI: Check Bad Move
 
 Dodrio
 Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 24 HP / 24 Atk / 4 Def / 4 SpA / 4 SpD / 24 Spe
 
 === TRAINER_MARIA_1 ===
-Name: MARIA
+Name: MaryAnne
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -6998,11 +7024,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 25
+IVs: 20 HP / 0 Atk / 10 Def / 0 SpA / 10 SpD / 20 Spe
+
+Linoone-Galar (M)
+Level: 26
+IVs: 3 HP / 3 Atk / 13 Def / 3 SpA / 3 SpD / 13 Spe
+
+Luxio
+Level: 25
+IVs: 13 HP / 3 Atk / 3 Def / 3 SpA / 13 SpD / 3 Spe
 
 === TRAINER_MARIA_2 ===
-Name: MARIA
+Name: MaryAnne
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -7010,12 +7044,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 28
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Dodrio
+Level: 38
+IVs: 21 HP / 1 Atk / 21 Def / 1 SpA / 1 SpD / 21 Spe
 
 === TRAINER_MARIA_3 ===
-Name: MARIA
+Name: MaryAnne
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -7023,12 +7057,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 31
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Dodrio
+Level: 41
+IVs: 22 HP / 22 Atk / 2 Def / 2 SpA / 22 SpD / 22 Spe
 
 === TRAINER_MARIA_4 ===
-Name: MARIA
+Name: MaryAnne
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -7037,11 +7071,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Dodrio
-Level: 34
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Level: 44
+IVs: 23 HP / 23 Atk / 3 Def / 3 SpA / 23 SpD / 23 Spe
 
 === TRAINER_MARIA_5 ===
-Name: MARIA
+Name: MaryAnne
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -7050,8 +7084,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Dodrio
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Level: 47
+IVs: 24 HP / 24 Atk / 4 Def / 4 SpA / 4 SpD / 24 Spe
 
 === TRAINER_CAMDEN ===
 Name: CAMDEN
@@ -7711,7 +7745,7 @@ Croagunk
 Ability: Dry Skin  
 Level: 16  
 Tera Type: Poison  
-IVs: 11 HP / 12 Atk / 16 Def / 16 SpA / 16 SpD / 20 Spe  
+IVs: 11 HP / 12 Atk / 10 Def / 16 SpA / 0 SpD / 20 Spe  
 - Astonish  
 - Flatter  
 - Poison Sting  
@@ -8014,7 +8048,7 @@ Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CYNDY_1 ===
-Name: CYNDY
+Name: Cyndy
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -9316,7 +9350,7 @@ Level: 45
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ELI ===
-Name: ELI
+Name: Elrod
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -9325,7 +9359,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Graveler-Alola
-Level: 25
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
@@ -11188,21 +11222,25 @@ Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_JONATHAN ===
-Name: JONATHAN
+Name: Juice
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Kecleon
+Kecleon @ Berry Juice
 Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 0 Def / 10 SpA / 0 SpD / 0 Spe
 
-Chatot
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chatot @ Berry Juice
+Level: 21
+IVs: 0 HP / 10 Atk / 0 Def / 0 SpA / 0 SpD / 10 Spe
+
+Toxel @ Berry Juice
+Level: 21
+IVs: 10 HP / 0 Atk / 10 Def / 0 SpA / 10 SpD / 0 Spe
 
 === TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
 Name: BRENDAN
@@ -11524,12 +11562,12 @@ IVs: 10 HP / 27 Def / 10 SpA / 28 SpD / 10 Spe
 
 Dwebble (F)  
 Ability: Sturdy  
-Level: 15  
+Level: 14  
 Tera Type: Bug  
 IVs: 0 HP / 10 Def / 10 SpD / 10 Spe  
 - Flail  
 - Struggle Bug  
-- Rock Tomb  
+- Rock Throw  
 - Bug Bite  
 
 Krabby (M)  
@@ -11539,7 +11577,7 @@ Tera Type: Water
 IVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 11 Spe  
 - Agility  
 - Metal Claw  
-- Rock Tomb  
+- Water Gun  
 - Thief  
 
 === TRAINER_LYLE ===
@@ -12142,22 +12180,37 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GERALD ===
-Name: GERALD
+Name: Geralt
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Kecleon
-Level: 23
+Golett @ Berry Juice
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+- Shadow Punch
+- Thunder Punch
+- Bulldoze
+- Payback
+
+Pawniard @ Focus Sash
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Cut
+- Swords Dance
+- Payback
+- Detect
+
+Cacnea @ Brightpowder
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leech Seed
+- Growth
+- Payback
+- Bullet Seed
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -12322,7 +12375,7 @@ IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe
 - Growl  
 - Scratch  
 
-Shuppet (M) 
+Shuppet (F) 
 Ability: Frisk  
 Level: 7  
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -12351,7 +12404,7 @@ IVs: 0 HP / 5 Def / 0 SpA / 14 SpD / 6 Spe
 - Fake Out 
 - Growl
 
-Shuppet (M) 
+Shuppet (F) 
 Ability: Frisk  
 Level: 12  
 IVs: 10 HP / 20 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe  
@@ -12369,7 +12422,7 @@ IVs: 18 HP / 10 Atk / 10 Def / 10 SpA / 18 SpD / 5 Spe
 - Rock Throw  
 - Pound  
 - Leer  
-- Rock Smash
+- Low Kick
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -13767,7 +13820,7 @@ Level: 17
 Tera Type: Bug  
 EVs: 20 HP / 60 Atk
 Relaxed Nature  
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe
 - Electroweb  
 - Mud Shot  
 - Take Down  
@@ -13808,7 +13861,19 @@ AI: Check Bad Move
 
 Beedrill
 Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 0 Atk / 0 Def / 0 SpA / 20 SpD / 10 Spe
+- Twineedle  
+- String Shot  
+- Toxic Spikes  
+- Cut
+
+Beedrill
+Level: 22
+IVs: 0 HP / 10 Atk / 20 Def / 0 SpA / 0 SpD / 10 Spe
+- Twineedle  
+- Fury Attack  
+- Focus Energy  
+- Cut
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
 Name: Drone
@@ -13820,8 +13885,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Ariados
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 20 Spe
+
+Venipede
+Level: 22
+IVs: 0 HP / 20 Atk / 0 Def / 0 SpA / 20 SpD / 20 Spe
+
+Venipede
+Level: 22
+IVs: 20 HP / 0 Atk / 20 Def / 0 SpA / 0 SpD / 20 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: Drone
@@ -13896,7 +13969,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Quick Attack  
 - Thief   
 
-Dottler @ Eviolite  
+Dottler @ Sticky Barb 
 Ability: Telepathy  
 Level: 18  
 Tera Type: Bug 
@@ -13908,7 +13981,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Struggle Bug                       
 - Confusion  
 
-Solosis @ Sticky Barb  
+Solosis @ Eviolite   
 Ability: Magic Guard 
 Level: 19
 Tera Type: Psychic  
@@ -13928,7 +14001,7 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Dottler @ Sticky Barb 
+Dottler @ Eviolite 
 Ability: Telepathy  
 Level: 22  
 Tera Type: Bug 
@@ -13952,7 +14025,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Wish  
 - Infestation  
 
-Solosis @ Eviolite  
+Solosis @ Sticky Barb 
 Ability: Magic Guard 
 Level: 23
 Tera Type: Psychic  
@@ -13970,7 +14043,7 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Ace Pokemon
 
 Masquerain @ Life Orb
 Level: 25
@@ -13982,15 +14055,15 @@ IVs: 30 HP / 20 Atk / 20 Def / 20 SpA / 10 SpD / 20 Spe
 
 Drowzee @ Twistedspoon
 Level: 25
-IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+IVs: 20 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
 - Hypnosis
-- Dream Eater
+- Headbutt
 - Disable
 - Confusion
 
 Hypno @ Wide Lens
 Level: 27
-IVs: 30 HP / 20 Atk / 10 Def / 20 SpA / 10 SpD / 20 Spe
+IVs: 30 HP / 0 Atk / 10 Def / 0 SpA / 10 SpD / 0 Spe
 - Hypnosis
 - Dream Eater
 - Headbutt
@@ -14458,12 +14531,11 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAKAYLA ===
-Name: MAKAYLA
+Name: Makayla
 Class: Expert
 Pic: Expert F
 Gender: Female
 Music: Intense
-Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
@@ -14687,21 +14759,21 @@ Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
-Name: MAY
+Name: Brittany
 Class: Rival
-Pic: May
+Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Lotad
-Level: 13
+Ponyta
+Level: 23
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Rhyhorn
+Level: 25
+IVs: 16 HP / 6 Atk / 16 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -17100,7 +17172,7 @@ Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_SAWYER_2 ===
-Name: SAWYER
+Name: Sawman
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -17108,13 +17180,13 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
+Graveler-Alola
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Numel
+Cranidos
 Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 31 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 31 Spe
 
 === TRAINER_SAWYER_3 ===
 Name: SAWYER

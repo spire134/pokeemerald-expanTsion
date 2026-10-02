@@ -715,9 +715,9 @@
 #define FLAG_ITEM_PORT_PLUNDER_POISON_BARB                0x299 // Unused Flag
 #define FLAG_ITEM_MAGNET_CAVE_DEPTHS_ULTRA_BALL           0x29A // Unused Flag
 #define FLAG_ITEM_MAGNET_CAVE_DEPTHS_CELL_BATTERY         0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
+#define FLAG_MET_TASMIN_STORAGE_WRECK                     0x29C // Unused Flag
+#define FLAG_FISHED_QUARRY_VIEW_RELICANTH                 0x29D // Unused Flag
+#define FLAG_FISHED_QUARRY_VIEW_OMANYTE                   0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
@@ -1087,7 +1087,7 @@
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
 #define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
+#define FLAG_ITEM_STATIC_BRIDGE_ZINC                                0x40A
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D

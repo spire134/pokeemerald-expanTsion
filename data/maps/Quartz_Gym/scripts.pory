@@ -53,14 +53,6 @@ script Hopeful_Woman {
     release
 }
 
-script Gym_Guard {
-    lock
-    faceplayer
-    msgbox(format("The Gym is currently closed while Team Hive is dealt with.\p"
-    "Please come back later!"))
-    waitmessage
-    release
-}
 
 script Nervous_Kid {
     lock
@@ -83,26 +75,27 @@ script Ditzy_Teenager {
 script Quartz_Gym_FinalblowChallenge {
     lock
     faceplayer
-    if(!flag(FLAG_BADGE02_GET)) {
-    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent the final, powerful strike to end a battle!\p"
-    "Demonstrate your ability to finish strong by defeating me in battle!\p"
-    "Are you ready to begin?"), MSGBOX_YESNO)
+    if (flag(FLAG_BADGE02_GET)) {
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+    } elif (defeated(TRAINER_MAKAYLA)) {
+        msgbox(format("I already showed you my finishing power, Ranger!\p"
+        "No need to see it twice, save your strength for Captain Rojan."))
+    } elif (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("I represent the final, powerful strike to end a battle!\p"
+        "Demonstrate your ability to finish strong by defeating me in battle!\p"
+        "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-        msgbox(format("Excellent! Let's see your finishing power!"))
-        trainerbattle_no_intro(TRAINER_MAKAYLA,
-        format("Incredible!")
-        )
-        waitmessage
+            msgbox(format("Excellent! Let's see your finishing power!"))
+            trainerbattle_no_intro(TRAINER_MAKAYLA,
+            format("Incredible!")
+            )
+            waitmessage
         } else {
-        msgbox(format("Take your time to prepare!"))
+            msgbox(format("Take your time to prepare!"))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!"))
-    }
-    } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+        msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
+        "I hope the Rangers can handle them soon!"))
     }
     release
 }
@@ -110,30 +103,31 @@ script Quartz_Gym_FinalblowChallenge {
 script Quartz_Gym_PatienceChallenge {
     lock
     faceplayer
-    if(!flag(FLAG_BADGE02_GET)) {
-    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent waiting until the perfect moment to strike!\p"
-    "Demonstrate your patience by waiting here for 30 seconds without moving!\p"
-    "Are you ready to begin?"), MSGBOX_YESNO)
+    if (flag(FLAG_BADGE02_GET)) {
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+    } elif (defeated(TRAINER_KOJI_1)) {
+        msgbox(format("Patience, patience... I already proved mine facing you once!\p"
+        "Go on now, don't test it further."))
+    } elif (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("I represent waiting until the perfect moment to strike!\p"
+        "Demonstrate your patience by waiting here for 30 seconds without moving!\p"
+        "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-        msgbox(format("Great! Start waiting now."))
-        delay(1800) // 30 seconds at 60 FPS
-        msgbox(format("Well done! You've completed the Patience Challenge!\n"
-        "Just kidding, but you did wait there like a champ.\p"
-        "Now for the real challenge, HYAAAAH!"))
-        trainerbattle_no_intro(TRAINER_KOJI_1,
-        format("Patience is a virtue, but so is strength!")
-        )
-        waitmessage
+            msgbox(format("Great! Start waiting now."))
+            delay(900)
+            msgbox(format("Well done! You've completed the Patience Challenge!\p"
+            "Just kidding, but you did wait there like a champ.\p"
+            "Now for the real challenge, HYAAAAH!"))
+            trainerbattle_no_intro(TRAINER_KOJI_1,
+            format("Patience is a virtue, but so is strength!")
+            )
+            waitmessage
         } else {
-        msgbox(format("No worries! Take your time."))
+            msgbox(format("No worries! Take your time."))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!"))
-    }
-    } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+        msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
+        "I hope the Rangers can handle them soon!"))
     }
     release
 }
@@ -141,25 +135,26 @@ script Quartz_Gym_PatienceChallenge {
 script Quartz_Gym_WeakpointChallenge {
     lock
     faceplayer
-    if(!flag(FLAG_BADGE02_GET)) {
-    if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-    msgbox(format("I represent exploiting a foe's weakness! I practice looking for faults in rocks!\p"
-    "Are you ready to begin?"), MSGBOX_YESNO)
+    if (flag(FLAG_BADGE02_GET)) {
+        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+    } elif (defeated(TRAINER_CYNDY_1)) {
+        msgbox(format("You already found my one weak point, Ranger!\p"
+        "I won't be caught off guard twice in one day."))
+    } elif (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("I represent exploiting a foe's weakness! I practice looking for faults in rocks!\p"
+        "Are you ready to begin?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-        msgbox(format("Excellent! Let's see your strategy in action!"))
-        trainerbattle_no_intro(TRAINER_CYNDY_1,
-        format("Impressive!")
-        )
-        waitmessage
+            msgbox(format("Excellent! Let's see your strategy in action!"))
+            trainerbattle_no_intro(TRAINER_CYNDY_1,
+            format("Impressive!")
+            )
+            waitmessage
         } else {
-        msgbox(format("Take your time to prepare!"))
+            msgbox(format("Take your time to prepare!"))
         }
     } else {
-    msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
-    "I hope the Rangers can handle them soon!"))
-    }
-    } else {
-        msgbox(format("You've already proven your skill by earning the Rock Smash HM!"))
+        msgbox(format("Team Hive has been causing trouble around Quartzite.\p"
+        "I hope the Rangers can handle them soon!"))
     }
     release
 }
@@ -169,31 +164,47 @@ script Quartz_CaptRojan {
     lock
     faceplayer
     if (flag(FLAG_BADGE02_GET)) {
-        msgbox(format("Captain Rojan: You've proven your skill by earning the Rock Smash HM!\p"
-        "Keep up the great work, Ranger!"))
+        msgbox(format("Captain Rojan: Ho ho, still feeling that battle in my old bones, Ranger!\p"
+        "A good ache, mind you. Keep it up out there!"))
         waitmessage
-        release
-        end
-    } 
-    if (!flag(FLAG_TALKED_TO_CORIN)) {
+    } elif (!flag(FLAG_TALKED_TO_CORIN)) {
         setflag(FLAG_TALKED_TO_ROJAN)
         setflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
-        msgbox(format("Captain Rojan: Hey there, Ranger!\p"
-        "I heard you were coming from Hazolt HQ. Hope you are ready for some action!\p"
-        "This sinister Team Hive has been causing trouble all over Quartzite City.\p"
-        "I've gotten most of the people here for safety. Ranger Corin went to investigate the Quartz Tunnels.\p"
-        "Could you go check on him?"))
+        msgbox(format("Captain Rojan: Oh! A visitor. Excuse my slippers, my knees aren't what they used to be.\p"
+        "Wait, you're the Ranger from Hazolt HQ? Splendid! I was just about to put the kettle on, but duty calls.\p"
+        "This sinister Team Hive has been buzzing around Quartzite City somethin' fierce.\p"
+        "I've tucked most of the townsfolk away safe and sound, but Ranger Corin went snooping around the Quartz Tunnels all on his own. That boy was stubborn as a Lairon!\p"
+        "Would you go check on him for this old man?"))
+    } elif (!flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
+        msgbox(format("Captain Rojan: Still no word from young Corin, eh?\p"
+        "I'd go myself, but my lumbago's actin' up somethin' terrible today.\p"
+        "Hurry along now, there's an entrance in the water pump house!"))
+        waitmessage
+    } elif (!defeated(TRAINER_MAKAYLA) || !defeated(TRAINER_KOJI_1) || !defeated(TRAINER_CYNDY_1)) {
+        msgbox(format("Captain Rojan: Whew, glad that Hive business is settled! My hip was startin' to ache just from the worryin'.\p"
+        "Hold your horses, though, Ranger. You don't just waltz up to an old man and get a badge for free!\p"
+        "Go spar with my star pupils here in the Gym first. Makayla, Koji, and our sharp-eyed Cyndy will each show you a different side of battling.\p"
+        "Come back once you've bested all three, and then we'll talk business."))
+        waitmessage
     } else {
-        if (flag(FLAG_QUARTZITE_HIVE_DEFEATED)) {
-            msgbox(format("Captain Rojan: Thanks for helping out back there!\p"
-            "With Team Hive dealt with, Quartzite can finally return to normal.\p"
-            "The Rangers here owe you a debt of gratitude!\l"
-            "Now, are you ready to earn your next field move, and Ranger Rank?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT) == YES) {
-                msgbox(format("Captain Rojan: Excellent! Show me your skills!"))
-                trainerbattle_no_intro(TRAINER_BRAWLY_1,
-                format("Well done, Ranger!")
-                )
+        msgbox(format("Captain Rojan: Ho? You've gone and thrashed all three of my pupils already?\p"
+        "Ha! Reminds me of my glory days, back before these knees started singin' opera every mornin'."))
+        waitmessage
+        msgbox(format("But it's time for your final test.\p"
+        "Rojan: No more jokes, Ranger. Are you ready to prove your strength?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            msgbox(format("Rojan: Then observe!"))
+            playse(SE_M_ROCK_THROW)
+            applymovement(LOCALID_CAPT_ROJAN, moves(emote_exclamation_mark jump_in_place_down))
+            applymovement(LOCALID_QUARTZGYMLEFTROCK, moves(rock_smash_break))
+            applymovement(LOCALID_QUARTZGYMRIGHTROCK, moves(rock_smash_break))
+            waitmovement(0)
+            removeobject(LOCALID_QUARTZGYMLEFTROCK)
+            removeobject(LOCALID_QUARTZGYMRIGHTROCK)
+            msgbox(format("Rojan: That's the strength it takes to earn this badge. Let's begin!"))
+            trainerbattle_no_intro(TRAINER_BRAWLY_1,
+            format("Well done, Ranger!")
+            )
             waitmessage
             setflag(FLAG_BADGE02_GET)
             giveitem(ITEM_HM06)
@@ -203,15 +214,9 @@ script Quartz_CaptRojan {
             "Use Rock Smash to clear small boulders blocking your path.\n"
             "Keep up the great work, Ranger!"))
             waitmessage
-            waitmessage
-            } else {
-                msgbox(format("Captain Rojan: Take your time to prepare!\p"
-                "I suggest you battle with my students here in the Gym to hone your skills."))
-            }
         } else {
-            msgbox(format("Captain Rojan: Please hurry to the Quartz Tunnels and help Ranger Corin!\p"
-            "There should be an entrance in the water pump house."))
-            waitmessage
+            msgbox(format("Rojan: Oh, thank goodness, this old hip needs a rest anyway.\p"
+            "Come back when you're ready, sonny."))
         }
     }
     release

@@ -102,6 +102,36 @@ CrashedShipLock_2:
 	goto CrashedShipLock_1
 
 
+Shunu_Turnback::
+# 65 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	lock
+# 66 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	goto_if_set FLAG_BEGINNING_TRAINERS, Shunu_Turnback_2
+Shunu_Turnback_1:
+# 73 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	release
+	return
+
+Shunu_Turnback_2:
+# 67 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	msgbox Shunu_Turnback_Text_0, MSGBOX_AUTOCLOSE
+# 69 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	waitmessage
+# 70 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	applymovement LOCALID_PLAYER, Shunu_Turnback_Movement_0
+# 71 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	waitmovement
+	goto Shunu_Turnback_1
+
+
+# 70 "data/maps/SHOREFALL_STRAND/scripts.pory"
+Shunu_Turnback_Movement_0:
+# 70 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	face_down
+# 70 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	walk_down
+	step_end
+
 Shorefall_OnEnter_Text_0:
 # 11 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	.string "…\p"
@@ -148,3 +178,9 @@ CrashedShipLock_Text_2:
 # 58 "data/maps/SHOREFALL_STRAND/scripts.pory"
 	.string "The compartment is locked tight. You\n"
 	.string "need a key to open it.$"
+
+Shunu_Turnback_Text_0:
+# 67 "data/maps/SHOREFALL_STRAND/scripts.pory"
+	.string "This is not the trail of your\n"
+	.string "companions.\n"
+	.string "You should turn back!$"

@@ -86,244 +86,300 @@ Hopeful_Woman::
 	return
 
 
-Gym_Guard::
-# 57 "data/maps/Quartz_Gym/scripts.pory"
-	lock
-# 58 "data/maps/Quartz_Gym/scripts.pory"
-	faceplayer
-# 59 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Gym_Guard_Text_0
-# 61 "data/maps/Quartz_Gym/scripts.pory"
-	waitmessage
-# 62 "data/maps/Quartz_Gym/scripts.pory"
-	release
-	return
-
-
 Nervous_Kid::
-# 66 "data/maps/Quartz_Gym/scripts.pory"
+# 58 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 67 "data/maps/Quartz_Gym/scripts.pory"
+# 59 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 68 "data/maps/Quartz_Gym/scripts.pory"
+# 60 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Nervous_Kid_Text_0
-# 70 "data/maps/Quartz_Gym/scripts.pory"
+# 62 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
-# 71 "data/maps/Quartz_Gym/scripts.pory"
+# 63 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 
 Ditzy_Teenager::
-# 75 "data/maps/Quartz_Gym/scripts.pory"
+# 67 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 76 "data/maps/Quartz_Gym/scripts.pory"
+# 68 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 77 "data/maps/Quartz_Gym/scripts.pory"
+# 69 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Ditzy_Teenager_Text_0
-# 79 "data/maps/Quartz_Gym/scripts.pory"
+# 71 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
-# 80 "data/maps/Quartz_Gym/scripts.pory"
+# 72 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 
 Quartz_Gym_FinalblowChallenge::
-# 84 "data/maps/Quartz_Gym/scripts.pory"
+# 76 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 85 "data/maps/Quartz_Gym/scripts.pory"
+# 77 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 86 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_unset FLAG_BADGE02_GET, Quartz_Gym_FinalblowChallenge_2
-# 105 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_5
+# 78 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, Quartz_Gym_FinalblowChallenge_2
+# 80 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_MAKAYLA
+	goto_if 1, Quartz_Gym_FinalblowChallenge_3
+# 83 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_FinalblowChallenge_4
+# 97 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_6
 Quartz_Gym_FinalblowChallenge_1:
-# 107 "data/maps/Quartz_Gym/scripts.pory"
+# 100 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 Quartz_Gym_FinalblowChallenge_2:
-# 87 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_FinalblowChallenge_5
-# 101 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_4
+# 79 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_0
 	goto Quartz_Gym_FinalblowChallenge_1
 
-Quartz_Gym_FinalblowChallenge_5:
-# 88 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_0, MSGBOX_YESNO
-# 91 "data/maps/Quartz_Gym/scripts.pory"
-	compare VAR_RESULT, YES
-	goto_if_eq Quartz_Gym_FinalblowChallenge_8
-# 98 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_3
-	goto Quartz_Gym_FinalblowChallenge_1
-
-Quartz_Gym_FinalblowChallenge_8:
-# 92 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_FinalblowChallenge_3:
+# 81 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Quartz_Gym_FinalblowChallenge_Text_1
-# 93 "data/maps/Quartz_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_MAKAYLA, Quartz_Gym_FinalblowChallenge_Text_2
-# 96 "data/maps/Quartz_Gym/scripts.pory"
+	goto Quartz_Gym_FinalblowChallenge_1
+
+Quartz_Gym_FinalblowChallenge_4:
+# 84 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_2, MSGBOX_YESNO
+# 87 "data/maps/Quartz_Gym/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Quartz_Gym_FinalblowChallenge_9
+# 94 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_5
+	goto Quartz_Gym_FinalblowChallenge_1
+
+Quartz_Gym_FinalblowChallenge_9:
+# 88 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_3
+# 89 "data/maps/Quartz_Gym/scripts.pory"
+	trainerbattle_no_intro TRAINER_MAKAYLA, Quartz_Gym_FinalblowChallenge_Text_4
+# 92 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
 	goto Quartz_Gym_FinalblowChallenge_1
 
 
 Quartz_Gym_PatienceChallenge::
-# 111 "data/maps/Quartz_Gym/scripts.pory"
+# 104 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 112 "data/maps/Quartz_Gym/scripts.pory"
+# 105 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 113 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_unset FLAG_BADGE02_GET, Quartz_Gym_PatienceChallenge_2
-# 136 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_5
+# 106 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, Quartz_Gym_PatienceChallenge_2
+# 108 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_KOJI_1
+	goto_if 1, Quartz_Gym_PatienceChallenge_3
+# 111 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_PatienceChallenge_4
+# 129 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_6
 Quartz_Gym_PatienceChallenge_1:
-# 138 "data/maps/Quartz_Gym/scripts.pory"
+# 132 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 Quartz_Gym_PatienceChallenge_2:
-# 114 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_PatienceChallenge_5
-# 132 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_4
+# 107 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_0
 	goto Quartz_Gym_PatienceChallenge_1
 
-Quartz_Gym_PatienceChallenge_5:
+Quartz_Gym_PatienceChallenge_3:
+# 109 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_PatienceChallenge_Text_0
+	goto Quartz_Gym_PatienceChallenge_1
+
+Quartz_Gym_PatienceChallenge_4:
+# 112 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_PatienceChallenge_Text_1, MSGBOX_YESNO
 # 115 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_PatienceChallenge_Text_0, MSGBOX_YESNO
-# 118 "data/maps/Quartz_Gym/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq Quartz_Gym_PatienceChallenge_8
-# 129 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_PatienceChallenge_Text_4
+	goto_if_eq Quartz_Gym_PatienceChallenge_9
+# 126 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_PatienceChallenge_Text_5
 	goto Quartz_Gym_PatienceChallenge_1
 
-Quartz_Gym_PatienceChallenge_8:
-# 119 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_PatienceChallenge_Text_1
-# 120 "data/maps/Quartz_Gym/scripts.pory"
-	delay 1800
-# 121 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_PatienceChallenge_9:
+# 116 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Quartz_Gym_PatienceChallenge_Text_2
+# 117 "data/maps/Quartz_Gym/scripts.pory"
+	delay 1800
+# 118 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_PatienceChallenge_Text_3
+# 121 "data/maps/Quartz_Gym/scripts.pory"
+	trainerbattle_no_intro TRAINER_KOJI_1, Quartz_Gym_PatienceChallenge_Text_4
 # 124 "data/maps/Quartz_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_KOJI_1, Quartz_Gym_PatienceChallenge_Text_3
-# 127 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
 	goto Quartz_Gym_PatienceChallenge_1
 
 
 Quartz_Gym_WeakpointChallenge::
-# 142 "data/maps/Quartz_Gym/scripts.pory"
+# 136 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 143 "data/maps/Quartz_Gym/scripts.pory"
+# 137 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 144 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_unset FLAG_BADGE02_GET, Quartz_Gym_WeakpointChallenge_2
-# 162 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_5
+# 138 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, Quartz_Gym_WeakpointChallenge_2
+# 140 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_CYNDY_1
+	goto_if 1, Quartz_Gym_WeakpointChallenge_3
+# 143 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_WeakpointChallenge_4
+# 156 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_6
 Quartz_Gym_WeakpointChallenge_1:
-# 164 "data/maps/Quartz_Gym/scripts.pory"
+# 159 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 Quartz_Gym_WeakpointChallenge_2:
-# 145 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_Gym_WeakpointChallenge_5
-# 158 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_4
+# 139 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_0
 	goto Quartz_Gym_WeakpointChallenge_1
 
-Quartz_Gym_WeakpointChallenge_5:
+Quartz_Gym_WeakpointChallenge_3:
+# 141 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_WeakpointChallenge_Text_0
+	goto Quartz_Gym_WeakpointChallenge_1
+
+Quartz_Gym_WeakpointChallenge_4:
+# 144 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_WeakpointChallenge_Text_1, MSGBOX_YESNO
 # 146 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_WeakpointChallenge_Text_0, MSGBOX_YESNO
-# 148 "data/maps/Quartz_Gym/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq Quartz_Gym_WeakpointChallenge_8
-# 155 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_FinalblowChallenge_Text_3
+	goto_if_eq Quartz_Gym_WeakpointChallenge_9
+# 153 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_FinalblowChallenge_Text_5
 	goto Quartz_Gym_WeakpointChallenge_1
 
-Quartz_Gym_WeakpointChallenge_8:
-# 149 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_Gym_WeakpointChallenge_Text_1
-# 150 "data/maps/Quartz_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_CYNDY_1, Quartz_Gym_WeakpointChallenge_Text_2
-# 153 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_WeakpointChallenge_9:
+# 147 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_Gym_WeakpointChallenge_Text_2
+# 148 "data/maps/Quartz_Gym/scripts.pory"
+	trainerbattle_no_intro TRAINER_CYNDY_1, Quartz_Gym_WeakpointChallenge_Text_3
+# 151 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
 	goto Quartz_Gym_WeakpointChallenge_1
 
 
 Quartz_CaptRojan::
-# 169 "data/maps/Quartz_Gym/scripts.pory"
+# 164 "data/maps/Quartz_Gym/scripts.pory"
 	lock
-# 170 "data/maps/Quartz_Gym/scripts.pory"
+# 165 "data/maps/Quartz_Gym/scripts.pory"
 	faceplayer
-# 171 "data/maps/Quartz_Gym/scripts.pory"
+# 166 "data/maps/Quartz_Gym/scripts.pory"
 	goto_if_set FLAG_BADGE02_GET, Quartz_CaptRojan_2
+# 170 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_unset FLAG_TALKED_TO_CORIN, Quartz_CaptRojan_3
 # 178 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_unset FLAG_TALKED_TO_CORIN, Quartz_CaptRojan_5
-# 187 "data/maps/Quartz_Gym/scripts.pory"
-	goto_if_set FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_CaptRojan_8
-# 212 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_CaptRojan_Text_7
-# 214 "data/maps/Quartz_Gym/scripts.pory"
+	goto_if_unset FLAG_QUARTZITE_HIVE_DEFEATED, Quartz_CaptRojan_4
+# 183 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_MAKAYLA
+	goto_if 0, Quartz_CaptRojan_5
+# 183 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_KOJI_1
+	goto_if 0, Quartz_CaptRojan_5
+# 183 "data/maps/Quartz_Gym/scripts.pory"
+	checktrainerflag TRAINER_CYNDY_1
+	goto_if 0, Quartz_CaptRojan_5
+# 190 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_4
+# 192 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
-Quartz_CaptRojan_4:
-# 217 "data/maps/Quartz_Gym/scripts.pory"
+# 193 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_5, MSGBOX_YESNO
+# 195 "data/maps/Quartz_Gym/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Quartz_CaptRojan_15
+# 218 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_10
+Quartz_CaptRojan_1:
+# 222 "data/maps/Quartz_Gym/scripts.pory"
 	release
 	return
 
 Quartz_CaptRojan_2:
-# 172 "data/maps/Quartz_Gym/scripts.pory"
+# 167 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Quartz_CaptRojan_Text_0
-# 174 "data/maps/Quartz_Gym/scripts.pory"
+# 169 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
-# 175 "data/maps/Quartz_Gym/scripts.pory"
-	release
-	end
+	goto Quartz_CaptRojan_1
+
+Quartz_CaptRojan_3:
+# 171 "data/maps/Quartz_Gym/scripts.pory"
+	setflag FLAG_TALKED_TO_ROJAN
+# 172 "data/maps/Quartz_Gym/scripts.pory"
+	setflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
+# 173 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_1
+	goto Quartz_CaptRojan_1
+
+Quartz_CaptRojan_4:
+# 179 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_2
+# 182 "data/maps/Quartz_Gym/scripts.pory"
+	waitmessage
+	goto Quartz_CaptRojan_1
 
 Quartz_CaptRojan_5:
-# 179 "data/maps/Quartz_Gym/scripts.pory"
-	setflag FLAG_TALKED_TO_ROJAN
-# 180 "data/maps/Quartz_Gym/scripts.pory"
-	setflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
-# 181 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_CaptRojan_Text_1
-	goto Quartz_CaptRojan_4
-
-Quartz_CaptRojan_8:
-# 188 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_CaptRojan_Text_2, MSGBOX_YESNO
-# 192 "data/maps/Quartz_Gym/scripts.pory"
-	compare VAR_RESULT, YES
-	goto_if_eq Quartz_CaptRojan_11
-# 208 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_CaptRojan_Text_6
-	goto Quartz_CaptRojan_4
-
-Quartz_CaptRojan_11:
-# 193 "data/maps/Quartz_Gym/scripts.pory"
+# 184 "data/maps/Quartz_Gym/scripts.pory"
 	msgbox Quartz_CaptRojan_Text_3
-# 194 "data/maps/Quartz_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRAWLY_1, Quartz_CaptRojan_Text_4
-# 197 "data/maps/Quartz_Gym/scripts.pory"
+# 188 "data/maps/Quartz_Gym/scripts.pory"
 	waitmessage
-# 198 "data/maps/Quartz_Gym/scripts.pory"
-	setflag FLAG_BADGE02_GET
-# 199 "data/maps/Quartz_Gym/scripts.pory"
-	giveitem ITEM_HM06
-# 200 "data/maps/Quartz_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_HM_ROCK_SMASH
-# 201 "data/maps/Quartz_Gym/scripts.pory"
-	msgbox Quartz_CaptRojan_Text_5
-# 205 "data/maps/Quartz_Gym/scripts.pory"
-	waitmessage
-# 206 "data/maps/Quartz_Gym/scripts.pory"
-	waitmessage
-	goto Quartz_CaptRojan_4
+	goto Quartz_CaptRojan_1
 
+Quartz_CaptRojan_15:
+# 196 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_6
+# 197 "data/maps/Quartz_Gym/scripts.pory"
+	playse SE_M_ROCK_THROW
+# 198 "data/maps/Quartz_Gym/scripts.pory"
+	applymovement LOCALID_CAPT_ROJAN, Quartz_CaptRojan_Movement_0
+# 199 "data/maps/Quartz_Gym/scripts.pory"
+	applymovement LOCALID_QUARTZGYMLEFTROCK, Quartz_CaptRojan_Movement_1
+# 200 "data/maps/Quartz_Gym/scripts.pory"
+	applymovement LOCALID_QUARTZGYMRIGHTROCK, Quartz_CaptRojan_Movement_1
+# 201 "data/maps/Quartz_Gym/scripts.pory"
+	waitmovement 0
+# 202 "data/maps/Quartz_Gym/scripts.pory"
+	removeobject LOCALID_QUARTZGYMLEFTROCK
+# 203 "data/maps/Quartz_Gym/scripts.pory"
+	removeobject LOCALID_QUARTZGYMRIGHTROCK
+# 204 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_7
+# 205 "data/maps/Quartz_Gym/scripts.pory"
+	trainerbattle_no_intro TRAINER_BRAWLY_1, Quartz_CaptRojan_Text_8
+# 208 "data/maps/Quartz_Gym/scripts.pory"
+	waitmessage
+# 209 "data/maps/Quartz_Gym/scripts.pory"
+	setflag FLAG_BADGE02_GET
+# 210 "data/maps/Quartz_Gym/scripts.pory"
+	giveitem ITEM_HM06
+# 211 "data/maps/Quartz_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_HM_ROCK_SMASH
+# 212 "data/maps/Quartz_Gym/scripts.pory"
+	msgbox Quartz_CaptRojan_Text_9
+# 216 "data/maps/Quartz_Gym/scripts.pory"
+	waitmessage
+	goto Quartz_CaptRojan_1
+
+
+# 198 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_CaptRojan_Movement_0:
+# 198 "data/maps/Quartz_Gym/scripts.pory"
+	emote_exclamation_mark
+# 198 "data/maps/Quartz_Gym/scripts.pory"
+	jump_in_place_down
+	step_end
+
+# 199 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_CaptRojan_Movement_1:
+# 199 "data/maps/Quartz_Gym/scripts.pory"
+	rock_smash_break
+	step_end
 
 Worried_OldMan_Text_0:
 # 6 "data/maps/Quartz_Gym/scripts.pory"
@@ -361,141 +417,195 @@ Hopeful_Woman_Text_0:
 	.string "They're causing so much trouble around\n"
 	.string "Quartzite!$"
 
-Gym_Guard_Text_0:
-# 59 "data/maps/Quartz_Gym/scripts.pory"
-	.string "The Gym is currently closed while Team\n"
-	.string "Hive is dealt with.\p"
-	.string "Please come back later!$"
-
 Nervous_Kid_Text_0:
-# 68 "data/maps/Quartz_Gym/scripts.pory"
+# 60 "data/maps/Quartz_Gym/scripts.pory"
 	.string "I heard Team Hive Drones have been\n"
 	.string "seen near the Quartz Tunnels.\p"
 	.string "I'm scared to go outside!$"
 
 Ditzy_Teenager_Text_0:
-# 77 "data/maps/Quartz_Gym/scripts.pory"
+# 69 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Did you hear about those Hive Drones?\p"
 	.string "They're like, everywhere now!$"
 
 Quartz_Gym_FinalblowChallenge_Text_0:
-# 88 "data/maps/Quartz_Gym/scripts.pory"
+# 79 "data/maps/Quartz_Gym/scripts.pory"
+	.string "You've already proven your skill by\n"
+	.string "earning the Rock Smash HM!$"
+
+Quartz_Gym_FinalblowChallenge_Text_1:
+# 81 "data/maps/Quartz_Gym/scripts.pory"
+	.string "I already showed you my finishing\n"
+	.string "power, Ranger!\p"
+	.string "No need to see it twice, save your\n"
+	.string "strength for Captain Rojan.$"
+
+Quartz_Gym_FinalblowChallenge_Text_2:
+# 84 "data/maps/Quartz_Gym/scripts.pory"
 	.string "I represent the final, powerful strike\n"
 	.string "to end a battle!\p"
 	.string "Demonstrate your ability to finish\n"
 	.string "strong by defeating me in battle!\p"
 	.string "Are you ready to begin?$"
 
-Quartz_Gym_FinalblowChallenge_Text_1:
-# 92 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_FinalblowChallenge_Text_3:
+# 88 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Excellent! Let's see your finishing\n"
 	.string "power!$"
 
-Quartz_Gym_FinalblowChallenge_Text_2:
-# 94 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_FinalblowChallenge_Text_4:
+# 90 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Incredible!$"
 
-Quartz_Gym_FinalblowChallenge_Text_3:
-# 98 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_FinalblowChallenge_Text_5:
+# 94 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Take your time to prepare!$"
 
-Quartz_Gym_FinalblowChallenge_Text_4:
-# 101 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_FinalblowChallenge_Text_6:
+# 97 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Team Hive has been causing trouble\n"
 	.string "around Quartzite.\p"
 	.string "I hope the Rangers can handle them\n"
 	.string "soon!$"
 
-Quartz_Gym_FinalblowChallenge_Text_5:
-# 105 "data/maps/Quartz_Gym/scripts.pory"
-	.string "You've already proven your skill by\n"
-	.string "earning the Rock Smash HM!$"
-
 Quartz_Gym_PatienceChallenge_Text_0:
-# 115 "data/maps/Quartz_Gym/scripts.pory"
+# 109 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Patience, patience... I already proved\n"
+	.string "mine facing you once!\p"
+	.string "Go on now, don't test it further.$"
+
+Quartz_Gym_PatienceChallenge_Text_1:
+# 112 "data/maps/Quartz_Gym/scripts.pory"
 	.string "I represent waiting until the perfect\n"
 	.string "moment to strike!\p"
 	.string "Demonstrate your patience by waiting\n"
 	.string "here for 30 seconds without moving!\p"
 	.string "Are you ready to begin?$"
 
-Quartz_Gym_PatienceChallenge_Text_1:
-# 119 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_PatienceChallenge_Text_2:
+# 116 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Great! Start waiting now.$"
 
-Quartz_Gym_PatienceChallenge_Text_2:
-# 121 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_PatienceChallenge_Text_3:
+# 118 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Well done! You've completed the\n"
-	.string "Patience Challenge!\n"
-	.string "Just kidding, but you did wait there\l"
+	.string "Patience Challenge!\p"
+	.string "Just kidding, but you did wait there\n"
 	.string "like a champ.\p"
 	.string "Now for the real challenge, HYAAAAH!$"
 
-Quartz_Gym_PatienceChallenge_Text_3:
-# 125 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_PatienceChallenge_Text_4:
+# 122 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Patience is a virtue, but so is\n"
 	.string "strength!$"
 
-Quartz_Gym_PatienceChallenge_Text_4:
-# 129 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_PatienceChallenge_Text_5:
+# 126 "data/maps/Quartz_Gym/scripts.pory"
 	.string "No worries! Take your time.$"
 
 Quartz_Gym_WeakpointChallenge_Text_0:
-# 146 "data/maps/Quartz_Gym/scripts.pory"
+# 141 "data/maps/Quartz_Gym/scripts.pory"
+	.string "You already found my one weak point,\n"
+	.string "Ranger!\p"
+	.string "I won't be caught off guard twice in one\n"
+	.string "day.$"
+
+Quartz_Gym_WeakpointChallenge_Text_1:
+# 144 "data/maps/Quartz_Gym/scripts.pory"
 	.string "I represent exploiting a foe's\n"
 	.string "weakness! I practice looking for faults\l"
 	.string "in rocks!\p"
 	.string "Are you ready to begin?$"
 
-Quartz_Gym_WeakpointChallenge_Text_1:
-# 149 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_WeakpointChallenge_Text_2:
+# 147 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Excellent! Let's see your strategy in\n"
 	.string "action!$"
 
-Quartz_Gym_WeakpointChallenge_Text_2:
-# 151 "data/maps/Quartz_Gym/scripts.pory"
+Quartz_Gym_WeakpointChallenge_Text_3:
+# 149 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Impressive!$"
 
 Quartz_CaptRojan_Text_0:
-# 172 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: You've proven your skill\n"
-	.string "by earning the Rock Smash HM!\p"
-	.string "Keep up the great work, Ranger!$"
+# 167 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Captain Rojan: Ho ho, still feeling that\n"
+	.string "battle in my old bones, Ranger!\p"
+	.string "A good ache, mind you. Keep it up out\n"
+	.string "there!$"
 
 Quartz_CaptRojan_Text_1:
-# 181 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: Hey there, Ranger!\p"
-	.string "I heard you were coming from Hazolt HQ.\n"
-	.string "Hope you are ready for some action!\p"
+# 173 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Captain Rojan: Oh! A visitor. Excuse my\n"
+	.string "slippers, my knees aren't what they\l"
+	.string "used to be.\p"
+	.string "Wait, you're the Ranger from Hazolt HQ?\n"
+	.string "Splendid! I was just about to put the\l"
+	.string "kettle on, but duty calls.\p"
 	.string "This sinister Team Hive has been\n"
-	.string "causing trouble all over Quartzite City.\p"
-	.string "I've gotten most of the people here for\n"
-	.string "safety. Ranger Corin went to\l"
-	.string "investigate the Quartz Tunnels.\p"
-	.string "Could you go check on him?$"
+	.string "buzzing around Quartzite City\l"
+	.string "somethin' fierce.\p"
+	.string "I've tucked most of the townsfolk away\n"
+	.string "safe and sound, but Ranger Corin went\l"
+	.string "snooping around the Quartz Tunnels all\l"
+	.string "on his own. That boy was stubborn as a\l"
+	.string "Lairon!\p"
+	.string "Would you go check on him for this old\n"
+	.string "man?$"
 
 Quartz_CaptRojan_Text_2:
-# 188 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: Thanks for helping out\n"
-	.string "back there!\p"
-	.string "With Team Hive dealt with, Quartzite can\n"
-	.string "finally return to normal.\p"
-	.string "The Rangers here owe you a debt of\n"
-	.string "gratitude!\l"
-	.string "Now, are you ready to earn your next\l"
-	.string "field move, and Ranger Rank?$"
+# 179 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Captain Rojan: Still no word from young\n"
+	.string "Corin, eh?\p"
+	.string "I'd go myself, but my lumbago's actin' up\n"
+	.string "somethin' terrible today.\p"
+	.string "Hurry along now, there's an entrance in\n"
+	.string "the water pump house!$"
 
 Quartz_CaptRojan_Text_3:
-# 193 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: Excellent! Show me your\n"
-	.string "skills!$"
+# 184 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Captain Rojan: Whew, glad that Hive\n"
+	.string "business is settled! My hip was startin'\l"
+	.string "to ache just from the worryin'.\p"
+	.string "Hold your horses, though, Ranger. You\n"
+	.string "don't just waltz up to an old man and\l"
+	.string "get a badge for free!\p"
+	.string "Go spar with my star pupils here in the\n"
+	.string "Gym first. Makayla, Koji, and our\l"
+	.string "sharp-eyed Cyndy will each show you a\l"
+	.string "different side of battling.\p"
+	.string "Come back once you've bested all three,\n"
+	.string "and then we'll talk business.$"
 
 Quartz_CaptRojan_Text_4:
-# 195 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Well done, Ranger!$"
+# 190 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Captain Rojan: Ho? You've gone and\n"
+	.string "thrashed all three of my pupils\l"
+	.string "already?\p"
+	.string "Ha! Reminds me of my glory days, back\n"
+	.string "before these knees started singin'\l"
+	.string "opera every mornin'.$"
 
 Quartz_CaptRojan_Text_5:
-# 201 "data/maps/Quartz_Gym/scripts.pory"
+# 193 "data/maps/Quartz_Gym/scripts.pory"
+	.string "But it's time for your final test.\p"
+	.string "Rojan: No more jokes, Ranger. Are you\n"
+	.string "ready to prove your strength?$"
+
+Quartz_CaptRojan_Text_6:
+# 196 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Rojan: Then observe!$"
+
+Quartz_CaptRojan_Text_7:
+# 204 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Rojan: That's the strength it takes to\n"
+	.string "earn this badge. Let's begin!$"
+
+Quartz_CaptRojan_Text_8:
+# 206 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Well done, Ranger!$"
+
+Quartz_CaptRojan_Text_9:
+# 212 "data/maps/Quartz_Gym/scripts.pory"
 	.string "Captain Rojan: Impressive work!\p"
 	.string "You've earned the Rock Smash HM and\n"
 	.string "your Ranger Rank has been upgraded!\p"
@@ -503,16 +613,8 @@ Quartz_CaptRojan_Text_5:
 	.string "blocking your path.\n"
 	.string "Keep up the great work, Ranger!$"
 
-Quartz_CaptRojan_Text_6:
-# 208 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: Take your time to\n"
-	.string "prepare!\p"
-	.string "I suggest you battle with my students\n"
-	.string "here in the Gym to hone your skills.$"
-
-Quartz_CaptRojan_Text_7:
-# 212 "data/maps/Quartz_Gym/scripts.pory"
-	.string "Captain Rojan: Please hurry to the\n"
-	.string "Quartz Tunnels and help Ranger Corin!\p"
-	.string "There should be an entrance in the\n"
-	.string "water pump house.$"
+Quartz_CaptRojan_Text_10:
+# 218 "data/maps/Quartz_Gym/scripts.pory"
+	.string "Rojan: Oh, thank goodness, this old hip\n"
+	.string "needs a rest anyway.\p"
+	.string "Come back when you're ready, sonny.$"

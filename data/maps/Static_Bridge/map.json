@@ -144,12 +144,25 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Static_Bridge_Doubter",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 39,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ZINC",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_STATIC_BRIDGE_ZINC"
     }
   ],
   "warp_events": [
     {
       "x": 35,
-      "y": 30,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_STAT_BRIDGE_BUSHHOUSE",
       "dest_warp_id": "0"

@@ -17,22 +17,22 @@ Mara_Gym_Script::
 	goto_if_unset FLAG_TASMIN_CLEARED, Mara_Gym_Script_5
 # 36 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_unset FLAG_MARA_EVAL_READY, Mara_Gym_Script_12
-# 50 "data/maps/Hazolt_Gym/scripts.pory"
+# 53 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_unset FLAG_MARA_DEFEATED, Mara_Gym_Script_15
-# 75 "data/maps/Hazolt_Gym/scripts.pory"
+# 78 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_SHUDDERWOOD_MANSION_CLEARED, Mara_Gym_Script_18
-# 81 "data/maps/Hazolt_Gym/scripts.pory"
+# 84 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, Mara_Gym_Script_19
-# 94 "data/maps/Hazolt_Gym/scripts.pory"
+# 97 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Mara_Gym_Script_20
-# 99 "data/maps/Hazolt_Gym/scripts.pory"
+# 103 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_CRUSTED_QUARRY_DEFEATED, Mara_Gym_Script_21
-# 117 "data/maps/Hazolt_Gym/scripts.pory"
+# 120 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_MARA_DEFEATED, Mara_Gym_Script_22
-# 123 "data/maps/Hazolt_Gym/scripts.pory"
+# 126 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_21
 Mara_Gym_Script_17:
-# 126 "data/maps/Hazolt_Gym/scripts.pory"
+# 129 "data/maps/Hazolt_Gym/scripts.pory"
 	releaseall
 	end
 
@@ -85,179 +85,179 @@ Mara_Gym_Script_12:
 	addobject LOCALID_CORIN_GYM
 # 45 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_5
-# 47 "data/maps/Hazolt_Gym/scripts.pory"
+# 50 "data/maps/Hazolt_Gym/scripts.pory"
 	releaseall
 	end
 
 Mara_Gym_Script_15:
-# 51 "data/maps/Hazolt_Gym/scripts.pory"
+# 54 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_6, MSGBOX_YESNO
-# 53 "data/maps/Hazolt_Gym/scripts.pory"
+# 56 "data/maps/Hazolt_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Mara_Gym_Script_29
-# 70 "data/maps/Hazolt_Gym/scripts.pory"
+# 73 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_11
-# 71 "data/maps/Hazolt_Gym/scripts.pory"
+# 74 "data/maps/Hazolt_Gym/scripts.pory"
 	releaseall
 	end
 
 Mara_Gym_Script_18:
-# 76 "data/maps/Hazolt_Gym/scripts.pory"
+# 79 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_12
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_19:
-# 82 "data/maps/Hazolt_Gym/scripts.pory"
+# 85 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_SHUDDERWOOD_HIVE_PATROL_DEFEATED, Mara_Gym_Script_32
-# 88 "data/maps/Hazolt_Gym/scripts.pory"
+# 91 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_14
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_20:
-# 95 "data/maps/Hazolt_Gym/scripts.pory"
+# 98 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_15
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_21:
-# 100 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_16
 # 104 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Mara_Gym_Script_Text_16
+# 108 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_WAREHOUSE_KEY, Mara_Gym_Script_35
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_22:
-# 118 "data/maps/Hazolt_Gym/scripts.pory"
+# 121 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_20
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_29:
-# 54 "data/maps/Hazolt_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_MARA_EVAL, Mara_Gym_Script_Text_7
-# 55 "data/maps/Hazolt_Gym/scripts.pory"
-	setflag FLAG_BADGE01_GET
-# 56 "data/maps/Hazolt_Gym/scripts.pory"
-	setflag FLAG_MARA_DEFEATED
 # 57 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_8
+	trainerbattle_no_intro TRAINER_MARA_EVAL, Mara_Gym_Script_Text_7
+# 58 "data/maps/Hazolt_Gym/scripts.pory"
+	setflag FLAG_BADGE01_GET
 # 59 "data/maps/Hazolt_Gym/scripts.pory"
-	giveitem ITEM_HM01
+	setflag FLAG_MARA_DEFEATED
 # 60 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_9
-# 61 "data/maps/Hazolt_Gym/scripts.pory"
-	waitfanfare
+	msgbox Mara_Gym_Script_Text_8
 # 62 "data/maps/Hazolt_Gym/scripts.pory"
-	waitbuttonpress
+	giveitem ITEM_HM01
 # 63 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_10
+	msgbox Mara_Gym_Script_Text_9
+# 64 "data/maps/Hazolt_Gym/scripts.pory"
+	waitfanfare
+# 65 "data/maps/Hazolt_Gym/scripts.pory"
+	waitbuttonpress
 # 66 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Mara_Gym_Script_Text_10
+# 69 "data/maps/Hazolt_Gym/scripts.pory"
 	releaseall
 	end
 
 Mara_Gym_Script_32:
-# 83 "data/maps/Hazolt_Gym/scripts.pory"
+# 86 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_13
 	goto Mara_Gym_Script_17
 
 Mara_Gym_Script_35:
-# 105 "data/maps/Hazolt_Gym/scripts.pory"
-	giveitem ITEM_WAREHOUSE_KEY
-# 106 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_17
-# 107 "data/maps/Hazolt_Gym/scripts.pory"
-	waitmessage
-# 108 "data/maps/Hazolt_Gym/scripts.pory"
-	giveitem ITEM_ULTRA_BALL, 5
 # 109 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Mara_Gym_Script_Text_18
+	giveitem ITEM_WAREHOUSE_KEY
 # 110 "data/maps/Hazolt_Gym/scripts.pory"
-	waitmessage
+	msgbox Mara_Gym_Script_Text_17
 # 111 "data/maps/Hazolt_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_WAREHOUSE_KEY
+	waitmessage
 # 112 "data/maps/Hazolt_Gym/scripts.pory"
+	giveitem ITEM_ULTRA_BALL, 5
+# 113 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Mara_Gym_Script_Text_18
+# 114 "data/maps/Hazolt_Gym/scripts.pory"
+	waitmessage
+# 115 "data/maps/Hazolt_Gym/scripts.pory"
+	setflag FLAG_RECEIVED_WAREHOUSE_KEY
+# 116 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Mara_Gym_Script_Text_19
 	goto Mara_Gym_Script_17
 
 
 Eon_Gym_Script::
-# 132 "data/maps/Hazolt_Gym/scripts.pory"
+# 135 "data/maps/Hazolt_Gym/scripts.pory"
 	lock
-# 133 "data/maps/Hazolt_Gym/scripts.pory"
+# 136 "data/maps/Hazolt_Gym/scripts.pory"
 	faceplayer
-# 134 "data/maps/Hazolt_Gym/scripts.pory"
+# 137 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_MARA_EVAL_READY, Eon_Gym_Script_2
 Eon_Gym_Script_1:
-# 141 "data/maps/Hazolt_Gym/scripts.pory"
+# 144 "data/maps/Hazolt_Gym/scripts.pory"
 	msgbox Eon_Gym_Script_Text_2
-# 143 "data/maps/Hazolt_Gym/scripts.pory"
+# 146 "data/maps/Hazolt_Gym/scripts.pory"
 	release
 	return
 
 Eon_Gym_Script_2:
-# 135 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Eon_Gym_Script_Text_0, MSGBOX_YESNO
 # 138 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Eon_Gym_Script_Text_0, MSGBOX_YESNO
+# 141 "data/maps/Hazolt_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Eon_Gym_Script_4
 	goto Eon_Gym_Script_1
 
 Eon_Gym_Script_4:
-# 139 "data/maps/Hazolt_Gym/scripts.pory"
+# 142 "data/maps/Hazolt_Gym/scripts.pory"
 	trainerbattle_no_intro TRAINER_ANDRES_2, Eon_Gym_Script_Text_1
 	goto Eon_Gym_Script_1
 
 
 Corin_Gym_Script::
-# 147 "data/maps/Hazolt_Gym/scripts.pory"
+# 150 "data/maps/Hazolt_Gym/scripts.pory"
 	lock
-# 148 "data/maps/Hazolt_Gym/scripts.pory"
+# 151 "data/maps/Hazolt_Gym/scripts.pory"
 	faceplayer
-# 149 "data/maps/Hazolt_Gym/scripts.pory"
+# 152 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_MARA_EVAL_READY, Corin_Gym_Script_2
 Corin_Gym_Script_1:
-# 156 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Corin_Gym_Script_Text_2
 # 159 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Corin_Gym_Script_Text_2
+# 162 "data/maps/Hazolt_Gym/scripts.pory"
 	release
 	return
 
 Corin_Gym_Script_2:
-# 150 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Corin_Gym_Script_Text_0, MSGBOX_YESNO
 # 153 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Corin_Gym_Script_Text_0, MSGBOX_YESNO
+# 156 "data/maps/Hazolt_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Corin_Gym_Script_4
 	goto Corin_Gym_Script_1
 
 Corin_Gym_Script_4:
-# 154 "data/maps/Hazolt_Gym/scripts.pory"
+# 157 "data/maps/Hazolt_Gym/scripts.pory"
 	trainerbattle_no_intro TRAINER_LORENZO, Corin_Gym_Script_Text_1
 	goto Corin_Gym_Script_1
 
 
 Tasmin_Gym_Script::
-# 163 "data/maps/Hazolt_Gym/scripts.pory"
+# 166 "data/maps/Hazolt_Gym/scripts.pory"
 	lock
-# 164 "data/maps/Hazolt_Gym/scripts.pory"
+# 167 "data/maps/Hazolt_Gym/scripts.pory"
 	faceplayer
-# 165 "data/maps/Hazolt_Gym/scripts.pory"
+# 168 "data/maps/Hazolt_Gym/scripts.pory"
 	goto_if_set FLAG_MARA_EVAL_READY, Tasmin_Gym_Script_2
 Tasmin_Gym_Script_1:
-# 172 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Tasmin_Gym_Script_Text_2
 # 175 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Tasmin_Gym_Script_Text_2
+# 178 "data/maps/Hazolt_Gym/scripts.pory"
 	release
 	return
 
 Tasmin_Gym_Script_2:
-# 166 "data/maps/Hazolt_Gym/scripts.pory"
-	msgbox Tasmin_Gym_Script_Text_0, MSGBOX_YESNO
 # 169 "data/maps/Hazolt_Gym/scripts.pory"
+	msgbox Tasmin_Gym_Script_Text_0, MSGBOX_YESNO
+# 172 "data/maps/Hazolt_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Tasmin_Gym_Script_4
 	goto Tasmin_Gym_Script_1
 
 Tasmin_Gym_Script_4:
-# 170 "data/maps/Hazolt_Gym/scripts.pory"
+# 173 "data/maps/Hazolt_Gym/scripts.pory"
 	trainerbattle_no_intro TRAINER_WALLY_MAUVILLE, Tasmin_Gym_Script_Text_1
 	goto Tasmin_Gym_Script_1
 
@@ -267,8 +267,8 @@ Mara_Gym_Script_Text_0:
 	.string "Mara: You're standing, breathing, and\n"
 	.string "ready to work.\p"
 	.string "That's enough for me.\p"
-	.string "That storm should have broken us, but\n"
-	.string "this team held the line.\p"
+	.string "That storm almost drowned us, but Steel\n"
+	.string "team held strong.\p"
 	.string "Take these supplies and get your\n"
 	.string "footing, Ranger.$"
 
@@ -305,57 +305,73 @@ Mara_Gym_Script_Text_3:
 
 Mara_Gym_Script_Text_4:
 # 37 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: Excellent. You checked every\n"
-	.string "operative and came back with\l"
-	.string "discipline.\p"
-	.string "That's what keeps Rangers alive, not\n"
-	.string "bravado.\p"
+	.string "Mara: Excellent. I've heard reports\n"
+	.string "your first battles went well.\p"
+	.string "I will be expecting great things from\n"
+	.string "you moving forward.\p"
 	.string "Your first evaluation is next. Train\n"
-	.string "first, then face me when you're steady.$"
+	.string "first, then you will face me.$"
 
 Mara_Gym_Script_Text_5:
 # 45 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Run rematches with Eon, Corin, or\n"
 	.string "Tasmin.\p"
 	.string "Learn their habits, sharpen yours, and\n"
-	.string "come back ready.$"
+	.string "come back ready.\p"
+	.string "I don't train Rangers to copy me, but to\n"
+	.string "think when the plan falls apart.\p"
+	.string "Eon will test your patience, Corin will\n"
+	.string "pressure your choices, and Tasmin will\l"
+	.string "punish sloppy preparation.\p"
+	.string "Listen to what each battle teaches\n"
+	.string "you. The field won't care how confident\l"
+	.string "you felt when you started.\p"
+	.string "$"
 
 Mara_Gym_Script_Text_6:
-# 51 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: Ready for your Ranger\n"
-	.string "evaluation?\p"
-	.string "Show me precision under pressure.$"
+# 54 "data/maps/Hazolt_Gym/scripts.pory"
+	.string "Mara: You've seen the field, Ranger. But\n"
+	.string "seeing isn't surviving.\p"
+	.string "Are you ready for your field\n"
+	.string "evaluation? I need to see precision\l"
+	.string "under pressure.$"
 
 Mara_Gym_Script_Text_7:
-# 54 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: That's an easy pass. Well done.$"
+# 57 "data/maps/Hazolt_Gym/scripts.pory"
+	.string "Mara: Good pacing. You pass.$"
 
 Mara_Gym_Script_Text_8:
-# 57 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: Excellent work,\p"
-	.string "{PLAYER}, take Cut and clear the\n"
-	.string "western woods. Check on Quartzite\l"
-	.string "Village for us.$"
+# 60 "data/maps/Hazolt_Gym/scripts.pory"
+	.string "Mara: You held your nerve when it\n"
+	.string "counted,\p"
+	.string "{PLAYER}. Take HM01 Cut. I want you\n"
+	.string "to clear the western woods and\l"
+	.string "establish contact with Quartzite\l"
+	.string "Village.$"
 
 Mara_Gym_Script_Text_9:
-# 60 "data/maps/Hazolt_Gym/scripts.pory"
+# 63 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "{PLAYER} received HM01 Cut!$"
 
 Mara_Gym_Script_Text_10:
-# 63 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: Good luck. I've tuned this Cut HM\n"
-	.string "myself.\p"
-	.string "Steel isn't just force. It's control and\n"
-	.string "restraint.\p"
-	.string "Carry that with you, Ranger.$"
+# 66 "data/maps/Hazolt_Gym/scripts.pory"
+	.string "Mara: I've calibrated that HM myself.\n"
+	.string "It's the sharpest CUT in the Ranger\l"
+	.string "Corps.\p"
+	.string "Remember, Steel isn't just about\n"
+	.string "swinging a heavy hammer. It's about\l"
+	.string "knowing exactly where to place the nail.\p"
+	.string "Control and restraint. Carry that with\n"
+	.string "you, Ranger.$"
 
 Mara_Gym_Script_Text_11:
-# 70 "data/maps/Hazolt_Gym/scripts.pory"
-	.string "Mara: Good choice. Preparation wins\n"
-	.string "more fights than pride.$"
+# 73 "data/maps/Hazolt_Gym/scripts.pory"
+	.string "Mara: Smart call. Hesitation in the field\n"
+	.string "gets people hurt. Come back when you're\l"
+	.string "certain.$"
 
 Mara_Gym_Script_Text_12:
-# 76 "data/maps/Hazolt_Gym/scripts.pory"
+# 79 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Excellent work at Shudderwood\n"
 	.string "Mansion, Ranger.\p"
 	.string "You hit Team Hive where it hurts we'll\n"
@@ -367,7 +383,7 @@ Mara_Gym_Script_Text_12:
 	.string "$"
 
 Mara_Gym_Script_Text_13:
-# 83 "data/maps/Hazolt_Gym/scripts.pory"
+# 86 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: I heard you broke that Hive\n"
 	.string "patrol at the bridge. Clean work.\p"
 	.string "Now use STRENGTH from Garrick to force\n"
@@ -377,7 +393,7 @@ Mara_Gym_Script_Text_13:
 	.string "these buggers!$"
 
 Mara_Gym_Script_Text_14:
-# 88 "data/maps/Hazolt_Gym/scripts.pory"
+# 91 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Captain Garrick is handled and\n"
 	.string "you've secured STRENGTH.\p"
 	.string "Good. Next objective is Shudderwood\n"
@@ -389,17 +405,19 @@ Mara_Gym_Script_Text_14:
 	.string "Hive patrols en route.$"
 
 Mara_Gym_Script_Text_15:
-# 95 "data/maps/Hazolt_Gym/scripts.pory"
+# 98 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Tasmin confirmed the wreck is\n"
 	.string "compromised.\p"
 	.string "The pirates fled west across Rocky\n"
-	.string "Road toward Port Plunder.\p"
+	.string "Road toward a stolen port.\p"
+	.string "I'm sending Tasmin as well, meet her\n"
+	.string "there to take them together!\p"
 	.string "Track them, and show their captain the\n"
-	.string "consequences of messing with the\l"
+	.string "consequences of betraying the\l"
 	.string "rangers!$"
 
 Mara_Gym_Script_Text_16:
-# 100 "data/maps/Hazolt_Gym/scripts.pory"
+# 104 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Corin reported your success at\n"
 	.string "Crusted Quarry.\p"
 	.string "You kept pressure, adapted, and came\n"
@@ -407,26 +425,26 @@ Mara_Gym_Script_Text_16:
 	.string "Next objective: investigate the\n"
 	.string "shipwreck on the southern shore.\p"
 	.string "Report to Tasmin at the Hazolt Mart for\n"
-	.string "details.$"
+	.string "details. Take this key to the Hazolt\l"
+	.string "Mart storage area.$"
 
 Mara_Gym_Script_Text_17:
-# 106 "data/maps/Hazolt_Gym/scripts.pory"
+# 110 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "{PLAYER} received the Warehouse Key!$"
 
 Mara_Gym_Script_Text_18:
-# 109 "data/maps/Hazolt_Gym/scripts.pory"
+# 113 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "{PLAYER} received 5 Ultra Balls!$"
 
 Mara_Gym_Script_Text_19:
-# 112 "data/maps/Hazolt_Gym/scripts.pory"
+# 116 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Use that key at the Hazolt Mart\n"
 	.string "to access our storage area.\p"
 	.string "And keep your options open in the field.\p"
-	.string "New teammates await at unexpected\n"
-	.string "locations.$"
+	.string "$"
 
 Mara_Gym_Script_Text_20:
-# 118 "data/maps/Hazolt_Gym/scripts.pory"
+# 121 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: You've got Cut. Head west through\n"
 	.string "the woods toward Quartzite Station.\p"
 	.string "We've had reports of Team Hive\n"
@@ -434,14 +452,14 @@ Mara_Gym_Script_Text_20:
 	.string "Keep your cool, and trust your training.$"
 
 Mara_Gym_Script_Text_21:
-# 123 "data/maps/Hazolt_Gym/scripts.pory"
+# 126 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara: Take your time and prepare for\n"
 	.string "your evaluation.\p"
 	.string "I don't need fearless. I need\n"
 	.string "dependable.$"
 
 Eon_Gym_Script_Text_0:
-# 135 "data/maps/Hazolt_Gym/scripts.pory"
+# 138 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Eon: I only joined this expedition\n"
 	.string "because Mara was leading it.\p"
 	.string "If she says you're worth sharpening,\n"
@@ -449,18 +467,18 @@ Eon_Gym_Script_Text_0:
 	.string "Rematch?$"
 
 Eon_Gym_Script_Text_1:
-# 139 "data/maps/Hazolt_Gym/scripts.pory"
+# 142 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Eon: Not bad, Ranger. Keep training.$"
 
 Eon_Gym_Script_Text_2:
-# 141 "data/maps/Hazolt_Gym/scripts.pory"
+# 144 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara doesn't ask for loyalty speeches.\n"
 	.string "She earns them.\p"
 	.string "Anyway, I've got to train my Chinchou to\n"
 	.string "DIVE through those flooded tunnels.$"
 
 Corin_Gym_Script_Text_0:
-# 150 "data/maps/Hazolt_Gym/scripts.pory"
+# 153 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Corin: Hey! Rematch time?\p"
 	.string "Mara's scary in the best way. She\n"
 	.string "pushes us hard because she believes we\l"
@@ -469,11 +487,11 @@ Corin_Gym_Script_Text_0:
 	.string "snacks.$"
 
 Corin_Gym_Script_Text_1:
-# 154 "data/maps/Hazolt_Gym/scripts.pory"
+# 157 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Corin: Nice! Let's hit the snack room.$"
 
 Corin_Gym_Script_Text_2:
-# 156 "data/maps/Hazolt_Gym/scripts.pory"
+# 159 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Mara acts like steel, but she notices\n"
 	.string "every Ranger's limits.\p"
 	.string "Some good training and good food will\n"
@@ -481,18 +499,18 @@ Corin_Gym_Script_Text_2:
 	.string "Cave! I should request extra rations.$"
 
 Tasmin_Gym_Script_Text_0:
-# 166 "data/maps/Hazolt_Gym/scripts.pory"
+# 169 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Tasmin: Want a rematch?\p"
 	.string "Mara sets the standard here.\p"
 	.string "I've optimized my routes and my battle\n"
 	.string "plan.$"
 
 Tasmin_Gym_Script_Text_1:
-# 170 "data/maps/Hazolt_Gym/scripts.pory"
+# 173 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Tasmin: Wow, you're really strong now!$"
 
 Tasmin_Gym_Script_Text_2:
-# 172 "data/maps/Hazolt_Gym/scripts.pory"
+# 175 "data/maps/Hazolt_Gym/scripts.pory"
 	.string "Glameow is doing a wonderful job\n"
 	.string "keeping Zigzagoon and Corin away from\l"
 	.string "our supplies.\p"

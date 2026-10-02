@@ -52,6 +52,36 @@ Zatik_Gulch_Sign::
 	return
 
 
+Zatik_TurnBack::
+# 48 "data/maps/STATIC_VALLEY/scripts.pory"
+	lock
+# 49 "data/maps/STATIC_VALLEY/scripts.pory"
+	goto_if_set FLAG_BEGINNING_TRAINERS, Zatik_TurnBack_2
+Zatik_TurnBack_1:
+# 56 "data/maps/STATIC_VALLEY/scripts.pory"
+	release
+	return
+
+Zatik_TurnBack_2:
+# 50 "data/maps/STATIC_VALLEY/scripts.pory"
+	msgbox Zatik_TurnBack_Text_0, MSGBOX_AUTOCLOSE
+# 52 "data/maps/STATIC_VALLEY/scripts.pory"
+	waitmessage
+# 53 "data/maps/STATIC_VALLEY/scripts.pory"
+	applymovement LOCALID_PLAYER, Zatik_TurnBack_Movement_0
+# 54 "data/maps/STATIC_VALLEY/scripts.pory"
+	waitmovement
+	goto Zatik_TurnBack_1
+
+
+# 53 "data/maps/STATIC_VALLEY/scripts.pory"
+Zatik_TurnBack_Movement_0:
+# 53 "data/maps/STATIC_VALLEY/scripts.pory"
+	face_down
+# 53 "data/maps/STATIC_VALLEY/scripts.pory"
+	walk_down
+	step_end
+
 Zatik_Woman_1_Text_0:
 # 6 "data/maps/STATIC_VALLEY/scripts.pory"
 	.string "The view is so nice from here.\p"
@@ -110,3 +140,9 @@ Zatik_Gulch_Sign_Text_0:
 	.string "Welcome to Zatik Gulch!\n"
 	.string "Watch for wild Pokémon and trainers\l"
 	.string "looking for a challenge.$"
+
+Zatik_TurnBack_Text_0:
+# 50 "data/maps/STATIC_VALLEY/scripts.pory"
+	.string "This is not the trail of your\n"
+	.string "companions.\n"
+	.string "You should turn back!$"

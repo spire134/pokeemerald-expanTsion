@@ -43,3 +43,15 @@ script Zatik_Gulch_Sign {
     "Watch for wild Pokémon and trainers looking for a challenge."), MSGBOX_SIGN)
     release
 }
+
+script Zatik_TurnBack {
+    lock
+    if (flag(FLAG_BEGINNING_TRAINERS)) {
+        msgbox(format("This is not the trail of your companions.\n"
+        "You should turn back!"), MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(LOCALID_PLAYER, moves(face_down walk_down))
+        waitmovement
+    }
+    release
+}

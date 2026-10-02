@@ -4704,7 +4704,7 @@
     {
       "id": "LAYOUT_TIDES_MERCY_STORAGE_WRECK",
       "name": "TidesMercy_StorageWreck_Layout",
-      "width": 25,
+      "width": 40,
       "height": 25,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_InsideShip",
@@ -4844,8 +4844,8 @@
     {
       "id": "LAYOUT_QUARRY_DEPTHS",
       "name": "Quarry_Depths_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 80,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Quarry_Depths/border.bin",

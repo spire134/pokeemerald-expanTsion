@@ -3,8 +3,7 @@ mapscripts Quartz_City_Interiors_MapScripts {}
 script StoneEmporium_RedSalesMan {
     lock
     faceplayer
-    message(format("Welcome to the Stone Emporium!\p"
-    "We have the finest selection of elemental stones on the whole island!"))
+    message(format("Welcome to the Stone Emporium! Take a look at our elemental stones!"))
     waitmessage
     pokemart(Quartz_RedStoneMart)
     msgbox(format("Keep it Rock Solid!"))
@@ -15,8 +14,7 @@ script StoneEmporium_RedSalesMan {
 script StoneEmporium_GreenSalesMan {
     lock
     faceplayer
-    msgbox(format("Hi there! Looking for a special stone to evolve your POKéMON?\p"
-    "You've come to the right place!"))
+    msgbox(format("Looking for a special stone to evolve your Pokémon? Take a look!"))
     waitmessage
     pokemart(Quartz_GreenStoneMart)
     msgbox(format("Have a Rock Solid day!"))
@@ -48,7 +46,7 @@ script Quartz_GemstoneNerd {
     lock
     faceplayer
     msgbox(format("Gemstones are the lifeblood of Quartzite City!\p"
-    "Without them, our city would crumble to dust!"))
+    "If we can't drain the quarry soon, our entire economy will crumble to dust!"))
     waitmessage
     release
 }
@@ -57,7 +55,7 @@ script Quartz_ForlornStoneWoman {
     lock
     faceplayer
     msgbox(format("I used to be a jeweler here in Quartzite.\p"
-    "But ever since Team Hive took over, business has been slow…"))
+    "But ever since Team Hive blocked the upstream flow and flooded the quarry, business has been entirely washed out."))
     waitmessage
     release
 }
@@ -65,8 +63,8 @@ script Quartz_ForlornStoneWoman {
 script Quartz_RichJerkman {
     lock
     faceplayer
-    msgbox(format("I don't care about Team Hive or their petty schemes.\p"
-    "As long as my gem collection is safe, I'm happy!"))
+    msgbox(format("I don't care about Team Hive or their petty schemes up at the Mansion.\p"
+    "As long as my private gem collection is safe from the water damage, I'm happy!"))
     waitmessage
     release
 }
@@ -74,8 +72,8 @@ script Quartz_RichJerkman {
 script Quartz_GoldDigger {
     lock
     faceplayer
-    msgbox(format("I've been digging for gems all day!\p"
-    "Maybe if I find enough, I can buy my way out of this mess with Team Hive…"))
+    msgbox(format("I've been digging for gems in the shallows all day!\p"
+    "Maybe if I find enough, I can buy my way out of this mess before the whole town goes under!"))
     waitmessage
     release
 }
@@ -83,13 +81,13 @@ script Quartz_GoldDigger {
 script Quartz_StoneWeirdo {
     lock
     faceplayer
-    msgbox(format("Rocks are the ultimate form of life!\p"
+    msgbox(format("Rocks are the ultimate form of life! Water cannot defeat them!\p"
     "They've been around for millions of years, witnessing the rise and fall of civilizations!"))
     waitmessage
-    msgbox(format("I want you to have this special special rock I found.\p"
+    msgbox(format("I want you to have this special rock I found before the flood.\p"
     "It's said to bring good luck to those who carry it!"))
     giveitem(ITEM_LUCKY_EGG)
-    msgbox(format("{PLAYER} received a Lucky Rock! "))
+    msgbox(format("{PLAYER} received a Lucky Rock!"))
     waitmessage
     release
 }
@@ -97,7 +95,16 @@ script Quartz_StoneWeirdo {
 script Quartz_Fat_Lazy_Husband {
     lock
     faceplayer
-    msgbox(format("Ugh... do I really have to go to work today?\pI'm too comfortable at home to move."))
+    if (flag(FLAG_BATTLE_FRONTIER_TRADE_DONE)) {
+        msgbox(format("Okay, she traded away the haunted sword… but now she has a Murkrow.\p"
+        "Do you know what a group of them is called? A murder!\p"
+        "I'm locking myself in the bathroom until the quarry drains."))
+    } else {
+        msgbox(format("Ugh… do I really have to go to work today?\p"
+        "The quarry is flooded anyway, I might as well stay home where it's dry!\p"
+        "Besides, my wife brought home this weird sword Pokémon. It just floats there… staring at my neck.\p"
+        "I'm not moving a single muscle."))
+    }
     waitmessage
     release
 }
@@ -110,11 +117,11 @@ script Quartz_Bored_Wife_Murkrow {
     copyvar(VAR_0x8004, VAR_0x8008)
     specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
     copyvar(VAR_0x8009, VAR_RESULT)
-    msgbox(format("My husband is so lazy! He never wants to go out and explore the city with me.\p"
-    "I wish I could find a {STR_VAR_1} to keep me company instead…\p"
-    "The only friend I've had lately is the knife that follows him around!\l"
-    "It keeps looking at me like it's waiting.\p"
-    "I would trade the knife for a {STR_VAR_1}, I've always fancied a murder!"
+    msgbox(format("My husband is utterly useless! He claims the flooded quarry means he can sleep all day.\p"
+    "In reality, he's just terrified of work.\p"
+    "I wish I could find a {STR_VAR_1} to keep me company instead.\p"
+    "The sword just hovers over his pillow. It's dreadfully dull watching him sweat.\p"
+    "I would gladly trade the knife for a {STR_VAR_1}. I've always fancied starting a murder!"
     ), MSGBOX_YESNO)
     goto_if_eq(VAR_RESULT, NO, MurkrowTrade_DeclineTrade)
     special(ChoosePartyMon)
@@ -133,14 +140,14 @@ script Quartz_Bored_Wife_Murkrow {
     msgbox(format(
         "Finally, something intelligent to keep me company!"
     ))
-    setflag(FLAG_BATTLE_FRONTIER_TRADE_DONE)  
+    setflag(FLAG_BATTLE_FRONTIER_TRADE_DONE)
     release
 }
 
 script MurkrowTrade_DeclineTrade {
     msgbox(format(
         "All right then.\n"
-        "Maybe Honedge can help with my husband."
+        "Maybe Honedge will give him a little trim while he sleeps."
     ))
     release
 }
@@ -156,7 +163,8 @@ script MurkrowTrade_NotRequestedMon {
 
 script Quartz_Bored_Wife_Murkrow_End {
     msgbox(format(
-        "I love my new Murkrow. I hope Honedge got to do whatever it wanted with you!"
+        "I adore my new Murkrow. It brings me shiny things from the flooded shallows and completely ignores my husband.\p"
+        "I hope Honedge got to do whatever it wanted with you!"
     ))
     release
 }
@@ -165,7 +173,7 @@ script Quartz_BoardGame_Boy {
     lock
     faceplayer
     msgbox(format("Hey! Want to play a board game with me?\p"
-    "It's a lot of fun and can help pass the time while Team Hive is around!"))
+    "It's a lot of fun and can help pass the time while Team Hive blocks the river!"))
     waitmessage
     release 
 }
@@ -174,16 +182,16 @@ script Quartz_BoardGame_Girl {
     lock
     faceplayer
     msgbox(format("I love playing board games!\p"
-    "It's a great way to spend time with friends while we wait for Team Hive to leave!"))
+    "It's a great way to spend time with friends while we wait for the water to drain!"))
     waitmessage
-    release    
+    release 
 }
 
 script Quartz_TooCoolForGames_Kid {
     lock
     faceplayer
     msgbox(format("Board games are for kids.\p"
-    "I'd rather be outside helping the Rangers!"))
+    "I'd rather be outside helping the Rangers flush Team Hive out of Shudderwood!"))
     waitmessage
     release
 }
@@ -192,54 +200,56 @@ script Quartz_BoardGame_Mom {
     lock
     faceplayer
     msgbox(format("Playing board games is a great way for families to bond!\p"
-    "Even with Team Hive around, we can still have fun together at home!"))
+    "Even with the quarry closed down, we can still have fun together at home!"))
     waitmessage
-    release    
+    release 
 }
 
 script Quartz_OldMan_TyGifts {
     lock
     faceplayer
     msgbox(format("Thank you for helping us with the Team Hive problem!\p"
+    "With Shudderwood Mansion safe, our town can finally breathe again.\p"
     "Please accept this gift as a token of our gratitude."))
     giveitem(ITEM_POKE_DOLL)
     msgbox(format("We couldn't have done it without you!\p"
     "If you ever need another doll, just let me know!"))
     waitmessage
-    release
-    }
+    release 
+}
 
 script Quartz_OldWoman_Dollmaker {
     lock
     faceplayer
-    if (flag(FLAG_BADGE03_GET)) {
-        msgbox(format("Dollmaker Mollie: You certainly prove yourself a strong trainer.\p"
+    if (flag(FLAG_BADGE04_GET)) {
+        msgbox(format("Dollmaker Mollie: You certainly prove yourself a strong trainer, taking back Shudderwood like that.\p"
         "Perhaps you can be the one with the skill to test my designs.\p"
         "But I will first evaluate your abilities in battle. Do you accept?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-        msgbox(format("Excellent! Show me your skills!"))
-        trainerbattle_no_intro(TRAINER_MOLLIE,
-        format("Impressive!")
-        )
-        waitmessage
-        msgbox(format("Dollmaker Mollie: You've proven your skill once again!\p"
-        "As a reward, I shall give you access to my secret workshop!\p"
-        "Please step aside, dear!"))
-        setflag(FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS)
-        waitmessage
-        applymovement(LOCALID_QUARTZ_OLDMANGIFTS, moves(walk_left face_down))
-        waitmovement(0)
-        msgbox(format("Dollmaker Mollie: Say hi to my assistant while you're down there!\p"))
-        waitmessage
+            msgbox(format("Excellent! Show me your skills!"))
+            trainerbattle_no_intro(TRAINER_MOLLIE,
+            format("Impressive!")
+            )
+            waitmessage
+            msgbox(format("Dollmaker Mollie: You've proven your skill once again!\p"
+            "As a reward, I shall give you access to my secret workshop!\p"
+            "Please step aside, dear!"))
+            setflag(FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS)
+            waitmessage
+            applymovement(LOCALID_QUARTZ_OLDMANGIFTS, moves(walk_left face_down))
+            waitmovement(0)
+            msgbox(format("Dollmaker Mollie: Say hi to my assistant while you're down there!\p"))
+            waitmessage
         } else {
-        msgbox(format("Take your time to prepare!"))
-        waitmessage
+            msgbox(format("Take your time to prepare!"))
+            waitmessage
         }
     } else {
-    msgbox(format("Dollmaker Mollie: I've heard about your adventures around Quartzite City.\p"
-    "Come back when you have the clearance to use Surf in the field."))
-    waitmessage
-    release
+        msgbox(format("Dollmaker Mollie: I've heard about your adventures around Quartzite City.\p"
+        "It's a shame about the quarry.\p"
+        "Come back when you have the clearance to use Surf in the field."))
+        waitmessage
+        release
     }
 }
 
@@ -247,6 +257,6 @@ script Quartz_Garganacl_Guard {
     lock
     faceplayer
     playmoncry(SPECIES_GARGANACL, 0)
-    msgbox(format("Garganacl: Grgege… Grgegegrg!\p"), MSGBOX_AUTOCLOSE)
+    msgbox(format("Garganacl: Grgege  Grgegegrg!\p"), MSGBOX_AUTOCLOSE)
     release
 }

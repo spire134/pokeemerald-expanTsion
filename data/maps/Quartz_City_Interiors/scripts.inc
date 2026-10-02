@@ -9,560 +9,592 @@ StoneEmporium_RedSalesMan::
 	faceplayer
 # 6 "data/maps/Quartz_City_Interiors/scripts.pory"
 	message StoneEmporium_RedSalesMan_Text_0
+# 7 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitmessage
 # 8 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitmessage
-# 9 "data/maps/Quartz_City_Interiors/scripts.pory"
 	pokemart Quartz_RedStoneMart
-# 10 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 9 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox StoneEmporium_RedSalesMan_Text_1
-# 11 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 10 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 12 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 11 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 StoneEmporium_GreenSalesMan::
-# 16 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 15 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 17 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 16 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 18 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 17 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox StoneEmporium_GreenSalesMan_Text_0
-# 20 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 18 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 21 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 19 "data/maps/Quartz_City_Interiors/scripts.pory"
 	pokemart Quartz_GreenStoneMart
-# 22 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 20 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox StoneEmporium_GreenSalesMan_Text_1
-# 23 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 21 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 24 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 22 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 	.align 2
-# 27 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 25 "data/maps/Quartz_City_Interiors/scripts.pory"
 Quartz_RedStoneMart:
-# 28 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 26 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_FIRE_STONE
-# 29 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 27 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_WATER_STONE
-# 30 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 28 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_THUNDER_STONE
-# 31 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 29 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_LEAF_STONE
-# 32 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 30 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_ICE_STONE
-# 33 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 31 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_MOON_STONE
-# 34 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 32 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_SUN_STONE
 	.2byte ITEM_NONE
 
 	.align 2
-# 37 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 35 "data/maps/Quartz_City_Interiors/scripts.pory"
 Quartz_GreenStoneMart:
-# 38 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 36 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_HEAT_ROCK
-# 39 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 37 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_SMOOTH_ROCK
-# 40 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 38 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_ICY_ROCK
-# 41 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 39 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_DAMP_ROCK
-# 42 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 40 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_OVAL_STONE
-# 43 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 41 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_PROTECTIVE_PADS
-# 44 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 42 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.2byte ITEM_ROCKY_HELMET
 	.2byte ITEM_NONE
 
 Quartz_GemstoneNerd::
-# 48 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 46 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 49 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 47 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 50 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 48 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_GemstoneNerd_Text_0
-# 52 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 50 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 53 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 51 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_ForlornStoneWoman::
-# 57 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 55 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 58 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 56 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 59 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 57 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_ForlornStoneWoman_Text_0
-# 61 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 59 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 62 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 60 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_RichJerkman::
-# 66 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 64 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 67 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 65 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 68 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 66 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_RichJerkman_Text_0
-# 70 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 68 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 71 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 69 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_GoldDigger::
-# 75 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 73 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 76 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 74 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 77 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 75 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_GoldDigger_Text_0
-# 79 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 77 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 80 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 78 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_StoneWeirdo::
-# 84 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 82 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 85 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 83 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 86 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 84 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_StoneWeirdo_Text_0
-# 88 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 86 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 89 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 87 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_StoneWeirdo_Text_1
-# 91 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 89 "data/maps/Quartz_City_Interiors/scripts.pory"
 	giveitem ITEM_LUCKY_EGG
-# 92 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 90 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_StoneWeirdo_Text_2
-# 93 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 91 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 94 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 92 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_Fat_Lazy_Husband::
-# 98 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 96 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 99 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 97 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 100 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_Fat_Lazy_Husband_Text_0
-# 101 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 98 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_set FLAG_BATTLE_FRONTIER_TRADE_DONE, Quartz_Fat_Lazy_Husband_2
+# 103 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_Fat_Lazy_Husband_Text_1
+Quartz_Fat_Lazy_Husband_1:
+# 108 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 102 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 109 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
+Quartz_Fat_Lazy_Husband_2:
+# 99 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_Fat_Lazy_Husband_Text_0
+	goto Quartz_Fat_Lazy_Husband_1
+
 
 Quartz_Bored_Wife_Murkrow::
-# 106 "data/maps/Quartz_City_Interiors/scripts.pory"
-	lock
-# 107 "data/maps/Quartz_City_Interiors/scripts.pory"
-	faceplayer
-# 108 "data/maps/Quartz_City_Interiors/scripts.pory"
-	goto_if_set FLAG_BATTLE_FRONTIER_TRADE_DONE, Quartz_Bored_Wife_Murkrow_End
-# 109 "data/maps/Quartz_City_Interiors/scripts.pory"
-	setvar VAR_0x8008, INGAME_TRADE_HONEDGE
-# 110 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
-# 111 "data/maps/Quartz_City_Interiors/scripts.pory"
-	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
-# 112 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x8009, VAR_RESULT
 # 113 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_Bored_Wife_Murkrow_Text_0, MSGBOX_YESNO
-# 119 "data/maps/Quartz_City_Interiors/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, MurkrowTrade_DeclineTrade
-# 120 "data/maps/Quartz_City_Interiors/scripts.pory"
-	special ChoosePartyMon
-# 121 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitstate
-# 122 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x800A, VAR_0x8004
-# 123 "data/maps/Quartz_City_Interiors/scripts.pory"
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, MurkrowTrade_DeclineTrade
-# 124 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 125 "data/maps/Quartz_City_Interiors/scripts.pory"
-	specialvar VAR_RESULT, GetTradeSpecies
-# 126 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x800B, VAR_RESULT
-# 127 "data/maps/Quartz_City_Interiors/scripts.pory"
-	goto_if_ne VAR_RESULT, VAR_0x8009, MurkrowTrade_NotRequestedMon
-# 128 "data/maps/Quartz_City_Interiors/scripts.pory"
+	lock
+# 114 "data/maps/Quartz_City_Interiors/scripts.pory"
+	faceplayer
+# 115 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_set FLAG_BATTLE_FRONTIER_TRADE_DONE, Quartz_Bored_Wife_Murkrow_End
+# 116 "data/maps/Quartz_City_Interiors/scripts.pory"
+	setvar VAR_0x8008, INGAME_TRADE_HONEDGE
+# 117 "data/maps/Quartz_City_Interiors/scripts.pory"
 	copyvar VAR_0x8004, VAR_0x8008
-# 129 "data/maps/Quartz_City_Interiors/scripts.pory"
-	copyvar VAR_0x8005, VAR_0x800A
-# 130 "data/maps/Quartz_City_Interiors/scripts.pory"
-	special CreateInGameTradePokemon
-# 131 "data/maps/Quartz_City_Interiors/scripts.pory"
-	special DoInGameTradeScene
-# 132 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 118 "data/maps/Quartz_City_Interiors/scripts.pory"
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+# 119 "data/maps/Quartz_City_Interiors/scripts.pory"
+	copyvar VAR_0x8009, VAR_RESULT
+# 120 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_Bored_Wife_Murkrow_Text_0, MSGBOX_YESNO
+# 126 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, MurkrowTrade_DeclineTrade
+# 127 "data/maps/Quartz_City_Interiors/scripts.pory"
+	special ChoosePartyMon
+# 128 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitstate
+# 129 "data/maps/Quartz_City_Interiors/scripts.pory"
+	copyvar VAR_0x800A, VAR_0x8004
+# 130 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, MurkrowTrade_DeclineTrade
+# 131 "data/maps/Quartz_City_Interiors/scripts.pory"
+	copyvar VAR_0x8005, VAR_0x800A
+# 132 "data/maps/Quartz_City_Interiors/scripts.pory"
+	specialvar VAR_RESULT, GetTradeSpecies
 # 133 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_Bored_Wife_Murkrow_Text_1
+	copyvar VAR_0x800B, VAR_RESULT
+# 134 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_ne VAR_RESULT, VAR_0x8009, MurkrowTrade_NotRequestedMon
+# 135 "data/maps/Quartz_City_Interiors/scripts.pory"
+	copyvar VAR_0x8004, VAR_0x8008
 # 136 "data/maps/Quartz_City_Interiors/scripts.pory"
-	setflag FLAG_BATTLE_FRONTIER_TRADE_DONE
+	copyvar VAR_0x8005, VAR_0x800A
 # 137 "data/maps/Quartz_City_Interiors/scripts.pory"
+	special CreateInGameTradePokemon
+# 138 "data/maps/Quartz_City_Interiors/scripts.pory"
+	special DoInGameTradeScene
+# 139 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitstate
+# 140 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_Bored_Wife_Murkrow_Text_1
+# 143 "data/maps/Quartz_City_Interiors/scripts.pory"
+	setflag FLAG_BATTLE_FRONTIER_TRADE_DONE
+# 144 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 MurkrowTrade_DeclineTrade::
-# 141 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 148 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox MurkrowTrade_DeclineTrade_Text_0
-# 145 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 152 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 MurkrowTrade_NotRequestedMon::
-# 149 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 156 "data/maps/Quartz_City_Interiors/scripts.pory"
 	bufferspeciesname STR_VAR_1, VAR_0x8009
-# 150 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 157 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox MurkrowTrade_NotRequestedMon_Text_0
-# 154 "data/maps/Quartz_City_Interiors/scripts.pory"
-	release
-	return
-
-
-Quartz_Bored_Wife_Murkrow_End::
-# 158 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_Bored_Wife_Murkrow_End_Text_0
 # 161 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
-Quartz_BoardGame_Boy::
+Quartz_Bored_Wife_Murkrow_End::
 # 165 "data/maps/Quartz_City_Interiors/scripts.pory"
-	lock
-# 166 "data/maps/Quartz_City_Interiors/scripts.pory"
-	faceplayer
-# 167 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_BoardGame_Boy_Text_0
+	msgbox Quartz_Bored_Wife_Murkrow_End_Text_0
 # 169 "data/maps/Quartz_City_Interiors/scripts.pory"
+	release
+	return
+
+
+Quartz_BoardGame_Boy::
+# 173 "data/maps/Quartz_City_Interiors/scripts.pory"
+	lock
+# 174 "data/maps/Quartz_City_Interiors/scripts.pory"
+	faceplayer
+# 175 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_BoardGame_Boy_Text_0
+# 177 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 170 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 178 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_BoardGame_Girl::
-# 174 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 182 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 175 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 183 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 176 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 184 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_BoardGame_Girl_Text_0
-# 178 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 186 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 179 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 187 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_TooCoolForGames_Kid::
-# 183 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 191 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 184 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 192 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 185 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 193 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_TooCoolForGames_Kid_Text_0
-# 187 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 195 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 188 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 196 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_BoardGame_Mom::
-# 192 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 200 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 193 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 201 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 194 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 202 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_BoardGame_Mom_Text_0
-# 196 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 204 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 197 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 205 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_OldMan_TyGifts::
-# 201 "data/maps/Quartz_City_Interiors/scripts.pory"
-	lock
-# 202 "data/maps/Quartz_City_Interiors/scripts.pory"
-	faceplayer
-# 203 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_OldMan_TyGifts_Text_0
-# 205 "data/maps/Quartz_City_Interiors/scripts.pory"
-	giveitem ITEM_POKE_DOLL
-# 206 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_OldMan_TyGifts_Text_1
-# 208 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitmessage
 # 209 "data/maps/Quartz_City_Interiors/scripts.pory"
+	lock
+# 210 "data/maps/Quartz_City_Interiors/scripts.pory"
+	faceplayer
+# 211 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_OldMan_TyGifts_Text_0
+# 214 "data/maps/Quartz_City_Interiors/scripts.pory"
+	giveitem ITEM_POKE_DOLL
+# 215 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_OldMan_TyGifts_Text_1
+# 217 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitmessage
+# 218 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
 Quartz_OldWoman_Dollmaker::
-# 213 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 222 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 214 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 223 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 215 "data/maps/Quartz_City_Interiors/scripts.pory"
-	goto_if_set FLAG_BADGE03_GET, Quartz_OldWoman_Dollmaker_1
-# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 224 "data/maps/Quartz_City_Interiors/scripts.pory"
+	goto_if_set FLAG_BADGE04_GET, Quartz_OldWoman_Dollmaker_1
+# 248 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_OldWoman_Dollmaker_Text_6
-# 241 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 251 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
-# 242 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 252 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 Quartz_OldWoman_Dollmaker_1:
-# 216 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 225 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_OldWoman_Dollmaker_Text_0, MSGBOX_YESNO
-# 219 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 228 "data/maps/Quartz_City_Interiors/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Quartz_OldWoman_Dollmaker_4
-# 235 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 244 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_OldWoman_Dollmaker_Text_5
-# 236 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 245 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
 	return
 
 Quartz_OldWoman_Dollmaker_4:
-# 220 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_OldWoman_Dollmaker_Text_1
-# 221 "data/maps/Quartz_City_Interiors/scripts.pory"
-	trainerbattle_no_intro TRAINER_MOLLIE, Quartz_OldWoman_Dollmaker_Text_2
-# 224 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitmessage
-# 225 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_OldWoman_Dollmaker_Text_3
-# 228 "data/maps/Quartz_City_Interiors/scripts.pory"
-	setflag FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS
 # 229 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitmessage
+	msgbox Quartz_OldWoman_Dollmaker_Text_1
 # 230 "data/maps/Quartz_City_Interiors/scripts.pory"
-	applymovement LOCALID_QUARTZ_OLDMANGIFTS, Quartz_OldWoman_Dollmaker_Movement_0
-# 231 "data/maps/Quartz_City_Interiors/scripts.pory"
-	waitmovement 0
-# 232 "data/maps/Quartz_City_Interiors/scripts.pory"
-	msgbox Quartz_OldWoman_Dollmaker_Text_4
+	trainerbattle_no_intro TRAINER_MOLLIE, Quartz_OldWoman_Dollmaker_Text_2
 # 233 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitmessage
+# 234 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_OldWoman_Dollmaker_Text_3
+# 237 "data/maps/Quartz_City_Interiors/scripts.pory"
+	setflag FLAG_RECEIVED_DOLLMAKER_WORKSHOP_ACCESS
+# 238 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitmessage
+# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
+	applymovement LOCALID_QUARTZ_OLDMANGIFTS, Quartz_OldWoman_Dollmaker_Movement_0
+# 240 "data/maps/Quartz_City_Interiors/scripts.pory"
+	waitmovement 0
+# 241 "data/maps/Quartz_City_Interiors/scripts.pory"
+	msgbox Quartz_OldWoman_Dollmaker_Text_4
+# 242 "data/maps/Quartz_City_Interiors/scripts.pory"
 	waitmessage
 	return
 
 
 Quartz_Garganacl_Guard::
-# 247 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 257 "data/maps/Quartz_City_Interiors/scripts.pory"
 	lock
-# 248 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 258 "data/maps/Quartz_City_Interiors/scripts.pory"
 	faceplayer
-# 249 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 259 "data/maps/Quartz_City_Interiors/scripts.pory"
 	playmoncry SPECIES_GARGANACL, 0
-# 250 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 260 "data/maps/Quartz_City_Interiors/scripts.pory"
 	msgbox Quartz_Garganacl_Guard_Text_0, MSGBOX_AUTOCLOSE
-# 251 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 261 "data/maps/Quartz_City_Interiors/scripts.pory"
 	release
 	return
 
 
-# 230 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
 Quartz_OldWoman_Dollmaker_Movement_0:
-# 230 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
 	walk_left
-# 230 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
 	face_down
 	step_end
 
 StoneEmporium_RedSalesMan_Text_0:
 # 6 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Welcome to the Stone Emporium!\p"
-	.string "We have the finest selection of\n"
-	.string "elemental stones on the whole island!$"
+	.string "Welcome to the Stone Emporium! Take a\n"
+	.string "look at our elemental stones!$"
 
 StoneEmporium_RedSalesMan_Text_1:
-# 10 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 9 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Keep it Rock Solid!$"
 
 StoneEmporium_GreenSalesMan_Text_0:
-# 18 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Hi there! Looking for a special stone to\n"
-	.string "evolve your POKéMON?\p"
-	.string "You've come to the right place!$"
+# 17 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "Looking for a special stone to evolve\n"
+	.string "your Pokémon? Take a look!$"
 
 StoneEmporium_GreenSalesMan_Text_1:
-# 22 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 20 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Have a Rock Solid day!$"
 
 Quartz_GemstoneNerd_Text_0:
-# 50 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 48 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Gemstones are the lifeblood of\n"
 	.string "Quartzite City!\p"
-	.string "Without them, our city would crumble to\n"
-	.string "dust!$"
+	.string "If we can't drain the quarry soon, our\n"
+	.string "entire economy will crumble to dust!$"
 
 Quartz_ForlornStoneWoman_Text_0:
-# 59 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 57 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "I used to be a jeweler here in\n"
 	.string "Quartzite.\p"
-	.string "But ever since Team Hive took over,\n"
-	.string "business has been slow…$"
+	.string "But ever since Team Hive blocked the\n"
+	.string "upstream flow and flooded the quarry,\l"
+	.string "business has been entirely washed out.$"
 
 Quartz_RichJerkman_Text_0:
-# 68 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 66 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "I don't care about Team Hive or their\n"
-	.string "petty schemes.\p"
-	.string "As long as my gem collection is safe, I'm\n"
-	.string "happy!$"
+	.string "petty schemes up at the Mansion.\p"
+	.string "As long as my private gem collection is\n"
+	.string "safe from the water damage, I'm happy!$"
 
 Quartz_GoldDigger_Text_0:
-# 77 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "I've been digging for gems all day!\p"
+# 75 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "I've been digging for gems in the\n"
+	.string "shallows all day!\p"
 	.string "Maybe if I find enough, I can buy my way\n"
-	.string "out of this mess with Team Hive…$"
+	.string "out of this mess before the whole town\l"
+	.string "goes under!$"
 
 Quartz_StoneWeirdo_Text_0:
-# 86 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Rocks are the ultimate form of life!\p"
+# 84 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "Rocks are the ultimate form of life!\n"
+	.string "Water cannot defeat them!\p"
 	.string "They've been around for millions of\n"
 	.string "years, witnessing the rise and fall of\l"
 	.string "civilizations!$"
 
 Quartz_StoneWeirdo_Text_1:
-# 89 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "I want you to have this special special\n"
-	.string "rock I found.\p"
+# 87 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "I want you to have this special rock I\n"
+	.string "found before the flood.\p"
 	.string "It's said to bring good luck to those\n"
 	.string "who carry it!$"
 
 Quartz_StoneWeirdo_Text_2:
-# 92 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 90 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "{PLAYER} received a Lucky Rock!$"
 
 Quartz_Fat_Lazy_Husband_Text_0:
-# 100 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Ugh... do I really have to go to work\n"
+# 99 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "Okay, she traded away the haunted\n"
+	.string "sword… but now she has a Murkrow.\p"
+	.string "Do you know what a group of them is\n"
+	.string "called? A murder!\p"
+	.string "I'm locking myself in the bathroom until\n"
+	.string "the quarry drains.$"
+
+Quartz_Fat_Lazy_Husband_Text_1:
+# 103 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "Ugh… do I really have to go to work\n"
 	.string "today?\p"
-	.string "I'm too comfortable at home to move.$"
+	.string "The quarry is flooded anyway, I might as\n"
+	.string "well stay home where it's dry!\p"
+	.string "Besides, my wife brought home this\n"
+	.string "weird sword Pokémon. It just floats\l"
+	.string "there… staring at my neck.\p"
+	.string "I'm not moving a single muscle.$"
 
 Quartz_Bored_Wife_Murkrow_Text_0:
-# 113 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "My husband is so lazy! He never wants\n"
-	.string "to go out and explore the city with me.\p"
+# 120 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "My husband is utterly useless! He\n"
+	.string "claims the flooded quarry means he can\l"
+	.string "sleep all day.\p"
+	.string "In reality, he's just terrified of work.\p"
 	.string "I wish I could find a {STR_VAR_1} to\n"
-	.string "keep me company instead…\p"
-	.string "The only friend I've had lately is the\n"
-	.string "knife that follows him around!\l"
-	.string "It keeps looking at me like it's waiting.\p"
-	.string "I would trade the knife for a\n"
-	.string "{STR_VAR_1}, I've always fancied a\l"
-	.string "murder!$"
+	.string "keep me company instead.\p"
+	.string "The sword just hovers over his pillow.\n"
+	.string "It's dreadfully dull watching him sweat.\p"
+	.string "I would gladly trade the knife for a\n"
+	.string "{STR_VAR_1}. I've always fancied\l"
+	.string "starting a murder!$"
 
 Quartz_Bored_Wife_Murkrow_Text_1:
-# 134 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 141 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Finally, something intelligent to keep\n"
 	.string "me company!$"
 
 MurkrowTrade_DeclineTrade_Text_0:
-# 142 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 149 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "All right then.\n"
-	.string "Maybe Honedge can help with my\l"
-	.string "husband.$"
+	.string "Maybe Honedge will give him a little trim\l"
+	.string "while he sleeps.$"
 
 MurkrowTrade_NotRequestedMon_Text_0:
-# 151 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 158 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "I would really prefer a {STR_VAR_1}.\p"
 	.string "Bring a {STR_VAR_1} if you want my\n"
 	.string "knife.$"
 
 Quartz_Bored_Wife_Murkrow_End_Text_0:
-# 159 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "I love my new Murkrow. I hope Honedge\n"
-	.string "got to do whatever it wanted with you!$"
+# 166 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "I adore my new Murkrow. It brings me\n"
+	.string "shiny things from the flooded shallows\l"
+	.string "and completely ignores my husband.\p"
+	.string "I hope Honedge got to do whatever it\n"
+	.string "wanted with you!$"
 
 Quartz_BoardGame_Boy_Text_0:
-# 167 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 175 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Hey! Want to play a board game with me?\p"
 	.string "It's a lot of fun and can help pass the\n"
-	.string "time while Team Hive is around!$"
+	.string "time while Team Hive blocks the river!$"
 
 Quartz_BoardGame_Girl_Text_0:
-# 176 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 184 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "I love playing board games!\p"
 	.string "It's a great way to spend time with\n"
-	.string "friends while we wait for Team Hive to\l"
-	.string "leave!$"
+	.string "friends while we wait for the water to\l"
+	.string "drain!$"
 
 Quartz_TooCoolForGames_Kid_Text_0:
-# 185 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 193 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Board games are for kids.\p"
 	.string "I'd rather be outside helping the\n"
-	.string "Rangers!$"
+	.string "Rangers flush Team Hive out of\l"
+	.string "Shudderwood!$"
 
 Quartz_BoardGame_Mom_Text_0:
-# 194 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 202 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Playing board games is a great way for\n"
 	.string "families to bond!\p"
-	.string "Even with Team Hive around, we can still\n"
-	.string "have fun together at home!$"
+	.string "Even with the quarry closed down, we\n"
+	.string "can still have fun together at home!$"
 
 Quartz_OldMan_TyGifts_Text_0:
-# 203 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 211 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Thank you for helping us with the Team\n"
 	.string "Hive problem!\p"
+	.string "With Shudderwood Mansion safe, our\n"
+	.string "town can finally breathe again.\p"
 	.string "Please accept this gift as a token of\n"
 	.string "our gratitude.$"
 
 Quartz_OldMan_TyGifts_Text_1:
-# 206 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 215 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "We couldn't have done it without you!\p"
 	.string "If you ever need another doll, just let\n"
 	.string "me know!$"
 
 Quartz_OldWoman_Dollmaker_Text_0:
-# 216 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 225 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Dollmaker Mollie: You certainly prove\n"
-	.string "yourself a strong trainer.\p"
+	.string "yourself a strong trainer, taking back\l"
+	.string "Shudderwood like that.\p"
 	.string "Perhaps you can be the one with the\n"
 	.string "skill to test my designs.\p"
 	.string "But I will first evaluate your abilities\n"
 	.string "in battle. Do you accept?$"
 
 Quartz_OldWoman_Dollmaker_Text_1:
-# 220 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 229 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Excellent! Show me your skills!$"
 
 Quartz_OldWoman_Dollmaker_Text_2:
-# 222 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 231 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Impressive!$"
 
 Quartz_OldWoman_Dollmaker_Text_3:
-# 225 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 234 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Dollmaker Mollie: You've proven your\n"
 	.string "skill once again!\p"
 	.string "As a reward, I shall give you access to\n"
@@ -570,23 +602,24 @@ Quartz_OldWoman_Dollmaker_Text_3:
 	.string "Please step aside, dear!$"
 
 Quartz_OldWoman_Dollmaker_Text_4:
-# 232 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 241 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Dollmaker Mollie: Say hi to my assistant\n"
 	.string "while you're down there!\p"
 	.string "$"
 
 Quartz_OldWoman_Dollmaker_Text_5:
-# 235 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 244 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Take your time to prepare!$"
 
 Quartz_OldWoman_Dollmaker_Text_6:
-# 239 "data/maps/Quartz_City_Interiors/scripts.pory"
+# 248 "data/maps/Quartz_City_Interiors/scripts.pory"
 	.string "Dollmaker Mollie: I've heard about your\n"
 	.string "adventures around Quartzite City.\p"
+	.string "It's a shame about the quarry.\p"
 	.string "Come back when you have the clearance\n"
 	.string "to use Surf in the field.$"
 
 Quartz_Garganacl_Guard_Text_0:
-# 250 "data/maps/Quartz_City_Interiors/scripts.pory"
-	.string "Garganacl: Grgege… Grgegegrg!\p"
+# 260 "data/maps/Quartz_City_Interiors/scripts.pory"
+	.string "Garganacl: Grgege Grgegegrg!\p"
 	.string "$"

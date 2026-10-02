@@ -3,6 +3,7 @@ mapscripts Quartzsite_MapScripts {}
 script Quartzite_Upper_Road {
 lock
 fadescreen(FADE_TO_BLACK)
+playse(SE_DOOR)
 warp(MAP_QUARTZ_TUNNELS, 3, 2)
 fadescreen(FADE_FROM_BLACK)
 release
@@ -11,6 +12,7 @@ release
 script Quartzite_Lower_Road {
 lock
 fadescreen(FADE_TO_BLACK)
+playse(SE_DOOR)
 warp(MAP_QUARTZ_TUNNELS, 17, 7)
 fadescreen(FADE_FROM_BLACK)
 release
@@ -19,6 +21,7 @@ release
 script Library_BackEntrance {
 lock
 fadescreen(FADE_TO_BLACK)
+playse(SE_DOOR)
 warp(MAP_QUARTZ_LIBRARY, 12, 4)
 fadescreen(FADE_FROM_BLACK)
 release
@@ -50,16 +53,30 @@ script Quartz_ScenicQuarryView {
     "Water cascades down the rocky walls,"), MSGBOX_SIGN)
     checkitem(ITEM_SUPER_ROD)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(format("and you notice a glimmering pond below.\p"
-        "It looks like a great spot to fish!\p"
-        "Cast your Super Rod here to see what you can catch!"), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == TRUE) {
-            msgbox(format("You cast your Super Rod into the pond and wait patiently.\n"
-            "After a few moments, you feel a tug on the line!"))
-            setwildbattle(SPECIES_RELICANTH, 40)
-            dowildbattle
+        if (flag(FLAG_FISHED_QUARRY_VIEW_RELICANTH) && flag(FLAG_FISHED_QUARRY_VIEW_OMANYTE)) {
+            msgbox(format("and you notice the pond below.\p"
+            "The water is calm and still. It seems whatever was biting has moved on."), MSGBOX_SIGN)
         } else {
-            msgbox(format("You decide not to fish here right now."))
+            msgbox(format("and you notice a glimmering pond below.\p"
+            "It looks like a great spot to fish!\p"
+            "Cast your Super Rod here to see what you can catch!"), MSGBOX_YESNO)
+            if (var(VAR_RESULT) == TRUE) {
+                msgbox(format("You cast your Super Rod into the pond and wait patiently.\n"
+                "After a few moments, you feel a tug on the line!"))
+                if (!flag(FLAG_FISHED_QUARRY_VIEW_RELICANTH) && !flag(FLAG_FISHED_QUARRY_VIEW_OMANYTE)) {
+                    random(2)
+                    switch (var(VAR_RESULT)) {
+                        case 0: call(Quartz_ScenicQuarryView_EncounterRelicanth)
+                        case 1: call(Quartz_ScenicQuarryView_EncounterOmanyte)
+                    }
+                } elif (!flag(FLAG_FISHED_QUARRY_VIEW_RELICANTH)) {
+                    call(Quartz_ScenicQuarryView_EncounterRelicanth)
+                } else {
+                    call(Quartz_ScenicQuarryView_EncounterOmanyte)
+                }
+            } else {
+                msgbox(format("You decide not to fish here right now."))
+            }
         }
     } else {
         msgbox(format("You notice a glimmering pond below.\p"
@@ -67,6 +84,20 @@ script Quartz_ScenicQuarryView {
         "If you had a Super Rod, you could cast it here to see what you can catch!"), MSGBOX_SIGN)
     }
     release
+}
+
+script Quartz_ScenicQuarryView_EncounterRelicanth {
+    setflag(FLAG_FISHED_QUARRY_VIEW_RELICANTH)
+    setwildbattle(SPECIES_RELICANTH, 40)
+    dowildbattle
+    return
+}
+
+script Quartz_ScenicQuarryView_EncounterOmanyte {
+    setflag(FLAG_FISHED_QUARRY_VIEW_OMANYTE)
+    setwildbattle(SPECIES_OMANYTE, 20)
+    dowildbattle
+    return
 }
 
 script Quartz_Hive_Blocker {
@@ -135,4 +166,65 @@ script Quartz_GoodRod_Fisherman {
     msgbox(format("Fisherman: Remember, fishing is all about patience and timing.\p"))
     }
     release    
+}
+
+script Quartz_Fountain_Boy {
+    lock
+    faceplayer
+    msgbox(format("Halt, cave beast! By the power of the First Pick, I claim this vein of pure quartz for the guild!\p"
+    "Hah! Hyah! Take that!\p"
+    "My granddad says the original miners cleared out entire subterranean caverns using iron picks and pure grit!!"))
+    release
+    end
+}
+
+script Quartz_Bored_Mom_Reading {
+    lock
+    faceplayer
+    msgbox(format("Mmm-hmm... keep swinging sweetie, just watch your balance near the edge.\p"
+    "I checked out this historical chronicle from the library to pass the afternoon.\p"
+    "The early trade disputes between the founding quarry guilds and the coastal shipping barons are surprisingly scandalous."))
+    release
+    end
+}
+
+script Quartz_FatStoneFan {
+    lock
+    faceplayer
+    msgbox(format("Those double doors behind me lead right into the Stone Emporium!\p"
+    "If you have a Pokémon primed to evolve, they keep elemental stones lined up right along the front counter."))
+    release
+    end
+}
+
+script Quartz_DeepQuarryLore {
+    lock
+    faceplayer
+    msgbox(format("Do you know just how deep the Quartzite Quarry plunges?\p"
+    "The deepest shafts descend over four hundred paces straight into the earth!\p"
+    "Old survey maps show the lowest levels breaking directly into ancient subterranean caverns.\p"
+    "With the river flooding the pit, all those deep galleries are submerged in pitch-black water."))
+    release
+    end
+}
+
+script Quartz_WhereStoneBoy {
+    lock
+    faceplayer
+    msgbox(format("Quartzite rock gets hauled all across Corymbra for major engineering projects!\p"
+    "That colossal watchtower out in the Sandistan desert region was constructed using blocks cut right here.\p"
+    "Knowing stone from our town is the foundation that keeps the entire region stable is an amazing feeling!"))
+    release
+    end
+}
+
+script Quartz_PumpHouseWorker {
+    lock
+    faceplayer
+    msgbox(format("Pumping out a flooded quarry requires massive machinery and endless maintenance.\p"
+    "River silt, driftwood, and stubborn wild Pokémon keep jamming the intake grates down in the reservoir.\p"
+    "Our specialist crew has to DIVE deep underwater to clear the turbine blades by hand.\p"
+    "Plunging down into flooded machinery takes serious nerve."))
+    release
+    end
 }

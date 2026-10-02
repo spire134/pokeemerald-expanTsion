@@ -113,7 +113,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 10,
+      "x": 11,
       "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -122,7 +122,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_6"
+      "flag": "FLAG_QUARTZITE_HIVE_DEFEATED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -138,30 +138,82 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 12,
-      "y": 39,
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 34,
+      "y": 56,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_4"
+      "script": "Quartz_FatStoneFan",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 11,
-      "y": 40,
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 15,
+      "y": 27,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_5"
+      "script": "Quartz_Bored_Mom_Reading",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 24,
+      "y": 55,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quartz_DeepQuarryLore",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 14,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 6,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quartz_Fountain_Boy",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 27,
+      "y": 38,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quartz_WhereStoneBoy",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 16,
+      "y": 63,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quartz_PumpHouseWorker",
+      "flag": "FLAG_HIDE_CONTEST_POKE_BALL"
     }
   ],
   "warp_events": [

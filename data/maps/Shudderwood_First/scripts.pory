@@ -60,3 +60,13 @@ script Shudderwood_Berry_Picker {
     }
     releaseall
 }
+
+script Shudderwood_Flower_Finder {
+    trainerbattle_single(TRAINER_VICKY, 
+    format("I've been finding flowers here for years!\n" "Do you enjoy it too?"),
+    format("The flower bushes here have Bluk Berries.")
+    )
+    msgbox(format("Keep an eye out for beautiful blooms as you explore!"
+    "Those Bluk Berries are hidden among the flowers!"), MSGBOX_AUTOCLOSE)
+    waitmessage
+}

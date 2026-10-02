@@ -103,3 +103,173 @@
             },
         },
     },
+#line 45
+    [DIFFICULTY_NORMAL][PARTNER_CORIN_QUARTZ] =
+    {
+#line 46
+        .trainerName = _("Corin"),
+#line 47
+        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+#line 48
+        .trainerPic = TRAINER_BACK_PIC_STEVEN,
+        .encounterMusic_gender =
+#line 50
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 52
+            .species = SPECIES_GROWLITHE_HISUI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 52
+            .heldItem = ITEM_PECHA_BERRY,
+#line 55
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+#line 53
+            .ability = ABILITY_INTIMIDATE,
+#line 54
+            .lvl = 17,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 56
+                MOVE_ROCK_TOMB,
+                MOVE_HOWL,
+                MOVE_LEER,
+                MOVE_FLAME_WHEEL,
+            },
+            },
+            {
+#line 61
+            .species = SPECIES_MORELULL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 61
+            .heldItem = ITEM_BIG_ROOT,
+#line 64
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+#line 62
+            .ability = ABILITY_ILLUMINATE,
+#line 63
+            .lvl = 17,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 65
+                MOVE_SLEEP_POWDER,
+                MOVE_MEGA_DRAIN,
+                MOVE_CONFUSE_RAY,
+                MOVE_INGRAIN,
+            },
+            },
+            {
+#line 70
+            .species = SPECIES_GULPIN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 70
+            .heldItem = ITEM_BLACK_SLUDGE,
+#line 73
+            .iv = TRAINER_PARTY_IVS(11, 0, 26, 11, 21, 21),
+#line 71
+            .ability = ABILITY_LIQUID_OOZE,
+#line 72
+            .lvl = 18,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 74
+                MOVE_MEGA_PUNCH,
+                MOVE_STOCKPILE,
+                MOVE_SWALLOW,
+                MOVE_SPIT_UP,
+            },
+            },
+        },
+    },
+#line 79
+    [DIFFICULTY_NORMAL][PARTNER_TASMIN_PIRATES] =
+    {
+#line 80
+        .trainerName = _("Tasmin"),
+#line 81
+        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+#line 82
+        .trainerPic = TRAINER_BACK_PIC_STEVEN,
+        .encounterMusic_gender =
+#line 83
+F_TRAINER_FEMALE | 
+#line 84
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 86
+            .species = SPECIES_GLAMEOW,
+#line 86
+            .gender = TRAINER_MON_MALE,
+#line 89
+            .iv = TRAINER_PARTY_IVS(0, 31, 5, 26, 0, 24),
+#line 87
+            .ability = ABILITY_OWN_TEMPO,
+#line 88
+            .lvl = 24,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 90
+                MOVE_HYPNOSIS,
+                MOVE_AERIAL_ACE,
+                MOVE_FAKE_OUT,
+                MOVE_GROWL,
+            },
+            },
+            {
+#line 95
+            .species = SPECIES_SHUPPET,
+#line 95
+            .gender = TRAINER_MON_FEMALE,
+#line 98
+            .iv = TRAINER_PARTY_IVS(10, 20, 10, 20, 0, 10),
+#line 96
+            .ability = ABILITY_FRISK,
+#line 97
+            .lvl = 24,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 99
+                MOVE_WILL_O_WISP,
+                MOVE_HEX,
+                MOVE_PAIN_SPLIT,
+                MOVE_SCREECH,
+            },
+            },
+            {
+#line 104
+            .species = SPECIES_TIMBURR,
+#line 104
+            .gender = TRAINER_MON_MALE,
+#line 104
+            .heldItem = ITEM_HARD_STONE,
+#line 109
+            .iv = TRAINER_PARTY_IVS(18, 10, 10, 5, 10, 18),
+#line 105
+            .ability = ABILITY_GUTS,
+#line 106
+            .lvl = 24,
+#line 108
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 107
+            .teraType = TYPE_FIGHTING,
+            .moves = {
+#line 110
+                MOVE_ROCK_SLIDE,
+                MOVE_SLAM,
+                MOVE_BULK_UP,
+                MOVE_ROCK_SMASH,
+            },
+            },
+        },
+    },

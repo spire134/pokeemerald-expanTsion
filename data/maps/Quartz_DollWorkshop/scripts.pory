@@ -3,7 +3,11 @@ mapscripts Quartz_DollWorkshop_MapScripts {}
 script Quartz_OldMan_WorkshopHelper {
     lock
     faceplayer
-    msgbox(format("You are always welcome to the Dollmaker's workshop.\p"))
+    msgbox(format("Welcome to Master Mollie's workshop.\p"
+    "Lady Sonya is currently immersed in her craft. Please forgive her intense staring; she views everyone as a potential reference model.\p"
+    "If you wish to assist her magnum opus, the doll requires Heart Scales for its internal mechanisms.\p"
+    "I used to gather them from the Quartzite Quarry. Since Team Hive flooded it, the scales have washed into the deeper, submerged sections.\p"
+    "Only a capable Ranger could dive down there now… the aquatic Pokémon lurking in those depths are incredibly territorial and powerful."))
     waitmessage
     release
 }
@@ -13,26 +17,26 @@ script Quartz_SoullessMaidDoll {
     faceplayer
     compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(format("The doll's eyes glow warmly as it smiles at you.\p"
-        "It seems to just need a soul now to be complete."))
+        msgbox(format("The doll's glass eyes glow with a faint, warm light, fixed perfectly upon your face.\p"
+        "Its physical mechanisms are complete. It waits only for a soul."))
         waitmessage
         release
     }
     else {
         if (!flag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)) {
-            msgbox(format("…"))
+            msgbox(format("…\p"
+            "The doll's cold, porcelain face is angled downward, but you feel an uncanny sensation that it is watching you."))
             waitmessage
             setflag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)
             release
         }
         else {
-            msgbox(format("…"))
             checkitem(ITEM_HEART_SCALE)
             goto_if_eq(VAR_RESULT, FALSE, Quartz_SoullessMaidDoll_NoHeartScale)
-            msgbox(format("You insert the Heart Scale into the doll's chest.\p"))
+            msgbox(format("You carefully insert the Heart Scale into a small recess on the doll's chest…"))
             removeitem(ITEM_HEART_SCALE, 1)
             addvar(VAR_HEART_SCALES_GIVEN_TO_DOLL, 1)
-            msgbox(format("The doll's eyes light up, and seem to follow you around the room.\p"))
+            msgbox(format("A faint, rhythmic ticking begins to echo from within its porcelain shell."))
             compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
             goto_if_eq(VAR_RESULT, TRUE, Quartz_SoullessMaidDoll_3rdHeartScale)
             waitmessage
@@ -42,16 +46,15 @@ script Quartz_SoullessMaidDoll {
 }   
 
 script Quartz_SoullessMaidDoll_NoHeartScale {
-    msgbox(format("The doll's eyes seem to follow you around the room.\p"
-    "It looks like it wants something…"))
+    msgbox(format("The doll's eyes track your movements with an unsettling, mechanical precision.\p"
+    "An empty slot on its chest seems to be waiting for a specific, iridescent scale."))
     waitmessage
     release
 }
 
 script Quartz_SoullessMaidDoll_3rdHeartScale {
-    msgbox(format("With a soft chime, the doll blinks and sputters.\p"
-    "It looks at you emptily.\n"
-    "It seems to need something else to fully come to life…"))
+    msgbox(format("With a sharp metallic click, the doll's joints lock into place. It blinks, tilting its head toward you emptily.\p"
+    "The physical vessel is fully repaired. It requires something far more profound to truly awaken."))
     waitmessage
     release
 }
@@ -61,22 +64,24 @@ script Quartz_Dollmaker_Prodigy {
     faceplayer
     compare_var_to_value(VAR_HEART_SCALES_GIVEN_TO_DOLL, 4)
     goto_if_eq(VAR_RESULT, TRUE, Quartz_Dollmaker_Prodigy_SoulHint)
+    
     if (!flag(FLAG_SPOKE_WITH_SOULLESS_MAID_DOLL)) {
-        msgbox(format("Dollmaker Susan: Welcome to my workshop!\p"
-        "Feel free to look around and see my creations."))
+        msgbox(format("Dollmaker Sonya: Shh. Do not move.\p"
+        "Let me study the way the light catches your brow…\p"
+        "…Yes. The jawline is asymmetrical, and the cheekbones lack the pristine symmetry of polished porcelain. But your eyes are remarkably expressive.\p"
+        "So hard to capture that. You may observe my creations, but do not smudge the glass."))
         waitmessage
     }
     else {
-        msgbox(format("Dollmaker Susan: Ah, I see you've met my latest creation.\p"
-        "She's still a work in progress, but I'm hopeful she'll come to life one day."))
+        msgbox(format("Dollmaker Sonya: You noticed her. My magnum opus. Her proportions are mathematically flawless."))
         waitmessage
         applymovement(LOCALID_DOLLMAKER_PRODIGY, moves(emote_question_mark))
         waitmovement(0)
-        msgbox(format("What? Do you want to know more about her?"), MSGBOX_YESNO)
+        msgbox(format("You wish to understand the mechanics of perfection?"), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-            msgbox(format("Dollmaker Susan: Well, I designed her along with master Mollie, but she still lacks a soul.\p"
-            "Perhaps one day, with enough care and attention, she'll come to life."
-            "For now she just needs a few more Heart Scales to be complete physically."))
+            msgbox(format("Dollmaker Sonya: Master Mollie and I shaped her vessel, but her joints and artificial heart require the friction-less enamel found only on Heart Scales.\p"
+            "Our assistant handles the mundane gathering. Speak to him if you wish to be useful.\p"
+            "But remember… even with a flawless physical form, she remains hollow. An empty shell."))
             waitmessage
         }
     }
@@ -84,9 +89,9 @@ script Quartz_Dollmaker_Prodigy {
 }
 
 script Quartz_Dollmaker_Prodigy_SoulHint {
-    msgbox(format("Dollmaker Susan: Ah, I see you've been helping my little doll friend here.\p"
-    "She's almost complete physically, but I believe she still needs a soul to truly come to life.\p"
-    "Perhaps if we had a soul, one that was fresh and full of life, she could awaken."))
+    msgbox(format("Dollmaker Sonya: The physical form is complete. Her synthetic heart beats, yet her eyes remain vacant.\p"
+    "The symmetry is perfect, but the spark is absent. To bridge the gap between a masterpiece and true life…\p"
+    "She requires a soul. A fresh, potent spiritual energy. If only such an intangible thing could be captured…"))
     waitmessage
     release
 }

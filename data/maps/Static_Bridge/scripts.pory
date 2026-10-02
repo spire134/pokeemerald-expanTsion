@@ -4,13 +4,13 @@ script OldRod_Guy {
     lock
     faceplayer
     if (!flag(FLAG_RECEIVED_OLD_ROD)) {
-        msgbox(format("FISHER DON: Hey there! You look like you know your way around a rod and reel.\p"
+        msgbox(format("Hey there! You look like you know your way around a rod and reel.\p"
         "Here, take this Old Rod. It's not much, but it'll get you started."))
         giveitem(ITEM_OLD_ROD)
         setflag(FLAG_RECEIVED_OLD_ROD)
     }
     else {
-        msgbox(format("FISHER DON: I fish here to catch Tadbulb, they make a great nightlight!"))
+        msgbox(format("I fish here to catch Tadbulb, they make a great nightlight!"))
     }
     release
 }
@@ -41,8 +41,8 @@ script Static_Bridge_Doubter {
         msgbox(format("{PLAYER} received 5 Super Potions!"))
         setflag(FLAG_STATIC_BRIDGE_APOLOGY_GIFT)
     } else {
-        msgbox(format("I said Rangers were useless.\p"
-            "Then you proved me wrong on this very bridge.\p"
+        msgbox(format("Sorry I said Rangers were useless.\p"
+            "Thanks for opening up the bridge.\p"
             "I won't forget that."))
     }
     release
@@ -51,35 +51,62 @@ script Static_Bridge_Doubter {
 
 script Team_Hive_Drone {
     lock
+    faceplayer
+    
     if (!flag(FLAG_BADGE01_GET)) {
         applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
-        msgbox(format("DRONE: We've gotten quite a few recruits to join Team Hive recently.\p"
-        "The seer will very pleased."))
-        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up face_right))
+        msgbox(format("DRONE: Bzz! The swarm grows larger every day.\p"
+        "The Seer will be most pleased with our new recruits. Buzz!"))
+        
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
         waitmovement(0)
-        msgbox(format("DRONE: Oh, another Ranger. But you look pretty weak. Maybe another time."))
-        applymovement(LOCALID_BOTDRONE, moves(face_up))
+        msgbox(format("Hive Drone: Buzz-buzz! Affirmative!\p"
+        "...Wait, do you hear footsteps?"))
+        
+        applymovement(LOCALID_TOPDRONE, moves(face_right))
+        applymovement(LOCALID_BOTDRONE, moves(face_right))
         waitmovement(0)
+        
+        applymovement(LOCALID_TOPDRONE, moves(emote_question_mark))
+        applymovement(LOCALID_BOTDRONE, moves(emote_question_mark))
+        waitmovement(0)
+        
+        msgbox(format("Hive Drone: A Ranger? You don't have the edge to challenge us.\p"
+        "Scram before my Skorupi gets pinch-happy!"))
         release
     }
     else {
         applymovement(LOCALID_TOPDRONE, moves(walk_in_place_down))
-        msgbox(format("DRONE: I can't wait for the Seer to return."))
-        applymovement(LOCALID_BOTDRONE, moves(emote_exclamation_mark walk_in_place_up))
-        applymovement(LOCALID_BOTDRONE, moves(face_right))
+        msgbox(format("Hive Drone: The Seer's grand design is nearly complete! Buzz!"))
+        
+        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_up))
+        waitmovement(0)
+        msgbox(format("Hive Drone: Buzz-buzz! I can't wait to let Venipede roll all over these Rangers!"))
+        
         applymovement(LOCALID_TOPDRONE, moves(face_right))
+        applymovement(LOCALID_BOTDRONE, moves(face_right))
         waitmovement(0)
-        msgbox(format("DRONE: Oh that look in your eye, you have a problem with us?\p"
-        "The Seer said not to battle Rangers, but you're annoying us!"))
-        trainerbattle_two_trainers(TRAINER_BRIDGE_TOPDRONE, "DRONE: You're pretty strong for a Ranger.", TRAINER_BRIDGE_BOTDRONE, "DRONE: Uh-oh, I'm out of bugs!")
-        applymovement(LOCALID_TOPDRONE, moves(walk_in_place_right))
-        applymovement(LOCALID_BOTDRONE, moves(walk_in_place_right))
+        
+        applymovement(LOCALID_TOPDRONE, moves(emote_exclamation_mark))
+        applymovement(LOCALID_BOTDRONE, moves(emote_exclamation_mark))
         waitmovement(0)
-        msgbox(format("DRONE: Gah! You're stronger than we thought! Retreat!"))
+        
+        msgbox(format("Hive Drone: Bzz! Look out, it's that Ranger again! And they look... slightly more annoying!\p"
+        "The Seer ordered us to ignore the Rangers, but my stingers are itching! Let's swarm 'em!"))
+        
+        trainerbattle_two_trainers(TRAINER_BRIDGE_TOPDRONE, "Skorupi's shell cracked!", TRAINER_BRIDGE_BOTDRONE, "Bzz! My spores were ineffective!")
+        
+        applymovement(LOCALID_TOPDRONE, moves(jump_in_place_right))
+        applymovement(LOCALID_BOTDRONE, moves(jump_in_place_right))
+        waitmovement(0)
+        
+        msgbox(format("Hive Drone: Gah! They swatted us! Fall back to the hive! Buzz-buzz!"))
         waitmessage
-        applymovement(LOCALID_TOPDRONE, moves(walk_faster_left * 7))
-        applymovement(LOCALID_BOTDRONE, moves(walk_faster_left * 7))
+        
+        applymovement(LOCALID_TOPDRONE, moves(walk_fast_left * 7))
+        applymovement(LOCALID_BOTDRONE, moves(walk_fast_left * 7))
         waitmovement(0)
+        
         removeobject(LOCALID_TOPDRONE)
         removeobject(LOCALID_BOTDRONE)
         setflag(FLAG_STATIC_DRONE_FIGHT)

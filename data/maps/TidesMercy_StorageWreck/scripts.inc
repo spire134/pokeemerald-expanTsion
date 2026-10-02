@@ -65,34 +65,54 @@ Wreck_Suprise_Grab_1:
 	return
 
 
-GarrickLootsThenRuns::
+Wreck_Strong_Pirate::
 # 50 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, GarrickLootsThenRuns_2
-# 53 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	lockall
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, Wreck_Strong_Pirate_Text_0, Wreck_Strong_Pirate_Text_1
 # 54 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	playse SE_PIN
+	msgbox Wreck_Strong_Pirate_Text_2, MSGBOX_AUTOCLOSE
 # 55 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_GARRICK, GarrickLootsThenRuns_Movement_0
-# 56 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_FIRSTMATE, GarrickLootsThenRuns_Movement_1
-# 57 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmovement 0
-# 58 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	msgbox GarrickLootsThenRuns_Text_0
-# 61 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	waitmessage
-# 62 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_GARRICK, GarrickLootsThenRuns_Movement_2
+	return
+
+
+Wreck_GarrickLore_Pirate::
+# 59 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, Wreck_GarrickLore_Pirate_Text_0, Wreck_GarrickLore_Pirate_Text_1
 # 63 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmovement 0
+	msgbox Wreck_GarrickLore_Pirate_Text_2, MSGBOX_AUTOCLOSE
 # 64 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+	return
+
+
+GarrickLootsThenRuns::
+# 68 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, GarrickLootsThenRuns_2
+# 71 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	lockall
+# 72 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	playse SE_PIN
+# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_GARRICK, GarrickLootsThenRuns_Movement_0
+# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_FIRSTMATE, GarrickLootsThenRuns_Movement_1
+# 75 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmovement 0
+# 76 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox GarrickLootsThenRuns_Text_0
+# 79 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+# 80 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_GARRICK, GarrickLootsThenRuns_Movement_2
+# 81 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmovement 0
+# 82 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	removeobject LOCALID_WRECK_GARRICK
-# 65 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 83 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	playse SE_EXIT
-# 66 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 84 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	call Wreck_Pirate_FirstMate
-# 67 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 85 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	releaseall
 	return
 
@@ -101,59 +121,110 @@ GarrickLootsThenRuns_2:
 
 
 Wreck_Pirate_FirstMate::
-# 71 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 89 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	lockall
-# 72 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	playse SE_PIN
-# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_0
-# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmovement 0
-# 75 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	msgbox Wreck_Pirate_FirstMate_Text_0
-# 76 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmessage
-# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_1
-# 78 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmovement 0
-# 79 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	msgbox Wreck_Pirate_FirstMate_Text_1
-# 82 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmessage
-# 83 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_4, Wreck_Pirate_FirstMate_Text_2
-# 84 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	msgbox Wreck_Pirate_FirstMate_Text_3
-# 85 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	waitmessage
-# 86 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	setflag FLAG_CLEARED_TIDESMERCYWRECK
-# 87 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	msgbox Wreck_Pirate_FirstMate_Text_4
 # 90 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_2
-# 93 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	playse SE_PIN
+# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_0
+# 92 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	waitmovement 0
+# 93 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Pirate_FirstMate_Text_0
 # 94 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	removeobject LOCALID_WRECK_FIRSTMATE
+	waitmessage
 # 95 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_1
+# 96 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmovement 0
+# 97 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Pirate_FirstMate_Text_1
+# 100 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+# 101 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_4, Wreck_Pirate_FirstMate_Text_2
+# 102 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Pirate_FirstMate_Text_3
+# 103 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+# 104 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	setflag FLAG_CLEARED_TIDESMERCYWRECK
+# 105 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Pirate_FirstMate_Text_4
+# 108 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	applymovement LOCALID_WRECK_FIRSTMATE, Wreck_Pirate_FirstMate_Movement_2
+# 111 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmovement 0
+# 112 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	removeobject LOCALID_WRECK_FIRSTMATE
+# 113 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	releaseall
 	return
 
 
 StorageWreck_Empty_Item_Ball::
-# 99 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 117 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	lock
-# 100 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 118 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	msgbox StorageWreck_Empty_Item_Ball_Text_0
-# 102 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 120 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	setflag FLAG_TEMP_1
-# 103 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 121 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	removeobject LOCALID_EMPTY_ITEM_BALL
-# 104 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 122 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	release
 	return
+
+
+Wreck_Tasmin_Entrance::
+# 126 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	lock
+# 127 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	faceplayer
+# 128 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	goto_if_set FLAG_CLEARED_TIDESMERCYWRECK, Wreck_Tasmin_Entrance_2
+Wreck_Tasmin_Entrance_1:
+# 130 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	goto_if_unset FLAG_MET_TASMIN_STORAGE_WRECK, Wreck_Tasmin_Entrance_5
+Wreck_Tasmin_Entrance_4:
+# 140 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Tasmin_Entrance_Text_1, MSGBOX_YESNO
+# 142 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq Wreck_Tasmin_Entrance_8
+# 149 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Tasmin_Entrance_Text_3
+# 150 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+Wreck_Tasmin_Entrance_7:
+# 152 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	release
+	return
+
+Wreck_Tasmin_Entrance_2:
+	goto Wreck_Tasmin_Entrance_1
+
+Wreck_Tasmin_Entrance_5:
+# 131 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	setflag FLAG_MET_TASMIN_STORAGE_WRECK
+# 132 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Tasmin_Entrance_Text_0
+# 138 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+	goto Wreck_Tasmin_Entrance_4
+
+Wreck_Tasmin_Entrance_8:
+# 143 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	special HealPlayerParty
+# 144 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	playse MUS_HEAL
+# 145 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitse
+# 146 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	msgbox Wreck_Tasmin_Entrance_Text_2
+# 147 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	waitmessage
+	goto Wreck_Tasmin_Entrance_7
 
 
 # 33 "data/maps/TidesMercy_StorageWreck/scripts.pory"
@@ -178,71 +249,71 @@ Wreck_Suprise_Grab_Movement_1:
 	face_left
 	step_end
 
-# 55 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 GarrickLootsThenRuns_Movement_0:
-# 55 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	emote_exclamation_mark
-# 55 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 56 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 GarrickLootsThenRuns_Movement_1:
-# 56 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	emote_exclamation_mark
-# 56 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	face_left
-# 56 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 74 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	face_right
 	step_end
 
-# 62 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 80 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 GarrickLootsThenRuns_Movement_2:
-# 62 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 80 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_fast_up
-# 62 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 80 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 Wreck_Pirate_FirstMate_Movement_0:
-# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	emote_exclamation_mark
-# 73 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	face_left
 	step_end
 
-# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 95 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 Wreck_Pirate_FirstMate_Movement_1:
-# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 95 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_fast_left
-# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 95 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_fast_left
-# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 95 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 90 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 108 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 Wreck_Pirate_FirstMate_Movement_2:
-# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 109 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_right
-# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 109 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_right
-# 91 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 109 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_right
-# 92 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 110 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_right
-# 92 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 110 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_right
-# 92 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 110 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_up
-# 92 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 110 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	walk_faster_up
 	step_end
 
 Wreck_Exposition_Pirate_Text_0:
 # 5 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "You're too late, Ranger!\p"
+	.string "You be too late, Ranger!\p"
 	.string "This ship's treasures belong to us now!$"
 
 Wreck_Exposition_Pirate_Text_1:
@@ -251,7 +322,7 @@ Wreck_Exposition_Pirate_Text_1:
 
 Wreck_Exposition_Pirate_Text_2:
 # 8 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "Heh heh heh... This ship is ours now!$"
+	.string "Yar har har! This ship is ours now!$"
 
 Wreck_Grab_Pirate_Text_0:
 # 14 "data/maps/TidesMercy_StorageWreck/scripts.pory"
@@ -278,54 +349,115 @@ Wreck_GangUp_Pirate_Text_1:
 
 Wreck_GangUp_Pirate_Text_2:
 # 25 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "Pirate: You'll never escape us now!$"
+	.string "Pirate: You'll never stop us!$"
 
 Wreck_Suprise_Grab_Text_0:
 # 35 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "Pirate: Thought you could sneak past\n"
-	.string "us, did you?$"
+	.string "Pirate: Got ourselves a sneaky little\n"
+	.string "varmit here!$"
 
 Wreck_Suprise_Grab_Text_1:
 # 39 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Pirate: You're outnumbered now, Ranger!\p"
 	.string "Prepare to be boarded!$"
 
+Wreck_Strong_Pirate_Text_0:
+# 51 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Pirate: You think you can take me on,\n"
+	.string "land lubber?\p"
+	.string "Prepare to be sunk!$"
+
+Wreck_Strong_Pirate_Text_1:
+# 53 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Argh… Right in the pirate pride!$"
+
+Wreck_Strong_Pirate_Text_2:
+# 54 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Pirate: You'll regret underestimating\n"
+	.string "us!$"
+
+Wreck_GarrickLore_Pirate_Text_0:
+# 60 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Pirate: All these top notch goods are\n"
+	.string "ours for the taking!\p"
+	.string "You won't be getting any of it!$"
+
+Wreck_GarrickLore_Pirate_Text_1:
+# 62 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Oh no! Captaaaaaaain!$"
+
+Wreck_GarrickLore_Pirate_Text_2:
+# 63 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Pirate: The Captain will make you pay\n"
+	.string "for this!$"
+
 GarrickLootsThenRuns_Text_0:
-# 59 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 77 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Garrick: Rangers here already? Must be\n"
 	.string "a new batch at the old HQ.\p"
-	.string "Callie, you clean up here while I haul\n"
-	.string "this back to base.$"
+	.string "Argh. Callie, clean up here while I haul\n"
+	.string "this back for the quartermaster.$"
 
 Wreck_Pirate_FirstMate_Text_0:
-# 75 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 93 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Callie: Captain's orders, I'm going to\n"
-	.string "throw you overboard!\p"
-	.string "$"
+	.string "throw you overboard!$"
 
 Wreck_Pirate_FirstMate_Text_1:
-# 80 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 98 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Callie: You Rangers don't realize the\n"
 	.string "new laws of this island!\p"
 	.string "This ship and all its contents belong to\n"
 	.string "us now!$"
 
 Wreck_Pirate_FirstMate_Text_2:
-# 83 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 101 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "Callie: Gah, but you're too late!$"
 
 Wreck_Pirate_FirstMate_Text_3:
-# 84 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "Callie: How could I lose to a Ranger…$"
+# 102 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Callie: How could I lose to another\n"
+	.string "Ranger…$"
 
 Wreck_Pirate_FirstMate_Text_4:
-# 88 "data/maps/TidesMercy_StorageWreck/scripts.pory"
-	.string "The Captain already got the best\n"
-	.string "treasure!\p"
+# 106 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Per the quartermaster, I'd already\n"
+	.string "logged the best treasure.\p"
 	.string "You'll never beat us at the hideout!$"
 
 StorageWreck_Empty_Item_Ball_Text_0:
-# 100 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+# 118 "data/maps/TidesMercy_StorageWreck/scripts.pory"
 	.string "There is nothing left here.\p"
 	.string "Those darn pirates already took\n"
 	.string "everything of value!$"
+
+Wreck_Tasmin_Entrance_Text_0:
+# 133 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Tasmin: There you are. I'm holding the\n"
+	.string "entrance in case anyone needs patching\l"
+	.string "up.\p"
+	.string "Corrin may have reffered to me as 'the\n"
+	.string "quartermaster.' I am not the\l"
+	.string "quartermaster.\p"
+	.string "I'm a logistics coordinator. The\n"
+	.string "difference is I don't answer to 'ahoy,'\l"
+	.string "and my inventory sheets are\l"
+	.string "alphabetized. Remember, the pirates are\l"
+	.string "still around, so stay vigilant. Clear the\l"
+	.string "place efficiently and safely!$"
+
+Wreck_Tasmin_Entrance_Text_1:
+# 140 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Make sure you report back to Mara with\n"
+	.string "me when you're done here.\p"
+	.string "Tasmin: Would you like me to patch up\n"
+	.string "your POKéMON before you go further?$"
+
+Wreck_Tasmin_Entrance_Text_2:
+# 146 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Tasmin: All set. I'm always prepared for\n"
+	.string "anything.$"
+
+Wreck_Tasmin_Entrance_Text_3:
+# 149 "data/maps/TidesMercy_StorageWreck/scripts.pory"
+	.string "Tasmin: Suit yourself.$"

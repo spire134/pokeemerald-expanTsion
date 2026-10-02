@@ -7,7 +7,7 @@ script Mara_Gym_Script {
         setrespawn(HEAL_LOCATION_HAZOLT_VILLAGE)
         msgbox(format("Mara: You're standing, breathing, and ready to work.\p"
         "That's enough for me.\p"
-        "That storm should have broken us, but this team held the line.\p"
+        "That storm almost drowned us, but Steel team held strong.\p"
         "Take these supplies and get your footing, Ranger."))
         giveitem(ITEM_POKE_BALL, 10)
         giveitem(ITEM_POTION, 5)
@@ -34,40 +34,43 @@ script Mara_Gym_Script {
         end        
     }
     if (!flag(FLAG_MARA_EVAL_READY)) {
-        msgbox(format("Mara: Excellent. You checked every operative and came back with discipline.\p"
-        "That's what keeps Rangers alive, not bravado.\p"
-        "Your first evaluation is next. Train first, then face me when you're steady."))        
+        msgbox(format("Mara: Excellent. I've heard reports your first battles went well.\p"
+        "I will be expecting great things from you moving forward.\p"
+        "Your first evaluation is next. Train first, then you will face me."))        
         setflag(FLAG_MARA_EVAL_READY)
         clearflag(FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT)
         addobject(LOCALID_EON_GYM)
         addobject(LOCALID_TASMIN_GYM)
         addobject(LOCALID_CORIN_GYM)
         msgbox(format("Mara: Run rematches with Eon, Corin, or Tasmin.\p"
-        "Learn their habits, sharpen yours, and come back ready."))
+        "Learn their habits, sharpen yours, and come back ready.\p"
+        "I don't train Rangers to copy me, but to think when the plan falls apart.\p"
+        "Eon will test your patience, Corin will pressure your choices, and Tasmin will punish sloppy preparation.\p"
+        "Listen to what each battle teaches you. The field won't care how confident you felt when you started.\p"))
         releaseall
         end
     }
-    if (!flag(FLAG_MARA_DEFEATED)) {
-        msgbox(format("Mara: Ready for your Ranger evaluation?\p"
-        "Show me precision under pressure."), MSGBOX_YESNO)
+   if (!flag(FLAG_MARA_DEFEATED)) {
+        msgbox(format("Mara: You've seen the field, Ranger. But seeing isn't surviving.\p"
+        "Are you ready for your field evaluation? I need to see precision under pressure."), MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
-            trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: That's an easy pass. Well done.")
+            trainerbattle_no_intro(TRAINER_MARA_EVAL, "Mara: Good pacing. You pass.")
             setflag(FLAG_BADGE01_GET)
             setflag(FLAG_MARA_DEFEATED)
-            msgbox(format("Mara: Excellent work,\p"
-            "{PLAYER}, take Cut and clear the western woods. Check on Quartzite Village for us."))
+            msgbox(format("Mara: You held your nerve when it counted,\p"
+            "{PLAYER}. Take HM01 Cut. I want you to clear the western woods and establish contact with Quartzite Village."))
             giveitem(ITEM_HM01)
             msgbox(format("{PLAYER} received HM01 Cut!"))
             waitfanfare
             waitbuttonpress
-            msgbox(format("Mara: Good luck. I've tuned this Cut HM myself.\p"
-            "Steel isn't just force. It's control and restraint.\p"
-            "Carry that with you, Ranger."))
+            msgbox(format("Mara: I've calibrated that HM myself. It's the sharpest CUT in the Ranger Corps.\p"
+            "Remember, Steel isn't just about swinging a heavy hammer. It's about knowing exactly where to place the nail.\p"
+            "Control and restraint. Carry that with you, Ranger."))
             releaseall
             end
         } 
         else {
-            msgbox(format("Mara: Good choice. Preparation wins more fights than pride."))
+            msgbox(format("Mara: Smart call. Hesitation in the field gets people hurt. Come back when you're certain."))
             releaseall
             end 
         }
@@ -93,14 +96,15 @@ script Mara_Gym_Script {
     }
     elif (flag(FLAG_CLEARED_TIDESMERCYWRECK)) {
         msgbox(format("Mara: Tasmin confirmed the wreck is compromised.\p"
-            "The pirates fled west across Rocky Road toward Port Plunder.\p"
-            "Track them, and show their captain the consequences of messing with the rangers!"))
+            "The pirates fled west across Rocky Road toward a stolen port.\p"
+            "I'm sending Tasmin as well, meet her there to take them together!\p"
+            "Track them, and show their captain the consequences of betraying the rangers!"))
     }
     elif (flag(FLAG_CRUSTED_QUARRY_DEFEATED)) {
         msgbox(format("Mara: Corin reported your success at Crusted Quarry.\p"
             "You kept pressure, adapted, and came back standing. That's Ranger work.\p"
             "Next objective: investigate the shipwreck on the southern shore.\p"
-            "Report to Tasmin at the Hazolt Mart for details."))
+            "Report to Tasmin at the Hazolt Mart for details. Take this key to the Hazolt Mart storage area."))
         if (!flag(FLAG_RECEIVED_WAREHOUSE_KEY)) {
             giveitem(ITEM_WAREHOUSE_KEY)
             msgbox(format("{PLAYER} received the Warehouse Key!"))
@@ -110,8 +114,7 @@ script Mara_Gym_Script {
             waitmessage
             setflag(FLAG_RECEIVED_WAREHOUSE_KEY)
             msgbox(format("Mara: Use that key at the Hazolt Mart to access our storage area.\p"
-                "And keep your options open in the field.\p"
-                "New teammates await at unexpected locations."))
+                "And keep your options open in the field.\p"))
         }
     }
     elif (flag(FLAG_MARA_DEFEATED)) {
